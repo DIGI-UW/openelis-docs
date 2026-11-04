@@ -1,0 +1,25 @@
+<p><strong>Goal of this page.</strong> Get screenshots or a short walkthrough video of the live software on their own: for the website, release notes, a training deck or a design review. (For manual pages, Part 5 captures automatically.)</p>
+<p>Capture is done by the <strong>openelis-qa</strong> plugin's evidence skill, which both the QA work and the manual use. You just describe what you want to see.</p>
+<h2>Ask for it</h2>
+<ac:structured-macro ac:name="code"><ac:parameter ac:name="language">text</ac:parameter><ac:plain-text-body><![CDATA[Take screenshots of the Results Entry page on testing for the website: the empty page, a result being entered, and the saved state. Mask any patient names.]]></ac:plain-text-body></ac:structured-macro>
+<ac:structured-macro ac:name="code"><ac:parameter ac:name="language">text</ac:parameter><ac:plain-text-body><![CDATA[Record a walkthrough video of registering a new patient and creating an order on testing, slow enough for a trainee to follow.]]></ac:plain-text-body></ac:structured-macro>
+<h2>What you get</h2>
+<ul>
+<li><strong>Screenshots</strong> at a readable size (1440 by 900, sharp on high-resolution screens), one per step, named in order. Long pages are cropped to the part that matters.</li>
+<li><strong>A walkthrough video</strong> when you ask for one, slowed so a person can follow.</li>
+<li><strong>Personal data masked</strong>: patient names and identifiers are hidden. Test data is made to look realistic (no "TEST" names).</li>
+</ul>
+<p>Claude shows you the pictures in the chat. Tell it where they should go (the manual project, the website repository, a Confluence page) and it puts them there.</p>
+<h2>Which site</h2>
+<ul>
+<li><code>testing.openelis-global.org</code>: the default, with the current development version.</li>
+<li><code>pngtest.openelis-global.org</code>: quality screens (EQA, QC) and environmental and vector samples. Claude may add data there to make a screen look real.</li>
+</ul>
+<p>Say which one if your feature only exists on one of them.</p>
+<h2>Good to know</h2>
+<ul>
+<li>A full capture can take a few minutes; Claude runs it in the background.</li>
+<li>Screenshots are checked by eye after capture: a capture that "succeeded" can still show the wrong screen, and Claude looks before using it.</li>
+<li>French screenshots (the French interface) exist only for the most used pages; other French pages keep the English pictures.</li>
+</ul>
+<p>Next: <a href="https://uwdigi.atlassian.net/wiki/spaces/DEV/pages/1491664919">Part 7: Troubleshooting and glossary</a>.</p>

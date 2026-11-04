@@ -16,7 +16,7 @@ Input: a storage-format XHTML file whose image slots are tokens of the form  {{I
 and an images/ directory holding those PNGs. Each token is replaced with the uploaded attachment.
 
 Usage:
-  python3 confluence-publish.py --page <pageId> --xhtml <file.xhtml> --images <dir> [--dry-run]
+  python3 confluence-publish.py --page <pageId> --xhtml <file.xhtml> [--images <dir>] [--title T] [--message M] [--dry-run]
   python3 confluence-publish.py --create --parent <pageId> --space OG --title "Adding a Patient" --xhtml ... --images ...
 """
 import argparse, os, re, sys, json, base64, subprocess, urllib.request, urllib.error
@@ -88,13 +88,15 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--page"); ap.add_argument("--create", action="store_true")
     ap.add_argument("--parent"); ap.add_argument("--space"); ap.add_argument("--title")
-    ap.add_argument("--xhtml", required=True); ap.add_argument("--images", required=True)
+    ap.add_argument("--xhtml", required=True); ap.add_argument("--images", default=None, help="folder of PNGs named by {{IMG:...}} tokens; not needed for a page with no figures")
+    ap.add_argument("--message", default="user-manual publish (images via REST)", help="Confluence version message")
     ap.add_argument("--max-width", type=int, default=1020, help="max display width in px; small images keep native size")
     ap.add_argument("--dry-run", action="store_true")
     a = ap.parse_args()
     base, auth = load_creds()
     body = open(a.xhtml, encoding="utf-8").read()
     imgs = re.findall(r"\{\{IMG:([^}]+)\}\}", body)
+    if imgs and not a.images: sys.exit("The page has {{IMG:...}} tokens: pass --images <dir>.")
     missing = [n for n in imgs if not os.path.exists(os.path.join(a.images, n))]
     if missing: sys.exit("Missing image files for tokens: " + ", ".join(missing))
     def repl(m):
@@ -123,7 +125,7 @@ def main():
     ver = cur["version"]["number"]; title = a.title or cur["title"]
     api(base, auth, "PUT", f"/rest/api/content/{page}", {
         "id": page, "type": "page", "title": title,
-        "version": {"number": ver + 1, "message": "user-manual publish (images via REST)"},
+        "version": {"number": ver + 1, "message": a.message},
         "body": {"storage": {"value": final, "representation": "storage"}},
     })
     print(f"published: {base}/spaces/_/pages/{page}")

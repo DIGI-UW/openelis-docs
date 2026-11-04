@@ -16,7 +16,10 @@ Rules live in `lint/styles/OpenELIS/` (Vale format). Two ways to run them:
 - **Vale** (reference): `cd lint && vale --config .vale.ini <page>.xhtml`. On Casey's Mac install
   it with `brew install vale` if `which vale` finds nothing.
 - **Fallback, no install** (cloud sandbox, CI): `python3 lint/oe_lint.py <page>.xhtml [...]`
-  (`--json` for machine output). Same rule files, same levels; exit 1 on any error.
+  (`--json` for machine output). Same rule files, same levels; exit 1 on any error. It needs
+  PyYAML; where Python lacks it (Casey's Mac), use a throwaway venv:
+  `/usr/bin/python3 -m venv /tmp/oe-lint-venv && /tmp/oe-lint-venv/bin/pip -q install pyyaml`, then
+  run the linter with `/tmp/oe-lint-venv/bin/python`.
 
 | Rule | Level | Catches |
 |---|---|---|

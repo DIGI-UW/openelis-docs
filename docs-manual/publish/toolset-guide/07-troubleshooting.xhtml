@@ -1,0 +1,50 @@
+<p><strong>Goal of this page.</strong> Quick fixes for the problems you are most likely to hit, what the plugin's safety checks mean when they stop Claude, and the words used across this guide.</p>
+<h2>Common problems and fixes</h2>
+<table><tbody>
+<tr><th>What you see</th><th>Most likely cause</th><th>What to do</th></tr>
+<tr><td>Claude can't see GitHub or Confluence</td><td>A connector is not connected or needs signing in again</td><td>Reconnect it in the app's connector settings (<a href="https://uwdigi.atlassian.net/wiki/spaces/DEV/pages/1491599361">Part 1</a>), then start a new chat.</td></tr>
+<tr><td>Claude can't reach your Mac</td><td>The Claude app is closed, the Mac is asleep, or the macOS permission was not given</td><td>Open the app, wake the Mac, and check System Settings &gt; Privacy &amp; Security &gt; Accessibility.</td></tr>
+<tr><td>Claude follows old steps (for example, drafts a page in the review area first)</td><td>An old skill is still installed next to the plugin</td><td>Remove <code>openelis-user-manual</code>, <code>openelis-screenshots</code>, <code>openelis-docs-freshness</code> and <code>triage-bench-sync</code> (<a href="https://uwdigi.atlassian.net/wiki/spaces/DEV/pages/1491632129">Part 2</a>).</td></tr>
+<tr><td>A capture shows the login page or a blank screen</td><td>The saved login expired, or the site was slow</td><td>Ask Claude to log in to the harness again and retry. If it keeps happening, tell Casey.</td></tr>
+<tr><td>Publishing fails with "not permitted to create attachments"</td><td>The publishing key was made for Jira only</td><td>Ask Casey for a new key with Confluence permissions. Retrying will not help.</td></tr>
+<tr><td>The bench says the last freshness check is many days old</td><td>The Saturday task did not run or could not reach the Mac</td><td>Ask Claude to "run the docs freshness check". Tell Casey if the Saturday run keeps missing.</td></tr>
+<tr><td>Confluence returns a temporary error (for example 503)</td><td>Atlassian was briefly unavailable</td><td>Wait a minute and ask Claude to try again.</td></tr>
+</tbody></table>
+<h2>When a safety check stops Claude</h2>
+<p>The plugin checks some actions before they happen. A stop is the check doing its job; Claude says which one and fixes the cause.</p>
+<table><tbody>
+<tr><th>Message mentions</th><th>Meaning</th><th>What happens next</th></tr>
+<tr><td>"this writes to Confluence"</td><td>A publishing script is about to run</td><td>You approve or decline. Approve only for the pages you asked for.</td></tr>
+<tr><td>"em dash"</td><td>The text has an em dash, which our writing rule does not allow</td><td>Claude rewrites the sentence with a colon, comma or brackets and tries again.</td></tr>
+<tr><td>"contentFormat adf"</td><td>Claude tried to edit an existing page in a format that would damage its tables, comments or images</td><td>Claude re-reads the page in the safe format and makes the edit that way.</td></tr>
+<tr><td>"credentials" or "token"</td><td>A command would have shown the publishing key</td><td>Nothing is shown. If you need to confirm the key exists, Claude can check that without printing it.</td></tr>
+<tr><td>"triage bench"</td><td>Manual work happened but the bench was not updated</td><td>Claude syncs the bench, or says in one line why nothing changed.</td></tr>
+</tbody></table>
+<h2>Golden rules</h2>
+<ul>
+<li><strong>Never paste passwords, tokens or patient data into a chat.</strong> Connectors and key files handle sign-in; Claude never needs a secret typed in.</li>
+<li><strong>Document only what the software does today.</strong> If you can't reproduce a step on the test site, don't publish it.</li>
+<li><strong>Every piece of manual work ends on the bench.</strong> If it isn't on the bench, nobody will see it.</li>
+<li><strong>When in doubt, ask Claude to explain what it is about to do</strong>, then ask Casey if you are still unsure.</li>
+</ul>
+<h2>Who to ask</h2>
+<p>For access, keys, plugin files and final publishing calls, <strong>Casey</strong> is the first stop. For "how do I phrase this?", ask Claude directly in the chat.</p>
+<h2>Glossary</h2>
+<table><tbody>
+<tr><th>Term</th><th>Plain-language meaning</th></tr>
+<tr><td><strong>Plugin</strong></td><td>A package of skills plus automatic safety checks. We use two: openelis-docs and openelis-qa.</td></tr>
+<tr><td><strong>Skill</strong></td><td>House instructions Claude loads by itself for one kind of task, such as writing a manual page.</td></tr>
+<tr><td><strong>Connector</strong></td><td>A secure link that lets Claude read and write in another system (Jira, Confluence, GitHub) or use your Mac. You approve each one.</td></tr>
+<tr><td><strong>Project</strong></td><td>The claude.ai project "OpenELIS User Manual", which keeps the notes from every session.</td></tr>
+<tr><td><strong>Documentation triage bench</strong></td><td>The live page listing what to fix next in the manual, with a ready prompt for each item. It replaced the Doc Freshness Tracker.</td></tr>
+<tr><td><strong>Freshness check</strong></td><td>The weekly run that opens every documented screen and checks the page still matches it, then checks the translations.</td></tr>
+<tr><td><strong>Drift</strong></td><td>The screen changed since the page was written, so the page no longer matches.</td></tr>
+<tr><td><strong>Contract</strong></td><td>A page's list of screens and the labels it relies on; the freshness check uses it.</td></tr>
+<tr><td><strong>Work in progress</strong></td><td>A published page whose review is not finished; it carries a yellow note naming the review ticket.</td></tr>
+<tr><td><strong>Page reviewer</strong></td><td>A second Claude that reads a finished page cold and lists anything that does not match the screenshots.</td></tr>
+<tr><td><strong>Capture harness</strong></td><td>The project that signs in to the live software and takes the screenshots and videos (DIGI-UW/OpenELIS-QA).</td></tr>
+<tr><td><strong>Instance or site</strong></td><td>A running copy of OpenELIS, such as testing.openelis-global.org.</td></tr>
+<tr><td><strong>Repository (repo)</strong></td><td>An online folder of project files on GitHub. Ours are DIGI-UW/openelis-docs and DIGI-UW/OpenELIS-QA.</td></tr>
+<tr><td><strong>Scheduled task</strong></td><td>Something Claude runs on a schedule, such as the Saturday freshness check.</td></tr>
+</tbody></table>
+<p>That's the whole toolset. Bookmark the <a href="https://uwdigi.atlassian.net/wiki/spaces/DEV/pages/1491533825">guide's first page</a> and the <a href="https://claude.ai/artifact/LdorWo3a3SHUgKpRAQUJcp">triage bench</a>.</p>

@@ -1,0 +1,27 @@
+<p><strong>Goal of this page.</strong> Get the two working folders onto your Mac once: the <strong>capture harness</strong> (which signs in to the live software and takes the screenshots, and runs the freshness check) and the <strong>docs tooling</strong> (drift contracts, the Confluence publisher, the translation kit). Claude does almost all of it; you approve a few installs.</p>
+<ac:structured-macro ac:name="info"><ac:rich-text-body><p>Screenshots for a page can also be taken by Claude in its own cloud workspace, with nothing on your Mac. The Mac setup is still needed for the freshness check and for publishing, because your publishing key lives only on your Mac.</p></ac:rich-text-body></ac:structured-macro>
+<h2>The whole setup is one conversation</h2>
+<p>Start a new chat in the OpenELIS User Manual project and paste this in:</p>
+<ac:structured-macro ac:name="code"><ac:parameter ac:name="language">text</ac:parameter><ac:plain-text-body><![CDATA[Please set up the OpenELIS docs toolset on my Mac:
+1. Clone DIGI-UW/OpenELIS-QA into ~/Documents/OpenELIS QA, install Node and the Playwright Chromium browser, and save a login for testing.openelis-global.org.
+2. Clone DIGI-UW/openelis-docs into ~/Documents/openelis-docs, and link its docs-manual folder and run-d.sh into ~/Documents/OpenELIS QA the way the openelis-docs README describes.
+3. Do one test capture of the testing dashboard and show it to me.
+Tell me before each install and whenever you need me to approve something.]]></ac:plain-text-body></ac:structured-macro>
+<p>Claude will:</p>
+<ol>
+<li><strong>Clone the capture harness</strong> to <code>~/Documents/OpenELIS QA</code>.</li>
+<li><strong>Install Node</strong> (the engine the harness runs on) if it is missing, and the automation browser.</li>
+<li><strong>Save a login</strong> to the test site, so captures can sign in on their own.</li>
+<li><strong>Clone the docs tooling</strong> to <code>~/Documents/openelis-docs</code> and link it into the harness folder (the freshness check runs from there).</li>
+<li><strong>Take a test screenshot</strong> and show it to you.</li>
+</ol>
+<h2>The publishing key (only if you will publish)</h2>
+<p>When Claude publishes a page with its figures, a script on your Mac uses a small key file at <code>~/.openelis/confluence.env</code>. Ask Casey to help you create it once. It holds your Confluence access: never paste it into a chat, never share it, never put it in GitHub. Claude never needs to see it, and the plugin stops Claude from printing it. If you only capture and draft, and Casey publishes, skip this.</p>
+<p>The key needs Confluence permissions, not only Jira ones. A key made for Jira can read pages but every upload of a figure fails; Part 7 explains how to spot that.</p>
+<h2>Good to know</h2>
+<ul>
+<li><strong>Which site.</strong> Manual pages are checked on <code>testing.openelis-global.org</code>. Quality pages (EQA, QC) and environmental and vector sample types are checked on <code>pngtest.openelis-global.org</code>, a test server where Claude may change and add data. <code>indonesiademo</code> is no longer used.</li>
+<li><strong>Long jobs run in the background.</strong> A full capture or the freshness check can take up to 30 minutes; Claude starts it, checks on it, and tells you when it is done.</li>
+<li><strong>Media stays out of GitHub.</strong> Screenshots stay in the harness folder until they are put on a page.</li>
+</ul>
+<p><strong>Done with Part 3 when:</strong> the test capture shows a real screenshot of the software. Next: <a href="https://uwdigi.atlassian.net/wiki/spaces/DEV/pages/1491697665">Part 4: Use the Documentation triage bench</a>.</p>

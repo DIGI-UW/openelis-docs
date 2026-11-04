@@ -1,0 +1,37 @@
+<ac:structured-macro ac:name="info"><ac:rich-text-body><p><strong>Updated 4 November 2026.</strong> The toolset is now one plugin, <strong>openelis-docs</strong>, instead of separate skills, and the Doc Freshness Tracker has been replaced by the <strong>Documentation triage bench</strong>. If you set up from the July version of this guide, go through Part 2 again and remove the old skills.</p></ac:rich-text-body></ac:structured-macro>
+<p><strong>Who this is for.</strong> Taib, Jen, and anyone on the docs and training team who helps keep the OpenELIS Global user manual, its translations, screenshots and website current. <strong>You do not need to be a developer.</strong> A few one-time setup steps install software, and we say clearly when to ask for help. Day to day, you ask Claude in plain English.</p>
+<h2>What this toolset does</h2>
+<p>OpenELIS changes every release, and the manual has to keep up. With the toolset installed, you can ask Claude to:</p>
+<ul>
+<li>write or update a <strong>user manual page</strong>: Claude checks the live software, captures the screenshots, writes the page in our house style, and publishes it to Confluence;</li>
+<li>capture <strong>screenshots and walkthrough videos</strong> of the real software for the manual, the website or a review;</li>
+<li>run the <strong>freshness check</strong>, which finds manual pages whose screens changed and translated pages that are behind their English page;</li>
+<li>keep the <strong>French and Indonesian manuals</strong> (Spanish next) in step with the English one;</li>
+<li>keep the <strong>Documentation triage bench</strong> current: the one list of what to fix next.</li>
+</ul>
+<h2>The one rule</h2>
+<ac:structured-macro ac:name="warning"><ac:rich-text-body><p><strong>Document only what the software does today, on a live test site.</strong> Many OpenELIS features are designed but not built yet, or built differently from the design. A step goes into the manual only after someone has done it on the live site. If you cannot reproduce a step, say so; do not publish it.</p></ac:rich-text-body></ac:structured-macro>
+<h2>How this guide is organized</h2>
+<p>Do the parts in order the first time. Parts 1 to 3 are one-time setup. Parts 4 to 6 are the everyday work. Part 7 is help.</p>
+<table><tbody>
+<tr><th>Part</th><th>What it covers</th><th>How often</th></tr>
+<tr><td><a href="https://uwdigi.atlassian.net/wiki/spaces/DEV/pages/1491599361">Part 1: Set up Claude and its connectors</a></td><td>The Claude desktop app, sign-in, and the connections to Confluence, Jira, GitHub and your Mac</td><td>Once</td></tr>
+<tr><td><a href="https://uwdigi.atlassian.net/wiki/spaces/DEV/pages/1491632129">Part 2: Install the OpenELIS plugins</a></td><td>The openelis-docs and openelis-qa plugins, and removing the old skills</td><td>Once, then on each new version</td></tr>
+<tr><td><a href="https://uwdigi.atlassian.net/wiki/spaces/DEV/pages/1491664898">Part 3: Set up capture and publishing on your Mac</a></td><td>The capture harness, the docs tooling, and the publishing key</td><td>Once (Claude does most of it)</td></tr>
+<tr><td><a href="https://uwdigi.atlassian.net/wiki/spaces/DEV/pages/1491697665">Part 4: Use the Documentation triage bench</a></td><td>What to work on next, the weekly freshness check, translation freshness</td><td>Every time you start</td></tr>
+<tr><td><a href="https://uwdigi.atlassian.net/wiki/spaces/DEV/pages/1491730433">Part 5: Write or update a manual page</a></td><td>From "this page is stale" to a published, reviewed page</td><td>Everyday work</td></tr>
+<tr><td><a href="https://uwdigi.atlassian.net/wiki/spaces/DEV/pages/1491304451">Part 6: Capture screenshots and videos</a></td><td>Media for the manual, the website and reviews</td><td>As needed</td></tr>
+<tr><td><a href="https://uwdigi.atlassian.net/wiki/spaces/DEV/pages/1491664919">Part 7: Troubleshooting and glossary</a></td><td>Fixes for common problems, and what the safety checks mean</td><td>As needed</td></tr>
+<tr><td><a href="https://uwdigi.atlassian.net/wiki/spaces/DEV/pages/1491107851">Copy-paste prompts for Claude</a></td><td>Ready-made requests</td><td>Any time</td></tr>
+</tbody></table>
+<h2>Where things live</h2>
+<table><tbody>
+<tr><th>What</th><th>Where</th></tr>
+<tr><td>The user manual</td><td><a href="https://uwdigi.atlassian.net/wiki/spaces/OG/pages/1326972929">📖 User Manual</a> in the OpenELIS Global space</td></tr>
+<tr><td>The plugin and the docs tooling</td><td><a href="https://github.com/DIGI-UW/openelis-docs">DIGI-UW/openelis-docs</a> on GitHub (download from its <a href="https://github.com/DIGI-UW/openelis-docs/releases">releases</a>)</td></tr>
+<tr><td>The capture harness and the openelis-qa plugin</td><td><a href="https://github.com/DIGI-UW/OpenELIS-QA">DIGI-UW/OpenELIS-QA</a></td></tr>
+<tr><td>What to do next</td><td><a href="https://claude.ai/artifact/LdorWo3a3SHUgKpRAQUJcp">Documentation triage bench</a></td></tr>
+<tr><td>Writing conventions</td><td><a href="https://uwdigi.atlassian.net/wiki/spaces/OG/pages/1529872422">User manual style guide</a></td></tr>
+</tbody></table>
+<p><strong>Before you start, you'll want:</strong> a work Mac you can install software on, your UW Atlassian (Jira and Confluence) login, and a GitHub account with access to the <code>DIGI-UW</code> organization. If you are missing any of these, ask Casey first.</p>
+<p><em>Maintained by the OpenELIS product team. Something out of date? Add a comment on the page, or ping Casey.</em></p>

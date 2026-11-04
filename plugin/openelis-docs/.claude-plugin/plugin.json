@@ -1,6 +1,6 @@
 {
   "name": "openelis-docs",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Documentation for OpenELIS Global: author verified user manual pages, lint and grade them, publish to Confluence with figures, watch them for UI drift, keep the French, Indonesian and Spanish manuals fresh, and keep the Documentation triage bench current.",
   "author": {
     "name": "Casey Iiams-Hauser, DIGI (University of Washington)"
