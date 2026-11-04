@@ -1,0 +1,62 @@
+<p><em>How-to · Reception staff</em></p>
+<h2>At a glance</h2>
+<table><tbody>
+<tr><th>Purpose</th><td>Register a new patient so they can be linked to test orders.</td></tr>
+<tr><th>You'll end up with</th><td>A saved patient record, found by patient search and in order entry.</td></tr>
+<tr><th>Who does this</th><td>Reception staff. Access is set by user permissions and can be configured by your administrator.</td></tr>
+<tr><th>Before you start</th><td>The patient's name, sex and date of birth, and their identifiers if they have them. Search first (see <a href="https://uwdigi.atlassian.net/wiki/spaces/OG/pages/1441136648">Patient Management</a>) so you do not register someone twice.</td></tr>
+<tr><th>Where</th><td>Main menu → Patient → Add/Edit Patient → New Patient</td></tr>
+</tbody></table>
+<p>The New Patient form captures a patient's core identity plus optional contact, emergency and identification details. Identifier labels can be set by your site; the figures show the labels used on the test server, where the patient identifier is called <strong>Patient ID / Clinic ID / UR number</strong>.</p>
+
+<h2>Step 1: Open the New Patient form</h2>
+<ol>
+<li><p>Open <strong>Main menu → Patient → Add/Edit Patient</strong>. The <strong>Add Or Modify Patient</strong> page opens on <strong>Search for Patient</strong>.</p></li>
+<li><p>Click <strong>New Patient</strong>. The <strong>Patient Information</strong> form opens.</p></li>
+</ol>
+
+<h2>Step 2: Enter the patient's details</h2>
+<ol>
+<li><p>Enter the patient identifier (<strong>Patient ID / Clinic ID / UR number</strong> on the test server) and the <strong>National ID</strong> if you have them. Whether National ID is required depends on your site's patient configuration; on the test server it was optional.</p></li>
+<li><p>Enter <strong>Last Name</strong> and <strong>First Name</strong>, and optionally <strong>Primary phone</strong> (the hint under it shows the local format, here <em>Local: xxxx-xxxx</em>) and <strong>Email</strong>.</p></li>
+<li><p>Choose <strong>Sex</strong> (required). Enter <strong>Date of Birth</strong> (required) as dd/mm/yyyy or pick it from the calendar. <strong>Age/Years</strong>, <strong>Months</strong> and <strong>Days</strong> fill in from the date of birth.</p>
+<p>{{IMG:01-new-patient.png}}</p>
+<p><em>Figure 1. A new patient with identifier, name, phone, sex and date of birth. The age fields have filled in.</em></p></li>
+<li><p>Optionally click <strong>Add Photo</strong>, and expand <strong>Emergency Contact Info</strong>, <strong>Additional Information</strong> and <strong>Identification Documents</strong> to record more.</p></li>
+</ol>
+
+<h2>Step 3: Save</h2>
+<ol>
+<li><p>Click <strong>Save</strong> at the bottom of the form (<strong>Clear</strong> empties it). If Sex or Date of Birth is missing, nothing is saved and the fields are marked: <em>Sex is Required</em> and <em>Patient Birth date Required</em>.</p>
+<p>{{IMG:02-required.png}}</p>
+<p><em>Figure 2. Save with only a name: Sex and Date of Birth are marked as required.</em></p></li>
+<li><p>When the record is saved, the form becomes read-only and an <strong>Edit</strong> switch appears next to <strong>Patient Information</strong>. Use it to correct anything straight away.</p>
+<p>{{IMG:03-saved.png}}</p>
+<p><em>Figure 3. The saved patient, read-only, with the Edit switch.</em></p></li>
+</ol>
+
+<h2>Field reference</h2>
+<table><tbody>
+<tr><th>Field</th><th>Notes</th></tr>
+<tr><td>Patient identifier (Patient ID / Clinic ID / UR number on the test server)</td><td>Optional on the test server. Searchable as Patient Id.</td></tr>
+<tr><td>National ID</td><td>Optional on the test server. Your site's patient configuration can make it required.</td></tr>
+<tr><td>Last Name, First Name</td><td>The patient's name.</td></tr>
+<tr><td>Primary phone, Email</td><td>Optional. The phone hint shows the local format.</td></tr>
+<tr><td>Sex</td><td>Required. Male or Female.</td></tr>
+<tr><td>Date of Birth</td><td>Required. dd/mm/yyyy. Age/Years, Months and Days are calculated from it.</td></tr>
+<tr><td>Emergency Contact Info, Additional Information, Identification Documents</td><td>Optional sections that expand for further detail.</td></tr>
+</tbody></table>
+
+<h2>Notes</h2>
+<ul>
+<li>A patient can also be registered from order entry. See <a href="https://uwdigi.atlassian.net/wiki/spaces/OG/pages/1648787462">Enter a clinical order</a>, which also checks for possible matches before creating a patient.</li>
+<li>Duplicate records are combined with <strong>Patient → Merge Patient</strong>.</li>
+<li>On 3.3.0-SNAPSHOT the <em>Sex is Required</em> message shows twice under the Sex field.</li>
+</ul>
+
+<h2>Provenance</h2>
+<table><tbody>
+<tr><th>Drafted</th><td><p>12 October 2026 against <strong>3.3.0-SNAPSHOT</strong> on <code>testing.openelis-global.org</code>. Rewritten from the July draft, which listed National ID as required and Gender instead of Sex.</p>
+<p>DRIVEN: New Patient with identifier, name, phone, sex and date of birth, Save (record read-only with Edit switch), Save with Sex and Date of Birth empty (errors). OBSERVED only: Add Photo, Email, the three expandable sections, Clear, entering an age instead of a date of birth.</p>
+<p>Seed data left on testing: patient <em>Lucy Morea</em> (UR-104455, female, 15/04/1992).</p></td></tr>
+</tbody></table>

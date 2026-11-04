@@ -1,0 +1,35 @@
+{
+  "description": "openelis-docs: docs context at session start, a gate on Confluence publish scripts and credential printing, em dash and ADF guards on Confluence payloads, and a triage bench reminder after manual work.",
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "",
+        "hooks": [
+          { "type": "command", "command": "bash \"${CLAUDE_PLUGIN_ROOT}/hooks/scripts/run.sh\" session-start", "timeout": 10 }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Bash|mcp__.*device_bash|mcp__.*osascript",
+        "hooks": [
+          { "type": "command", "command": "bash \"${CLAUDE_PLUGIN_ROOT}/hooks/scripts/run.sh\" command-gate", "timeout": 10 }
+        ]
+      },
+      {
+        "matcher": "mcp__.*(createConfluencePage|updateConfluencePage|createConfluenceFooterComment|createConfluenceInlineComment)|Write|Edit|MultiEdit|mcp__.*Filesystem__(write_file|edit_file)",
+        "hooks": [
+          { "type": "command", "command": "bash \"${CLAUDE_PLUGIN_ROOT}/hooks/scripts/run.sh\" payload-guard", "timeout": 10 }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          { "type": "command", "command": "bash \"${CLAUDE_PLUGIN_ROOT}/hooks/scripts/run.sh\" bench-reminder", "timeout": 20 }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+extends: existence
+message: "Unresolved placeholder '%s'."
+level: error
+scope: raw
+nonword: true
+tokens:
+  - '\[\[[A-Z0-9_-]+\]\]'

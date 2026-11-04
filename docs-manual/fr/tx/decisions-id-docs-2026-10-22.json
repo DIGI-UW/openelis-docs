@@ -1,0 +1,1927 @@
+[
+ {
+  "key": "label.validation.bulk.bodyClear",
+  "status": "approved",
+  "value": "{count, plural, other {# hasil ini}} berada di jalur Tanpa temuan: dalam rentang, tidak ada kegagalan QC tercatat, tidak ada ketidaksesuaian, tidak diubah, tidak kritis. Hasil yang tidak lagi tanpa temuan sebelum rilis akan dilewati.",
+  "original": "# hasil ini",
+  "note": "docs-id 2026-10-22: grammar, value is truncated to '# hasil ini': ICU plural structure lost and the rest of the sentence missing; plus Casey 22 Oct global decision"
+ },
+ {
+  "key": "provider.isActive",
+  "status": "approved",
+  "value": "Aktif",
+  "original": "Adalah Aktif",
+  "note": "docs-id 2026-10-22: grammar, 'Adalah Aktif' is a word-for-word literal of 'Is Active'; sibling key uses 'Aktif'"
+ },
+ {
+  "key": "systemuser.isActive",
+  "status": "approved",
+  "value": "Aktif",
+  "original": "Adalah Aktif",
+  "note": "docs-id 2026-10-22: grammar, 'Adalah Aktif' is a word-for-word literal of 'Is Active'; sibling key uses 'Aktif'"
+ },
+ {
+  "key": "admin.labelPresets.col.barcodeType",
+  "status": "approved",
+  "value": "Jenis Kode Batang",
+  "original": "Jenis Kode QR",
+  "note": "docs-id 2026-10-22: meaning, Field chooses among barcode types (Code 128, QR, etc.); 'Kode QR' is wrong"
+ },
+ {
+  "key": "admin.labelPresets.editor.section.barcodeSettings",
+  "status": "approved",
+  "value": "Pengaturan Kode Batang",
+  "original": "Pengaturan Kode QR",
+  "note": "docs-id 2026-10-22: meaning, A QR code is only one kind of barcode; the label means barcode in general"
+ },
+ {
+  "key": "admin.labelPresets.field.barcodeType",
+  "status": "approved",
+  "value": "Jenis Kode Batang",
+  "original": "Jenis Kode QR",
+  "note": "docs-id 2026-10-22: meaning, Field chooses among barcode types (Code 128, QR, etc.); 'Kode QR' is wrong"
+ },
+ {
+  "key": "analyzer.errorDashboard.stats.unacknowledged",
+  "status": "approved",
+  "value": "Belum diketahui",
+  "original": "Tidak diketahui",
+  "note": "docs-id 2026-10-22: meaning, 'Tidak diketahui' means 'unknown'; sibling status Acknowledged is 'Sudah diketahui', so the opposite is 'Belum diketahui'."
+ },
+ {
+  "key": "analyzer.errorDashboard.status.unacknowledged",
+  "status": "approved",
+  "value": "Belum diketahui",
+  "original": "Tidak diketahui",
+  "note": "docs-id 2026-10-22: meaning, 'Tidak diketahui' means 'unknown'; sibling status Acknowledged is 'Sudah diketahui', so the opposite is 'Belum diketahui'."
+ },
+ {
+  "key": "analyzer.form.port",
+  "status": "approved",
+  "value": "Nomor Port",
+  "original": "Nomor Portal",
+  "note": "docs-id 2026-10-22: meaning, 'Portal' is a web portal; a network port is 'port'"
+ },
+ {
+  "key": "analyzer.testMapping.messageInput",
+  "status": "approved",
+  "value": "Contoh Pesan ASTM",
+  "original": "Sampel Pesan ASTM",
+  "note": "docs-id 2026-10-22: meaning, 'Sample' here means an example message to paste, not a lab sample; 'Sampel Pesan' is a mistranslation."
+ },
+ {
+  "key": "env.sample.manifest.title",
+  "status": "approved",
+  "value": "Manifes per Sampel",
+  "original": "Manifes Pra-Pengambilan Sampel",
+  "note": "docs-id 2026-10-22: meaning, 'Pra-Pengambilan Sampel' means pre-collection; the manifest is one row per sample"
+ },
+ {
+  "key": "esig.label.password",
+  "status": "approved",
+  "value": "Kata Sandi",
+  "original": "Kata kunci",
+  "note": "docs-id 2026-10-22: meaning, 'Kata kunci' means keyword; the standard Indonesian for password is 'Kata Sandi'"
+ },
+ {
+  "key": "externalconnections.authtype.basic.password",
+  "status": "approved",
+  "value": "Kata Sandi",
+  "original": "Kata kunci",
+  "note": "docs-id 2026-10-22: meaning, 'Kata kunci' means keyword; the standard Indonesian for password is 'Kata Sandi'"
+ },
+ {
+  "key": "label.validation.lane.clear",
+  "status": "approved",
+  "value": "Tanpa Temuan",
+  "original": "Kosongkan",
+  "note": "docs-id 2026-10-22: meaning, Casey 22 Oct: Clear lane = Tanpa Temuan ('Kosongkan' means empty out)"
+ },
+ {
+  "key": "label.validation.search.toDate",
+  "status": "approved",
+  "value": "Sampai",
+  "original": "Kepada",
+  "note": "docs-id 2026-10-22: meaning, Date-range end field paired with From = 'Dari'; 'Kepada' means 'addressed to' (a recipient)."
+ },
+ {
+  "key": "login.login.password",
+  "status": "approved",
+  "value": "Kata Sandi",
+  "original": "Kata kunci",
+  "note": "docs-id 2026-10-22: meaning, 'Kata kunci' means keyword; the standard Indonesian for password is 'Kata Sandi'"
+ },
+ {
+  "key": "login.msg.password",
+  "status": "approved",
+  "value": "Kata Sandi",
+  "original": "Kata kunci",
+  "note": "docs-id 2026-10-22: meaning, 'Kata kunci' means keyword; the standard Indonesian for password is 'Kata Sandi'"
+ },
+ {
+  "key": "microbiology.whonet.to",
+  "status": "approved",
+  "value": "Sampai",
+  "original": "Kepada",
+  "note": "docs-id 2026-10-22: meaning, Date-range end field paired with From = 'Dari'; 'Kepada' means 'addressed to' (a recipient)."
+ },
+ {
+  "key": "nce.trigger.type.manual",
+  "status": "approved",
+  "value": "Manual",
+  "original": "Panduan",
+  "note": "docs-id 2026-10-22: meaning, NCE trigger type 'Manual' (raised by hand) was rendered 'Panduan' (= guide/handbook); sibling keys use 'Manual'."
+ },
+ {
+  "key": "order.filter.dateTo",
+  "status": "approved",
+  "value": "Sampai",
+  "original": "Kepada",
+  "note": "docs-id 2026-10-22: meaning, Date-range end field paired with From = 'Dari'; 'Kepada' means 'addressed to' (a recipient)."
+ },
+ {
+  "key": "pathology.label.grossexam",
+  "status": "approved",
+  "value": "Pemeriksaan Makroskopis",
+  "original": "Pemeriksaan Umum",
+  "note": "docs-id 2026-10-22: meaning, Gross examination in pathology is macroscopic examination, not 'general examination'; pairs with Pemeriksaan Mikroskopis"
+ },
+ {
+  "key": "patient.externalId",
+  "status": "approved",
+  "value": "NIK",
+  "original": "Identitas eksternal",
+  "note": "docs-id 2026-10-22: meaning, English is National ID; 'Identitas eksternal' means external identity. Other National ID keys use NIK"
+ },
+ {
+  "key": "provider.fax",
+  "status": "approved",
+  "value": "Faks",
+  "original": "No. Telp",
+  "note": "docs-id 2026-10-22: meaning, 'No. Telp' means phone number; the field is a fax number"
+ },
+ {
+  "key": "qa.qi.amendment.filter.to",
+  "status": "approved",
+  "value": "Sampai",
+  "original": "Kepada",
+  "note": "docs-id 2026-10-22: meaning, Date-range end field paired with From = 'Dari'; 'Kepada' means 'addressed to' (a recipient)."
+ },
+ {
+  "key": "qa.qi.rejection.filter.to",
+  "status": "approved",
+  "value": "Sampai",
+  "original": "Kepada",
+  "note": "docs-id 2026-10-22: meaning, Date-range end field paired with From = 'Dari'; 'Kepada' means 'addressed to' (a recipient)."
+ },
+ {
+  "key": "requestor.fax",
+  "status": "approved",
+  "value": "Faks",
+  "original": "No. Telp",
+  "note": "docs-id 2026-10-22: meaning, 'No. Telp' means phone number; the field is a fax number"
+ },
+ {
+  "key": "searchindexmanagement.label",
+  "status": "approved",
+  "value": "Pengelolaan Indeks Pencarian",
+  "original": "Cari Pengelolaan Indeks",
+  "note": "docs-id 2026-10-22: meaning, Current reads as 'Search the index management'; the screen manages the search index."
+ },
+ {
+  "key": "storage.audit.to",
+  "status": "approved",
+  "value": "Sampai",
+  "original": "Kepada",
+  "note": "docs-id 2026-10-22: meaning, Date-range end field paired with From = 'Dari'; 'Kepada' means 'addressed to' (a recipient)."
+ },
+ {
+  "key": "to.title",
+  "status": "approved",
+  "value": "Sampai",
+  "original": "Kepada",
+  "note": "docs-id 2026-10-22: meaning, Date-range end field paired with From = 'Dari'; 'Kepada' means 'addressed to' (a recipient)."
+ },
+ {
+  "key": "vectorReport.filter.to",
+  "status": "approved",
+  "value": "Sampai",
+  "original": "Kepada",
+  "note": "docs-id 2026-10-22: meaning, Date-range end field paired with From = 'Dari'; 'Kepada' means 'addressed to' (a recipient)."
+ },
+ {
+  "key": "barcode.print.preprint",
+  "status": "approved",
+  "value": "Kode Batang Pracetak",
+  "original": "Kode QR pra-cetak",
+  "note": "docs-id 2026-10-22: terminology, Barcode labels are not QR codes; use Kode Batang; EYD spelling 'pracetak'"
+ },
+ {
+  "key": "label.validation.bulk.heading",
+  "status": "approved",
+  "value": "Rilis semua hasil tanpa temuan",
+  "original": "Rilis semua hasil bebas masalah",
+  "note": "docs-id 2026-10-22: consistency, The triage 'Clear' lane is 'tanpa temuan' in the glossary; 'bebas masalah' is a different rendering of the same lane."
+ },
+ {
+  "key": "searchindexmanagement.reindex",
+  "status": "approved",
+  "value": "Mulai Pengindeksan Ulang",
+  "original": "Mulai Pengindeksan",
+  "note": "docs-id 2026-10-22: consistency, Drops 're-'; the page description already tells users to click 'Mulai Pengindeksan Ulang'."
+ },
+ {
+  "key": "storage.nav.racks",
+  "status": "approved",
+  "value": "Rak Tabung",
+  "original": "Laci",
+  "note": "docs-id 2026-10-22: decision, 'Laci' means drawer, which is wrong for a rack; but Shelf is already 'Rak', so the rack level needs a distinct word. Proposed 'Rak Tabung'; Casey to d"
+ },
+ {
+  "key": "storage.tab.racks",
+  "status": "approved",
+  "value": "Rak Tabung",
+  "original": "Laci",
+  "note": "docs-id 2026-10-22: decision, 'Laci' means drawer, which is wrong for a rack; but Shelf is already 'Rak', so the rack level needs a distinct word. Proposed 'Rak Tabung'; Casey to d"
+ },
+ {
+  "key": "admin.programs.list.toggle.showDeactivated",
+  "status": "approved",
+  "value": "Tampilkan yang nonaktif",
+  "original": "Tampilkan sudah inaktif",
+  "note": "docs-id 2026-10-22: grammar, 'Tampilkan sudah inaktif' is ungrammatical ('show already inactive'); siblings use 'nonaktif' (dinonaktifkan)."
+ },
+ {
+  "key": "admin.testCatalog.qcTargets.showDeactivated",
+  "status": "approved",
+  "value": "Tampilkan yang nonaktif",
+  "original": "Tampilkan sudah inaktif",
+  "note": "docs-id 2026-10-22: grammar, 'Tampilkan sudah inaktif' is ungrammatical ('show already inactive'); siblings use 'nonaktif' (dinonaktifkan)."
+ },
+ {
+  "key": "analyzerType.filter.showDeactivated",
+  "status": "approved",
+  "value": "Tampilkan yang nonaktif",
+  "original": "Tampilkan sudah inaktif",
+  "note": "docs-id 2026-10-22: grammar, 'Tampilkan sudah inaktif' is ungrammatical ('show already inactive'); siblings use 'nonaktif' (dinonaktifkan)."
+ },
+ {
+  "key": "calendar.management.column.csvRecurring",
+  "status": "approved",
+  "value": "Berulang",
+  "original": "Pengulangan",
+  "note": "docs-id 2026-10-22: grammar, The field says whether a holiday recurs (yes/no); 'Pengulangan' is the noun 'repetition', the adjective is 'Berulang'."
+ },
+ {
+  "key": "calendar.management.column.recurring",
+  "status": "approved",
+  "value": "Berulang",
+  "original": "Pengulangan",
+  "note": "docs-id 2026-10-22: grammar, The field says whether a holiday recurs (yes/no); 'Pengulangan' is the noun 'repetition', the adjective is 'Berulang'."
+ },
+ {
+  "key": "calendar.management.recurring",
+  "status": "approved",
+  "value": "Berulang",
+  "original": "Pengulangan",
+  "note": "docs-id 2026-10-22: grammar, The field says whether a holiday recurs (yes/no); 'Pengulangan' is the noun 'repetition', the adjective is 'Berulang'."
+ },
+ {
+  "key": "caseView.action.showDeactivated",
+  "status": "approved",
+  "value": "Tampilkan yang nonaktif",
+  "original": "Tampilkan sudah inaktif",
+  "note": "docs-id 2026-10-22: grammar, 'Tampilkan sudah inaktif' is ungrammatical ('show already inactive'); siblings use 'nonaktif' (dinonaktifkan)."
+ },
+ {
+  "key": "file.import.configuration.hasHeader",
+  "status": "approved",
+  "value": "Memiliki Baris Header",
+  "original": "Baris yang memiliki Header",
+  "note": "docs-id 2026-10-22: grammar, 'Baris yang memiliki Header' reads as 'the row that has a header'; the option asks whether the file has a header row"
+ },
+ {
+  "key": "inventory.item.showDeactivated",
+  "status": "approved",
+  "value": "Tampilkan yang nonaktif",
+  "original": "Tampilkan sudah inaktif",
+  "note": "docs-id 2026-10-22: grammar, 'Tampilkan sudah inaktif' is ungrammatical ('show already inactive'); siblings use 'nonaktif' (dinonaktifkan)."
+ },
+ {
+  "key": "inventory.tags.showDeactivated",
+  "status": "approved",
+  "value": "Tampilkan yang nonaktif",
+  "original": "Tampilkan sudah inaktif",
+  "note": "docs-id 2026-10-22: grammar, 'Tampilkan sudah inaktif' is ungrammatical ('show already inactive'); siblings use 'nonaktif' (dinonaktifkan)."
+ },
+ {
+  "key": "label.total.tests",
+  "status": "approved",
+  "value": "Total Pemeriksaan",
+  "original": "Pemeriksaan total",
+  "note": "docs-id 2026-10-22: grammar, 'Pemeriksaan total' reads as 'total (complete) examination'; the label is a count of tests."
+ },
+ {
+  "key": "label.validation.bulk.column.accession",
+  "status": "approved",
+  "value": "No. Registrasi",
+  "original": "No Registrasi.",
+  "note": "docs-id 2026-10-22: grammar, Misplaced period: 'No Registrasi.' should be 'No. Registrasi'"
+ },
+ {
+  "key": "nce.field.suspectedCauses",
+  "status": "approved",
+  "value": "Dugaan Penyebab",
+  "original": "Penyebab Diduga",
+  "note": "docs-id 2026-10-22: grammar, 'Penyebab Diduga' is a literal word order; standard Indonesian is 'Dugaan Penyebab'."
+ },
+ {
+  "key": "admin.labelPresets.field.name",
+  "status": "approved",
+  "value": "Nama Preset",
+  "original": "Nama Pengaturan",
+  "note": "docs-id 2026-10-22: meaning, 'Nama Pengaturan' means settings name; follow Preset Label"
+ },
+ {
+  "key": "admin.labelPresets.fieldKey.PATIENT_ID",
+  "status": "approved",
+  "value": "Identitas Pasien",
+  "original": "NIK Pasien",
+  "note": "docs-id 2026-10-22: meaning, NIK is the national ID number (National ID), not the lab's Patient ID; other Patient ID keys say Identitas Pasien"
+ },
+ {
+  "key": "admin.labelPresets.title",
+  "status": "approved",
+  "value": "Preset Label",
+  "original": "Pengaturan Label",
+  "note": "docs-id 2026-10-22: meaning, 'Pengaturan Label' means label settings and clashes with Site-wide Barcode Settings; a preset is a saved label template"
+ },
+ {
+  "key": "admin.page.configuration.formEntryConfigMenu.editRecord",
+  "status": "approved",
+  "value": "Edit Data",
+  "original": "Rekaman Edit",
+  "note": "docs-id 2026-10-22: meaning, 'Rekaman Edit' reads as 'edit recording'; the dialog edits a setting record"
+ },
+ {
+  "key": "admin.programs.basicInfo.showOnMicroCase.off",
+  "status": "approved",
+  "value": "Nonaktif",
+  "original": "Matikan",
+  "note": "docs-id 2026-10-22: meaning, Toggle state label, not a command; 'Matikan' is the imperative 'turn off'"
+ },
+ {
+  "key": "admin.programs.basicInfo.showOnMicroCase.on",
+  "status": "approved",
+  "value": "Aktif",
+  "original": "Nyalakan",
+  "note": "docs-id 2026-10-22: meaning, Toggle state label, not a command; 'Nyalakan' is the imperative 'turn on'"
+ },
+ {
+  "key": "admin.testCatalog.labels.col.presetName",
+  "status": "approved",
+  "value": "Nama Preset",
+  "original": "Nama Pengaturan",
+  "note": "docs-id 2026-10-22: meaning, 'Nama Pengaturan' means settings name; follow Preset Label"
+ },
+ {
+  "key": "admin.testCatalog.labels.masterOverride.off",
+  "status": "approved",
+  "value": "Nonaktif",
+  "original": "Matikan",
+  "note": "docs-id 2026-10-22: meaning, Toggle state label, not a command; 'Matikan' is the imperative 'turn off'"
+ },
+ {
+  "key": "admin.testCatalog.labels.masterOverride.on",
+  "status": "approved",
+  "value": "Aktif",
+  "original": "Nyalakan",
+  "note": "docs-id 2026-10-22: meaning, Toggle state label, not a command; 'Nyalakan' is the imperative 'turn on'"
+ },
+ {
+  "key": "alerts.acknowledge.button",
+  "status": "approved",
+  "value": "Konfirmasi",
+  "original": "Mengetahui",
+  "note": "docs-id 2026-10-22: meaning, 'Mengetahui' (to know) reads oddly as an alert action button; 'Konfirmasi' matches 'Konfirmasi tertunda' (Ack pending)"
+ },
+ {
+  "key": "analyzer.errorDashboard.acknowledgeAll",
+  "status": "approved",
+  "value": "Konfirmasi Semua",
+  "original": "Mengetahui Semua",
+  "note": "docs-id 2026-10-22: meaning, Matches proposed 'Konfirmasi' for Acknowledge"
+ },
+ {
+  "key": "analyzer.errorDashboard.action.acknowledge",
+  "status": "approved",
+  "value": "Konfirmasi",
+  "original": "Mengetahui",
+  "note": "docs-id 2026-10-22: meaning, 'Mengetahui' (to know) reads oddly as an alert action button; 'Konfirmasi' matches 'Konfirmasi tertunda' (Ack pending)"
+ },
+ {
+  "key": "analyzer.fieldMapping.panel.retire",
+  "status": "approved",
+  "value": "Hentikan Pemetaan",
+  "original": "Bebastugaskan Pemetaan",
+  "note": "docs-id 2026-10-22: meaning, 'Bebastugaskan' (relieve of duty) is used for people, not configuration; siblings 'Bebas tugas' (Retired) would become 'Dihentikan'."
+ },
+ {
+  "key": "analyzer.fieldMapping.pendingCodes.title",
+  "status": "approved",
+  "value": "Kode Tertunda yang Belum Dipetakan",
+  "original": "Pemetaan Kode yang Tertunda",
+  "note": "docs-id 2026-10-22: meaning, Current text means 'pending code mapping'; the list is codes not yet mapped"
+ },
+ {
+  "key": "analyzer.fieldMapping.retirementModal.retire",
+  "status": "approved",
+  "value": "Hentikan Pemetaan",
+  "original": "Bebastugaskan Pemetaan",
+  "note": "docs-id 2026-10-22: meaning, 'Bebastugaskan' (relieve of duty) is used for people, not configuration; siblings 'Bebas tugas' (Retired) would become 'Dihentikan'."
+ },
+ {
+  "key": "analyzer.fieldMapping.retirementModal.title",
+  "status": "approved",
+  "value": "Hentikan Pemetaan",
+  "original": "Bebastugaskan Pemetaan",
+  "note": "docs-id 2026-10-22: meaning, 'Bebastugaskan' (relieve of duty) is used for people, not configuration; siblings 'Bebas tugas' (Retired) would become 'Dihentikan'."
+ },
+ {
+  "key": "barcode.label.info.patientId",
+  "status": "approved",
+  "value": "Identitas Pasien",
+  "original": "NIK Pasien",
+  "note": "docs-id 2026-10-22: meaning, NIK is the national ID number (National ID), not the lab's Patient ID; other Patient ID keys say Identitas Pasien"
+ },
+ {
+  "key": "button.locations.undo",
+  "status": "approved",
+  "value": "Urungkan",
+  "original": "Batal",
+  "note": "docs-id 2026-10-22: meaning, 'Batal' means Cancel; Undo reverses a change just made, which is 'Urungkan'."
+ },
+ {
+  "key": "coldStorage.dashboard.acknowledge",
+  "status": "approved",
+  "value": "Konfirmasi",
+  "original": "Mengetahui",
+  "note": "docs-id 2026-10-22: meaning, 'Mengetahui' (to know) reads oddly as an alert action button; 'Konfirmasi' matches 'Konfirmasi tertunda' (Ack pending)"
+ },
+ {
+  "key": "env.complianceStandards.title",
+  "status": "approved",
+  "value": "Baku Mutu yang Berlaku",
+  "original": "Baku Mutu Tersedia",
+  "note": "docs-id 2026-10-22: meaning, 'Tersedia' means available, not applicable"
+ },
+ {
+  "key": "freezer.alert.detail.acknowledge",
+  "status": "approved",
+  "value": "Konfirmasi",
+  "original": "Mengetahui",
+  "note": "docs-id 2026-10-22: meaning, 'Mengetahui' (to know) reads oddly as an alert action button; 'Konfirmasi' matches 'Konfirmasi tertunda' (Ack pending)"
+ },
+ {
+  "key": "gps.manual.entry.off",
+  "status": "approved",
+  "value": "Nonaktif",
+  "original": "Matikan",
+  "note": "docs-id 2026-10-22: meaning, Toggle state label, not a command; 'Matikan' is the imperative 'turn off'"
+ },
+ {
+  "key": "gps.manual.entry.on",
+  "status": "approved",
+  "value": "Aktif",
+  "original": "Nyalakan",
+  "note": "docs-id 2026-10-22: meaning, Toggle state label, not a command; 'Nyalakan' is the imperative 'turn on'"
+ },
+ {
+  "key": "label.validation.review.modify.newValue",
+  "status": "approved",
+  "value": "Hasil baru",
+  "original": "Hasil terbaru",
+  "note": "docs-id 2026-10-22: meaning, 'Hasil terbaru' means 'latest result'; the field holds the corrected new value"
+ },
+ {
+  "key": "laporanHasil.detail.siteInfo",
+  "status": "approved",
+  "value": "Informasi Situs",
+  "original": "Pengaturan Informasi Aplikasi",
+  "note": "docs-id 2026-10-22: meaning, 'Pengaturan Informasi Aplikasi' means Application Information Settings; label is Site Information"
+ },
+ {
+  "key": "logging.management.tail.off",
+  "status": "approved",
+  "value": "Nonaktif",
+  "original": "Matikan",
+  "note": "docs-id 2026-10-22: meaning, Toggle state label, not a command; 'Matikan' is the imperative 'turn off'"
+ },
+ {
+  "key": "logging.management.tail.on",
+  "status": "approved",
+  "value": "Aktif",
+  "original": "Nyalakan",
+  "note": "docs-id 2026-10-22: meaning, Toggle state label, not a command; 'Nyalakan' is the imperative 'turn on'"
+ },
+ {
+  "key": "master.lists.page.site",
+  "status": "approved",
+  "value": "Informasi Situs",
+  "original": "Pengaturan Informasi Aplikasi",
+  "note": "docs-id 2026-10-22: meaning, 'Pengaturan Informasi Aplikasi' means Application Information Settings; label is Site Information"
+ },
+ {
+  "key": "microbiology.critical.acknowledge",
+  "status": "approved",
+  "value": "Konfirmasi",
+  "original": "Mengetahui",
+  "note": "docs-id 2026-10-22: meaning, 'Mengetahui' (to know) reads oddly as an alert action button; 'Konfirmasi' matches 'Konfirmasi tertunda' (Ack pending)"
+ },
+ {
+  "key": "nce.action.acknowledge",
+  "status": "approved",
+  "value": "Konfirmasi",
+  "original": "Mengetahui",
+  "note": "docs-id 2026-10-22: meaning, 'Mengetahui' (to know) reads oddly as an alert action button; 'Konfirmasi' matches 'Konfirmasi tertunda' (Ack pending)"
+ },
+ {
+  "key": "qc.dashboard.alerts.acknowledge",
+  "status": "approved",
+  "value": "Konfirmasi",
+  "original": "Mengetahui",
+  "note": "docs-id 2026-10-22: meaning, 'Mengetahui' (to know) reads oddly as an alert action button; 'Konfirmasi' matches 'Konfirmasi tertunda' (Ack pending)"
+ },
+ {
+  "key": "result.acceptasis.undo",
+  "status": "approved",
+  "value": "Urungkan",
+  "original": "Batal",
+  "note": "docs-id 2026-10-22: meaning, 'Batal' means Cancel; Undo reverses a change just made, which is 'Urungkan'."
+ },
+ {
+  "key": "rulebuilder.label.overallOptions",
+  "status": "approved",
+  "value": "Opsi Keseluruhan",
+  "original": "Semua Opsi",
+  "note": "docs-id 2026-10-22: meaning, 'Semua Opsi' means 'all options'; the control sets the overall condition combiner"
+ },
+ {
+  "key": "rulebuilder.label.toggleRule",
+  "status": "approved",
+  "value": "Aktifkan / Nonaktifkan",
+  "original": "Alihkan Aturan",
+  "note": "docs-id 2026-10-22: meaning, 'Alihkan Aturan' means 'Switch Rule' and does not match the label"
+ },
+ {
+  "key": "sample.labnumber.reassign.undo",
+  "status": "approved",
+  "value": "Urungkan",
+  "original": "Batal",
+  "note": "docs-id 2026-10-22: meaning, 'Batal' means Cancel; Undo reverses a change just made, which is 'Urungkan'."
+ },
+ {
+  "key": "sampleAcceptance.review.title",
+  "status": "approved",
+  "value": "Penerimaan Sampel Masuk",
+  "original": "Penerimaan Pendaftaran",
+  "note": "docs-id 2026-10-22: meaning, 'Penerimaan Pendaftaran' means acceptance of a registration; the screen accepts incoming samples"
+ },
+ {
+  "key": "sidenav.label.admin.formEntry.siteInfoconfig",
+  "status": "approved",
+  "value": "Informasi Situs",
+  "original": "Pengaturan Informasi Aplikasi",
+  "note": "docs-id 2026-10-22: meaning, 'Pengaturan Informasi Aplikasi' means Application Information Settings; label is Site Information"
+ },
+ {
+  "key": "sidenav.label.admin.labelPresets",
+  "status": "approved",
+  "value": "Preset Label",
+  "original": "Pengaturan Label",
+  "note": "docs-id 2026-10-22: meaning, 'Pengaturan Label' means label settings and clashes with Site-wide Barcode Settings; a preset is a saved label template"
+ },
+ {
+  "key": "testcalculation.label.insertOperation",
+  "status": "approved",
+  "value": "Sisipkan Operasi",
+  "original": "Masukan Operasi",
+  "note": "docs-id 2026-10-22: meaning, 'Masukan' is a noun (input/feedback); the action is to insert an operation"
+ },
+ {
+  "key": "admin.labelPresets.activated",
+  "status": "approved",
+  "value": "Preset diaktifkan",
+  "original": "Pengaturan diaktifkan",
+  "note": "docs-id 2026-10-22: terminology, Casey 22 Oct global decision (Clear = Tanpa Temuan, Password = Kata Sandi, Preset Label, Rack = Rak Tabung)"
+ },
+ {
+  "key": "admin.labelPresets.addButton",
+  "status": "approved",
+  "value": "Tambah Preset",
+  "original": "Tambah Pengaturan",
+  "note": "docs-id 2026-10-22: terminology, Casey 22 Oct global decision (Clear = Tanpa Temuan, Password = Kata Sandi, Preset Label, Rack = Rak Tabung)"
+ },
+ {
+  "key": "admin.labelPresets.created",
+  "status": "approved",
+  "value": "Preset dibuat",
+  "original": "Pengaturan dibuat",
+  "note": "docs-id 2026-10-22: terminology, Casey 22 Oct global decision (Clear = Tanpa Temuan, Password = Kata Sandi, Preset Label, Rack = Rak Tabung)"
+ },
+ {
+  "key": "admin.labelPresets.deactivated",
+  "status": "approved",
+  "value": "Preset dinonaktifkan",
+  "original": "Pengaturan dinonaktifkan",
+  "note": "docs-id 2026-10-22: terminology, Casey 22 Oct global decision (Clear = Tanpa Temuan, Password = Kata Sandi, Preset Label, Rack = Rak Tabung)"
+ },
+ {
+  "key": "admin.labelPresets.duplicated",
+  "status": "approved",
+  "value": "Preset diduplikasi",
+  "original": "Pengaturan diduplikasi",
+  "note": "docs-id 2026-10-22: terminology, Casey 22 Oct global decision (Clear = Tanpa Temuan, Password = Kata Sandi, Preset Label, Rack = Rak Tabung)"
+ },
+ {
+  "key": "admin.labelPresets.editor.titleAdd",
+  "status": "approved",
+  "value": "Tambah Preset Label",
+  "original": "Tambah Pengaturan Label",
+  "note": "docs-id 2026-10-22: terminology, Casey 22 Oct global decision (Clear = Tanpa Temuan, Password = Kata Sandi, Preset Label, Rack = Rak Tabung)"
+ },
+ {
+  "key": "admin.labelPresets.editor.titleEdit",
+  "status": "approved",
+  "value": "Edit Preset Label",
+  "original": "Edit Pengaturan Label",
+  "note": "docs-id 2026-10-22: terminology, Casey 22 Oct global decision (Clear = Tanpa Temuan, Password = Kata Sandi, Preset Label, Rack = Rak Tabung)"
+ },
+ {
+  "key": "admin.labelPresets.siteWide.title",
+  "status": "approved",
+  "value": "Pengaturan Kode Batang Seluruh Tempat",
+  "original": "Pengaturan Kode QR Seluruh Tempat",
+  "note": "docs-id 2026-10-22: terminology, Barcode is not only a QR code; use 'Kode Batang'."
+ },
+ {
+  "key": "admin.labelPresets.updated",
+  "status": "approved",
+  "value": "Preset diperbarui",
+  "original": "Pengaturan diperbarui",
+  "note": "docs-id 2026-10-22: terminology, Casey 22 Oct global decision (Clear = Tanpa Temuan, Password = Kata Sandi, Preset Label, Rack = Rak Tabung)"
+ },
+ {
+  "key": "admin.labelPresets.validation.barcodeType.required",
+  "status": "approved",
+  "value": "Wajib ada jenis kode batang",
+  "original": "Wajib ada jenis kode QR",
+  "note": "docs-id 2026-10-22: terminology, Barcode = Kode Batang; the options include CODE_128 and DATAMATRIX, so 'Kode QR' is wrong here"
+ },
+ {
+  "key": "admin.testCatalog.labels.addPreset.placeholder",
+  "status": "approved",
+  "value": "Pilih Preset Label",
+  "original": "Pilih Pengaturan Label",
+  "note": "docs-id 2026-10-22: terminology, Casey 22 Oct: Label Presets = Preset Label"
+ },
+ {
+  "key": "admin.testCatalog.labels.linkedPresets.title",
+  "status": "approved",
+  "value": "Preset Label Tertaut",
+  "original": "Pengaturan Label Tertaut",
+  "note": "docs-id 2026-10-22: terminology, Casey 22 Oct: Label Presets = Preset Label"
+ },
+ {
+  "key": "admin.testCatalog.methods.action.edit",
+  "status": "approved",
+  "value": "Edit",
+  "original": "Sunting",
+  "note": "docs-id 2026-10-22: terminology, Settled term: Edit stays 'Edit'; 17 sibling keys use 'Edit'"
+ },
+ {
+  "key": "banner.menu.generic.sample.edit",
+  "status": "approved",
+  "value": "Edit Pemesanan",
+  "original": "Edit Sampel",
+  "note": "docs-id 2026-10-22: terminology, English is 'Edit Order'; 'Edit Sampel' says Edit Sample. Other keys use 'Edit Pemesanan'"
+ },
+ {
+  "key": "banner.menu.nonconformity.dashboard",
+  "status": "approved",
+  "value": "Semua KTS",
+  "original": "Semua Kejadian Ketidaksesuaian",
+  "note": "docs-id 2026-10-22: terminology, NCE = KTS; the dashboard title key already says 'Semua KTS'"
+ },
+ {
+  "key": "banner.menu.nonconformity.report",
+  "status": "approved",
+  "value": "Laporkan KTS",
+  "original": "Laporan Kejadian Ketidaksesuaian",
+  "note": "docs-id 2026-10-22: terminology, Menu action is a verb ('Report'), current is the noun 'Laporan'; NCE term is KTS (kejadian tidak sesuai), not 'Kejadian Ketidaksesuaian'."
+ },
+ {
+  "key": "barcode.print.title",
+  "status": "approved",
+  "value": "Cetak Label Kode Batang",
+  "original": "Cetak Label Kode QR",
+  "note": "docs-id 2026-10-22: terminology, Barcode labels are linear or 2D barcodes, not only QR codes; use 'Kode Batang'."
+ },
+ {
+  "key": "barcode.scan.placeholder",
+  "status": "approved",
+  "value": "Pindai kode batang atau masukkan nomor registrasi...",
+  "original": "Pindai Kode QR atau masukkan nomor lab...",
+  "note": "docs-id 2026-10-22: terminology, barcode is not a QR code (Kode Batang); lab number = Nomor Registrasi"
+ },
+ {
+  "key": "collect.sample.nce.link",
+  "status": "approved",
+  "value": "Laporkan KTS",
+  "original": "Laporan Kejadian Ketidaksesuaian",
+  "note": "docs-id 2026-10-22: terminology, Menu action is a verb ('Report'), current is the noun 'Laporan'; NCE term is KTS (kejadian tidak sesuai), not 'Kejadian Ketidaksesuaian'."
+ },
+ {
+  "key": "common.editOrder",
+  "status": "approved",
+  "value": "Edit Pemesanan",
+  "original": "Edit Sampel",
+  "note": "docs-id 2026-10-22: terminology, English is 'Edit Order'; 'Edit Sampel' says Edit Sample. Other keys use 'Edit Pemesanan'"
+ },
+ {
+  "key": "eqa.myPrograms.action.edit",
+  "status": "approved",
+  "value": "Edit",
+  "original": "Sunting",
+  "note": "docs-id 2026-10-22: terminology, Settled term: Edit stays 'Edit'; 17 sibling keys use 'Edit'"
+ },
+ {
+  "key": "eqa.results.col.labNumber",
+  "status": "approved",
+  "value": "Nomor Registrasi",
+  "original": "Nomor Lab",
+  "note": "docs-id 2026-10-22: terminology, Lab Number = Nomor Registrasi; 10 sibling keys already use it"
+ },
+ {
+  "key": "eqa.tests.labNumber",
+  "status": "approved",
+  "value": "Nomor Registrasi",
+  "original": "Nomor Lab",
+  "note": "docs-id 2026-10-22: terminology, Lab Number = Nomor Registrasi; 10 sibling keys already use it"
+ },
+ {
+  "key": "error.invalidcredentials",
+  "status": "approved",
+  "value": "Nama Pengguna atau Kata Sandi salah",
+  "original": "Nama Pengguna atau Kata Kunci salah",
+  "note": "docs-id 2026-10-22: terminology, Casey 22 Oct global decision (Clear = Tanpa Temuan, Password = Kata Sandi, Preset Label, Rack = Rak Tabung)"
+ },
+ {
+  "key": "esig.error.passwordRequired",
+  "status": "approved",
+  "value": "Kata sandi diperlukan",
+  "original": "Kata kunci diperlukan",
+  "note": "docs-id 2026-10-22: terminology, Casey 22 Oct global decision (Clear = Tanpa Temuan, Password = Kata Sandi, Preset Label, Rack = Rak Tabung)"
+ },
+ {
+  "key": "esig.info.fullAuth",
+  "status": "approved",
+  "value": "Ini adalah tanda tangan pertama Anda untuk sesi ini. Masukkan nama pengguna dan kata sandi Anda untuk mengotentikasi.",
+  "original": "Ini adalah tanda tangan pertama Anda untuk sesi ini. Masukkan nama pengguna dan kata kunci Anda untuk mengotentikasi.",
+  "note": "docs-id 2026-10-22: terminology, Casey 22 Oct global decision (Clear = Tanpa Temuan, Password = Kata Sandi, Preset Label, Rack = Rak Tabung)"
+ },
+ {
+  "key": "esig.info.passwordOnly",
+  "status": "approved",
+  "value": "Anda memiliki sesi tanda tangan aktif. Masukkan kata sandi untuk melanjutkan.",
+  "original": "Anda memiliki sesi tanda tangan aktif. Masukkan kata kunci untuk melanjutkan.",
+  "note": "docs-id 2026-10-22: terminology, Casey 22 Oct global decision (Clear = Tanpa Temuan, Password = Kata Sandi, Preset Label, Rack = Rak Tabung)"
+ },
+ {
+  "key": "esig.placeholder.password",
+  "status": "approved",
+  "value": "Masukkan kata sandi untuk mengkonfirmasi",
+  "original": "Masukkan kata kunci untuk mengkonfirmasi",
+  "note": "docs-id 2026-10-22: terminology, Casey 22 Oct global decision (Clear = Tanpa Temuan, Password = Kata Sandi, Preset Label, Rack = Rak Tabung)"
+ },
+ {
+  "key": "label.button.changepassword",
+  "status": "approved",
+  "value": "Ganti Kata Sandi",
+  "original": "Ganti Kata Kunci",
+  "note": "docs-id 2026-10-22: terminology, Casey 22 Oct global decision (Clear = Tanpa Temuan, Password = Kata Sandi, Preset Label, Rack = Rak Tabung)"
+ },
+ {
+  "key": "label.results.nce.report",
+  "status": "approved",
+  "value": "Laporkan KTS",
+  "original": "Laporkan Ketidaksesuaian",
+  "note": "docs-id 2026-10-22: terminology, Align with the settled NCE term KTS and with the menu action 'Laporkan KTS'."
+ },
+ {
+  "key": "label.search.labno.family",
+  "status": "approved",
+  "value": "Cari berdasarkan Nomor Registrasi atau Nama Belakang",
+  "original": "Cari berdasarkan LabNo atau Nama Belakang",
+  "note": "docs-id 2026-10-22: terminology, 'LabNo' left in English; Lab Number = Nomor Registrasi"
+ },
+ {
+  "key": "label.testCatalog.labels.addLabelType.placeholder",
+  "status": "approved",
+  "value": "Pilih Preset Label",
+  "original": "Pilih Pengaturan Label",
+  "note": "docs-id 2026-10-22: terminology, Casey 22 Oct: Label Presets = Preset Label"
+ },
+ {
+  "key": "label.testCatalog.labels.col.preset",
+  "status": "approved",
+  "value": "Preset",
+  "original": "Pengaturan",
+  "note": "docs-id 2026-10-22: terminology, Casey 22 Oct: Label Presets = Preset Label"
+ },
+ {
+  "key": "label.validation.bulk.error.nothingReleased",
+  "status": "approved",
+  "value": "Tidak ada hasil terpilih yang masih tanpa temuan; tidak ada yang dirilis.",
+  "original": "Tidak ada hasil terpilih yang masih bebas masalah; tidak ada yang dirilis.",
+  "note": "docs-id 2026-10-22: terminology, Casey 22 Oct global decision (Clear = Tanpa Temuan, Password = Kata Sandi, Preset Label, Rack = Rak Tabung)"
+ },
+ {
+  "key": "label.validation.bulk.none",
+  "status": "approved",
+  "value": "Tidak ada hasil tanpa temuan untuk dirilis.",
+  "original": "Tidak ada hasil bebas masalah untuk dirilis.",
+  "note": "docs-id 2026-10-22: terminology, Casey 22 Oct global decision (Clear = Tanpa Temuan, Password = Kata Sandi, Preset Label, Rack = Rak Tabung)"
+ },
+ {
+  "key": "label.validation.bulk.partial",
+  "status": "approved",
+  "value": "{released} dirilis; {skipped} dilewati karena tidak lagi tanpa temuan.",
+  "original": "{released} dirilis; {skipped} dilewati karena tidak lagi bebas masalah.",
+  "note": "docs-id 2026-10-22: terminology, Casey 22 Oct global decision (Clear = Tanpa Temuan, Password = Kata Sandi, Preset Label, Rack = Rak Tabung)"
+ },
+ {
+  "key": "label.validation.bulk.releaseAllClear",
+  "status": "approved",
+  "value": "Rilis semua tanpa temuan ({count})",
+  "original": "Rilis semua bebas masalah ({count})",
+  "note": "docs-id 2026-10-22: terminology, Casey 22 Oct global decision (Clear = Tanpa Temuan, Password = Kata Sandi, Preset Label, Rack = Rak Tabung)"
+ },
+ {
+  "key": "label.validation.bulk.success",
+  "status": "approved",
+  "value": "{count} hasil tanpa temuan telah dirilis.",
+  "original": "{count} hasil bebas masalah telah dirilis.",
+  "note": "docs-id 2026-10-22: terminology, Casey 22 Oct global decision (Clear = Tanpa Temuan, Password = Kata Sandi, Preset Label, Rack = Rak Tabung)"
+ },
+ {
+  "key": "label.validation.filter.nce",
+  "status": "approved",
+  "value": "KTS",
+  "original": "NCE",
+  "note": "docs-id 2026-10-22: terminology, NCE is rendered KTS (kejadian tidak sesuai); English abbreviation left untranslated"
+ },
+ {
+  "key": "login.complexity.message",
+  "status": "approved",
+  "value": "Kata sandi harus:",
+  "original": "Kata kunci harus:",
+  "note": "docs-id 2026-10-22: terminology, Casey 22 Oct global decision (Clear = Tanpa Temuan, Password = Kata Sandi, Preset Label, Rack = Rak Tabung)"
+ },
+ {
+  "key": "login.complexity.new.message",
+  "status": "approved",
+  "value": "Kata sandi baru harus:",
+  "original": "Kata kunci baru harus:",
+  "note": "docs-id 2026-10-22: terminology, Casey 22 Oct global decision (Clear = Tanpa Temuan, Password = Kata Sandi, Preset Label, Rack = Rak Tabung)"
+ },
+ {
+  "key": "login.complexity.new.message.1",
+  "status": "approved",
+  "value": "Tidak boleh sama dengan kata sandi saat ini",
+  "original": "Tidak boleh sama dengan kata kunci saat ini",
+  "note": "docs-id 2026-10-22: terminology, Casey 22 Oct global decision (Clear = Tanpa Temuan, Password = Kata Sandi, Preset Label, Rack = Rak Tabung)"
+ },
+ {
+  "key": "login.error.password.current.incorrect",
+  "status": "approved",
+  "value": "Kata sandi saat ini yang Anda masukkan salah. Silakan coba lagi.",
+  "original": "Kata kunci saat ini yang Anda masukkan salah. Silakan coba lagi.",
+  "note": "docs-id 2026-10-22: terminology, Casey 22 Oct global decision (Clear = Tanpa Temuan, Password = Kata Sandi, Preset Label, Rack = Rak Tabung)"
+ },
+ {
+  "key": "login.error.password.expired",
+  "status": "approved",
+  "value": "Kata sandi Anda telah kedaluwarsa. Silakan hubungi administrator sistem.",
+  "original": "Kata kunci Anda telah kedaluwarsa. Silakan hubungi administrator sistem.",
+  "note": "docs-id 2026-10-22: terminology, Casey 22 Oct global decision (Clear = Tanpa Temuan, Password = Kata Sandi, Preset Label, Rack = Rak Tabung)"
+ },
+ {
+  "key": "login.error.update.message",
+  "status": "approved",
+  "value": "Pembaruan kata sandi gagal. Silakan coba lagi.",
+  "original": "Pembaruan kata kunci gagal. Silakan coba lagi.",
+  "note": "docs-id 2026-10-22: terminology, Casey 22 Oct global decision (Clear = Tanpa Temuan, Password = Kata Sandi, Preset Label, Rack = Rak Tabung)"
+ },
+ {
+  "key": "login.login.current.password",
+  "status": "approved",
+  "value": "Kata sandi saat ini",
+  "original": "Kata kunci saat ini",
+  "note": "docs-id 2026-10-22: terminology, Casey 22 Oct global decision (Clear = Tanpa Temuan, Password = Kata Sandi, Preset Label, Rack = Rak Tabung)"
+ },
+ {
+  "key": "login.login.new.password",
+  "status": "approved",
+  "value": "Kata sandi baru",
+  "original": "Kata kunci baru",
+  "note": "docs-id 2026-10-22: terminology, Casey 22 Oct global decision (Clear = Tanpa Temuan, Password = Kata Sandi, Preset Label, Rack = Rak Tabung)"
+ },
+ {
+  "key": "login.msg.password.missing",
+  "status": "approved",
+  "value": "Kata sandi diperlukan",
+  "original": "Kata kunci diperlukan",
+  "note": "docs-id 2026-10-22: terminology, Casey 22 Oct global decision (Clear = Tanpa Temuan, Password = Kata Sandi, Preset Label, Rack = Rak Tabung)"
+ },
+ {
+  "key": "menu.accession.validation",
+  "status": "approved",
+  "value": "Berdasarkan Pemesanan",
+  "original": "Berdasarkan Permintaan",
+  "note": "docs-id 2026-10-22: terminology, Order = Pemesanan, not Permintaan; banner key already uses 'Berdasarkan Pemesanan'"
+ },
+ {
+  "key": "menu.accession.validation.range",
+  "status": "approved",
+  "value": "Berdasarkan Rentang Nomor Pemesanan",
+  "original": "Berdasarkan Rentang Nomor Permintaan",
+  "note": "docs-id 2026-10-22: terminology, Order = Pemesanan, not Permintaan"
+ },
+ {
+  "key": "menu.genericSample.edit",
+  "status": "approved",
+  "value": "Edit Pemesanan",
+  "original": "Edit Sampel",
+  "note": "docs-id 2026-10-22: terminology, English is 'Edit Order'; 'Edit Sampel' says Edit Sample. Other keys use 'Edit Pemesanan'"
+ },
+ {
+  "key": "menu.genericSample.order",
+  "status": "approved",
+  "value": "Pemesanan",
+  "original": "Penerimaan Sampel",
+  "note": "docs-id 2026-10-22: terminology, English is 'Order'; 'Penerimaan Sampel' means sample reception. Settled term is Pemesanan"
+ },
+ {
+  "key": "menu.results.range",
+  "status": "approved",
+  "value": "Berdasarkan Rentang Nomor Pemesanan",
+  "original": "Berdasarkan Rentang Nomor Permintaan",
+  "note": "docs-id 2026-10-22: terminology, Order = Pemesanan, not Permintaan"
+ },
+ {
+  "key": "nce.field.nceNumber",
+  "status": "approved",
+  "value": "Nomor KTS",
+  "original": "Nomor Kejadian Ketidaksesuaian",
+  "note": "docs-id 2026-10-22: terminology, Settled term NCE = KTS; 'Kejadian Ketidaksesuaian' is long and inconsistent with KTS"
+ },
+ {
+  "key": "nonconform.nce.number",
+  "status": "approved",
+  "value": "Nomor KTS",
+  "original": "Nomor Kejadian Ketidaksesuaian",
+  "note": "docs-id 2026-10-22: terminology, Settled term NCE = KTS; 'Kejadian Ketidaksesuaian' is long and inconsistent with KTS"
+ },
+ {
+  "key": "notification.invalid.confirm.password",
+  "status": "approved",
+  "value": "Kata Sandi tidak sama dengan di atas.",
+  "original": "Kata Kunci tidak sama dengan di atas.",
+  "note": "docs-id 2026-10-22: terminology, Casey 22 Oct global decision (Clear = Tanpa Temuan, Password = Kata Sandi, Preset Label, Rack = Rak Tabung)"
+ },
+ {
+  "key": "notification.invalid.password",
+  "status": "approved",
+  "value": "Masukkan Kata Sandi sesuai petunjuk.",
+  "original": "Masukkan Kata Kunci sesuai petunjuk.",
+  "note": "docs-id 2026-10-22: terminology, Casey 22 Oct global decision (Clear = Tanpa Temuan, Password = Kata Sandi, Preset Label, Rack = Rak Tabung)"
+ },
+ {
+  "key": "notification.password.change.fail",
+  "status": "approved",
+  "value": "Perubahan Kata Sandi gagal",
+  "original": "Perubahan Kata Kunci gagal",
+  "note": "docs-id 2026-10-22: terminology, Casey 22 Oct global decision (Clear = Tanpa Temuan, Password = Kata Sandi, Preset Label, Rack = Rak Tabung)"
+ },
+ {
+  "key": "notification.password.change.success",
+  "status": "approved",
+  "value": "Kata Sandi berhasil diubah",
+  "original": "Kata Kunci berhasil diubah",
+  "note": "docs-id 2026-10-22: terminology, Casey 22 Oct global decision (Clear = Tanpa Temuan, Password = Kata Sandi, Preset Label, Rack = Rak Tabung)"
+ },
+ {
+  "key": "order.label.add",
+  "status": "approved",
+  "value": "Tambah Pemesanan",
+  "original": "Tambah Permintaan",
+  "note": "docs-id 2026-10-22: terminology, Order = Pemesanan, not Permintaan; sibling keys use 'Tambah Pemesanan'"
+ },
+ {
+  "key": "order.legend.configureBarcode",
+  "status": "approved",
+  "value": "Konfigurasi Entri Kode Batang",
+  "original": "Konfigurasi Entri Kode QR",
+  "note": "docs-id 2026-10-22: terminology, Barcode = Kode Batang, not Kode QR"
+ },
+ {
+  "key": "order.requestDate",
+  "status": "approved",
+  "value": "Tanggal Pemesanan",
+  "original": "Tanggal Permintaan",
+  "note": "docs-id 2026-10-22: terminology, Order = Pemesanan, not Permintaan"
+ },
+ {
+  "key": "order.title",
+  "status": "approved",
+  "value": "PEMESANAN",
+  "original": "PERMINTAAN",
+  "note": "docs-id 2026-10-22: terminology, Order = Pemesanan, not Permintaan"
+ },
+ {
+  "key": "orderEntry.labels.source.presetDefault",
+  "status": "approved",
+  "value": "Preset bawaan",
+  "original": "Pengaturan bawaan",
+  "note": "docs-id 2026-10-22: terminology, Casey 22 Oct: Label Presets = Preset Label"
+ },
+ {
+  "key": "ordertests.title",
+  "status": "approved",
+  "value": "Pemesanan Pemeriksaan",
+  "original": "Permintaan Pemeriksaan",
+  "note": "docs-id 2026-10-22: terminology, Order = Pemesanan and Test = Pemeriksaan; align with sample.orderTests"
+ },
+ {
+  "key": "patient.merge.orders",
+  "status": "approved",
+  "value": "Pemesanan",
+  "original": "Permintaan",
+  "note": "docs-id 2026-10-22: terminology, Order = Pemesanan, not Permintaan"
+ },
+ {
+  "key": "print.barcode",
+  "status": "approved",
+  "value": "Cetak Kode Batang",
+  "original": "Cetak Kode QR",
+  "note": "docs-id 2026-10-22: terminology, Barcode is not only a QR code; use 'Kode Batang'."
+ },
+ {
+  "key": "qa.qi.rejection.column.nce",
+  "status": "approved",
+  "value": "KTS",
+  "original": "NCE",
+  "note": "docs-id 2026-10-22: terminology, NCE is rendered KTS (kejadian tidak sesuai); English abbreviation left untranslated"
+ },
+ {
+  "key": "qa.qms.capaRegister.column.nceNumber",
+  "status": "approved",
+  "value": "Nomor KTS",
+  "original": "Nomor Kejadian Ketidaksesuaian",
+  "note": "docs-id 2026-10-22: terminology, Settled term NCE = KTS; 'Kejadian Ketidaksesuaian' is long and inconsistent with KTS"
+ },
+ {
+  "key": "qc.rules.preset",
+  "status": "approved",
+  "value": "Konfigurasi Preset",
+  "original": "Pengaturan Ulang Konfigurasi ",
+  "note": "docs-id 2026-10-22: terminology, 'Pengaturan Ulang' means reset; Preset Configuration = Konfigurasi Preset"
+ },
+ {
+  "key": "report.enter.labNumber.headline",
+  "status": "approved",
+  "value": "Buat laporan atau semua laporan dalam rentang tertentu berdasarkan Nomor Pemesanan / Nomor Registrasi",
+  "original": "Buat laporan atau semua laporan dalam rentang tertentu berdasarkan Nomor Permintaan / Nomor Registrasi",
+  "note": "docs-id 2026-10-22: terminology, Order = Pemesanan, not Permintaan"
+ },
+ {
+  "key": "reports.tat.column.labNumber",
+  "status": "approved",
+  "value": "Nomor Registrasi",
+  "original": "Nomor Lab",
+  "note": "docs-id 2026-10-22: terminology, Lab Number = Nomor Registrasi; 10 sibling keys already use it"
+ },
+ {
+  "key": "reports.tat.labNumber",
+  "status": "approved",
+  "value": "Nomor Registrasi",
+  "original": "Nomor Lab",
+  "note": "docs-id 2026-10-22: terminology, Lab Number = Nomor Registrasi; 10 sibling keys already use it"
+ },
+ {
+  "key": "sample.accession.number",
+  "status": "approved",
+  "value": "Nomor Registrasi",
+  "original": "Aksesi Sampel",
+  "note": "docs-id 2026-10-22: terminology, Accession number = Nomor Registrasi (settled term, sibling storage.picker.sample.accession); 'Aksesi' is an unfamiliar loan word."
+ },
+ {
+  "key": "sample.label.orderdate",
+  "status": "approved",
+  "value": "Tanggal Pemesanan",
+  "original": "Tanggal Permintaan",
+  "note": "docs-id 2026-10-22: terminology, Order = Pemesanan, not Permintaan"
+ },
+ {
+  "key": "sample.label.orderpanel",
+  "status": "approved",
+  "value": "Panel Pemesanan",
+  "original": "Panel Permintaan",
+  "note": "docs-id 2026-10-22: terminology, Order = Pemesanan; sibling keys already say Panel Pemesanan"
+ },
+ {
+  "key": "sidenav.label.results.order",
+  "status": "approved",
+  "value": "Berdasarkan Pemesanan",
+  "original": "Berdasarkan Permintaan",
+  "note": "docs-id 2026-10-22: terminology, Order = Pemesanan, not Permintaan; banner key already uses 'Berdasarkan Pemesanan'"
+ },
+ {
+  "key": "storage.add.rack",
+  "status": "approved",
+  "value": "Tambah Rak Tabung",
+  "original": "Tambah Laci",
+  "note": "docs-id 2026-10-22: terminology, Casey 22 Oct global decision (Clear = Tanpa Temuan, Password = Kata Sandi, Preset Label, Rack = Rak Tabung)"
+ },
+ {
+  "key": "storage.barcode.scan.placeholder",
+  "status": "approved",
+  "value": "Pindai kode batang atau masukkan manual",
+  "original": "Pindai Kode QR atau masukkan manual",
+  "note": "docs-id 2026-10-22: terminology, barcode is not a QR code (Kode Batang); same phrase as barcode.scan.placeholder"
+ },
+ {
+  "key": "storage.box.preset",
+  "status": "approved",
+  "value": "Preset dimensi",
+  "original": "Pengaturan awal dimensi",
+  "note": "docs-id 2026-10-22: terminology, Casey 22 Oct: Label Presets = Preset Label"
+ },
+ {
+  "key": "storage.delete.rack",
+  "status": "approved",
+  "value": "Hapus Rak Tabung",
+  "original": "Hapus Laci",
+  "note": "docs-id 2026-10-22: terminology, Casey 22 Oct global decision (Clear = Tanpa Temuan, Password = Kata Sandi, Preset Label, Rack = Rak Tabung)"
+ },
+ {
+  "key": "storage.edit.rack",
+  "status": "approved",
+  "value": "Edit Rak Tabung",
+  "original": "Edit Laci",
+  "note": "docs-id 2026-10-22: terminology, Casey 22 Oct global decision (Clear = Tanpa Temuan, Password = Kata Sandi, Preset Label, Rack = Rak Tabung)"
+ },
+ {
+  "key": "storage.edit.title",
+  "status": "approved",
+  "value": "Edit",
+  "original": "Sunting",
+  "note": "docs-id 2026-10-22: terminology, Settled term: Edit stays 'Edit'; 17 sibling keys use 'Edit'"
+ },
+ {
+  "key": "storage.editbox.selectRack",
+  "status": "approved",
+  "value": "Pilih Rak Tabung",
+  "original": "Pilih Laci",
+  "note": "docs-id 2026-10-22: terminology, Casey 22 Oct global decision (Clear = Tanpa Temuan, Password = Kata Sandi, Preset Label, Rack = Rak Tabung)"
+ },
+ {
+  "key": "storage.inline.add.rack",
+  "status": "approved",
+  "value": "Tambah Rak Tabung Baru",
+  "original": "Tambah Laci Baru",
+  "note": "docs-id 2026-10-22: terminology, Casey 22 Oct global decision (Clear = Tanpa Temuan, Password = Kata Sandi, Preset Label, Rack = Rak Tabung)"
+ },
+ {
+  "key": "storage.location.type.racks",
+  "status": "approved",
+  "value": "Rak Tabung",
+  "original": "Laci",
+  "note": "docs-id 2026-10-22: terminology, Casey 22 Oct global decision (Clear = Tanpa Temuan, Password = Kata Sandi, Preset Label, Rack = Rak Tabung)"
+ },
+ {
+  "key": "storage.manageLocation.error.selectTarget",
+  "status": "approved",
+  "value": "Pilih perangkat, rak, rak tabung, atau boks sebelum menyimpan",
+  "original": "Pilih perangkat, rak, laci, atau boks sebelum menyimpan",
+  "note": "docs-id 2026-10-22: terminology, Casey 22 Oct global decision (Clear = Tanpa Temuan, Password = Kata Sandi, Preset Label, Rack = Rak Tabung)"
+ },
+ {
+  "key": "storage.nav.rack",
+  "status": "approved",
+  "value": "Rak Tabung",
+  "original": "Laci",
+  "note": "docs-id 2026-10-22: terminology, Casey 22 Oct global decision (Clear = Tanpa Temuan, Password = Kata Sandi, Preset Label, Rack = Rak Tabung)"
+ },
+ {
+  "key": "storage.nav.racks.tooltip",
+  "status": "approved",
+  "value": "Kelola rak tabung penyimpanan",
+  "original": "Kelola laci penyimpanan",
+  "note": "docs-id 2026-10-22: terminology, Casey 22 Oct global decision (Clear = Tanpa Temuan, Password = Kata Sandi, Preset Label, Rack = Rak Tabung)"
+ },
+ {
+  "key": "storage.rack.label",
+  "status": "approved",
+  "value": "Rak Tabung",
+  "original": "Laci",
+  "note": "docs-id 2026-10-22: terminology, Casey 22 Oct global decision (Clear = Tanpa Temuan, Password = Kata Sandi, Preset Label, Rack = Rak Tabung)"
+ },
+ {
+  "key": "storage.rack.placeholder",
+  "status": "approved",
+  "value": "Pilih atau ketik untuk menambah rak tabung...",
+  "original": "Pilih atau ketik untuk menambah laci...",
+  "note": "docs-id 2026-10-22: terminology, Casey 22 Oct global decision (Clear = Tanpa Temuan, Password = Kata Sandi, Preset Label, Rack = Rak Tabung)"
+ },
+ {
+  "key": "storage.sampleitem.accession",
+  "status": "approved",
+  "value": "Nomor Registrasi",
+  "original": "Aksesi Sampel",
+  "note": "docs-id 2026-10-22: terminology, Accession number = Nomor Registrasi (settled term, sibling storage.picker.sample.accession); 'Aksesi' is an unfamiliar loan word."
+ },
+ {
+  "key": "storage.search.racks.placeholder",
+  "status": "approved",
+  "value": "Cari berdasarkan label rak tabung...",
+  "original": "Cari berdasarkan label laci...",
+  "note": "docs-id 2026-10-22: terminology, Casey 22 Oct global decision (Clear = Tanpa Temuan, Password = Kata Sandi, Preset Label, Rack = Rak Tabung)"
+ },
+ {
+  "key": "systemuserrole.roles.labunit",
+  "status": "approved",
+  "value": "Peran Instalasi Lab",
+  "original": "Peran Unit Lab",
+  "note": "docs-id 2026-10-22: terminology, Lab Unit = Instalasi Lab"
+ },
+ {
+  "key": "validation.password.match",
+  "status": "approved",
+  "value": "Kata sandi harus sama",
+  "original": "Kata kunci harus sama",
+  "note": "docs-id 2026-10-22: terminology, Casey 22 Oct global decision (Clear = Tanpa Temuan, Password = Kata Sandi, Preset Label, Rack = Rak Tabung)"
+ },
+ {
+  "key": "validation.password.minLength",
+  "status": "approved",
+  "value": "Kata Sandi harus lebih dari 7 karakter",
+  "original": "Kata Kunci harus lebih dari 7 karakter",
+  "note": "docs-id 2026-10-22: terminology, Casey 22 Oct global decision (Clear = Tanpa Temuan, Password = Kata Sandi, Preset Label, Rack = Rak Tabung)"
+ },
+ {
+  "key": "validation.password.notSameAsOld",
+  "status": "approved",
+  "value": "Kata sandi baru tidak boleh sama dengan kata sandi lama",
+  "original": "Kata kunci baru tidak boleh sama dengan kata kunci lama",
+  "note": "docs-id 2026-10-22: terminology, Casey 22 Oct global decision (Clear = Tanpa Temuan, Password = Kata Sandi, Preset Label, Rack = Rak Tabung)"
+ },
+ {
+  "key": "validation.password.specialChar",
+  "status": "approved",
+  "value": "Kata sandi harus mengandung setidaknya satu karakter khusus (*$#!) dan satu huruf besar",
+  "original": "Kata kunci harus mengandung setidaknya satu karakter khusus (*$#!) dan satu huruf besar",
+  "note": "docs-id 2026-10-22: terminology, Casey 22 Oct global decision (Clear = Tanpa Temuan, Password = Kata Sandi, Preset Label, Rack = Rak Tabung)"
+ },
+ {
+  "key": "vector.order.tests",
+  "status": "approved",
+  "value": "Pemesanan Pemeriksaan",
+  "original": "Pemesanan Pengujian",
+  "note": "docs-id 2026-10-22: terminology, Order = Pemesanan and Test = Pemeriksaan; align with sample.orderTests"
+ },
+ {
+  "key": "vector.order.tests.search",
+  "status": "approved",
+  "value": "Pilih Pemeriksaan yang tersedia",
+  "original": "Pilih Pengujian yang tersedia",
+  "note": "docs-id 2026-10-22: terminology, Test = Pemeriksaan, not Pengujian; sibling keys use Pemeriksaan"
+ },
+ {
+  "key": "label.testCatalog.sampleResults.allowMultiple",
+  "status": "approved",
+  "value": "Izinkan beberapa pembacaan",
+  "original": "Izinkan pembacaan multiple",
+  "note": "docs-id 2026-10-22: untranslated, 'multiple' left in English"
+ },
+ {
+  "key": "label.testCatalog.sampleResults.options",
+  "status": "approved",
+  "value": "Opsi daftar pilihan",
+  "original": "Opsi select-list",
+  "note": "docs-id 2026-10-22: untranslated, English 'select-list' left in the value; sibling uses 'Daftar pilihan'."
+ },
+ {
+  "key": "login.timeout",
+  "status": "approved",
+  "value": "Batas Waktu Sesi Pengguna (menit)",
+  "original": "Pengguna Time Out (menit)",
+  "note": "docs-id 2026-10-22: untranslated, English 'Time Out' left untranslated and word order is English ('Pengguna Time Out')."
+ },
+ {
+  "key": "microbiology.worklist.column.labNumber",
+  "status": "approved",
+  "value": "No. Registrasi",
+  "original": "Lab #",
+  "note": "docs-id 2026-10-22: untranslated, English 'Lab #' left untranslated; Lab Number = Nomor Registrasi, other keys use No. Registrasi"
+ },
+ {
+  "key": "result.compliance.fail",
+  "status": "approved",
+  "value": "GAGAL",
+  "original": "FAIL",
+  "note": "docs-id 2026-10-22: untranslated, English left in Indonesian value"
+ },
+ {
+  "key": "result.compliance.pass",
+  "status": "approved",
+  "value": "LOLOS",
+  "original": "PASS",
+  "note": "docs-id 2026-10-22: untranslated, English left in Indonesian value; other Pass labels use Lolos"
+ },
+ {
+  "key": "sampleAcceptance.review.col.labNo",
+  "status": "approved",
+  "value": "No. Registrasi",
+  "original": "Lab #",
+  "note": "docs-id 2026-10-22: untranslated, English 'Lab #' left untranslated; Lab Number = Nomor Registrasi, other keys use No. Registrasi"
+ },
+ {
+  "key": "accept.action.button",
+  "status": "approved",
+  "value": "Terima",
+  "original": "Setuju",
+  "note": "docs-id 2026-10-22: consistency, 'Setuju' means agree; five sibling Accept keys use 'Terima'"
+ },
+ {
+  "key": "analyzer.form.testConnection",
+  "status": "approved",
+  "value": "Uji Koneksi",
+  "original": "Tes Koneksi",
+  "note": "docs-id 2026-10-22: consistency, 'Tes Koneksi' vs 'Uji Koneksi' for the same button; 'Uji' is the standard form."
+ },
+ {
+  "key": "audittrail.table.heading.action",
+  "status": "approved",
+  "value": "Aksi",
+  "original": "Tindakan",
+  "note": "docs-id 2026-10-22: consistency, 13 sibling keys use 'Aksi'"
+ },
+ {
+  "key": "banner.menu.sampleBatchEntry",
+  "status": "approved",
+  "value": "Entri Pemesanan Batch",
+  "original": "Masukkan Pemesanan Batch",
+  "note": "docs-id 2026-10-22: consistency, Same label rendered two ways; noun form 'Entri' matches menu style (Entri Hasil)"
+ },
+ {
+  "key": "button.generate",
+  "status": "approved",
+  "value": "Buat",
+  "original": "Membuat",
+  "note": "docs-id 2026-10-22: consistency, Button should be imperative 'Buat', as in sample.label.labnumber.generate and Buat Laporan"
+ },
+ {
+  "key": "button.label.genarateReport",
+  "status": "approved",
+  "value": "Buat Laporan",
+  "original": "Membuat Laporan",
+  "note": "docs-id 2026-10-22: consistency, Same label rendered 'Membuat Laporan' and 'Buat Laporan'; imperative 'Buat' fits a button"
+ },
+ {
+  "key": "eqa.cycle.history.when",
+  "status": "approved",
+  "value": "Waktu",
+  "original": "Ketika",
+  "note": "docs-id 2026-10-22: consistency, History column 'When' is 'Waktu' on the results history; 'Ketika' is a conjunction and reads oddly as a column header."
+ },
+ {
+  "key": "field.sampleType",
+  "status": "approved",
+  "value": "Jenis Sampel",
+  "original": "Jenis sampel",
+  "note": "docs-id 2026-10-22: consistency, Capitalisation; 16 sibling keys use 'Jenis Sampel'"
+ },
+ {
+  "key": "field.sex",
+  "status": "approved",
+  "value": "Jenis Kelamin",
+  "original": "Jenis kelamin",
+  "note": "docs-id 2026-10-22: consistency, Capitalisation; five sibling keys use 'Jenis Kelamin'"
+ },
+ {
+  "key": "label.button.ok",
+  "status": "approved",
+  "value": "OK",
+  "original": "Oke",
+  "note": "docs-id 2026-10-22: consistency, Button text is 'OK' in the other key; 'Oke' is informal"
+ },
+ {
+  "key": "label.clear",
+  "status": "approved",
+  "value": "Hapus Filter",
+  "original": "Hapus filter",
+  "note": "docs-id 2026-10-22: consistency, Capitalisation; sibling keys use 'Hapus Filter'"
+ },
+ {
+  "key": "label.refertest.referencelab",
+  "status": "approved",
+  "value": "Rujuk pemeriksaan ke lab rujukan",
+  "original": "Rujuk ke lab rujukan",
+  "note": "docs-id 2026-10-22: consistency, Same label rendered three ways; use one form with sentence case."
+ },
+ {
+  "key": "label.results.attachments.orderScope",
+  "status": "approved",
+  "value": "Entri Pemesanan",
+  "original": "Pencatatan Pemesanan",
+  "note": "docs-id 2026-10-22: consistency, Other Order Entry strings use 'Entri Pemesanan'"
+ },
+ {
+  "key": "label.results.history.event",
+  "status": "approved",
+  "value": "Kejadian",
+  "original": "Peristiwa",
+  "note": "docs-id 2026-10-22: consistency, Same label rendered Kejadian and Peristiwa; Kejadian matches the NCE/KTS vocabulary"
+ },
+ {
+  "key": "label.results.history.event.OTHER",
+  "status": "approved",
+  "value": "Kejadian",
+  "original": "Peristiwa",
+  "note": "docs-id 2026-10-22: consistency, Same label rendered Kejadian and Peristiwa; Kejadian matches the NCE/KTS vocabulary"
+ },
+ {
+  "key": "label.testCatalog.ranges.add",
+  "status": "approved",
+  "value": "Tambah rentang",
+  "original": "Tambahkan rentang",
+  "note": "docs-id 2026-10-22: consistency, Sibling add buttons use 'Tambah'"
+ },
+ {
+  "key": "laporanHasil.action.generatePdf",
+  "status": "approved",
+  "value": "Buat PDF",
+  "original": "Membuat PDF",
+  "note": "docs-id 2026-10-22: consistency, Button should be imperative 'Buat', not 'Membuat'"
+ },
+ {
+  "key": "laporanHasil.filter.generated",
+  "status": "approved",
+  "value": "Sudah Dibuat",
+  "original": "Dihasilkan",
+  "note": "docs-id 2026-10-22: consistency, Pairs with sibling bucket 'Belum Dibuat' (Not Yet Generated) and 'Terakhir Dibuat'"
+ },
+ {
+  "key": "laporanHasil.tile.generated",
+  "status": "approved",
+  "value": "Sudah Dibuat",
+  "original": "Dihasilkan",
+  "note": "docs-id 2026-10-22: consistency, Pairs with sibling bucket 'Belum Dibuat' (Not Yet Generated) and 'Terakhir Dibuat'"
+ },
+ {
+  "key": "login.login.first",
+  "status": "approved",
+  "value": "Nama Depan",
+  "original": "Nama depan",
+  "note": "docs-id 2026-10-22: consistency, Capitalisation; six sibling keys use 'Nama Depan'"
+ },
+ {
+  "key": "login.login.last",
+  "status": "approved",
+  "value": "Nama Belakang",
+  "original": "Nama belakang",
+  "note": "docs-id 2026-10-22: consistency, Capitalisation; six sibling keys use 'Nama Belakang'"
+ },
+ {
+  "key": "lot.details.view",
+  "status": "approved",
+  "value": "Lihat Rincian",
+  "original": "Tampilkan Rincian",
+  "note": "docs-id 2026-10-22: consistency, Two renderings of the same action; 'Lihat Rincian' is used by the other keys."
+ },
+ {
+  "key": "master.lists.page.menu",
+  "status": "approved",
+  "value": "Konfigurasi Menu",
+  "original": "Konfigurasi menu",
+  "note": "docs-id 2026-10-22: consistency, Capitalisation differs from sidenav key 'Konfigurasi Menu'"
+ },
+ {
+  "key": "microbiology.whonet.step.generate",
+  "status": "approved",
+  "value": "Buat",
+  "original": "Membuat",
+  "note": "docs-id 2026-10-22: consistency, Button should be imperative 'Buat', as in sample.label.labnumber.generate and Buat Laporan"
+ },
+ {
+  "key": "nce.admin.column.actions",
+  "status": "approved",
+  "value": "Aksi",
+  "original": "Tindakan",
+  "note": "docs-id 2026-10-22: consistency, 45 sibling keys use 'Aksi'"
+ },
+ {
+  "key": "order.current.time",
+  "status": "approved",
+  "value": "Waktu Saat Ini (hh:mm)",
+  "original": "Waktu sekarang (hh:mm)",
+  "note": "docs-id 2026-10-22: consistency, sibling Current Date is 'Tanggal Saat Ini'"
+ },
+ {
+  "key": "order.entry.setup.batch",
+  "status": "approved",
+  "value": "Entri Pemesanan Batch",
+  "original": "Masukkan Pemesanan Batch",
+  "note": "docs-id 2026-10-22: consistency, Same label rendered two ways; noun form 'Entri' matches menu style (Entri Hasil)"
+ },
+ {
+  "key": "order.legend.commonFields",
+  "status": "approved",
+  "value": "Kolom Umum",
+  "original": "Field Umum",
+  "note": "docs-id 2026-10-22: consistency, sibling of Optional Fields; 'Field' left in English"
+ },
+ {
+  "key": "order.received.time",
+  "status": "approved",
+  "value": "Waktu Diterima (hh:mm)",
+  "original": "Waktu datang (hh:mm)",
+  "note": "docs-id 2026-10-22: consistency, 'Waktu datang' (arrival time) differs from Received Time = Waktu Diterima elsewhere"
+ },
+ {
+  "key": "order.site.name",
+  "status": "approved",
+  "value": "Nama Tempat:",
+  "original": "Nama tempat:",
+  "note": "docs-id 2026-10-22: consistency, Capitalisation; sibling keys use 'Nama Tempat'"
+ },
+ {
+  "key": "referTest.referralLabel",
+  "status": "approved",
+  "value": "Rujuk pemeriksaan ke lab rujukan",
+  "original": "Rujuk Pemeriksaan ke lab rujukan",
+  "note": "docs-id 2026-10-22: consistency, Same label rendered three ways; use one form with sentence case."
+ },
+ {
+  "key": "reports.button",
+  "status": "approved",
+  "value": "Buat Laporan",
+  "original": "Membuat Laporan",
+  "note": "docs-id 2026-10-22: consistency, Same label rendered 'Membuat Laporan' and 'Buat Laporan'; imperative 'Buat' fits a button"
+ },
+ {
+  "key": "reports.tat.clearFilters",
+  "status": "approved",
+  "value": "Hapus Filter",
+  "original": "Hapus filter",
+  "note": "docs-id 2026-10-22: consistency, Capitalisation; sibling keys use 'Hapus Filter'"
+ },
+ {
+  "key": "reports.tat.generateReport",
+  "status": "approved",
+  "value": "Buat Laporan",
+  "original": "Membuat Laporan",
+  "note": "docs-id 2026-10-22: consistency, Same label rendered 'Membuat Laporan' and 'Buat Laporan'; imperative 'Buat' fits a button"
+ },
+ {
+  "key": "unifiedSystemUser.browser.search",
+  "status": "approved",
+  "value": "Cari berdasarkan Nama Pengguna",
+  "original": "Cari Berdasarkan Nama Pengguna",
+  "note": "docs-id 2026-10-22: consistency, Sibling search labels use 'Cari berdasarkan' with lowercase 'berdasarkan'."
+ },
+ {
+  "key": "analyzer.fieldMapping.panel.target.saveActivate",
+  "status": "approved",
+  "value": "Simpan dan Aktifkan",
+  "original": "Simpan dan Aktivasi",
+  "note": "docs-id 2026-10-22: grammar, Pair two verbs: 'Simpan dan Aktifkan'; 'Aktivasi' is a noun."
+ },
+ {
+  "key": "assigned.technician.label",
+  "status": "approved",
+  "value": "Teknisi yang Ditugaskan",
+  "original": "Teknisi ditugaskan",
+  "note": "docs-id 2026-10-22: grammar, Needs 'yang' to read as 'assigned technician'."
+ },
+ {
+  "key": "barcode.print.preprint.button",
+  "status": "approved",
+  "value": "Pracetak Label",
+  "original": "Label pra-cetak",
+  "note": "docs-id 2026-10-22: grammar, button reads as a noun ('pre-printed label'); an action label is clearer"
+ },
+ {
+  "key": "calendar.management.weekendDays",
+  "status": "approved",
+  "value": "Hari Akhir Pekan (tidak termasuk Jam Kerja)",
+  "original": "Hari Akhir Pekan (dikeluarkan dari Jam Kerja)",
+  "note": "docs-id 2026-10-22: grammar, 'dikeluarkan' means expelled/removed; 'tidak termasuk' is the natural 'excluded from'."
+ },
+ {
+  "key": "compliance.sampleTypes.heading",
+  "status": "approved",
+  "value": "Jenis Sampel yang Berlaku",
+  "original": "Jenis Sampel yang Dapat Diterapkan",
+  "note": "docs-id 2026-10-22: grammar, 'yang Dapat Diterapkan' is a literal rendering; 'yang Berlaku' is natural"
+ },
+ {
+  "key": "cytology.label.negative",
+  "status": "approved",
+  "value": "Negatif untuk lesi intraepitel atau keganasan",
+  "original": "Negatif lesi intraepitelial atau keganasan",
+  "note": "docs-id 2026-10-22: grammar, Missing 'untuk' (NILM); 'intraepitel' is the usual Indonesian form"
+ },
+ {
+  "key": "genericSample.order.generateLabNo",
+  "status": "approved",
+  "value": "Buat Nomor Registrasi",
+  "original": "Membuat Nomor Registrasi",
+  "note": "docs-id 2026-10-22: grammar, Button should be imperative 'Buat', not 'Membuat'; matches 'Buat Laporan'"
+ },
+ {
+  "key": "header.assign",
+  "status": "approved",
+  "value": "Tugaskan",
+  "original": "Menugaskan",
+  "note": "docs-id 2026-10-22: grammar, Button should be imperative 'Tugaskan', not 'Menugaskan'"
+ },
+ {
+  "key": "labNumber.type",
+  "status": "approved",
+  "value": "Jenis Nomor Registrasi",
+  "original": "Jenis Nomor Registrasi ",
+  "note": "docs-id 2026-10-22: grammar, Trailing space in the value"
+ },
+ {
+  "key": "label.button.assign",
+  "status": "approved",
+  "value": "Tugaskan",
+  "original": "Menugaskan",
+  "note": "docs-id 2026-10-22: grammar, Button should be imperative 'Tugaskan', not 'Menugaskan'"
+ },
+ {
+  "key": "label.results.resetLayout",
+  "status": "approved",
+  "value": "Atur ulang tata letak",
+  "original": "Atur Ulang tata letak",
+  "note": "docs-id 2026-10-22: grammar, Inconsistent capitalisation; sentence case like the English."
+ },
+ {
+  "key": "login.account.disabled",
+  "status": "approved",
+  "value": "Akun dinonaktifkan",
+  "original": "Akun dinon-aktifkan",
+  "note": "docs-id 2026-10-22: grammar, Spelling: 'non' prefix is written joined (dinonaktifkan), as in 'Nonaktifkan'"
+ },
+ {
+  "key": "login.login.",
+  "status": "approved",
+  "value": "Ulangi kata sandi",
+  "original": "Ulang kata kunci",
+  "note": "docs-id 2026-10-22: grammar, Imperative is 'Ulangi'; 'Ulang' alone is a bare root.; plus Casey 22 Oct global decision"
+ },
+ {
+  "key": "login.login.repeat.password",
+  "status": "approved",
+  "value": "Ulangi kata sandi",
+  "original": "Ulang kata kunci",
+  "note": "docs-id 2026-10-22: grammar, Imperative is 'Ulangi'; 'Ulang' alone is a bare root.; plus Casey 22 Oct global decision"
+ },
+ {
+  "key": "login.password.expired.date",
+  "status": "approved",
+  "value": "Tanggal kedaluwarsa kata sandi",
+  "original": "Tanggal kadaluarsa kata kunci",
+  "note": "docs-id 2026-10-22: grammar, EYD spelling is 'kedaluwarsa' (used in other keys), not 'kadaluarsa'; plus Casey 22 Oct global decision"
+ },
+ {
+  "key": "nce.field.immediateAction",
+  "status": "approved",
+  "value": "Tindakan Segera yang Diambil",
+  "original": "Tindakan Segera Diambil",
+  "note": "docs-id 2026-10-22: grammar, Missing relative 'yang'; current text reads as 'take immediate action'"
+ },
+ {
+  "key": "nce.field.proposedAction",
+  "status": "approved",
+  "value": "Tindakan yang Diusulkan",
+  "original": "Tindakan Yang Diusulkan",
+  "note": "docs-id 2026-10-22: grammar, Function word 'yang' is not capitalised in Indonesian title case."
+ },
+ {
+  "key": "order.labNumber.generate",
+  "status": "approved",
+  "value": "Buat Nomor Registrasi",
+  "original": "Membuat Nomor Registrasi",
+  "note": "docs-id 2026-10-22: grammar, Button should be imperative 'Buat', not 'Membuat'; matches 'Buat Laporan'"
+ },
+ {
+  "key": "order.legend.preDemand",
+  "status": "approved",
+  "value": "Pracetak",
+  "original": "Pra-cetak",
+  "note": "docs-id 2026-10-22: grammar, EYD writes the prefix pra- joined: 'pracetak', as in the sibling label-presets string"
+ },
+ {
+  "key": "result.report.queue.size",
+  "status": "approved",
+  "value": "Jumlah Antrean:",
+  "original": "Jumlah Antrian :",
+  "note": "docs-id 2026-10-22: grammar, EYD spelling is 'antrean'; no space before the colon."
+ },
+ {
+  "key": "sample.label.dept",
+  "status": "approved",
+  "value": "Ruang/Departemen/Unit",
+  "original": "Ruang/Departmen/Unit",
+  "note": "docs-id 2026-10-22: grammar, spelling: 'Departmen' should be 'Departemen'"
+ },
+ {
+  "key": "admin.labelPresets.editor.section.fields",
+  "status": "approved",
+  "value": "Kolom konten",
+  "original": "Bidang konten",
+  "note": "docs-id 2026-10-22: meaning, 'Bidang' means area/discipline; a data field is 'kolom'"
+ },
+ {
+  "key": "analyzer.action.fieldMappings",
+  "status": "approved",
+  "value": "Pemetaan Kolom",
+  "original": "Pemetaan Bidang",
+  "note": "docs-id 2026-10-22: meaning, 'Bidang' means area/discipline; a data field is 'kolom'"
+ },
+ {
+  "key": "analyzer.fieldCreation.fieldName.label",
+  "status": "approved",
+  "value": "Nama Kolom",
+  "original": "Nama Bidang",
+  "note": "docs-id 2026-10-22: meaning, 'Bidang' means area/discipline; a data field is 'kolom'"
+ },
+ {
+  "key": "analyzer.fieldMapping.page.title",
+  "status": "approved",
+  "value": "Pemetaan Kolom",
+  "original": "Pemetaan Bidang",
+  "note": "docs-id 2026-10-22: meaning, 'Bidang' means area/discipline; a data field is 'kolom'"
+ },
+ {
+  "key": "analyzer.navigation.fieldMappings",
+  "status": "approved",
+  "value": "Pemetaan Kolom",
+  "original": "Pemetaan Bidang",
+  "note": "docs-id 2026-10-22: meaning, 'Bidang' means area/discipline; a data field is 'kolom'"
+ },
+ {
+  "key": "analyzer.page.hierarchy.mappings",
+  "status": "approved",
+  "value": "Pemetaan Kolom",
+  "original": "Pemetaan Bidang",
+  "note": "docs-id 2026-10-22: meaning, 'Bidang' means area/discipline; a data field is 'kolom'"
+ },
+ {
+  "key": "analyzer.testMapping.parsedFields.fieldName",
+  "status": "approved",
+  "value": "Nama Kolom",
+  "original": "Nama Bidang",
+  "note": "docs-id 2026-10-22: meaning, 'Bidang' means area/discipline; a data field is 'kolom'"
+ },
+ {
+  "key": "file.import.configuration.importDirectory.helperText",
+  "status": "approved",
+  "value": "Direktori yang dipantau untuk file baru",
+  "original": "Direktori untuk melihat file baru",
+  "note": "docs-id 2026-10-22: meaning, 'melihat' (look at) for 'watch'; the directory is monitored"
+ },
+ {
+  "key": "label.locations.field.streetAddress",
+  "status": "approved",
+  "value": "Alamat jalan",
+  "original": "Nama jalan",
+  "note": "docs-id 2026-10-22: meaning, 'Nama jalan' is only the street name; the field holds the full street address."
+ },
+ {
+  "key": "label.validation.autoValidated.toggle",
+  "status": "approved",
+  "value": "Sertakan hasil tervalidasi otomatis",
+  "original": "Sertakan validasi otomatis",
+  "note": "docs-id 2026-10-22: meaning, Current text reads 'include auto-validation'; the toggle includes auto-validated results"
+ },
+ {
+  "key": "label.validation.review.retest.note",
+  "status": "approved",
+  "value": "Catatan untuk analis",
+  "original": "Catatan untuk meja kerja",
+  "note": "docs-id 2026-10-22: meaning, 'Meja kerja' is a literal 'work table'; the note is for the bench analyst"
+ },
+ {
+  "key": "patient.id",
+  "status": "approved",
+  "value": "ID Pasien",
+  "original": "Identitas Pasien",
+  "note": "docs-id 2026-10-22: meaning, 'Identitas Pasien' means patient identity (details); the field is an ID number"
+ },
+ {
+  "key": "sampleAcceptance.review.col.eligibility",
+  "status": "approved",
+  "value": "Kelayakan",
+  "original": "Persyaratan Kelayakan",
+  "note": "docs-id 2026-10-22: meaning, Column shows eligibility status, not 'eligibility requirements'"
+ },
+ {
+  "key": "compliance.linkedTest.name",
+  "status": "approved",
+  "value": "Pemeriksaan",
+  "original": "Pengujian",
+  "note": "docs-id 2026-10-22: terminology, Glossary: Test = Pemeriksaan; three compliance keys use 'Pengujian' (acceptable in environmental labs, but breaks the settled term)."
+ },
+ {
+  "key": "compliance.testEditor.tabPlaceholder",
+  "status": "approved",
+  "value": "Akan tersedia di Editor Pemeriksaan. Untuk saat ini kelola dari halaman Modifikasi Pemeriksaan.",
+  "original": "Segera datang dengan Editor Pengujian — saat ini dapat dikelola di halaman Modifikasi Pengujian.",
+  "note": "docs-id 2026-10-22: terminology, Test = Pemeriksaan (not Pengujian); 'Segera datang' is a literal 'coming soon'; em dash removed"
+ },
+ {
+  "key": "compliance.testThresholds.col.test",
+  "status": "approved",
+  "value": "Pemeriksaan",
+  "original": "Pengujian",
+  "note": "docs-id 2026-10-22: terminology, Glossary: Test = Pemeriksaan; three compliance keys use 'Pengujian' (acceptable in environmental labs, but breaks the settled term)."
+ },
+ {
+  "key": "compliance.testThresholds.test",
+  "status": "approved",
+  "value": "Pemeriksaan",
+  "original": "Pengujian",
+  "note": "docs-id 2026-10-22: terminology, Glossary: Test = Pemeriksaan; three compliance keys use 'Pengujian' (acceptable in environmental labs, but breaks the settled term)."
+ },
+ {
+  "key": "label.results.sampleStatus.disposalMethod",
+  "status": "approved",
+  "value": "Metode pemusnahan",
+  "original": "Metode pembuangan",
+  "note": "docs-id 2026-10-22: terminology, Sample disposal is 'pemusnahan' (glossary, and the Dispose Sample button 'Musnahkan Sampel'); 'pembuangan' means throwing away"
+ },
+ {
+  "key": "label.testCatalog.storage.disposalMethod",
+  "status": "approved",
+  "value": "Metode pemusnahan",
+  "original": "Metode pembuangan",
+  "note": "docs-id 2026-10-22: terminology, Sample disposal is 'pemusnahan' (glossary, and the Dispose Sample button 'Musnahkan Sampel'); 'pembuangan' means throwing away"
+ },
+ {
+  "key": "menu.label.filter.role",
+  "status": "approved",
+  "value": "Berdasarkan Peran Instalasi Lab",
+  "original": "Berdasarkan Peran Unit Lab",
+  "note": "docs-id 2026-10-22: terminology, Lab Unit = Instalasi Lab"
+ },
+ {
+  "key": "order.test.request.heading",
+  "status": "approved",
+  "value": "Pemesanan Pemeriksaan",
+  "original": "Permintaan Pemeriksaan",
+  "note": "docs-id 2026-10-22: terminology, This is the order entry form; settled term Order = Pemesanan, not Permintaan."
+ },
+ {
+  "key": "save.order.success.msg",
+  "status": "approved",
+  "value": "Entri Pemesanan Sampel berhasil disimpan",
+  "original": "Entri Permintaan Sampel berhasil disimpan",
+  "note": "docs-id 2026-10-22: terminology, Order = Pemesanan, not Permintaan"
+ },
+ {
+  "key": "analyzer.errorDashboard.stats.total",
+  "status": "approved",
+  "value": "Total Kesalahan",
+  "original": "Total Error",
+  "note": "docs-id 2026-10-22: untranslated, English 'Error' left in the value."
+ },
+ {
+  "key": "analyzerType.column.instances",
+  "status": "approved",
+  "value": "Instans",
+  "original": "Instance",
+  "note": "docs-id 2026-10-22: untranslated, English 'Instance' left in, and singular for a plural column; glossary uses 'instans'"
+ },
+ {
+  "key": "order.legend.optionalFields",
+  "status": "approved",
+  "value": "Kolom Opsional",
+  "original": "Field opsional",
+  "note": "docs-id 2026-10-22: untranslated, 'Field' left in English and lower-case; use Kolom like other field labels"
+ }
+]

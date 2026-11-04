@@ -1,0 +1,76 @@
+<ac:structured-macro ac:name="note" ac:schema-version="1"><ac:rich-text-body><p><strong>Work in progress.</strong> This page is published before its review is finished so you can use it now. It is being reviewed under <a href="https://uwdigi.atlassian.net/browse/OGC-1562">OGC-1562</a>, so details may still change. If something on your screen does not match, add a comment to this page.</p></ac:rich-text-body></ac:structured-macro>
+
+<h2>At a glance</h2>
+<table><tbody>
+<tr><th>Purpose</th><td>Put your laboratory's name and logo at the top of every patient report.</td></tr>
+<tr><th>You'll end up with</th><td>Patient reports printed from the Report Print Queue with your laboratory's name and logo above the report title.</td></tr>
+<tr><th>Who does this</th><td>Administrators. Access is set by user permissions and can be configured by your administrator.</td></tr>
+<tr><th>Before you start</th><td>The laboratory name exactly as it should be printed, and the logo as a JPG, PNG or GIF file of 2 MB or less.</td></tr>
+<tr><th>Where</th><td>Main menu &rarr; Admin &rarr; General Configurations &rarr; Printed Report Configuration</td></tr>
+</tbody></table>
+
+<h2>Overview</h2>
+<p>The header of the redesigned patient report takes the laboratory name from the <strong>SiteName</strong> setting and the logo from the <strong>headerLeftImage</strong> setting on Printed Report Configuration. Until they are set, reports print without a laboratory name or logo. Printed Report Configuration is a table of named settings, each with a <strong>Description</strong> and its current <strong>Value</strong>; you change one at a time with <strong>Modify</strong>.</p>
+
+<h2>Step 1: Open Printed Report Configuration</h2>
+<p>Go to Main menu &rarr; Admin &rarr; General Configurations &rarr; Printed Report Configuration. The list shows each setting's Name, Description and Value.</p>
+<p>{{IMG:r01-printed-report-config-before.png}}</p>
+<p><em>Figure 1. Printed Report Configuration before any change: ten settings, with only reportPageNumbers (false) and reportPaperSize (A4) holding a value.</em></p>
+
+<h2>Step 2: Set the laboratory name</h2>
+<p>Select the <strong>SiteName</strong> row and press <strong>Modify</strong>. In <em>Edit Record</em>, type the laboratory name in <strong>Value</strong> and press <strong>Save</strong> (<strong>Exit</strong> leaves without saving).</p>
+<p>{{IMG:r02-edit-site-name.png}}</p>
+<p><em>Figure 2. Edit Record for SiteName with the value Port Moresby General Hospital Laboratory.</em></p>
+
+<h2>Step 3: Upload the logo</h2>
+<p>Select the <strong>headerLeftImage</strong> row and press <strong>Modify</strong>. Press <strong>Choose file</strong> and pick the logo; the screen accepts JPG, PNG or GIF files up to 2 MB and shows a preview. Press <strong>Save</strong>. To take a logo off later, tick <strong>Remove Image</strong> and save.</p>
+<p>{{IMG:r03-edit-header-left-image.png}}</p>
+<p><em>Figure 3. Edit Record for headerLeftImage with a laboratory logo chosen and previewed, and the Remove Image option.</em></p>
+
+<h2>Step 4: Check the settings</h2>
+<p>Back on the list, the SiteName row shows the name and the headerLeftImage row shows the logo.</p>
+<p>{{IMG:r04-printed-report-config-after.png}}</p>
+<p><em>Figure 4. Printed Report Configuration after the change: SiteName Port Moresby General Hospital Laboratory and the logo in headerLeftImage.</em></p>
+
+<h2>Step 5: Print a report to check the header</h2>
+<p>Print a patient report from Main menu &rarr; Reports &rarr; Routine &rarr; Report Print Queue (see <a href="https://uwdigi.atlassian.net/wiki/spaces/OG/pages/1729429517">Report Print Queue: print and reprint patient reports</a>). The logo prints on the left and the laboratory name above the report title.</p>
+<p>{{IMG:r05-report-header-printed.png}}</p>
+<p><em>Figure 5. The top of a partial report printed after the change, for DEV01260000000001254: the logo and Port Moresby General Hospital Laboratory above Results: partial report.</em></p>
+
+<h2>Field reference</h2>
+<table><tbody>
+<tr><th>Setting</th><th>Description on screen</th></tr>
+<tr><td>SiteName</td><td>The name of the site for reports and header. Printed as the laboratory name in the report header.</td></tr>
+<tr><td>headerLeftImage</td><td>Image for the left side of report header (JPG, PNG or GIF, up to 2 MB). Printed as the logo.</td></tr>
+<tr><td>headerRightImage</td><td>Image for the right side of report header.</td></tr>
+<tr><td>additional site info</td><td>Additional information for report header.</td></tr>
+<tr><td>lab director</td><td>The lab directors name for the reports.</td></tr>
+<tr><td>labDirectorName, labDirectorTitle, labDirectorSignature</td><td>Images for the lab director's name, title and signature.</td></tr>
+<tr><td>reportPageNumbers</td><td>Use page numbers on reports (false on the test server).</td></tr>
+<tr><td>reportPaperSize</td><td>Paper size of printed reports (A4 on the test server).</td></tr>
+</tbody></table>
+
+<h2>Tips</h2>
+<ul>
+<li>Use a square logo with a plain background; it is printed small beside the laboratory name.</li>
+<li>Set the header before you start printing reports for clinicians. A reprint gives the version already issued: on the test server a reprint was labelled <em>Reprinted version 1</em> and kept the original Issued time at the foot of the report.</li>
+<li>Patient ID and URAP Number on the report printed blank for a patient whose record held only a National ID. After a Patient ID was added to the patient, the reprint of version 1 still showed Patient ID blank. Whether a new version picks it up was not checked.</li>
+<li>Program printed blank on the test order although the order had the program Routine Testing in Modify Order.</li>
+</ul>
+
+<h2>Not yet available</h2>
+<ul>
+<li>A Report Management admin page for patient report layout and letterhead (OGC-1111, documentation OGC-1556). It is not on the test server; the header is set here.</li>
+</ul>
+
+<h2>Provenance</h2>
+<table><tbody>
+<tr><th>Status</th><td>Draft for review</td></tr>
+<tr><th>Instance</th><td>testing.openelis-global.org, header version <em>3.4.0-SNAPSHOT</em> (3.3.0 feature OGC-932, redesigned patient report)</td></tr>
+<tr><th>Routes</th><td>/MasterListsPage/PrintedReportsConfigurationMenu; /ReportPrintQueue</td></tr>
+<tr><th>Date</th><td>22 October 2026</td></tr>
+<tr><th>Data</th><td>SiteName set to Port Moresby General Hospital Laboratory and a laboratory logo uploaded to headerLeftImage. Order DEV01260000000001254 (Joseph Dimuga, Kila Kila Urban Clinic, requester Toua, Mary) printed from the queue as version 1 and reprinted; Patient ID PMGH-204517 added to the patient between the print and the reprint.</td></tr>
+<tr><th>Driven</th><td>Modify and Save on SiteName and headerLeftImage; Print and reprint from the Report Print Queue; the printed PDFs read for Figure 5 and the Tips.</td></tr>
+<tr><th>Observed only</th><td>additional site info, lab director, labDirectorName, labDirectorTitle, labDirectorSignature, headerRightImage, reportPageNumbers, reportPaperSize (not changed); Remove Image.</td></tr>
+<tr><th>Unverified</th><td>Where the rows other than SiteName and headerLeftImage appear on the redesigned report; the header on a final or corrected report; a Patient ID on a newly issued version.</td></tr>
+</tbody></table>

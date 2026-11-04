@@ -1,0 +1,15 @@
+{
+ "at": "2026-10-15T16:27:40Z",
+ "apply": false,
+ "toPush": 0,
+ "alreadyLive": 2747,
+ "conflicts": [],
+ "notInTransifex": [
+  "pathology.badge.blockCount",
+  "inventory.tab.receive"
+ ],
+ "pluralNotParsed": [],
+ "pushed": 0,
+ "errors": [],
+ "changes": []
+}

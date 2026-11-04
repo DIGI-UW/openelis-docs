@@ -1,0 +1,93 @@
+<ac:structured-macro ac:name="warning" ac:schema-version="1" ac:macro-id="008041b2-a9f5-4c5d-b2bd-0ae3ddf0cdc0"><ac:rich-text-body><p><strong>Pre-release.</strong> This page describes Microbiology V2 (OGC-1383) as built on the pre-release test server pngtest.openelis-global.org. It is not part of the OpenELIS 3.3.0 release, and screens may change before it is merged. It stays in the review area until the work is merged and checked on a release build.</p></ac:rich-text-body></ac:structured-macro>
+
+<h2>At a glance</h2>
+<table><tbody>
+<tr><th>Purpose</th><td>Prepare OpenELIS for microbiology: mark which tests open a microbiology case, and keep the organisms, antibiotics, AST panels, breakpoint standards and WHONET codes those cases use.</td></tr>
+<tr><th>You'll end up with</th><td>Culture tests that open a case when ordered, and reference data that drives culture identification, susceptibility interpretation and the WHONET export.</td></tr>
+<tr><th>Who does this</th><td>A system administrator, usually with the microbiology lead. Access is set by user permissions and can be configured by your administrator.</td></tr>
+<tr><th>Before you start</th><td>Agree with the laboratory which breakpoint standard (for example CLSI) and which AST panels it uses, and the WHONET codes it reports with.</td></tr>
+<tr><th>Where</th><td>Main menu &rarr; Admin &rarr; Test Catalogue Management (Test Catalogue Editor, Sample Type Editor) and Main menu &rarr; Admin &rarr; Microbiology reference data</td></tr>
+</tbody></table>
+
+<h2>Overview</h2>
+<p>A microbiology case is opened by the order itself: when a test marked as opening a case is ordered, OpenELIS creates the case on the bench. Everything the bench then needs to interpret growth and susceptibility comes from <strong>Microbiology reference data</strong>, which has six tabs: <strong>Molecular resistance mappings</strong>, <strong>Organisms</strong>, <strong>Antibiotics</strong>, <strong>AST panels</strong>, <strong>Breakpoint standards</strong> and <strong>Patient origins</strong>.</p>
+
+<h2>Step 1: Mark the tests that open a case</h2>
+<p>Open the test in the Test Catalogue Editor (Main menu &rarr; Admin &rarr; Test Catalogue Management, then the test) and go to <strong>Basic Info</strong>. For a culture test set:</p>
+<ul>
+<li><strong>AMR surveillance test</strong>: Yes, if its results feed AMR surveillance.</li>
+<li><strong>Opens a Microbiology case</strong>: Yes.</li>
+<li><strong>Case role</strong>: for example Culture.</li>
+<li><strong>Collected in sets</strong>: Yes for tests collected as sets, such as blood cultures.</li>
+</ul>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="01-catalog-opens-case.png" ri:version-at-save="1" /></ac:image></p>
+<p><em>Figure 1. Basic Info for Blood culture (Whole Blood): AMR surveillance test, Opens a Microbiology case and Collected in sets all Yes, with Case role Culture.</em></p>
+
+<h2>Step 2: Keep the organism list</h2>
+<p>Go to Main menu &rarr; Admin &rarr; Microbiology reference data &rarr; <strong>Organisms</strong>, described as the organism vocabulary used by culture identification and AST. Each organism has a <strong>WHONET code</strong>, an <strong>Organism group</strong>, an <strong>Initial significance</strong> (for example USUALLY, POSSIBLE or RARE) and a <strong>Default AST panel</strong>. Use <strong>Add organism</strong> to add one, and the row menu to change it.</p>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="02-organisms.png" ri:version-at-save="1" /></ac:image></p>
+<p><em>Figure 2. The Organisms tab: Escherichia coli (eco) in Enterobacterales with the Enterobacterales urine panel as its default, and other organisms with their groups and significance.</em></p>
+
+<h2>Step 3: Keep the antibiotic list</h2>
+<p>On the <strong>Antibiotics</strong> tab, each antibiotic has a <strong>WHONET code</strong>, a <strong>Class</strong>, a <strong>Route</strong> (for example IV, ORAL or BOTH) and a status. <strong>Add antibiotic</strong> opens a dialog with <strong>Name</strong>, <strong>WHONET code</strong>, <strong>Class</strong>, <strong>TB resistance role</strong>, <strong>Route</strong> and <strong>Notes</strong>.</p>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="03-antibiotic-dialog.png" ri:version-at-save="1" /></ac:image></p>
+<p><em>Figure 3. Adding Amikacin: WHONET code AMK, class Aminoglycosides, Not a TB classification drug, route IV.</em></p>
+
+<h2>Step 4: Maintain AST panels</h2>
+<p>On the <strong>AST panels</strong> tab, each panel lists the antibiotics tested for a group of organisms. Changing a panel is done with <strong>Publish new version</strong> from its row menu. The dialog notes that saving creates a new panel version and that existing AST runs keep their original version. It holds the <strong>Susceptibility protocol</strong>, the <strong>Name</strong>, <strong>Available for new work</strong>, and the list of antibiotics, each with a <strong>Tier</strong> and a <strong>Report behavior</strong> and arrows to reorder them. Pick an antibiotic and press <strong>Add</strong> to add it to the panel.</p>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="04-ast-panel-dialog.png" ri:version-at-save="1" /></ac:image></p>
+<p><em>Figure 4. Publish new version for the Enterobacterales urine panel: General susceptibility, Ampicillin, Ceftriaxone, Ciprofloxacin and Gentamicin at tier 1, reported Always.</em></p>
+
+<h2>Step 5: Check the breakpoint standard in use</h2>
+<p>The <strong>Breakpoint standards</strong> tab lists the loaded standards with <strong>Publisher</strong>, <strong>Version</strong>, <strong>Status</strong>, <strong>Effective date</strong> and the number of <strong>Rules</strong>. The <strong>Active</strong> standard is the one used for new AST runs; others show <strong>Loaded</strong>. <strong>Import CSV</strong> loads a standard from a file.</p>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="05-breakpoint-standards.png" ri:version-at-save="1" /></ac:image></p>
+<p><em>Figure 5. Breakpoint standards: CLSI 2026 Active with 7 rules, and a second CLSI set Loaded but not active.</em></p>
+<p>Open a standard to see its rules. Each rule gives the <strong>Organism or group</strong>, <strong>Antibiotic</strong>, <strong>Method</strong> and the <strong>Susceptible</strong>, <strong>Intermediate</strong> and <strong>Resistant</strong> values, with its <strong>Source</strong> (for example Imported). Filter by organism, antibiotic, method or specimen context. <strong>Add local correction</strong> adds a laboratory-specific rule.</p>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="06-breakpoint-rules.png" ri:version-at-save="1" /></ac:image></p>
+<p><em>Figure 6. The rules of CLSI 2026: MIC breakpoints for Enterobacterales against Ciprofloxacin, Gentamicin, Meropenem and Ampicillin, all Imported.</em></p>
+
+<h2>Step 6: Give each specimen type its WHONET code</h2>
+<p>In the Sample Type Editor (Main menu &rarr; Admin &rarr; Test Catalogue Management &rarr; Sample Type Editor, then the sample type), <strong>WHONET specimen code</strong> is the code written to the WHONET SPECIMEN_TYPE field, up to 5 characters. <strong>Use for microbiology isolates</strong> marks sample types used for isolates.</p>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="07-sample-type-whonet-code.png" ri:version-at-save="1" /></ac:image></p>
+<p><em>Figure 7. The Urines sample type with WHONET specimen code ur.</em></p>
+
+<h2>Field reference</h2>
+<table><tbody>
+<tr><th>Field or control</th><th>Where</th><th>What it does</th></tr>
+<tr><td>AMR surveillance test</td><td>Test, Basic Info</td><td>Marks the test as feeding AMR surveillance.</td></tr>
+<tr><td>Opens a Microbiology case, Case role</td><td>Test, Basic Info</td><td>Ordering the test opens a microbiology case; the role says what the test is in the case (for example Culture).</td></tr>
+<tr><td>Collected in sets</td><td>Test, Basic Info</td><td>For tests collected as sets, such as blood cultures.</td></tr>
+<tr><td>WHONET code</td><td>Organisms, Antibiotics</td><td>The code used for the organism or antibiotic in the WHONET export.</td></tr>
+<tr><td>Organism group, Initial significance, Default AST panel</td><td>Organisms</td><td>How the organism is grouped for breakpoints, how significant it usually is, and the panel offered first.</td></tr>
+<tr><td>Class, TB resistance role, Route</td><td>Antibiotics</td><td>Drug class, its role in TB resistance classification, and route.</td></tr>
+<tr><td>Tier, Report behavior</td><td>AST panel</td><td>Order of testing and when a result is reported.</td></tr>
+<tr><td>Publish new version</td><td>AST panel</td><td>Saves a new panel version; earlier AST runs keep their version.</td></tr>
+<tr><td>Active / Loaded</td><td>Breakpoint standards</td><td>Only the Active standard interprets new AST runs.</td></tr>
+<tr><td>Add local correction</td><td>Breakpoint rules</td><td>Adds a laboratory-specific rule to the standard.</td></tr>
+<tr><td>WHONET specimen code</td><td>Sample type</td><td>Code written to WHONET SPECIMEN_TYPE (up to 5 characters).</td></tr>
+</tbody></table>
+
+<h2>Tips</h2>
+<ul>
+<li>Set the WHONET code on every organism, antibiotic and specimen type you report. Rows without a mapping cannot go into the WHONET export.</li>
+<li>Panels are versioned, so changing a panel does not rewrite results already recorded.</li>
+<li>In the rules list, a single intermediate value is shown as a range with the same number at both ends (for example 4&ndash;4).</li>
+<li>Known issue OGC-1527: when the server rejects a reference-data entry, the message can show an internal message key instead of the field name.</li>
+<li>Reference data on the test server includes panels and a standard created for automated testing (names starting with QA). They are not part of a standard installation.</li>
+</ul>
+
+<h2>Not yet available</h2>
+<ul>
+<li>Breakpoints for disk diffusion (zone diameters). Only MIC rules were present on the test server.</li>
+<li>AST reporting rules, one-click suggestions, AMR for R reference data, infection control alerts and AST QC are planned for Microbiology V3 (OGC-1528).</li>
+</ul>
+
+<h2>Provenance</h2>
+<table><tbody>
+<tr><th>Status</th><td>Draft for review (pre-release)</td></tr>
+<tr><th>Instance</th><td>pngtest.openelis-global.org, header version <em>3.3.0-SNAPSHOT</em>, Microbiology V2 pre-release build (OGC-1383)</td></tr>
+<tr><th>Routes</th><td>/MasterListsPage/TestCatalogEditor/{test}/basic-info; /MasterListsPage/MicrobiologyReference/&hellip; (organisms, antibiotics, AST panels, breakpoints); /MasterListsPage/SampleTypeEditor/{id}/basic-info</td></tr>
+<tr><th>Date</th><td>21 October 2026</td></tr>
+<tr><th>Driven</th><td>Reference data screens opened and read; Add antibiotic and Publish new version dialogs filled and cancelled. The Basic Info flags on Blood culture and Urine culture, the CLSI 2026 activation and the Urines WHONET code were set through the REST calls these screens make.</td></tr>
+<tr><th>Observed only</th><td>Add organism; Import CSV; Add local correction; Molecular resistance mappings and Patient origins tabs.</td></tr>
+</tbody></table>

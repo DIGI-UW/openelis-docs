@@ -1,0 +1,67 @@
+<p><em>Concept and how-to · Quality officers, supervisors and bench staff</em></p>
+<ac:structured-macro ac:name="info"><ac:rich-text-body><p><strong>Status:</strong> draft for review. Written against pngtest.openelis-global.org, version 3.2.2.0, 27 September 2026. Quality control is being reworked around Runs (OGC-1200), so expect this page to change. See Provenance.</p></ac:rich-text-body></ac:structured-macro>
+<h2>At a glance</h2>
+<table><tbody>
+<tr><th>Purpose</th><td>Know where statistical quality control lives in OpenELIS and check each day whether any control has failed.</td></tr>
+<tr><th>You'll end up with</th><td>A view of instrument QC status, bench and rapid-test controls, and any violations that need action.</td></tr>
+<tr><th>Who does this</th><td>Quality officers and supervisors, and bench staff who run controls. Access is set by user permissions and can be configured by your administrator.</td></tr>
+<tr><th>Before you start</th><td>At least one active control lot (see <a href="https://uwdigi.atlassian.net/wiki/spaces/OG/pages/1680048146">Receive and activate a control lot</a>).</td></tr>
+<tr><th>Where</th><td>Main menu → Quality Assurance → Statistical QC.</td></tr>
+</tbody></table>
+<h2>What is in Statistical QC</h2>
+<table><tbody>
+<tr><th>Menu item</th><th>What it is for</th></tr>
+<tr><td>QC Dashboard</td><td>Status summary with three tabs: Instruments, Alerts and Bench QC.</td></tr>
+<tr><td>QC Alerts</td><td>Opens the dashboard on its Alerts tab.</td></tr>
+<tr><td>QC Lot Management</td><td>Control lots and their target statistics.</td></tr>
+<tr><td>Rule Configuration</td><td>The Westgard rule sets configured per analyzer and test ("Configured Rule Sets").</td></tr>
+<tr><td>Reagent QC</td><td>Not yet available. The page says "Future feature — design exists; build not yet scheduled."</td></tr>
+<tr><td>Analyzer Manual QC</td><td>Not yet available. Same future-feature notice.</td></tr>
+</tbody></table>
+<p>{{IMG:31-manual-qc-full.png}}</p>
+<p><em>Figure 1. Analyzer Manual QC shows a future-feature notice. Reagent QC shows the same kind of notice.</em></p>
+<h2>Check QC status each day</h2>
+<ol>
+<li>Open <strong>QC Dashboard</strong>. The four tiles at the top show <strong>Instruments In Control</strong>, <strong>Warning Status</strong>, <strong>Out of Control</strong> and <strong>Overall QC Pass Rate</strong>. <strong>Last Updated</strong> shows when the figures were read; <strong>Refresh</strong> and <strong>Export</strong> sit beside it.</li>
+<li>The <strong>Instruments</strong> tab lists each instrument with its <strong>Type</strong>, <strong>Location</strong>, <strong>Status</strong>, <strong>Analytes</strong>, <strong>Recent Violations</strong>, <strong>Last Update</strong> and <strong>Actions</strong>. Use <strong>Search instruments</strong> to find one.</li>
+</ol>
+<p>{{IMG:01_qa_qc_dashboard.png}}</p>
+<p><em>Figure 2. The QC Dashboard on its Instruments tab. This instance has no instruments connected, so the list is empty.</em></p>
+<ol start="3">
+<li>Open the <strong>Bench QC</strong> tab to see controls recorded without an analyzer, such as rapid-test controls. Each row shows the <strong>Lab unit</strong>, <strong>Test</strong>, <strong>Source</strong>, <strong>Controls run</strong>, how many <strong>Failed</strong>, and when the last one was run. Filter with <strong>Source</strong>.</li>
+</ol>
+<p>{{IMG:09-bench-qc.png}}</p>
+<p><em>Figure 3. The Bench QC tab with one rapid-test control run for HIV Rapid Test in Serology, marked as failed.</em></p>
+<ol start="4">
+<li>Open the <strong>Alerts</strong> tab (or <strong>QC Alerts</strong> in the menu). <strong>Active QC Violations</strong> lists violations not yet acknowledged; <strong>Acknowledged Violations</strong> lists those already dealt with. Choose the <strong>Time Period</strong> to look back over, for example <strong>Last 72 Hours</strong>.</li>
+</ol>
+<p>{{IMG:11-alerts.png}}</p>
+<p><em>Figure 4. The Alerts tab with no active or acknowledged violations in the last 72 hours.</em></p>
+<p><em>Acknowledging a violation has not yet been verified on a live instance, because no violation was available to act on. Confirm before publishing.</em></p>
+<h2>Tips</h2>
+<ul>
+<li>A failed bench control does not appear on the Alerts tab: with the failed HIV Rapid Test control in Figure 3 on the dashboard, Alerts showed no violations. Check the Bench QC tab as well as Alerts.</li>
+<li>These pages show <strong>Analyzers › Quality Control Dashboard</strong> in the breadcrumb even when reached from Quality Assurance. This is a known inconsistency, not a different page.</li>
+<li>How rapid-test and manual control results are recorded is not yet documented in this manual.</li>
+</ul>
+<h2>Not yet available</h2>
+<ul>
+<li>Reagent QC and Analyzer Manual QC (future-feature notices in the menu).</li>
+<li>Runs: one unit of QC, reagent lot and result review across analyzer, workplan and manual results (OGC-1200, planned).</li>
+</ul>
+<h2>Not yet documented</h2>
+<ul>
+<li>Recording a rapid-test or manual control result.</li>
+<li>Reading an instrument's Levey-Jennings chart and acknowledging a violation (needs a connected analyzer with QC data).</li>
+<li>Editing a Westgard rule set.</li>
+</ul>
+<h2>Provenance</h2>
+<table><tbody>
+<tr><th>Instance</th><td>pngtest.openelis-global.org, version 3.2.2.0</td></tr>
+<tr><th>Date</th><td>27 September 2026</td></tr>
+<tr><th>Observed</th><td>Menu, dashboard tiles and tabs, Bench QC row (recorded by another user earlier the same day), Alerts tab, Rule Configuration list, the two future-feature pages.</td></tr>
+<tr><th>Driven</th><td>Tab switching; created control lot 4521A-L1 and confirmed it did not add a rule set.</td></tr>
+<tr><th>Not verified</th><td>Instrument rows, violation acknowledgement, Export contents, rule editing.</td></tr>
+<tr><th>Feature</th><td>QA Menu umbrella OGC-682 (Feature Doc OGC-1213), Statistical QC rehome OGC-689, manual and RDT QC OGC-1147</td></tr>
+<tr><th>Reviewer</th><td>Not yet reviewed</td></tr>
+</tbody></table>

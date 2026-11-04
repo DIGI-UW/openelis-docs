@@ -1,0 +1,858 @@
+[
+ {
+  "id": "272760837",
+  "title": "Print a work plan",
+  "v": 7,
+  "when": "2026-10-13",
+  "labels": [
+   "doc-in-review"
+  ],
+  "wip": true,
+  "review_area": false,
+  "parent": "1679589479",
+  "tickets_top": [
+   "OGC-1499"
+  ],
+  "stamp": false
+ },
+ {
+  "id": "1734017045",
+  "title": "Admin: Set up notification triggers, templates, channels and delivery",
+  "v": 2,
+  "when": "2026-10-22",
+  "labels": [
+   "doc-in-review"
+  ],
+  "wip": true,
+  "review_area": false,
+  "parent": "1680441357",
+  "tickets_top": [
+   "OGC-1561"
+  ],
+  "stamp": false
+ },
+ {
+  "id": "1733886070",
+  "title": "Run an in-house blinded EQA panel",
+  "v": 3,
+  "when": "2026-10-22",
+  "labels": [
+   "doc-in-review"
+  ],
+  "wip": true,
+  "review_area": false,
+  "parent": "1706098877",
+  "tickets_top": [
+   "OGC-1565"
+  ],
+  "stamp": false
+ },
+ {
+  "id": "1733001264",
+  "title": "Record corrective and preventive actions and use the CAPA Register",
+  "v": 3,
+  "when": "2026-10-22",
+  "labels": [
+   "doc-in-review"
+  ],
+  "wip": true,
+  "review_area": false,
+  "parent": "1706098877",
+  "tickets_top": [
+   "OGC-1564"
+  ],
+  "stamp": false
+ },
+ {
+  "id": "1732739133",
+  "title": "QA Overview and quality indicators",
+  "v": 3,
+  "when": "2026-10-22",
+  "labels": [
+   "doc-in-review"
+  ],
+  "wip": true,
+  "review_area": false,
+  "parent": "1706098877",
+  "tickets_top": [
+   "OGC-1563"
+  ],
+  "stamp": false
+ },
+ {
+  "id": "1732739089",
+  "title": "Admin: Set the patient report header (Printed Report Configuration)",
+  "v": 2,
+  "when": "2026-10-22",
+  "labels": [
+   "doc-in-review"
+  ],
+  "wip": true,
+  "review_area": false,
+  "parent": "1680441354",
+  "tickets_top": [
+   "OGC-1562"
+  ],
+  "stamp": false
+ },
+ {
+  "id": "1729724423",
+  "title": "Sent Messages: check and resend deliveries",
+  "v": 5,
+  "when": "2026-10-22",
+  "labels": [
+   "doc-in-review"
+  ],
+  "wip": true,
+  "review_area": false,
+  "parent": "1679589479",
+  "tickets_top": [
+   "OGC-1537"
+  ],
+  "stamp": false
+ },
+ {
+  "id": "1729560592",
+  "title": "Record cassettes and slides on a pathology case",
+  "v": 4,
+  "when": "2026-10-22",
+  "labels": [
+   "doc-in-review"
+  ],
+  "wip": true,
+  "review_area": false,
+  "parent": "1679458391",
+  "tickets_top": [
+   "OGC-1541"
+  ],
+  "stamp": false
+ },
+ {
+  "id": "1729462279",
+  "title": "Modify an order and the optional requesting provider",
+  "v": 4,
+  "when": "2026-10-22",
+  "labels": [
+   "doc-in-review"
+  ],
+  "wip": true,
+  "review_area": false,
+  "parent": "1679458388",
+  "tickets_top": [
+   "OGC-1540"
+  ],
+  "stamp": false
+ },
+ {
+  "id": "1729429517",
+  "title": "Report Print Queue: print and reprint patient reports",
+  "v": 5,
+  "when": "2026-10-22",
+  "labels": [
+   "doc-in-review"
+  ],
+  "wip": true,
+  "review_area": false,
+  "parent": "1679589479",
+  "tickets_top": [
+   "OGC-1536"
+  ],
+  "stamp": false
+ },
+ {
+  "id": "1729167388",
+  "title": "Receive stock and run inventory reports",
+  "v": 7,
+  "when": "2026-10-22",
+  "labels": [
+   "doc-in-review"
+  ],
+  "wip": true,
+  "review_area": false,
+  "parent": "1729363970",
+  "tickets_top": [
+   "OGC-1539"
+  ],
+  "stamp": false
+ },
+ {
+  "id": "1729134594",
+  "title": "Manage inventory items, lots, counts and reorders",
+  "v": 8,
+  "when": "2026-10-22",
+  "labels": [
+   "doc-in-review"
+  ],
+  "wip": true,
+  "review_area": false,
+  "parent": "1729363970",
+  "tickets_top": [
+   "OGC-1538"
+  ],
+  "stamp": false
+ },
+ {
+  "id": "1707704440",
+  "title": "Custom Data Export and My Report Queue",
+  "v": 6,
+  "when": "2026-10-21",
+  "labels": [
+   "reports",
+   "release-3-3-0",
+   "doc-in-review"
+  ],
+  "wip": true,
+  "review_area": false,
+  "parent": "1679589479",
+  "tickets_top": [
+   "OGC-1472",
+   "OGC-479",
+   "OGC-481",
+   "OGC-483"
+  ],
+  "stamp": true
+ },
+ {
+  "id": "1706524697",
+  "title": "Admin: Manage geographic areas",
+  "v": 4,
+  "when": "2026-10-13",
+  "labels": [
+   "doc-in-review"
+  ],
+  "wip": true,
+  "review_area": false,
+  "parent": "1680605196",
+  "tickets_top": [
+   "OGC-1469"
+  ],
+  "stamp": false
+ },
+ {
+  "id": "1706295354",
+  "title": "Admin: Import and export locations",
+  "v": 6,
+  "when": "2026-10-21",
+  "labels": [
+   "doc-in-review"
+  ],
+  "wip": true,
+  "review_area": false,
+  "parent": "1680605196",
+  "tickets_top": [
+   "OGC-1468"
+  ],
+  "stamp": true
+ },
+ {
+  "id": "1705377997",
+  "title": "Review and act on alerts",
+  "v": 4,
+  "when": "2026-10-13",
+  "labels": [
+   "release-3-3-0",
+   "doc-in-review"
+  ],
+  "wip": true,
+  "review_area": false,
+  "parent": "1706098877",
+  "tickets_top": [
+   "OGC-1482",
+   "OGC-1372"
+  ],
+  "stamp": false
+ },
+ {
+  "id": "1705246900",
+  "title": "Test accreditation and report logos",
+  "v": 5,
+  "when": "2026-10-13",
+  "labels": [
+   "doc-in-review"
+  ],
+  "wip": true,
+  "review_area": false,
+  "parent": "1706098877",
+  "tickets_top": [
+   "OGC-1471"
+  ],
+  "stamp": false
+ },
+ {
+  "id": "1705083175",
+  "title": "Admin: Manage sampling sites",
+  "v": 4,
+  "when": "2026-10-13",
+  "labels": [
+   "doc-in-review"
+  ],
+  "wip": true,
+  "review_area": false,
+  "parent": "1680605196",
+  "tickets_top": [
+   "OGC-1470"
+  ],
+  "stamp": false
+ },
+ {
+  "id": "1702821939",
+  "title": "Complete the sample check for a clinical order",
+  "v": 4,
+  "when": "2026-10-13",
+  "labels": [
+   "doc-in-review"
+  ],
+  "wip": true,
+  "review_area": false,
+  "parent": "1679458388",
+  "tickets_top": [],
+  "stamp": false
+ },
+ {
+  "id": "1680048163",
+  "title": "Statistical QC: overview and daily review",
+  "v": 7,
+  "when": "2026-10-13",
+  "labels": [
+   "doc-in-review"
+  ],
+  "wip": true,
+  "review_area": false,
+  "parent": "1706098877",
+  "tickets_top": [
+   "OGC-1359",
+   "OGC-1200"
+  ],
+  "stamp": false
+ },
+ {
+  "id": "1680048146",
+  "title": "Receive and activate a control lot",
+  "v": 6,
+  "when": "2026-10-13",
+  "labels": [
+   "doc-in-review"
+  ],
+  "wip": true,
+  "review_area": false,
+  "parent": "1706098877",
+  "tickets_top": [
+   "OGC-1358"
+  ],
+  "stamp": false
+ },
+ {
+  "id": "1671987213",
+  "title": "EQA participant: take part in a proficiency testing scheme",
+  "v": 16,
+  "when": "2026-10-13",
+  "labels": [
+   "doc-in-review"
+  ],
+  "wip": true,
+  "review_area": false,
+  "parent": "1706098877",
+  "tickets_top": [
+   "OGC-1289"
+  ],
+  "stamp": false
+ },
+ {
+  "id": "1669758983",
+  "title": "Install the Analyzer Bridge",
+  "v": 9,
+  "when": "2026-10-13",
+  "labels": [
+   "doc-in-review"
+  ],
+  "wip": true,
+  "review_area": false,
+  "parent": "1648361491",
+  "tickets_top": [
+   "OGC-1451"
+  ],
+  "stamp": false
+ },
+ {
+  "id": "1669562408",
+  "title": "EQA provider: run a proficiency testing scheme",
+  "v": 17,
+  "when": "2026-10-13",
+  "labels": [
+   "doc-in-review"
+  ],
+  "wip": true,
+  "review_area": false,
+  "parent": "1706098877",
+  "tickets_top": [
+   "OGC-1288"
+  ],
+  "stamp": false
+ },
+ {
+  "id": "1668972546",
+  "title": "Manage lab units",
+  "v": 11,
+  "when": "2026-10-13",
+  "labels": [
+   "doc-in-review"
+  ],
+  "wip": true,
+  "review_area": false,
+  "parent": "1437270018",
+  "tickets_top": [
+   "OGC-1287"
+  ],
+  "stamp": false
+ },
+ {
+  "id": "1666547755",
+  "title": "Import a test catalog from CSV",
+  "v": 10,
+  "when": "2026-10-19",
+  "labels": [
+   "doc-in-review"
+  ],
+  "wip": true,
+  "review_area": false,
+  "parent": "1437270018",
+  "tickets_top": [
+   "OGC-1286"
+  ],
+  "stamp": true
+ },
+ {
+  "id": "1655930882",
+  "title": "Prepare samples for a clinical order",
+  "v": 23,
+  "when": "2026-10-13",
+  "labels": [
+   "doc-in-review"
+  ],
+  "wip": true,
+  "review_area": false,
+  "parent": "1679458388",
+  "tickets_top": [
+   "OGC-1283"
+  ],
+  "stamp": false
+ },
+ {
+  "id": "1648787462",
+  "title": "Enter a clinical order",
+  "v": 24,
+  "when": "2026-10-13",
+  "labels": [
+   "doc-in-review"
+  ],
+  "wip": true,
+  "review_area": false,
+  "parent": "1679458388",
+  "tickets_top": [
+   "OGC-1294"
+  ],
+  "stamp": false
+ },
+ {
+  "id": "1648590851",
+  "title": "Map analyzer codes, resolve held results, and run QC",
+  "v": 13,
+  "when": "2026-10-13",
+  "labels": [
+   "doc-in-review"
+  ],
+  "wip": true,
+  "review_area": false,
+  "parent": "1648361491",
+  "tickets_top": [
+   "OGC-1297"
+  ],
+  "stamp": false
+ },
+ {
+  "id": "1648361491",
+  "title": "Set up an analyzer",
+  "v": 7,
+  "when": "2026-10-13",
+  "labels": [
+   "doc-in-review"
+  ],
+  "wip": true,
+  "review_area": false,
+  "parent": "1680637960",
+  "tickets_top": [
+   "OGC-1295"
+  ],
+  "stamp": false
+ },
+ {
+  "id": "1442414603",
+  "title": "Author the test catalog in CSV files",
+  "v": 5,
+  "when": "2026-10-26",
+  "labels": [
+   "doc-in-review"
+  ],
+  "wip": true,
+  "review_area": false,
+  "parent": "1437270018",
+  "tickets_top": [
+   "OGC-1282"
+  ],
+  "stamp": true
+ },
+ {
+  "id": "1441136648",
+  "title": "Patient Management",
+  "v": 7,
+  "when": "2026-10-26",
+  "labels": [
+   "doc-in-review"
+  ],
+  "wip": true,
+  "review_area": false,
+  "parent": "1679458388",
+  "tickets_top": [
+   "OGC-1272"
+  ],
+  "stamp": true
+ },
+ {
+  "id": "1440907275",
+  "title": "Merge Patient Records",
+  "v": 4,
+  "when": "2026-10-19",
+  "labels": [
+   "doc-in-review"
+  ],
+  "wip": false,
+  "review_area": false,
+  "parent": "1679458388",
+  "tickets_top": [],
+  "stamp": true
+ },
+ {
+  "id": "1440841760",
+  "title": "Register a New Patient",
+  "v": 9,
+  "when": "2026-10-26",
+  "labels": [
+   "doc-in-review"
+  ],
+  "wip": true,
+  "review_area": false,
+  "parent": "1679458388",
+  "tickets_top": [
+   "OGC-1273"
+  ],
+  "stamp": true
+ },
+ {
+  "id": "1437892659",
+  "title": "Admin: Manage organizations",
+  "v": 13,
+  "when": "2026-10-13",
+  "labels": [
+   "doc-in-review"
+  ],
+  "wip": true,
+  "review_area": false,
+  "parent": "1680605196",
+  "tickets_top": [
+   "OGC-1450"
+  ],
+  "stamp": false
+ },
+ {
+  "id": "1432649742",
+  "title": "Read-only & cross-link sections",
+  "v": 8,
+  "when": "2026-10-26",
+  "labels": [
+   "doc-in-review"
+  ],
+  "wip": false,
+  "review_area": false,
+  "parent": "1437270018",
+  "tickets_top": [],
+  "stamp": true
+ },
+ {
+  "id": "1432453132",
+  "title": "Test Catalog Management: the unified editor",
+  "v": 15,
+  "when": "2026-10-13",
+  "labels": [
+   "doc-in-review"
+  ],
+  "wip": true,
+  "review_area": false,
+  "parent": "1437270018",
+  "tickets_top": [
+   "OGC-1278"
+  ],
+  "stamp": false
+ },
+ {
+  "id": "1431633936",
+  "title": "Duplicate a test",
+  "v": 7,
+  "when": "2026-10-13",
+  "labels": [
+   "doc-in-review"
+  ],
+  "wip": true,
+  "review_area": false,
+  "parent": "1437270018",
+  "tickets_top": [
+   "OGC-1280"
+  ],
+  "stamp": false
+ },
+ {
+  "id": "1429176321",
+  "title": "Complete the sample check for an environmental or vector order",
+  "v": 13,
+  "when": "2026-10-20",
+  "labels": [
+   "doc-in-review"
+  ],
+  "wip": true,
+  "review_area": false,
+  "parent": "1679458388",
+  "tickets_top": [
+   "OGC-1301"
+  ],
+  "stamp": true
+ },
+ {
+  "id": "1428684802",
+  "title": "Label and store environmental and vector samples",
+  "v": 14,
+  "when": "2026-10-28",
+  "labels": [
+   "doc-in-review"
+  ],
+  "wip": true,
+  "review_area": false,
+  "parent": "1679458388",
+  "tickets_top": [
+   "OGC-1284"
+  ],
+  "stamp": true
+ },
+ {
+  "id": "1427439642",
+  "title": "Validate & release results",
+  "v": 13,
+  "when": "2026-10-26",
+  "labels": [
+   "doc-in-review"
+  ],
+  "wip": true,
+  "review_area": false,
+  "parent": "1437466625",
+  "tickets_top": [
+   "OGC-1277"
+  ],
+  "stamp": true
+ },
+ {
+  "id": "1427275807",
+  "title": "Enter results & read the compliance evaluation",
+  "v": 10,
+  "when": "2026-10-26",
+  "labels": [
+   "doc-in-review"
+  ],
+  "wip": true,
+  "review_area": false,
+  "parent": "1437466625",
+  "tickets_top": [
+   "OGC-1276"
+  ],
+  "stamp": true
+ },
+ {
+  "id": "1729789973",
+  "title": "Microbiology (pre-release): work a case from culture to release",
+  "v": 5,
+  "when": "2026-10-22",
+  "labels": [
+   "manual-draft"
+  ],
+  "wip": false,
+  "review_area": true,
+  "parent": "1189609473",
+  "tickets_top": [
+   "OGC-1383"
+  ],
+  "stamp": false
+ },
+ {
+  "id": "1729331248",
+  "title": "Microbiology (pre-release): WHONET export",
+  "v": 5,
+  "when": "2026-10-22",
+  "labels": [
+   "manual-draft"
+  ],
+  "wip": false,
+  "review_area": true,
+  "parent": "1189609473",
+  "tickets_top": [
+   "OGC-1383"
+  ],
+  "stamp": false
+ },
+ {
+  "id": "1729167362",
+  "title": "Microbiology (pre-release): set up tests and reference data",
+  "v": 3,
+  "when": "2026-10-22",
+  "labels": [
+   "manual-draft"
+  ],
+  "wip": false,
+  "review_area": true,
+  "parent": "1189609473",
+  "tickets_top": [
+   "OGC-1383"
+  ],
+  "stamp": false
+ },
+ {
+  "id": "1704362069",
+  "title": "French translation glossary and tracking (fr-v1)",
+  "v": 1,
+  "when": "2026-10-09",
+  "labels": [],
+  "wip": false,
+  "review_area": true,
+  "parent": "1189609473",
+  "tickets_top": [],
+  "stamp": false
+ },
+ {
+  "id": "1702756385",
+  "title": "Admin: Manage organizations (3.3.0)",
+  "v": 5,
+  "when": "2026-10-13",
+  "labels": [],
+  "wip": false,
+  "review_area": true,
+  "parent": "1189609473",
+  "tickets_top": [],
+  "stamp": false
+ },
+ {
+  "id": "1649213442",
+  "title": "French translation \u2014 structure and cleanup plan",
+  "v": 1,
+  "when": "2026-09-15",
+  "labels": [],
+  "wip": false,
+  "review_area": true,
+  "parent": "1189609473",
+  "tickets_top": [],
+  "stamp": false
+ },
+ {
+  "id": "1649016834",
+  "title": "Documentation catch-up \u2014 execution plan",
+  "v": 1,
+  "when": "2026-09-15",
+  "labels": [],
+  "wip": false,
+  "review_area": true,
+  "parent": "1189609473",
+  "tickets_top": [
+   "OGC-811",
+   "OGC-1200",
+   "OGC-139"
+  ],
+  "stamp": false
+ },
+ {
+  "id": "1648885761",
+  "title": "Analyzer documentation \u2014 audit and consolidation plan",
+  "v": 1,
+  "when": "2026-09-14",
+  "labels": [],
+  "wip": false,
+  "review_area": true,
+  "parent": "1189609473",
+  "tickets_top": [],
+  "stamp": false
+ },
+ {
+  "id": "1643413547",
+  "title": "Test catalogue editors \u2014 3.2.2.0",
+  "v": 2,
+  "when": "2026-09-12",
+  "labels": [],
+  "wip": false,
+  "review_area": true,
+  "parent": "1189609473",
+  "tickets_top": [
+   "OGC-1212",
+   "OGC-1203",
+   "OGC-1204",
+   "OGC-1205"
+  ],
+  "stamp": false
+ },
+ {
+  "id": "1529872422",
+  "title": "User manual style guide \u2014 titles, labels, and page structure",
+  "v": 4,
+  "when": "2026-10-15",
+  "labels": [],
+  "wip": true,
+  "review_area": true,
+  "parent": "1189609473",
+  "tickets_top": [
+   "OGC-1154",
+   "OGC-737"
+  ],
+  "stamp": false
+ },
+ {
+  "id": "1418166310",
+  "title": "Adding a Patient",
+  "v": 7,
+  "when": "2026-10-20",
+  "labels": [],
+  "wip": false,
+  "review_area": true,
+  "parent": "1189609473",
+  "tickets_top": [],
+  "stamp": true
+ },
+ {
+  "id": "1349091330",
+  "title": "Reference Lab Results \u2014 Dev Primer (OGC-796)",
+  "v": 1,
+  "when": "2026-05-29",
+  "labels": [],
+  "wip": false,
+  "review_area": true,
+  "parent": "1189609473",
+  "tickets_top": [
+   "OGC-796"
+  ],
+  "stamp": false
+ },
+ {
+  "id": "1047265314",
+  "title": "Import analyzer results from a file",
+  "v": 3,
+  "when": "2026-10-13",
+  "labels": [],
+  "wip": false,
+  "review_area": true,
+  "parent": "1189609473",
+  "tickets_top": [],
+  "stamp": false
+ }
+]

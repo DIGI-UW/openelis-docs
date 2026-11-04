@@ -1,0 +1,69 @@
+<ac:structured-macro ac:name="note" ac:schema-version="1"><ac:rich-text-body><p><strong>Work in progress.</strong> This page is published before its review is finished so you can use it now. It is being reviewed under <a href="https://uwdigi.atlassian.net/browse/OGC-1499">OGC-1499</a>, so details may still change. If something on your screen does not match, add a comment to this page.</p></ac:rich-text-body></ac:structured-macro>
+<ac:structured-macro ac:name="info" ac:schema-version="1"><ac:rich-text-body><p><strong>OpenELIS 3.3.0.</strong> This page was rewritten for 3.3.0. Sites on earlier releases can use <a href="https://uwdigi.atlassian.net/wiki/spaces/OG/pages/1705378043">PART 7: WORK PLANS (before 3.3.0)</a>.</p></ac:rich-text-body></ac:structured-macro>
+<p><em>How-to &middot; Bench staff and lab supervisors</em></p>
+<h2>At a glance</h2>
+<table data-layout="default"><tbody>
+<tr><th><p>Purpose</p></th><td><p>List the tests waiting to be done for one lab unit, one test, one panel or one priority, and print that list as the day's work plan.</p></td></tr>
+<tr><th><p>You'll end up with</p></th><td><p>A printed work plan (PDF) listing each lab number, its date of reception and the test to run.</p></td></tr>
+<tr><th><p>Who does this</p></th><td><p>Bench staff and supervisors who share out the work. Access is set by user permissions and can be configured by your administrator.</p></td></tr>
+<tr><th><p>Before you start</p></th><td><p>Samples must have been received and their tests not yet resulted. A work plan only lists tests still waiting for a result.</p></td></tr>
+<tr><th><p>Where</p></th><td><p>Main menu &rarr; Workplan &rarr; By Test Type, By Panel, By Unit or By Priority</p></td></tr>
+</tbody></table>
+<h2>Step 1: Choose how to group the work</h2>
+<ol start="1">
+<li><p>Open <strong>Main menu &rarr; Workplan</strong> and choose the screen that matches how your bench is organised:</p>
+<ul>
+<li><p><strong>By Unit</strong>: every waiting test in one lab unit, such as Hematology. Use it to give a section its work for the day.</p></li>
+<li><p><strong>By Test Type</strong>: every waiting sample for one test, such as Creatinine (Serum). Use it when one person runs one test on a batch.</p></li>
+<li><p><strong>By Panel</strong>: every waiting test that belongs to one panel.</p></li>
+<li><p><strong>By Priority</strong>: every waiting test with one priority: Routine, ASAP, STAT, Timed or Future STAT. Use STAT at the start of a shift to see urgent work first.</p></li>
+</ul></li>
+<li><p>Pick a value in the list at the top of the screen (<strong>Unit Type</strong>, <strong>Test Type</strong>, <strong>Panel Type</strong> or <strong>Priority</strong>). The table fills in straight away; there is no search button.</p></li>
+</ol>
+<h2>Step 2: Read the list</h2>
+<ol start="3">
+<li><p>The line above the table gives <strong>Total Tests</strong>. The table lists each waiting test with its <strong>Accession Number</strong>, <strong>Test Name</strong> and <strong>Received Date</strong>, in lab number order. A red flag next to an accession number means the sample or order is nonconforming or the test has been rejected.</p>
+<p>{{IMG:01-by-unit.png}}</p>
+<p><em>Figure 1. Workplan By Unit for Hematology: six waiting tests, with one row ticked under Remove.</em></p></li>
+<li><p>Select an accession number to open the <strong>Results</strong> screen for that lab number, ready for entering results.</p></li>
+</ol>
+<h2>Step 3: Leave tests off the printed plan</h2>
+<ol start="5">
+<li><p>To give part of the list to someone else, tick <strong>Remove</strong> on the rows that should not be on this printed plan. The rows stay on the screen and <strong>Total Tests</strong> does not change; only the printout leaves them out. Print the remaining rows for a second person by ticking the other rows instead.</p></li>
+</ol>
+<h2>Step 4: Print the work plan</h2>
+<ol start="6">
+<li><p>Select <strong>Print Workplan</strong> (above or below the table). OpenELIS opens the work plan as a PDF in a new browser tab, where you can print or save it.</p></li>
+<li><p>The printout is headed <strong>Work plan:</strong> and the unit, test, panel or priority you chose, with the date, and lists <strong>Lab No</strong>, <strong>Date of reception</strong> and <strong>Name of test</strong> for every row you did not remove.</p>
+<p>{{IMG:02-printed.png}}</p>
+<p><em>Figure 2. The printed work plan for Hematology. The removed row (DEV01260000000000108) is not on it.</em></p></li>
+</ol>
+<h2>The other groupings</h2>
+<p>By Test Type, By Panel and By Priority work the same way. By Test Type shows one test only, so its table has no Test Name column.</p>
+<p>{{IMG:03-by-test.png}}</p>
+<p><em>Figure 3. Workplan By Test for Creatinine (Serum).</em></p>
+<p>{{IMG:04-by-priority.png}}</p>
+<p><em>Figure 4. Workplan By Priority for STAT: one waiting glucose test.</em></p>
+<h2>Field reference</h2>
+<table data-layout="default"><tbody>
+<tr><th><p>Control</p></th><th><p>What it does</p></th></tr>
+<tr><td><p>Unit Type, Test Type, Panel Type, Priority</p></td><td><p>Chooses which waiting tests are listed. Only one value at a time.</p></td></tr>
+<tr><td><p>Total Tests</p></td><td><p>How many waiting tests match. It counts removed rows too.</p></td></tr>
+<tr><td><p>Remove</p></td><td><p>Leaves that row off the printed work plan. Nothing is changed on the order or the test.</p></td></tr>
+<tr><td><p>Accession Number</p></td><td><p>Opens Results for that lab number.</p></td></tr>
+<tr><td><p>Print Workplan</p></td><td><p>Opens the PDF work plan in a new tab.</p></td></tr>
+</tbody></table>
+<h2>Tips</h2>
+<ul>
+<li><p>Large units can list many tests; use the page controls under the table to move through them.</p></li>
+<li><p>Work plans list tests that are still waiting for a result, so print a fresh one when you start a new batch.</p></li>
+</ul>
+<h2>Not covered on this page</h2>
+<p><strong>Batch Workplan</strong> also appears under Main menu &rarr; Workplan in 3.3.0. It belongs to work that is still being built and is not documented yet.</p>
+<h2>Provenance</h2>
+<table data-layout="default"><tbody>
+<tr><th><p>Drafted</p></th><td><p>13 October 2026 against <strong>3.3.0-SNAPSHOT</strong> on <code>testing.openelis-global.org</code>. Replaces the older-format PART 7 text, kept as 1705378043.</p></td></tr>
+<tr><th><p>Driven</p></th><td><p>By Unit (Hematology, 6 tests): Remove on one row, then Print Workplan; the PDF listed the other 5. The accession link opened Results for that lab number. By Test Type (Creatinine, Serum), By Panel and By Priority (STAT) selected and listed.</p></td></tr>
+<tr><th><p>Observed, not driven</p></th><td><p>Paging through a long list, and the red flag (no flagged row in the lists used).</p></td></tr>
+<tr><th><p>Status</p></th><td><p>Work in progress, review OGC-1499.</p></td></tr>
+</tbody></table>

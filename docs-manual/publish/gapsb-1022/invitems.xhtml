@@ -1,0 +1,194 @@
+<ac:structured-macro ac:name="note" ac:schema-version="1" ac:macro-id="a0d21656-d62b-4fbb-abd5-437ffe5a181b"><ac:rich-text-body><p><strong>Work in progress.</strong> This page is published before its review is finished so you can use it now. It is being reviewed under <a href="https://uwdigi.atlassian.net/browse/OGC-1538">OGC-1538</a>, so details may still change. If something on your screen does not match, add a comment to this page.</p></ac:rich-text-body></ac:structured-macro>
+
+<h2>At a glance</h2>
+<table><tbody>
+<tr><th>Purpose</th><td>See what the laboratory has in stock, what will run out and what to reorder, and keep item records, lots, counts and usage up to date.</td></tr>
+<tr><th>You'll end up with</th><td>An Items board filtered to the stock you look after, with each item's lots, a reorder list, and counts or usage recorded against the right lot.</td></tr>
+<tr><th>Who does this</th><td>Laboratory managers, store keepers and bench staff who use reagents and consumables. Access is set by user permissions and can be configured by your administrator.</td></tr>
+<tr><th>Before you start</th><td>Items must be defined (New item or Import items) and stock received (see <a href="https://uwdigi.atlassian.net/wiki/spaces/OG/pages/1729167388">Receive stock and run inventory reports</a>).</td></tr>
+<tr><th>Where</th><td>Main menu &rarr; Inventory &rarr; Items</td></tr>
+</tbody></table>
+
+<h2>Overview</h2>
+<p>The Items page is the inventory board. Its subtitle reads <em>What you have and what to reorder. Expand a row to see its lots and where they are.</em> Each row is one kind of item, with how much is on hand, how its use is trending, when it is projected to run out, when it must be ordered by, its status and when it was last counted. A banner at the top names the items to reorder now. Tags group items (for example by laboratory section or by kind of item) so each team can filter the board to its own stock.</p>
+
+
+<h2>Step 1: Filter the board to your stock</h2>
+<p>Go to Main menu &rarr; Inventory &rarr; Items. Use the controls above the list to narrow it:</p>
+<ul>
+<li><strong>Search</strong> by item name, code, tag or lot number.</li>
+<li><strong>Filter by Status</strong>: All, Reorder now, Reorder soon, Adequate or Building data.</li>
+<li><strong>Filter by Location</strong>: where the stock is stored.</li>
+<li><strong>Filter by Tags</strong>: pick one or more tags. Each chosen tag appears under the filters with an <strong>&times;</strong>, and <strong>Clear tags</strong> removes them all.</li>
+<li><strong>Show deactivated</strong> adds items that have been deactivated.</li>
+</ul>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="01-board-filtered.png" ri:version-at-save="3" /></ac:image></p>
+<p><em>Figure 1. The Items board filtered to the tag Central laboratory, with the action buttons above the list and each item's code and tags under its name.</em></p>
+<p>Read each row as follows:</p>
+<ul>
+<li><strong>On hand</strong>: the quantity in stock, in the item's units.</li>
+<li><strong>Usage trend</strong> and <strong>Runs out</strong>: projected from recorded use. Until enough use has been recorded, Runs out reads <em>Too few days of use to project a run-out date</em>, or <strong>Out of stock</strong> when nothing is left.</li>
+<li><strong>Order by</strong>: the date to place an order, with the lead time underneath, for example <em>30d (set)</em> when a lead time was entered on the item, or 30d with a note to set it when none was entered and the default is used.</li>
+<li><strong>Status</strong>: <strong>Reorder now</strong>, <strong>Reorder soon</strong>, <strong>Adequate</strong> or <strong>Building data</strong> (not enough history yet). <strong>On order</strong> is added once the item has been marked as ordered.</li>
+<li><strong>Last count</strong>: the date of the last physical count, or <em>Never counted</em>.</li>
+</ul>
+
+
+<h2>Step 2: Check an item's lots</h2>
+<p>Press the arrow at the start of a row. The expanded row lists the item's lots with <strong>Lot Number</strong>, <strong>Expiration Date</strong>, <strong>Current Quantity</strong>, <strong>Status</strong>, <strong>QC Status</strong>, <strong>Storage Location</strong> and <strong>Flag</strong>. The lot to use next is flagged <strong>Use first</strong>. Under the lots, the row shows the median daily use over the last 30 days and the quantity by location.</p>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="02-row-expanded-lots.png" ri:version-at-save="3" /></ac:image></p>
+<p><em>Figure 2. Xpert MTB/RIF Ultra cartridge expanded: one active lot with QC Passed, not yet assigned to a storage location and flagged Use first.</em></p>
+<p>The menu at the end of a lot row has <strong>Edit lot and location</strong>, <strong>Adjust Quantity</strong>, <strong>Update QC Status</strong> and <strong>Dispose Lot</strong>.</p>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="03-lot-actions.png" ri:version-at-save="3" /></ac:image></p>
+<p><em>Figure 3. The lot menu: Edit lot and location, Adjust Quantity, Update QC Status and Dispose Lot.</em></p>
+
+
+<h2>Step 3: Correct a lot's details</h2>
+<p>Open the lot's menu and choose <strong>Edit lot and location</strong>. <em>Edit Inventory Lot</em> shows the catalog item and initial quantity, which cannot be changed here. Correct the <strong>Lot Number</strong>, <strong>Expiration Date</strong> or <strong>Receipt Date</strong>, assign a storage location with <strong>Assign storage location</strong>, and set the <strong>QC Status</strong> or <strong>Status</strong> if needed. The lot's barcode is locked once saved so printed labels keep working. Press <strong>Save</strong>.</p>
+<p>{{IMG:g04-edit-lot.png}}</p>
+<p><em>Figure 4. Edit Inventory Lot for Ziehl-Neelsen stain kit lot HC468123 with an Expiration Date entered; the catalog item and initial quantity are greyed out and QC Status is still Pending.</em></p>
+
+<h2>Step 4: Record a lot's QC result</h2>
+<p>New lots arrive with QC Status <strong>Pending</strong>, and lots stay unusable for testing until QC is marked Passed. When the lot has been checked, open its menu and choose <strong>Update QC Status</strong>. Choose the <strong>New QC Status</strong> (<strong>Pending</strong>, <strong>Passed</strong>, <strong>Failed</strong> or <strong>Quarantined</strong>), add <strong>Notes</strong> on the check you did, and press <strong>Update</strong>.</p>
+<p>{{IMG:g05-update-qc-status.png}}</p>
+<p><em>Figure 5. Update QC Status for lot HC468123 of Ziehl-Neelsen stain kit: current status Pending, new status Passed, with a note on the control slides.</em></p>
+<p>The lot row then shows QC <strong>Passed</strong>, and the lot to draw next is flagged <strong>Use first</strong>.</p>
+<p>{{IMG:g06-lot-qc-passed.png}}</p>
+<p><em>Figure 6. Ziehl-Neelsen stain kit after the update: lot HC468123, 6 kits, QC Passed and flagged Use first.</em></p>
+
+<h2>Step 5: Act on an item</h2>
+<p>The menu at the end of an item row has <strong>Receive stock</strong>, <strong>Record Usage</strong>, <strong>Edit item details</strong> and <strong>Deactivate item</strong>.</p>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="04-row-actions.png" ri:version-at-save="3" /></ac:image></p>
+<p><em>Figure 7. The item menu for Bioline Malaria Ag P.f/Pan rapid test: Receive stock, Record Usage, Edit item details and Deactivate item.</em></p>
+
+
+<h2>Step 6: Receive stock for one item</h2>
+<p>To add stock of a single item, choose <strong>Receive stock</strong> on its row menu. <em>Receive stock</em> opens with the item already chosen in <strong>Item Name</strong>; you can also scan or type its UPC under <strong>Scan a product barcode</strong>. Enter the <strong>Quantity received</strong> (in the item's units), the <strong>Lot Number</strong> (leave it blank to have one generated from the item code and today's date) and the <strong>Expiration Date</strong>, and press <strong>Receive</strong>. For a delivery of several items, use the Receive page instead (see <a href="https://uwdigi.atlassian.net/wiki/spaces/OG/pages/1729167388">Receive stock and run inventory reports</a>).</p>
+<p>{{IMG:g02-receive-from-row.png}}</p>
+<p><em>Figure 8. Receive stock opened from the Giemsa stain solution row: 3 bottles of lot GS2610A with an expiration date.</em></p>
+<p>The new lot appears under the item with QC Status <strong>Pending</strong> until its QC is recorded (Step 4).</p>
+<p>{{IMG:g03-received-lot-pending-qc.png}}</p>
+<p><em>Figure 9. Giemsa stain solution after receiving: lot GS2610A, 3 bottles, QC Pending, no storage location assigned yet.</em></p>
+
+<h2>Step 7: Define a new item</h2>
+<p>Press <strong>New item</strong>. The dialog notes <em>This defines a kind of item. To add more of one that already exists, use Receive stock.</em> Enter the <strong>Item Name</strong> and, as needed:</p>
+<ul>
+<li><strong>Code</strong>: leave blank to have one generated from the name.</li>
+<li><strong>Tags</strong>: type to find a tag or add a new one. An item can carry more than one.</li>
+<li><strong>Category</strong>, <strong>Manufacturer</strong>, <strong>Catalog number</strong> and <strong>Product barcode (UPC or GTIN)</strong>, the barcode that is the same on every box of the product.</li>
+<li><strong>Units</strong>, for example mL, tests or kits.</li>
+<li><strong>Track lots and expiry</strong>: turn on for anything received in batches with an expiry date; leave off for consumables counted as a single pool.</li>
+<li><strong>Low Stock Threshold</strong>, <strong>Lead time (days)</strong> (leave blank to have it learned from your deliveries), <strong>Warn this many days before expiry</strong>, <strong>Stability After Opening (days)</strong>, <strong>Storage Requirements</strong>, <strong>Compatible Analysers</strong> and <strong>Tests Per Kit</strong>.</li>
+</ul>
+<p>Press <strong>Save</strong>.</p>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="05-new-item-dialog.png" ri:version-at-save="3" /></ac:image></p>
+<p><em>Figure 10. New item filled in for Sodium hypochlorite 5% solution: category Disinfectants, manufacturer Jik, units litres, lots not tracked.</em></p>
+
+
+<h2>Step 8: Review reorder suggestions</h2>
+<p>Press <strong>Reorder suggestions</strong> (the number in brackets is how many items it lists), or <strong>Review and mark as ordered</strong> in the banner. The dialog lists items at or below their threshold, or projected to reach it before a new order could arrive, with <strong>On hand</strong>, <strong>Low Stock Threshold</strong>, <strong>Order by</strong> and <strong>Status</strong>. <strong>Export CSV</strong> downloads the list.</p>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="06-reorder-suggestions.png" ri:version-at-save="3" /></ac:image></p>
+<p><em>Figure 11. Reorder suggestions: items below their threshold, two of them already On order, with the Note and Expected date fields and Export CSV.</em></p>
+
+
+<h2>Step 9: Mark items as ordered</h2>
+<p>In Reorder suggestions, tick the items you have ordered. Add a <strong>Note</strong>, for example the requisition or purchase order reference, and the <strong>Expected date</strong> of delivery. The bar above the list counts the items selected; press <strong>Mark as ordered</strong>. As the dialog says, this records that an order was placed; it does not place one. The same bar has <strong>Not ordered after all</strong>, <strong>Export CSV</strong> and <strong>Cancel</strong>.</p>
+<p>{{IMG:g07-mark-as-ordered.png}}</p>
+<p><em>Figure 12. Microscope slides, frosted end ticked in Reorder suggestions, with the note Requisition CPHL-REQ-2026-0412 and the expected date 2026-11-05.</em></p>
+<p>On the board the item now shows <strong>On order</strong> beside its reorder status.</p>
+<p>{{IMG:g08-marked-on-order.png}}</p>
+<p><em>Figure 13. The Items board after marking: Microscope slides, frosted end shows Reorder now and On order.</em></p>
+
+<h2>Step 10: Count stock</h2>
+<p>Press <strong>Count mode</strong>. Each lot-tracked row gets a count box showing the quantity on hand (<em>of 340 tests</em>); items with nothing in stock read <em>Nothing here to count</em>. A banner explains <em>Counting everywhere. Filter by location to count one shelf at a time. Only what you type is committed.</em> Type the quantity you count. The difference from the recorded quantity appears beside it, and the banner counts the lots you have entered. Press <strong>Cancel</strong> to leave count mode without changes.</p>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="07-count-mode.png" ri:version-at-save="3" /></ac:image></p>
+<p><em>Figure 14. Count mode: 338 typed for Determine HIV-1/2 rapid test against 340 on record, shown as -2, and the banner reading 1 lot counted.</em></p>
+
+
+<h2>Step 11: Confirm the count</h2>
+<p>Press <strong>Confirm count</strong>. Only the counts you typed are committed. A message summarises what was recorded, for example <em>Count recorded: 1 correction, none confirmed.</em> The item's <strong>On hand</strong> changes to the counted quantity and <strong>Last count</strong> shows today's date.</p>
+<p>{{IMG:g09-count-confirmed.png}}</p>
+<p><em>Figure 15. After Confirm count: the message Count recorded: 1 correction, none confirmed, and Determine HIV-1/2 rapid test at 338 tests, last counted Oct 22.</em></p>
+
+<h2>Step 12: Import items from a file</h2>
+<p>Press <strong>Import items</strong>. The dialog explains that a CSV file can define many items at once, that the preview saves nothing, and that re-importing a corrected file updates the same items rather than adding them again. Use <strong>Download the template</strong> for the column layout, then <strong>Add a CSV file</strong> and press <strong>Preview</strong>. <em>What this file would do</em> counts the lines that are new, updated, unchanged and skipped, and lists each line with its outcome and, for a skipped line, the reason.</p>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="08-import-preview.png" ri:version-at-save="3" /></ac:image></p>
+<p><em>Figure 16. The import preview for lab-consumables.csv: one new item and one unchanged item, nothing skipped.</em></p>
+
+
+<h2>Step 13: Apply the import</h2>
+<p>When the preview is right, press <strong>Apply</strong>. The heading changes to <em>What was imported</em>, with the same counts and lines. Press <strong>Close</strong> to return to the board, where the new items appear. A new item with nothing in stock is listed under Reorder now straight away.</p>
+<p>{{IMG:g10-import-applied.png}}</p>
+<p><em>Figure 17. The import applied: 2 new items, Giemsa stain solution and Sodium hypochlorite 5% solution, nothing updated or skipped.</em></p>
+
+<h2>Step 14: Record usage</h2>
+<p>Press <strong>Log usage</strong> (or <strong>Record Usage</strong> on an item's menu). Choose the <strong>Item Name</strong> and enter the <strong>Quantity used</strong>. The dialog shows how much is on hand and that lots are drawn earliest-expiry first. Press <strong>Record Usage</strong>. Recorded use feeds the run-out projection; to correct a count, use <strong>Adjust Quantity</strong> on the lot instead.</p>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="09-log-usage.png" ri:version-at-save="3" /></ac:image></p>
+<p><em>Figure 18. Log usage for Determine HIV-1/2 rapid test: 20 tests used, with 340 tests on hand.</em></p>
+
+
+<h2>Step 15: Manage tags</h2>
+<p>Press <strong>Manage tags</strong>. The dialog lists every tag with the number of <strong>Items</strong> carrying it and its <strong>Status</strong>. To add a tag, type it in <strong>New tag</strong> and press <strong>Add tag</strong>; you can then pick it on items. <strong>Deactivate</strong> stops a tag being suggested or offered as a filter; items already carrying it keep it. Tick <strong>Show deactivated</strong> to list deactivated tags as well.</p>
+<p>{{IMG:g01-manage-tags.png}}</p>
+<p><em>Figure 19. Manage tags after adding Haematology: each tag with its item count, Active status and Deactivate.</em></p>
+
+<h2>Step 16: Follow up low-stock alerts</h2>
+<p>Items that need reordering also raise <strong>Low stock</strong> alerts. Go to Main menu &rarr; Alerts and set <strong>Alert Type</strong> to <strong>Low stock</strong>. Each alert reads <em>&lt;item&gt; needs reordering now</em>, with its <strong>Severity</strong>, <strong>Status</strong> and <strong>Created</strong> time. Press <strong>Acknowledge</strong> to show the alert has been seen. An alert for an item that has been restocked shows <strong>Resolved</strong>.</p>
+<p>{{IMG:g11-alerts-low-stock.png}}</p>
+<p><em>Figure 20. Alerts filtered to Low stock: Open alerts for items that need reordering, each with Acknowledge, and the alert for Ziehl-Neelsen stain kit, restocked since, shown as Resolved.</em></p>
+
+<h2>Field reference</h2>
+<table><tbody>
+<tr><th>Field or control</th><th>What it shows or does</th></tr>
+<tr><td>Reorder now banner</td><td>Names the items to reorder now; Review and mark as ordered opens the reorder list.</td></tr>
+<tr><td>Filter by Status</td><td>All, Reorder now, Reorder soon, Adequate or Building data.</td></tr>
+<tr><td>Filter by Location, Filter by Tags</td><td>Limit the board to a storage location or to items carrying any of the chosen tags.</td></tr>
+<tr><td>Show deactivated</td><td>Includes deactivated items.</td></tr>
+<tr><td>Manage tags</td><td>Add a tag, see how many items carry each tag, and deactivate tags; Show deactivated lists deactivated tags too.</td></tr>
+<tr><td>On hand</td><td>Quantity in stock across active lots, in the item's units.</td></tr>
+<tr><td>Runs out, Order by</td><td>Projected run-out date and order-by date, with the lead time used (set on the item, or a default).</td></tr>
+<tr><td>Status</td><td>Reorder now, Reorder soon, Adequate or Building data, plus On order once marked as ordered.</td></tr>
+<tr><td>Last count</td><td>Date of the last confirmed count, or Never counted.</td></tr>
+<tr><td>Lot row: QC Status, Flag</td><td>Whether the lot has passed QC; Use first marks the lot to draw next.</td></tr>
+<tr><td>Lot menu</td><td>Edit lot and location, Adjust Quantity, Update QC Status, Dispose Lot.</td></tr>
+<tr><td>Edit Inventory Lot</td><td>Lot Number, Expiration Date, Receipt Date, storage location, QC Status and Status. Catalog item, initial quantity and barcode are locked.</td></tr>
+<tr><td>Update QC Status</td><td>New QC Status (Pending, Passed, Failed, Quarantined) and Notes. Lots are unusable for testing until Passed.</td></tr>
+<tr><td>Item menu</td><td>Receive stock, Record Usage, Edit item details, Deactivate item.</td></tr>
+<tr><td>Receive stock (item menu)</td><td>Scan a product barcode, Item Name, Quantity received, Lot Number (blank generates one), Expiration Date; Receive.</td></tr>
+<tr><td>Mark as ordered</td><td>Records the selected items as ordered, with the Note and Expected date; the items show On order.</td></tr>
+<tr><td>Count mode</td><td>Count boxes on every lot; Confirm count commits what you typed and reports the counts recorded, Cancel discards it.</td></tr>
+<tr><td>Import items</td><td>CSV import with a preview (new, updated, unchanged, skipped); Apply writes the items and shows What was imported.</td></tr>
+<tr><td>Log usage</td><td>Records use of an item; lots are drawn earliest-expiry first.</td></tr>
+<tr><td>Alerts: Low stock</td><td>One alert per item that needs reordering now, with Acknowledge; Resolved once restocked.</td></tr>
+</tbody></table>
+
+
+<h2>Tips</h2>
+<ul>
+<li>Enter a lead time on each item. Until you do, Order by uses a default of 30 days and says so.</li>
+<li>Tag items by section (for example TB laboratory) and by kind (for example Rapid tests). The tag filter, the reports and the import file all use the same tags.</li>
+<li>Deactivate tags you no longer use, for example near-duplicates. A deactivated tag is no longer suggested or offered as a filter; items that carry it keep it.</li>
+<li>Count one shelf at a time by filtering by location before you press Count mode.</li>
+<li>Usage is drawn from lots whose QC has passed. When the only lots of an item are still awaiting QC, recording usage was refused on the test server; set the lot's QC status first with Update QC Status.</li>
+<li>Known issue (OGC-1549): the Reorder now banner and the Reorder suggestions list ignore the tag filter, so they also list items outside the tags you picked (Figures 7 and 11).</li>
+
+<li>The figures were captured with British English labels (for example Compatible Analysers). Your screens may use American spelling.</li>
+</ul>
+
+
+<h2>Not yet available</h2>
+<ul>
+<li>Placing orders with a supplier from OpenELIS. Mark as ordered only records that an order was placed.</li>
+</ul>
+
+
+<h2>Provenance</h2>
+<table><tbody>
+<tr><th>Status</th><td>Draft for review</td></tr>
+<tr><th>Instance</th><td>testing.openelis-global.org, header version <em>3.4.0-SNAPSHOT</em> (3.3.0 feature OGC-438, Inventory decision-support redesign)</td></tr>
+<tr><th>Routes</th><td>/inventory; /Alerts</td></tr>
+<tr><th>Date</th><td>21 and 22 October 2026</td></tr>
+<tr><th>Data</th><td>Seeded items tagged Central laboratory: Xpert MTB/RIF Ultra cartridge, Determine HIV-1/2 rapid test, Bioline Malaria Ag P.f/Pan rapid test, EDTA blood collection tube 4 mL, Nitrile examination gloves medium, Microscope slides frosted end, Ziehl-Neelsen stain kit. The board and the reorder list also show test items created by others on the shared test server (names starting with QA). On 22 October: tag Haematology added; Giemsa stain solution and Sodium hypochlorite 5% solution imported from lab-consumables.csv; lot HC468123 of Ziehl-Neelsen stain kit (6 kits) received from the row menu, its expiry set and QC passed; lot GS2610A of Giemsa stain solution (3 bottles) received; Microscope slides, frosted end marked as ordered (Requisition CPHL-REQ-2026-0412, expected 2026-11-05); Determine HIV-1/2 rapid test counted at 338.</td></tr>
+<tr><th>Driven</th><td>Tag filter; expand a row; lot menu and item menu opened; New item filled (not saved); Reorder suggestions opened; Count mode with one count typed, then Cancel (21 October). On 22 October: Manage tags, Add tag; Receive stock from the item menu (twice); Edit lot and location with an expiry date, Save; Update QC Status to Passed; Mark as ordered with a note and expected date; Count mode, Confirm count; Import items preview and Apply; Alerts filtered to Low stock. Log usage filled (not recorded). Lots set to QC Passed and usage recorded through the REST calls the screens make while seeding.</td></tr>
+<tr><th>Observed only</th><td>Filter by Status and Filter by Location options; Show deactivated; Deactivate and Show deactivated in Manage tags; Not ordered after all and Export CSV; Assign storage location; Adjust Quantity, Dispose Lot, Edit item details and Deactivate item; Acknowledge on an alert.</td></tr>
+</tbody></table>

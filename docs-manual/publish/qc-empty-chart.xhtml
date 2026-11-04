@@ -1,0 +1,53 @@
+<h1>Why is my QC chart empty?</h1>
+<h2>At a glance</h2>
+<table><tbody>
+<tr><th>Purpose</th><td>Work out why an analyzer is missing from the QC Dashboard, or why its control results are not being evaluated, by checking the five things that must all be true.</td></tr>
+<tr><th>You'll end up with</th><td>The one link in the chain that is broken, and the page of this manual that fixes it.</td></tr>
+<tr><th>Who does this</th><td>Whoever notices the gap &mdash; usually the analyst reviewing QC or the supervisor. Access is set by user permissions and can be configured by your administrator.</td></tr>
+<tr><th>Before you start</th><td>The name of the analyzer and the test you expected to see, and the lot number of the control you ran.</td></tr>
+<tr><th>Where</th><td>Main menu &rarr; <em>Analyzers</em> &rarr; <em>Analyzers List</em>, and <em>Analyzers</em> &rarr; <em>Quality Control</em> &rarr; <em>QC Dashboard</em>, <em>Control Lots</em>, <em>Rule Configuration</em></td></tr>
+</tbody></table>
+
+<p>By design, a failure in QC processing does not stop the analyzer's results from importing, so if any link in the chain is missing the only symptom is that the analyzer does not appear on the QC Dashboard and no violation is ever raised. That silence is the diagnosis: work down this list in order and stop at the first check that fails.</p>
+<p><em>The import behaviour described here is as designed and has not yet been verified on a live instance. Confirm before publishing.</em></p>
+<p>{{IMG:01-qc-dashboard-empty.png}}</p>
+<p><em>Figure 1. The QC Dashboard reading No instruments found: the symptom this page diagnoses.</em></p>
+
+<h2>Check 1 &mdash; Is the analyzer connected to OpenELIS?</h2>
+<p>Open <em>Analyzers &rarr; Analyzers List</em>. The analyzer must be listed, and its connection must be complete: an analyzer still at Status <em>Setup</em> or flagged <em>Plugin Missing</em> can hold lots and rules but is not yet delivering results. Control results only reach OpenELIS through an analyzer's electronic connection. Fix: add the analyzer or complete its setup (see the analyzer integration pages of this manual).</p>
+<p>{{IMG:02-analyzers-list.png}}</p>
+<p><em>Figure 2. The Analyzers List; this analyzer is still at Status Setup with a Plugin Missing flag.</em></p>
+
+<h2>Check 2 &mdash; Are control results reaching OpenELIS at all?</h2>
+<p>Open <em>Analyzers &rarr; Error Dashboard</em> and look for rejected or unmatched messages from the analyzer around the time the controls were run. If the analyzer's patient results are arriving but its control results are not, the analyzer's mapping does not recognise the control samples as controls.</p>
+<p><em>This check has not yet been verified on a live instance: the test instance had no analyzer traffic, so the Error Dashboard's contents for a control run could not be observed. Confirm what a mis-identified control looks like there before publishing.</em></p>
+
+<h2>Check 3 &mdash; Is there an Active control lot for this exact analyzer and test?</h2>
+<p>Open <em>Analyzers &rarr; Quality Control &rarr; Control Lots</em> and set the Status filter to <em>Active</em>. There must be a lot whose Lot Number matches the material you ran, and which was registered against the same analyzer and test. A lot registered against a different analyzer or test, or one that is no longer Active, is not the lot the results are matched to. Fix: register the lot &mdash; see <em>Receive and activate a control lot</em>.</p>
+<p><em>The matching behaviour described here is as designed; it could not be exercised on the test instance because no control results were available. Confirm before publishing.</em></p>
+<p>{{IMG:03-control-lots-list.png}}</p>
+<p><em>Figure 3. The Control Lots list; the lot for the analyzer and test must be present and Active.</em></p>
+
+<h2>Check 4 &mdash; Does the lot's identifier match what the analyzer sends?</h2>
+<p>The Lot Number on the Control Lots page must be the same identifier the analyzer transmits with the control result. A lot typed with a different prefix, spacing or level suffix from the analyzer's own value will not match. Compare the Lot Number field with the analyzer's printout.</p>
+<p><em>This check describes the matching rule as designed. How a mismatch is surfaced in the user interface has not yet been verified on a live instance. Confirm before publishing.</em></p>
+
+<h2>Check 5 &mdash; Are Westgard rules enabled for the pair?</h2>
+<p>Open <em>Analyzers &rarr; Quality Control &rarr; Rule Configuration</em>. The analyzer and test must appear under <em>Configured Rule Sets</em> with an <em>Enabled Rules</em> count greater than 0/8, and at least one enabled rule should have Rejection severity. If the pair is missing, no lot has been saved for it (go back to Check 3). If rules are all off, open <em>Options &rarr; Edit</em> and enable them &mdash; see <em>Set up QC for an instrument</em>.</p>
+<p>{{IMG:04-rule-configuration-list.png}}</p>
+<p><em>Figure 4. Rule Configuration; the pair must be listed with rules enabled.</em></p>
+
+<h2>Tips</h2>
+<ul>
+<li>The QC Dashboard lists an analyzer only after at least one control result has been matched to an active lot. A newly set-up analyzer with a lot and rules but no run yet is correctly absent.</li>
+<li>Choose <em>Refresh</em> on the QC Dashboard after the analyzer has finished sending; <em>Last Updated</em> shows when the page last reloaded.</li>
+<li><strong>Known defect (3.2.2.0):</strong> the test name shown on Rule Configuration may differ from the one chosen on the lot. Use the analyzer name to identify the pair.</li>
+<li><strong>Known defect (3.2.2.0):</strong> an existing lot cannot be edited or set Inactive (<em>Failed to save control lot</em>). If a lot was registered wrongly, register a corrected lot.</li>
+</ul>
+
+<h2>Related pages</h2>
+<ul>
+<li>Set up QC for an instrument</li>
+<li>Receive and activate a control lot</li>
+<li>Review QC and act on violations</li>
+</ul>

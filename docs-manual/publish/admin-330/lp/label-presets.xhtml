@@ -1,0 +1,85 @@
+<p><em>Part of: </em><a href="https://uwdigi.atlassian.net/wiki/spaces/OG/pages/1437270018"><em>Test Catalog Management: workflow overview</em></a></p>
+<p><em>How-to · Lab administrators</em></p>
+<h2>At a glance</h2>
+<table><tbody>
+<tr><th>Purpose</th><td>Create or edit a label preset (a reusable barcode label definition: size, barcode type, scope, quantities and the fields printed on it), and set the one site-wide barcode choice: where pre-printed label numbers come from.</td></tr>
+<tr><th>You'll end up with</th><td>A label preset available for printing and for use by the test catalog.</td></tr>
+<tr><th>Who does this</th><td>Lab administrators. Access is set by user permissions and can be configured by your administrator.</td></tr>
+<tr><th>Before you start</th><td>The label stock you print on: its height and width in millimetres, and the barcode type your scanners read.</td></tr>
+<tr><th>Where</th><td>Main menu → Admin → Label Presets</td></tr>
+</tbody></table>
+<ac:structured-macro ac:name="info"><ac:rich-text-body><p><strong>This page replaces the old Barcode Configuration screen.</strong> Barcode label settings used to live on a separate Barcode Configuration page with global Number, Elements and Dimensions sections. They are now set <strong>per preset</strong> here, with one exception that stays laboratory-wide: where pre-printed label numbers come from, in the <strong>Site-wide Barcode Settings</strong> card above the list. The Barcode Configuration entry on the Admin home page still exists; its address now opens this page.</p><p>The <strong>Content fields</strong> editor and the <strong>Site-wide Barcode Settings</strong> card are new in OpenELIS 3.3.0. On 3.2.x the rest of this page applies.</p></ac:rich-text-body></ac:structured-macro>
+<p>A <strong>label preset</strong> defines a printable barcode label: its dimensions, its barcode type, the scope it applies to (one label per order, or labels per sample), how many labels print by default and at most, and the fields printed above the barcode. OpenELIS ships five <strong>System</strong> presets: <strong>Order Label</strong>, <strong>Specimen Label</strong>, <strong>Block Label</strong>, <strong>Slide Label</strong> and <strong>Freezer Label</strong>, all CODE_128 and 25 x 76 mm. You can add your own.</p>
+
+<h2>Step 1: Open Label Presets</h2>
+<ol>
+<li><p>Open <strong>Main menu → Admin → Label Presets</strong>. The <strong>Site-wide Barcode Settings</strong> card is at the top (see <em>Site-wide barcode settings</em> below). Under it, the list shows each preset's <strong>Name</strong>, <strong>Barcode Type</strong>, <strong>Dimensions</strong>, <strong>Scope</strong> and <strong>Status</strong>. Built-in presets carry a <strong>System</strong> tag. Type in <strong>Search presets...</strong> to filter the list.</p>
+<p>{{IMG:01-list.png}}</p>
+<p><em>Figure 1. Label Presets, with the Site-wide Barcode Settings card above the five System presets.</em></p></li>
+<li><p>To change a preset, open its row <strong>Actions</strong> menu (⋮) and choose <strong>Edit</strong>. <strong>Duplicate</strong> in the same menu starts a new preset from an existing one.</p>
+<p>{{IMG:02-row-menu.png}}</p>
+<p><em>Figure 2. The Actions menu on a preset row: Edit and Duplicate.</em></p></li>
+</ol>
+
+<h2>Step 2: Add a preset</h2>
+<ol>
+<li><p>Click <strong>Add Preset</strong>. The <strong>Add Label Preset</strong> dialog opens.</p></li>
+<li><p>Under <strong>Basic Info</strong>, enter a <strong>Preset Name</strong>. <strong>Active</strong> is ticked by default.</p></li>
+<li><p>Under <strong>Dimensions (mm)</strong>, set <strong>Height (mm)</strong> and <strong>Width (mm)</strong>.</p></li>
+<li><p>Under <strong>Barcode Settings</strong>, choose the <strong>Barcode Type</strong>: <strong>CODE_128</strong>, <strong>QR</strong> or <strong>DATAMATRIX</strong>.</p></li>
+<li><p>Under <strong>Print Scope &amp; Quantities</strong>, tick <strong>Order</strong>, <strong>Sample</strong> or both. Each box you tick shows its own pair of quantity fields: <strong>Default per Order</strong> and <strong>Max per Order</strong>, or <strong>Default per Sample</strong> and <strong>Max per Sample</strong>. A new Sample scope starts at 1 by default and 10 at most. The maximum is the most labels that can be printed.</p>
+<p>{{IMG:03-add-scope.png}}</p>
+<p><em>Figure 3. A 13 x 38 mm DATAMATRIX cryovial label, printed per sample: 2 by default, 4 at most.</em></p>
+<p>At least one scope is required. If neither box is ticked when you save, the dialog stays open and shows <em>At least one print scope (Order or Sample) must be selected</em>.</p>
+<p>{{IMG:04-scope-required.png}}</p>
+<p><em>Figure 4. Saving with no scope ticked.</em></p></li>
+<li><p>Under <strong>Content fields</strong>, choose what the label prints above its barcode. <strong>Lab Number</strong> is always in position 1, tagged <em>Always first</em>, and is always required. To add a field, pick it in <strong>Add a field</strong> and click <strong>Add</strong>. The fields you can add are Patient Name, Patient Date of Birth, Patient ID, Patient Sex, Site ID, Collection Date and Time, Collected By, Tests, Specimen Type, Block ID, Slide ID, Stain Type, Case Number, Storage Location and Expiry Date. Each added field gets a position, a <strong>Required</strong> box, up and down arrows to change its order, and a bin button to remove it.</p>
+<p>{{IMG:05-content-fields.png}}</p>
+<p><em>Figure 5. Content fields for the cryovial label: Lab Number, then Patient ID (required), Collection Date and Time, and Storage Location.</em></p></li>
+<li><p>Click <strong>Save</strong>. The dialog closes and the new preset appears in the list.</p>
+<p>{{IMG:06-saved.png}}</p>
+<p><em>Figure 6. The saved Cryovial Label preset, found with Search presets.</em></p></li>
+</ol>
+<p>The content fields decide what every printout of that preset shows, including the <strong>Print Bar Code Labels</strong> page.</p>
+
+<h2>System presets and their content fields</h2>
+<p>The System presets come with these content fields after Lab Number. You can change them with <strong>Edit</strong> like any other preset. The Block Label carries pathology fields too; open it with Edit to see them.</p>
+<table><tbody>
+<tr><th>Preset</th><th>Scope</th><th>Content fields after Lab Number</th></tr>
+<tr><td>Order Label</td><td>Order</td><td>Patient Name, Patient Date of Birth, Patient ID, Site ID</td></tr>
+<tr><td>Specimen Label</td><td>Sample</td><td>Patient Name, Patient Date of Birth, Patient ID, Patient Sex, Collection Date and Time, Collected By, Tests</td></tr>
+<tr><td>Slide Label</td><td>Sample</td><td>Patient ID, Slide ID, Stain Type, Block ID, Case Number</td></tr>
+<tr><td>Freezer Label</td><td>Sample</td><td>Patient ID, Storage Location, Specimen Type, Collection Date and Time, Expiry Date</td></tr>
+</tbody></table>
+<p>{{IMG:07-specimen-defaults.png}}</p>
+<p><em>Figure 7. The Specimen Label opened with Edit: 1 label per sample by default, 10 at most, and its eight content fields.</em></p>
+
+<h2>Site-wide barcode settings</h2>
+<p>The <strong>Site-wide Barcode Settings</strong> card, tagged <em>Applies laboratory-wide</em>, holds the one barcode setting that is not per preset. Under <strong>Pre-printed label numbers come from</strong>, it decides where the numbers on <strong>pre-printed</strong> labels (Order → Print Bar Code Labels → Pre-Print Barcodes) come from:</p>
+<ul>
+<li><strong>The same format and number pool as order entry</strong>: pre-printed labels take the next numbers of the ordinary lab number series. This is the default.</li>
+<li><strong>A separate pre-printed series</strong>: pre-printed numbers start with a <strong>Prefix</strong> of exactly 4 letters or digits, then the year and a sequence number.</li>
+</ul>
+<ol>
+<li><p>Choose one of the two options. <strong>Prefix</strong> is enabled only for the separate series.</p></li>
+<li><p>For a separate series, enter the 4-character prefix. A prefix of any other length is refused when you click <strong>Save settings</strong>: the field shows <em>The prefix must be exactly 4 letters or digits</em> and nothing is saved.</p>
+<p>{{IMG:08-prefix-refused.png}}</p>
+<p><em>Figure 8. A 3-character prefix refused.</em></p></li>
+<li><p>Click <strong>Save settings</strong>.</p></li>
+</ol>
+<p><strong>Note:</strong> a pre-printed label exists before any order, so patient details stay blank on it until its number is attached to an order.</p>
+
+<h2>Tips</h2>
+<ul>
+<li>The quantity field labels follow the scope: they read "per Order" or "per Sample". If you see only one pair, only one scope is ticked.</li>
+<li>To stop using a preset, open it with <strong>Edit</strong> and clear <strong>Active</strong> rather than recreating it, so existing history stays readable.</li>
+</ul>
+<p><strong>Related:</strong> the Test Catalog editor's <strong>Labels</strong> section lets a test suggest one of these presets at order entry. Barcode label printing during order entry is covered in the order entry pages.</p>
+
+<h2>Provenance</h2>
+<table><tbody>
+<tr><th>Verified</th><td>Taib, 31 July 2026: promoted to the live manual.</td></tr>
+<tr><th>Updated</th><td><p>12 October 2026 against <strong>3.3.0-SNAPSHOT</strong> on <code>testing.openelis-global.org</code>. Rewritten with new figures. DRIVEN: Add Preset (name, dimensions, DATAMATRIX, Sample scope with quantities, three content fields with Required, Save, preset shown in the list), save with no scope (error), Actions menu (Edit, Duplicate), Edit on the Order, Specimen, Slide and Freezer System presets (content fields read), separate pre-printed series with a 3-character prefix (refused, not saved), the old Barcode Configuration address (opens this page).</p>
+<p>OBSERVED only: Duplicate, clearing Active, Save settings with a valid prefix, the Block Label's content fields. NOT REPRODUCED: the hint for fields that may not fit the label height, described in the 6 October develop walk; a 13 mm label with three added fields showed no hint.</p>
+<p>Seed data left on testing: preset <em>Cryovial Label</em> (13 x 38 mm, DATAMATRIX, Sample).</p></td></tr>
+</tbody></table>

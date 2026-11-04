@@ -1,0 +1,138 @@
+<ac:structured-macro ac:name="note"><ac:rich-text-body><p>This page documents the redesigned <strong>Validation</strong> page introduced in OpenELIS 3.2.2.0. If your site is on an earlier release, use <a href="https://uwdigi.atlassian.net/wiki/spaces/oeg/pages/1441202177">Validate and release results</a> instead, which describes the previous worklist with its Save / Retest checkboxes.</p></ac:rich-text-body></ac:structured-macro>
+
+<p><em>How-to &middot; Validator</em></p>
+
+<h2>At a glance</h2>
+<table>
+<tbody>
+<tr><th>Purpose</th><td>Work through the results waiting for validation, decide each one, and release the ones that are ready.</td></tr>
+<tr><th>You&#8217;ll end up with</th><td>Released results, which leave the queue &mdash; or results corrected, sent back for retesting, or left in the queue for a second look.</td></tr>
+<tr><th>Who does this</th><td>Validators. Access is set by user permissions and can be configured by your administrator.</td></tr>
+<tr><th>Before you start</th><td>Results entered and saved on the Results page, so they carry the status <em>Accepted by technician</em>.</td></tr>
+<tr><th>Where</th><td>Main menu &rarr; Validation &rarr; Routine.</td></tr>
+</tbody>
+</table>
+
+<h2>Overview</h2>
+<p>The Validation page shows one queue per test unit. Above the queue, a row of filter chips counts the rows carrying each signal, and two lane tags count the whole queue as <strong>Clear</strong> or <strong>Needs review</strong>. Each row opens a review panel in place, showing the result in context &mdash; reference and critical ranges, method, analyzer, who entered it and when, QC, components, notes and history &mdash; with the release, correction and retest actions together at the bottom of the panel.</p>
+<p>Reviewing happens inside the queue. There are no per-row Save and Retest checkboxes and no <em>Save All Normal</em> / <em>Retest All Tests</em> buttons; each result is decided in its own panel, or released in bulk with <strong>Release all clear</strong>.</p>
+
+<h2>Step 1 &mdash; Open the validation worklist</h2>
+<p>Open <strong>Main menu &rarr; Validation &rarr; Routine</strong>. The page opens with no test unit chosen, so the queue reads <em>There are no records to display</em>.</p>
+<p>{{IMG:01-open-validation.png}}</p>
+<p><em>The Validation page before a test unit is chosen.</em></p>
+
+<h2>Step 2 &mdash; Choose a test unit and read the queue</h2>
+<ol>
+<li>Pick a unit from <strong>Select Test Unit</strong> &mdash; for example, Hematology. The results awaiting validation for that unit load.</li>
+<li>Read the header before the rows. The legend explains the red flag icon (<em>Sample or Order is nonconforming or Test has been rejected</em>); <strong>Release all clear</strong> sits at the right with the number of rows it would release; the filter chips below count the rows carrying each signal &mdash; <strong>All</strong>, <strong>Needs review</strong>, <strong>NCE</strong>, <strong>QC fail</strong>, <strong>Modified</strong>, <strong>Ack pending</strong>, <strong>Critical</strong> and <strong>Abnormal</strong>; and the two lane tags on the right count the queue as <strong>Clear</strong> and <strong>Needs review</strong>.</li>
+<li>Scan the rows. Each row shows <strong>Sample Info</strong>, <strong>Test Name</strong>, <strong>Normal Range</strong>, <strong>Result</strong>, <strong>U (k=2)</strong>, <strong>Check before release</strong> and <strong>Past Notes</strong>. A result outside its normal range carries an amber bar and an <strong>Abnormal</strong> flag; a result inside its range carries a green bar and no flag. Where a row carries a signal you should look at before releasing it, that signal appears as a chip in <strong>Check before release</strong>, above the row&#8217;s <strong>Review</strong> link.</li>
+</ol>
+<p>{{IMG:02-triage-queue.png}}</p>
+<p><em>The Validation queue for one test unit, with the filter chips, the lane tags and one row per result.</em></p>
+
+<h2>Step 3 &mdash; Narrow the queue with a filter</h2>
+<p>Click a filter chip to show only the rows it counts &mdash; <strong>Abnormal</strong>, for example. The chip highlights and the row count at the foot of the table follows the filter. The <strong>Clear</strong> and <strong>Needs review</strong> tags keep counting the whole queue, not the filtered view, so they do not change as you filter. Click <strong>All</strong> to return to the full queue.</p>
+<p>{{IMG:03-filter-abnormal.png}}</p>
+<p><em>The Abnormal filter applied: five of the eight rows remain, while the lane tags still count all eight.</em></p>
+
+<h2>Step 4 &mdash; Open a result for review</h2>
+<p>Click <strong>Review &rarr;</strong> on a row, or the chevron at the left of the row. The review panel opens underneath it, headed by the lab number and patient, and shows:</p>
+<ul>
+<li><strong>Result</strong> with its units and flag, and the <strong>Reference range</strong>.</li>
+<li><strong>Critical range</strong>, <strong>Method</strong>, <strong>Analyzer</strong>, <strong>Entered by</strong>, <strong>Entered on</strong> and <strong>QC</strong>. Fields the laboratory has not captured read <em>Not recorded</em>.</li>
+<li>Where the row carries signals, a <strong>Before releasing, check:</strong> line listing them.</li>
+<li>For a test with more than one component, a <strong>Components</strong> table listing each component with its result, units, reference range and flag.</li>
+</ul>
+<p>{{IMG:04-review-panel.png}}</p>
+<p><em>The review panel for one result, including the Components table for a multi-component test.</em></p>
+
+<h2>Step 5 &mdash; Check the history before you decide</h2>
+<p>At the bottom of the panel, the <strong>REFERENCE</strong> block holds <strong>Notes</strong>, <strong>QC</strong>, <strong>Order info</strong>, <strong>History (this analysis)</strong> and <strong>Attachments</strong>. Expand <strong>History (this analysis)</strong> to see the entries for this analysis &mdash; when, the event (Created, Result, Status), the detail, and who recorded it. As the panel notes, patient trends live on the patient record and Westgard rules on the QC dashboard.</p>
+<p>{{IMG:05-reference-history.png}}</p>
+<p><em>History (this analysis) expanded, showing the result entry and the status change that put the result in this queue.</em></p>
+
+<h2>Step 6 &mdash; Add a validation note</h2>
+<p>Type in <strong>Validation note</strong> if the decision needs explaining, then set <strong>Visibility</strong>:</p>
+<ul>
+<li><strong>Internal</strong> keeps the note inside the laboratory.</li>
+<li><strong>Send with result</strong> puts the note on the patient report. This option is selected by default, and the panel says so beneath the buttons: <em>This note will appear on the patient report.</em></li>
+</ul>
+<p>The note is recorded against the validation step automatically &mdash; the panel shows <em>Context: Validation (recorded automatically)</em>.</p>
+<p>{{IMG:06-validation-note.png}}</p>
+<p><em>A validation note typed into the panel, with Visibility set to Send with result.</em></p>
+
+<h2>Step 7 &mdash; Release the result</h2>
+<p>Click <strong>Validate &amp; release</strong>. The result is released, the row leaves the queue, and the filter counts and lane tags drop to match. All components of a multi-component test leave together. On the Results page the released test then reads <em>Results final</em>.</p>
+<p>{{IMG:07-after-release.png}}</p>
+<p><em>The queue after a release: the released rows are gone and the counts have dropped.</em></p>
+
+<h2>Step 8 &mdash; Correct a result before releasing it</h2>
+<p>Click <strong>Modify result</strong> to correct a value without leaving the queue. The panel adds a <strong>New result</strong> field holding the current value, and relabels the note field <strong>Reason for modification</strong> with <strong>Visibility</strong> set to <strong>Internal</strong>. <strong>Save modification</strong> and <strong>Cancel</strong> replace the usual action buttons.</p>
+<p>{{IMG:08-modify-result.png}}</p>
+<p><em>Modify result open on a row, with the New result field and the reason for the change.</em></p>
+<p>Enter the corrected value and the reason, then click <strong>Save modification</strong>. The row stays in the queue with the new value, gains a <strong>Modified</strong> chip in <strong>Check before release</strong>, and is counted by the <strong>Modified</strong> filter. The reason appears in the row&#8217;s <strong>Past Notes</strong> with its visibility and timestamp, and in the panel&#8217;s <strong>Notes</strong> section as a <em>Result Note (Modification)</em>. The result still has to be released.</p>
+<p>{{IMG:13-after-modify.png}}</p>
+<p><em>After saving a modification: the corrected value, the Modified chip, and the reason carried into Past Notes.</em></p>
+
+<h2>Step 9 &mdash; Send a result back for retesting</h2>
+<p>Click <strong>Send for retest</strong>. The panel switches to a confirmation step: the note field becomes <strong>Note for the bench</strong>, <strong>Visibility</strong> switches to <strong>Internal</strong>, and a red <strong>Send for retest</strong> button appears beside <strong>Cancel</strong> with the explanation <em>The result goes back to Results Entry and the pipeline restarts at level 1.</em></p>
+<p>{{IMG:15-retest-filled.png}}</p>
+<p><em>The retest confirmation step, with a note for the bench explaining why the result is going back.</em></p>
+<p>Write the note for the bench, then click the red <strong>Send for retest</strong> to confirm. The row leaves the queue and the counts drop. On the Results page the test reappears for entry with the status <em>Not accepted by biologist</em>.</p>
+<p>{{IMG:16-after-retest-confirmed.png}}</p>
+<p><em>The queue after a confirmed retest: the row has gone back to Results Entry.</em></p>
+
+<h2>Reaching the queue another way</h2>
+<p>The same queue is used by the other entries under <strong>Validation</strong>. <strong>By Order</strong> asks for a lab number instead of a test unit and then shows the identical table, filter chips and lane tags, plus an <strong>Include auto-validated</strong> toggle that is off by default. <strong>By Range of Order Numbers</strong> and <strong>By Date</strong> ask for a starting lab number and a test date respectively.</p>
+<p>{{IMG:11-by-order.png}}</p>
+<p><em>By Order: the same queue reached by lab number, with the Include auto-validated toggle.</em></p>
+
+<h2>Field reference</h2>
+<table>
+<tbody>
+<tr><th>Column</th><th>Notes</th></tr>
+<tr><td>Sample Info</td><td>Lab number, patient name and identifiers, sex and date of birth, with a copy icon and a link icon beside them.</td></tr>
+<tr><td>Test Name</td><td>The test, its units and the sample type. A second name from the test catalogue is shown after an em dash where the catalogue holds one.</td></tr>
+<tr><td>Normal Range</td><td>The reference range the result is judged against.</td></tr>
+<tr><td>Result</td><td>The entered value, with a coloured bar (green inside the range, amber outside) and an <strong>Abnormal</strong> flag where the value falls outside.</td></tr>
+<tr><td>U (k=2)</td><td>Expanded measurement uncertainty, where the laboratory records it.</td></tr>
+<tr><td>Check before release</td><td>The row&#8217;s signal chips, and the <strong>Review &rarr;</strong> link that opens the review panel. A row with nothing to check shows only the link.</td></tr>
+<tr><td>Past Notes</td><td>Notes already recorded against the result, each with its visibility and timestamp.</td></tr>
+</tbody>
+</table>
+
+<table>
+<tbody>
+<tr><th>Panel action</th><th>Notes</th></tr>
+<tr><td>Validate &amp; release</td><td>Releases the result. The row leaves the queue and the test reads <em>Results final</em> on the Results page.</td></tr>
+<tr><td>Modify result</td><td>Corrects the value in place. The row stays in the queue, marked <strong>Modified</strong>, and still has to be released.</td></tr>
+<tr><td>Send for retest</td><td>Asks for a note for the bench and a confirmation, then returns the test to Results Entry as <em>Not accepted by biologist</em>.</td></tr>
+<tr><td>Refer this test</td><td>Refers the test out. See Tips.</td></tr>
+<tr><td>Release all clear</td><td>Releases every row in the Clear lane in one action. Disabled while the Clear lane is empty.</td></tr>
+</tbody>
+</table>
+
+<h2>Tips</h2>
+<ul>
+<li>Neither releasing nor retesting produces a confirmation message. The row disappearing from the queue, and the counts dropping, is the confirmation.</li>
+<li>Rejecting a result is configuration-dependent. Where it is turned off, the panel says so in place of the button: <em>Result rejection is turned off for this laboratory.</em></li>
+<li>A row with any missing clearance input is counted as <strong>Needs review</strong> rather than <strong>Clear</strong> &mdash; the queue never assumes a check has passed. On the instance used for this page, QC had not been evaluated for any row, so the <strong>Clear</strong> lane stayed at zero and <strong>Release all clear</strong> stayed disabled, including for results that were inside their reference range and carried no chip.</li>
+<li>The lane tags are computed from the whole queue. Filtering changes the rows you see, not the lane counts.</li>
+<li><strong>Refer this test</strong> produced no visible change when it was clicked on the test instance &mdash; no dialog opened and the panel did not change. Treat the button as unconfirmed until your own site has tested it.</li>
+</ul>
+
+<h2>Not yet verified</h2>
+<p>These were not exercised while this page was written, and are not described above as behaviour:</p>
+<ul>
+<li><strong>Release all clear</strong> &mdash; the Clear lane could not be populated on the test instance, so the bulk release and its confirmation were never seen.</li>
+<li>Rows carrying <strong>NCE</strong>, <strong>QC fail</strong>, <strong>Ack pending</strong> or <strong>Critical</strong> signals. Those filter chips are present and count zero. <strong>Modified</strong> is the one signal chip that has been seen on a row.</li>
+<li>Electronic signature on release.</li>
+<li><strong>By Range of Order Numbers</strong> and <strong>By Date</strong> were opened but not searched against real data.</li>
+</ul>
+
+<h2>Provenance</h2>
+<p><strong>Drafted</strong> 2026-09-17 &middot; <strong>Revised</strong> 2026-09-19 &middot; <strong>Instance</strong> testing.openelis-global.org &middot; <strong>OpenELIS version</strong> 3.2.2.0 &middot; <strong>Jira</strong> OGC-817 (V1 OGC-1027, V2 OGC-1028, V3 OGC-1029, V4 OGC-1030)</p>
+<p><strong>Driven live:</strong> opening the page, choosing a test unit, applying and clearing a filter, opening the review panel from both the Review link and the row chevron, expanding History (this analysis), typing a validation note and setting its visibility, releasing a result and confirming it reads <em>Results final</em> on the Results page, correcting a result with Save modification and seeing the Modified chip, filter count and Past Notes entry that follow, confirming a Send for retest and finding the test back on the Results page as <em>Not accepted by biologist</em>, and reaching the same queue through By Order.</p>
+<p><strong>Observed but not driven:</strong> Release all clear (disabled, count zero), the reject action (turned off on this instance), the Include auto-validated toggle, By Range of Order Numbers and By Date. <strong>Refer this test</strong> was clicked and had no visible effect.</p>
+<p><em>Awaiting second-reviewer verification. Not yet labelled doc-verified.</em></p>

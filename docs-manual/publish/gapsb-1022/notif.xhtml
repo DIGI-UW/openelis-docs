@@ -1,0 +1,123 @@
+<ac:structured-macro ac:name="note" ac:schema-version="1"><ac:rich-text-body><p><strong>Work in progress.</strong> This page is published before its review is finished so you can use it now. It is being reviewed under <a href="https://uwdigi.atlassian.net/browse/OGC-1561">OGC-1561</a>, so details may still change. If something on your screen does not match, add a comment to this page.</p></ac:rich-text-body></ac:structured-macro>
+
+<h2>At a glance</h2>
+<table><tbody>
+<tr><th>Purpose</th><td>Choose which laboratory events send a notice, word the messages, connect the email, SMS and WhatsApp channels, and set the lab-wide rules for how reports and notices are sent.</td></tr>
+<tr><th>You'll end up with</th><td>Channels set up once for every message the laboratory sends, the triggers you need switched on with their channels and recipients, message templates in your laboratory's wording, and saved delivery settings.</td></tr>
+<tr><th>Who does this</th><td>Administrators. Access is set by user permissions and can be configured by your administrator.</td></tr>
+<tr><th>Before you start</th><td>The details of your mail server (host, port, security, sender address and the account to send from) and, if you use WhatsApp, the account details from your WhatsApp provider. Agree the wording of messages with the laboratory manager.</td></tr>
+<tr><th>Where</th><td>Main menu &rarr; Admin &rarr; Notifications</td></tr>
+</tbody></table>
+
+<h2>Overview</h2>
+<p>The Notifications page has four tabs. <strong>Triggers</strong> lists the events that can send a notice and who receives it. <strong>Templates</strong> holds the subject and message for each event. <strong>Channels</strong> connects Email, SMS and WhatsApp; as the tab says, they are set up here once and used by every message the laboratory sends. <strong>Delivery Settings</strong> holds lab-wide rules such as retries, the lab contact line and the default country code for phone numbers.</p>
+<p>Which tests send a notice when their result is released is chosen per test on a separate page; see <a href="https://uwdigi.atlassian.net/wiki/spaces/OG/pages/1439072261">Admin: Configure test notifications</a>. Every message sent, and every failed attempt, is listed on <a href="https://uwdigi.atlassian.net/wiki/spaces/OG/pages/1729724423">Sent Messages: check and resend deliveries</a>.</p>
+
+<h2>Step 1: Choose the events that send a notice</h2>
+<p>Go to Main menu &rarr; Admin &rarr; Notifications. The page opens on <strong>Triggers</strong>, under <em>Active Triggers</em>. Each row is one event: <strong>Referral Out</strong> (a sample is referred to an external laboratory), <strong>Subcontract Dispatched</strong> (a sample has been physically dispatched to the receiving laboratory), <strong>Sample re-collection</strong> (an order is marked for re-collection and a replacement order is created), <strong>Referral result rejected</strong> (a result returned by the reference laboratory is rejected and the sample must be collected again) and <strong>Referral nudge</strong> (a referral is overdue and a nudge is requested). Each row shows its <strong>Event Code</strong>.</p>
+<p>For each event you want:</p>
+<ol>
+<li>Turn on <strong>Enabled</strong>. Every trigger is off until you turn it on; the row says it defaults off and must be enabled explicitly.</li>
+<li>Tick the <strong>Channels</strong> to use: <strong>Email</strong>, <strong>SMS</strong> and/or <strong>WhatsApp</strong>.</li>
+<li>Tick the <strong>Recipients</strong>: <strong>Ordering Provider</strong>, <strong>Submitting User</strong> and/or <strong>CoC Contact</strong>.</li>
+</ol>
+<p>Press <strong>Save Configuration</strong>, or <strong>Cancel</strong> to discard your changes. The channel and recipient boxes stay greyed out until the trigger is enabled.</p>
+<p>{{IMG:n01-triggers.png}}</p>
+<p><em>Figure 1. The Triggers tab: Referral Out, Subcontract Dispatched, Sample re-collection and Referral result rejected, each off by default, with Email, SMS and WhatsApp channels and three recipient types greyed out until the trigger is enabled.</em></p>
+
+<h2>Step 2: Word the messages</h2>
+<p>Open <strong>Templates</strong>. <em>Notification Template Configuration</em> has one tab per event: <strong>Patient results ready</strong>, <strong>Referral Out</strong>, <strong>Subcontract Dispatched</strong>, <strong>Referral result rejected</strong>, <strong>Referral nudge</strong> and <strong>Sample re-collection</strong>. Each tab says who receives the message; Patient results ready, for example, goes to the patient or the provider when a configured test's result is released and never names the patient.</p>
+<ol>
+<li>Choose the event tab, then the <strong>Channel</strong>: <strong>Email</strong> or <strong>WhatsApp</strong>. Each channel has its own template.</li>
+<li>Edit the <strong>Subject</strong> and <strong>Message Body</strong>. To add a value from the record, place the cursor and click a field under <strong>Available Merge Fields</strong>, for example <strong>[testName]</strong>. The fields offered depend on the event; Referral Out offers the sample number, the receiving laboratory's name, the referred tests, the referral date and the expected return date, among others.</li>
+<li>Check the <strong>Rendered Preview</strong> under the message, which fills the merge fields with example values.</li>
+<li>Press <strong>Save Template</strong>. <strong>Reset to Default</strong> puts the default wording back.</li>
+</ol>
+<p>{{IMG:n02-templates.png}}</p>
+<p><em>Figure 2. The Patient results ready template for Email: Subject [testName] results ready, the message body, the merge fields [testName], [testResult], [accessPassword] and [accessAddress], and the Rendered Preview for Malaria RDT.</em></p>
+
+<h2>Step 3: Check the channels</h2>
+<p>Open <strong>Channels</strong>. Each channel, <strong>Email</strong>, <strong>SMS</strong> and <strong>WhatsApp</strong>, shows whether it is set up and its <em>Last successful send</em>, with <strong>Send test</strong> and <strong>Edit</strong>. Send test is described on <a href="https://uwdigi.atlassian.net/wiki/spaces/OG/pages/1729724423">Sent Messages</a>.</p>
+<p>{{IMG:n03-channels.png}}</p>
+<p><em>Figure 3. The Channels tab on the test server: Email, SMS and WhatsApp all Not set up, Last successful send: Never.</em></p>
+
+<h2>Step 4: Set up email</h2>
+<p>Press <strong>Edit</strong> on the Email row. Leave <strong>Active</strong> on, and enter the <strong>SMTP host</strong>, <strong>Port</strong>, <strong>Security</strong> (<strong>STARTTLS</strong>, <strong>SSL/TLS</strong> or <strong>None</strong>), the <strong>Username</strong> and <strong>Password</strong> of the account to send from, the <strong>Sender address</strong> and <strong>Sender name</strong> recipients will see, and an optional <strong>Reply-to address</strong>. Press <strong>Save</strong>, then use <strong>Send test</strong> to check it.</p>
+<p>{{IMG:n04-channel-email-edit.png}}</p>
+<p><em>Figure 4. Email being set up with example values: SMTP host smtp.pmgh-lab.example.org, port 587, STARTTLS, sender results@pmgh-lab.example.org and sender name PMGH Laboratory Results. Not saved.</em></p>
+
+<h2>Step 5: Set up SMS</h2>
+<p>Press <strong>Edit</strong> on the SMS row. The SMS gateway itself is not set up here: the screen explains that the gateway (BMP or SMPP) keeps its settings in the server properties, and that this row shows whether one is enabled. Leave <strong>Active</strong> on, enter the <strong>Default country code</strong> used for phone numbers entered without one, and press <strong>Save</strong>.</p>
+<p>{{IMG:n05-channel-sms-edit.png}}</p>
+<p><em>Figure 5. SMS opened for editing: Active, the note about the gateway settings, and Default country code.</em></p>
+
+<h2>Step 6: Set up WhatsApp</h2>
+<p>Press <strong>Edit</strong> on the WhatsApp row. Leave <strong>Active</strong> on and enter the <strong>Account SID</strong>, <strong>Auth token</strong> and <strong>Sending number</strong> from your WhatsApp provider, and the <strong>API address (optional)</strong> if your provider gives one. Press <strong>Save</strong>.</p>
+<p>{{IMG:n06-channel-whatsapp-edit.png}}</p>
+<p><em>Figure 6. WhatsApp opened for editing: Active, Account SID, Auth token, Sending number and API address (optional).</em></p>
+
+<h2>Step 7: Set the delivery rules</h2>
+<p>Open <strong>Delivery Settings</strong>, <em>lab-wide rules for how reports, alerts and notices are sent</em>:</p>
+<ul>
+<li><strong>Retry after (minutes, in order)</strong>: for example 1,5,15, meaning a failed send is tried again after 1, 5 and 15 minutes and then marked Failed.</li>
+<li><strong>Format for recipients without a password</strong>: <strong>Masked copy</strong> or <strong>Protected full report</strong>.</li>
+<li><strong>Wait before sending a new version (minutes)</strong>.</li>
+<li><strong>Send partial reports automatically</strong>.</li>
+<li><strong>Lab contact line</strong>: phone, email and opening hours, as printed in notices.</li>
+<li><strong>Where reports are sent from</strong>: <strong>This lab</strong> or <strong>Central delivery service</strong>. <strong>Central delivery service address</strong> is greyed out while This lab is chosen.</li>
+<li><strong>Secure links</strong> and <strong>Link lifetime (days)</strong>.</li>
+<li><strong>Default country code</strong>.</li>
+</ul>
+<p>{{IMG:n07-delivery-settings.png}}</p>
+<p><em>Figure 7. Delivery Settings with the PMGH Laboratory contact line and default country code +675 entered; retries 1,5,15, Masked copy, 10 minutes before a new version, partial reports sent automatically, reports sent from This lab, secure links off with a 14-day lifetime.</em></p>
+
+<h2>Step 8: Save the delivery rules</h2>
+<p>Press <strong>Save</strong>. A <em>Settings saved.</em> message confirms it.</p>
+<p>{{IMG:n08-delivery-saved.png}}</p>
+<p><em>Figure 8. Delivery Settings after Save, with the Settings saved. message.</em></p>
+
+<h2>Field reference</h2>
+<table><tbody>
+<tr><th>Field or control</th><th>What it shows or does</th></tr>
+<tr><td>Triggers: Trigger, Event Code</td><td>The event and its code, for example Referral Out, REFERRAL_OUT. NEW marks recently added events.</td></tr>
+<tr><td>Triggers: Enabled</td><td>Turns the event on. Every trigger is off until enabled.</td></tr>
+<tr><td>Triggers: Channels, Recipients</td><td>Email, SMS, WhatsApp; Ordering Provider, Submitting User, CoC Contact. Apply only when the trigger is enabled.</td></tr>
+<tr><td>Triggers: Per-Lab-Unit Override, Configure</td><td>On the test server, Configure shows that per-lab-unit override is not available yet.</td></tr>
+<tr><td>Triggers: Save Configuration, Cancel</td><td>Saves or discards the trigger changes.</td></tr>
+<tr><td>Templates: event tabs, Channel</td><td>One template per event and per channel (Email, WhatsApp).</td></tr>
+<tr><td>Templates: Subject, Message Body</td><td>Free text with merge fields in square brackets. The template is not translated by OpenELIS; edit it directly.</td></tr>
+<tr><td>Templates: Available Merge Fields</td><td>The fields for the chosen event; click one to insert it at the cursor.</td></tr>
+<tr><td>Templates: Rendered Preview, Reset to Default, Save Template</td><td>Preview with example values; restore the default wording; save.</td></tr>
+<tr><td>Channels: status, Last successful send</td><td>Whether the channel is set up, and when it last sent successfully.</td></tr>
+<tr><td>Email</td><td>Active, SMTP host, Port, Security (STARTTLS, SSL/TLS, None), Username, Password, Sender address, Sender name, Reply-to address.</td></tr>
+<tr><td>SMS</td><td>Active and Default country code. Gateway settings are held in the server properties.</td></tr>
+<tr><td>WhatsApp</td><td>Active, Account SID, Auth token, Sending number, API address (optional).</td></tr>
+<tr><td>Delivery Settings</td><td>Retry after, Format for recipients without a password, Wait before sending a new version, Send partial reports automatically, Lab contact line, Where reports are sent from, Central delivery service address, Secure links, Link lifetime (days), Default country code.</td></tr>
+</tbody></table>
+
+<h2>Tips</h2>
+<ul>
+<li>Set up and test a channel before you enable a trigger that uses it. Until then every message on that channel is recorded on Sent Messages as Failed with the reason, for example <em>Email is not set up</em>.</li>
+<li>Enter the default country code of your country (for example +675 for Papua New Guinea), so phone numbers entered without one still reach the right place.</li>
+<li>Templates are not translated by OpenELIS. Write each one in the language its recipients read.</li>
+<li>Keep passwords and tokens to the channel fields. Never put them in a template or the lab contact line, which appear in messages.</li>
+<li>Referral Out fires once per saved referral: if one order is referred to two laboratories, two notices are sent, as the Triggers tab notes.</li>
+<li>On the test server the Templates tab showed a note about [expectedReturn] (a Referral Out field) under the Patient results ready merge fields as well.</li>
+</ul>
+
+<h2>Not yet available</h2>
+<ul>
+<li>Sending SMS through TextIt as a delivery channel (planned under OGC-437). Today the SMS gateway is set in the server properties.</li>
+</ul>
+
+<h2>Provenance</h2>
+<table><tbody>
+<tr><th>Status</th><td>Draft for review</td></tr>
+<tr><th>Instance</th><td>testing.openelis-global.org, header version <em>3.4.0-SNAPSHOT</em> (3.3.0 feature OGC-439, result delivery foundation: channels, outbox and Sent Messages)</td></tr>
+<tr><th>Routes</th><td>/MasterListsPage/notificationTriggerConfig/triggers; /templates; /channels; /delivery</td></tr>
+<tr><th>Date</th><td>22 October 2026</td></tr>
+<tr><th>Data</th><td>Example values only: example.org addresses for email (not saved) and the PMGH Laboratory contact line with +675 in Delivery Settings (saved). No real credentials were entered.</td></tr>
+<tr><th>Driven</th><td>Open each tab; Configure on Referral Out; the Referral Out template tab; Edit on Email (fields filled, not saved), SMS and WhatsApp (opened); Delivery Settings filled and saved.</td></tr>
+<tr><th>Observed only</th><td>Enabled switches, channel and recipient boxes (no trigger enabled); Save Configuration; template editing, merge field insertion, Reset to Default and Save Template; the WhatsApp channel tab on Templates; Save on a channel; Security options; Where reports are sent from set to Central delivery service; Secure links.</td></tr>
+<tr><th>Unverified</th><td>A notice actually sent by a trigger; the effect of each delivery setting on sends.</td></tr>
+</tbody></table>

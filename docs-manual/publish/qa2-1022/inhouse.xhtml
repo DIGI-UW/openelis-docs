@@ -1,0 +1,114 @@
+<ac:structured-macro ac:name="note" ac:schema-version="1"><ac:rich-text-body><p><strong>Work in progress.</strong> This page is published before its review is finished so you can use it now. It is being reviewed under <a href="https://uwdigi.atlassian.net/browse/OGC-1565">OGC-1565</a>, so details may still change. If something on your screen does not match, add a comment to this page.</p></ac:rich-text-body></ac:structured-macro>
+
+<h2>At a glance</h2>
+<table><tbody>
+<tr><th>Purpose</th><td>Run your own blind proficiency test: give analysts retained samples whose expected values they cannot see, and compare their results with the sealed targets after the unblind date.</td></tr>
+<tr><th>You'll end up with</th><td>A sealed in-house panel for a cycle, with one blinded order per sample, each assigned to an analyst and identified only by a blind code in result entry and the Workplan.</td></tr>
+<tr><th>Who does this</th><td>QA officers set up the scheme and seal the panel; bench analysts run the blinded orders. Access is set by user permissions and can be configured by your administrator.</td></tr>
+<tr><th>Before you start</th><td>Retained material for each sample with an agreed target value and acceptance range; the tests to be covered; the analysts' OpenELIS user accounts.</td></tr>
+<tr><th>Where</th><td>Main menu → Quality Assurance → EQA → EQA Management → Schemes (to add the scheme); Main menu → Quality Assurance → EQA → In-House Blinding</td></tr>
+</tbody></table>
+
+<h2>Overview</h2>
+<p>An in-house scheme is an EQA scheme that your laboratory runs itself, so it needs no provider. For each cycle, the blinding wizard records the samples, their target values and acceptance ranges, how the material was prepared, and which analyst runs which sample. Sealing the panel encrypts the target values and creates one blinded order per sample. The analysts see only a blind code such as <em>IH-9-01</em>. Revealing a target before the unblind date takes the unblind privilege and is recorded in the audit trail.</p>
+<p>Schemes run by an outside provider are covered on <ac:link><ri:page ri:content-title="EQA participant: take part in a proficiency testing scheme" /><ac:link-body>EQA participant: take part in a proficiency testing scheme</ac:link-body></ac:link> and <ac:link><ri:page ri:content-title="EQA provider: run a proficiency testing scheme" /><ac:link-body>EQA provider: run a proficiency testing scheme</ac:link-body></ac:link>.</p>
+
+<h2>Step 1: Add the in-house scheme</h2>
+<p>Go to Main menu → Quality Assurance → EQA → EQA Management → Schemes and press <strong>Add Scheme</strong>. In <em>Add New EQA Scheme</em>:</p>
+<ul>
+<li><strong>Scheme Name</strong>: for example the section and the purpose.</li>
+<li><strong>Scheme type</strong>: <strong>In-house</strong>. The <strong>Provider</strong> field disappears, because in-house schemes need no provider.</li>
+<li><strong>Description</strong>: what the scheme checks and how often.</li>
+<li><strong>Assigned Tests</strong>: the tests the scheme covers. The wizard offers only these tests.</li>
+<li><strong>Record the analyst on every result</strong>: switch on to record who ran each sample.</li>
+</ul>
+<p>Press <strong>Add Scheme</strong>. The scheme is added to the list with Scheme type In-house.</p>
+<p>{{IMG:01-scheme-add-inhouse.png}}</p>
+<p><em>Figure 1. Add New EQA Scheme with Scheme type In-house: no Provider field. The example shown is a haematology scheme being filled in; the scheme used for the rest of this page is "Biochemistry in-house blind panel" with Glucose (Plasma) and HDL cholesterol (Serum) assigned and the analyst recorded.</em></p>
+
+<h2>Step 2: Start a cycle</h2>
+<p>Go to Main menu → Quality Assurance → EQA → In-House Blinding, choose the scheme under <strong>In-house scheme</strong> and press <strong>Launch blinding wizard</strong>. The wizard <em>Create in-house blinded panel</em> has four steps: <strong>Scheme &amp; cycle</strong>, <strong>Samples &amp; prep</strong>, <strong>Analysts</strong> and <strong>Confirm &amp; seal</strong>.</p>
+<p>In the first step enter the <strong>Cycle name</strong>, the <strong>Planned start date</strong> and the <strong>Unblind date (submission deadline)</strong>, then press <strong>Next</strong>. The analysts must submit their results by the unblind date; the targets are revealed after it.</p>
+<p>{{IMG:02-wizard-scheme-cycle.png}}</p>
+<p><em>Figure 2. Scheme &amp; cycle: Biochemistry in-house blind panel, cycle "Q1 2027 blind re-test", planned start 11 January 2027 and unblind date 29 January 2027 (shown in the browser's date format).</em></p>
+
+<h2>Step 3: Define the samples and how they were prepared</h2>
+<p>For each sample (S01, S02, and more with <strong>Add sample</strong>) choose the <strong>Test</strong> and enter the <strong>Target value</strong>, <strong>Unit</strong>, <strong>Range low</strong> and <strong>Range high</strong>. Every sample needs a test and a target value.</p>
+<p>Under <strong>Prep &amp; aliquoting details</strong> record the <strong>Source</strong> (Patient-sample pool, aliquoted in-house; Vendor-supplied material; or Mixed sources), <strong>Lot number</strong>, <strong>Aliquots produced</strong> (at least one per sample), <strong>Storage temperature</strong>, <strong>Expiration date</strong> and <strong>Homogeneity QC passed</strong> with notes. If homogeneity QC has not passed, a written justification is needed to distribute. Press <strong>Next</strong>.</p>
+<p>{{IMG:03-wizard-samples.png}}</p>
+<p><em>Figure 3. Two samples: S01 Glucose (Plasma), target 0.95 g/l (0.85 to 1.05), and S02 HDL cholesterol (Serum), target 0.45 g/l (0.40 to 0.50); patient-sample pool, lot RS-2701-A, 4 aliquots, refrigerated, expiring 31 March 2027, homogeneity QC passed.</em></p>
+
+<h2>Step 4: Choose the analysts</h2>
+<p>Under <strong>Scheme analysts</strong> select the OpenELIS users who will run the samples; they join the scheme's roster. Choose the <strong>Assignment mode</strong>:</p>
+<ul>
+<li><strong>Round-robin</strong>: one analyst per sample, in rotation.</li>
+<li><strong>Identical set</strong>: every analyst tests the same samples.</li>
+<li><strong>Manual per-sample assignment</strong>: you choose the analyst for each sample.</li>
+</ul>
+<p>The table shows the analyst for each sample. The assignment is recorded on the blinded order and follows it through result entry. Press <strong>Next</strong>.</p>
+<p>{{IMG:04-wizard-analysts.png}}</p>
+<p><em>Figure 4. Two analysts selected with Round-robin: S01 Glucose to Open ELIS and S02 HDL cholesterol to Grace Tau.</em></p>
+
+<h2>Step 5: Confirm and seal</h2>
+<p>The last step summarises the scheme, cycle, number of samples and blinded aliquots, aliquots produced, lot number, unblind date and homogeneity QC. A warning explains that sealing encrypts the target values and that the panel cannot be edited afterwards. Label sheets carry the blind code, cycle and analyte, never a target value. Press <strong>Seal panel &amp; distribute</strong>.</p>
+<p>{{IMG:05-wizard-confirm.png}}</p>
+<p><em>Figure 5. Confirm &amp; seal for the Q1 2027 cycle: 2 samples, 2 blinded aliquots, 4 aliquots produced, lot RS-2701-A, unblind date 2027-01-29.</em></p>
+
+<h2>Step 6: Note the blind codes</h2>
+<p><em>Panel sealed and distributed</em> lists the blind codes that the blinded orders carry as their sample IDs, the unblind date and the assigned analysts. From here you can <strong>Print label sheet</strong>, <strong>Open My Cycles</strong>, <strong>Open the Workplan</strong> or go <strong>Back to in-house panels</strong>.</p>
+<p>{{IMG:06-wizard-sealed.png}}</p>
+<p><em>Figure 6. Panel sealed and distributed: blind codes IH-9-01 and IH-9-02, unblind date 29/01/2027, assigned analysts Open ELIS and Grace Tau.</em></p>
+
+<h2>Step 7: Follow the panels</h2>
+<p>Back on In-House Blinding, with the scheme chosen, the tiles count panels <strong>Sealed, awaiting distribution</strong>, <strong>In testing</strong>, <strong>Unblinding within 7 days</strong> and <strong>Scored or closed</strong>. Each panel row shows the cycle, number of samples, <strong>Target values</strong> (Sealed), <strong>Status</strong>, the unblind date and the actions <strong>Print label sheet</strong> and <strong>Unblind now</strong>.</p>
+<p>{{IMG:07-inhouse-list.png}}</p>
+<p><em>Figure 7. In-House Blinding for the biochemistry scheme: the Q4 2026 and Q1 2027 panels, both Sealed and DISTRIBUTED. The In testing tile counts three because a duplicate Q1 2027 panel created during capture is below the area shown.</em></p>
+
+<h2>Step 8: Run the blinded orders</h2>
+<p>The analysts find the blinded orders in result entry and the Workplan by their blind code, like any other order. In Main menu → Results → Results Entry, search for the blind code and press <strong>Load results</strong>. The row shows the test and sample type with the test's usual reference range; the target value is not shown.</p>
+<p>{{IMG:08-results-blind-code.png}}</p>
+<p><em>Figure 8. Results Entry for IH-9-01: Glucose (Plasma), Not started, with the reference range 0.70 to 1.10 g/l.</em></p>
+
+<h2>Field reference</h2>
+<table><tbody>
+<tr><th>Field or control</th><th>What it shows or does</th></tr>
+<tr><td>Scheme type: In-house</td><td>A scheme run by your laboratory; no provider.</td></tr>
+<tr><td>Assigned Tests</td><td>The tests the scheme covers; the wizard's Test list.</td></tr>
+<tr><td>Record the analyst on every result</td><td>Records which analyst ran each sample.</td></tr>
+<tr><td>Cycle name, Planned start date</td><td>Identify the cycle.</td></tr>
+<tr><td>Unblind date (submission deadline)</td><td>The deadline for the analysts and the date the targets are revealed.</td></tr>
+<tr><td>Target value, Unit, Range low, Range high</td><td>The expected result and its acceptance range, sealed when the wizard finishes.</td></tr>
+<tr><td>Source, Lot number, Aliquots produced, Storage temperature, Expiration date</td><td>How the panel material was prepared and kept.</td></tr>
+<tr><td>Homogeneity QC passed, notes</td><td>Whether the material passed homogeneity QC; without it, distribution needs a written justification.</td></tr>
+<tr><td>Scheme analysts, Assignment mode</td><td>Who runs the samples and how samples are dealt to them.</td></tr>
+<tr><td>Seal panel &amp; distribute</td><td>Encrypts the targets and creates one blinded order per aliquot.</td></tr>
+<tr><td>Print label sheet</td><td>Labels with blind code, cycle and analyte.</td></tr>
+<tr><td>Unblind now</td><td>Reveals the targets before the unblind date (unblind privilege, recorded in the audit trail).</td></tr>
+</tbody></table>
+
+<h2>Tips</h2>
+<ul>
+<li>Seal only once. Known issue OGC-1487: retrying after a failed seal creates a second panel, and every seal creates a blank patient record.</li>
+<li>Check the range values before sealing. Known issue OGC-1486: the range fields accept letters until the seal step, and the in-house wizard does not check that Range low is below Range high.</li>
+<li>Choose an unblind date in the future. Known issue OGC-1484: the date is not checked, and a past unblind date is unblinded automatically.</li>
+<li>Known issue OGC-1447: the blinding wizard can briefly show that the scheme has no tests before the list loads.</li>
+<li>Known issue OGC-1491: EQA samples, including blinded orders, are counted in turnaround time and the quality indicators as if they were patient samples.</li>
+<li>Enter the Unit to match the test's reporting unit (here g/l), so the target and the reported result can be compared.</li>
+<li>The EQA material panel column on In-House Blinding repeats the cycle name.</li>
+<li>The breadcrumb reads Home / In-House Blinding, without Quality Assurance or EQA.</li>
+</ul>
+
+<h2>Not yet available</h2>
+<p>Nothing on this page is listed as not yet available.</p>
+
+<h2>Provenance</h2>
+<table><tbody>
+<tr><th>Status</th><td>Draft for review</td></tr>
+<tr><th>Instance</th><td>testing.openelis-global.org, header version <em>3.4.0-SNAPSHOT</em> (3.3.0 EQA V2 OGC-608, in-house blinding OGC-612)</td></tr>
+<tr><th>Routes</th><td>/qa/eqa/management; /qa/eqa/in-house; /qa/eqa/in-house/new; /Results</td></tr>
+<tr><th>Date</th><td>22 October 2026</td></tr>
+<tr><th>Data</th><td>Scheme "Biochemistry in-house blind panel" (In-house; Glucose and HDL cholesterol; analyst recorded) created for this page, with the panels Q4 2026 blind re-test (IH-7-01, IH-7-02) and Q1 2027 blind re-test (IH-9-01, IH-9-02, and a duplicate created during capture).</td></tr>
+<tr><th>Driven</th><td>Add Scheme (In-house) saved; the blinding wizard through all four steps with Round-robin assignment and Seal panel &amp; distribute; Back to in-house panels; the blinded order found in Results Entry by blind code.</td></tr>
+<tr><th>Observed only</th><td>Print label sheet; Unblind now; Open My Cycles; Open the Workplan; Identical set and Manual per-sample assignment; the Mixed and Vendor sources; the homogeneity justification.</td></tr>
+<tr><th>Unverified</th><td>Entering and validating a result on a blinded order; unblinding and scoring; the Workplan view of blinded orders; the label sheet contents.</td></tr>
+</tbody></table>

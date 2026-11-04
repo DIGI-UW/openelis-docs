@@ -1,0 +1,51 @@
+<p><em>How-to · Reception and laboratory staff</em></p>
+<p><em>Part of the clinical order pipeline: <a href="https://uwdigi.atlassian.net/wiki/spaces/OG/pages/1648787462">Enter Order</a> → <a href="https://uwdigi.atlassian.net/wiki/spaces/OG/pages/1655930882">Prepare Samples</a> → <strong>Sample check</strong></em></p>
+<ac:structured-macro ac:name="info"><ac:rich-text-body><p><strong>Status: draft for review.</strong> New for the Order Entry v4 screens (OpenELIS 3.3.0), driven on testing.openelis-global.org on 7 October 2026. Sample check replaces the QA Review step for clinical orders. Environmental and vector orders still use <a href="https://uwdigi.atlassian.net/wiki/spaces/OG/pages/1429176321">Complete QA review</a>.</p></ac:rich-text-body></ac:structured-macro>
+
+<h2>At a glance</h2>
+<table><tbody>
+<tr><th>Purpose</th><td>Confirm each sample is acceptable and release the order to the laboratory.</td></tr>
+<tr><th>You'll end up with</th><td>The order released, with status <em>Ready for testing</em>, so results can be entered as they arrive.</td></tr>
+<tr><th>Who does this</th><td>Reception or laboratory staff. Access is set by user permissions and can be configured by your administrator.</td></tr>
+<tr><th>Before you start</th><td>An order whose samples have been saved on <a href="https://uwdigi.atlassian.net/wiki/spaces/OG/pages/1655930882">Prepare Samples</a>.</td></tr>
+<tr><th>Where</th><td>Save and next on Prepare Samples, or Main menu → Order → Add Clinical Order → Sample check</td></tr>
+</tbody></table>
+
+<h2>When this step appears</h2>
+<p>Sample check is the third step when your laboratory uses intake acceptance for clinical samples. Acceptance enforcement is set per domain (Off, Optional or Mandatory); this page was captured with clinical acceptance set to <em>Optional</em> and no acceptance checklist configured.</p>
+<ac:structured-macro ac:name="note"><ac:rich-text-body><p>With acceptance set to Off, the order is expected to finish at Prepare Samples with no Sample check step. This has not yet been verified on a live instance. Confirm before publishing.</p></ac:rich-text-body></ac:structured-macro>
+
+<h2>Steps</h2>
+<ol>
+<li><p><strong>Open the order.</strong> Save and next on Prepare Samples lands here with the order loaded, and the page title is tagged <em>Saved</em>. The step bar shows Enter Order and Prepare Samples as <em>Done</em> and Sample check as <em>Ready</em>; the order card shows <em>Samples prepared</em> and <em>2/3 steps</em>.</p></li>
+<li><p><strong>Review intake acceptance for each sample.</strong> The <strong>Intake Acceptance</strong> table lists each sample with Lab #, Sample type, Transit and Eligibility (for example <em>Accepted</em>). The table's help text says to select a sample to complete its acceptance checklist. The panel below it shows the domain (<em>Clinical</em>), when the sample was collected and received, the transit time, and the active list. Transit is shown for reference only and does not grade anything automatically. If no checklist is configured, the panel says <em>No acceptance checklist is configured for this domain</em>.</p>
+<p>{{IMG:01-intake-acceptance.png}}</p>
+<p><em>Figure 1. Sample check: the Intake Acceptance table with one Serum sample, Accepted, and its checklist panel.</em></p></li>
+<li><p><strong>Check the summaries.</strong> <strong>Patient Information</strong> (name, date of birth, sex), <strong>Sample Summary</strong> (each sample type with its tests) and <strong>Order Details</strong> are collapsible sections below.</p>
+<p>{{IMG:01b-summary-footer.png}}</p>
+<p><em>Figure 2. The summaries and the footer, with Release for testing.</em></p></li>
+<li><p><strong>Release the order.</strong> Press <strong>Release for testing</strong>. The step bar shows all three steps <em>Done</em>, the order becomes <em>Ready for testing</em> at <em>3/3 steps</em>, and a completion panel reads <em>Order … complete. Order entry is finished. Results can be entered as they arrive.</em> <strong>Back to orders</strong> opens the Order Dashboard, which shows the same message at the top. <strong>Start New Order</strong> is offered below it.</p>
+<p>{{IMG:02-released.png}}</p>
+<p><em>Figure 3. The order released for testing, with the completion panel.</em></p></li>
+</ol>
+<p>The footer also offers <strong>Return to Prepare Samples</strong>, <strong>Save and exit</strong>, <strong>Discard</strong>, <strong>Back</strong> and <strong>Report NCE</strong>.</p>
+
+<h2>Tips</h2>
+<ul>
+<li>A released order shows <strong>Open</strong> rather than Continue and Cancel order on the Order Dashboard.</li>
+<li>The Transit time is a reference figure. Judge a delayed sample against your own acceptance criteria.</li>
+</ul>
+
+<h2>Not yet documented</h2>
+<p>Completing a configured acceptance checklist, rejecting a sample, and the behaviour under <em>Mandatory</em> acceptance.</p>
+
+<h2>Provenance</h2>
+<table><tbody>
+<tr><th>Status</th><td>Draft for review</td></tr>
+<tr><th>Instance</th><td>testing.openelis-global.org, OpenELIS 3.3.0-SNAPSHOT (Order Entry v4, OGC-1266). Acceptance enforcement: clinical OPTIONAL, no checklist configured.</td></tr>
+<tr><th>Route</th><td>/order/clinical/qa</td></tr>
+<tr><th>Captured</th><td>Driven 7 October 2026 (DEV01260000000000059); figures 9 October 2026 (DEV01260000000000099)</td></tr>
+<tr><th>Driven</th><td>Arrival from Save and next; Release for testing; Back to orders.</td></tr>
+<tr><th>Observed only</th><td>Patient Information, Sample Summary, Order Details, Return to Prepare Samples, Save and exit, Discard, Back, Report NCE, Start New Order.</td></tr>
+<tr><th>Unverified</th><td>Behaviour with acceptance Off or Mandatory; a configured checklist.</td></tr>
+</tbody></table>

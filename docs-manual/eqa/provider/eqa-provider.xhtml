@@ -1,0 +1,285 @@
+<p>How-to · QA officers and scheme coordinators at a laboratory that runs proficiency testing for other laboratories</p>
+<ac:structured-macro ac:name="info"><ac:rich-text-body><p><strong>Status: draft for review.</strong> Every step below was performed on <code>pngtest.openelis-global.org</code> (OpenELIS 3.2.2.0, English) on 23 and 24 September 2026, with a CD4 count scheme and six provincial laboratories, and an in-house haematology panel. The companion page for laboratories that receive panels is <em>EQA participant: take part in a proficiency testing scheme</em>.</p></ac:rich-text-body></ac:structured-macro>
+<h2>At a glance</h2>
+<table><tbody>
+<tr><th>Purpose</th><td>Run an external quality assessment (EQA) scheme for other laboratories: define the scheme, enrol laboratories, build and ship a panel, score what comes back, publish results and follow up failures.</td></tr>
+<tr><th>You'll end up with</th><td>A closed cycle with every participant scored, a performance report per laboratory, and a follow-up record for each unacceptable result.</td></tr>
+<tr><th>Who does this</th><td>QA officers or scheme coordinators. Access is set by user permissions and can be configured by your administrator.</td></tr>
+<tr><th>Before you start</th><td>The participating laboratories set up as organisations in OpenELIS, the panel material with its lot, targets and acceptance limits, and courier details for each box.</td></tr>
+<tr><th>Where</th><td>Main menu → Quality Assurance → EQA → EQA Management (scheme and enrolment), EQA Provider (cycles), Participant Follow-Up, In-House Blinding</td></tr>
+</tbody></table>
+<h2>How a provider cycle runs</h2>
+<p>A scheme is set up once. Each round is a <strong>cycle</strong>, and a cycle moves through a fixed sequence that the system enforces: <strong>Prep in progress → Ready to ship → Shipped → Delivered → Submissions open → Scored → Closed</strong>. Each state gates the next, so a panel cannot be shipped before prep passes, and a cycle cannot be closed while a follow-up is open.</p>
+<p>The work happens on four screens: <strong>Scheme Administration</strong> (under EQA Management → Programs) to define the scheme, <strong>Participants</strong> to enrol laboratories, the <strong>EQA Provider</strong> board and its <strong>cycle workbench</strong> to run each round, and <strong>Participant Follow-Up</strong> for laboratories that failed.</p>
+
+<h2>1. Create the scheme</h2>
+<ol>
+<li><p>Go to <strong>Main menu → Quality Assurance → EQA → EQA Management → Programs</strong>. The page is titled <strong>Scheme Administration</strong> and lists every scheme with its provider, type, enrolled participant count and status.</p>
+<p>{{IMG:p01-scheme-administration.png}}</p>
+<p><em>Figure 1. Scheme Administration, with the EQA Schemes and System Settings tabs.</em></p></li>
+<li><p>Select <strong>Add Scheme</strong>. Complete <strong>Scheme Name</strong>, <strong>Scheme type</strong>, <strong>Provider</strong> and <strong>Description</strong>, then add the tests under <strong>Assigned Tests</strong>. Choose <strong>Regional PT</strong> when a national or regional laboratory runs the scheme, as here. The helper under Assigned Tests says result intake offers exactly these tests, so a scheme with no tests cannot take a single result.</p>
+<p>{{IMG:p02-add-scheme-top.png}}</p>
+<p><em>Figure 2. Add New EQA Scheme, with the scheme type, provider and one assigned test.</em></p></li>
+<li><p>Scroll down and set the two switches. <strong>Record the analyst on every result</strong> (shown on as <em>Analyst recorded</em>) is what later feeds Analyst Competency. <strong>Hold each cycle for review before submitting</strong> (shown off as <em>Submit automatically</em>) applies to laboratories that take part in the scheme. Select <strong>Add Scheme</strong>. The new scheme appears in the list as Active with 0 enrolled participants.</p>
+<p>{{IMG:p03-add-scheme-toggles.png}}</p>
+<p><em>Figure 3. The analyst and review switches at the foot of the form.</em></p></li>
+</ol>
+<p><strong>Treat the scheme type as permanent.</strong> Results are read against the type the cycle ran under. The form does not stop you changing it later, so if you chose the wrong type and a cycle has run, create a new scheme instead.</p>
+
+<h2>2. Enrol the participating laboratories</h2>
+<p>A scheme appears on the EQA Provider board only once at least one laboratory is actively enrolled in it. If the board looks empty, check enrolments first.</p>
+<ol start="4">
+<li><p>Go to <strong>EQA Management → Participants</strong>. Pick the scheme in <strong>Select Program</strong>; nothing is listed until you do. Choose a laboratory from the organisation list and select <strong>Enroll</strong>.</p>
+<p>{{IMG:p05-participants-select-lab.png}}</p>
+<p><em>Figure 4. Participants, with the CD4 scheme selected and a laboratory chosen.</em></p></li>
+<li><p>Repeat for each laboratory. Each one appears in the table with its code, enrolment date and status. The status filter shows Active, Suspended or Withdrawn enrolments, and the icons under Actions pause or withdraw a laboratory. A withdrawn enrolment stays on record.</p>
+<p>{{IMG:p06-participants-enrolled.png}}</p>
+<p><em>Figure 5. Six provincial laboratories enrolled and Active.</em></p></li>
+</ol>
+
+<h2>3. Create a cycle</h2>
+<ol start="6">
+<li><p>Go to <strong>EQA → EQA Provider</strong>. The board, <strong>EQA schemes we provide</strong>, shows tiles for active schemes, open cycles, enrolled participants and open follow-ups, and one row per scheme with <strong>New cycle</strong> and <strong>Performance</strong>. Select <strong>New cycle</strong> on your scheme.</p>
+<p>{{IMG:p07-provider-board.png}}</p>
+<p><em>Figure 6. The provider board with two schemes, each with six enrolled laboratories.</em></p></li>
+<li><p><strong>Cycle.</strong> Enter the <strong>Cycle name</strong>. Leave <strong>Cycle number</strong> blank to take the next unused number. Pick the <strong>Distribution date</strong> and <strong>Submission deadline</strong> from the calendar. <strong>Typing a date does nothing and leaves Next disabled</strong>; click the field and pick the day.</p>
+<p>{{IMG:p08-wizard-cycle.png}}</p>
+<p><em>Figure 7. Wizard step 1, Cycle.</em></p></li>
+<li><p><strong>Panel.</strong> Enter the <strong>Panel name</strong>, <strong>Material source</strong> and <strong>Lot number</strong>. Vendor-supplied material adds Vendor name, Vendor lot and Vendor certificate reference. Add one row per sample with its sample code, test, <strong>Target value</strong>, unit and <strong>Acceptance low</strong> and <strong>Acceptance high</strong>; participants are scored against these limits. Set <strong>Storage temperature</strong>, which becomes each box's temperature requirement, and <strong>Material expiry</strong>.</p>
+<p>{{IMG:p09-wizard-panel.png}}</p>
+<p><em>Figure 8. Wizard step 2, Panel: three CD4 levels with sealed targets and acceptance limits.</em></p>
+<p>A target value is sealed and encrypted at rest. Leave it blank when the target is known only at scoring time. The sample code fields are narrow: the codes here are CD4-26-4-01, -02 and -03, as the pack list shows. See <em>Known issues</em> before building a panel with several samples of the same test.</p></li>
+<li><p><strong>Participants.</strong> Choose which enrolled laboratories take part. Only enrolled laboratories are offered, and only those chosen here count towards the prep gate.</p>
+<p>{{IMG:p10-wizard-participants.png}}</p>
+<p><em>Figure 9. Wizard step 3, all six laboratories selected.</em></p></li>
+<li><p><strong>Distribution.</strong> Choose <strong>FHIR</strong>, <strong>CSV export</strong> or <strong>Mixed</strong>.</p>
+<p>{{IMG:p11-wizard-distribution.png}}</p>
+<p><em>Figure 10. Wizard step 4, Distribution method.</em></p></li>
+<li><p><strong>Confirmation.</strong> Check the summary and select <strong>Create cycle and begin prep</strong>. The cycle opens in its workbench in the Prep in progress state.</p>
+<p>{{IMG:p12-wizard-confirmation.png}}</p>
+<p><em>Figure 11. Wizard step 5, the summary before the cycle is created.</em></p></li>
+</ol>
+
+<h2>4. Prepare the panel</h2>
+<p>The workbench has four tabs: <strong>Prep</strong>, <strong>Shipments</strong>, <strong>Receipts &amp; scoring</strong> and <strong>Report comments</strong>. <strong>Cycle history</strong> at the top lists every state change, what triggered it, who made it and why.</p>
+<ol start="12">
+<li><p>On <strong>Prep</strong>, the <strong>Ready-to-ship gate</strong> lists what is still missing, for example a panel that has not passed homogeneity QC or does not have enough aliquots. The panel card shows the arithmetic and the recommended reserve, <code>max(10% of participants, 5)</code>. Record <strong>Aliquots produced</strong>, <strong>Aliquots reserved</strong>, tick <strong>Homogeneity QC passed</strong>, add <strong>QC notes</strong> and select <strong>Save prep record</strong>.</p>
+<p>{{IMG:p13-prep-gate-open.png}}</p>
+<p><em>Figure 12. Prep before anything is recorded: the gate lists two blockers.</em></p></li>
+<li><p>The gate and the arithmetic recompute when you save, not while you type. After saving, the gate reads <strong>All prep requirements met</strong> and <strong>Mark cycle ready to ship</strong> becomes available.</p>
+<p>{{IMG:p14-prep-saved.png}}</p>
+<p><em>Figure 13. Prep saved: 3 samples x 6 participants + 5 in reserve = 23 aliquots needed, 24 produced.</em></p></li>
+<li><p>Select <strong>Mark cycle ready to ship</strong>. The cycle moves to Ready to ship and the page points you to the Shipments tab.</p>
+<p>{{IMG:p15-ready-to-ship.png}}</p>
+<p><em>Figure 14. The cycle cleared to ship.</em></p></li>
+</ol>
+
+<h2>5. Ship the panels</h2>
+<ol start="15">
+<li><p>Open <strong>Shipments</strong>. There is one row per laboratory, each with its own box code. Enter the <strong>Courier</strong>, <strong>Tracking number</strong> and <strong>Expected delivery</strong> (calendar only), then select <strong>Save</strong> on that row. <strong>Save each row before you edit the next</strong>: saving one row reloads the table and discards unsaved edits in the others.</p>
+<p>{{IMG:p16-shipments-boxes.png}}</p>
+<p><em>Figure 15. Shipments, with courier and tracking saved and each box Ready to send. Expected delivery is picked the same way and saved with the row.</em></p></li>
+<li><p>Print the documents that travel with each box. <strong>Pack list</strong> downloads a shipping manifest listing the panel samples, with barcodes; target values are never printed on it. <strong>Label</strong> downloads the box label with destination, temperature requirement and sample count.</p>
+<p>{{IMG:p17-pack-list.png}}</p>
+<p><em>Figure 16. The shipping manifest for one box.</em></p>
+<p>{{IMG:p18-box-label.png}}</p>
+<p><em>Figure 17. The box label.</em></p></li>
+<li><p>Tick <strong>Select all pending</strong> (or individual rows). The button becomes <strong>Mark 6 shipped</strong>.</p>
+<p>{{IMG:p19-select-all-pending.png}}</p>
+<p><em>Figure 18. All six boxes selected, with expected delivery dates saved.</em></p>
+<p>Select <strong>Mark 6 shipped</strong>. The first dispatch moves the cycle to Shipped. Shipped rows show <strong>SENT</strong> and the ship date, and their fields become read-only.</p>
+<p>{{IMG:p20-shipped.png}}</p>
+<p><em>Figure 19. Six shipments dispatched; the cycle is Shipped.</em></p></li>
+</ol>
+
+<h2>6. Track receipt and send repeats</h2>
+<ol start="18">
+<li><p>Open <strong>Receipts &amp; scoring</strong>. Each laboratory shows a status (In transit, Delivered, Overdue), the expected and received dates, the receipt condition and its scores. The page's hint explains that <strong>Overdue</strong> means two business days past the expected delivery (not seen in this run). When a laboratory confirms receipt by phone or email, select <strong>Mark received</strong>.</p>
+<p>{{IMG:p22-first-delivery.png}}</p>
+<p><em>Figure 20. The first delivery recorded.</em></p></li>
+<li><p>If a box is lost, delayed or damaged, select <strong>Send repeat</strong>. The repeat comes out of the panel's reserve; if the reserve cannot cover it, a written justification is required in <strong>Override note</strong>.</p>
+<p>{{IMG:p23-send-repeat-modal.png}}</p>
+<p><em>Figure 21. Send a repeat panel.</em></p>
+<p>{{IMG:p24-repeat-dispatched.png}}</p>
+<p><em>Figure 22. The row is marked Repeat shipment.</em></p></li>
+<li><p>Submissions open on their own once every participant holds its panel; you do not need to open them by hand. Once submissions are open, <strong>Score cycle</strong> appears.</p>
+<p>{{IMG:p26-submissions-open.png}}</p>
+<p><em>Figure 23. All six delivered; submissions opened without any action.</em></p>
+<p>If one box is holding up the rest, use <strong>Open submissions</strong>, which appears once any laboratory has its panel. The dialog, <strong>Open submissions with undelivered panels</strong>, says that laboratories without their panel stay on the roster as late and that this is a recorded manual override. Enter the <strong>Reason</strong> and select <strong>Open submissions</strong>. The cycle moves to Submissions open and Score cycle appears; the late laboratory's row stays In transit and keeps Mark received.</p>
+<p>{{IMG:p25a-open-submissions-reason.png}}</p>
+<p><em>Figure 24. Opening submissions while one box is still in transit.</em></p>
+<p>The override is kept in <strong>Cycle history</strong>: the Submissions open row shows the trigger Manual override, who made it and the reason given.</p>
+<p>{{IMG:p25b-history-override.png}}</p>
+<p><em>Figure 25. Cycle history, with the reason recorded against the override.</em></p></li>
+</ol>
+
+<h2>7. Record results and score the cycle</h2>
+<p>Laboratories that run OpenELIS return results through the FHIR store. For a laboratory that phones, emails or sends a file, key the results yourself.</p>
+<ol start="21">
+<li><p>Select <strong>Enter results</strong> on the laboratory's row. Key each value as reported (a number, or a word such as Reactive) and select <strong>Save results</strong>. Saving overwrites what is on file for that test.</p>
+<p>{{IMG:p27-enter-results.png}}</p>
+<p><em>Figure 26. Results from one laboratory, keyed by hand.</em></p></li>
+<li><p>If the laboratory sent its export bundle, paste it into <strong>Or paste the participant's export bundle (CSV)</strong> and select <strong>Import CSV</strong>. The file needs <code>analyte_name</code> and <code>result_value</code> columns. The imported values fill the grid; select <strong>Save results</strong>.</p>
+<p>{{IMG:p28-csv-import.png}}</p>
+<p><em>Figure 27. After Import CSV: "1 values imported" and the value filled into the grid.</em></p></li>
+<li><p>When results are in, select <strong>Score cycle</strong>. Where the panel carries targets and acceptance limits, results are judged against those limits (but see the first item under <em>Known issues</em>). A cycle whose panel has no targets is scored against its peers and needs at least five reported results. After scoring, the cycle is <strong>Scored</strong> and the Scores column shows, for example, <em>1 unacceptable of 1</em>. Unacceptable laboratories go straight into the follow-up register.</p>
+<p>{{IMG:p30-cycle-scored.png}}</p>
+<p><em>Figure 28. The cycle scored.</em></p>
+<p>{{IMG:p31-scores-column.png}}</p>
+<p><em>Figure 29. Scores per laboratory: one unacceptable result.</em></p></li>
+</ol>
+
+<h2>8. Publish results and reports</h2>
+<ol start="24">
+<li><p>For each laboratory, <strong>Report PDF</strong> opens its performance report: scheme and cycle details, programme and section summaries, and a scoring detail line with the reported value, target, difference, z-score and Performance. The verdict comes from the acceptance limits: 1395 is above the 1296 limit, so it is Unacceptable even though its z-score against the other laboratories is 1.56. <strong>Scores CSV</strong> downloads the same rows as a file.</p>
+<p>{{IMG:p32-performance-report.png}}</p>
+<p><em>Figure 30. The performance report for one laboratory.</em></p></li>
+<li><p>Select <strong>Send scores</strong> to place a laboratory's scores in the FHIR store for it to collect.</p>
+<p>{{IMG:p33-scores-sent.png}}</p>
+<p><em>Figure 31. Scores sent.</em></p></li>
+<li><p>On <strong>Report comments</strong>, pick one or more pre-approved comments and select <strong>Add to report</strong>. Only comments from the library can be printed; the wording is maintained under Administration → Dictionary Management.</p>
+<p>{{IMG:p35-report-comment-added.png}}</p>
+<p><em>Figure 32. A library comment added to the cycle's report.</em></p></li>
+</ol>
+
+<h2>9. Follow up failures and close the cycle</h2>
+<ol start="27">
+<li><p><strong>Close cycle</strong> asks for a reason and is refused while a follow-up is open or a missed-deadline result is still waiting on an answer.</p>
+<p>{{IMG:p38-close-refused.png}}</p>
+<p><em>Figure 33. Closing refused while one follow-up is open.</em></p></li>
+<li><p>Select <strong>Follow-up register</strong> (or go to <strong>EQA → Participant Follow-Up</strong>). It lists the laboratories in your schemes that returned unacceptable results. This register is correspondence with another laboratory; it never opens a non-conformity in your own laboratory's register. Expand a row to see the result, target and z-score.</p>
+<p>{{IMG:p40-followup-expanded.png}}</p>
+<p><em>Figure 34. A follow-up expanded, with its actions.</em></p></li>
+<li><p>New entries start as <strong>Notified</strong>. An expanded entry offers <strong>Notify lab</strong>, <strong>Record response</strong>, <strong>Investigate</strong>, <strong>Resolve</strong>, <strong>Remove from programme</strong> and <strong>Flag for repeat</strong>. <strong>Record response</strong> and <strong>Investigate</strong> move the entry to Response received and Under investigation.</p>
+<p><strong>Notify lab</strong> is meant to email the laboratory's contact. When no contact email is on file, it downloads the notification as a CSV for you to send by hand. <em>Sending by email was not verified: Organization Management has no contact email field in this version, so the test laboratories had no address on file and every notification came out as the CSV. Confirm on a site that has outgoing email set up before relying on it.</em></p>
+<p>{{IMG:p41-notify-csv-fallback.png}}</p>
+<p><em>Figure 35. Notify lab with no email on file: the notification is downloaded instead.</em></p>
+<p><strong>Flag for repeat</strong> sends the laboratory a fresh panel so it can test again. It opens the same <strong>Send a repeat panel</strong> dialog as the workbench: the repeat comes out of the panel's reserve, and an <strong>Override note</strong> is needed only when the reserve cannot cover it. Select <strong>Confirm</strong>. The page confirms the repeat was dispatched, and the entry stays Notified.</p>
+<p>{{IMG:p42-flag-for-repeat.png}}</p>
+<p><em>Figure 36. Flag for repeat on a laboratory that reported a CD4 count below the acceptance range.</em></p>
+<p>On the workbench's Receipts &amp; scoring tab, that laboratory's row is now marked <strong>Repeat shipment</strong> and shows In transit, with Mark received available again for when the repeat arrives.</p>
+<p>{{IMG:p42b-repeat-row.png}}</p>
+<p><em>Figure 37. The repeat in transit on the workbench.</em></p>
+<p><strong>Remove from programme</strong> withdraws the laboratory from the scheme. Record what was agreed with the laboratory in <strong>Notes</strong> and select <strong>Confirm</strong>. The entry moves to <strong>Removed from programme</strong>, with the notes under the result.</p>
+<p>{{IMG:p43-remove-from-programme.png}}</p>
+<p><em>Figure 38. Removing a laboratory from the scheme, with the agreement recorded.</em></p>
+<p>{{IMG:p43b-removed.png}}</p>
+<p><em>Figure 39. The entry marked Removed from programme.</em></p>
+<p>The enrolment itself changes too: on EQA Management → Participants the laboratory now reads <strong>Withdrawn</strong> and has no pause or withdraw icons, and the next cycle's Participants step no longer offers it.</p>
+<p>{{IMG:p43c-enrolment-withdrawn.png}}</p>
+<p><em>Figure 40. The removed laboratory's enrolment, now Withdrawn.</em></p></li>
+<li><p>Select <strong>Resolve</strong>, record what was agreed with the laboratory in <strong>Notes</strong>, and select <strong>Confirm</strong>. The notes are kept against the register entry for accreditation trace.</p>
+<p>{{IMG:p44-resolve-notes.png}}</p>
+<p><em>Figure 41. Resolving a follow-up with the agreed corrective action.</em></p>
+<p>{{IMG:p45-resolved.png}}</p>
+<p><em>Figure 42. The follow-up resolved.</em></p></li>
+<li><p>Return to the workbench and select <strong>Close cycle</strong>, giving a reason. The dialog warns that a closed cycle is final and no further verdicts are recorded against it.</p>
+<p>{{IMG:p46-cycle-closed.png}}</p>
+<p><em>Figure 43. The cycle closed.</em></p></li>
+</ol>
+
+<h2>10. Review participant performance</h2>
+<ol start="32">
+<li><p>On the provider board, <strong>Performance</strong> on a scheme's row opens <strong>Participant performance</strong>: each laboratory's pass rate over its last four scored cycles, its most recent verdict and its open follow-ups. Expand a row to see the cycles behind the rate.</p>
+<p>{{IMG:p47-participant-performance.png}}</p>
+<p><em>Figure 44. Participant performance, opened from the CD4 scheme's row.</em></p></li>
+</ol>
+
+<h2>11. Run an in-house blinded panel</h2>
+<p>In-House Blinding is for testing your own analysts with your own material: the panel is blinded, dealt to named analysts as ordinary-looking orders, and scored against sealed targets on the unblind date. It needs no provider, no enrolment and no shipping.</p>
+<ol start="33">
+<li><p>Create a scheme whose <strong>Scheme type</strong> is <strong>In-house</strong> (step 2). The helper says in-house schemes are run by this laboratory and need no provider, and the Provider field disappears. Add the tests and turn on <strong>Record the analyst on every result</strong>, which Analyst Competency needs. In-house is the only type that appears in In-House Blinding; until one exists, the page says <em>No in-house scheme exists yet</em>.</p>
+<p>{{IMG:p50-add-inhouse-scheme.png}}</p>
+<p><em>Figure 45. An in-house haematology scheme with three assigned tests.</em></p></li>
+<li><p>Go to <strong>EQA → In-House Blinding</strong> and select <strong>Launch blinding wizard</strong>. <strong>Scheme &amp; cycle:</strong> choose the <strong>In-house scheme</strong>, enter the <strong>Cycle name</strong>, and set the <strong>Planned start date</strong> and <strong>Unblind date (submission deadline)</strong>. The scheme list starts empty, so choose the scheme first; Next stays disabled until the scheme, name and both dates are filled in.</p>
+<p>{{IMG:p51-blinding-scheme-cycle.png}}</p>
+<p><em>Figure 46. Wizard step 1, Scheme &amp; cycle.</em></p></li>
+<li><p><strong>Samples &amp; prep.</strong> Add one row per sample (<strong>Add sample</strong>) with its <strong>Test</strong>, <strong>Target value</strong>, <strong>Unit</strong>, <strong>Range low</strong> and <strong>Range high</strong>. The page states that target values are sealed when the wizard finishes and are never stored in clear text.</p>
+<p>{{IMG:p52-blinding-samples.png}}</p>
+<p><em>Figure 47. Three samples, one test each, with targets and acceptable ranges.</em></p>
+<p>Under <strong>Prep &amp; aliquoting details</strong>, record the <strong>Source</strong>, <strong>Lot number</strong>, <strong>Aliquots produced</strong>, <strong>Storage temperature</strong>, <strong>Expiration date</strong>, <strong>Homogeneity QC passed</strong> and <strong>Homogeneity QC notes</strong>. The page shows the minimum aliquots needed.</p>
+<p>{{IMG:p53-blinding-prep.png}}</p>
+<p><em>Figure 48. Prep and aliquoting details for the pooled material.</em></p></li>
+<li><p><strong>Analysts.</strong> Under <strong>Scheme analysts</strong>, choose the OpenELIS user accounts that join the scheme's roster, then the <strong>Assignment mode</strong>: <strong>Round-robin</strong> (one analyst per sample, dealt in rotation), <strong>Identical set</strong> (every analyst tests the same samples) or <strong>Manual per-sample assignment</strong>. The page works out the number of blinded aliquots, for example <em>3 samples × 3 analysts = 9 blinded aliquots</em>, and lists each sample with its analyst.</p>
+<p>{{IMG:p54-blinding-analysts.png}}</p>
+<p><em>Figure 49. Three bench analysts on an identical set.</em></p></li>
+<li><p><strong>Confirm &amp; seal.</strong> Check the summary. The warning says that after sealing, revealing a target takes the unblind privilege and is recorded in the audit trail, and that the panel cannot be edited afterwards. Select <strong>Seal panel &amp; distribute</strong>.</p>
+<p>{{IMG:p55-blinding-confirm.png}}</p>
+<p><em>Figure 50. The summary before sealing.</em></p></li>
+<li><p>The confirmation lists the blind codes (for example IH-3-01 to IH-3-09), which the blinded orders carry as their sample IDs, and the unblind date. <strong>Print label sheet</strong>, <strong>Open My Cycles</strong> and <strong>Open the Workplan</strong> are offered.</p>
+<p>{{IMG:p56-blinding-sealed.png}}</p>
+<p><em>Figure 51. Panel sealed and distributed, with its nine blind codes.</em></p>
+<p>The confirmation also says <em>No analyst is assigned to any sample on this panel</em>, even though step 36 listed an analyst per aliquot. In testing, the assignments were not carried onto the orders: result entry offered the scheme's three analysts but none was preselected. Choose the analyst on each result.</p></li>
+<li><p>Analysts enter results on the Results page by blind code, choosing themselves under <strong>Analyst (EQA)</strong>, and the results go through Validation like any other. The Results page marks the blind code with an <strong>EQA</strong> tag, so the analyst can tell the sample is proficiency material; the Validation page does not show the tag.</p>
+<p>{{IMG:p57-blind-order-results.png}}</p>
+<p><em>Figure 52. A blinded order on the Results page.</em></p></li>
+<li><p>Back on In-House Blinding, the panel row shows its sample count, <strong>Sealed</strong> targets, the status and the unblind date, with the tiles Sealed, awaiting distribution, In testing, Unblinding within 7 days and Scored or closed. Panels unblind on their unblind date. To unblind early, select <strong>Unblind now</strong> on the row. It acts at once, with no confirmation.</p>
+<p>{{IMG:p58-inhouse-list-distributed.png}}</p>
+<p><em>Figure 53. The panel in testing.</em></p></li>
+<li><p>Unblinding scores the results against the sealed targets. The page confirms <em>Panel unblinded and scored</em>, the row shows the date the targets were unsealed and the status <strong>SCORED</strong>. A result outside its range goes to <strong>This Lab's Follow-Up</strong> as an in-house failure, and every scored result counts on <strong>Analyst Competency</strong>; both are described on the participant page.</p>
+<p>{{IMG:p59-unblinded-scored.png}}</p>
+<p><em>Figure 54. The panel unblinded and scored.</em></p></li>
+</ol>
+
+<h2>The System Settings tab</h2>
+<p>Scheme Administration has a second tab, <strong>System Settings</strong>, with three cards and a <strong>Save</strong> button. <strong>Notification Settings</strong> holds the switches EQA Deadline Alerts, Email Notifications and STAT Order Alerts, and Alert Threshold (days before deadline).</p>
+<p>{{IMG:p60-system-settings-notifications.png}}</p>
+<p><em>Figure 55. System Settings, Notification Settings.</em></p>
+<p><strong>Integration Settings</strong> holds FHIR API Integration. <strong>Performance Analysis</strong> holds Automatic Z-Score Calculation, Minimum and Maximum Acceptable Z-Score, and Generate Performance Reports.</p>
+<p>{{IMG:p61-system-settings-performance.png}}</p>
+<p><em>Figure 56. System Settings, Integration Settings and Performance Analysis.</em></p>
+<ac:structured-macro ac:name="warning"><ac:rich-text-body><p><strong>Leave this tab as it is in 3.2.2.0.</strong> Save always reports <em>Settings saved successfully</em>, but in testing:</p>
+<ul>
+<li>The Integration and Performance Analysis settings are not kept. A changed z-score limit or Generate Performance Reports switch is back at its default after the page is reloaded, so these values cannot be used to tune scoring.</li>
+<li>The notification switches are not EQA-specific. Email Notifications turns on email for the laboratory's equipment alerts, and STAT Order Alerts turns the laboratory's alert escalation on or off. Saving this tab changes those laboratory-wide alert settings.</li>
+</ul>
+<p>Scoring does not use this tab: cycles are scored against the targets and acceptance limits entered on each panel (step 8), or against the other laboratories' results when a panel has no targets.</p></ac:rich-text-body></ac:structured-macro>
+
+<h2>Field reference</h2>
+<table><tbody>
+<tr><th>Field</th><th>Where</th><th>Notes</th></tr>
+<tr><td>Scheme type</td><td>Add Scheme</td><td>International PT, Regional PT, Inter-lab split or In-house. Only In-house may leave Provider empty, and only In-house schemes appear in In-House Blinding.</td></tr>
+<tr><td>Assigned Tests</td><td>Add Scheme</td><td>The tests the scheme collects. Result entry and CSV import read exactly this list.</td></tr>
+<tr><td>Record the analyst on every result</td><td>Add Scheme</td><td>Needed for Analyst Competency.</td></tr>
+<tr><td>Hold each cycle for review before submitting</td><td>Add Scheme</td><td>Applies to participating laboratories: results wait for a review step before they are submitted.</td></tr>
+<tr><td>Target value, Acceptance low / high</td><td>New cycle, Panel</td><td>Sealed at creation. With targets, each result is judged against its own limits; without them, scoring needs at least five results.</td></tr>
+<tr><td>Storage temperature</td><td>New cycle, Panel</td><td>Printed on every box label and pack list.</td></tr>
+<tr><td>Aliquots reserved</td><td>Prep</td><td>Recommended <code>max(10% of participants, 5)</code>. Repeats are drawn from this reserve.</td></tr>
+<tr><td>Assignment mode</td><td>In-House Blinding, Analysts</td><td>Round-robin, Identical set or Manual per-sample assignment. Sets how many blinded aliquots the panel needs.</td></tr>
+<tr><td>Unblind date (submission deadline)</td><td>In-House Blinding, Scheme &amp; cycle</td><td>The panel unblinds and is scored on this date; Unblind now does it early.</td></tr>
+<tr><td>Expected delivery</td><td>Shipments</td><td>Drives the Overdue status (two business days after this date).</td></tr>
+</tbody></table>
+
+<h2>Known issues in 3.2.2.0</h2>
+<ul>
+<li><strong>A panel with several samples of the same test is scored against one target only.</strong> Result entry offers one value per test, not per panel sample, and scoring uses a single target per analyte. In the CD4 run above, three levels (185, 520 and 1080 cells/µL) were shipped and every result was judged against 1080. Until this is fixed, give each sample a different test, or run one level per cycle. (<a href="https://uwdigi.atlassian.net/browse/OGC-1243">OGC-1243</a>)</li>
+<li>On Shipments, saving one row discards unsaved edits in the other rows. A saved Expected delivery date also disappears from its field after Save; it is kept, and shows on Receipts &amp; scoring. (<a href="https://uwdigi.atlassian.net/browse/OGC-1259">OGC-1259</a>)</li>
+<li>The System Settings tab does not keep its Integration and Performance Analysis settings, and its notification switches change laboratory-wide alert settings. See <em>The System Settings tab</em> above. (<a href="https://uwdigi.atlassian.net/browse/OGC-1247">OGC-1247</a>)</li>
+<li>Dates in the cycle wizard must be picked from the calendar; typed dates are discarded and Next stays disabled.</li>
+<li>On the wizard's Panel step, the Test picker offers the whole test catalogue rather than the scheme's assigned tests. (<a href="https://uwdigi.atlassian.net/browse/OGC-1251">OGC-1251</a>)</li>
+<li>The Scores column reads <em>0 unacceptable of 1</em> as soon as results are entered, before the cycle is scored. It is not a verdict until Score cycle has run. (<a href="https://uwdigi.atlassian.net/browse/OGC-1253">OGC-1253</a>)</li>
+<li>Send scores reports that scores were placed in the FHIR store even when the cycle's distribution method is CSV export. (<a href="https://uwdigi.atlassian.net/browse/OGC-1253">OGC-1253</a>)</li>
+<li>A repeat shipment has no box, courier or tracking fields; the Shipments tab keeps showing the original box. (<a href="https://uwdigi.atlassian.net/browse/OGC-1254">OGC-1254</a>)</li>
+<li>Record response takes no text. Record what the laboratory said in the Resolve notes. (<a href="https://uwdigi.atlassian.net/browse/OGC-1256">OGC-1256</a>)</li>
+<li>A closed cycle still shows Send repeat, Enter results and Send scores; saving results on a closed cycle fails with a server error. (<a href="https://uwdigi.atlassian.net/browse/OGC-1248">OGC-1248</a>)</li>
+<li>The pack list and label print internal codes for state and temperature (for example <code>READY_TO_SEND</code>, <code>REFRIGERATED_2_8C</code>), and the pack list leaves Service Location and Created By blank. (<a href="https://uwdigi.atlassian.net/browse/OGC-1258">OGC-1258</a>)</li>
+<li>The workbench banner keeps saying prep must clear the inventory and QC gate, even after the cycle has shipped or closed. (<a href="https://uwdigi.atlassian.net/browse/OGC-1262">OGC-1262</a>)</li>
+<li>Cycle history shows internal trigger codes (for example <code>FIRST_SHIPMENT_SENT</code>), and records cycle creation as a manual override. (<a href="https://uwdigi.atlassian.net/browse/OGC-1258">OGC-1258</a>)</li>
+<li>In-House Blinding: the analyst assignments from the Analysts step are not carried onto the blinded orders; the Results page tags blinded orders EQA; and in testing, results recorded against one analyst were credited to another on Analyst Competency. The Samples &amp; prep helper shows an internal reference (FR-V2.1-17), and its Test picker offers the whole catalogue. (<a href="https://uwdigi.atlassian.net/browse/OGC-1245">OGC-1245</a>, <a href="https://uwdigi.atlassian.net/browse/OGC-1249">OGC-1249</a>, <a href="https://uwdigi.atlassian.net/browse/OGC-1251">OGC-1251</a>, <a href="https://uwdigi.atlassian.net/browse/OGC-1261">OGC-1261</a>)</li>
+<li>The performance report leaves the Laboratory row blank. Participant performance does not name the scheme it is showing. (<a href="https://uwdigi.atlassian.net/browse/OGC-1258">OGC-1258</a>, <a href="https://uwdigi.atlassian.net/browse/OGC-1262">OGC-1262</a>)</li>
+<li>Some screens still say <em>Program</em> where the rest say <em>Scheme</em> (the Main menu entry, the breadcrumb, Select Program). Users on the English (US) locale see the older wording throughout. (<a href="https://uwdigi.atlassian.net/browse/OGC-1261">OGC-1261</a>)</li>
+</ul>
+
+<h2>Not covered here</h2>
+<p>Taking part in someone else's scheme, including This Lab's Follow-Up and Analyst Competency, is on <em>EQA participant: take part in a proficiency testing scheme</em>.</p>
+
+<h2>Provenance</h2>
+<table><tbody>
+<tr><th>Status</th><td>Draft, driven end to end, pending review</td></tr>
+<tr><th>Instance</th><td><code>pngtest.openelis-global.org</code>, OpenELIS 3.2.2.0 (branch demo-png), locale English</td></tr>
+<tr><th>Routes</th><td><code>/qa/eqa/management</code>, <code>/qa/eqa/participants</code>, <code>/qa/eqa/provider/schemes</code>, <code>/qa/eqa/provider/schemes/:id/cycles/new</code>, <code>/qa/eqa/provider/cycles/:id/workbench</code>, <code>/qa/eqa/provider/follow-ups</code>, <code>/qa/eqa/provider/schemes/:id/performance</code>, <code>/qa/eqa/in-house</code>, <code>/qa/eqa/in-house/new</code></td></tr>
+<tr><th>Captured</th><td>23 and 24 September 2026</td></tr>
+<tr><th>Evidence</th><td>All steps driven. On 24 September a second cycle (2026 Round 5, scheme 8) was run to drive Open submissions, Flag for repeat and Remove from programme, and an in-house scheme (CPHL Haematology In-House Blind Panel) was run end to end with three analysts. System Settings: every control changed, saved and re-read after reload. Not verified: Notify lab by email, because no organisation contact email can be recorded (only the CSV fallback was driven). The panel-level scoring issue under Known issues was confirmed from the scores CSV and the scoring source.</td></tr>
+<tr><th>Spine</th><td>Epic OGC-608 (EQA V2: Complete Lifecycle MVP)</td></tr>
+<tr><th>Reviewer</th><td>Pending</td></tr>
+</tbody></table>

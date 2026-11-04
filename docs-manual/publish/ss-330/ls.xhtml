@@ -1,0 +1,48 @@
+<ac:structured-macro ac:name="note" ac:schema-version="1"><ac:rich-text-body><p><strong>Work in progress.</strong> This page is published before its review is finished so you can use it now. It is being reviewed under <a href="https://uwdigi.atlassian.net/browse/OGC-1284">OGC-1284</a>, so details may still change. If something on your screen does not match, add a comment to this page.</p></ac:rich-text-body></ac:structured-macro>
+<ac:structured-macro ac:name="info" ac:schema-version="1"><ac:rich-text-body><p><strong>OpenELIS 3.3.0.</strong> In 3.3.0 clinical orders no longer use this stage: their samples are labelled and stored in <a href="https://uwdigi.atlassian.net/wiki/spaces/OG/pages/1655930882">Prepare samples for a clinical order</a>. This page covers environmental and vector orders. Sites on earlier releases can use <a href="https://uwdigi.atlassian.net/wiki/spaces/OG/pages/1706459302">Label &amp; store samples (before 3.3.0)</a>.</p></ac:rich-text-body></ac:structured-macro>
+<p><em>How-to &middot; Reception and laboratory staff</em></p>
+<h2>At a glance</h2>
+<table data-layout="default"><tbody>
+<tr><th><p>Purpose</p></th><td><p>Print the order and sample labels for an environmental or vector order, and either give each sample a storage location or record that it will be processed straight away.</p></td></tr>
+<tr><th><p>You'll end up with</p></th><td><p>Labels for the order and each sample, storage assigned or skipped for every sample, and the order moved on to Sample check.</p></td></tr>
+<tr><th><p>Who does this</p></th><td><p>Whoever labels and racks samples at your site. Access is set by user permissions and can be configured by your administrator.</p></td></tr>
+<tr><th><p>Before you start</p></th><td><p>An environmental or vector order saved at Enter Order, a label printer, and, if you store samples, storage locations set up under Main menu &rarr; Storage.</p></td></tr>
+<tr><th><p>Where</p></th><td><p>Main menu &rarr; Order &rarr; Add Environmental Order &rarr; Label &amp; Store (or Add Vector Order &rarr; Label &amp; Store). Save &amp; Next on Enter Order brings you here.</p></td></tr>
+</tbody></table>
+<h2>Step 1: Check you have the right order</h2>
+<ol start="1">
+<li><p>The progress bar shows <strong>Enter Order</strong>, <strong>Label &amp; Store</strong> and <strong>Sample check</strong>, with the time Enter Order was done. Below it, the order banner gives the lab number, its status (<strong>Entered</strong>) and the samples with their test counts. To work on another order, scan or type its lab number into <strong>Scan barcode or enter lab number</strong>.</p></li>
+</ol>
+<h2>Step 2: Print the labels</h2>
+<ol start="2">
+<li><p><strong>Print Labels</strong> lists an <strong>Order Label</strong> (the lab number and sampling site, barcode the lab number) and a <strong>Sample Label</strong> for each sample (sample type, sampling site and collection date, barcode the lab number with a suffix such as <code>.1</code>).</p>
+<p>{{IMG:01-print-labels.png}}</p>
+<p><em>Figure 1. Label &amp; Store for an environmental order from the Laloki River raw water intake: one order label and one sample label.</em></p></li>
+<li><p>Set the <strong>Quantity</strong> on each row, then select <strong>Print Label</strong> on a row or <strong>Print All Labels</strong> below the table.</p></li>
+</ol>
+<h2>Step 3: Store the samples, or skip storage</h2>
+<ol start="4">
+<li><p><strong>Assign Storage Location</strong> names any sample that has no location yet. For each sample, either search for a location in <strong>Search for a storage location</strong> (two or more characters), or pick it level by level: <strong>Room</strong>, <strong>Device</strong>, <strong>Shelf</strong>, <strong>Rack</strong>, <strong>Box</strong> and an optional <strong>Position</strong>, with <strong>Condition Notes</strong> if needed.</p></li>
+<li><p>If the samples go straight to the bench, tick <strong>Skip storage for unassigned samples</strong>. A blue note confirms <strong>Storage skipped</strong> and that the samples will be processed immediately.</p>
+<p>{{IMG:02-skip-storage.png}}</p>
+<p><em>Figure 2. Storage skipped for the one sample on the order.</em></p></li>
+</ol>
+<h2>Step 4: Save and go on to Sample check</h2>
+<ol start="6">
+<li><p>Select <strong>Save &amp; Next</strong>. Label &amp; Store is marked <strong>Done</strong> and the <a href="https://uwdigi.atlassian.net/wiki/spaces/OG/pages/1429176321">Sample check</a> opens for the same order. <strong>Save</strong> keeps your choices and stays on the page; <strong>Back</strong> returns to Enter Order.</p></li>
+</ol>
+<h2>Refer out</h2>
+<p>Below storage, <strong>Refer Out / Subcontract</strong> lists each sample with its <strong>Sample ID</strong>, <strong>Sample Type</strong>, <strong>Tests</strong>, <strong>Referring Lab</strong> and <strong>Subcontract Status</strong> (In-house by default), with a <strong>Refer Out</strong> action for samples tested elsewhere. Referral was not exercised for this page.</p>
+<h2>Tips</h2>
+<ul>
+<li><p>Label sizes and barcode formats come from the presets your administrator keeps in <a href="https://uwdigi.atlassian.net/wiki/spaces/OG/pages/1433468931">Manage label presets</a>.</p></li>
+<li><p>If no storage locations are set up, the search and the Room list are empty; skip storage instead.</p></li>
+<li><p>Known issue (3.3.0-SNAPSHOT): the Main menu still calls the next stage <strong>QA Review</strong>, while the progress bar and breadcrumb call it <strong>Sample check</strong>.</p></li>
+</ul>
+<h2>Provenance</h2>
+<table data-layout="default"><tbody>
+<tr><th><p>Drafted</p></th><td><p>13 October 2026 against <strong>3.3.0-SNAPSHOT</strong> on <code>pngtest.openelis-global.org</code>, because testing has no environmental sample types. Replaces the shared-stage page, kept as 1706459302.</p></td></tr>
+<tr><th><p>Driven</p></th><td><p>Environmental order DEV01260000000000026 (Surface Water from the Laloki River raw water intake; pH, Total Coliform, E. coli Presence) through Enter Order, Label &amp; Store with storage skipped, and Sample check to Submit.</p></td></tr>
+<tr><th><p>Observed, not driven</p></th><td><p>Printing (the label output), assigning a storage location (pngtest has none), Refer Out, and the vector lane (its progress bar on testing shows Enter Order, Label &amp; Store, Sample check and Complete).</p></td></tr>
+<tr><th><p>Status</p></th><td><p>Work in progress, review OGC-1284.</p></td></tr>
+</tbody></table>

@@ -1,0 +1,125 @@
+<p><em>How-to · Reception staff</em></p>
+<p><em>Part of the clinical order pipeline: <strong>Enter Order</strong> → <a href="https://uwdigi.atlassian.net/wiki/spaces/OG/pages/1655930882">Prepare Samples</a> → <a href="https://uwdigi.atlassian.net/wiki/spaces/OG/pages/1702821939">Sample check</a></em></p>
+<ac:structured-macro ac:name="info"><ac:rich-text-body><p><strong>This page describes OpenELIS 3.3.0.</strong> Updated on 12 October 2026 for the Possible matches check when a new patient is created and the new rule that every sample needs a test before Save and next. Sites on 3.2.x use the four-stage flow (Enter Order → Collect → Label &amp; Store → QA Review); see <a href="https://uwdigi.atlassian.net/wiki/spaces/OG/pages/1707114509">Enter a clinical order (before 3.3.0)</a>.</p></ac:rich-text-body></ac:structured-macro>
+
+<h2>At a glance</h2>
+<table><tbody>
+<tr><th>Purpose</th><td>Register a clinical order: the patient, the requesting site and provider, and at least one sample type, with its tests if you know them.</td></tr>
+<tr><th>You'll end up with</th><td>A saved order with a lab number, status <em>Entered</em>, ready for Prepare Samples.</td></tr>
+<tr><th>Who does this</th><td>Reception staff. Access is set by user permissions and can be configured by your administrator.</td></tr>
+<tr><th>Before you start</th><td>The request form: the patient's details or identifier, the requesting site and provider, and the specimen type.</td></tr>
+<tr><th>Where</th><td>Main menu → Order → Add Clinical Order → Enter Order</td></tr>
+</tbody></table>
+
+<h2>Order entry now has three steps</h2>
+<p>A clinical order goes through <strong>Enter Order</strong>, <strong>Prepare Samples</strong> and <strong>Sample check</strong>. The step bar at the top of each screen shows where the order is: the step in hand shows what is left to do (for example <em>2 to do</em>) or <em>Ready</em>, steps not reached read <em>Not started</em>, and finished steps read <em>Done</em> with the time. The card under the step bar shows the lab number, the order status and a step counter such as <em>1/3 steps</em>.</p>
+<p>Labelling and storage, which used to be a separate Label &amp; Store step, are now part of Prepare Samples. The old QA Review step is now Sample check.</p>
+<p>{{IMG:01-enter-order-top.png}}</p>
+<p><em>Figure 1. The top of Enter Order: the step bar, the order card with its lab number and In Progress status, and the Lab Number field.</em></p>
+
+<h2>Before the form: what your site shows</h2>
+<p><strong>Several fields on this screen are switched on or off per site</strong>, under Main menu → Admin → General Configurations → Order Entry Configuration. See the <a href="https://uwdigi.atlassian.net/wiki/spaces/OG/pages/1649082375">General Configurations reference</a>. If a field described here is missing, or you see one that is not described, the cause is usually configuration. This page was captured with EQA, Program and payment tracking on.</p>
+
+<h2>Steps</h2>
+<ol>
+<li><p><strong>Check the lab number.</strong> A lab number is already in the field when the screen opens, with <strong>Generate Lab Number</strong> beside it. The <strong>Scan barcode or enter lab number</strong> box at the top is for finding an existing order.</p></li>
+<li><p><strong>Set sample handling if it applies.</strong> Tick <strong>External quality assessment (EQA) sample</strong> for an EQA specimen. <strong>This order has no patient</strong> is shown greyed out on this screen.</p></li>
+<li><p><strong>Find the patient.</strong> Under <strong>Patient</strong>, <strong>Search for Patient</strong> is open by default. Its fields are Patient Id, Previous Lab Number, Last Name, First Name, Date of Birth and Sex. The help text says any combination works and that <em>names match exactly or by their first letters</em>: on the reference site <em>Kau</em> found both Kaupa records, while the misspelling <em>Kaupx</em> found nobody. <strong>Search</strong> looks in OpenELIS. <strong>External Search</strong> queries the Client Registry and needs at least a name and a date of birth. Pick the patient with the radio button in the results.</p>
+<p>The patient then shows as a <em>Selected</em> card with name, date of birth, sex and ID, an <strong>Edit details</strong> link and a <strong>Clear</strong> link.</p>
+<p>{{IMG:02-patient-selected.png}}</p>
+<p><em>Figure 2. A patient found by last name and selected. The Selected card replaces the search form.</em></p></li>
+<li><p><strong>Or register a new patient.</strong> If the search finds nobody, choose <strong>New Patient</strong>. Sex and Date of Birth are marked required. Patient ID / Clinic ID / UR number, National ID, Last Name, First Name, Primary phone and Email are optional; Age/Years, Months and Days fill in from the date of birth. Phone numbers must match the format shown under the field (on the reference site, <em>xxxx-xxxx</em>). Emergency Contact Info, Additional Information and Identification Documents are collapsible sections.</p>
+<p>Press <strong>Create patient</strong>. The screen confirms <em>The new patient is created when the order is saved.</em> Nothing is written until you save the order.</p>
+<p>{{IMG:03-new-patient.png}}</p>
+<p><em>Figure 3. The New Patient form filled in for a new patient.</em></p></li>
+<li><p><strong>Check any possible matches.</strong> If OpenELIS already holds records that look like the patient you are creating, <strong>Create patient</strong> opens a <strong>Possible matches</strong> dialog instead: <em>These records look similar to the one you are creating. Use one of them, or create a new record.</em> Each record shows the name, date of birth and identifier, with the matching parts highlighted and a line such as <em>Matched on: name, date of birth</em>.</p>
+<p><strong>Use this one</strong> selects that existing patient, and the patient then shows as a <em>Selected</em> card, just as if you had found them by search. The dialog also offers <strong>Create new anyway</strong> and <strong>Cancel</strong>.</p>
+<p>Use an existing record whenever it is the same person. A second record splits the patient's history across two files.</p>
+<p>{{IMG:e-possible-matches.png}}</p>
+<p><em>Figure 4. Possible matches for a new patient named Joseph Kaupa, born 03/02/1975. Two existing records match on name and date of birth.</em></p></li>
+<li><p><strong>Identify the requesting site.</strong> Under <strong>Site Search</strong>, type at least two characters of the <strong>Site Name</strong> to search, and press <strong>Select</strong> on the right row. If the site is not on file and your site allows it, choose <strong>+ Add new organization "…"</strong>; a <em>New</em> card confirms it <em>will be created as a new organization when this order is saved</em>. Set <strong>Priority</strong> (Routine, STAT (Urgent), ASAP or Timed). <strong>Department / Ward / Unit</strong> reads <em>Select facility first</em> and is disabled until then. Tick <strong>Remember this site and requester for my next order</strong> before a run of orders from one clinic.</p>
+<p>{{IMG:04-site-search.png}}</p>
+<p><em>Figure 5. Site Search with one match and its Select button.</em></p></li>
+<li><p><strong>Identify the provider.</strong> Under <strong>Provider Search</strong>, enter a name or phone number and press <strong>Search</strong>, then <strong>Select</strong> the right row. The provider shows as a <em>Selected</em> card with <strong>Edit details</strong> and <strong>Clear</strong>. If nobody matches, <strong>+ Add new provider "…"</strong> splits the name into First Name and Last Name and adds a <strong>Title</strong> list (Doctor, Professor, Sister and others); the provider is created when the order is saved.</p>
+<p>Provider results show the provider's title with the name, for example <em>Wari, Dr John</em>.</p>
+<p>{{IMG:04b-provider.png}}</p>
+<p><em>Figure 6. A provider found and selected.</em></p></li>
+<li><p><strong>Choose a program, if your site uses them.</strong> According to its help text, selecting a <strong>Program</strong> displays that program's own Additional Order Information fields below it.</p></li>
+<li><p><strong>Add clinical information (optional).</strong> <strong>Provisional Diagnosis</strong> is a working diagnosis that guides test selection and is not recorded as a confirmed diagnosis. <strong>Payment Status</strong> (Normal cash, Normal insurance, Reduced cash or Reduced insurance payment), <strong>Order Date</strong> (pre-filled with today), <strong>Next Visit Date</strong> and <strong>Sampling Performed At</strong> complete the section.</p></li>
+<li><p><strong>Add at least one sample type, and its tests if known.</strong> Choose a <strong>Sample Type</strong>. Its <strong>Order Panels</strong> and <strong>Order Tests</strong> lists then appear, with a filter box and a count of the tests available; ticked tests show as tags above the list. <strong>Add Sample</strong> adds another specimen; <strong>Remove Sample</strong> takes one away.</p>
+<p>The section's help text sets the rule: <em>Tests can wait: Save and exit keeps the order without them. Save and next needs at least one test on every sample.</em></p>
+<p>{{IMG:e-sample-tests.png}}</p>
+<p><em>Figure 7. Serum chosen as Sample 1, with Creatinine, GPT/ALAT and GOT/ASAT ticked. The help text under Sample states when tests are needed.</em></p></li>
+<li><p><strong>Save.</strong> Until the order has what it needs, a <strong>To continue to Prepare Samples</strong> list above the buttons names what is missing, and the footer says how many items are needed:</p>
+<ul>
+<li>With no patient or no sample type (<em>Select or create the patient</em>, <em>Add at least one sample type</em>), both <strong>Save and exit</strong> and <strong>Save and next</strong> are disabled.</li>
+<li>With a sample type but no tests on it, the list reads, for example, <em>Sample 1: choose at least one test</em>. <strong>Save and exit</strong> is enabled, so you can keep the order and add tests later. <strong>Save and next</strong> stays disabled.</li>
+</ul>
+<p>When the list is empty:</p>
+<ul>
+<li><strong>Save and next</strong> saves the order and opens <a href="https://uwdigi.atlassian.net/wiki/spaces/OG/pages/1655930882">Prepare Samples</a>. Enter Order then shows as <em>Done</em> and the order status becomes <em>Entered</em>.</li>
+<li><strong>Save and exit</strong> saves the order and returns to the Order Dashboard with the order highlighted.</li>
+<li><strong>Discard</strong> is also offered, in red, to the left of the save buttons.</li>
+</ul>
+<p>{{IMG:e-gate-no-tests.png}}</p>
+<p><em>Figure 8. The foot of Enter Order with Serum chosen but no tests ticked: Sample 1: choose at least one test. Save and exit is enabled and Save and next is disabled.</em></p></li>
+</ol>
+<p><strong>Attachments</strong> takes up to 5 files, 10 MB each, as PDF, JPG, PNG or TIFF. On a new order the section says <em>Save the order to add attachments</em>.</p>
+
+<h2>Continue or cancel an order from the Order Dashboard</h2>
+<p>Main menu → Order → Add Clinical Order → Dashboard lists clinical orders with Lab Number, Patient, Facility, Priority, Status, Progress, Last Updated and Action. Above the table are a lab number search, a status filter, a priority filter and a From / To date range, with <strong>New Order</strong> at the top right.</p>
+<ul>
+<li>Unfinished orders carry <strong>Continue</strong> and <strong>Cancel order</strong> in the Action column; orders that are ready for testing or cancelled carry <strong>Open</strong>.</li>
+<li><strong>Cancel order</strong> opens a confirmation: <em>Its tests are cancelled and its samples are voided. Nothing is deleted.</em> Choose a <strong>Reason for cancelling</strong> (Registered in the wrong domain, Duplicate order, Request withdrawn or Other); the <strong>Cancel order</strong> button stays disabled until you do. <strong>Stay</strong> closes the dialog without cancelling.</li>
+<li>A cancelled order leaves the default <em>All Statuses</em> view. Choose <strong>Cancelled</strong> in the status filter to see it.</li>
+<li>Scanning or typing a lab number into the dashboard's <strong>Scan barcode or enter lab number</strong> opens that order. An order that is ready for testing opens on Enter Order marked <em>This order is in read-only mode</em>, with an <strong>Edit</strong> button.</li>
+</ul>
+<p>{{IMG:07-cancel-order.png}}</p>
+<p><em>Figure 9. Cancelling an order from the dashboard, with Duplicate order chosen as the reason.</em></p>
+<p>Order statuses on the dashboard rows are <em>Entered</em>, <em>Samples prepared</em>, <em>Ready for testing</em> and <em>Cancelled</em>. The status filter uses different names: In Progress, Awaiting sample check, Completed, Has referred tests, Referred Out and Cancelled.</p>
+
+<h2>Field reference</h2>
+<table><tbody>
+<tr><th>Field</th><th>Notes</th></tr>
+<tr><td>Lab Number</td><td>Required. Filled in when the screen opens; Generate Lab Number is beside it.</td></tr>
+<tr><td>External quality assessment (EQA) sample</td><td>Checkbox. Shown when EQA is enabled for the site.</td></tr>
+<tr><td>Patient</td><td>Required. Search for Patient or New Patient. A new patient is created only when the order is saved. Create patient checks for possible matches first.</td></tr>
+<tr><td>Required By</td><td>Optional date under Requester.</td></tr>
+<tr><td>Site Name</td><td>Marked required. Type 2 or more characters to search. A new organization is created when the order is saved.</td></tr>
+<tr><td>Priority</td><td>Routine (default), STAT (Urgent), ASAP, Timed.</td></tr>
+<tr><td>Department / Ward / Unit</td><td>Disabled until a facility is selected.</td></tr>
+<tr><td>Provider</td><td>Search by name or phone, or add new. Results show the title with the name. A new provider has Title, First Name, Last Name, Phone, Provider Email.</td></tr>
+<tr><td>Program</td><td>Optional. The help text says it displays the program's own fields.</td></tr>
+<tr><td>Provisional Diagnosis</td><td>Optional. Not recorded as a confirmed diagnosis.</td></tr>
+<tr><td>Payment Status</td><td>Optional. Shown when payment tracking is on.</td></tr>
+<tr><td>Order Date / Next Visit Date</td><td>Order Date pre-filled with today.</td></tr>
+<tr><td>Sampling Performed At</td><td>Visit-point code: B1, J0, J15, M1, M3, M6, M12, Other.</td></tr>
+<tr><td>Sample Type</td><td>At least one is required to save. Panels and tests appear once chosen.</td></tr>
+<tr><td>Order Panels / Order Tests</td><td>Save and exit keeps the order without them. Save and next needs at least one test on every sample.</td></tr>
+<tr><td>Attachments</td><td>Up to 5 files. The section asks you to save the order first.</td></tr>
+</tbody></table>
+
+<h2>Tips</h2>
+<ul>
+<li>A misspelled name finds nobody, because search matches names exactly or by their first letters. Search on the first few letters of the surname before creating a new patient; Create patient also warns about likely duplicates.</li>
+<li>Opening Enter Order uses up a lab number even if you leave without saving. On the reference site the number issued to an abandoned screen was skipped, and no order for it appeared on the dashboard.</li>
+<li>Field labels and available fields vary by site. Check Order Entry Configuration before concluding the manual is wrong.</li>
+<li>The Order Date field and the Date of Birth field can show dates in different orders (month first and day first) on the same screen: on the reference site Order Date read 10/07/2026 for 7 October while Date of Birth asked for dd/mm/yyyy. Read the placeholder before typing.</li>
+</ul>
+
+<h2>Not yet available</h2>
+<ul>
+<li>A record of lab numbers issued but never used.</li>
+</ul>
+
+<h2>Provenance</h2>
+<table><tbody>
+<tr><th>Status</th><td>Updated for 3.3.0; review requested</td></tr>
+<tr><th>Instance</th><td>testing.openelis-global.org, OpenELIS 3.3.0 (Order Entry v4, OGC-1266; follow-ups OGC-1424, OGC-1443)</td></tr>
+<tr><th>Routes</th><td>/order/clinical/enter, /order/clinical (dashboard)</td></tr>
+<tr><th>Captured</th><td>Driven 7 October 2026 (DEV01260000000000059 through all three steps; DEV01260000000000060 saved and cancelled). Figures 9 October 2026 (DEV01260000000000099 new patient through release; DEV01260000000000100 and DEV01260000000000102 existing patient, Save and exit, cancelled).</td></tr>
+<tr><th>Updated 12 October 2026</th><td>Driven on DEV01260000000000505 and DEV01260000000000507: search by first letters (Kau) and a misspelling (Kaupx, no results); New Patient without National ID; Possible matches on Create patient and Use this one (the Selected card followed); the To continue gate with a sample type and no tests (Save and exit enabled, Save and next disabled); Save and next. Observed only: Create new anyway and Cancel in the Possible matches dialog, the provider title in search results. Figures 4, 7 and 8 replaced or added.</td></tr>
+<tr><th>Driven</th><td>New Patient and Create patient; patient search by last name and selection; Site Search and Select; Add new organization; Add new provider and Title; Payment Status; sample type and tests; the To continue gate (on 7 October a sample type without tests cleared it; changed in OGC-1424); Save and next; Save and exit; dashboard Cancel order with a reason (the confirm button was disabled until a reason was chosen); Cancelled filter; opening a released order from the dashboard's lab number search (read-only, with Edit).</td></tr>
+<tr><th>Observed only</th><td>Read from the live screen (page text, option lists and screenshots) on 7 October but not driven: the patient search fields, Priority options, Clinical Information fields and Sampling Performed At codes, the test count, the dashboard columns and status filter options, the four cancel reasons, Open on a cancelled row, the Order Date format (10/07/2026 on 7 October), and the lab number already filled on load (DEV01260000000000058 was issued to a screen that was left and never appeared). Not exercised: EQA checkbox, External Search, Program, Generate Lab Number, Required By, Department / Ward / Unit, Remember this site, Discard, Attachments, Continue, New Order.</td></tr>
+<tr><th>Seed data left on testing</th><td>Patients Rosemary Kila, Joseph Kaupa and Josef Kaupa (a duplicate of Joseph Kaupa left by testing; it appears in Figure 4), organization Port Moresby General Hospital, provider Dr John Wari.</td></tr>
+</tbody></table>

@@ -1,0 +1,59 @@
+<ac:structured-macro ac:name="note" ac:schema-version="1"><ac:rich-text-body><p><strong>Work in progress.</strong> This page is published before its review is finished so you can use it now. It is waiting for review, so details may still change. If something on your screen does not match, add a comment to this page.</p></ac:rich-text-body></ac:structured-macro>
+
+<h2>At a glance</h2>
+<table><tbody>
+<tr><th>Purpose</th><td>Record each cassette and each slide of a pathology case as its own identified row, with the slide linked to the block it was cut from.</td></tr>
+<tr><th>You'll end up with</th><td>Cassettes with block codes and barcodes (for example A1, A2), and slides with barcodes under their block (for example A1.1).</td></tr>
+<tr><th>Who does this</th><td>Histology technicians. Access is set by user permissions and can be configured by your administrator.</td></tr>
+<tr><th>Before you start</th><td>A pathology case at the Grossing stage.</td></tr>
+<tr><th>Where</th><td>Main menu → Pathology, then the case</td></tr>
+</tbody></table>
+
+<h2>Overview</h2>
+<p>On a pathology case, each cassette and each slide is now its own row. The identifier is assigned when you save, and each slide records the cassette it was cut from.</p>
+
+<h3>Step 1: Add cassettes at Grossing</h3>
+<p>Open the case (Main menu → Pathology, then the case) and expand <strong>2. Grossing</strong>. Enter the <strong>Gross Exam</strong>, then press <strong>Add cassette</strong> once for each cassette. Each new row reads <strong>Assigned on save</strong> with a <strong>Cassette</strong> tag, a <strong>Location</strong> field and <strong>Remove</strong>. <strong>Print all cassette labels</strong> is not available until the cassettes are saved.</p>
+<p>{{IMG:08-path-cassettes-unsaved.png}}</p>
+<p><em>Figure 1. Grossing with a gross description and two new cassettes reading Assigned on save; the Case summary still shows 0 cassettes.</em></p>
+
+<h3>Step 2: Save to assign the identifiers</h3>
+<p>Press <strong>Save draft</strong> at the foot of the case. Each cassette gets a block code and a barcode, for example <strong>A1</strong> <em>DEV01260000000001252.A1</em> and <strong>A2</strong> <em>DEV01260000000001252.A2</em>. <strong>Remove</strong> becomes <strong>Deactivate</strong>, <strong>Print all cassette labels</strong> becomes available, Grossing is tagged <strong>Complete</strong>, and the Case summary counts the cassettes.</p>
+<p>{{IMG:09-path-cassettes-saved.png}}</p>
+<p><em>Figure 2. After Save draft: cassettes A1 and A2 with their barcodes and Deactivate links, Print all cassette labels available, and Cassettes 2 in the Case summary.</em></p>
+
+<h3>Step 3: Add slides at Microtomy</h3>
+<p>Move the case to Microtomy with the <strong>Status</strong> control at the foot of the case, which notes <em>Stage transitions arrive in a later release. Set the stage here for now.</em>, and press Save draft. Expand <strong>6. Microtomy</strong> and press <strong>Add slide</strong> for each slide. Each new slide row reads <strong>Assigned on save</strong> and has <strong>Cut from block</strong> (a list of the case's saved cassettes, here A1 and A2), <strong>Location</strong>, <strong>Upload file</strong> and <strong>Remove</strong>. Choose the block for every slide; a slide saved without one is refused with <em>Pick the block this slide was cut from</em>.</p>
+<p>{{IMG:10-path-slides-unsaved.png}}</p>
+<p><em>Figure 3. Microtomy with two new slides, cut from blocks A1 and A2, still reading Assigned on save.</em></p>
+<p>Press <strong>Save draft</strong>. Each slide gets its own barcode under its block, for example <em>DEV01260000000001252.A1.1</em> and <em>DEV01260000000001252.A2.1</em>, the section is tagged <strong>2 slides</strong>, and the Case summary shows Slides 2.</p>
+<p>{{IMG:11-path-slides-saved.png}}</p>
+<p><em>Figure 4. After Save draft: slides DEV01260000000001252.A1.1 and A2.1, each showing the block it was cut from, with Deactivate and Print all slide labels.</em></p>
+<p><strong>Tips:</strong> Moving the case through Decalcification, Processing and Embedding showed the message <em>OpenELIS does not record work at this stage yet. The case can still be moved through it.</em> Slide numbers restart in each block, so the first slide from A1 and the first from A2 are both numbered 1. Printing cassette and slide labels and uploading a slide file have not yet been verified on a live instance.</p>
+
+<h2>Field reference</h2>
+<table><tbody>
+<tr><th>Field or control</th><th>Where</th><th>What it does</th></tr>
+<tr><td>Add cassette</td><td>Pathology case, Grossing</td><td>Adds a cassette row; the block code and barcode are assigned on save.</td></tr>
+<tr><td>Add slide, Cut from block</td><td>Pathology case, Microtomy</td><td>Adds a slide row; the block it was cut from must be chosen before saving.</td></tr>
+<tr><td>Deactivate</td><td>Saved cassette or slide row</td><td>Shown in place of Remove once the row has an identifier. Not driven.</td></tr>
+<tr><td>Status, Save draft</td><td>Foot of the pathology case</td><td>Sets the case stage by hand and saves the case.</td></tr>
+</tbody></table>
+
+<h2>Not yet available</h2>
+<ul>
+<li>Automatic stage transitions on the pathology case; the stage is set by hand for now.</li>
+<li>Recording work at the Decalcification, Processing and Embedding stages.</li>
+</ul>
+
+<h2>Provenance</h2>
+<table><tbody>
+<tr><th>Status</th><td>Draft for review</td></tr>
+<tr><th>Instance</th><td>testing.openelis-global.org, header version <em>3.4.0-SNAPSHOT</em> (3.3.0 change OGC-264 / PR 4410)</td></tr>
+<tr><th>Routes</th><td>/PathologyDashboard; /PathologyCaseView/{case}</td></tr>
+<tr><th>Date</th><td>21 October 2026</td></tr>
+<tr><th>Data</th><td>Pathology case for Helen Tau, DEV01260000000001252 (Histopathology, Port Moresby General Hospital).</td></tr>
+<tr><th>Driven</th><td>Gross Exam, Add cassette, Save draft; Status to Microtomy; Add slide, Cut from block, Save draft; save refused without a block.</td></tr>
+<tr><th>Observed only</th><td>Deactivate; Print all cassette labels and Print all slide labels; Upload file; Location.</td></tr>
+<tr><th>Unverified</th><td>Label printing; slide file upload.</td></tr>
+</tbody></table>

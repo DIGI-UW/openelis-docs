@@ -1,0 +1,49 @@
+<ac:structured-macro ac:name="note" ac:schema-version="1"><ac:rich-text-body><p><strong>Work in progress.</strong> This page is published before its review is finished so you can use it now. It is being reviewed under <a href="https://uwdigi.atlassian.net/browse/OGC-1301">OGC-1301</a>, so details may still change. If something on your screen does not match, add a comment to this page.</p></ac:rich-text-body></ac:structured-macro>
+<ac:structured-macro ac:name="info" ac:schema-version="1"><ac:rich-text-body><p><strong>OpenELIS 3.3.0.</strong> In 3.3.0 the QA Review stage became <strong>Sample check</strong>. Clinical orders have their own version: see <a href="https://uwdigi.atlassian.net/wiki/spaces/OG/pages/1702821939">Complete the sample check for a clinical order</a>. This page covers environmental and vector orders. Sites on earlier releases can use <a href="https://uwdigi.atlassian.net/wiki/spaces/OG/pages/1708490791">Complete QA review (before 3.3.0)</a>.</p></ac:rich-text-body></ac:structured-macro>
+<p><em>How-to &middot; Reception and laboratory staff</em></p>
+<h2>At a glance</h2>
+<table data-layout="default"><tbody>
+<tr><th><p>Purpose</p></th><td><p>Check each sample of an environmental or vector order against the acceptance checklist, accept it, and release the order for testing.</p></td></tr>
+<tr><th><p>You'll end up with</p></th><td><p>Every sample accepted (or reported as nonconforming) and the order <strong>Ready for testing</strong>.</p></td></tr>
+<tr><th><p>Who does this</p></th><td><p>Whoever receives samples at the laboratory. Access is set by user permissions and can be configured by your administrator.</p></td></tr>
+<tr><th><p>Before you start</p></th><td><p>The order has been through <a href="https://uwdigi.atlassian.net/wiki/spaces/OG/pages/1428684802">Label and store</a>, and you have the samples in front of you.</p></td></tr>
+<tr><th><p>Where</p></th><td><p>Save &amp; Next on Label &amp; Store brings you here. From the Main menu: Order &rarr; Add Environmental Order &rarr; QA Review (the menu still uses the old name).</p></td></tr>
+</tbody></table>
+<h2>Step 1: Open the sample's checklist</h2>
+<ol start="1">
+<li><p><strong>Intake Acceptance</strong> lists each sample with its <strong>Lab #</strong>, <strong>Sample type</strong>, <strong>Transit</strong> time and <strong>Eligibility</strong> (Pending until you accept it). Select a sample to open its checklist.</p></li>
+<li><p>The checklist header repeats the collection and receipt times and the transit time. Transit is shown for reference only; it does not grade anything.</p></li>
+</ol>
+<h2>Step 2: Answer the checklist</h2>
+<ol start="3">
+<li><p>For each item, choose <strong>Pass</strong>, <strong>Fail</strong> or <strong>N/A</strong>. The environmental list has six items: <strong>Container intact / undamaged</strong>, <strong>Label legible and matches request</strong>, <strong>Sample volume adequate</strong>, <strong>Cold chain maintained</strong>, <strong>Acceptable transit time / condition</strong> and <strong>Required paperwork present and complete</strong>. The items come from your site's Sample Acceptance Checklist.</p>
+<p>{{IMG:01-checklist.png}}</p>
+<p><em>Figure 1. Sample check for a Surface Water sample: the Intake Acceptance list and the first checklist items answered Pass.</em></p></li>
+</ol>
+<h2>Step 3: Accept the sample, or report a problem</h2>
+<ol start="4">
+<li><p>When every item passes, select <strong>Accept sample</strong>. Its Eligibility in the list changes to <strong>Accepted</strong>.</p></li>
+<li><p>If a sample fails a check, use <strong>Report NCE</strong> to record a nonconforming event, or <strong>Resample</strong> to ask for a new sample. Neither was exercised for this page; see <a href="https://uwdigi.atlassian.net/wiki/spaces/OG/pages/1681260549">Report a non-conforming event</a>.</p>
+<p>{{IMG:02-accept-submit.png}}</p>
+<p><em>Figure 2. Below the checklist: Accept sample, Report NCE and Resample, the Sampling Site and Sample Summary panels, and Save and Submit.</em></p></li>
+<li><p>Below the checklist, <strong>Sampling Site</strong> and <strong>Sample Summary</strong> show the site and each sample's tests, so you can check them against the containers. <strong>Order Details</strong> opens the rest of the order.</p></li>
+</ol>
+<h2>Step 4: Submit the order</h2>
+<ol start="7">
+<li><p>Select <strong>Submit</strong>. OpenELIS shows <strong>Order submitted successfully</strong> with the lab number, every stage on the progress bar is <strong>Done</strong>, and the order status becomes <strong>Ready for testing</strong>. <strong>Start New Order</strong> opens a blank Enter Order.</p>
+<p>{{IMG:03-submitted.png}}</p>
+<p><em>Figure 3. The order submitted and ready for testing.</em></p></li>
+</ol>
+<p><strong>Save</strong> keeps the checklist answers without submitting; <strong>Back</strong> returns to Label &amp; Store.</p>
+<h2>Tips</h2>
+<ul>
+<li><p>Which checklist items appear, and how strictly they are enforced, is set per domain in <a href="https://uwdigi.atlassian.net/wiki/spaces/OG/pages/1435566088">Sample Acceptance Checklist</a>.</p></li>
+<li><p>Known issue (3.3.0-SNAPSHOT): after Submit the page heading reads <strong>QA Review</strong> while the breadcrumb and progress bar say <strong>Sample check</strong>, and the Main menu still lists QA Review. They are the same stage.</p></li>
+</ul>
+<h2>Provenance</h2>
+<table data-layout="default"><tbody>
+<tr><th><p>Drafted</p></th><td><p>13 October 2026 against <strong>3.3.0-SNAPSHOT</strong> on <code>pngtest.openelis-global.org</code>, because testing has no environmental sample types. Replaces the shared QA review page, kept as 1708490791.</p></td></tr>
+<tr><th><p>Driven</p></th><td><p>Environmental order DEV01260000000000026: six checklist items answered Pass, Accept sample (Eligibility Pending to Accepted), Submit (Order submitted successfully, Ready for testing).</p></td></tr>
+<tr><th><p>Observed, not driven</p></th><td><p>Fail and N/A answers, Report NCE, Resample, Order Details, and the vector lane.</p></td></tr>
+<tr><th><p>Status</p></th><td><p>Work in progress, review OGC-1301.</p></td></tr>
+</tbody></table>

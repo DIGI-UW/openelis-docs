@@ -1,0 +1,89 @@
+<p><em>How-to · Reception and sample collection staff</em></p>
+<p><em>Part of the clinical order pipeline: <a href="https://uwdigi.atlassian.net/wiki/spaces/OG/pages/1648787462">Enter Order</a> → <strong>Prepare Samples</strong> → <a href="https://uwdigi.atlassian.net/wiki/spaces/OG/pages/1702821939">Sample check</a></em></p>
+<ac:structured-macro ac:name="info"><ac:rich-text-body><p><strong>Status: draft for review.</strong> Rewritten for the Order Entry v4 screens (OpenELIS 3.3.0) and driven on testing.openelis-global.org on 7 October 2026. Prepare Samples replaces the old Collect step and takes over labelling and storage from Label &amp; Store. The earlier Collect version of this page is in this page's history.</p></ac:rich-text-body></ac:structured-macro>
+
+<h2>At a glance</h2>
+<table><tbody>
+<tr><th>Purpose</th><td>Record each tube for an entered order: what it is, when and by whom it was collected, how it arrived, its labels and where it is stored.</td></tr>
+<tr><th>You'll end up with</th><td>The order's samples saved with collection and receipt details, labels printed, and the order status <em>Samples prepared</em>.</td></tr>
+<tr><th>Who does this</th><td>Reception or sample collection staff. Access is set by user permissions and can be configured by your administrator.</td></tr>
+<tr><th>Before you start</th><td>An order saved on <a href="https://uwdigi.atlassian.net/wiki/spaces/OG/pages/1648787462">Enter Order</a>, and the tubes in hand.</td></tr>
+<tr><th>Where</th><td>Save and next on Enter Order, or Main menu → Order → Add Clinical Order → Prepare Samples and scan the lab number</td></tr>
+</tbody></table>
+
+<h2>Steps</h2>
+<ol>
+<li><p><strong>Open the order.</strong> Save and next on Enter Order lands here with the order loaded. Otherwise scan or type the lab number in <strong>Scan barcode or enter lab number</strong>. The order card shows the lab number, the status (<em>Entered</em>), the patient, the samples with their test count, and the step counter.</p></li>
+<li><p><strong>Check the Requested Tests table.</strong> Each ordered test is a row with its <strong>Compatible Sample Types</strong> (green tags) and its <strong>Sample Assignments</strong>, for example <em>Serum (Sample 1)</em>. A <em>Multi-Sample Collection Example</em> under the table, headed <em>When multiple sample types are needed</em>, shows Plasma (Sample 1) + Plasma (Sample 2) = <em>Creates separate tubes for each type</em>.</p>
+<p>{{IMG:01-requested-tests.png}}</p>
+<p><em>Figure 1. Prepare Samples for a newly entered order: Enter Order is Done, and three Serum tests are assigned to Sample 1.</em></p></li>
+<li><p><strong>Add tests if needed.</strong> <strong>Add Tests or Panels</strong> is for a test the clinician asked for after the order was entered, or one that only becomes appropriate with the specimen in hand. It is listed per sample type with that sample type's current test count (Serum with 3 on the reference order).</p></li>
+<li><p><strong>Record consent if your site captures it.</strong> <strong>Informed Consent</strong> holds one checkbox, <em>Patient has provided signed consent</em>.</p></li>
+<li><p><strong>Fill in each sample card.</strong> Under <strong>Samples</strong>, each tube has a card (<em>Sample 1</em>, <em>Sample 2</em>…) listing its <strong>Assigned Tests</strong>. Above the cards, <em>Received by</em> names the person receiving, with a <strong>Change</strong> link. On each card:</p>
+<ul>
+<li><strong>Sample Type</strong>, <strong>Quantity</strong> and <strong>Unit</strong> (mL, slides, tubes, uL).</li>
+<li><strong>Collection Method</strong>. Its list comes from your site's configuration and may offer only <em>Select</em>.</li>
+<li><strong>Collection Location (GPS)</strong>, a collapsed panel marked <em>Optional</em> with an <strong>Expand</strong> link.</li>
+<li><strong>Collection Date</strong> (its help text says it defaults to today; correct it if the sample was collected earlier), <strong>Collection Time</strong> (filled with the current time on the reference site) and <strong>Collector</strong>.</li>
+<li><strong>Handling</strong>: the requirement for the tests on this tube (for example <em>Required: No requirement</em>), <strong>Arrived as</strong> (Not recorded, Room temperature, Refrigerated 2 to 8 °C, Frozen, On ice, Dry ice) and <strong>Measured temperature (°C)</strong>.</li>
+<li><strong>Stored at</strong>, which read <em>Not stored yet</em> for a tube with no location.</li>
+<li><strong>Received at Lab</strong>: <strong>Received Date</strong> and <strong>Received Time</strong>, marked <em>Auto-filled from server</em>.</li>
+</ul>
+<p><strong>Add Sample</strong> adds another tube, for example when more was drawn than expected or a different sample type is needed; print its labels from its card or the Labels section. <strong>Remove Sample</strong> on a card removes one.</p>
+<p>{{IMG:02-sample-card.png}}</p>
+<p><em>Figure 2. The Sample 1 card filled in: 5 mL of Serum, collector, arrival at room temperature, and the server-filled received date and time.</em></p></li>
+<li><p><strong>Set and print labels.</strong> The <strong>Labels</strong> section has an <strong>Order Labels</strong> table (one Order row, column <strong>Order Label</strong>) and a <strong>Sample Labels</strong> table with one row per tube (for example <em>DEV01260000000000099-1 Serum</em>, column <strong>Specimen Label</strong>). Each quantity starts at the label preset's default, tagged <em>Preset default</em>, and can be changed with the minus and plus buttons. <strong>Total labels</strong> adds them up.</p>
+<p>Before the first save the total is tagged <em>Prints after save</em>. Once the samples are saved, <strong>Print Labels</strong> on a sample card and <strong>Print all labels</strong> each open the labels as a PDF in a new browser tab, ready to print. Each table row also has its own printer icon under <strong>Print Labels</strong>.</p>
+<p>{{IMG:03-labels.png}}</p>
+<p><em>Figure 3. Order and sample label quantities from the presets, with Print all labels.</em></p></li>
+<li><p><strong>Store the tubes, or skip storage.</strong> Under <strong>Location</strong>, an <em>Unassigned Samples</em> notice lists tubes with no location. For each tube, search for a storage location (type 2 or more characters), or pick it level by level: <strong>Room</strong>, <strong>Device</strong>, <strong>Shelf</strong>, <strong>Rack</strong>, <strong>Box</strong> and <strong>Position (optional)</strong>. <strong>Condition Notes</strong> records anything about storage conditions. Tick <strong>Skip storage for unassigned samples</strong> when the tubes go straight to the bench.</p>
+<p>Storage is not required to continue: Save and next succeeded with no location chosen and Skip storage unticked.</p>
+<p>{{IMG:04-location.png}}</p>
+<p><em>Figure 4. The Location section for one unassigned Serum tube.</em></p></li>
+<li><p><strong>Save.</strong> <strong>Save and next</strong> saves the samples and opens <a href="https://uwdigi.atlassian.net/wiki/spaces/OG/pages/1702821939">Sample check</a>; Prepare Samples shows as <em>Done</em> and the order status becomes <em>Samples prepared</em>. <strong>Save and exit</strong>, <strong>Discard</strong> and <strong>Back</strong> are also in the footer, with <strong>Report NCE</strong> below Back for reporting a non-conforming event on this order.</p>
+<p>Every sample must carry at least one test before you can continue. A sample with none is listed under <strong>To continue to Sample check</strong>, for example <em>DEV01260000000000100-1 Whole Blood has no tests. Add them on Enter Order or remove the sample</em>, with Save and next disabled and Save and exit still enabled.</p>
+<p>{{IMG:05-refer-footer.png}}</p>
+<p><em>Figure 5. The foot of Prepare Samples: Refer Out / Subcontract, Back, Report NCE, Discard, Save and exit and Save and next.</em></p></li>
+</ol>
+
+<h2>Field reference</h2>
+<table><tbody>
+<tr><th>Field</th><th>Notes</th></tr>
+<tr><td>Requested Tests</td><td>Test/Panel, Compatible Sample Types, Sample Assignments.</td></tr>
+<tr><td>Add Tests or Panels</td><td>Per sample type, for tests added after entry.</td></tr>
+<tr><td>Patient has provided signed consent</td><td>Checkbox under Informed Consent.</td></tr>
+<tr><td>Sample Type / Quantity / Unit</td><td>Unit: mL, slides, tubes, uL.</td></tr>
+<tr><td>Collection Method</td><td>List configured per site.</td></tr>
+<tr><td>Collection Location (GPS)</td><td>Optional, collapsed.</td></tr>
+<tr><td>Collection Date / Time</td><td>Date defaults to today; time was filled with the current time.</td></tr>
+<tr><td>Collector</td><td>Free text, placeholder COL-0000.</td></tr>
+<tr><td>Arrived as / Measured temperature (°C)</td><td>Arrival condition and temperature.</td></tr>
+<tr><td>Received Date / Time</td><td>Auto-filled from the server.</td></tr>
+<tr><td>Order Label / Specimen Label quantities</td><td>Start at the preset default.</td></tr>
+<tr><td>Location</td><td>Search, or Room → Device → Shelf → Rack → Box → Position. Optional.</td></tr>
+<tr><td>Skip storage for unassigned samples</td><td>For tubes processed immediately.</td></tr>
+<tr><td>Condition Notes</td><td>Free text about storage conditions.</td></tr>
+</tbody></table>
+
+<h2>Tips</h2>
+<ul>
+<li>An order can leave Enter Order with a sample type and no tests, but it cannot leave Prepare Samples that way. Add the tests, or remove the empty sample.</li>
+<li>Labels print only for saved samples. On a new order, save first, then print from the sample card or with Print all labels.</li>
+<li>If your site has no storage rooms set up, the Room list is empty. Storage locations are managed under Storage Management.</li>
+</ul>
+
+<h2>Not yet available</h2>
+<ul>
+<li><strong>Refer Out / Subcontract</strong> from this step. The section is on the screen but, on the reference site, said <em>No samples available for referral</em> even after the samples were saved. Referring one or several tubes from Prepare Samples is in development (OGC-1423).</li>
+<li>Proposed tubes from the test catalog's container types, and body sites for swabs.</li>
+</ul>
+
+<h2>Provenance</h2>
+<table><tbody>
+<tr><th>Status</th><td>Draft for review</td></tr>
+<tr><th>Instance</th><td>testing.openelis-global.org, OpenELIS 3.3.0-SNAPSHOT (Order Entry v4, OGC-1266)</td></tr>
+<tr><th>Route</th><td>/order/clinical/collect</td></tr>
+<tr><th>Captured</th><td>Driven 7 October 2026 (DEV01260000000000059); figures 9 October 2026 (DEV01260000000000099). The no-tests gate was seen on DEV01260000000000100.</td></tr>
+<tr><th>Driven</th><td>Arrival from Save and next; Quantity, Unit, Collector, Arrived as; Save and next with no storage location (accepted; storageSkipped stayed false); Print Labels on the sample card and Print all labels on the saved order (both opened a label PDF in a new tab).</td></tr>
+<tr><th>Observed only</th><td>Read from the live screen but not driven: Add Tests or Panels, Informed Consent, the Collector placeholder COL-0000, the row printer icons, Refer Out (on 7 October it still said No samples available for referral after the samples were saved), and the To continue to Sample check message and button states on DEV01260000000000100 (Whole Blood, no tests). Not exercised: GPS panel, Collection Method (only Select on testing), Received by Change, Add Sample, Remove Sample, the storage picker (no storage rooms exist on testing), Skip storage, Condition Notes, Report NCE, Save and exit, Discard, Back.</td></tr>
+</tbody></table>

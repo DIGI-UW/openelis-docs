@@ -1,0 +1,6 @@
+extends: existence
+message: "Replace the em dash with a colon, comma or parentheses (organization rule: no em dashes)."
+level: error
+nonword: true
+raw:
+  - '\x{2014}'

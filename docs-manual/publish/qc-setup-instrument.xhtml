@@ -1,0 +1,68 @@
+<h1>Set up QC for an instrument</h1>
+<h2>At a glance</h2>
+<table><tbody>
+<tr><th>Purpose</th><td>Prepare one analyzer-and-test pair so that the control results the analyzer sends are evaluated against Westgard rules and appear on the QC Dashboard.</td></tr>
+<tr><th>You'll end up with</th><td>An analyzer in the Analyzers List, an <em>Active</em> control lot for the analyzer and test, and a reviewed Westgard rule set for the pair shown under <em>Configured Rule Sets</em>.</td></tr>
+<tr><th>Who does this</th><td>Whoever brings an instrument or a new test into QC monitoring &mdash; typically a laboratory quality officer or section supervisor, once per analyzer and test. Access is set by user permissions and can be configured by your administrator.</td></tr>
+<tr><th>Before you start</th><td>The analyzer is connected to OpenELIS and listed under Analyzers; the first control lot's insert (lot number, level, expiry, mean and SD); a decision on which Westgard rules your SOP applies and which count as rejections.</td></tr>
+<tr><th>Where</th><td>Main menu &rarr; <em>Analyzers</em> &rarr; <em>Analyzers List</em>, then <em>Analyzers</em> &rarr; <em>Quality Control</em> &rarr; <em>Control Lots</em> and <em>Rule Configuration</em></td></tr>
+</tbody></table>
+
+<p>Statistical QC in OpenELIS is built from three things per analyzer-and-test pair: the analyzer itself, an active control lot with its statistics method, and the Westgard rule set that decides which control results are warnings and which are rejections. This page walks the one-time setup in that order. Once it is done, day-to-day work is the recurring lot change (<em>Receive and activate a control lot</em>) and the daily review (<em>Review QC and act on violations</em>).</p>
+
+<h2>Step-by-step</h2>
+<p><strong>Step 1.</strong> Confirm the analyzer exists. Open <em>Analyzers &rarr; Analyzers List</em>. Tiles show Total Analyzers, Active, In Setup and Needs attention counts; below a search box and Status filter, each analyzer is listed with its Name, Connection, Test Units, Type, Status and Actions. The analyzer must be listed here; an analyzer still at Status <em>Setup</em>, or counted under <em>Needs attention</em>, can still have control lots and rules registered, but it will not deliver control results until its connection is completed. If the analyzer is missing, add it with <em>Add Analyzer</em> (see the analyzer integration pages of this manual).</p>
+<p>{{IMG:01-analyzers-list.png}}</p>
+<p><em>Figure 1. The Analyzers List with thirteen analyzers registered &mdash; two Active, six still In Setup. The notice at the top flags an analyzer holding results until its unknown codes are mapped.</em></p>
+
+<p><strong>Step 2.</strong> Register the first control lot for the analyzer and test, following <em>Receive and activate a control lot</em>. Saving the lot creates the Westgard rule set for that pair automatically.</p>
+
+<p><strong>Step 3.</strong> Open <em>Analyzers &rarr; Quality Control &rarr; Rule Configuration</em>. Under <em>Configured Rule Sets</em> the pair now appears with its Analyzer, Test and an <em>Enabled Rules</em> count out of 8 &mdash; <em>4/8</em> for a newly created set. Open the row's <em>Options</em> menu and choose <em>Edit</em>.</p>
+<p>{{IMG:02-rule-configuration-list.png}}</p>
+<p><em>Figure 2. Rule Configuration listing one analyzer-and-test pair &mdash; Cepheid GeneXpert (ASTM Mode) with HIV Viral Load(Serum) &mdash; at 4 of 8 rules enabled.</em></p>
+
+<p><strong>Step 4.</strong> The <em>Edit Rule Configuration</em> dialog is headed with the analyzer and test and groups the eight rules into <em>Rejection Rules</em> and <em>Warning Rules</em>, each with a count of enabled rules. Every rule has an on/off toggle and a <em>Severity</em> choice of <em>Warning</em> or <em>Rejection</em>. The Rejection Rules group opens expanded; expand <em>Warning Rules</em> to see the other five rules and their one-line definitions.</p>
+<p>{{IMG:03-edit-rule-configuration.png}}</p>
+<p><em>Figure 3. Edit Rule Configuration for that pair, with Rejection Rules expanded at 3 of 3 enabled &mdash; 1:3s and R:4s set to Rejection, 2:2s to Warning &mdash; and Warning Rules collapsed at 1 of 5.</em></p>
+
+<p><strong>Step 5.</strong> Set each rule to match your SOP: turn a rule on or off with its toggle and choose whether a breach is a <em>Warning</em> or a <em>Rejection</em>. Save stays greyed out until you change something, and becomes available as soon as a toggle or severity changes.</p>
+<p>{{IMG:04-edit-rule-configuration-changed.png}}</p>
+<p><em>Figure 4. The same dialog after switching 2:2s from Warning to Rejection; Save is now available.</em></p>
+
+<p><strong>Step 6.</strong> Choose <em>Save</em>. The dialog closes and the <em>Enabled Rules</em> count in the list updates.</p>
+
+<h2>Rule reference</h2>
+<p>The eight rules, with the definition text shown in the dialog and the defaults created with a new lot (as observed on version 3.2.2.0). Rules 1:3s, 2:2s and R:4s sit in the Rejection Rules group; the other five sit in the Warning Rules group.</p>
+<table><tbody>
+<tr><th>Rule</th><th>Definition shown in the dialog</th><th>Default</th></tr>
+<tr><td>1:3s</td><td>One control exceeds &plusmn;3SD</td><td>On, Rejection</td></tr>
+<tr><td>2:2s</td><td>Two consecutive controls exceed &plusmn;2SD in same direction</td><td>On, Warning</td></tr>
+<tr><td>R:4s</td><td>Range between two controls exceeds 4SD</td><td>On, Rejection</td></tr>
+<tr><td>1:2s</td><td>One control exceeds &plusmn;2SD</td><td>Off, Warning</td></tr>
+<tr><td>4:1s</td><td>Four consecutive controls exceed &plusmn;1SD in same direction</td><td>On, Rejection</td></tr>
+<tr><td>10:x</td><td>Ten consecutive controls on same side of mean</td><td>Off, Warning</td></tr>
+<tr><td>3:1s</td><td>Three consecutive controls exceed &plusmn;1SD in same direction</td><td>Off, Warning</td></tr>
+<tr><td>7:T</td><td>Seven consecutive controls trending in same direction</td><td>Off, Warning</td></tr>
+</tbody></table>
+
+<h2>Tips</h2>
+<ul>
+<li>The <em>Rejection Rules</em> and <em>Warning Rules</em> groups are fixed groupings; the actual severity of each rule is the <em>Severity</em> radio inside it. A rule in the Rejection Rules group can be set to Warning (2:2s is, by default).</li>
+<li>The system does not stop you from turning off every rule with Rejection severity. Keep at least one rejection-level rule enabled, otherwise out-of-control runs will only ever be reported as warnings.</li>
+<li>Analyzer types are served by the Analyzer Bridge. Where no Bridge is configured, <em>Analyzer Types</em> shows &ldquo;Analyzer types could not be loaded &mdash; Check the Analyzer Bridge connection, then try again&rdquo;, the type list is empty, and <em>Add Analyzer</em> cannot be completed because no type can be selected.</li>
+<li>Rule sets are created only when a control lot is saved. If a pair is missing from <em>Configured Rule Sets</em>, register a control lot for it first.</li>
+<li><strong>Known defect (3.2.2.0):</strong> the Test shown in the list and in the dialog heading may not match the test selected on the control lot (for example <em>VGM</em> for a lot saved against <em>Hb</em>). The rule set still applies to the pair you created.</li>
+</ul>
+
+<h2>Not yet available</h2>
+<ul>
+<li>There is no per-rule <em>requires corrective action</em> setting on this screen.</li>
+<li>Rules cannot be copied from one analyzer-and-test pair to another; each pair is edited on its own.</li>
+</ul>
+
+<h2>Related pages</h2>
+<ul>
+<li>Receive and activate a control lot</li>
+<li>Review QC and act on violations</li>
+<li>Why is my QC chart empty?</li>
+</ul>

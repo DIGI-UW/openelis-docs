@@ -1,0 +1,3944 @@
+[
+ {
+  "key": "admin.labelPresets.siteWide.prePrint.orderEntry",
+  "status": "approved",
+  "value": "Le même format et la même série de numéros que la saisie des demandes",
+  "original": "The same format and number pool as order entry"
+ },
+ {
+  "key": "admin.labelPresets.fields.add.label",
+  "status": "approved",
+  "value": "Ajouter un champ",
+  "original": "Add a field"
+ },
+ {
+  "key": "master.lists.page.printed",
+  "status": "approved",
+  "value": "Configuration des rapports imprimés",
+  "original": "Page des impressions"
+ },
+ {
+  "key": "order.nav.discard.changes",
+  "status": "approved",
+  "value": "Abandonner les modifications",
+  "original": "Discard changes"
+ },
+ {
+  "key": "result.acceptasis.trigger",
+  "status": "approved",
+  "value": "Accepter",
+  "original": "Valider"
+ },
+ {
+  "key": "storage.status.disposed",
+  "status": "approved",
+  "value": "Éliminé",
+  "original": "Rejeté"
+ },
+ {
+  "key": "button.locations.identifier.add",
+  "status": "approved",
+  "value": "Ajouter un identifiant",
+  "original": "Add identifier"
+ },
+ {
+  "key": "workplan.batch.create",
+  "status": "approved",
+  "value": "Créer un lot ({count})",
+  "original": "Create batch ({count})"
+ },
+ {
+  "key": "banner.menu.eqa.mgmt.programs.tooltip",
+  "status": "approved",
+  "value": "Créer et gérer les programmes d'EEQ",
+  "original": "Créer et gérer les programmes EQE"
+ },
+ {
+  "key": "analyzer.errorDashboard.acknowledgeAll",
+  "status": "approved",
+  "value": "Tout acquitter",
+  "original": "Tout reconnaître"
+ },
+ {
+  "key": "barcode.print.row.button",
+  "status": "approved",
+  "value": "Imprimer {label}",
+  "original": "Print {label}"
+ },
+ {
+  "key": "sideNav.label.qa.qc",
+  "status": "approved",
+  "value": "CQ statistique",
+  "original": "Statistical QC"
+ },
+ {
+  "key": "admin.labelPresets.fieldKey.LAB_NUMBER",
+  "status": "approved",
+  "value": "Numéro de laboratoire",
+  "original": "Numéro laboratoire"
+ },
+ {
+  "key": "microbiology.release.preliminary",
+  "status": "approved",
+  "value": "Publier le rapport préliminaire",
+  "original": "Publication du rapport préliminaire"
+ },
+ {
+  "key": "alerts.resolve.button",
+  "status": "approved",
+  "value": "Résoudre",
+  "original": "Résolu"
+ },
+ {
+  "key": "label.referOut.action.referOut",
+  "status": "approved",
+  "value": "Envoyer à un laboratoire de référence",
+  "original": "Référé à un laboratoire externe"
+ },
+ {
+  "key": "menu.genericSample.order",
+  "status": "approved",
+  "value": "Demande d'examen",
+  "original": "Recevoir un échantillon"
+ },
+ {
+  "key": "eqa.btn.reviewSubmit",
+  "status": "approved",
+  "value": "Vérifier et soumettre",
+  "original": "Review & submit"
+ },
+ {
+  "key": "admin.labUnit.edit.select",
+  "status": "approved",
+  "value": "Sélectionner l'unité de laboratoire",
+  "original": "Sélectionner les unités de laboratoire..."
+ },
+ {
+  "key": "workplan.batch.action.complete",
+  "status": "approved",
+  "value": "Terminer",
+  "original": "Terminé"
+ },
+ {
+  "key": "referral.metric.outstanding",
+  "status": "approved",
+  "value": "En attente",
+  "original": "Exceptionnel"
+ },
+ {
+  "key": "button.locations.area.expandAll",
+  "status": "approved",
+  "value": "Tout développer",
+  "original": "Expand all"
+ },
+ {
+  "key": "banner.menu.results.sysmexanalyzer",
+  "status": "approved",
+  "value": "Hématologie : Sysmex XT 2000i",
+  "original": "Hématologie: Sysmex XT 2000i"
+ },
+ {
+  "key": "result.acceptasis.confirm",
+  "status": "approved",
+  "value": "Confirmer l'acceptation",
+  "original": "Confirmer la validation"
+ },
+ {
+  "key": "microbiology.admin.breakpoints.activate",
+  "status": "approved",
+  "value": "Activer le référentiel",
+  "original": "Activer le mode standard"
+ },
+ {
+  "key": "banner.menu.nonconformity.view",
+  "status": "approved",
+  "value": "Voir les nouveaux événements non conformes",
+  "original": "Voir les Nouveaux Événements Non Conformes"
+ },
+ {
+  "key": "catalog.item.code",
+  "status": "approved",
+  "value": "Code",
+  "original": "Code Emplacement"
+ },
+ {
+  "key": "alerts.filter.severity",
+  "status": "approved",
+  "value": "Gravité",
+  "original": "Sévérité"
+ },
+ {
+  "key": "label.locations.open",
+  "status": "approved",
+  "value": "ouvert",
+  "original": "open"
+ },
+ {
+  "key": "order.generate.barcode",
+  "status": "approved",
+  "value": "Générer un code-barres et enregistrer",
+  "original": "Générer un code-barres"
+ },
+ {
+  "key": "label.locations.column.level",
+  "status": "approved",
+  "value": "Niveau",
+  "original": "Level"
+ },
+ {
+  "key": "common.panels",
+  "status": "approved",
+  "value": "Panels",
+  "original": "Panneaux disponibles"
+ },
+ {
+  "key": "label.lastPrinted",
+  "status": "approved",
+  "value": "Dernière impression : {date} {time} par {user}",
+  "original": "Dernière impression : {date} {heure} par {utilisateur}"
+ },
+ {
+  "key": "banner.menu.eqa.labPerformance",
+  "status": "approved",
+  "value": "Performance du laboratoire",
+  "original": "Lab Performance"
+ },
+ {
+  "key": "banner.menu.generic.sample.edit",
+  "status": "approved",
+  "value": "Modifier une demande",
+  "original": "Modifier l'échantillon"
+ },
+ {
+  "key": "analyzerType.mapping.notStarted",
+  "status": "approved",
+  "value": "Non mappé",
+  "original": "Non répertorié"
+ },
+ {
+  "key": "notebook.tab.metadata",
+  "status": "approved",
+  "value": "Métadonnées",
+  "original": "Données volumineuses "
+ },
+ {
+  "key": "configure.labNumber.title",
+  "status": "approved",
+  "value": "Gestion des numéros de laboratoire",
+  "original": "Gestion des Numéro de Laboratoire"
+ },
+ {
+  "key": "admin.programs.questionnaire.preview.quantity.unit",
+  "status": "approved",
+  "value": "unité",
+  "original": "unit"
+ },
+ {
+  "key": "common.test",
+  "status": "approved",
+  "value": "Analyse",
+  "original": "Analyses"
+ },
+ {
+  "key": "sideNav.label.qa.qi.dashboard",
+  "status": "approved",
+  "value": "Tableau de bord des indicateurs qualité",
+  "original": "QI Dashboard"
+ },
+ {
+  "key": "analyzerType.column.type",
+  "status": "approved",
+  "value": "Type d’analyseur",
+  "original": "Type"
+ },
+ {
+  "key": "label.validation.review.action.refer",
+  "status": "approved",
+  "value": "Envoyer cette analyse",
+  "original": "Consultez cette analyse"
+ },
+ {
+  "key": "activityReportByTestSection",
+  "status": "approved",
+  "value": "Rapport d'activités par unité de laboratoire",
+  "original": "Rapport d'activités par section de test"
+ },
+ {
+  "key": "label.labUnit.displayOrder",
+  "status": "approved",
+  "value": "Position",
+  "original": "Poste"
+ },
+ {
+  "key": "disposal.button",
+  "status": "approved",
+  "value": "Éliminer le lot",
+  "original": "Disposer des lots "
+ },
+ {
+  "key": "eqa.col.progress",
+  "status": "approved",
+  "value": "Progression",
+  "original": "Progrès"
+ },
+ {
+  "key": "analyzerType.mappingEditor.state.unresolved",
+  "status": "approved",
+  "value": "Mappage requis",
+  "original": "Cartographie des besoins"
+ },
+ {
+  "key": "button.complianceStandard.copy",
+  "status": "approved",
+  "value": "Copier la norme",
+  "original": "Copier le modèle d'étalon"
+ },
+ {
+  "key": "banner.menu.sampleBatchEntry",
+  "status": "approved",
+  "value": "Saisie de demandes par lot",
+  "original": "Saisie d'ordonnances en lot"
+ },
+ {
+  "key": "analyzerType.filter.showDeactivated",
+  "status": "approved",
+  "value": "Afficher les désactivés",
+  "original": "Affichage désactivé"
+ },
+ {
+  "key": "common.editOrder",
+  "status": "approved",
+  "value": "Modifier une demande",
+  "original": "Modifier l'échantillon"
+ },
+ {
+  "key": "import.header.labNo",
+  "status": "approved",
+  "value": "N° de laboratoire",
+  "original": "laboratoire non"
+ },
+ {
+  "key": "common.save",
+  "status": "approved",
+  "value": "Enregistrer",
+  "original": "Sauvegarder"
+ },
+ {
+  "key": "stock.status.expiring",
+  "status": "approved",
+  "value": "Expire bientôt",
+  "original": "Expiration"
+ },
+ {
+  "key": "nextLabel.action.button",
+  "status": "approved",
+  "value": "Étiquette suivante",
+  "original": "Suivant"
+ },
+ {
+  "key": "banner.menu.resultvalidation.immunology.Haiti",
+  "status": "approved",
+  "value": "Immuno-virologie",
+  "original": "Immuno-Virologie"
+ },
+ {
+  "key": "storage.tab.rooms",
+  "status": "approved",
+  "value": "Salles",
+  "original": "Chambres"
+ },
+ {
+  "key": "label.testCatalog.sampleResults.copyFromButton",
+  "status": "approved",
+  "value": "Copier depuis une analyse",
+  "original": "Copier de « test »"
+ },
+ {
+  "key": "label.panel.col.order",
+  "status": "approved",
+  "value": "Ordre",
+  "original": "Demande d'examen"
+ },
+ {
+  "key": "button.locations.deactivate.only",
+  "status": "approved",
+  "value": "Désactiver uniquement {name}",
+  "original": "Deactivate {name} only"
+ },
+ {
+  "key": "reporting.design.change",
+  "status": "approved",
+  "value": "Modifier",
+  "original": "Modifications"
+ },
+ {
+  "key": "admin.labelPresets.fieldKey.COLLECTION_DATETIME",
+  "status": "approved",
+  "value": "Date et heure de prélèvement",
+  "original": "Date et Heure de Prélèvement"
+ },
+ {
+  "key": "breadcrumb.label.addOrder",
+  "status": "approved",
+  "value": "Ajouter une demande",
+  "original": "Ajouter une ordonnance"
+ },
+ {
+  "key": "notebook.tab.workflow",
+  "status": "approved",
+  "value": "Flux de travail",
+  "original": "Plan de travail"
+ },
+ {
+  "key": "analyzerType.button.duplicate",
+  "status": "approved",
+  "value": "Dupliquer le profil",
+  "original": "Profil dupliqué"
+ },
+ {
+  "key": "workplan.batch.title",
+  "status": "approved",
+  "value": "Plan de travail par lot",
+  "original": "Batch Workplan"
+ },
+ {
+  "key": "analyzer.fieldMapping.activationModal.viewPendingMessages",
+  "status": "approved",
+  "value": "Voir les messages en attente",
+  "original": "View Pending Messages"
+ },
+ {
+  "key": "label.locations.import.decision.new",
+  "status": "approved",
+  "value": "Créer un nouvel enregistrement",
+  "original": "Create new"
+ },
+ {
+  "key": "patient.merge.phonesDiffer",
+  "status": "approved",
+  "value": "Les numéros de téléphone diffèrent : {primary} vs {secondary}",
+  "original": "Les numéros de téléphone diffèrent : {primaire} vs {secondaire}"
+ },
+ {
+  "key": "microbiology.worklist.ast.resultsInBadge",
+  "status": "approved",
+  "value": "Résultats reçus",
+  "original": "Résultats dans"
+ },
+ {
+  "key": "label.code",
+  "status": "approved",
+  "value": "Code",
+  "original": "Code Emplacement"
+ },
+ {
+  "key": "banner.menu.results.logbook",
+  "status": "approved",
+  "value": "Par unité",
+  "original": "Par Unité"
+ },
+ {
+  "key": "common.samplingSite",
+  "status": "approved",
+  "value": "Site de prélèvement",
+  "original": "Sites de prélèvement"
+ },
+ {
+  "key": "import.uploadFile",
+  "status": "approved",
+  "value": "Téléverser le fichier",
+  "original": "Télécharger le Fichier"
+ },
+ {
+  "key": "analyzer.table.header.type",
+  "status": "approved",
+  "value": "Type d’analyseur",
+  "original": "Type"
+ },
+ {
+  "key": "analyzer.fieldMapping.stats.total",
+  "status": "approved",
+  "value": "Total des correspondances",
+  "original": "Total Mappings"
+ },
+ {
+  "key": "microbiology.ast.useForReporting",
+  "status": "approved",
+  "value": "Utiliser pour le rapport",
+  "original": "À utiliser pour l'établissement de rapports"
+ },
+ {
+  "key": "sidenav.workflow.resultsValidation",
+  "status": "approved",
+  "value": "Validation des résultats",
+  "original": "Results Validation"
+ },
+ {
+  "key": "compliance.linkedTest.name",
+  "status": "approved",
+  "value": "Analyse",
+  "original": "Analyses"
+ },
+ {
+  "key": "microbiology.case.action.markNoGrowth",
+  "status": "approved",
+  "value": "Marquer prêt sans croissance",
+  "original": "Mark n'est pas prêt à se développer"
+ },
+ {
+  "key": "banner.menu.eqa.inHouse",
+  "status": "approved",
+  "value": "Évaluation interne à l'aveugle",
+  "original": "In-House Blinding"
+ },
+ {
+  "key": "label.results.reagents.recordUse",
+  "status": "approved",
+  "value": "Enregistrer l'utilisation",
+  "original": "Utilisation record"
+ },
+ {
+  "key": "microbiology.enum.CASE_FINALIZATION_REQUIRED",
+  "status": "approved",
+  "value": "Finalisation du dossier requise",
+  "original": "Dossier finalisé"
+ },
+ {
+  "key": "admin.programs.search",
+  "status": "approved",
+  "value": "Rechercher par nom",
+  "original": "Search by name"
+ },
+ {
+  "key": "admin.labUnit.domain.confirm.heading",
+  "status": "approved",
+  "value": "Modifier le domaine de l’unité de laboratoire ?",
+  "original": "Modifier le domaine de l’unité de laboratoire?"
+ },
+ {
+  "key": "accept.action.button",
+  "status": "approved",
+  "value": "Accepter",
+  "original": "Valider"
+ },
+ {
+  "key": "sample.management.status.inUse",
+  "status": "approved",
+  "value": "En cours d'utilisation",
+  "original": "Utilisé"
+ },
+ {
+  "key": "master.lists.page.barcode",
+  "status": "approved",
+  "value": "Configuration des codes-barres",
+  "original": "Page des codes-barres"
+ },
+ {
+  "key": "eqa.inhouse.test",
+  "status": "approved",
+  "value": "Analyse",
+  "original": "Analyses"
+ },
+ {
+  "key": "admin.labelPresets.fieldKey.PATIENT_ID",
+  "status": "approved",
+  "value": "Identifiant du patient",
+  "original": "Identifiant du Patient"
+ },
+ {
+  "key": "banner.menu.eqa.tests.orders",
+  "status": "approved",
+  "value": "Demandes",
+  "original": "Commandes"
+ },
+ {
+  "key": "eqa.provider.wizard.test",
+  "status": "approved",
+  "value": "Analyse",
+  "original": "Analyses"
+ },
+ {
+  "key": "address.search.no.results",
+  "status": "approved",
+  "value": "Aucune adresse n'a été trouvée pour « {term} »",
+  "original": "Aucune adresse n'a été trouvée pour « {term} »."
+ },
+ {
+  "key": "label.testCatalog.sampleResults.removeOption",
+  "status": "approved",
+  "value": "Retirer l'option",
+  "original": "Option « Retirer »"
+ },
+ {
+  "key": "order.accept",
+  "status": "approved",
+  "value": "Accepter",
+  "original": "Valider"
+ },
+ {
+  "key": "label.results.attachments.orderScope",
+  "status": "approved",
+  "value": "Saisie des demandes",
+  "original": "Saisie des commandes"
+ },
+ {
+  "key": "sampleManagement.test.status.CANCELLED",
+  "status": "approved",
+  "value": "Annulé",
+  "original": "Annuler"
+ },
+ {
+  "key": "admin.programs.questionnaire.question.type.checkbox",
+  "status": "approved",
+  "value": "Case à cocher",
+  "original": "Checkbox"
+ },
+ {
+  "key": "label.locations.import.decision.use",
+  "status": "approved",
+  "value": "Utiliser cet enregistrement",
+  "original": "Use this record"
+ },
+ {
+  "key": "compliance.testThresholds.test",
+  "status": "approved",
+  "value": "Analyse",
+  "original": "Analyses"
+ },
+ {
+  "key": "microbiology.release.final",
+  "status": "approved",
+  "value": "Publier le rapport final",
+  "original": "Publication du rapport final"
+ },
+ {
+  "key": "label.printConfirmation.message",
+  "status": "approved",
+  "value": "Imprimer l'étiquette pour {name}{code} ?",
+  "original": "Imprimer l'étiquette pour {nom}{code} ?"
+ },
+ {
+  "key": "analyzer.setup.connect.activation.verifyMappings",
+  "status": "approved",
+  "value": "Vérifier les correspondances",
+  "original": "Verify mappings"
+ },
+ {
+  "key": "label.validation.lane.clear",
+  "status": "approved",
+  "value": "Sans anomalie",
+  "original": "Effacer"
+ },
+ {
+  "key": "lot.status.IN_USE",
+  "status": "approved",
+  "value": "En cours d'utilisation",
+  "original": "Utilisé"
+ },
+ {
+  "key": "order.nav.saveExit",
+  "status": "approved",
+  "value": "Enregistrer et quitter",
+  "original": "Save and exit"
+ },
+ {
+  "key": "analyzerType.mapping.incomplete",
+  "status": "approved",
+  "value": "Mappage requis",
+  "original": "Cartographie des besoins"
+ },
+ {
+  "key": "eqa.btn.newCycle",
+  "status": "approved",
+  "value": "Nouveau cycle",
+  "original": "New cycle"
+ },
+ {
+  "key": "caseView.action.saveDraft",
+  "status": "approved",
+  "value": "Enregistrer le brouillon",
+  "original": "Save draft"
+ },
+ {
+  "key": "qc.instrumentDetail.analyte.violations",
+  "status": "approved",
+  "value": "{count, plural, one {# violation} other {# violations}}",
+  "original": "{count, plural, one {Nombre de violations} many {Nombre de violations} other {Nombre de violations}}"
+ },
+ {
+  "key": "label.results.aliquots.labNo",
+  "status": "approved",
+  "value": "N° de labo",
+  "original": "laboratoire non"
+ },
+ {
+  "key": "banner.menu.results.sysmexxtanalyzer",
+  "status": "approved",
+  "value": "Hématologie : importateur de l'analyseur Sysmex XT",
+  "original": "Hematologie: Sysmex XT 4000i"
+ },
+ {
+  "key": "microbiology.nce.markLost",
+  "status": "approved",
+  "value": "Marquer perdu",
+  "original": "Mark a perdu"
+ },
+ {
+  "key": "admin.programs.list.column.units",
+  "status": "approved",
+  "value": "Unité(s) de laboratoire",
+  "original": "Lab unit(s)"
+ },
+ {
+  "key": "sidenav.label.admin.locations.import",
+  "status": "approved",
+  "value": "Importation / Exportation",
+  "original": "Import / Export"
+ },
+ {
+  "key": "label.locations.column.serviceType",
+  "status": "approved",
+  "value": "Type de service",
+  "original": "Service type"
+ },
+ {
+  "key": "microbiology.amendment.status.closed",
+  "status": "approved",
+  "value": "Aucune modification en cours",
+  "original": "Non d'amendement en cours d'examen"
+ },
+ {
+  "key": "label.locations.column.children",
+  "status": "approved",
+  "value": "Sous-zones",
+  "original": "Child areas"
+ },
+ {
+  "key": "admin.programs.deactivate.modal.title",
+  "status": "approved",
+  "value": "Désactiver ce programme ?",
+  "original": "Deactivate this Program?"
+ },
+ {
+  "key": "sideNav.label.qa.qms.esigLog",
+  "status": "approved",
+  "value": "Journal des signatures électroniques",
+  "original": "Electronic Signature Log"
+ },
+ {
+  "key": "analyzer.results.held.reviewMapping",
+  "status": "approved",
+  "value": "Revoir la correspondance du type d'analyseur",
+  "original": "Vérification de la correspondance des types d’analyseurs"
+ },
+ {
+  "key": "microbiology.admin.breakpoints.view",
+  "status": "approved",
+  "value": "Voir les règles",
+  "original": "Voir le règlement"
+ },
+ {
+  "key": "notebook.status.archived",
+  "status": "approved",
+  "value": "Archiver l'entrée",
+  "original": "Saisie des archives"
+ },
+ {
+  "key": "inventory.reorder.note",
+  "status": "approved",
+  "value": "Remarque",
+  "original": ""
+ },
+ {
+  "key": "master.lists.page.org",
+  "status": "approved",
+  "value": "Menu des organisations",
+  "original": "Page de l'organisation"
+ },
+ {
+  "key": "analyzerType.column.pluginLoaded",
+  "status": "approved",
+  "value": "Plugin chargé",
+  "original": "Plugin Loaded"
+ },
+ {
+  "key": "label.locations.referral.evaluation",
+  "status": "approved",
+  "value": "En cours d'évaluation",
+  "original": "Under evaluation"
+ },
+ {
+  "key": "eqa.status.completed",
+  "status": "approved",
+  "value": "Terminé",
+  "original": "Complété"
+ },
+ {
+  "key": "sidenav.workflow.orderTest",
+  "status": "approved",
+  "value": "Demander une analyse",
+  "original": "Order Test"
+ },
+ {
+  "key": "master.lists.page.test.management",
+  "status": "approved",
+  "value": "Gestion des analyses",
+  "original": "Page de gestion des tests"
+ },
+ {
+  "key": "microbiology.enum.SUSCEPTIBLE",
+  "status": "approved",
+  "value": "Sensible",
+  "original": "Susceptible"
+ },
+ {
+  "key": "analyzer.deliveryIssues.state.retrying",
+  "status": "approved",
+  "value": "Nouvelle tentative en cours",
+  "original": "Retrying"
+ },
+ {
+  "key": "banner.menu.report.validation.backlog",
+  "status": "approved",
+  "value": "Validation retardée",
+  "original": "Compte de tests en attente de validation"
+ },
+ {
+  "key": "advanced.search",
+  "status": "approved",
+  "value": "Recherche avancée",
+  "original": "Lancer la recherche"
+ },
+ {
+  "key": "banner.menu.results.cobasc111analyzer",
+  "status": "approved",
+  "value": "Biochimie : Cobas C111",
+  "original": "Biochimie: Cobas C111"
+ },
+ {
+  "key": "banner.menu.nonconformity.report",
+  "status": "approved",
+  "value": "Signaler un événement non conforme",
+  "original": "Signaler un Événement Non Conforme"
+ },
+ {
+  "key": "esig.button.saveAndSign",
+  "status": "approved",
+  "value": "Enregistrer",
+  "original": "Sauvegarder"
+ },
+ {
+  "key": "immunohistochemistry.label.addreport",
+  "status": "approved",
+  "value": "Ajouter un rapport",
+  "original": "Ajouter un Rapport"
+ },
+ {
+  "key": "error.testCatalog.basicInfo.qcThreshold",
+  "status": "approved",
+  "value": "Saisissez un nombre supérieur ou égal à 0 (jusqu'à 5 décimales), ou laissez vide.",
+  "original": "Enter a number of 0 or more (up to 5 decimal places), or leave blank."
+ },
+ {
+  "key": "barcode.label.info.labNumber",
+  "status": "approved",
+  "value": "Numéro de laboratoire",
+  "original": "Numéro d'Accession"
+ },
+ {
+  "key": "banner.menu.eqa.mgmt.participants.tooltip",
+  "status": "approved",
+  "value": "Gérer l'inscription des organisations aux programmes d'EEQ",
+  "original": "Gérer l'inscription des organisations aux programmes EQE"
+ },
+ {
+  "key": "label.sampleType.tests.search",
+  "status": "approved",
+  "value": "Rechercher des analyses",
+  "original": "Analyses de recherche"
+ },
+ {
+  "key": "analyzer.results.held.tag",
+  "status": "approved",
+  "value": "Retenu",
+  "original": "Tenu"
+ },
+ {
+  "key": "analyzerType.mappingEditor.state.bound",
+  "status": "approved",
+  "value": "Mappé",
+  "original": "Cartographié"
+ },
+ {
+  "key": "referral.action.acceptToAnalysis",
+  "status": "approved",
+  "value": "Accepter dans l'analyse",
+  "original": "Valider l'analyse"
+ },
+ {
+  "key": "label.printHistory.byUser",
+  "status": "approved",
+  "value": "Par {user}",
+  "original": "Par {utilisateur}"
+ },
+ {
+  "key": "banner.menu.eqa.providerFollowups",
+  "status": "approved",
+  "value": "Suivi des participants",
+  "original": "Participant Follow-Up"
+ },
+ {
+  "key": "label.button.search",
+  "status": "approved",
+  "value": "Rechercher",
+  "original": "Chercher"
+ },
+ {
+  "key": "label.panel.testsCount",
+  "status": "approved",
+  "value": "analyses",
+  "original": "Analyses"
+ },
+ {
+  "key": "admin.labelPresets.siteWide.title",
+  "status": "approved",
+  "value": "Paramètres de code-barres de l'ensemble du site",
+  "original": "Site-wide Barcode Settings"
+ },
+ {
+  "key": "admin.labelPresets.created",
+  "status": "approved",
+  "value": "Modèle créé",
+  "original": "Preset created"
+ },
+ {
+  "key": "label.results.sampleStatus.disposed",
+  "status": "approved",
+  "value": "éliminé",
+  "original": "Rejeté"
+ },
+ {
+  "key": "dictionary.category.isActive",
+  "status": "approved",
+  "value": "Actif",
+  "original": "La catégorie est active"
+ },
+ {
+  "key": "inventory.reorderStatus.buildingData",
+  "status": "approved",
+  "value": "Collecte de données en cours",
+  "original": "Building data"
+ },
+ {
+  "key": "admin.labelPresets.siteWide.prePrint.separate",
+  "status": "approved",
+  "value": "Une série pré-imprimée distincte",
+  "original": "A separate pre-printed series"
+ },
+ {
+  "key": "eqa.shipment.packList.panelColumn",
+  "status": "approved",
+  "value": "Panel",
+  "original": "Panneau"
+ },
+ {
+  "key": "sample.management.aliquot.error.quantityPerAliquotTooSmall",
+  "status": "approved",
+  "value": "La quantité par aliquote ({quantityPerAliquot}) serait inférieure au minimum (0,001)",
+  "original": "La quantité par aliquote ({quantité par aliquot}) serait inférieure au minimum (0,001)."
+ },
+ {
+  "key": "analyzerType.mapping.complete",
+  "status": "approved",
+  "value": "Entièrement mappé",
+  "original": "Entièrement cartographié"
+ },
+ {
+  "key": "eqa.provider.wizard.step.panel",
+  "status": "approved",
+  "value": "Panel",
+  "original": "Panneau"
+ },
+ {
+  "key": "banner.menu.resultvalidation_study",
+  "status": "approved",
+  "value": "Étude",
+  "original": "Etude"
+ },
+ {
+  "key": "menu.genericSample.edit",
+  "status": "approved",
+  "value": "Modifier une demande",
+  "original": "Modifier l'échantillon"
+ },
+ {
+  "key": "button.locations.moveWard",
+  "status": "approved",
+  "value": "Déplacer",
+  "original": "Move"
+ },
+ {
+  "key": "banner.menu.referredOut",
+  "status": "approved",
+  "value": "Envoyés à un laboratoire de référence",
+  "original": "Référé à un laboratoire externe"
+ },
+ {
+  "key": "sidenav.moreTools",
+  "status": "approved",
+  "value": "Plus d'outils",
+  "original": "More tools"
+ },
+ {
+  "key": "banner.menu.results.CobasIntegra400",
+  "status": "approved",
+  "value": "Biochimie : Cobas Integra 400+",
+  "original": "Biochimie: Cobas Integra 400+"
+ },
+ {
+  "key": "sideNav.label.qa",
+  "status": "approved",
+  "value": "Assurance qualité",
+  "original": "Quality Assurance"
+ },
+ {
+  "key": "admin.labelPresets.field.defaultPerOrder",
+  "status": "approved",
+  "value": "Par défaut par demande",
+  "original": "Défaut par demande"
+ },
+ {
+  "key": "microbiology.worklist.markLost",
+  "status": "approved",
+  "value": "Marquer comme perdu",
+  "original": "Mark a perdu"
+ },
+ {
+  "key": "patient.merge.emailsDiffer",
+  "status": "approved",
+  "value": "L'adresse électronique diffère : {primary} vs {secondary}",
+  "original": "L'adresse électronique diffère : {primaire} vs {secondaire}"
+ },
+ {
+  "key": "eqa.cycle.history.when",
+  "status": "approved",
+  "value": "Quand",
+  "original": "Lorsque"
+ },
+ {
+  "key": "banner.menu.workplan.bench",
+  "status": "approved",
+  "value": "Par unité",
+  "original": "Par Unité"
+ },
+ {
+  "key": "microbiology.enum.MANUAL_NOTE",
+  "status": "approved",
+  "value": "Note manuelle",
+  "original": "Remarque relative au Manuel"
+ },
+ {
+  "key": "compliance.button.openAdmin",
+  "status": "approved",
+  "value": "Ouvrir l'administration des normes de conformité",
+  "original": "Administration des normes de conformité ouvertes"
+ },
+ {
+  "key": "common.patient",
+  "status": "approved",
+  "value": "Patient",
+  "original": "Patiente"
+ },
+ {
+  "key": "cytology.label.otherResult",
+  "status": "approved",
+  "value": " Autre résultat de diagnostic",
+  "original": "Autre Résultat de Diagnostic"
+ },
+ {
+  "key": "master.lists.page.order.entry",
+  "status": "approved",
+  "value": "Configuration de la saisie des demandes",
+  "original": "Page de saisie de commande"
+ },
+ {
+  "key": "eorder.test.name",
+  "status": "approved",
+  "value": "Nom du test",
+  "original": "Nom du Test"
+ },
+ {
+  "key": "analyzer.setup.connect.title",
+  "status": "approved",
+  "value": "Connexion",
+  "original": "Se connecter à la connexion"
+ },
+ {
+  "key": "analyzer.fieldMapping.retirementModal.retire",
+  "status": "approved",
+  "value": "Retirer la correspondance",
+  "original": "Retire Mapping"
+ },
+ {
+  "key": "nce.button.linkSelected",
+  "status": "approved",
+  "value": "Lier les échantillons sélectionnés",
+  "original": "Lien vers les échantillons sélectionnés"
+ },
+ {
+  "key": "analyzer.setup.verify.continue",
+  "status": "approved",
+  "value": "Continuer vers la connexion",
+  "original": "Continuez à vous connecter"
+ },
+ {
+  "key": "compliance.testEditor.sampleType",
+  "status": "approved",
+  "value": "Type d'échantillon :",
+  "original": "Type d'échantillon:"
+ },
+ {
+  "key": "label.program",
+  "status": "approved",
+  "value": "Programme",
+  "original": "programme"
+ },
+ {
+  "key": "sampleManagement.addTests.success",
+  "status": "approved",
+  "value": "{count} analyse(s) ajoutée(s) avec succès",
+  "original": "{compter} test(s) ajouté(s) avec succès"
+ },
+ {
+  "key": "eqa.competency.band.competent",
+  "status": "approved",
+  "value": "Compétent",
+  "original": "Competent"
+ },
+ {
+  "key": "eqa.shipment.label",
+  "status": "approved",
+  "value": "Étiquette",
+  "original": "Etiquette"
+ },
+ {
+  "key": "banner.menu.patient",
+  "status": "approved",
+  "value": "Patient",
+  "original": "Patiente"
+ },
+ {
+  "key": "admin.programs.questionnaire.answerOptions.section.title",
+  "status": "approved",
+  "value": "Options de réponse",
+  "original": "Answer options"
+ },
+ {
+  "key": "master.lists.page.notification",
+  "status": "approved",
+  "value": "Configuration des notifications d'analyse",
+  "original": "Page des notifications"
+ },
+ {
+  "key": "sampleManagement.test.status.ORDERED",
+  "status": "approved",
+  "value": "Demandé",
+  "original": "Ordonné"
+ },
+ {
+  "key": "microbiology.worklist.grain.ast",
+  "status": "approved",
+  "value": "Exécutions AST",
+  "original": "Les courses AST"
+ },
+ {
+  "key": "analyzer.errorDashboard.status.unacknowledged",
+  "status": "approved",
+  "value": "Non acquittée",
+  "original": "Non reconnue"
+ },
+ {
+  "key": "cytology.label.negative",
+  "status": "approved",
+  "value": "Négatif pour lésion intraépithéliale ou malignité",
+  "original": "Négatif Pour Lésion ou Malignité Intraépithéliale"
+ },
+ {
+  "key": "column.qc.test",
+  "status": "approved",
+  "value": "Analyse",
+  "original": "Analyses"
+ },
+ {
+  "key": "common.species",
+  "status": "approved",
+  "value": "Espèce",
+  "original": "Espèces"
+ },
+ {
+  "key": "label.referOut.action.save",
+  "status": "approved",
+  "value": "Enregistrer l'envoi",
+  "original": "Enregistrer la recommandation"
+ },
+ {
+  "key": "common.byUnit",
+  "status": "approved",
+  "value": "Par unité",
+  "original": "Par Unité"
+ },
+ {
+  "key": "lot.label.print",
+  "status": "approved",
+  "value": "Imprimer l'étiquette",
+  "original": "Print label"
+ },
+ {
+  "key": "inventory.board.title",
+  "status": "approved",
+  "value": "Articles",
+  "original": "Items"
+ },
+ {
+  "key": "storage.create.room.success",
+  "status": "approved",
+  "value": "Salle \"{name}\" créée avec succès",
+  "original": "Room \\"
+ },
+ {
+  "key": "banner.menu.results.FacsPrestoanalyzer",
+  "status": "approved",
+  "value": "Immunologie : FacsPresto",
+  "original": "Immunologie: FacsPresto"
+ },
+ {
+  "key": "admin.programs.deactivate.success",
+  "status": "approved",
+  "value": "{programName} désactivé",
+  "original": "{programName} deactivated"
+ },
+ {
+  "key": "admin.labelPresets.editor.section.fields",
+  "status": "approved",
+  "value": "Champs de contenu",
+  "original": "Content fields"
+ },
+ {
+  "key": "barcode.print.all.button",
+  "status": "approved",
+  "value": "Tout imprimer",
+  "original": "Print all"
+ },
+ {
+  "key": "notebook.status.submitted",
+  "status": "approved",
+  "value": "Soumettre pour revue",
+  "original": "Soumis pour revue"
+ },
+ {
+  "key": "activityReportByTest",
+  "status": "approved",
+  "value": "Rapport d'activité par analyse",
+  "original": "Rapport d'activité par test"
+ },
+ {
+  "key": "banner.menu.workplan.batch.tooltip",
+  "status": "approved",
+  "value": "Plan de travail par lot",
+  "original": "Batch Workplan"
+ },
+ {
+  "key": "label.results.control.capture.record",
+  "status": "approved",
+  "value": "Enregistrer le résultat du contrôle",
+  "original": "Record control result"
+ },
+ {
+  "key": "common.accept",
+  "status": "approved",
+  "value": "Accepter",
+  "original": "Valider"
+ },
+ {
+  "key": "collector",
+  "status": "approved",
+  "value": "Préleveur",
+  "original": "Agent de collecte"
+ },
+ {
+  "key": "banner.menu.results.patient",
+  "status": "approved",
+  "value": "Par patient",
+  "original": "Par Patient"
+ },
+ {
+  "key": "banner.menu.results.FacsCalibur",
+  "status": "approved",
+  "value": "Immunologie : FacsCalibur",
+  "original": "Immunologie: FacsCalibur"
+ },
+ {
+  "key": "banner.menu.eqa.analystCompetency",
+  "status": "approved",
+  "value": "Compétence des analystes",
+  "original": "Analyst Competency"
+ },
+ {
+  "key": "notebook.tab.entryDetails",
+  "status": "approved",
+  "value": "Détails de l'entrée",
+  "original": "Saisie les détails "
+ },
+ {
+  "key": "label.locations.referral.notApproved",
+  "status": "approved",
+  "value": "Non approuvé",
+  "original": "Not approved"
+ },
+ {
+  "key": "sideNav.label.qa.qi.config",
+  "status": "approved",
+  "value": "Configuration des indicateurs qualité",
+  "original": "QI Configuration"
+ },
+ {
+  "key": "patient.male",
+  "status": "approved",
+  "value": "Masculin",
+  "original": "Mâle"
+ },
+ {
+  "key": "analyzerType.field.fileFormat",
+  "status": "approved",
+  "value": "Format de fichier",
+  "original": "Format de fichier pour les fichiers"
+ },
+ {
+  "key": "analyzer.errorDashboard.stats.unacknowledged",
+  "status": "approved",
+  "value": "Non acquittées",
+  "original": "Non reconnue"
+ },
+ {
+  "key": "label.locations.referral.overdue",
+  "status": "approved",
+  "value": "Revue en retard",
+  "original": "Review overdue"
+ },
+ {
+  "key": "analyzer.fieldMapping.pendingCodes.title",
+  "status": "approved",
+  "value": "Codes non mappés en attente",
+  "original": "Pending Unmapped Codes"
+ },
+ {
+  "key": "admin.labelPresets.fields.required",
+  "status": "approved",
+  "value": "Obligatoire",
+  "original": "Required"
+ },
+ {
+  "key": "sidenav.label.order.sampleCheck",
+  "status": "approved",
+  "value": "Vérification de l'échantillon",
+  "original": "Sample check"
+ },
+ {
+  "key": "banner.menu.results.analyzer",
+  "status": "approved",
+  "value": "Analyseur",
+  "original": "Automate"
+ },
+ {
+  "key": "stock.status.quarantined",
+  "status": "approved",
+  "value": "En quarantaine",
+  "original": "Quarantined"
+ },
+ {
+  "key": "label.testCatalog.sampleResults.copyDiscard",
+  "status": "approved",
+  "value": "Abandonner la configuration copiée",
+  "original": "Discard copied configuration"
+ },
+ {
+  "key": "dictionary.modal.add.heading",
+  "status": "approved",
+  "value": "Ajouter un dictionnaire",
+  "original": "Ajouter au dictionnaire "
+ },
+ {
+  "key": "label.testCatalog.ranges.male",
+  "status": "approved",
+  "value": "Masculin",
+  "original": "Mâle"
+ },
+ {
+  "key": "vectorDec.button.splitIndividuals",
+  "status": "approved",
+  "value": "Séparer en individus →",
+  "original": "Répartition entre les particuliers →"
+ },
+ {
+  "key": "cytology.label.specimen",
+  "status": "approved",
+  "value": "Qualité du prélèvement",
+  "original": "Aptitude de l'Échantillon"
+ },
+ {
+  "key": "banner.menu.eqa.mgmt.distributions.tooltip",
+  "status": "approved",
+  "value": "Créer et gérer les distributions d'EEQ",
+  "original": "Créer et gérer les distributions EQE"
+ },
+ {
+  "key": "inventory.tab.dashboard",
+  "status": "approved",
+  "value": "Tableau de bord",
+  "original": "Tableau de Bord"
+ },
+ {
+  "key": "gps.manual.entry.on",
+  "status": "approved",
+  "value": "Activé",
+  "original": "Le"
+ },
+ {
+  "key": "add.aliquot",
+  "status": "approved",
+  "value": "Ajouter une aliquote",
+  "original": "Ajouter un Aliquote"
+ },
+ {
+  "key": "admin.programs.questionnaire.question.addNew",
+  "status": "approved",
+  "value": "Ajouter une nouvelle question",
+  "original": "Add New Question"
+ },
+ {
+  "key": "order.sampleCheck.release",
+  "status": "approved",
+  "value": "Libérer pour analyse",
+  "original": "Release for testing"
+ },
+ {
+  "key": "coldStorage.device.statusChanged",
+  "status": "approved",
+  "value": "L'appareil « {name} » a été {status} avec succès",
+  "original": "Device \\"
+ },
+ {
+  "key": "sampleManagement.aliquot.submit",
+  "status": "approved",
+  "value": "Créer une aliquote",
+  "original": "Ajouter des notes concernant cette aliquote..."
+ },
+ {
+  "key": "analyzer.testMapping.submit",
+  "status": "approved",
+  "value": "Prévisualiser le mappage",
+  "original": "Soumettre un message d'exemple"
+ },
+ {
+  "key": "coldStorage.device.createdSuccess",
+  "status": "approved",
+  "value": "L'appareil « {name} » a été créé avec succès",
+  "original": "Device \\"
+ },
+ {
+  "key": "admin.label",
+  "status": "approved",
+  "value": "Administration",
+  "original": "Administrateur"
+ },
+ {
+  "key": "admin.programs.list.toggle.showDeactivated",
+  "status": "approved",
+  "value": "Afficher les désactivés",
+  "original": "Affichage désactivé"
+ },
+ {
+  "key": "banner.menu.resultvalidation.viralload",
+  "status": "approved",
+  "value": "Charge virale",
+  "original": "Charge Virale"
+ },
+ {
+  "key": "admin.labelPresets.fieldKey.COLLECTED_BY",
+  "status": "approved",
+  "value": "Prélevé par",
+  "original": "Collecté Par"
+ },
+ {
+  "key": "banner.menu.sampleCreate",
+  "status": "approved",
+  "value": "Étude",
+  "original": "Etude"
+ },
+ {
+  "key": "analyzer.fieldMapping.panel.retire",
+  "status": "approved",
+  "value": "Retirer la correspondance",
+  "original": "Retire Mapping"
+ },
+ {
+  "key": "field.normalRange",
+  "status": "approved",
+  "value": "Intervalle de référence",
+  "original": "Plage normale"
+ },
+ {
+  "key": "label.testCatalog.panels.moveUp",
+  "status": "approved",
+  "value": "Déplacer avant",
+  "original": "Agissez plus tôt"
+ },
+ {
+  "key": "label.locations.import.column.code",
+  "status": "approved",
+  "value": "Code",
+  "original": "Code Emplacement"
+ },
+ {
+  "key": "sideNav.label.referredtestreport",
+  "status": "approved",
+  "value": "Rapport des analyses envoyées",
+  "original": "Rapport de tests référencés"
+ },
+ {
+  "key": "analyzer.setup.instrument.continue",
+  "status": "approved",
+  "value": "Continuer vers la vérification",
+  "original": "Continuer la vérification"
+ },
+ {
+  "key": "banner.menu.nonconformity.dashboard",
+  "status": "approved",
+  "value": "Tous les ENC",
+  "original": "Toutes les non-conformités"
+ },
+ {
+  "key": "label.locations.import.outcome.unchanged",
+  "status": "approved",
+  "value": "Inchangé",
+  "original": "Unchanged"
+ },
+ {
+  "key": "column.name.testDate",
+  "status": "approved",
+  "value": "Date de l'analyse",
+  "original": "Date du test"
+ },
+ {
+  "key": "banner.menu.sampleEdit",
+  "status": "approved",
+  "value": "Modifier une demande",
+  "original": "Modifier une ordonnance"
+ },
+ {
+  "key": "validation.reject.all",
+  "status": "approved",
+  "value": "Reprendre toutes les analyses",
+  "original": "Rejeter tous les résultats"
+ },
+ {
+  "key": "label.testCatalog.accreditation.remove",
+  "status": "approved",
+  "value": "Retirer l'accréditation",
+  "original": "Remove accreditation"
+ },
+ {
+  "key": "microbiology.enum.STAGE_CHANGED",
+  "status": "approved",
+  "value": "Changement d'étape",
+  "original": "Changement de scène"
+ },
+ {
+  "key": "analyzer.search.label",
+  "status": "approved",
+  "value": "Rechercher",
+  "original": "Recherche"
+ },
+ {
+  "key": "lot.status.DISPOSED",
+  "status": "approved",
+  "value": "Éliminé",
+  "original": "Rejeté"
+ },
+ {
+  "key": "laporanHasil.status.ineligible",
+  "status": "approved",
+  "value": "Aucune norme associée",
+  "original": "Non de normes associées"
+ },
+ {
+  "key": "banner.menu.sampleAdd",
+  "status": "approved",
+  "value": "Ajouter une demande",
+  "original": "Ajouter une ordonnance"
+ },
+ {
+  "key": "cytology.label.reactive",
+  "status": "approved",
+  "value": "Modifications cellulaires réactives",
+  "original": "Modifications Cellulaires Réactives"
+ },
+ {
+  "key": "sampleManagement.test.status.COMPLETED",
+  "status": "approved",
+  "value": "Terminé",
+  "original": "Terminer "
+ },
+ {
+  "key": "label.validation.bulk.releaseAllClear",
+  "status": "approved",
+  "value": "Publier les résultats sans anomalie ({count})",
+  "original": "Fin d'alerte ({count})"
+ },
+ {
+  "key": "microbiology.enum.AST_ENTRY",
+  "status": "approved",
+  "value": "Saisie AST",
+  "original": "Inscription à l'AST"
+ },
+ {
+  "key": "compliance.testEditor.meta.loinc",
+  "status": "approved",
+  "value": "LOINC :",
+  "original": "LOINC:"
+ },
+ {
+  "key": "analyzer.fieldMapping.stats.required",
+  "status": "approved",
+  "value": "Correspondances obligatoires",
+  "original": "Required Mappings"
+ },
+ {
+  "key": "dictionary.label.modify",
+  "status": "approved",
+  "value": "Menu du dictionnaire",
+  "original": "Modifier le dictionnaire"
+ },
+ {
+  "key": "compliance.linkedTest.editLimits",
+  "status": "approved",
+  "value": "Modifier les limites",
+  "original": "Limites de modification"
+ },
+ {
+  "key": "patient.female",
+  "status": "approved",
+  "value": "Féminin",
+  "original": "Femelle"
+ },
+ {
+  "key": "nonconform.report",
+  "status": "approved",
+  "value": "Signaler un événement non conforme (ENC)",
+  "original": "Rapport d'événement non conforme (ENC)"
+ },
+ {
+  "key": "banner.menu.study.eorders",
+  "status": "approved",
+  "value": "Demandes électroniques",
+  "original": "Statistiques journalières. "
+ },
+ {
+  "key": "microbiology.critical.close",
+  "status": "approved",
+  "value": "Clôturer la communication",
+  "original": "Une communication étroite"
+ },
+ {
+  "key": "sampleAcceptance.qa.answer.pass",
+  "status": "approved",
+  "value": "Réussi",
+  "original": "Passer"
+ },
+ {
+  "key": "search.possibleMatches.use",
+  "status": "approved",
+  "value": "Utiliser celui-ci",
+  "original": "Use this one"
+ },
+ {
+  "key": "label.results.control.capture.pass",
+  "status": "approved",
+  "value": "Réussi",
+  "original": "Passer"
+ },
+ {
+  "key": "sideNav.title.referredtestreport",
+  "status": "approved",
+  "value": "Rapport des analyses envoyées",
+  "original": "Rapport de tests référencés"
+ },
+ {
+  "key": "label.qc.pass",
+  "status": "approved",
+  "value": "Réussi",
+  "original": "Passer"
+ },
+ {
+  "key": "banner.menu.sample",
+  "status": "approved",
+  "value": "Demande",
+  "original": "Ordonnance"
+ },
+ {
+  "key": "microbiology.enum.ISOLATE_UPDATED",
+  "status": "approved",
+  "value": "Isolat mis à jour",
+  "original": "Mise à jour de l’isolat Mis à Jour"
+ },
+ {
+  "key": "admin.programs.editor.status.label",
+  "status": "approved",
+  "value": "Statut :",
+  "original": "Status:"
+ },
+ {
+  "key": "analyzerType.mappingEditor.applyToAnalyzer",
+  "status": "approved",
+  "value": "Appliquer les correspondances et retraiter les résultats retenus",
+  "original": "Apply mappings and retry held results"
+ },
+ {
+  "key": "analyzer.fieldMapping.status.retired",
+  "status": "approved",
+  "value": "Retiré",
+  "original": "Retired"
+ },
+ {
+  "key": "inventory.reorderStatus.soon",
+  "status": "approved",
+  "value": "Réapprovisionner bientôt",
+  "original": "Reorder soon"
+ },
+ {
+  "key": "analyzer.action.add",
+  "status": "approved",
+  "value": "Ajouter un analyseur",
+  "original": "Ajouter un Automate"
+ },
+ {
+  "key": "banner.menu.workplan.test",
+  "status": "approved",
+  "value": "Par type d'analyse",
+  "original": "Par test"
+ },
+ {
+  "key": "address.level.kabupaten",
+  "status": "approved",
+  "value": "Régence/Ville",
+  "original": "Regency/City"
+ },
+ {
+  "key": "column.name.retest",
+  "status": "approved",
+  "value": "Reprendre l'analyse",
+  "original": "Retester"
+ },
+ {
+  "key": "admin.dashboard.title",
+  "status": "approved",
+  "value": "Tableau de bord d’administration",
+  "original": "Tableau de bord d’administration "
+ },
+ {
+  "key": "button.locations.area.collapseAll",
+  "status": "approved",
+  "value": "Tout réduire",
+  "original": "Collapse all"
+ },
+ {
+  "key": "sampleAcceptance.qa.continueWithTesting.record",
+  "status": "approved",
+  "value": "Enregistrer et continuer",
+  "original": "Record and continue"
+ },
+ {
+  "key": "banner.menu.eqa.provider",
+  "status": "approved",
+  "value": "Fournisseur d'EEQ",
+  "original": "EQA Provider"
+ },
+ {
+  "key": "caseView.action.discard",
+  "status": "approved",
+  "value": "Abandonner les modifications",
+  "original": "Discard changes"
+ },
+ {
+  "key": "label.locations.import.outcome.decision",
+  "status": "approved",
+  "value": "Décision requise",
+  "original": "Needs decision"
+ },
+ {
+  "key": "analyzerType.editor.loinc",
+  "status": "approved",
+  "value": "Code LOINC",
+  "original": "LOINC code"
+ },
+ {
+  "key": "admin.testCatalog.methods.column.code",
+  "status": "approved",
+  "value": "Code",
+  "original": "Code Emplacement"
+ },
+ {
+  "key": "label.validation.review.action.review",
+  "status": "approved",
+  "value": "Vérifier →",
+  "original": "Avis →"
+ },
+ {
+  "key": "immunohistochemistry.status.readyPathologist",
+  "status": "approved",
+  "value": "Prêt pour le pathologiste",
+  "original": "Ready for Pathologist"
+ },
+ {
+  "key": "inventory.reorderStatus.adequate",
+  "status": "approved",
+  "value": "Suffisant",
+  "original": "Adequate"
+ },
+ {
+  "key": "microbiology.inoculation.save",
+  "status": "approved",
+  "value": "Enregistrer les milieux",
+  "original": "Enregistrer les fichiers multimédias"
+ },
+ {
+  "key": "label.results.history.event.RESULT",
+  "status": "approved",
+  "value": "Résultat",
+  "original": "Résultat "
+ },
+ {
+  "key": "label.testCatalog.panels.moveDown",
+  "status": "approved",
+  "value": "Déplacer après",
+  "original": "Reporter à plus tard"
+ },
+ {
+  "key": "label.locations.import.column.line",
+  "status": "approved",
+  "value": "Ligne",
+  "original": "Line"
+ },
+ {
+  "key": "label.testCatalog.ranges.female",
+  "status": "approved",
+  "value": "Féminin",
+  "original": "Femelle"
+ },
+ {
+  "key": "column.qc.result",
+  "status": "approved",
+  "value": "Résultat",
+  "original": "Résultat "
+ },
+ {
+  "key": "label.locations.field.streetAddress",
+  "status": "approved",
+  "value": "Adresse",
+  "original": "Street address"
+ },
+ {
+  "key": "env.site.searchTab",
+  "status": "approved",
+  "value": "Rechercher un site",
+  "original": "Rechercher sur le site"
+ },
+ {
+  "key": "button.labUnit.tests.reassign.confirm",
+  "status": "approved",
+  "value": "Réaffecter {count, plural, one {# analyse} other {# analyses}}",
+  "original": "Reassign {count, plural, one {# test} other {# tests}}"
+ },
+ {
+  "key": "admin.programs.guidance.domain.toggle.show",
+  "status": "approved",
+  "value": "Que signifie chaque domaine ?",
+  "original": "What does each Domain mean?"
+ },
+ {
+  "key": "label.testCatalog.reagents.modal.linkSelected",
+  "status": "approved",
+  "value": "Associer la sélection",
+  "original": "Lien sélectionné"
+ },
+ {
+  "key": "admin.programs.basicInfo.labUnits.label",
+  "status": "approved",
+  "value": "Unité(s) de laboratoire",
+  "original": "Lab unit(s)"
+ },
+ {
+  "key": "cytology.status.screening",
+  "status": "approved",
+  "value": "Dépistage",
+  "original": "Screening"
+ },
+ {
+  "key": "label.results.storage.assignLocation",
+  "status": "approved",
+  "value": "Attribuer un emplacement",
+  "original": "Attribuer un chemin "
+ },
+ {
+  "key": "inventory.reorderStatus.now",
+  "status": "approved",
+  "value": "Réapprovisionner maintenant",
+  "original": "Reorder now"
+ },
+ {
+  "key": "catalog.import.resolve",
+  "status": "approved",
+  "value": "Utiliser",
+  "original": "Use"
+ },
+ {
+  "key": "admin.programs.domain.confirm.heading",
+  "status": "approved",
+  "value": "Modifier le domaine du programme ?",
+  "original": "Change Program Domain?"
+ },
+ {
+  "key": "adjustment.notes.placeholder",
+  "status": "approved",
+  "value": "Veuillez fournir des détails concernant cet ajustement",
+  "original": "Veuillez fournir des détails concernant cet ajustement."
+ },
+ {
+  "key": "microbiology.enum.AST_REVIEWED",
+  "status": "approved",
+  "value": "AST vérifié",
+  "original": "Vérifié par l'AST"
+ },
+ {
+  "key": "microbiology.amendment.open",
+  "status": "approved",
+  "value": "Ouvrir une modification",
+  "original": "Amendement ouvert"
+ },
+ {
+  "key": "freezer.alert.detail.resolve",
+  "status": "approved",
+  "value": "Résoudre",
+  "original": "Résolu"
+ },
+ {
+  "key": "button.locations.import.report",
+  "status": "approved",
+  "value": "Télécharger le rapport de résultats",
+  "original": "Download result report"
+ },
+ {
+  "key": "admin.programs.questionnaire.json.validate",
+  "status": "approved",
+  "value": "Valider le JSON",
+  "original": "Validate JSON"
+ },
+ {
+  "key": "banner.menu.results.FacsCantoII",
+  "status": "approved",
+  "value": "Immunologie : FacsCantoII",
+  "original": "Immunologie: FacsCantoII"
+ },
+ {
+  "key": "compliance.testEditor.section.configuration",
+  "status": "approved",
+  "value": "Configuration",
+  "original": "Configurer"
+ },
+ {
+  "key": "analyzer.fieldMapping.pendingCodes.markMapped",
+  "status": "approved",
+  "value": "Marquer comme mappé",
+  "original": "Mark Mapped"
+ },
+ {
+  "key": "banner.menu.results.status",
+  "status": "approved",
+  "value": "Par analyse, date ou statut",
+  "original": "Par Test, Date ou Statut"
+ },
+ {
+  "key": "systemuserrole.allLabUnits.confirm.primary",
+  "status": "approved",
+  "value": "Remplacer les autorisations",
+  "original": "Replace permissions"
+ },
+ {
+  "key": "banner.menu.results.testdate",
+  "status": "approved",
+  "value": "Par date d'analyse",
+  "original": "Par Date de Test"
+ },
+ {
+  "key": "admin.labelPresets.fieldKey.PATIENT_DOB",
+  "status": "approved",
+  "value": "Date de naissance du patient",
+  "original": "Date de Naissance du Patient"
+ },
+ {
+  "key": "sidenav.label.admin.locations",
+  "status": "approved",
+  "value": "Lieux et organisations",
+  "original": "Locations & Organizations"
+ },
+ {
+  "key": "button.labUnit.deactivate.confirm",
+  "status": "approved",
+  "value": "Désactiver l'unité de laboratoire",
+  "original": "Deactivate lab unit"
+ },
+ {
+  "key": "label.button.exit",
+  "status": "approved",
+  "value": "Quitter",
+  "original": "Sortie"
+ },
+ {
+  "key": "sidenav.label.admin.Listplugin",
+  "status": "approved",
+  "value": "Liste des plugins",
+  "original": "Page de la liste"
+ },
+ {
+  "key": "coldStorage.status.noData",
+  "status": "approved",
+  "value": "Aucune donnée",
+  "original": "Non de données"
+ },
+ {
+  "key": "barcode.print.preprint.button",
+  "status": "approved",
+  "value": "Pré-imprimer les étiquettes",
+  "original": "Bouton de pré-impression"
+ },
+ {
+  "key": "analyzer.fieldMapping.save",
+  "status": "approved",
+  "value": "Enregistrer les correspondances",
+  "original": "Save Mappings"
+ },
+ {
+  "key": "label.panel.col.code",
+  "status": "approved",
+  "value": "Code",
+  "original": "Code Emplacement"
+ },
+ {
+  "key": "sampleAcceptance.qa.button.continueWithTesting",
+  "status": "approved",
+  "value": "Poursuivre les analyses",
+  "original": "Continue with testing"
+ },
+ {
+  "key": "microbiology.enum.NO_BREAKPOINT",
+  "status": "approved",
+  "value": "Aucune concentration critique",
+  "original": "Non, il n'y a pas de point d'arrêt"
+ },
+ {
+  "key": "compliance.testThresholds.col.code",
+  "status": "approved",
+  "value": "Code",
+  "original": "Code Emplacement"
+ },
+ {
+  "key": "caseView.badge.readOnly",
+  "status": "approved",
+  "value": "Lecture seule",
+  "original": "Read only"
+ },
+ {
+  "key": "admin.programs.questionnaire.question.type.label",
+  "status": "approved",
+  "value": "Type de question",
+  "original": "Question Type"
+ },
+ {
+  "key": "calendar.management.addHoliday",
+  "status": "approved",
+  "value": "Ajouter un jour férié",
+  "original": "Ajouter jour férié"
+ },
+ {
+  "key": "header.ID",
+  "status": "approved",
+  "value": "ID",
+  "original": "IDENTIFIANT"
+ },
+ {
+  "key": "analyzer.fieldMapping.retirementModal.title",
+  "status": "approved",
+  "value": "Retirer la correspondance",
+  "original": "Retire Mapping"
+ },
+ {
+  "key": "banner.menu.eqa.tests.myPrograms",
+  "status": "approved",
+  "value": "Mes programmes EEQ",
+  "original": "Mes programmes"
+ },
+ {
+  "key": "label.results.sampleStatus.markUsedUp",
+  "status": "approved",
+  "value": "Marquer comme épuisé",
+  "original": "Mark a épuisé"
+ },
+ {
+  "key": "label.locations.column.wards",
+  "status": "approved",
+  "value": "Services / Départements",
+  "original": "Wards / Depts"
+ },
+ {
+  "key": "admin.labelPresets.field.maxPerOrder",
+  "status": "approved",
+  "value": "Maximum par demande",
+  "original": "Maximum par commande"
+ },
+ {
+  "key": "banner.menu.workplan.batch",
+  "status": "approved",
+  "value": "Plan de travail par lot",
+  "original": "Batch Workplan"
+ },
+ {
+  "key": "sidenav.label.admin.locations.organizations",
+  "status": "approved",
+  "value": "Organisations",
+  "original": "Organizations"
+ },
+ {
+  "key": "inventory.receiveStock.button",
+  "status": "approved",
+  "value": "Réceptionner du stock",
+  "original": "Receive stock"
+ },
+ {
+  "key": "vectorId.tag.deconInProgress",
+  "status": "approved",
+  "value": "Déconvolution en cours",
+  "original": "Désinfection en cours"
+ },
+ {
+  "key": "button.locations.deactivate.withChildren",
+  "status": "approved",
+  "value": "Désactiver {name} et ses {count} {childKind}",
+  "original": "Deactivate {name} and its {count} {childKind}"
+ },
+ {
+  "key": "banner.menu.patient.addOrEdit",
+  "status": "approved",
+  "value": "Ajouter/Modifier un patient",
+  "original": "Ajouter/Modifier un Patient"
+ },
+ {
+  "key": "banner.menu.eqa.tests.orders.tooltip",
+  "status": "approved",
+  "value": "Voir et gérer les demandes d'analyses EEQ",
+  "original": "Voir et gérer les commandes de tests EQE"
+ },
+ {
+  "key": "master.lists.page.patient",
+  "status": "approved",
+  "value": "Configuration de la saisie des patients",
+  "original": "Page du patient"
+ },
+ {
+  "key": "analyzer.importIssues.openMappings",
+  "status": "approved",
+  "value": "Ouvrir les correspondances",
+  "original": "Correspondances ouvertes"
+ },
+ {
+  "key": "label.locations.import.willDeactivate",
+  "status": "approved",
+  "value": "Sera désactivé",
+  "original": "Will be deactivated"
+ },
+ {
+  "key": "label.label",
+  "status": "approved",
+  "value": "Étiquette",
+  "original": "Etiquette"
+ },
+ {
+  "key": "vectorId.tag.deconNeeded",
+  "status": "approved",
+  "value": "⚠ Vérifier le résultat",
+  "original": "⚠ Résultat de l'évaluation"
+ },
+ {
+  "key": "sidenav.section.main",
+  "status": "approved",
+  "value": "Menu principal",
+  "original": "Main Menu"
+ },
+ {
+  "key": "order.nav.saveNext",
+  "status": "approved",
+  "value": "Enregistrer et continuer",
+  "original": "Save and next"
+ },
+ {
+  "key": "banner.menu.resultvalidation.hemato-immunology",
+  "status": "approved",
+  "value": "Hémato-immunologie",
+  "original": "Hémato-Immunologie"
+ },
+ {
+  "key": "common.icon",
+  "status": "approved",
+  "value": "Icône",
+  "original": "Icon"
+ },
+ {
+  "key": "sampleManagement.hierarchy.level",
+  "status": "approved",
+  "value": "Niveau {level}",
+  "original": "Niveau {niveau}"
+ },
+ {
+  "key": "banner.menu.eqa.mgmt.results.tooltip",
+  "status": "approved",
+  "value": "Collecte des résultats d'EEQ et analyse statistique",
+  "original": "Collecte de résultats et analyse statistique EQE"
+ },
+ {
+  "key": "analyzer.importIssues.test",
+  "status": "approved",
+  "value": "Analyse",
+  "original": "Analyses"
+ },
+ {
+  "key": "sideNav.label.qa.qc.controlLots",
+  "status": "approved",
+  "value": "Gestion des lots de CQ",
+  "original": "QC Lot Management"
+ },
+ {
+  "key": "eqa.results.col.status",
+  "status": "approved",
+  "value": "Statut",
+  "original": "Statuts"
+ },
+ {
+  "key": "coldStorage.device.deleted",
+  "status": "approved",
+  "value": "L'appareil « {name} » a été supprimé avec succès",
+  "original": "Device \\"
+ },
+ {
+  "key": "label.referOut.status.resultsReturned",
+  "status": "approved",
+  "value": "Résultats retournés",
+  "original": "Résultats affichés"
+ },
+ {
+  "key": "compliance.testEditor.loinc",
+  "status": "approved",
+  "value": "LOINC :",
+  "original": "LOINC:"
+ },
+ {
+  "key": "analyzerType.button.create",
+  "status": "approved",
+  "value": "Créer le profil",
+  "original": "Créer un nouveau type d’analyseur"
+ },
+ {
+  "key": "admin.labelPresets.fieldKey.PATIENT_SEX",
+  "status": "approved",
+  "value": "Sexe du patient",
+  "original": "Sexe du Patient"
+ },
+ {
+  "key": "label.results.referral.refer",
+  "status": "approved",
+  "value": "Envoyer cette analyse",
+  "original": "Consultez cette analyse"
+ },
+ {
+  "key": "dictionary.category.name",
+  "status": "approved",
+  "value": "Catégorie",
+  "original": "Nom de la catégorie du dictionnaire"
+ },
+ {
+  "key": "admin.labelPresets.siteWide.save",
+  "status": "approved",
+  "value": "Enregistrer les paramètres",
+  "original": "Save settings"
+ },
+ {
+  "key": "analyzer.testMapping.analyzerType",
+  "status": "approved",
+  "value": "Type d’analyseur",
+  "original": "Type d’analyseur "
+ },
+ {
+  "key": "admin.testCatalog.methods.btn.copyFromTest",
+  "status": "approved",
+  "value": "Copier depuis une analyse",
+  "original": "Copier de « Test »"
+ },
+ {
+  "key": "analyzer.deliveryIssues.state.deadLettered",
+  "status": "approved",
+  "value": "Non transmis",
+  "original": "Not delivered"
+ },
+ {
+  "key": "button.locations.addWard",
+  "status": "approved",
+  "value": "Ajouter un service",
+  "original": "Add ward / dept"
+ },
+ {
+  "key": "admin.programs.guidance.gui.emptyState.action",
+  "status": "approved",
+  "value": "Ajouter la première question",
+  "original": "Add First Question"
+ },
+ {
+  "key": "admin.labelPresets.editor.section.barcodeSettings",
+  "status": "approved",
+  "value": "Paramètres des codes-barres",
+  "original": "Gestion des codes à barres"
+ },
+ {
+  "key": "sidenav.section.administration",
+  "status": "approved",
+  "value": "Administration",
+  "original": "Administration administrative"
+ },
+ {
+  "key": "compliance.dashboard.table.col.result",
+  "status": "approved",
+  "value": "Résultat",
+  "original": "Résultat "
+ },
+ {
+  "key": "eqa.sample.labNo",
+  "status": "approved",
+  "value": "N° de laboratoire",
+  "original": "laboratoire non"
+ },
+ {
+  "key": "microbiology.reagentLots.status.IN_USE",
+  "status": "approved",
+  "value": "En cours d'utilisation",
+  "original": "Utilisé"
+ },
+ {
+  "key": "analyzerType.mappingEditor.confirm",
+  "status": "approved",
+  "value": "Confirmer les correspondances et la reconnaissance des contrôles",
+  "original": "Confirmer les correspondances et contrôler la reconnaissance"
+ },
+ {
+  "key": "order.nav.saveFinish",
+  "status": "approved",
+  "value": "Enregistrer et terminer",
+  "original": "Save and finish"
+ },
+ {
+  "key": "compliance.button.saveLimits",
+  "status": "approved",
+  "value": "Enregistrer les limites",
+  "original": "Limites d'enregistrement"
+ },
+ {
+  "key": "referral.action.accept",
+  "status": "approved",
+  "value": "Accepter",
+  "original": "Valider"
+ },
+ {
+  "key": "microbiology.currentStep.open",
+  "status": "approved",
+  "value": "Ouvrir {step}",
+  "original": "{step} ouverte"
+ },
+ {
+  "key": "microbiology.enum.NEEDS_WORKFLOW",
+  "status": "approved",
+  "value": "Workflow requis",
+  "original": "Plan de travail à mettre en place"
+ },
+ {
+  "key": "common.overdue",
+  "status": "approved",
+  "value": "En retard",
+  "original": "En retard "
+ },
+ {
+  "key": "analyzerType.recognition.save",
+  "status": "approved",
+  "value": "Enregistrer la reconnaissance des contrôles",
+  "original": "Enregistrer la reconnaissance des commandes"
+ },
+ {
+  "key": "admin.testCatalog.methods.btn.linkMethod",
+  "status": "approved",
+  "value": "+ Associer une méthode",
+  "original": "+ Méthode « Associer »"
+ },
+ {
+  "key": "admin.labelPresets.saveFailed.noResponse",
+  "status": "approved",
+  "value": "Aucune réponse du serveur. Vérifiez la connexion et réessayez.",
+  "original": "No response from the server. Check the connection and try again."
+ },
+ {
+  "key": "qc.controlLots.status.establishment",
+  "status": "approved",
+  "value": "Phase d'établissement",
+  "original": "Établissement"
+ },
+ {
+  "key": "label.testCatalog.reagents.linkButton",
+  "status": "approved",
+  "value": "Associer un réactif",
+  "original": "Réactif de liaison"
+ },
+ {
+  "key": "eqa.management.col.progress",
+  "status": "approved",
+  "value": "Progression",
+  "original": "Progrès"
+ },
+ {
+  "key": "storage.dispose.sample",
+  "status": "approved",
+  "value": "Éliminer l'échantillon",
+  "original": "Disposer de l'échantillon"
+ },
+ {
+  "key": "microbiology.worklist.openCase",
+  "status": "approved",
+  "value": "Ouvrir le dossier",
+  "original": "Dossier ouvert"
+ },
+ {
+  "key": "column.name.testName",
+  "status": "approved",
+  "value": "Nom du test",
+  "original": "Nom de Test"
+ },
+ {
+  "key": "storage.move.button",
+  "status": "approved",
+  "value": "Déplacer l'échantillon",
+  "original": "Supprimer un échantillon"
+ },
+ {
+  "key": "compliance.testEditor.meta.sampleType",
+  "status": "approved",
+  "value": "Type d'échantillon :",
+  "original": "Type d'échantillon:"
+ },
+ {
+  "key": "admin.labelPresets.scope.order",
+  "status": "approved",
+  "value": "Demande",
+  "original": "Demande d'examen"
+ },
+ {
+  "key": "label.testCatalog.accreditation.add",
+  "status": "approved",
+  "value": "Ajouter une accréditation",
+  "original": "Add accreditation"
+ },
+ {
+  "key": "analyzer.form.identifierPattern.placeholder",
+  "status": "approved",
+  "value": "p. ex. ^ABX\\^PENTRA.*",
+  "original": "e.g., ^ABX\\\\^PENTRA.*"
+ },
+ {
+  "key": "label.locations.column.contact",
+  "status": "approved",
+  "value": "Nom du contact",
+  "original": "Contact name"
+ },
+ {
+  "key": "inventory.board.column.onHand",
+  "status": "approved",
+  "value": "En stock",
+  "original": "On hand"
+ },
+ {
+  "key": "alerts.type.critical_result",
+  "status": "approved",
+  "value": "Résultat critique",
+  "original": "Critical Result"
+ },
+ {
+  "key": "banner.menu.results.SysmeXT",
+  "status": "approved",
+  "value": "Hématologie : SysmeXT 2000i",
+  "original": "Hematologie: SysmeXT 2000i"
+ },
+ {
+  "key": "workplan.batch.action.archive",
+  "status": "approved",
+  "value": "Archiver",
+  "original": "Archives"
+ },
+ {
+  "key": "label.validation.signal.rangeNotApplied",
+  "status": "approved",
+  "value": "Intervalle non appliqué",
+  "original": "Range not applied"
+ },
+ {
+  "key": "order.sampleCheck.return",
+  "status": "approved",
+  "value": "Retour à « Préparer les échantillons »",
+  "original": "Return to Prepare Samples"
+ },
+ {
+  "key": "storage.nav.room",
+  "status": "approved",
+  "value": "Salle",
+  "original": "Pièce"
+ },
+ {
+  "key": "banner.menu.resultvalidation.molecularBio",
+  "status": "approved",
+  "value": "Biologie moléculaire",
+  "original": "Biologie Moleculaire"
+ },
+ {
+  "key": "eqa.results.test",
+  "status": "approved",
+  "value": "Analyse",
+  "original": "Analyses"
+ },
+ {
+  "key": "admin.programs.basicInfo.code.label",
+  "status": "approved",
+  "value": "Code du programme",
+  "original": "Programme Code"
+ },
+ {
+  "key": "banner.menu.resultvalidation.bench",
+  "status": "approved",
+  "value": "Par paillasse",
+  "original": "Par palier"
+ },
+ {
+  "key": "storage.metrics.disposed",
+  "status": "approved",
+  "value": "Éliminé",
+  "original": "Rejeté"
+ },
+ {
+  "key": "inventory.reorder.markOrdered",
+  "status": "approved",
+  "value": "Marquer comme commandé",
+  "original": ""
+ },
+ {
+  "key": "master.lists.page.list",
+  "status": "approved",
+  "value": "Liste des plugins",
+  "original": "Page de la liste"
+ },
+ {
+  "key": "microbiology.enum.AST_READY",
+  "status": "approved",
+  "value": "Prêt pour AST",
+  "original": "Compatible AST"
+ },
+ {
+  "key": "common.normalRange",
+  "status": "approved",
+  "value": "Intervalle de référence",
+  "original": "Valeurs normales "
+ },
+ {
+  "key": "logging.management.tail.on",
+  "status": "approved",
+  "value": "Activé",
+  "original": "Le"
+ },
+ {
+  "key": "order.nav.discard.order",
+  "status": "approved",
+  "value": "Abandonner la demande",
+  "original": "Discard order"
+ },
+ {
+  "key": "banner.menu.aliquot.tooltip",
+  "status": "approved",
+  "value": "Aliquote d’échantillon",
+  "original": "Échantillon Aliquoté"
+ },
+ {
+  "key": "label.locations.column.siteType",
+  "status": "approved",
+  "value": "Type de site",
+  "original": "Site type"
+ },
+ {
+  "key": "common.code",
+  "status": "approved",
+  "value": "Code",
+  "original": "Code Emplacement"
+ },
+ {
+  "key": "sideNav.label.qa.qms",
+  "status": "approved",
+  "value": "SMQ et amélioration",
+  "original": "QMS & Improvement"
+ },
+ {
+  "key": "sideNav.label.qa.qms.accreditation",
+  "status": "approved",
+  "value": "Accréditation",
+  "original": "Accreditation"
+ },
+ {
+  "key": "master.lists.page.field",
+  "status": "approved",
+  "value": "Configuration de la validation des champs ",
+  "original": "Page des champs"
+ },
+ {
+  "key": "button.labUnit.tests.assign.confirm",
+  "status": "approved",
+  "value": "Assigner {count, plural, one {# analyse} other {# analyses}}",
+  "original": "Assign {count, plural, one {# test} other {# tests}}"
+ },
+ {
+  "key": "label.results.date",
+  "status": "approved",
+  "value": "Date de l'analyse",
+  "original": "Date du test"
+ },
+ {
+  "key": "vectorReport.manualEntry.markSubmitted",
+  "status": "approved",
+  "value": "Marquer la semaine comme soumise",
+  "original": "Semaine de notation soumise"
+ },
+ {
+  "key": "menu.validation.date",
+  "status": "approved",
+  "value": "Par date",
+  "original": "Rechercher par date de test"
+ },
+ {
+  "key": "search.possibleMatches.createAnyway",
+  "status": "approved",
+  "value": "Créer quand même",
+  "original": "Create new anyway"
+ },
+ {
+  "key": "notebook.results.modal.title",
+  "status": "approved",
+  "value": "Résultats pour {accession}",
+  "original": "Résultats par numéro de laboratoire"
+ },
+ {
+  "key": "admin.programs.questionnaire.json.reformat",
+  "status": "approved",
+  "value": "Reformater",
+  "original": "Reformat"
+ },
+ {
+  "key": "banner.menu.results.unified",
+  "status": "approved",
+  "value": "Saisie des résultats",
+  "original": "Saisie des résultat"
+ },
+ {
+  "key": "admin.labelPresets.fieldKey.EXPIRY_DATE",
+  "status": "approved",
+  "value": "Date d'expiration",
+  "original": "Date d'Expiration"
+ },
+ {
+  "key": "sidenav.label.incomingorder",
+  "status": "approved",
+  "value": "Demandes électroniques",
+  "original": "Statistiques journalières. "
+ },
+ {
+  "key": "label.audittrail",
+  "status": "approved",
+  "value": "N° de laboratoire",
+  "original": "laboratoire non"
+ },
+ {
+  "key": "eqa.intake.save",
+  "status": "approved",
+  "value": "Enregistrer les résultats",
+  "original": "Save results"
+ },
+ {
+  "key": "compliance.button.save",
+  "status": "approved",
+  "value": "Enregistrer",
+  "original": "Sauvegarder"
+ },
+ {
+  "key": "eqa.prep.panels",
+  "status": "approved",
+  "value": "Panels",
+  "original": "Panneaux disponibles"
+ },
+ {
+  "key": "button.locations.template",
+  "status": "approved",
+  "value": "Télécharger le modèle",
+  "original": "Download template"
+ },
+ {
+  "key": "analyzer.action.testConnection",
+  "status": "approved",
+  "value": "Tester la connexion",
+  "original": "Test de connexion"
+ },
+ {
+  "key": "sample.management.aliquot.modal.previewText",
+  "status": "approved",
+  "value": "Création de {count} aliquotes de {quantityEach} {unit} chacune",
+  "original": "Création de {coumpter} aliquotes avec {Chaque quantité} {unités} chacune"
+ },
+ {
+  "key": "analyzer.fieldMapping.activationModal.reloadPage",
+  "status": "approved",
+  "value": "Recharger la page",
+  "original": "Reload Page"
+ },
+ {
+  "key": "label.referOut.action.dispatch",
+  "status": "approved",
+  "value": "Expédier",
+  "original": "Communiqué"
+ },
+ {
+  "key": "label.results.alert.acknowledgeAndSave",
+  "status": "approved",
+  "value": "Accuser réception et enregistrer",
+  "original": "Acknowledge and save"
+ },
+ {
+  "key": "sideNav.label.qa.overview",
+  "status": "approved",
+  "value": "Vue d'ensemble AQ",
+  "original": "QA Overview"
+ },
+ {
+  "key": "master.lists.page.user",
+  "status": "approved",
+  "value": "Gestion des utilisateurs",
+  "original": "Page de l'utilisateur"
+ },
+ {
+  "key": "print.barcode",
+  "status": "approved",
+  "value": "Imprimer le code-barres",
+  "original": "Imprimer les codes"
+ },
+ {
+  "key": "serial.config.connect.button",
+  "status": "approved",
+  "value": "Connecter",
+  "original": "Se connecter à la connexion"
+ },
+ {
+  "key": "stock.status.qcFailed",
+  "status": "approved",
+  "value": "Échec du CQ",
+  "original": "Failed QC"
+ },
+ {
+  "key": "button.dispose",
+  "status": "approved",
+  "value": "Éliminer",
+  "original": "Disposer"
+ },
+ {
+  "key": "button.save",
+  "status": "approved",
+  "value": "Enregistrer",
+  "original": "Sauvegarder"
+ },
+ {
+  "key": "label.results.flag",
+  "status": "approved",
+  "value": "Indicateur",
+  "original": "Drapeau"
+ },
+ {
+  "key": "label.results.storage.moveLocation",
+  "status": "approved",
+  "value": "Déplacer vers un emplacement",
+  "original": "Se rendre à l'emplacement"
+ },
+ {
+  "key": "banner.menu.results.weber",
+  "status": "approved",
+  "value": "Weber 4000",
+  "original": "La Weber 4000"
+ },
+ {
+  "key": "button.locations.area.addTop",
+  "status": "approved",
+  "value": "Ajouter {level}",
+  "original": "Add {level}"
+ },
+ {
+  "key": "inventory.board.column.runsOut",
+  "status": "approved",
+  "value": "Épuisement prévu",
+  "original": "Runs out"
+ },
+ {
+  "key": "sideNav.label.qa.qc.manualQc",
+  "status": "approved",
+  "value": "CQ manuel des analyseurs",
+  "original": "Analyzer Manual QC"
+ },
+ {
+  "key": "header.label.ARV",
+  "status": "approved",
+  "value": "ARV - Bilan initial",
+  "original": "ARV - Bilan Initial"
+ },
+ {
+  "key": "sideNav.label.qa.qi",
+  "status": "approved",
+  "value": "Indicateurs qualité",
+  "original": "Quality Indicators"
+ },
+ {
+  "key": "banner.menu.patient.merge",
+  "status": "approved",
+  "value": "Fusionner des patients",
+  "original": "Fusionner Patient"
+ },
+ {
+  "key": "analyzer.fieldMapping.status.unmapped",
+  "status": "approved",
+  "value": "Non mappé",
+  "original": "Unmapped"
+ },
+ {
+  "key": "button.locations.saveWards",
+  "status": "approved",
+  "value": "Enregistrer {count} nouveau(x) service(s)",
+  "original": "Save {count} new ward / dept"
+ },
+ {
+  "key": "analyzer.filter.type",
+  "status": "approved",
+  "value": "Type d’analyseur",
+  "original": "Type d’analyseur "
+ },
+ {
+  "key": "eorder.button.editOrder",
+  "status": "approved",
+  "value": "Modifier une demande",
+  "original": "Modifier l'ordonnance"
+ },
+ {
+  "key": "label.inside.normalrange",
+  "status": "approved",
+  "value": "est dans l'intervalle de référence",
+  "original": "est dans la plage normale"
+ },
+ {
+  "key": "eqa.bucket.awaiting",
+  "status": "approved",
+  "value": "En attente des scores",
+  "original": "Awaiting scores"
+ },
+ {
+  "key": "label.results.alert.correct",
+  "status": "approved",
+  "value": "Corriger la valeur",
+  "original": "Correct the value"
+ },
+ {
+  "key": "header.label.selectlocale",
+  "status": "approved",
+  "value": "Sélectionner la langue",
+  "original": "Sélectionner la Langue"
+ },
+ {
+  "key": "usage.record.button",
+  "status": "approved",
+  "value": "Enregistrer l'utilisation",
+  "original": "Enregistrement en cours"
+ },
+ {
+  "key": "coldStorage.dashboard.refreshing",
+  "status": "approved",
+  "value": "Actualisation",
+  "original": "Rafraîchissant"
+ },
+ {
+  "key": "alerts.table.severity",
+  "status": "approved",
+  "value": "Gravité",
+  "original": "Sévérité"
+ },
+ {
+  "key": "sample.entry.project.patient.and.testName",
+  "status": "approved",
+  "value": "Nom/Code du patient {br} Nom de l'analyse",
+  "original": "Noms et/ou Numéro d'identité National \\n Nom du Test"
+ },
+ {
+  "key": "label.testCatalog.panels.loadError",
+  "status": "approved",
+  "value": "Impossible de charger les appartenances aux panels.",
+  "original": "Impossible de charger les affiliations aux commissions."
+ },
+ {
+  "key": "master.lists.page.site",
+  "status": "approved",
+  "value": "Informations sur le site",
+  "original": "Page du site"
+ },
+ {
+  "key": "banner.menu.results.SysmexXNLanalyzer",
+  "status": "approved",
+  "value": "Analyseur Sysmex XNL",
+  "original": "Automate Sysmex XNL"
+ },
+ {
+  "key": "label.results.alert.confirmAndSave",
+  "status": "approved",
+  "value": "Confirmer et enregistrer",
+  "original": "Confirm and save"
+ },
+ {
+  "key": "collect.sample.receivedDate",
+  "status": "approved",
+  "value": "Date de réception",
+  "original": "Date de réception "
+ },
+ {
+  "key": "compliance.sampleTypes.heading",
+  "status": "approved",
+  "value": "Types d’échantillons applicables",
+  "original": "Types d’échantillons compatibles"
+ },
+ {
+  "key": "calendar.management.status",
+  "status": "approved",
+  "value": "Statut",
+  "original": "Statuts"
+ },
+ {
+  "key": "sideNav.label.qa.qms.capaRegister",
+  "status": "approved",
+  "value": "Registre CAPA",
+  "original": "CAPA Register"
+ },
+ {
+  "key": "banner.menu.nonconformity.correctiveActions",
+  "status": "approved",
+  "value": "Actions correctives",
+  "original": "Actions Correctives"
+ },
+ {
+  "key": "inventory.reorder.onOrder",
+  "status": "approved",
+  "value": "En commande",
+  "original": ""
+ },
+ {
+  "key": "admin.testCatalog.qcTargets.showDeactivated",
+  "status": "approved",
+  "value": "Afficher les désactivés",
+  "original": "Affichage désactivé"
+ },
+ {
+  "key": "master.lists.page.external.connections",
+  "status": "approved",
+  "value": "Menu des connexions externes",
+  "original": "Page des connexions externes"
+ },
+ {
+  "key": "vectorId.completion.tag",
+  "status": "approved",
+  "value": "Déconvolution terminée",
+  "original": "Désinfection terminée"
+ },
+ {
+  "key": "common.labNumber",
+  "status": "approved",
+  "value": "Numéro de laboratoire",
+  "original": "Numéro laboratoire"
+ },
+ {
+  "key": "admin.programs.basicInfo.showOnMicroCase.on",
+  "status": "approved",
+  "value": "Activé",
+  "original": "Le"
+ },
+ {
+  "key": "microbiology.enum.NONCONFORMANCE_REPORTED",
+  "status": "approved",
+  "value": "Non-conformité signalée",
+  "original": "Rapport sur la non-conformité"
+ },
+ {
+  "key": "analyzer.testMapping.messageInput",
+  "status": "approved",
+  "value": "Exemple de message ASTM",
+  "original": "Message ASTM d’échantillon"
+ },
+ {
+  "key": "label.validation.review.action.reject",
+  "status": "approved",
+  "value": "Rejeter (déclarer un ENC)",
+  "original": "Rejeter (fichier NCE)"
+ },
+ {
+  "key": "compliance.testThresholds.col.test",
+  "status": "approved",
+  "value": "Analyse",
+  "original": "Analyses"
+ },
+ {
+  "key": "admin.labelPresets.field.defaultPerSample",
+  "status": "approved",
+  "value": "Par défaut par échantillon",
+  "original": "Défaut par l'échantillon"
+ },
+ {
+  "key": "microbiology.worklist.markNoGrowth",
+  "status": "approved",
+  "value": "Marquer sans croissance",
+  "original": "Non de croissance"
+ },
+ {
+  "key": "eqa.provider.wizard.addSample",
+  "status": "approved",
+  "value": "Ajouter un échantillon",
+  "original": "Add sample"
+ },
+ {
+  "key": "label.refertest.referencelab",
+  "status": "approved",
+  "value": "Envoyer l'analyse à un laboratoire de référence",
+  "original": "Référer le test à un laboratoire de référence"
+ },
+ {
+  "key": "microbiology.case.recordActivity",
+  "status": "approved",
+  "value": "Enregistrer l'activité",
+  "original": "Activité record"
+ },
+ {
+  "key": "banner.menu.eqa.myCycles",
+  "status": "approved",
+  "value": "Mes cycles",
+  "original": "My Cycles"
+ },
+ {
+  "key": "admin.labelPresets.fieldKey.SITE_ID",
+  "status": "approved",
+  "value": "ID du site",
+  "original": "ID du Site"
+ },
+ {
+  "key": "label.locations.referral.approved",
+  "status": "approved",
+  "value": "Approuvé",
+  "original": "Approved"
+ },
+ {
+  "key": "referral.chip.outstanding",
+  "status": "approved",
+  "value": "En attente",
+  "original": "Exceptionnel"
+ },
+ {
+  "key": "eorder.labNumber",
+  "status": "approved",
+  "value": "Numéro de laboratoire",
+  "original": "Numéro de Laboratoire"
+ },
+ {
+  "key": "analyzer.setup.instrument.type",
+  "status": "approved",
+  "value": "Type d'analyseur",
+  "original": "Type"
+ },
+ {
+  "key": "sidenav.section.patientOrders",
+  "status": "approved",
+  "value": "Patients et demandes",
+  "original": "Patient & Orders"
+ },
+ {
+  "key": "banner.menu.patienthistory",
+  "status": "approved",
+  "value": "Historique du patient",
+  "original": "Historique du Patient"
+ },
+ {
+  "key": "sidenav.label.results.byrange",
+  "status": "approved",
+  "value": "Par plage de numéros de laboratoire",
+  "original": "Par plage de numéros de commande"
+ },
+ {
+  "key": "eqa.intake.test",
+  "status": "approved",
+  "value": "Analyse",
+  "original": "Analyses"
+ },
+ {
+  "key": "search.possibleMatches.confirm.button",
+  "status": "approved",
+  "value": "Créer un nouvel enregistrement",
+  "original": "Create new record"
+ },
+ {
+  "key": "compliance.standard.archive",
+  "status": "approved",
+  "value": "Archiver",
+  "original": "Archives"
+ },
+ {
+  "key": "banner.menu.workplan",
+  "status": "approved",
+  "value": "Plan de travail",
+  "original": "Plan de Travail"
+ },
+ {
+  "key": "sidenav.label.admin.catalogImport",
+  "status": "approved",
+  "value": "Importer le catalogue (CSV)",
+  "original": "Import Catalog (CSV)"
+ },
+ {
+  "key": "referral.status.requested",
+  "status": "approved",
+  "value": "Envoyé : en attente d'acceptation",
+  "original": "Envoyé — en attente de validation"
+ },
+ {
+  "key": "label.results.alert.keepValue",
+  "status": "approved",
+  "value": "Conserver cette valeur",
+  "original": "Keep this value"
+ },
+ {
+  "key": "eorder.requestDate",
+  "status": "approved",
+  "value": "Date de la demande",
+  "original": "Date de la Demande"
+ },
+ {
+  "key": "inventory.logUsage.button",
+  "status": "approved",
+  "value": "Enregistrer la consommation",
+  "original": "Log usage"
+ },
+ {
+  "key": "analyzer.fieldMapping.testMapping",
+  "status": "approved",
+  "value": "Tester la correspondance",
+  "original": "Test Mapping"
+ },
+ {
+  "key": "notebook.status.finalized",
+  "status": "approved",
+  "value": "Finaliser l'entrée",
+  "original": "Sauvegarder la saisie "
+ },
+ {
+  "key": "eqa.competency.band.notCompetent",
+  "status": "approved",
+  "value": "Non compétent",
+  "original": "Not competent"
+ },
+ {
+  "key": "master.lists.page.result",
+  "status": "approved",
+  "value": "Configuration de la saisie des résultats",
+  "original": "Page des résultats"
+ },
+ {
+  "key": "label.results.sampleStatus.recordUse",
+  "status": "approved",
+  "value": "Enregistrer la quantité utilisée",
+  "original": "Montant record utilisé"
+ },
+ {
+  "key": "microbiology.enum.ISOLATE",
+  "status": "approved",
+  "value": "Isolat",
+  "original": "Isoler"
+ },
+ {
+  "key": "label.locations.referral.expired",
+  "status": "approved",
+  "value": "Accréditation expirée",
+  "original": "Accreditation expired"
+ },
+ {
+  "key": "calendar.management.column.status",
+  "status": "approved",
+  "value": "Statut",
+  "original": "Statuts"
+ },
+ {
+  "key": "banner.menu.eqa.tests",
+  "status": "approved",
+  "value": "Analyses EEQ",
+  "original": "Tests EQE"
+ },
+ {
+  "key": "sidenav.label.admin.pluginFile",
+  "status": "approved",
+  "value": "Fichiers de plugins",
+  "original": "Plugin Files"
+ },
+ {
+  "key": "storage.assign.button",
+  "status": "approved",
+  "value": "Attribuer un emplacement",
+  "original": "Attribuer un chemin "
+ },
+ {
+  "key": "banner.menu.results.accession",
+  "status": "approved",
+  "value": "Par demande",
+  "original": "Recherche par ordonnance"
+ },
+ {
+  "key": "common.result",
+  "status": "approved",
+  "value": "Résultat",
+  "original": "Résultat "
+ },
+ {
+  "key": "admin.testCatalog.labels.masterOverride.on",
+  "status": "approved",
+  "value": "Activé",
+  "original": "Le"
+ },
+ {
+  "key": "inventory.projection.outOfStock",
+  "status": "approved",
+  "value": "Rupture de stock",
+  "original": "Out of stock"
+ },
+ {
+  "key": "lot.status.QUARANTINED",
+  "status": "approved",
+  "value": "En quarantaine",
+  "original": "Quarantined"
+ },
+ {
+  "key": "microbiology.enum.CRITICAL_COMMUNICATION_LOGGED",
+  "status": "approved",
+  "value": "Communication critique enregistrée",
+  "original": "Critique de communication enregistrée"
+ },
+ {
+  "key": "eqa.priority.standard",
+  "status": "approved",
+  "value": "Standard",
+  "original": "Étalon"
+ },
+ {
+  "key": "banner.menu.workplan.panel",
+  "status": "approved",
+  "value": "Par panel",
+  "original": "Par Panel"
+ },
+ {
+  "key": "microbiology.enum.ISOLATE_REQUIRED",
+  "status": "approved",
+  "value": "Isolat requis",
+  "original": "Isolation obligatoire"
+ },
+ {
+  "key": "banner.menu.reports.study",
+  "status": "approved",
+  "value": "Étude",
+  "original": "Etude"
+ },
+ {
+  "key": "barcode.print.col.accession",
+  "status": "approved",
+  "value": "Numéro de laboratoire",
+  "original": "Numéro d'enregistrement"
+ },
+ {
+  "key": "lot.qcStatus.QUARANTINED",
+  "status": "approved",
+  "value": "En quarantaine",
+  "original": "Quarantined"
+ },
+ {
+  "key": "admin.labelPresets.fields.add.placeholder",
+  "status": "approved",
+  "value": "Choisir un champ",
+  "original": "Choose a field"
+ },
+ {
+  "key": "eqa.inhouse.next",
+  "status": "approved",
+  "value": "Suivant",
+  "original": "Suivante"
+ },
+ {
+  "key": "analyzer.stat.setup",
+  "status": "approved",
+  "value": "En configuration",
+  "original": "Dans la configuration"
+ },
+ {
+  "key": "banner.menu.generic.sample.order",
+  "status": "approved",
+  "value": "Créer une demande",
+  "original": "Recevoir un échantillon"
+ },
+ {
+  "key": "storage.sample.actions",
+  "status": "approved",
+  "value": "Actions sur l'échantillon",
+  "original": "Échantillons d'actions"
+ },
+ {
+  "key": "patient.merge.addressesDiffer",
+  "status": "approved",
+  "value": "L'adresse diffère : {primary} vs {secondary}",
+  "original": "L'adresse diffère : {primaire} vs {secondaire}"
+ },
+ {
+  "key": "configuration.test.modify.tab.configuration",
+  "status": "approved",
+  "value": "Configuration",
+  "original": "Configurer"
+ },
+ {
+  "key": "label.locations.import.decision.skip",
+  "status": "approved",
+  "value": "Ignorer la ligne",
+  "original": "Skip row"
+ },
+ {
+  "key": "analyzer.form.loadDefaultConfig",
+  "status": "approved",
+  "value": "Charger un profil d'analyseur",
+  "original": "Charger la configuration par défaut"
+ },
+ {
+  "key": "admin.programs.questionnaire.question.type.choice",
+  "status": "approved",
+  "value": "Choix",
+  "original": "Choice"
+ },
+ {
+  "key": "common.testName",
+  "status": "approved",
+  "value": "Nom du test",
+  "original": "Nom du test "
+ },
+ {
+  "key": "label.referOut.status.pendingSave",
+  "status": "approved",
+  "value": "En attente d'enregistrement",
+  "original": "Pending save"
+ },
+ {
+  "key": "inventory.lots.useFirst",
+  "status": "approved",
+  "value": "À utiliser en premier",
+  "original": "Use first"
+ },
+ {
+  "key": "sidenav.label.order.prepare",
+  "status": "approved",
+  "value": "Préparer les échantillons",
+  "original": "Prepare Samples"
+ },
+ {
+  "key": "microbiology.enum.RESULTS_IN",
+  "status": "approved",
+  "value": "Résultats reçus",
+  "original": "Résultats dans"
+ },
+ {
+  "key": "label.labUnit.tests.testName",
+  "status": "approved",
+  "value": "Nom du test",
+  "original": "Nom du test "
+ },
+ {
+  "key": "button.locations.exportSelected",
+  "status": "approved",
+  "value": "Exporter la sélection",
+  "original": "Export selected"
+ },
+ {
+  "key": "label.order.patientPrefix",
+  "status": "approved",
+  "value": "Patient",
+  "original": "Patiente"
+ },
+ {
+  "key": "sidenav.label.admin.locations.areas",
+  "status": "approved",
+  "value": "Zones géographiques",
+  "original": "Geographic Areas"
+ },
+ {
+  "key": "label.user.notestsection",
+  "status": "approved",
+  "value": "L'utilisateur actuel n'a pas d'unité de laboratoire attribuée. Veuillez contacter l'administrateur",
+  "original": "L'utilisateur actuel n'a pas d'unité de laboratoire assassinée. Veuillez contacter l'administrateur"
+ },
+ {
+  "key": "notebook.button.editResults",
+  "status": "approved",
+  "value": "Modifier les résultats",
+  "original": "Afficher les résultats"
+ },
+ {
+  "key": "compliance.limitType.RANGE",
+  "status": "approved",
+  "value": "Intervalle de référence",
+  "original": "Valeurs normales "
+ },
+ {
+  "key": "sample.management.noResults.subtitle",
+  "status": "approved",
+  "value": "Aucun échantillon trouvé pour le numéro de laboratoire : {accessionNumber}",
+  "original": "Aucun échantillon trouvé pour le numéro de laboratoire : {numéro de laboratoire}"
+ },
+ {
+  "key": "label.active",
+  "status": "approved",
+  "value": "Actif",
+  "original": "Activer"
+ },
+ {
+  "key": "label.button.submit",
+  "status": "approved",
+  "value": "Soumettre",
+  "original": "Terminer"
+ },
+ {
+  "key": "banner.menu.generic.sample.import",
+  "status": "approved",
+  "value": "Importer des échantillons",
+  "original": "Importer  échantillons"
+ },
+ {
+  "key": "analyzer.attention.review",
+  "status": "approved",
+  "value": "Revoir les résultats retenus",
+  "original": "Examiner les résultats obtenus"
+ },
+ {
+  "key": "admin.labelPresets.fields.locked",
+  "status": "approved",
+  "value": "Toujours en premier",
+  "original": "Always first"
+ },
+ {
+  "key": "storage.nav.rooms",
+  "status": "approved",
+  "value": "Salles",
+  "original": "Chambres"
+ },
+ {
+  "key": "coldStorage.dashboard.refreshingEllipsis",
+  "status": "approved",
+  "value": "Actualisation...",
+  "original": "C'est rafraîchissant..."
+ },
+ {
+  "key": "banner.menu.eqa.tooltip",
+  "status": "approved",
+  "value": "Évaluation externe de la qualité",
+  "original": "Évaluation Externe de la Qualité"
+ },
+ {
+  "key": "sideNav.label.qa.qc.reagentQc",
+  "status": "approved",
+  "value": "CQ des réactifs",
+  "original": "Reagent QC"
+ },
+ {
+  "key": "label.testCatalog.ranges.coverage.status.EMPTY",
+  "status": "approved",
+  "value": "Aucune plage",
+  "original": "Non de plages"
+ },
+ {
+  "key": "admin.labelPresets.fields.allAdded",
+  "status": "approved",
+  "value": "Tous les champs disponibles figurent sur cette étiquette.",
+  "original": "Every available field is on this label."
+ },
+ {
+  "key": "admin.programs.questionnaire.mode.visualBuilder",
+  "status": "approved",
+  "value": "Constructeur visuel",
+  "original": "Visual Builder"
+ },
+ {
+  "key": "sidenav.label.admin.barcodeconfiguration",
+  "status": "approved",
+  "value": "Configuration des codes-barres",
+  "original": "Page des codes-barres"
+ },
+ {
+  "key": "label.validation.bulk.column.accession",
+  "status": "approved",
+  "value": "N° de labo.",
+  "original": "laboratoire non."
+ },
+ {
+  "key": "microbiology.ast.useAttemptForReporting",
+  "status": "approved",
+  "value": "Utiliser la tentative {number} pour le rapport",
+  "original": "Veuillez utiliser l'adresse {number} pour signaler tout problème."
+ },
+ {
+  "key": "label.outside.normalrange",
+  "status": "approved",
+  "value": "est en dehors de l'intervalle de référence",
+  "original": "est en dehors de la plage normale"
+ },
+ {
+  "key": "microbiology.critical.log",
+  "status": "approved",
+  "value": "Consigner la communication",
+  "original": "Journal des communications"
+ },
+ {
+  "key": "accessDenied.okButton",
+  "status": "approved",
+  "value": "OK",
+  "original": "D'ACCORD"
+ },
+ {
+  "key": "eqa.btn.receivePanel",
+  "status": "approved",
+  "value": "Recevoir le panel - ouvrir Ajouter une demande",
+  "original": "Receive panel — open Add Order"
+ },
+ {
+  "key": "qc.status.update.button",
+  "status": "approved",
+  "value": "Mettre à jour le statut QC",
+  "original": "Statut QC mis à jour "
+ },
+ {
+  "key": "label.pool.expansion.next",
+  "status": "approved",
+  "value": "Suivant",
+  "original": "Suivante"
+ },
+ {
+  "key": "patient.label.primaryphone",
+  "status": "approved",
+  "value": "Téléphone principal : {PHONE_FORMAT}",
+  "original": "Téléphone principal du patient"
+ },
+ {
+  "key": "analyzer.fieldMapping.panel.target.saveActivate",
+  "status": "approved",
+  "value": "Enregistrer et activer",
+  "original": "Save and Activate"
+ },
+ {
+  "key": "label.testCatalog.sampleResults.copyConfirm.confirm",
+  "status": "approved",
+  "value": "Remplacer la configuration",
+  "original": "Replace configuration"
+ },
+ {
+  "key": "vectorDec.status.complete",
+  "status": "approved",
+  "value": "Déconvolution terminée",
+  "original": "Désinfection terminée"
+ },
+ {
+  "key": "reporting.saved.open",
+  "status": "approved",
+  "value": "Ouvrir",
+  "original": "Ouvert"
+ },
+ {
+  "key": "microbiology.ast.invalidateAndRepeat",
+  "status": "approved",
+  "value": "Invalider et lancer une nouvelle série",
+  "original": "Annuler et commencer une nouvelle exécution"
+ },
+ {
+  "key": "column.name.save",
+  "status": "approved",
+  "value": "Enregistrer",
+  "original": "Sauvegarder"
+ },
+ {
+  "key": "vectorId.button.save",
+  "status": "approved",
+  "value": "Enregistrer l'identification",
+  "original": "Enregistrer les informations d'identification"
+ },
+ {
+  "key": "microbiology.ast.adjustPanel",
+  "status": "approved",
+  "value": "Ajuster le panel",
+  "original": "Panneau de réglage"
+ },
+ {
+  "key": "vectorId.button.identify",
+  "status": "approved",
+  "value": "▼ Identifier",
+  "original": "▼ Identifiant"
+ },
+ {
+  "key": "shipment.reception.openBox",
+  "status": "approved",
+  "value": "Ouvrir",
+  "original": "Ouvert"
+ },
+ {
+  "key": "admin.programs.questionnaire.question.text.label",
+  "status": "approved",
+  "value": "Texte de la question",
+  "original": "Question Text"
+ },
+ {
+  "key": "analyzer.deliveryIssues.attention.review",
+  "status": "approved",
+  "value": "Revoir les résultats non transmis",
+  "original": "Review undelivered results"
+ },
+ {
+  "key": "analyzer.setup.connect.activation.saving",
+  "status": "approved",
+  "value": "Enregistrement de l'analyseur",
+  "original": "Analyseur d'économies"
+ },
+ {
+  "key": "analyzer.fieldMapping.stats.pendingCodes",
+  "status": "approved",
+  "value": "Codes en attente",
+  "original": "Pending Codes"
+ },
+ {
+  "key": "column.name.accept",
+  "status": "approved",
+  "value": "Accepter",
+  "original": "Valider"
+ },
+ {
+  "key": "vectorDec.button.savePools",
+  "status": "approved",
+  "value": "Enregistrer les pools",
+  "original": "Pools de sauvegarde"
+ },
+ {
+  "key": "sampleManagement.results.count",
+  "status": "approved",
+  "value": "{count} échantillon(s) trouvé(s)",
+  "original": "{compter} échantillon(s) trouvé(s)"
+ },
+ {
+  "key": "cytology.status.readyForCytopathologist",
+  "status": "approved",
+  "value": "Prêt pour le cytopathologiste",
+  "original": "Ready for Cytopathologist"
+ },
+ {
+  "key": "analyzer.fieldMapping.panel.status.mapped",
+  "status": "approved",
+  "value": "Mappé",
+  "original": "Cartographié"
+ },
+ {
+  "key": "serverReconnect.tryNow",
+  "status": "approved",
+  "value": "Réessayer maintenant",
+  "original": "Try now"
+ },
+ {
+  "key": "analyzer.table.testUnits",
+  "status": "approved",
+  "value": "Unités de laboratoire",
+  "original": "Unités de test"
+ },
+ {
+  "key": "label.locations.column.code",
+  "status": "approved",
+  "value": "Code",
+  "original": "Code Emplacement"
+ },
+ {
+  "key": "analyzer.fieldMapping.pendingCodes.ignore",
+  "status": "approved",
+  "value": "Ignorer",
+  "original": "Ignore"
+ },
+ {
+  "key": "master.lists.page.work.plan",
+  "status": "approved",
+  "value": "Configuration du plan de travail ",
+  "original": "Page du plan de travail"
+ },
+ {
+  "key": "sidenav.workflow.patientManagement",
+  "status": "approved",
+  "value": "Gestion des patients",
+  "original": "Patient Management"
+ },
+ {
+  "key": "eqa.inhouse.addSample",
+  "status": "approved",
+  "value": "Ajouter un échantillon",
+  "original": "Add sample"
+ },
+ {
+  "key": "label.button.remove",
+  "status": "approved",
+  "value": "Retirer",
+  "original": "Supprimer"
+ },
+ {
+  "key": "eqa.results.col.labNumber",
+  "status": "approved",
+  "value": "Numéro de laboratoire",
+  "original": "Numéro Laboratoire"
+ },
+ {
+  "key": "common.accessionNumber",
+  "status": "approved",
+  "value": "Numéro de laboratoire",
+  "original": "Numéro d'enregistrement"
+ },
+ {
+  "key": "banner.menu.resultvalidation.bacteria",
+  "status": "approved",
+  "value": "Bactéries",
+  "original": "Bactérie"
+ },
+ {
+  "key": "banner.menu.eqa.followUpQueue",
+  "status": "approved",
+  "value": "Suivi de ce laboratoire",
+  "original": "This Lab's Follow-Up"
+ },
+ {
+  "key": "cytology.status.preparingSlides",
+  "status": "approved",
+  "value": "Préparation des lames",
+  "original": "Preparing slides"
+ },
+ {
+  "key": "compliance.button.addStandard",
+  "status": "approved",
+  "value": "Ajouter une norme",
+  "original": "Ajouter un étalon"
+ },
+ {
+  "key": "barcode.label.info.patientId",
+  "status": "approved",
+  "value": "Identifiant du patient",
+  "original": "Identifiant du Patient"
+ },
+ {
+  "key": "banner.menu.eqa.mgmt",
+  "status": "approved",
+  "value": "Gestion EEQ",
+  "original": "Gestion EQE"
+ },
+ {
+  "key": "immunohistochemistry.label.title",
+  "status": "approved",
+  "value": "Immunohistochimie",
+  "original": "Immuno-Histochimie"
+ },
+ {
+  "key": "label.panel.col.testName",
+  "status": "approved",
+  "value": "Nom du test",
+  "original": "Nom du test "
+ },
+ {
+  "key": "microbiology.case.action.recordGrowth",
+  "status": "approved",
+  "value": "Enregistrer une croissance détectée",
+  "original": "Une croissance record a été constatée"
+ },
+ {
+  "key": "sampleManagement.selectedCount",
+  "status": "approved",
+  "value": "{count} sélectionné(s)",
+  "original": "{compter} sélectionné"
+ },
+ {
+  "key": "externalconnections.name",
+  "status": "approved",
+  "value": "Nom",
+  "original": "Saisir le nom de la connexion"
+ },
+ {
+  "key": "cytology.label.neoplastic",
+  "status": "approved",
+  "value": "Variations cellulaires non néoplasiques",
+  "original": "Variations Cellulaires Non Néoplasiques"
+ },
+ {
+  "key": "compliance.label.tests",
+  "status": "approved",
+  "value": "analyses",
+  "original": "Analyses"
+ },
+ {
+  "key": "banner.menu.workplan.unit",
+  "status": "approved",
+  "value": "Par unité",
+  "original": "Par Unité"
+ },
+ {
+  "key": "banner.menu.nonconformity",
+  "status": "approved",
+  "value": "Non conforme",
+  "original": "Non Conforme"
+ },
+ {
+  "key": "order.dashboard.cancelOrder",
+  "status": "approved",
+  "value": "Annuler la demande",
+  "original": "Cancel order"
+ },
+ {
+  "key": "label.locations.import.run.applied",
+  "status": "approved",
+  "value": "Appliqué",
+  "original": "Applied"
+ },
+ {
+  "key": "inventory.reorder.reviewAndOrder",
+  "status": "approved",
+  "value": "Vérifier et marquer comme commandé",
+  "original": ""
+ },
+ {
+  "key": "label.orderable",
+  "status": "approved",
+  "value": "Demandable",
+  "original": "Commandable"
+ },
+ {
+  "key": "barcode.print.col.label",
+  "status": "approved",
+  "value": "Étiquette",
+  "original": "Etiquette"
+ },
+ {
+  "key": "home.dashboard.title",
+  "status": "approved",
+  "value": "Tableau de bord",
+  "original": ""
+ },
+ {
+  "key": "analyzer.fieldMapping.panel.status.unmapped",
+  "status": "approved",
+  "value": "Non mappé",
+  "original": "Unmapped"
+ },
+ {
+  "key": "banner.menu.resultvalidation.cytobacteriology",
+  "status": "approved",
+  "value": "Cytobactériologie",
+  "original": "Cytobacteriologie"
+ },
+ {
+  "key": "banner.menu.eqa.mgmt.tooltip",
+  "status": "approved",
+  "value": "Gérer les programmes d'EEQ, les participants et les distributions",
+  "original": "Gérer les programmes EQE, participants et distributions"
+ },
+ {
+  "key": "pathology.label.view",
+  "status": "approved",
+  "value": "Voir le fichier",
+  "original": "Voir la fiche"
+ },
+ {
+  "key": "banner.menu.eqa.tests.tooltip",
+  "status": "approved",
+  "value": "Demandes d'analyses EEQ et inscription aux programmes",
+  "original": "Commandes de tests EQE et inscription aux programmes"
+ },
+ {
+  "key": "eqa.competency.band.underReview",
+  "status": "approved",
+  "value": "En cours de vérification",
+  "original": "Under review"
+ },
+ {
+  "key": "analyzer.fieldMapping.panel.mapping.retired",
+  "status": "approved",
+  "value": "Retiré",
+  "original": "Retired"
+ },
+ {
+  "key": "compliance.testThresholds.openEditor",
+  "status": "approved",
+  "value": "Ouvrir",
+  "original": "Ouvert"
+ },
+ {
+  "key": "analyzer.fieldMapping.stats.unmapped",
+  "status": "approved",
+  "value": "Champs non mappés",
+  "original": "Unmapped Fields"
+ },
+ {
+  "key": "analyzerType.editor.protocolVersion",
+  "status": "approved",
+  "value": "Version du protocole",
+  "original": "Protocol version"
+ },
+ {
+  "key": "microbiology.admin.breakpoints.back",
+  "status": "approved",
+  "value": "Retour aux référentiels",
+  "original": "Retour aux étalons"
+ },
+ {
+  "key": "barcode.label.info.labnumber",
+  "status": "approved",
+  "value": "Numéro de laboratoire",
+  "original": "Numéro d'Accession"
+ },
+ {
+  "key": "compliance.limitType.range",
+  "status": "approved",
+  "value": "Intervalle de référence",
+  "original": "Valeurs normales "
+ }
+]

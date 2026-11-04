@@ -1,0 +1,141 @@
+<ac:structured-macro ac:name="note" ac:schema-version="1" ac:macro-id="6204aab6-4e29-443c-a89d-40336bdeb8c1"><ac:rich-text-body><p><strong>Work in progress.</strong> This page is published before its review is finished so you can use it now. It is being reviewed under <a href="https://uwdigi.atlassian.net/browse/OGC-1536">OGC-1536</a>, so details may still change. If something on your screen does not match, add a comment to this page.</p></ac:rich-text-body></ac:structured-macro>
+
+<h2>At a glance</h2>
+<table><tbody>
+<tr><th>Purpose</th><td>Find patient reports whose results have been released, print them, and reprint or reissue them when results are added or corrected.</td></tr>
+<tr><th>You'll end up with</th><td>A printed patient report (PDF) with a version number, recorded in the order's version history so you can see what was issued, when, by whom and what changed.</td></tr>
+<tr><th>Who does this</th><td>Reception or reporting staff who hand out or dispatch results. Access is set by user permissions and can be configured by your administrator.</td></tr>
+<tr><th>Before you start</th><td>At least one result on the order must be validated and released. Know the lab number, the patient, or the facility you are printing for.</td></tr>
+<tr><th>Where</th><td>Main menu &rarr; Reports &rarr; Routine &rarr; Report Print Queue</td></tr>
+</tbody></table>
+
+<h2>Overview</h2>
+<p>The Report Print Queue lists patient reports as soon as their first result is released. Each row shows whether the report is complete (<strong>Partial</strong>, <strong>Final</strong> or <strong>Amended</strong>) and whether its current content has been printed (<strong>Unprinted</strong> or <strong>Printed</strong>). Printing from the queue issues a numbered version of the redesigned patient report. A printed report comes back to the queue when more results are released or a printed result is corrected, so nothing released goes out of date without being noticed.</p>
+
+<h2>Step 1: Open the queue</h2>
+<p>Go to Main menu &rarr; Reports &rarr; Routine &rarr; Report Print Queue. The list loads on open; you do not need to press Search.</p>
+<p>At the top of the page:</p>
+<ul>
+<li>An information line: <em>Reports land here when their first result is released. Printed reports come back when more results are released or a printed result changes.</em></li>
+<li>A legend for the five tags used in the list: <strong>Partial</strong> (some results are not released yet), <strong>Final</strong> (every result is released), <strong>Amended</strong> (a printed result changed, or the report was reissued with a correction), <strong>Unprinted</strong> (the current content has not been printed yet) and <strong>Printed</strong> (the last print matches what is released).</li>
+<li>Two counters, <strong>To print</strong> and <strong>Amended to print</strong>.</li>
+<li>The lookup and filter controls: <strong>Lab Number</strong>, <strong>Range</strong>, <strong>Search by patient</strong>, <strong>State</strong>, <strong>Print status</strong>, <strong>Time window</strong>, <strong>Facility</strong>, <strong>Ward / Dept / Unit</strong> and <strong>Requester</strong>.</li>
+</ul>
+<p>The list has the columns <strong>Lab No / Name</strong>, <strong>Subject</strong>, <strong>Details</strong>, <strong>Released / Submitted</strong>, <strong>State</strong>, <strong>Print status</strong>, <strong>Version</strong> and <strong>Action</strong>. The newest release is at the top. An unprinted report shows <em>Not issued</em> in the Version column.</p>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="01-queue.png" ri:version-at-save="1" /></ac:image></p>
+<p><em>Figure 1. The Report Print Queue on open, with the state legend, the To print and Amended to print counters, the filters, and the newest released report at the top of the list.</em></p>
+
+<h2>Step 2: Narrow the list to what you are printing</h2>
+<p>Use the filters to show only the reports you need. For example, to print the reports for one clinic, type at least two characters in <strong>Facility</strong> and pick the clinic from the list. The chosen facility appears as a tag under the filters, the <strong>Ward / Dept / Unit</strong> filter becomes available, <strong>Clear filters</strong> appears, and the counters recount for the filtered list.</p>
+<p>The other filters work the same way:</p>
+<ul>
+<li><strong>State</strong>: Amended, Final or Partial.</li>
+<li><strong>Print status</strong>: All, Unprinted or Printed.</li>
+<li><strong>Time window</strong>: Last 24 hours, Last 7 days, Last 30 days, All time or Custom range. As the help text says, the window applies to printed reports; unprinted reports always show.</li>
+<li><strong>Requester</strong>: type at least two characters of the requesting provider's name.</li>
+</ul>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="02-filtered.png" ri:version-at-save="1" /></ac:image></p>
+<p><em>Figure 2. The queue filtered to Kila Kila Urban Clinic: the facility tag, Clear filters, and the counters showing 2 to print and 0 amended to print. The top row is a Partial 1/3 report that has not been issued.</em></p>
+
+<h2>Step 3: Check what a report contains</h2>
+<p>Press the arrow at the start of a row to expand it. The expanded row shows:</p>
+<ul>
+<li><strong>Tests</strong>: each test with its <strong>Result</strong>, <strong>Flag</strong>, the time it was <strong>Released</strong>, and who it was <strong>Validated by</strong>.</li>
+<li><strong>Order</strong>: <strong>Facility</strong>, <strong>Ward / Dept / Unit</strong>, <strong>Requester</strong>, <strong>Collected</strong> and <strong>Received</strong>.</li>
+<li><strong>Version history</strong>: one line per issued version, with <strong>Version</strong>, <strong>Issued</strong>, <strong>By</strong>, <strong>Change</strong>, <strong>Completeness</strong> (released results out of total) and <strong>Fingerprint</strong>, and an <strong>Open PDF</strong> link to the archived copy of that version.</li>
+</ul>
+<p>In Figure 3 the report was first issued as v1 (<em>First issue</em>, 3/3). HDL cholesterol was then corrected and re-released, which made the row <strong>Amended</strong>. Printing it again issued v2, tagged <strong>Amended</strong>, with the change <em>HDL cholesterol 0.50 &rarr; 0.58 g/l (Result corrected)</em>.</p>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="03-row-details.png" ri:version-at-save="1" /></ac:image></p>
+<p><em>Figure 3. An expanded Amended row: the three tests with their release times and validator, the order details, and a version history with v1 (First issue) and v2 (Amended, HDL cholesterol corrected).</em></p>
+
+<h2>Step 4: Print the report</h2>
+<p>Press <strong>Print</strong> on the row. OpenELIS produces the report as a PDF and records a new version if the content has changed since the last print. A green message confirms the print, for example <em>1 report ready. Printed version 1 of DEV01260000000001248</em>, and the row changes to <strong>Printed</strong> with the version number (here <strong>v1</strong>).</p>
+<p>When this step was driven, pressing Print opened a new browser tab for the PDF. In the capture browser the PDF was saved as a download with a generated file name rather than displayed; how it opens depends on your browser's PDF settings.</p>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="04-printed.png" ri:version-at-save="1" /></ac:image></p>
+<p><em>Figure 4. After Print: the confirmation &quot;1 report ready, Printed version 1 of DEV01260000000001248&quot; and the row now Final, Printed, v1.</em></p>
+
+<h2>Step 5: Read the printed report</h2>
+<p>The patient report printed from the queue has these parts, top to bottom:</p>
+<ul>
+<li>The report title, for example <em>Results: final report</em>.</li>
+<li>A <strong>PATIENT</strong> block (name, age and sex, Date of Birth, Patient ID, National ID, URAP Number), an <strong>ORDER</strong> block (Lab Number, Program, Requester, Site / ward) and a <strong>DATES</strong> block (Order Date, Completed).</li>
+<li>A <strong>SAMPLES</strong> table with Collected, Received and Condition.</li>
+<li>The results table (Test, SMP, Method, Result, Flag, Reference range, Units, Completed), grouped by section such as <strong>BIOCHEMISTRY</strong>. Results outside the reference range are printed in bold with a flag such as <strong>&uarr; H</strong> and a bar in the margin.</li>
+<li><strong>GENERAL COMMENTS</strong>, <strong>VALIDATED AND RELEASED BY</strong> with the validator and time, and <em>End of report</em>.</li>
+<li>A legend of the flags, and a footer with the version and issue time (for example <em>Version 1 &middot; Issued 22/10/26 00:39</em>), the lab number and the page number.</li>
+</ul>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="pdf-final-v1.png" ri:version-at-save="1" /></ac:image></p>
+<p><em>Figure 5. The top of a version 1 final report with two results flagged above normal, and the page footer showing the version, issue time, lab number and page.</em></p>
+<p>A corrected report says so in a box above the patient details, naming the version it replaces and the change, for example <em>Version 2. Corrected report. Replaces the report issued 22/10/26 00:26. Change: HDL cholesterol 0.50 &rarr; 0.58 g/l (Result corrected).</em> The corrected test carries a note with the time of the correction.</p>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="pdf-corrected-v2.png" ri:version-at-save="1" /></ac:image></p>
+<p><em>Figure 6. A version 2 corrected report: the correction box, the HDL cholesterol result with its &quot;Result corrected&quot; note, and the footer reading Version 2.</em></p>
+
+<h2>Step 6: Look up a specific order</h2>
+<p>To go straight to one order, scan or type its lab number in <strong>Lab Number</strong> and press Enter. The lookup shows as a tag (for example <em>Lab No: DEV01260000000001254</em>) with <strong>Clear search</strong> next to it and the note <em>Other filters are off while you look up a specific order</em>; the other filters are greyed out while the lookup is active. Press <strong>Clear search</strong> to return to the filtered list.</p>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="05-lookup.png" ri:version-at-save="1" /></ac:image></p>
+<p><em>Figure 7. A lab number lookup: the Lab No tag, Clear search, the greyed-out filters and the single matching row.</em></p>
+<p>To look up a run of lab numbers, turn <strong>Range</strong> on, enter the first lab number and the <strong>To lab number</strong>, and press Enter. The tag then reads <em>Lab No: [first] to [last]</em>.</p>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="06-range.png" ri:version-at-save="1" /></ac:image></p>
+<p><em>Figure 8. A range lookup from DEV01260000000001245 to DEV01260000000001249, with Range turned On and the matching reports listed.</em></p>
+
+<h2>Step 7: Find all reports for a patient</h2>
+<p>Press <strong>Search by patient</strong>. A patient search opens with <strong>Patient Id</strong>, <strong>Previous Lab Number</strong>, <strong>Last Name</strong>, <strong>First Name</strong>, <strong>Date of Birth</strong> and <strong>Sex</strong>, and the buttons <strong>Search</strong>, <strong>External Search</strong> and <strong>Clear</strong>. Enter what you know, press <strong>Search</strong>, and select the patient in the results.</p>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="07-patient-search.png" ri:version-at-save="1" /></ac:image></p>
+<p><em>Figure 9. Search by patient: the search fields with Last Name filled in, and one matching patient in the results.</em></p>
+<p>The queue then lists that patient's released reports, with the tag <em>Patient: [name]</em>, <strong>Clear search</strong>, and the other filters off. Reports from every facility are listed, not only the facility you had filtered on before.</p>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="08-patient-result.png" ri:version-at-save="1" /></ac:image></p>
+<p><em>Figure 10. The queue after selecting the patient: two released reports for Raka, Michael from two facilities.</em></p>
+
+<h2>Field reference</h2>
+<table><tbody>
+<tr><th>Field or control</th><th>What it shows or does</th></tr>
+<tr><td>To print</td><td>Count of reports in the current list whose content has not been printed. Recounts with filters and lookups.</td></tr>
+<tr><td>Amended to print</td><td>Count of amended reports in the current list that have not been printed.</td></tr>
+<tr><td>Lab Number</td><td>Scan or type one lab number and press Enter to look up that order. Turns the other filters off until you press Clear search.</td></tr>
+<tr><td>Range</td><td>When On, adds To lab number so you can look up a run of lab numbers.</td></tr>
+<tr><td>Search by patient</td><td>Opens a patient search; selecting a patient lists that patient's released reports.</td></tr>
+<tr><td>State (filter)</td><td>Amended, Final or Partial.</td></tr>
+<tr><td>Print status (filter)</td><td>All, Unprinted or Printed.</td></tr>
+<tr><td>Time window</td><td>Last 24 hours, Last 7 days, Last 30 days, All time or Custom range. Applies to printed reports only; unprinted reports always show.</td></tr>
+<tr><td>Facility, Ward / Dept / Unit, Requester</td><td>Type at least two characters to search. Ward / Dept / Unit is available once a facility is chosen.</td></tr>
+<tr><td>Lab No / Name, Subject, Details</td><td>Lab number; patient name and national ID; requester and facility.</td></tr>
+<tr><td>Released / Submitted</td><td>When results on the order were last released. The list is sorted newest first.</td></tr>
+<tr><td>State (column)</td><td>Partial with released/total (for example Partial 2/3), Final, or Amended. A Critical tag can also appear.</td></tr>
+<tr><td>Print status (column)</td><td>Unprinted or Printed.</td></tr>
+<tr><td>Version</td><td>The last issued version (v1, v2, ...), or Not issued.</td></tr>
+<tr><td>Print</td><td>Prints the report and issues a new version when the content has changed.</td></tr>
+<tr><td>Version history</td><td>In the expanded row: Version, Issued, By, Change, Completeness, Fingerprint and Open PDF for each issued version.</td></tr>
+</tbody></table>
+
+<h2>Tips</h2>
+<ul>
+<li>Work from <strong>To print</strong> and <strong>Amended to print</strong>: filter by facility, then use <strong>Print status</strong> = Unprinted to see only what still needs to go out.</li>
+<li>An <strong>Amended</strong> row means a result that was already printed has changed. Print it again so the clinician gets the corrected report; the new version names the change.</li>
+<li>A <strong>Partial</strong> report can be printed. When the remaining results are released the row comes back as Final and Unprinted.</li>
+<li>Lookups by lab number, range or patient ignore the facility and other filters, so they can show orders from other facilities.</li>
+<li>The times in the queue are shown in your browser's time zone, while the times printed on the report are the server's. On the test server these differed (for example 5:26 PM in the queue and 00:26 on the report). Check your server's time zone setting if they differ at your site. Reported as OGC-1550.</li>
+<li>In the expanded row, <strong>Collected</strong> showed a dash for every order checked, although the printed report shows a collection date and time for the same orders. This is a known issue on the instance documented here (OGC-1550).</li>
+<li>For a patient with no national ID, the Subject column shows a number in place of the national ID (OGC-1550).</li>
+
+<li>On the test server the printed report had no laboratory name or logo above the report title. Whether a letterhead appears at your site depends on your configuration; this has not been verified.</li>
+</ul>
+
+<h2>Not yet available</h2>
+<ul>
+<li>Printing several selected reports at once as one combined PDF (planned under OGC-1031).</li>
+<li>Report types other than the patient report, and a progress status while a large report is generated (planned as the second phase of OGC-1031).</li>
+<li>A reissue action without a result change. The legend mentions reports reissued with a correction, but no separate reissue control is shown on the rows.</li>
+<li>Emailing a report from the queue. Messages the laboratory sends are listed on Sent Messages.</li>
+</ul>
+
+<h2>Provenance</h2>
+<table><tbody>
+<tr><th>Status</th><td>Draft for review</td></tr>
+<tr><th>Instance</th><td>testing.openelis-global.org, header version <em>3.4.0-SNAPSHOT</em> (3.3.0 features: OGC-431 Report Print Queue, OGC-932 redesigned patient report)</td></tr>
+<tr><th>Route</th><td>/ReportPrintQueue</td></tr>
+<tr><th>Date</th><td>21 October 2026 (Pacific time; 22 October on the server, UTC)</td></tr>
+<tr><th>Data</th><td>Seeded orders for Kila Kila Urban Clinic, requester Toua, Mary (DEV01260000000001245 to 1249 and 1254). Orders, results and validation were seeded through the REST calls the screens make; the HDL cholesterol correction on DEV01260000000001247 was also seeded that way.</td></tr>
+<tr><th>Driven</th><td>Open the queue; Facility filter; expand a row; Print (Final, Unprinted to Printed v1; Amended to v2); Lab Number lookup; Range lookup; Search by patient and select; Clear search. PDFs read for Figures 5 and 6.</td></tr>
+<tr><th>Observed only</th><td>State, Print status and Time window options (opened, not applied for figures); Requester and Ward / Dept / Unit filters; Open PDF link; External Search; Critical tag (seen on other rows).</td></tr>
+<tr><th>Unverified</th><td>That printing unchanged content repeats the same version (reprint) through the screen; Open PDF content; Custom range; letterhead configuration.</td></tr>
+</tbody></table>

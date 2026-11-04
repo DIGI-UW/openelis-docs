@@ -1,0 +1,162 @@
+<ac:structured-macro ac:name="warning" ac:schema-version="1" ac:macro-id="3d58cfbd-2da8-493c-859f-4a36d99e2f0a"><ac:rich-text-body><p><strong>Pre-release.</strong> This page describes Microbiology V2 (OGC-1383) as built on the pre-release test server pngtest.openelis-global.org. It is not part of the OpenELIS 3.3.0 release, and screens may change before it is merged. It stays in the review area until the work is merged and checked on a release build.</p></ac:rich-text-body></ac:structured-macro>
+
+<h2>At a glance</h2>
+<table><tbody>
+<tr><th>Purpose</th><td>Follow a microbiology specimen from the order through culture, identification and susceptibility testing to a released report.</td></tr>
+<tr><th>You'll end up with</th><td>A case with its cultures, readings, isolates and validated AST results, and a final report.</td></tr>
+<tr><th>Who does this</th><td>Microbiology bench staff and the reviewing microbiologist. Access is set by user permissions and can be configured by your administrator.</td></tr>
+<tr><th>Before you start</th><td>The culture tests and reference data are set up (see <a href="https://uwdigi.atlassian.net/wiki/spaces/OG/pages/1729167362">Set up microbiology tests and reference data</a>).</td></tr>
+<tr><th>Where</th><td>Main menu &rarr; Order &rarr; Add Clinical Order &rarr; Enter Order (to order), and Main menu &rarr; Microbiology &rarr; Microbiology worklist (to work the case)</td></tr>
+</tbody></table>
+
+<h2>Overview</h2>
+<p>Ordering a culture test opens a microbiology case automatically. The case is worked from the Microbiology worklist and has sections for the order detail, the samples, the cultures, the isolates, the AST (or DST) results, the report and release, and a case timeline. A case that has been finally released is read-only; changes after release go through an amendment.</p>
+
+<h2>Step 1: Order the culture</h2>
+<p>On Enter Order, choose the sample type and pick the culture test and any related tests. Below the samples, <strong>What this order will open</strong> previews the case: an <strong>Opens a case</strong> tag followed by the tests, the lab unit and the sample.</p>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="01-order-preview-opens-case.png" ri:version-at-save="2" /></ac:image></p>
+<p><em>Figure 1. Urine culture and Gram stain ordered on a urine sample; the preview reads &quot;Opens a case: Urine culture, Gram stain case in Bacteria: Urines sample 1&quot;.</em></p>
+
+<h2>Step 2: Find the case on the worklist</h2>
+<p>Go to Main menu &rarr; Microbiology &rarr; Microbiology worklist. Search by lab number or patient name, or filter by <strong>Lab unit</strong>, <strong>Status</strong>, <strong>Opened from</strong> and <strong>Opened through</strong>, and choose how to sort. Each row shows the <strong>Lab Number</strong>, <strong>Patient or site</strong>, <strong>Lab unit</strong>, <strong>Specimen</strong>, <strong>Status</strong> and <strong>Opened</strong> date. Select the lab number to open the case.</p>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="02-worklist.png" ri:version-at-save="2" /></ac:image></p>
+<p><em>Figure 2. The Microbiology worklist with the blood culture and urine culture cases opened on 21 October at the top.</em></p>
+<p>The worklist also has an <strong>AST runs</strong> view. It opens on <strong>Work needing action</strong>, with counts for <strong>In queue</strong>, <strong>Pending setup</strong>, <strong>In progress</strong> and <strong>Results in - review</strong>; select a count to list that queue. A note explains that connected analysers send results directly to the case, and that failed or unmatched events are kept in Analyser Import Issues. <strong>Surveillance scope</strong> narrows the AST rows by lab unit, reporting period and specimen types.</p>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="12-worklist-ast-runs.png" ri:version-at-save="2" /></ac:image></p>
+<p><em>Figure 3. The AST runs view: the Work needing action counts, the note on analyser results, and Surveillance scope set to this month.</em></p>
+
+<h2>Step 3: Check the case header and order detail</h2>
+<p>The case opens with its lab number, status, work stage, release state and order priority, the <strong>Patient</strong> (name, date of birth, sex) and the <strong>Lab unit</strong> with the specimen. Under <strong>Case info</strong>, <strong>Order detail</strong> collects what the laboratory needs for culture setup and critical-result follow-up: <strong>Patient origin</strong>, <strong>Date of admission</strong>, <strong>Number of sets</strong>, <strong>Clinical history</strong> and recent antibiotic exposure. A line lists anything still required before final release. <strong>Samples</strong> lists each sample with its specimen, body site, container, collector, status and collection date.</p>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="03-case-header.png" ri:version-at-save="2" /></ac:image></p>
+<p><em>Figure 4. A finally released urine culture case: work stage and release state Final Released, the patient and lab unit, &quot;Final case is read-only&quot; and Open amendment.</em></p>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="04-order-detail.png" ri:version-at-save="2" /></ac:image></p>
+<p><em>Figure 5. Order detail (Patient origin Outpatient), the line listing what is required before final release, and the sample.</em></p>
+<p>To fill these in on an open case, start under <strong>Case info</strong>: choose the <strong>Program</strong> (only programs switched on for microbiology are listed) and the <strong>Culture purpose</strong> (for example Diagnostic), and press <strong>Save</strong>. Then, under <strong>Order detail</strong>, choose the <strong>Patient origin</strong>, enter the <strong>Date of admission</strong> (&quot;Leave blank when it is not known&quot;), the <strong>Number of sets</strong> (collection groups, such as two blood-culture sets drawn from different sites), the <strong>Clinical history</strong>, and tick <strong>Patient has recent antibiotic exposure (within 2 weeks)</strong> if it applies. Press <strong>Save order detail</strong>.</p>
+<p>{{IMG:13-case-info-program.png}}</p>
+<p><em>Figure 6. Blood culture case DEV01260000000000006, Incubating: Program AMR sentinel surveillance and Culture purpose Diagnostic under Case info, and Order detail with Patient origin Inpatient and Date of admission 19/10/2026.</em></p>
+
+<h2>Step 4: Inoculate a culture</h2>
+<p>In the <strong>Culture</strong> section, each bottle or plate is a card. Press <strong>Inoculate culture</strong> to add one, and enter the <strong>Source sample or aliquot</strong>, the <strong>Bottle or plate identifier</strong>, the <strong>Medium</strong> (or tick <strong>Lot not tracked</strong>), the <strong>Atmosphere</strong>, the <strong>Temperature (&deg;C)</strong> and the <strong>Incubation duration</strong> with its unit. Press <strong>Save</strong>.</p>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="05-blood-culture-bottles.png" ri:version-at-save="2" /></ac:image></p>
+<p><em>Figure 7. A blood culture case with bottle BC-1A, an aerobic blood culture bottle incubating at 35 &deg;C for 5 days.</em></p>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="06-inoculate-culture-dialog.png" ri:version-at-save="2" /></ac:image></p>
+<p><em>Figure 8. Inoculate culture filled in for a second set, bottle BC-2A from sample DEV01260000000000006-2: aerobic blood culture bottle, lot not tracked, aerobic, 35 &deg;C for 5 days.</em></p>
+
+<h2>Step 5: Record readings and the culture outcome</h2>
+<p>Each culture card shows the medium lot, atmosphere, temperature, incubation duration, when it was inoculated and when incubation ends, and when the next check is due. Its buttons are <strong>Add reading</strong>, <strong>Extend incubation</strong>, <strong>Record outcome</strong>, <strong>Edit inoculated time</strong>, <strong>Subculture</strong> and <strong>Add test on this culture</strong>, with <strong>View tests on this culture</strong> and <strong>Notes</strong>. Readings are listed with the reading, quantity, note, incubation day, who recorded it and when. Once an outcome is recorded, the card shows it (for example <strong>Growth</strong>), when it turned positive, the time to positivity, and who recorded the outcome.</p>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="07-culture-card.png" ri:version-at-save="2" /></ac:image></p>
+<p><em>Figure 9. Plate CLED-1 with outcome Growth and one reading: heavy, pure growth of lactose-fermenting colonies, more than 100,000 CFU/mL.</em></p>
+<p>To record a reading, press <strong>Add reading</strong> on the culture card. Choose the <strong>Reading</strong> (Growth observed, No growth observed or Contamination observed), optionally a <strong>Quantity</strong> (Scant, Moderate or Heavy), and add a <strong>Note</strong>. The dialog states that laboratory time is UTC and that receipt time, lot eligibility and editing rights are checked when you save. Press <strong>Save</strong>. The reading is added to <strong>Readings</strong> with the incubation day.</p>
+<p>{{IMG:14-add-reading.png}}</p>
+<p><em>Figure 10. Add reading on aerobic bottle BC-1A: Growth observed, with the note that the bottle flagged positive and the Gram stain showed Gram-negative rods.</em></p>
+<p>To record the outcome, press <strong>Record outcome</strong> and choose the <strong>Outcome</strong>: Growth, No growth or Contaminated. For Growth, <strong>Positive at</strong> is filled with the current time and can be changed, and the dialog shows the <strong>Time to positivity</strong>. Press <strong>Save</strong>.</p>
+<p>{{IMG:15-record-outcome.png}}</p>
+<p><em>Figure 11. Record outcome on BC-1A: Growth, positive at 10/22/2026 8:42 PM, time to positivity 0d 20h 26m. The reading just saved is listed behind the dialog.</em></p>
+<p>The card then shows the outcome, when the culture turned positive, the time to positivity and who recorded the outcome. Its buttons change to <strong>Add reading</strong>, <strong>Extend incubation</strong>, <strong>Edit positive time</strong>, <strong>Pick isolate</strong>, <strong>Subculture</strong>, <strong>Add test on this culture</strong> and <strong>Gram stain</strong>.</p>
+<p>{{IMG:16-culture-positive.png}}</p>
+<p><em>Figure 12. BC-1A after the outcome: Growth, positive at 10/22/2026 8:42 PM UTC, time to positivity 0d 20h 26m, outcome recorded by Open ELIS, and the reading.</em></p>
+
+<h2>Step 6: Subculture a positive culture</h2>
+<p>On the positive culture card, press <strong>Subculture</strong>. The <strong>Inoculate culture</strong> dialog opens with the source sample fixed and <strong>From culture</strong> showing the parent culture. Choose the <strong>Subculture purpose</strong> (Diagnostic or Screening), enter the <strong>Bottle or plate identifier</strong>, choose the <strong>Medium</strong> (or tick <strong>Lot not tracked</strong>), the <strong>Atmosphere</strong>, the <strong>Temperature (&deg;C)</strong> and the <strong>Incubation duration</strong>. Further down are <strong>Check interval (hours)</strong>, <strong>Loop volume (&micro;L)</strong> and <strong>Inoculated at</strong>. Press <strong>Save</strong>.</p>
+<p>{{IMG:17-subculture-dialog.png}}</p>
+<p><em>Figure 13. Subculture from BC-1A: Diagnostic, plate BC-1A-MAC on MacConkey agar plate with lot not tracked, aerobic, 35 &deg;C.</em></p>
+<p>The subculture is added to the case as its own culture card, incubating, with the same buttons as any culture.</p>
+<p>{{IMG:18-subculture-card.png}}</p>
+<p><em>Figure 14. The new subculture card BC-1A-MAC, MacConkey agar plate, Incubating: aerobic, 35 &deg;C for 24 hours, incubation ending 10/23/2026 8:42 PM UTC.</em></p>
+
+<h2>Step 7: Extend incubation</h2>
+<p>When a culture needs longer than planned, press <strong>Extend incubation</strong> on its card. Enter <strong>Extend by</strong> with the <strong>Extension unit</strong> (Hours, Days or Weeks), and choose the <strong>Extension reason</strong> (Awaiting growth, Repeat observation or Other). The dialog shows the <strong>New incubation end</strong>. Add a <strong>Note</strong> and press <strong>Save</strong>.</p>
+<p>{{IMG:19-extend-incubation.png}}</p>
+<p><em>Figure 15. Extend incubation on anaerobic bottle BC-1B: 2 Days, Awaiting growth, new incubation end 10/29/2026 12:15 AM UTC, with the note that endocarditis is suspected.</em></p>
+<p>The extension is listed under <strong>Incubation extensions</strong> with who recorded it and when.</p>
+<p>{{IMG:20-incubation-extended.png}}</p>
+<p><em>Figure 16. Incubation extensions on BC-1B: 2 Days, Awaiting growth, the note, recorded by Open ELIS at 10/22/2026 8:42 PM UTC.</em></p>
+
+<h2>Step 8: Log a critical-result call</h2>
+<p>Press <strong>Critical communication</strong> in the case header (or <strong>Log critical notification</strong> on an isolate) to go to the <strong>Critical communication</strong> section: &quot;Log critical-result callbacks and acknowledge them inline.&quot; Choose the <strong>Critical result target</strong> (Case, Isolate, Sample Item or Result); <strong>Target record</strong> is filled in for you. Enter the <strong>Recipient</strong> and <strong>Recipient contact</strong>, choose the <strong>Communication method</strong> (Phone, SMS, In Person or Email) and type the <strong>Message</strong>. <strong>Follow-up needed</strong> is ticked by default. Press <strong>Log communication</strong>.</p>
+<p>{{IMG:21-critical-form.png}}</p>
+<p><em>Figure 17. A phone call to Dr Joseph Kaupa on the medical ward about the positive blood culture, with follow-up needed. The counter shows 0 calls logged.</em></p>
+<p>The call is listed below the form with the recipient, message, target and method, and the status <strong>Open</strong>. The counter in the section header goes up by one. When the recipient has confirmed, press <strong>Acknowledge</strong>.</p>
+<p>{{IMG:22-critical-logged.png}}</p>
+<p><em>Figure 18. The logged call: recipient and message, Case &middot; Phone, status Open, with Acknowledge. The counter shows 1.</em></p>
+
+<h2>Step 9: Identify the isolate</h2>
+<p>The <strong>Isolates</strong> section lists each isolate with its organism and status, its clinical significance, the source culture, the Gram stain and colony morphology, the identification method, when the identification was made and the confidence. <strong>Log critical notification</strong> records a call about the isolate, and <strong>Identification history</strong> lists earlier identifications. Referrals of isolates or specimens to another laboratory are listed under <strong>Isolate and specimen referrals</strong>.</p>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="08-isolate.png" ri:version-at-save="2" /></ac:image></p>
+<p><em>Figure 19. Isolate ISO-1, Escherichia coli, Final and clinically significant: Gram-negative rods, yellow opaque colonies on CLED, biochemical identification at 99% confidence.</em></p>
+
+<h2>Step 10: Review the AST results</h2>
+<p>The <strong>AST / DST</strong> section shows each isolate with its assigned panels and each run with its status, method and time. For every antimicrobial agent the run lists the <strong>MIC / zone</strong>, the <strong>Interpretation</strong> with the breakpoint standard and rule used, and whether it is <strong>Selected for report</strong>. <strong>Reading and interpretation history</strong> keeps the earlier readings.</p>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="09-ast-validated.png" ri:version-at-save="2" /></ac:image></p>
+<p><em>Figure 20. A validated broth microdilution run for ISO-1: resistant to ampicillin and ciprofloxacin, susceptible to ceftriaxone, gentamicin and meropenem, all selected for report.</em></p>
+
+<h2>Step 11: Preview the report and release</h2>
+<p><strong>Report and release</strong> shows the report as it will read, under <strong>Report version</strong> (the current preview, or an earlier released version). The report groups the case by lab unit into <strong>Initial testing</strong>, <strong>Culture findings</strong>, <strong>AST / DST</strong> (agent, MIC or zone, interpretation and breakpoint standard) and <strong>Additional testing</strong>.</p>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="10-report-and-release.png" ri:version-at-save="2" /></ac:image></p>
+<p><em>Figure 21. The report preview: culture finding CLED-1 Growth, isolate ISO-1 Escherichia coli, and the five AST results interpreted with CLSI 2026.</em></p>
+
+<h2>Step 12: Check the case timeline</h2>
+<p><strong>Case timeline</strong> lists every recorded event with its date and time, author and note, from the order being linked to the case through inoculation, readings, outcome and release.</p>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="11-case-timeline.png" ri:version-at-save="2" /></ac:image></p>
+<p><em>Figure 22. The case timeline from the order on 21 October to the culture outcome, recorded in UTC.</em></p>
+
+<h2>Field reference</h2>
+<table><tbody>
+<tr><th>Field or control</th><th>What it shows or does</th></tr>
+<tr><td>What this order will open</td><td>On Enter Order: the case the order will open, with its tests, lab unit and sample.</td></tr>
+<tr><td>Work stage, Release state</td><td>Where the case is in the workflow, and whether it is released (preliminary or final).</td></tr>
+<tr><td>Open amendment</td><td>Reopens a finally released case for a correction.</td></tr>
+<tr><td>Required before final release</td><td>Lists order details that must be filled before the case can be finally released.</td></tr>
+<tr><td>Inoculate culture</td><td>Adds a bottle or plate with its medium, atmosphere, temperature and incubation time.</td></tr>
+<tr><td>Program, Culture purpose</td><td>Case info: the program the case belongs to (only programs shown on microbiology cases), and whether the culture is diagnostic or for screening.</td></tr>
+<tr><td>Patient has recent antibiotic exposure (within 2 weeks)</td><td>Order detail: records recent antibiotic exposure for interpretation.</td></tr>
+<tr><td>Add reading, Extend incubation, Record outcome</td><td>Records a reading, lengthens incubation with a reason, or records the culture's outcome.</td></tr>
+<tr><td>Reading, Quantity</td><td>Add reading: Growth observed, No growth observed or Contamination observed; Scant, Moderate or Heavy.</td></tr>
+<tr><td>Outcome, Positive at</td><td>Record outcome: Growth, No growth or Contaminated; for Growth, when the culture turned positive.</td></tr>
+<tr><td>Extend by, Extension unit, Extension reason, New incubation end</td><td>Extend incubation: how much longer (Hours, Days or Weeks), why (Awaiting growth, Repeat observation or Other), and the resulting end time.</td></tr>
+<tr><td>From culture, Subculture purpose</td><td>Subculture: the parent culture, and Diagnostic or Screening.</td></tr>
+<tr><td>Edit positive time, Pick isolate</td><td>On a positive culture: corrects when it turned positive, or starts an isolate from it.</td></tr>
+<tr><td>Critical result target, Target record</td><td>Critical communication: what the call is about (Case, Isolate, Sample Item or Result) and the record it refers to.</td></tr>
+<tr><td>Recipient, Recipient contact, Communication method, Message</td><td>Critical communication: who was told, how to reach them, how (Phone, SMS, In Person or Email) and what was said.</td></tr>
+<tr><td>Follow-up needed, Acknowledge</td><td>Marks a call as needing follow-up (ticked by default); Acknowledge closes an Open call once the recipient has confirmed.</td></tr>
+<tr><td>Subculture, Add test on this culture</td><td>Starts a subculture, or orders a further test on the culture.</td></tr>
+<tr><td>Time to positivity</td><td>Time from inoculation to the culture turning positive.</td></tr>
+<tr><td>Log critical notification</td><td>On an isolate: goes to the Critical communication section to record a call.</td></tr>
+<tr><td>Selected for report</td><td>Whether an AST result appears on the report.</td></tr>
+<tr><td>Report version</td><td>Shows the current preview or an earlier released version of the report.</td></tr>
+</tbody></table>
+
+<h2>Tips</h2>
+<ul>
+<li>Fill the order detail early. Final release is blocked until everything listed as required is filled.</li>
+<li>On the test server the timeline showed internal event codes (for example CULTURE_INOCULATED and REQUEST_OWNED with an identifier) rather than plain descriptions (OGC-1553).</li>
+<li>Time to positivity is labelled in hours but shown in days, hours and minutes (for example 0d 20h 26m), while the report gives incubation in decimal hours (0.04 hours). The Readings list gives the incubation day as a decimal (for example 0.85).</li>
+<li>All culture times are in laboratory time, shown as UTC.</li>
+<li>In the Critical communication section, Target record shows an internal identifier rather than the lab number, and the logged call does not show the recipient contact.</li>
+<li>The Medium list on the test server includes a medium created for automated testing (name starting with QA_AMR). Do not choose it.</li>
+<li>On a positive culture the Gram stain button was unavailable on the test server.</li>
+<li>When no initial test such as a Gram stain is recorded, the report's Initial testing reads None.</li>
+<li>On the test server a finally released case still showed the status chip Active and was still listed on the worklist (OGC-1525, OGC-1553).</li>
+<li>The case header listed Patient origin as required before final release although it was filled in (Outpatient) (OGC-1553).</li>
+<li>Known issues on the test server: the AST runs status All does not return every run (OGC-1526); a blocked final release returns a server error rather than naming what is missing (OGC-1522).</li>
+<li>The worklist on the test server also lists cases created for automated testing (names starting with QA).</li>
+</ul>
+
+<h2>Not yet available</h2>
+<ul>
+<li>The redesigned worklist with case transfer between lab units, and culture rows with media management: built separately and not yet merged.</li>
+<li>Environmental microbiology cases.</li>
+<li>Breakpoints for disk diffusion (zone diameters).</li>
+<li>AST reporting rules, one-click suggestions, infection control alerts and AST QC (planned for Microbiology V3, OGC-1528).</li>
+</ul>
+
+<h2>Provenance</h2>
+<table><tbody>
+<tr><th>Status</th><td>Draft for review (pre-release)</td></tr>
+<tr><th>Instance</th><td>pngtest.openelis-global.org, header version <em>3.3.0-SNAPSHOT</em>, Microbiology V2 pre-release build (OGC-1383)</td></tr>
+<tr><th>Routes</th><td>/order/clinical/enter; /Microbiology/worklist; /Microbiology/cases/{id}</td></tr>
+<tr><th>Date</th><td>21 and 22 October 2026 (times on the case are UTC)</td></tr>
+<tr><th>Data</th><td>Urine culture case DEV01260000000000005 for Grace Kila (CLED-1, ISO-1 Escherichia coli, AST validated, finally released); blood culture case DEV01260000000000006 for Peter Wari (bottles BC-1A and BC-1B; BC-1A positive with subculture BC-1A-MAC; BC-1B extended by 2 days; one Open critical call).</td></tr>
+<tr><th>Driven</th><td>Enter Order with Urine culture and Gram stain (preview read, not saved); worklist and AST runs view; Inoculate culture dialog filled and cancelled. Driven and saved on screen on the blood culture case: Case info Program and Culture purpose; Order detail; Add reading and Record outcome on BC-1A; Subculture BC-1A-MAC; Extend incubation on BC-1B; Log communication in Critical communication. The urine case (inoculation, readings, outcome, identification, AST entry, validation and release) and the first blood culture bottles were entered through the REST calls the case screen makes, and the resulting screens were read.</td></tr>
+<tr><th>Observed only</th><td>Edit inoculated time, Edit positive time, Pick isolate, Add test on this culture and Container labels (opened or seen, not saved); Acknowledge; Nonconformance and Mark lost; Open amendment (not opened, to keep the released urine case unchanged); the release buttons.</td></tr>
+</tbody></table>

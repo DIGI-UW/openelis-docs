@@ -1,0 +1,164 @@
+<p><em>Reference &middot; Lab IT and system administrators</em></p>
+<ac:structured-macro ac:name="info" ac:schema-version="1"><ac:rich-text-body><p><strong>Updated for certificate pairing.</strong> From Analyzer Bridge 3.2.7 and OpenELIS 3.3.0, OpenELIS and the Bridge trust each other by certificate, not by password. They pair once with a one-time code, either configured on both sides or entered by a Global Admin on the Analysers page. This page was rewritten on 13 October 2026 for Bridge 3.4.1 and OpenELIS 3.3.0-SNAPSHOT. An OpenELIS that still connects with a Bridge password (3.2.x) needs the password procedure in <ac:link><ri:page ri:content-title="Install the Analyzer Bridge (before 3.3.0)" /><ac:link-body>Install the Analyzer Bridge (before 3.3.0)</ac:link-body></ac:link>.</p></ac:rich-text-body></ac:structured-macro>
+<h2>At a glance</h2>
+<table data-layout="default"><tbody>
+<tr><th><p>Purpose</p></th><td><p>Install and configure the Analyzer Bridge, pair it with OpenELIS, and confirm that analyzer types load in OpenELIS and that results can be delivered.</p></td></tr>
+<tr><th><p>You'll end up with</p></th><td><p>A running Bridge, and an OpenELIS whose Analysers page says <strong>Paired with the Analyzer Bridge</strong> and whose Analyser Types list is filled from the Bridge.</p></td></tr>
+<tr><th><p>Who does this</p></th><td><p>Lab IT or whoever runs the OpenELIS server installs the Bridge. Pairing on the Analysers page needs a Global Admin: from 3.3.0, analyzer setup, types, mappings and pairing are Global Admin only.</p></td></tr>
+<tr><th><p>Before you start</p></th><td><p>A host with Docker (amd64 or arm64), the OpenELIS base URL, and the analyzers you intend to connect. A TLS keystore is optional: the Bridge generates its own certificate if you do not supply one.</p></td></tr>
+<tr><th><p>Where</p></th><td><p>The Bridge host's shell and the OpenELIS server configuration, then Main menu &rarr; Analysers in OpenELIS to check or enter the pairing.</p></td></tr>
+</tbody></table>
+<h2>What the Bridge is responsible for</h2>
+<p>The Bridge and OpenELIS split the work along a deliberate line, and most configuration mistakes come from putting something on the wrong side of it.</p>
+<table data-layout="default"><tbody>
+<tr><th><p>The Bridge owns</p></th><td><p>Analyzer profiles, durable analyzer connections, the listeners themselves, message parsing, control-result recognition, file watching, and delivery of one normalised result to OpenELIS.</p></td></tr>
+<tr><th><p>OpenELIS owns</p></th><td><p>The lab-facing setup workflow, references to Bridge connections, lab units, local test catalogue bindings, verification and audit, activation intent, quality control, held results, and review.</p></td></tr>
+</tbody></table>
+<p>A <strong>profile</strong> describes how one analyzer type communicates, and supplies the defaults used when a new connection of that type is created. A <strong>connection</strong> is one durable, saved instrument: it pins a profile revision and owns its own source binding. Every normalised result the Bridge delivers carries its connection ID, and OpenELIS looks the analyzer up by that ID rather than inferring identity from the analyzer's name.</p>
+<h2>Protocol versus transport</h2>
+<p>These are configured separately and are easy to conflate. Protocol is the shape of the message; transport is how it arrives.</p>
+<table data-layout="default"><tbody>
+<tr><th><p>Protocol</p></th><td><p>ASTM, HL7, CSV: the message format and syntax.</p></td></tr>
+<tr><th><p>Transport</p></th><td><p>TCP, MLLP, Serial, File, HTTP: how the message reaches the Bridge.</p></td></tr>
+</tbody></table>
+<p>An HL7 connection over MLLP and an ASTM connection over TCP are both "a socket on a port", but they parse nothing alike, and the profile is what decides the parsing. One combination is rejected: HL7 in TCP client mode for inbound results is <strong>not supported</strong>. Inbound HL7 must be a server connection that the analyzer connects to.</p>
+<h2>The port map</h2>
+<p>The Bridge binds a small set of shared listeners at startup, before any analyzer is configured. Saved ASTM and HL7 connections receive through these shared ports rather than each opening its own.</p>
+<table data-layout="default"><tbody>
+<tr><th><p>Container port</p></th><th><p>Published by the shipped compose file as</p></th><th><p>What it is</p></th></tr>
+<tr><td><p><code>8443</code></p></td><td><p><code>8442</code></p></td><td><p>The HTTPS API, pairing and health endpoints. Always bound.</p></td></tr>
+<tr><td><p><code>12001</code></p></td><td><p><code>12000</code></p></td><td><p>Shared ASTM LIS1-A listener. Bound at startup.</p></td></tr>
+<tr><td><p><code>12011</code></p></td><td><p><code>12010</code></p></td><td><p>Shared ASTM E1381-95 listener. Bound at startup.</p></td></tr>
+<tr><td><p><code>2575</code></p></td><td><p><code>2575</code></p></td><td><p>Shared HL7 MLLP listener. Bound at startup only when <code>MLLP_ENABLED=true</code>.</p></td></tr>
+<tr><td><p>None</p></td><td><p>None</p></td><td><p>FILE connections need a mounted directory, not a port. The directory must lie under <code>bridge.file.import-roots</code> (default <code>/data/analyzer-imports</code> and <code>/data/analyzer-drops</code>).</p></td></tr>
+</tbody></table>
+<ac:structured-macro ac:name="note" ac:schema-version="1"><ac:rich-text-body><p><strong>A published port answering does not mean anything is listening.</strong> Docker's port forwarder accepts connections on a published host port whether or not the container has bound it, so a successful <code>telnet</code> or <code>nc</code> proves nothing. Check inside the container with <code>docker exec &lt;container&gt; netstat -ltn</code>, or read the health endpoint.</p></ac:rich-text-body></ac:structured-macro>
+<h2>Step 1: Get the image</h2>
+<ac:structured-macro ac:name="code" ac:schema-version="1"><ac:parameter ac:name="language">bash</ac:parameter><ac:plain-text-body><![CDATA[docker pull itechuw/openelis-analyzer-bridge:3.4.1]]></ac:plain-text-body></ac:structured-macro>
+<p>From Bridge 3.3.1 the image is published for both <strong>amd64 and arm64</strong>, so it runs natively on Apple Silicon and ARM servers. Pin a version tag in production rather than <code>latest</code>, so an upgrade is a decision. The repository's <code>docker-compose.yml</code> runs the published image; it does not build from the checkout.</p>
+<p>The image <code>itechuw/astm-http-bridge</code> is still published as a legacy alias from the repository's previous name. New installations should use <code>itechuw/openelis-analyzer-bridge</code>.</p>
+<h2>Step 2: TLS: let the Bridge generate its certificate, or supply your own</h2>
+<p>The image runs the <code>prod</code> profile by default. On first start, if no keystore is supplied, the Bridge generates its own key pair and serves HTTPS with it. The key pair and the pairing record live under <code>/data/openelis-analyzer-bridge/identity/</code>, so keep <code>/data/openelis-analyzer-bridge</code> on a persistent volume. If that volume is lost, the Bridge presents a new certificate and has to be paired again.</p>
+<p>If your site requires its own certificate, supply a PKCS12 keystore; it is used as given:</p>
+<ac:structured-macro ac:name="code" ac:schema-version="1"><ac:parameter ac:name="language">yaml</ac:parameter><ac:plain-text-body><![CDATA[environment:
+  JAVA_OPTS: >-
+    -Dserver.ssl.keyStoreType=PKCS12
+    -Dserver.ssl.keyStorePath=/app/bridge-keystore.p12
+    -Dserver.ssl.keyStorePassword=CHANGE_ME
+volumes:
+  - ./bridge-keystore.p12:/app/bridge-keystore.p12:ro]]></ac:plain-text-body></ac:structured-macro>
+<p>To select a different Spring profile, set <code>SPRING_PROFILES_ACTIVE</code>. The older <code>SPRING_PROFILE</code> still works when it is the only one set, and logs a warning.</p>
+<h2>Step 3: Pair OpenELIS with the Bridge</h2>
+<p>Pairing replaces passwords between OpenELIS and the Bridge. Each side keeps its own key pair; while pairing, each records the other's certificate fingerprint, and from then on accepts only that certificate in both directions. OpenELIS calls the Bridge presenting its certificate and sends no password; the Bridge delivers results to OpenELIS presenting its certificate, and OpenELIS refuses a password or session on the delivery path.</p>
+<p>The Bridge accepts one <strong>pairing code</strong>, once. There are two ways to give OpenELIS that code.</p>
+<h3>Option A: configure the same code on both sides (recommended for Compose stacks)</h3>
+<ol start="1">
+<li><p>Choose a code and give it to the Bridge as <code>BRIDGE_PAIRING_CODE</code>, and to OpenELIS as <code>ANALYZER_BRIDGE_PAIRING_CODE</code> (property <code>analyzer.bridge.pairing-code</code>):</p>
+<ac:structured-macro ac:name="code" ac:schema-version="1"><ac:parameter ac:name="language">yaml</ac:parameter><ac:plain-text-body><![CDATA[services:
+  openelis-analyzer-bridge:
+    environment:
+      - BRIDGE_PAIRING_CODE=${ANALYZER_BRIDGE_PAIRING_CODE}
+  oe.openelis.org:
+    environment:
+      - ANALYZER_BRIDGE_URL=https://bridge.openelis.org:8443
+      - ANALYZER_BRIDGE_PAIRING_CODE=${ANALYZER_BRIDGE_PAIRING_CODE}]]></ac:plain-text-body></ac:structured-macro></li>
+<li><p>Start both. OpenELIS pairs on startup, or on its first call to the Bridge if it is still unpaired. No one has to enter anything.</p></li>
+<li><p>If the Bridge refuses a configured code (wrong, or already used), OpenELIS does not try it again, so the Bridge keeps its attempts for a code entered on the page.</p></li>
+</ol>
+<h3>Option B: enter the code on the Analysers page</h3>
+<ol start="1">
+<li><p>Start the Bridge without <code>BRIDGE_PAIRING_CODE</code>. An unpaired Bridge logs a new code at each start:</p>
+<ac:structured-macro ac:name="code" ac:schema-version="1"><ac:parameter ac:name="language">text</ac:parameter><ac:plain-text-body><![CDATA[WARN ... PairingConfiguration : Bridge is not paired with OpenELIS. Enter this pairing code in OpenELIS to pair it: XXXX-XXXX-XXXX-XXXX-XXXX. A new code is generated at each start until pairing]]></ac:plain-text-body></ac:structured-macro>
+<p>Read it with <code>docker logs openelis-analyzer-bridge</code>. Because a new code is generated at every start, use the code from the most recent start.</p></li>
+<li><p>Sign in to OpenELIS as a Global Admin and open <strong>Main menu &rarr; Analysers</strong>. An unpaired OpenELIS shows <strong>The Analyzer Bridge is not paired</strong>, with a <strong>Pairing code</strong> field. Results the Bridge receives before pairing wait in the Bridge and are delivered once it is paired.</p></li>
+<li><p>Enter the code and select <strong>Pair</strong>. <strong>Pair</strong> stays disabled until a code is typed.</p></li>
+<li><p>When pairing succeeds, the page shows <strong>Paired with the Analyzer Bridge</strong>, with the Bridge address, the start of the Bridge certificate's fingerprint and when it paired.</p>
+<p>{{IMG:01-paired.png}}</p>
+<p><em>Figure 1. The Analysers page on a paired OpenELIS. The line under the title gives the Bridge address, the start of its certificate fingerprint and the pairing time.</em></p></li>
+</ol>
+<p>If the Bridge refuses, the page says why. The messages are:</p>
+<table data-layout="default"><tbody>
+<tr><th><p>Message</p></th><th><p>What to do</p></th></tr>
+<tr><td><p>The Bridge did not accept that code.</p></td><td><p>Check the code against the Bridge's latest log line. Ten wrong codes close pairing until the Bridge restarts.</p></td></tr>
+<tr><td><p>The Bridge is not accepting a pairing. Configure a new pairing code on the Bridge, restart it, and pair again.</p></td><td><p>The code was used, or pairing closed after wrong attempts. Set a new <code>BRIDGE_PAIRING_CODE</code> and restart the Bridge.</p></td></tr>
+<tr><td><p>No Analyzer Bridge address is configured for OpenELIS.</p></td><td><p>Set <code>analyzer.bridge.url</code> (Step 5).</p></td></tr>
+<tr><td><p>OpenELIS could not reach the Analyzer Bridge.</p></td><td><p>Check the address, the port, and that OpenELIS can reach the Bridge host.</p></td></tr>
+<tr><td><p>The Bridge answered for a different certificate than the one it presented, so OpenELIS did not pair with it.</p></td><td><p>Something between OpenELIS and the Bridge is presenting its own certificate. Pair on a direct link.</p></td></tr>
+</tbody></table>
+<ac:structured-macro ac:name="warning" ac:schema-version="1"><ac:rich-text-body><p><strong>Pair on a link nothing can sit in.</strong> The first pairing trusts whichever certificate answers at the Bridge address, so something that could intercept the link at that moment could pair in the Bridge's place. Pair where OpenELIS and the Bridge talk directly, such as the Compose stack's own network.</p></ac:rich-text-body></ac:structured-macro>
+<h3>Pairing again</h3>
+<p>A paired Bridge refuses its current code. To pair again, for example after reinstalling either side or losing the Bridge's <code>/data</code> volume, configure a new <code>BRIDGE_PAIRING_CODE</code> on the Bridge, restart it, then select <strong>Pair again</strong> on the Analysers page and enter the new code (or set it as OpenELIS's configured code). OpenELIS applies a new pairing at once, without a restart. <strong>Cancel</strong> closes the field without changing the pairing.</p>
+<p>{{IMG:02-pair-again.png}}</p>
+<p><em>Figure 2. Pair again opens the Pairing code field. Pair is disabled until a code is entered.</em></p>
+<h3>Passwords before pairing</h3>
+<p>A Bridge with <code>BRIDGE_AUTH_PASSWORD</code> set still accepts that password until it is first paired, so an older OpenELIS that uses a password is not cut off by a Bridge upgrade. <strong>The first pairing ends password access.</strong> For an OpenELIS 3.3.0 site, leave the password empty: the Bridge then logs <em>No bridge.security.password is set: only the paired OpenELIS certificate authenticates</em>. The shipped default <code>changeme</code> stops the Bridge at startup outside the <code>dev</code> and <code>test</code> profiles.</p>
+<h2>Step 4: Configure Bridge &rarr; OpenELIS (where results go)</h2>
+<p>This is the direction results travel. Set <code>org.itech.ahb.forward-http-server.uri</code> to the OpenELIS <strong>base URL</strong>. From Bridge 3.3.1 the Bridge derives both paths from it: results are posted to <code>{uri}/analyzer/fhir</code>, and forwarding health reads <code>{uri}/health</code>.</p>
+<ac:structured-macro ac:name="code" ac:schema-version="1"><ac:parameter ac:name="language">yaml</ac:parameter><ac:plain-text-body><![CDATA[org:
+  itech:
+    ahb:
+      forward-http-server:
+        uri: https://openelis.example.org:8443/OpenELIS-Global
+        connect-timeout-seconds: 30
+        read-timeout-seconds: 30]]></ac:plain-text-body></ac:structured-macro>
+<p>In Docker the same value can be given as <code>ORG_ITECH_AHB_FORWARD_HTTP_SERVER_URI</code>. The configuration file, if you use one, is read from <code>/app/configuration.yml</code>. If that file is absent the Bridge starts on its built-in defaults and logs <em>Properties location [file:/app/configuration.yml] not resolvable</em>.</p>
+<p>Once paired, the Bridge presents its own certificate on every delivery, so the forwarding <code>username</code> and <code>password</code> are not needed (they are sent only before pairing, and OpenELIS 3.3.0 refuses them on the delivery path). The Bridge must also trust OpenELIS's HTTPS certificate: it takes the fingerprint OpenELIS sends while pairing, or a trust store that validates OpenELIS's certificate. The OpenELIS Compose stack gives the Bridge the stack's trust store, so OpenELIS stays trusted after its certificate is regenerated.</p>
+<p>Results are not lost while OpenELIS is down. Every received result is written to a durable outbox before any network call and retried (by default up to 150 attempts with backoff, sized for an overnight outage) until OpenELIS accepts it or it lands in the dead-message queue with its payload intact. Keep <code>bridge.outbox.db-path</code> on the persistent volume: between receipt and delivery, that file is the only copy of the result. Results the Bridge cannot deliver show in OpenELIS as a banner on the Analysers page, <em>n analyzer results were not delivered</em>, with <strong>Review undelivered results</strong> (see <ac:link><ri:page ri:content-title="Map analyzer codes, resolve held results, and run QC" /><ac:link-body>Map analyzer codes, resolve held results, and run QC</ac:link-body></ac:link>).</p>
+<h2>Step 5: Configure OpenELIS &rarr; Bridge</h2>
+<p>OpenELIS reads the Bridge's profile catalogue, connections and undelivered results over the Bridge's management API. Without a Bridge address, the Analyser Types list is empty and Add Analyser cannot be completed.</p>
+<table data-layout="default"><tbody>
+<tr><th><p>Property (environment variable)</p></th><th><p>Value</p></th></tr>
+<tr><td><p><code>analyzer.bridge.url</code> (<code>ANALYZER_BRIDGE_URL</code>)</p></td><td><p>The Bridge's HTTPS address, with no trailing path, for example <code>https://bridge.openelis.org:8443</code>. Use <code>https://</code>: a plain HTTP request to the Bridge is answered with 400.</p></td></tr>
+<tr><td><p><code>analyzer.bridge.pairing-code</code> (<code>ANALYZER_BRIDGE_PAIRING_CODE</code>)</p></td><td><p>Optional. The Bridge's configured pairing code, for Option A in Step 3. Leave it empty to pair on the Analysers page.</p></td></tr>
+</tbody></table>
+<p>OpenELIS 3.3.0 no longer uses <code>analyzer.bridge.username</code> or <code>analyzer.bridge.password</code>. It creates its own key pair the first time it pairs and keeps it in its database, with the private key encrypted, separate from the certificate it serves HTTPS with, so renewing that certificate does not break the pairing.</p>
+<ac:structured-macro ac:name="note" ac:schema-version="1"><ac:rich-text-body><p><strong>Installer-based sites.</strong> To receive results from a paired Bridge, OpenELIS's HTTPS connector must request (not require) client certificates. The OpenELIS Docker images do this. The Linux installer's <code>oe_server.xml</code> template did not yet do so when OpenELIS-Global-2 #4657 merged, so an installer-based site cannot receive deliveries from a paired Bridge until its <code>server.xml</code> is updated.</p></ac:rich-text-body></ac:structured-macro>
+<h2>Step 6: Confirm the pairing and the catalogue</h2>
+<ol start="1">
+<li><p>Open <strong>Main menu &rarr; Analysers</strong>. The page should say <strong>Paired with the Analyzer Bridge</strong> (Figure 1).</p></li>
+<li><p>Open <strong>Analysers &rarr; Analyser Types</strong>. The list is filled from the Bridge's profiles, each marked <em>Shipped</em> or <em>Site-created</em> with its revision.</p></li>
+<li><p>On the Bridge, anonymous callers can reach only the overall health, <code>GET /pairing</code>, <code>POST /pairing</code> and the analyzer transport <code>POST /input</code>; everything else answers 401. <code>GET /pairing</code> is a quick check of the Bridge side:</p>
+<ac:structured-macro ac:name="code" ac:schema-version="1"><ac:parameter ac:name="language">bash</ac:parameter><ac:plain-text-body><![CDATA[curl -sk https://bridge.example.org:8442/pairing
+# before pairing: {"paired":false,"open":true}]]></ac:plain-text-body></ac:structured-macro></li>
+</ol>
+<h2>Step 7: Check health</h2>
+<p>Anonymously, <code>/actuator/health</code> returns only the overall status. The overall status includes forwarding to OpenELIS, so a Bridge whose forward URI is unset or unreachable reports <code>{"status":"DOWN"}</code> with HTTP 503 even though it is running. Component detail (disk space, file watcher, forwarding, MLLP, outbox, serial) requires the paired OpenELIS certificate; read it from the OpenELIS analyzer pages rather than with a password.</p>
+<h2>Field reference</h2>
+<table data-layout="default"><tbody>
+<tr><th><p>Setting</p></th><th><p>Where</p></th><th><p>Notes</p></th></tr>
+<tr><td><p><code>BRIDGE_PAIRING_CODE</code> (<code>bridge.pairing.code</code>)</p></td><td><p>Bridge environment</p></td><td><p>One-time pairing code. Without one, an unpaired Bridge logs a new code at each start. A code pairs once; ten wrong codes close pairing until the next start.</p></td></tr>
+<tr><td><p><code>bridge.identity.directory</code> (<code>BRIDGE_IDENTITY_DIRECTORY</code>)</p></td><td><p>Bridge</p></td><td><p>Generated key pair and pairing record. Default <code>/data/openelis-analyzer-bridge/identity</code>; keep it on the persistent volume.</p></td></tr>
+<tr><td><p><code>BRIDGE_AUTH_PASSWORD</code> (<code>bridge.security.password</code>)</p></td><td><p>Bridge environment</p></td><td><p>Only for an older OpenELIS that uses a password; accepted until the first pairing. Empty by default (pairing only). <code>changeme</code> stops startup outside <code>dev</code>/<code>test</code>.</p></td></tr>
+<tr><td><p><code>server.ssl.keyStoreType</code> / <code>keyStorePath</code> / <code>keyStorePassword</code></p></td><td><p>JVM options</p></td><td><p>Optional. Supply only to use your own certificate instead of the generated one.</p></td></tr>
+<tr><td><p><code>org.itech.ahb.forward-http-server.uri</code></p></td><td><p>Bridge</p></td><td><p>OpenELIS base URL. Results go to <code>{uri}/analyzer/fhir</code>; forwarding health reads <code>{uri}/health</code>.</p></td></tr>
+<tr><td><p><code>org.itech.ahb.forward-http-server.username</code> / <code>password</code></p></td><td><p>Bridge</p></td><td><p>Sent only before pairing. Not needed with OpenELIS 3.3.0.</p></td></tr>
+<tr><td><p><code>org.itech.ahb.listen-astm-server.port</code> / <code>org.itech.ahb.listen-astm-server.e1381-95.port</code></p></td><td><p>Bridge</p></td><td><p>Shared ASTM listener ports inside the container. Defaults <code>12001</code> and <code>12011</code>.</p></td></tr>
+<tr><td><p><code>org.itech.ahb.mllp.enabled</code> / <code>MLLP_ENABLED</code></p></td><td><p>Bridge</p></td><td><p>Binds the shared MLLP listener (<code>org.itech.ahb.mllp.port</code>, default <code>2575</code>) at startup and allows HL7 server connections. Off by default in <code>prod</code>.</p></td></tr>
+<tr><td><p><code>bridge.file.import-roots</code> / <code>BRIDGE_FILE_IMPORT_ROOTS</code></p></td><td><p>Bridge</p></td><td><p>The only directories FILE connections may watch. Default <code>/data/analyzer-imports</code>, <code>/data/analyzer-drops</code>.</p></td></tr>
+<tr><td><p><code>bridge.outbox.db-path</code></p></td><td><p>Bridge</p></td><td><p>Keep on a persistent volume: the only copy of a result before delivery.</p></td></tr>
+<tr><td><p><code>bridge.profile-catalog.directory</code></p></td><td><p>Bridge</p></td><td><p>Site-created profile revisions. Must be on the persistent <code>/data</code> volume.</p></td></tr>
+<tr><td><p><code>bridge.connection-catalog.directory</code></p></td><td><p>Bridge</p></td><td><p>Durable connections. Active connections are restored from here on restart.</p></td></tr>
+<tr><td><p><code>bridge.http.trusted-proxies</code></p></td><td><p>Bridge</p></td><td><p>Required behind a reverse proxy; otherwise forwarded-identity headers are ignored.</p></td></tr>
+<tr><td><p><code>analyzer.bridge.url</code> (<code>ANALYZER_BRIDGE_URL</code>)</p></td><td><p>OpenELIS</p></td><td><p>The Bridge's HTTPS address. Without it, analyzer types cannot load.</p></td></tr>
+<tr><td><p><code>analyzer.bridge.pairing-code</code> (<code>ANALYZER_BRIDGE_PAIRING_CODE</code>)</p></td><td><p>OpenELIS</p></td><td><p>Optional configured pairing code (Step 3, Option A).</p></td></tr>
+</tbody></table>
+<h2>Tips</h2>
+<ul>
+<li><p><strong>Work through the two directions separately.</strong> Forwarding failing shows up as results waiting in the outbox and the <em>results were not delivered</em> banner; the management direction failing shows up as an empty Analyser Types list.</p></li>
+<li><p><strong>Keep <code>/data/openelis-analyzer-bridge</code> across restarts and upgrades.</strong> The connection catalogue, profile catalogue, file-processing state, delivery outbox, the generated identity and the pairing record all live there. Losing it means pairing again.</p></li>
+<li><p><strong>Publish only the shared ports you use.</strong> If no analyzer will use HL7, leave <code>MLLP_ENABLED</code> off and do not publish <code>2575</code>.</p></li>
+<li><p>On restart the Bridge restores active connections from their last successfully activated values, so a connection edited but never activated comes back as the older working version.</p></li>
+<li><p>Closing a connection waits up to 30 seconds for deliveries in flight. A failed drain reports failure and keeps ownership; do not treat it as complete.</p></li>
+<li><p>If the outbox database cannot be opened, the Bridge renames it aside, logs the path at ERROR and starts a fresh one so the lab keeps working. Preserve that renamed file and reconcile it against OpenELIS.</p></li>
+</ul>
+<h2>Not yet covered here</h2>
+<p>Creating and activating an analyzer connection (see <ac:link><ri:page ri:content-title="Set up an analyzer" /><ac:link-body>Set up an analyzer</ac:link-body></ac:link>); serial (RS-232) device passthrough; FILE watcher directory mounts and permissions; reverse-proxy termination in front of the Bridge; the dead-message queue under <code>/admin/outbox</code>; and Prometheus scraping.</p>
+<h2>Provenance</h2>
+<table data-layout="default"><tbody>
+<tr><th><p>Status</p></th><td><p>Draft, awaiting review (OGC-1451). Rewritten 13 October 2026 for certificate pairing.</p></td></tr>
+<tr><th><p>Driven on the Bridge</p></th><td><p><code>itechuw/openelis-analyzer-bridge:3.4.1</code> (arm64 image, built 12 October 2026) pulled and run natively on an arm64 Mac with no configuration file on 13 October 2026: started on the <code>prod</code> profile; logged <em>No bridge.security.password is set: only the paired OpenELIS certificate authenticates</em>, the shared ASTM listeners on 12001 and 12011, and the pairing-code line quoted in Step 3; <code>GET /pairing</code> returned <code>{"paired":false,"open":true}</code>; anonymous <code>/actuator/health</code> returned 503 <code>DOWN</code> (no forward URI); <code>/api/profiles</code> returned 401; the <code>/app/configuration.yml</code> message appeared.</p></td></tr>
+<tr><th><p>Observed in OpenELIS</p></th><td><p><code>testing.openelis-global.org</code>, 3.3.0-SNAPSHOT, 13 October 2026, signed in as a Global Admin: the Analysers page showed <strong>Paired with the Analyzer Bridge</strong> (paired 12 October 2026 by the deployment's configured code), <strong>Pair again</strong> opened the Pairing code field with <strong>Pair</strong> disabled until a code is typed, and <strong>Cancel</strong> closed it. No code was submitted, so testing stayed paired. Analyser Types listed six Bridge profiles.</p></td></tr>
+<tr><th><p>Read from source and repository documentation</p></th><td><p>OpenELIS-Global-2 PR #4657 and <code>docs/analyzers/bridge-pairing.md</code> on <code>develop</code> (b5943f5): the two pairing options, the refusal messages (from the English language file), the removal of the Bridge username and password properties, the Tomcat client-certificate requirement and the installer gap. Bridge README at tag 3.4.1: the forward URI derivation (3.3.1), arm64 images and <code>SPRING_PROFILES_ACTIVE</code> (3.3.1), ten wrong codes closing pairing, passwords until pairing, the outbox and connection behaviour carried over from the 3.3.0 version of this page.</p></td></tr>
+<tr><th><p>Not exercised</p></th><td><p>Entering a code on the Analysers page and the refusal messages (they would have unpaired testing); result delivery from a paired Bridge to <code>/analyzer/fhir</code>; an HL7 or ASTM message through the shared listeners.</p></td></tr>
+<tr><th><p>Previous version</p></th><td><p>9 October 2026 against Bridge 3.3.0 with password authentication, kept as Install the Analyzer Bridge (before 3.3.0). Its open Bridge issues are fixed in 3.3.1: amd64-only image (openelis-analyzer-bridge#79) and the profile variable name (#80).</p></td></tr>
+</tbody></table>

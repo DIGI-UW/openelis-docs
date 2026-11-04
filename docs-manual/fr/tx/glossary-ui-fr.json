@@ -1,0 +1,331 @@
+[
+ {
+  "id": "order",
+  "en": "\\border(s|ed|ing)?\\b",
+  "fr": "demand",
+  "forbid": [
+   "ordonnances?",
+   "commandes?",
+   "demandes? d'examens?",
+   "prescriptions?"
+  ],
+  "skipEn": "(display|sort|word|result|panel|sample type|test unit|tab|column|field|in|reverse|alphabetical) order|order (by|of)\\b|\\bin order\\b|reorder|ordering (physician|provider|clinician|site|location|lab)",
+  "scopeNot": "^inventory\\.|reorder|^lot\\.|^stock\\.",
+  "note": "Lab order. Ordering in a sequence is 'ordre'; inventory purchase orders are 'commande'.",
+  "by": "Casey 13 Oct",
+  "label": "Order (lab order)",
+  "show": "Demande"
+ },
+ {
+  "id": "order-inv",
+  "en": "\\border(s|ed)?\\b",
+  "fr": "command",
+  "forbid": [
+   "\\bdemandes?\\b"
+  ],
+  "scope": "^inventory\\.|reorder",
+  "note": "Inventory purchase order: commande, commander.",
+  "by": "Casey 13 Oct",
+  "label": "Order (inventory)",
+  "show": "Commande"
+ },
+ {
+  "id": "test",
+  "en": "\\btests?\\b",
+  "fr": "analys",
+  "forbid": [
+   "(?<!catalogue de )(?<!de diagnostic rapide )\\btests?\\b(?! de diagnostic rapide)",
+   "\\bexamens?\\b"
+  ],
+  "skipEn": "test connection|test message|test mapping|\\btest (a|the|this|your)\\b|test catalog|test (section|unit)s?|connection test|\\bunit test|rapid (diagnostic )?tests?|\\bRDT\\b",
+  "note": "A laboratory test is 'analyse'. Exceptions: 'Catalogue de tests', and the verb (Tester la connexion).",
+  "by": "Casey 13 Oct",
+  "label": "Test",
+  "show": "Analyse"
+ },
+ {
+  "id": "panel",
+  "en": "\\bpanels?\\b",
+  "fr": "panel",
+  "forbid": [
+   "panneaux?",
+   "\\bbilans?\\b"
+  ],
+  "note": "Test panel stays 'panel'.",
+  "label": "Panel",
+  "show": "Panel"
+ },
+ {
+  "id": "qc",
+  "en": "\\bQC\\b",
+  "fr": "CQ",
+  "forbid": [
+   "\\bQC\\b"
+  ],
+  "case": true,
+  "note": "French acronym CQ (contrôle qualité).",
+  "by": "Casey 13 Oct",
+  "label": "QC",
+  "show": "CQ"
+ },
+ {
+  "id": "eqa",
+  "en": "\\bEQA\\b",
+  "fr": "EEQ",
+  "forbid": [
+   "\\bEQA\\b"
+  ],
+  "case": true,
+  "note": "French acronym EEQ (évaluation externe de la qualité).",
+  "by": "Casey 13 Oct",
+  "label": "EQA",
+  "show": "EEQ"
+ },
+ {
+  "id": "nce",
+  "en": "\\bNCE\\b",
+  "fr": "ENC",
+  "forbid": [
+   "\\bNCE\\b"
+  ],
+  "case": true,
+  "note": "Événement non conforme (ENC).",
+  "label": "NCE",
+  "show": "ENC"
+ },
+ {
+  "id": "provider",
+  "en": "\\bprovider\\b",
+  "fr": "prescri",
+  "forbid": [
+   "prestataire",
+   "fournisseur"
+  ],
+  "scopeNot": "^eqa\\.|eqa",
+  "note": "Requesting clinician.",
+  "label": "Provider (clinician)",
+  "show": "Prescripteur"
+ },
+ {
+  "id": "provider-eqa",
+  "en": "\\bprovider\\b",
+  "fr": "organisateur",
+  "forbid": [
+   "prescripteur"
+  ],
+  "scope": "^eqa\\.|eqa",
+  "note": "EQA scheme provider (ISO 17043: organisateur d'essais d'aptitude). Proposed default, change if labs use another word.",
+  "label": "Provider (EQA scheme)",
+  "show": "Organisateur"
+ },
+ {
+  "id": "accession",
+  "en": "\\b(accession|lab) (number|no\\.?)\\b",
+  "fr": "(numéro|n°) de labo",
+  "forbid": [
+   "accession",
+   "numéro d'enregistrement"
+  ],
+  "note": "Lab number / accession number.",
+  "label": "Lab number / Accession number",
+  "show": "Numéro de laboratoire"
+ },
+ {
+  "id": "specimen",
+  "en": "\\bsamples?\\b",
+  "fr": "échantillon",
+  "forbid": [
+   "spécimens?"
+  ],
+  "scopeNot": "^vector",
+  "note": "Sample is 'échantillon'; 'spécimen' only for vector organisms.",
+  "label": "Sample",
+  "show": "Échantillon"
+ },
+ {
+  "id": "review",
+  "en": "\\breview\\b",
+  "fr": "",
+  "forbid": [
+   "critique"
+  ],
+  "note": "Review is Revoir or Vérifier, never Critique.",
+  "label": "Review",
+  "show": "Revoir / Vérifier"
+ },
+ {
+  "id": "sex",
+  "en": "^(male|female)$",
+  "fr": "",
+  "forbid": [
+   "mâle",
+   "femelle"
+  ],
+  "scopeNot": "^vector",
+  "note": "Patient sex: Masculin / Féminin. Mâle/Femelle only for vectors.",
+  "label": "Male / Female (patient)",
+  "show": "Masculin / Féminin"
+ },
+ {
+  "id": "room",
+  "en": "\\brooms?\\b",
+  "fr": "salle",
+  "forbid": [
+   "chambres?"
+  ],
+  "note": "Storage room is 'salle'. Exception: cold room / cool room = chambre froide / fraîche.",
+  "skipEn": "(cold|cool) rooms?|room temperature",
+  "label": "Room (storage)",
+  "show": "Salle"
+ },
+ {
+  "id": "range",
+  "en": "\\b(reference|normal) range",
+  "fr": "intervalles? de référence",
+  "forbid": [
+   "valeurs? normales?",
+   "plages? normales?"
+  ],
+  "note": "",
+  "label": "Reference / normal range",
+  "show": "Intervalle de référence"
+ },
+ {
+  "id": "save",
+  "en": "^save\\b",
+  "fr": "enregistr",
+  "forbid": [
+   "sauvegarder"
+  ],
+  "note": "Buttons: Enregistrer.",
+  "label": "Save",
+  "show": "Enregistrer"
+ },
+ {
+  "id": "delete",
+  "en": "\\bdelete\\b",
+  "fr": "suppr",
+  "forbid": [
+   "\\beffacer\\b"
+  ],
+  "note": "Delete is Supprimer; Clear is Effacer.",
+  "label": "Delete",
+  "show": "Supprimer"
+ },
+ {
+  "id": "upload",
+  "en": "\\bupload",
+  "fr": "",
+  "forbid": [
+   "télécharg"
+  ],
+  "note": "Upload is Téléverser or Importer; Télécharger is download.",
+  "label": "Upload",
+  "show": "Téléverser / Importer"
+ },
+ {
+  "id": "settings",
+  "en": "\\bsettings\\b",
+  "fr": "paramètres",
+  "forbid": [
+   "réglages"
+  ],
+  "note": "",
+  "label": "Settings",
+  "show": "Paramètres"
+ },
+ {
+  "id": "analyzer",
+  "en": "\\banaly[sz]ers?\\b",
+  "fr": "analyseur",
+  "forbid": [
+   "automates?"
+  ],
+  "note": "",
+  "label": "Analyzer",
+  "show": "Analyseur"
+ },
+ {
+  "id": "workplan",
+  "en": "\\bwork ?plans?\\b",
+  "fr": "plan de travail",
+  "forbid": [
+   "\\bworkplan"
+  ],
+  "case": false,
+  "note": "",
+  "label": "Work plan",
+  "show": "Plan de travail"
+ },
+ {
+  "id": "labunit",
+  "en": "\\b(lab unit|test section)s?\\b",
+  "fr": "unit[eé]s? de laboratoire",
+  "forbid": [
+   "sections? de test"
+  ],
+  "note": "",
+  "label": "Lab unit / Test section",
+  "show": "Unité de laboratoire"
+ },
+ {
+  "id": "notebook",
+  "en": "\\bnotebook\\b",
+  "fr": "cahier de laboratoire",
+  "forbid": [
+   "carnet"
+  ],
+  "note": "",
+  "label": "Lab notebook",
+  "show": "Cahier de laboratoire"
+ },
+ {
+  "id": "dashboard",
+  "en": "\\bdashboard\\b",
+  "fr": "tableau de bord",
+  "forbid": [],
+  "note": "",
+  "label": "Dashboard",
+  "show": "Tableau de bord"
+ },
+ {
+  "id": "apostrophe",
+  "en": "",
+  "fr": "",
+  "forbid": [
+   "’"
+  ],
+  "note": "Use the straight apostrophe '.",
+  "by": "Casey 13 Oct",
+  "label": "Apostrophe",
+  "show": "' (straight)"
+ },
+ {
+  "id": "high-qc",
+  "label": "High / Low (QC control level)",
+  "show": "Haut / Bas",
+  "en": "^(high|low)( level)?$",
+  "fr": "(haut|bas)",
+  "forbid": [
+   "élevée?s?",
+   "faibles?"
+  ],
+  "scope": "qc|control|westgard|levey",
+  "note": "QC control material levels are Haut / Bas.",
+  "by": "Casey 13 Oct"
+ },
+ {
+  "id": "high",
+  "label": "High / Low (results, priority)",
+  "show": "Élevé / Faible",
+  "en": "^(high|low)$",
+  "fr": "(élev|faible)",
+  "forbid": [
+   "^hauts?$",
+   "^bas$"
+  ],
+  "scopeNot": "qc|control|westgard|levey",
+  "note": "Result values and flags, priority: Élevé(e) / Faible.",
+  "by": "Casey 13 Oct"
+ }
+]

@@ -1,0 +1,46 @@
+<ac:structured-macro ac:name="info"><ac:rich-text-body><p><strong>OpenELIS 3.3.0.</strong> This page describes the Locations &amp; Organizations admin introduced in 3.3.0 (not yet released at the time of writing). It is a draft for review; see also <a href="https://uwdigi.atlassian.net/wiki/spaces/OG/pages/1702756385">Admin: Manage organizations (3.3.0)</a>.</p></ac:rich-text-body></ac:structured-macro>
+<h2>At a glance</h2>
+<table><tbody>
+<tr><th>Purpose</th><td>Keep the list of your country's administrative areas (for example Region, Province, District and LLG) that patient addresses, organizations and sampling sites point to.</td></tr>
+<tr><th>You'll end up with</th><td>Areas arranged in a tree under their parents, active and available in the Location pickers.</td></tr>
+<tr><th>Who does this</th><td>Administrators. Access is set by user permissions and can be configured by your administrator.</td></tr>
+<tr><th>Before you start</th><td>Geographic levels must exist before any area can be added. Most deployments load levels and areas once from the national list with <a href="https://uwdigi.atlassian.net/wiki/spaces/OG/pages/1706295354">Import / Export</a>, then add or correct areas here.</td></tr>
+<tr><th>Where</th><td>Main menu → Admin → Locations &amp; Organizations → Geographic Areas</td></tr>
+</tbody></table>
+<p>Geographic areas are the administrative divisions of the country. Each area has a name, a code and a level, and sits inside an area of the level above. They are used for patient addresses and to say where each organization and sampling site is. Pickers that filter by location include the areas beneath the one you choose.</p>
+
+<h2>Step 1: Browse the areas</h2>
+<ol>
+<li><p>Open <strong>Main menu → Admin → Locations &amp; Organizations → Geographic Areas</strong>. Until geographic levels exist, the list is empty and <strong>Add</strong> is unavailable.</p></li>
+<li><p>The list shows top-level areas first. Its columns are <strong>Name</strong>, <strong>Code</strong>, <strong>Level</strong>, <strong>Child areas</strong> (how many areas sit directly inside), <strong>Active</strong> and <strong>Actions</strong>. Expand a row with its arrow to load its children, or use <strong>Expand all</strong> and <strong>Collapse all</strong>.</p></li>
+<li><p>Use <strong>Search areas by name or code</strong> to find an area, and <strong>Status</strong> (Active, Inactive or All) to include inactive areas.</p>
+<p>{{IMG:01-tree.png}}</p>
+<p><em>Figure 1. Areas for three regions of Papua New Guinea, expanded. Each row's Actions offer the level below (Province, District, LLG) and Edit.</em></p></li>
+</ol>
+
+<h2>Step 2: Add an area</h2>
+<ol>
+<li><p>To add an area inside another one, click the next level's button on the parent row, for example <strong>District +</strong> on Morobe Province. A row opens under the parent, labelled with the level and the parent (<em>New District · Morobe Province</em>).</p></li>
+<li><p>Enter the name (required) and an optional <strong>Code</strong>, then click <strong>Save</strong>. <strong>Save</strong> stays unavailable until a name is entered. <strong>Cancel</strong> closes the row.</p>
+<p>{{IMG:02-add-district.png}}</p>
+<p><em>Figure 2. Adding a district inside Morobe Province.</em></p></li>
+<li><p>For a new top-level area, use <strong>Add Region</strong> (the button is named after your top level) at the top of the list.</p></li>
+</ol>
+
+<h2>Step 3: Edit, deactivate or reactivate an area</h2>
+<ol>
+<li><p>Click <strong>Edit</strong> on an area's row to change its name or code.</p></li>
+<li><p>Use the <strong>Active</strong> switch to deactivate an area that is no longer used. Inactive areas are hidden from pickers but stay on existing records. Set <strong>Status</strong> to Inactive or All to find them again.</p></li>
+</ol>
+
+<h2>Tips and notes</h2>
+<ul>
+<li>A district without LLGs is fine. Organizations and sites can point to whichever level you know.</li>
+</ul>
+
+<h2>Provenance</h2>
+<table><tbody>
+<tr><th>Drafted</th><td><p>12 October 2026 against <strong>3.3.0-SNAPSHOT</strong> on <code>testing.openelis-global.org</code> (Epic OGC-1363, Feature Doc OGC-1414).</p>
+<p>DRIVEN: empty state (Add unavailable before levels), Expand all, opening the add-child row on Morobe Province (Save unavailable while empty, Cancel). Areas were loaded with Import / Export.</p>
+<p>OBSERVED only: Add Region, Edit, the Active switch, Search, Status. Saving an area added on this page was not done.</p></td></tr>
+</tbody></table>

@@ -1,0 +1,19 @@
+{
+ "title": "Microbiology (pre-release): set up tests and reference data",
+ "version": 3,
+ "attachments": [
+  "06-breakpoint-rules.png",
+  "05-breakpoint-standards.png",
+  "03-antibiotic-dialog.png",
+  "02-organisms.png",
+  "01-catalog-opens-case.png",
+  "04-ast-panel-dialog.png",
+  "07-sample-type-whonet-code.png",
+  "11-molecular-mappings.png",
+  "12-molecular-mapping-dialog.png",
+  "08-program-new.png",
+  "13-patient-origins.png",
+  "10-program-on-case.png",
+  "09-program-list.png"
+ ]
+}

@@ -1,0 +1,6 @@
+extends: existence
+message: "Name the thing instead of starting a sentence with '%s'."
+level: warning
+ignorecase: false
+tokens:
+  - '(?:It|This|That) (?:is|will|opens|shows|lets|allows|means|can|does)'

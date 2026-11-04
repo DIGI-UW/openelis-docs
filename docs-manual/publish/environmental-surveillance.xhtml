@@ -1,0 +1,63 @@
+<h1>Environmental Surveillance</h1>
+<h2>At a glance</h2>
+<table><tbody>
+<tr><th>Purpose</th><td>Register, test, and report on environmental samples (water, soil, food, and similar) and judge each result against a regulatory compliance standard.</td></tr>
+<tr><th>What makes it different</th><td>An environmental order is tied to a <em>sampling site</em> rather than a patient, carries a <em>per-sample manifest</em> (one row per physical sample, with optional GPS coordinates and collection conditions), and each numeric result is evaluated PASS / FAIL against the limits of the linked compliance standard.</td></tr>
+<tr><th>You&rsquo;ll end up with</th><td>Validated, regulation-scored results for each sample, ready for reporting.</td></tr>
+<tr><th>Who does this</th><td>Laboratory staff for order entry, results, and validation. Access is set by user permissions.</td></tr>
+<tr><th>Before you start</th><td>The compliance standards, environmental sample types, and (optionally) holding times must already be configured by an administrator &mdash; see <a href="https://uwdigi.atlassian.net/wiki/x/CACWV">Admin &mdash; Compliance Standards &amp; Holding-Time Configuration</a>.</td></tr>
+<tr><th>Where</th><td>Main menu &rarr; <em>Orders</em> &rarr; <em>Add Environmental Order</em>, with the wizard steps Dashboard, Enter Order, Collect Sample, Label &amp; Store, and QA Review. Results are entered under <em>Results</em> and reviewed under <em>Validation</em>.</td></tr>
+</tbody></table>
+<p>The <em>Dashboard</em> step under Add Environmental Order is the landing view &mdash; a list of environmental orders in progress. The separate <em>Compliance Dashboard</em> (left menu) is a reporting view of testing trends and compliance KPIs, not the order-entry landing.</p>
+
+<h2>Create an environmental order</h2>
+<p><strong>Step 1.</strong> Open <em>Orders &rarr; Add Environmental Order &rarr; Enter Order</em>. Enter or generate a Lab Number, confirm the Collection Date, and search the <em>Sampling Site</em> by name or code and choose <em>Select</em> on the matching site.</p>
+<p>{{IMG:01-order-top.png}}</p>
+<p><em>Figure 1. The top of the environmental order form (example data) &mdash; lab number, collection date, and the selected sampling site.</em></p>
+<p><strong>Step 2.</strong> Under <em>Applicable Compliance Standards</em>, tick the standard the order is judged against. In the <em>Per-Sample Manifest</em>, set the Sample Type and Container for each row (optionally GPS coordinates, location details, and the collected date/time). Open <em>Tests &amp; Panels</em> and select at least one test.</p>
+<p>{{IMG:01b-order-manifest.png}}</p>
+<p><em>Figure 2. The compliance standard and per-sample manifest (example data).</em></p>
+<p><strong>Note.</strong> At least one test is required before the order will save. Selecting a compliance standard does not auto-select tests &mdash; you choose tests yourself. Choose <em>Save &amp; Next</em> to advance to Label &amp; Store.</p>
+
+<h2>Move through the order stages</h2>
+<p><strong>Step 3.</strong> The order moves through the wizard stages shown at the top: <em>Enter Order &rarr; Label &amp; Store &rarr; QA Review</em> (Collect Sample is available for workflows that record collection separately). On <em>Label &amp; Store</em>, print the sample labels and either assign a storage location or tick <em>skip storage</em>, then continue. <em>Save &amp; Next</em> unlocks once labels are printed and storage is handled. For the storage hierarchy and how to assign or locate samples, see <a href="https://uwdigi.atlassian.net/wiki/spaces/oeg/pages/1189281794">Sample Storage Management</a>.</p>
+<p>{{IMG:05-label-store.png}}</p>
+<p><em>Figure 3. The Label &amp; Store stage &mdash; printing labels and assigning or skipping storage for each sample.</em></p>
+<p><strong>Step 4.</strong> On <em>QA Review</em>, work through the checklist (sampling site correct, sample types and tests correct, labels printed, storage assigned) and choose <em>Submit</em> to release the order into the results workflow.</p>
+<p>{{IMG:02-qa-review.png}}</p>
+<p><em>Figure 4. The QA Review step with its checklist, sampling site, and sample summary (example order).</em></p>
+
+<h2>Enter results and read the compliance evaluation</h2>
+<p><strong>Step 5.</strong> Open <em>Results &rarr; By Unit</em> and select the test unit so the order's tests load into the grid (the screen is empty until a unit is selected). Enter each numeric result and choose <em>Save</em>.</p>
+<p>{{IMG:03-results.png}}</p>
+<p><em>Figure 5. Results entry by unit.</em></p>
+<p><strong>Step 6.</strong> After saving, reload the screen. The <em>Status &mdash; Per Regulation</em> column shows the verdict &mdash; PASS (green) or FAIL (red) with the standard name. The U (k = 2) column shows the expanded measurement uncertainty where configured. A result entered after a sample's SOP maximum holding time carries an internal warning in its Notes.</p>
+<p><strong>Note.</strong> The compliance evaluation is numeric-only and is computed on the server, so it appears after Save and a reload &mdash; not as you type.</p>
+
+<h2>Validate and release results</h2>
+<p><strong>Step 7.</strong> Open <em>Validation &rarr; Routine</em> and select the test unit so its results and tests appear (empty until a unit is selected). Review each result, mark it accepted, and choose <em>Save</em>. The result is validated and released.</p>
+<p>{{IMG:04-validation.png}}</p>
+<p><em>Figure 6. Validation by unit (Routine).</em></p>
+
+<h2>Compliance certificate (Laporan Hasil / Sertifikat Hasil Uji)</h2>
+<p><strong>Not yet available.</strong> The compliance certificate that turns a validated, standard-linked order into a report is in verification and is not yet usable. This section will document it once the feature ships; do not rely on it today.</p>
+
+<h2>Field reference</h2>
+<table><tbody>
+<tr><th>Field</th><th>Notes</th></tr>
+<tr><td>Sampling Site</td><td>The collection location; search by name or code, then choose Select.</td></tr>
+<tr><td>Applicable Compliance Standard</td><td>The regulation results are judged against; selected manually.</td></tr>
+<tr><td>Sample Type / Container</td><td>Set per manifest row.</td></tr>
+<tr><td>GPS Lat/Lng, Location Details, Collected</td><td>Optional per-sample details.</td></tr>
+<tr><td>Test</td><td>At least one required before the order can save.</td></tr>
+<tr><td>U (k = 2)</td><td>Expanded measurement uncertainty, where configured.</td></tr>
+<tr><td>Status &mdash; Per Regulation</td><td>PASS/FAIL verdict; numeric-only; appears after save and reload.</td></tr>
+</tbody></table>
+
+<h2>Tips</h2>
+<ul>
+<li>Sampling-site search matches the start of the name or code &mdash; use a real prefix, then choose Select.</li>
+<li>The compliance evaluation is numeric-only and shows after save and reload.</li>
+<li>If electronic signatures are enabled, saving and validating results prompt for your signature.</li>
+<li>Compliance standards and test holding times are maintained under <a href="https://uwdigi.atlassian.net/wiki/x/CACWV">Admin &mdash; Compliance Standards &amp; Holding-Time Configuration</a>.</li>
+</ul>

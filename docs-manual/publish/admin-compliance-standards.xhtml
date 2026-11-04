@@ -1,0 +1,30 @@
+<h1>Admin — Compliance Standards &amp; Holding-Time Configuration</h1>
+<h2>At a glance</h2>
+<table><tbody>
+<tr><th>Purpose</th><td>Define the regulatory compliance standards that environmental results are judged against, and the SOP maximum holding times that trigger expired-holding-time warnings at result entry.</td></tr>
+<tr><th>Who does this</th><td>Administrators. Access is set by user permissions.</td></tr>
+<tr><th>Where</th><td>Main menu &rarr; <em>Admin</em> &rarr; <em>Test Management</em> &mdash; Compliance Standards Administration and Modify tests.</td></tr>
+<tr><th>Used by</th><td>The <a href="https://uwdigi.atlassian.net/wiki/x/HICWV">Environmental Surveillance</a> order-entry and results screens.</td></tr>
+</tbody></table>
+<p><strong>Step 1.</strong> Open <em>Admin &rarr; Test Management</em>. The Test Management menu groups the test-configuration tools, including Compliance Standards Administration and Modify tests.</p>
+<p>{{IMG:01-test-management-menu.png}}</p>
+<p><em>Figure 1. The Test Management configuration menu.</em></p>
+
+<h2>Define a compliance standard</h2>
+<p><strong>Step 2.</strong> Open <em>Compliance Standards Administration</em>. The list shows each standard's Name, Issuing Body, Regulation Number, Version, Effective Date, Status, Applicable Sample Types, Groups, and Tests, with filters for Status, Region, and Sample Type.</p>
+<p>{{IMG:03-standards-list.png}}</p>
+<p><em>Figure 2. The Compliance Standards Administration list, with its filters and the Add Standard action.</em></p>
+<p><strong>Step 3.</strong> Choose <em>Add Standard</em> and enter the header (Standard Name, Issuing Body, Regulation Number, Version). Set the <em>Effective Date</em> using the date-picker calendar. Under <em>Applicable Sample Types</em>, choose a sample type and choose <em>Add</em> (repeat per type), then <em>Save</em>.</p>
+<p><strong>Note &mdash; save gate.</strong> Save becomes available only after both an Effective Date is set via the calendar and at least one Applicable Sample Type is added.</p>
+<p><strong>Step 4.</strong> Define the standard's <em>Parameter Groups &amp; Linked Tests</em>, setting each test's limit type. These limits drive the PASS / FAIL evaluation users see at result entry.</p>
+
+<h2>Set a test's SOP maximum holding time</h2>
+<p><strong>Step 5.</strong> Open <em>Modify tests</em>, choose a Sample Type, and open the test. On the Configuration tab, step through to the <em>QC Acceptance Thresholds</em> section and set <em>SOP Max Holding Time (minutes)</em>, then save. This drives the expired-holding-time warning shown at result entry.</p>
+<p>{{IMG:02-modify-tests.png}}</p>
+<p><em>Figure 3. Modify tests &mdash; the test configuration where the SOP maximum holding time is set.</em></p>
+
+<h2>Tips</h2>
+<ul>
+<li>The compliance evaluation is numeric-only and is computed on the server; it appears to users after they save and reload the results screen.</li>
+<li>Set the Effective Date with the calendar control &mdash; a typed value alone may not enable Save.</li>
+</ul>

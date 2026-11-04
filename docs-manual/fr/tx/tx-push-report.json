@@ -1,0 +1,25 @@
+{
+ "at": "2026-10-31T23:33:07Z",
+ "apply": false,
+ "toPush": 0,
+ "alreadyLive": 99,
+ "conflicts": [
+  {
+   "key": "sampleAcceptance.reject.comment.label",
+   "reviewed": null,
+   "live": "Commentaire (optionnel)",
+   "approved": "Commentaire (facultatif)"
+  },
+  {
+   "key": "sample.reject.reason.label",
+   "reviewed": null,
+   "live": "Motif du rejet",
+   "approved": "Motif de rejet"
+  }
+ ],
+ "notInTransifex": [],
+ "pluralNotParsed": [],
+ "pushed": 0,
+ "errors": [],
+ "changes": []
+}

@@ -1,0 +1,52 @@
+<p><em>How-to · Reception staff</em></p>
+<h2>At a glance</h2>
+<table><tbody>
+<tr><th>Purpose</th><td>Find an existing patient to view or edit their record, or start registering a new one.</td></tr>
+<tr><th>You'll end up with</th><td>The right patient record open for review or editing.</td></tr>
+<tr><th>Who does this</th><td>Reception staff. Access is set by user permissions and can be configured by your administrator.</td></tr>
+<tr><th>Before you start</th><td>An identifier, a previous lab number or a name for the patient you are looking for.</td></tr>
+<tr><th>Where</th><td>Main menu → Patient → Add/Edit Patient</td></tr>
+</tbody></table>
+<p>The <strong>Add Or Modify Patient</strong> page is where you look up patients. Search by identifier or name, select a result to view or edit the record, or start a new patient record. Identifier labels can be set by your site; the figures show the test server's labels.</p>
+
+<h2>Step 1: Search for a patient</h2>
+<ol>
+<li><p>Open <strong>Main menu → Patient → Add/Edit Patient</strong>. The page opens on <strong>Search for Patient</strong>.</p></li>
+<li><p>Enter any of <strong>Patient Id</strong>, <strong>Previous Lab Number</strong>, <strong>Last Name</strong>, <strong>First Name</strong>, <strong>Date of Birth</strong> or <strong>Sex</strong>, and click <strong>Search</strong>. <strong>Clear</strong> empties the fields. <strong>External Search</strong> queries an external patient source when one is configured; it was unavailable on the test server.</p></li>
+<li><p>The results list shows <strong>Last Name</strong>, <strong>First Name</strong>, <strong>Sex</strong>, <strong>Date of Birth</strong>, the patient identifier, <strong>National ID</strong> and <strong>Data Source Name</strong> (<em>OpenElis</em> for records held in OpenELIS).</p>
+<p>{{IMG:01-search-results.png}}</p>
+<p><em>Figure 1. Searching by last name finds one patient.</em></p></li>
+</ol>
+
+<h2>Step 2: Open and edit a record</h2>
+<ol>
+<li><p>Select the patient with the button at the start of their row. Their record opens under <strong>Patient Information</strong>, read-only.</p>
+<p>{{IMG:02-record-view.png}}</p>
+<p><em>Figure 2. The selected patient's record, read-only, with the Edit switch.</em></p></li>
+<li><p>Turn on the <strong>Edit</strong> switch next to <strong>Patient Information</strong>. It reads <strong>Editing</strong> and the fields become editable. Make your changes and click <strong>Save</strong> at the bottom of the form.</p>
+<p>{{IMG:03-record-editing.png}}</p>
+<p><em>Figure 3. The record with Editing on.</em></p></li>
+</ol>
+
+<h2>Step 3: Register someone new</h2>
+<p>If the patient is not found, click <strong>New Patient</strong> and complete the form. See <a href="https://uwdigi.atlassian.net/wiki/spaces/OG/pages/1440841760">Register a New Patient</a>.</p>
+
+<h2>Field reference</h2>
+<table><tbody>
+<tr><th>Field</th><th>Notes</th></tr>
+<tr><td>Patient Id, Previous Lab Number</td><td>Identifier lookups.</td></tr>
+<tr><td>Last Name, First Name, Date of Birth, Sex</td><td>Name and demographic search fields.</td></tr>
+<tr><td>External Search</td><td>Queries a configured external patient source.</td></tr>
+<tr><td>Results</td><td>Matching patients; select one to open the record.</td></tr>
+</tbody></table>
+
+<h2>Notes</h2>
+<ul>
+<li>Duplicate records are combined with <strong>Patient → Merge Patient</strong>.</li>
+</ul>
+
+<h2>Provenance</h2>
+<table><tbody>
+<tr><th>Updated</th><td><p>12 October 2026 against <strong>3.3.0-SNAPSHOT</strong> on <code>testing.openelis-global.org</code>. Gender is now Sex; the results show the site's identifier label and an OpenElis data source tag; the record opens read-only with an Edit switch.</p>
+<p>DRIVEN: search by last name, select a result, Edit switch on. OBSERVED only: Save after editing, Patient Id, Previous Lab Number and Date of Birth search, Clear. External Search was unavailable.</p></td></tr>
+</tbody></table>

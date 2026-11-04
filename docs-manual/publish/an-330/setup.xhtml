@@ -1,0 +1,97 @@
+<p><em>How-to &middot; Lab administrators and lab IT</em></p>
+<ac:structured-macro ac:name="info" ac:schema-version="1"><ac:rich-text-body><p><strong>OpenELIS 3.3.0.</strong> This page describes analyser setup as it works in 3.3.0 (not yet released at the time of writing): OpenELIS pairs with the Analyzer Bridge by certificate, setup is for Global Admins only, the wizard has four steps, and each analyser keeps its own mapping. Sites on 3.2.x use <ac:link><ri:page ri:content-title="Set up an analyzer (before 3.3.0)" /><ac:link-body>Set up an analyzer (before 3.3.0)</ac:link-body></ac:link>.</p></ac:rich-text-body></ac:structured-macro>
+<h2>At a glance</h2>
+<table data-layout="default"><tbody>
+<tr><th><p>Purpose</p></th><td><p>Connect a laboratory analyser so its results arrive in OpenELIS against the right tests.</p></td></tr>
+<tr><th><p>You'll end up with</p></th><td><p>An active analyser with its own mapping of analyser codes to OpenELIS tests, and a Bridge connection that receives its results.</p></td></tr>
+<tr><th><p>Who does this</p></th><td><p>A Global Admin, usually with lab IT for the connection details. In 3.3.0 analyser setup, types, mappings and pairing are restricted to Global Admin.</p></td></tr>
+<tr><th><p>Before you start</p></th><td><p>OpenELIS must be paired with the Analyzer Bridge (see <ac:link><ri:page ri:content-title="Install the Analyzer Bridge" /><ac:link-body>Install the Analyzer Bridge</ac:link-body></ac:link>). Know the instrument model, the lab units it serves, which assays it runs, and how it connects (network or serial, and the name it sends in its messages).</p></td></tr>
+<tr><th><p>Where</p></th><td><p>Main menu &rarr; Analysers &rarr; Analyzers List &rarr; Add Analyser</p></td></tr>
+</tbody></table>
+<h2>The Analysers list</h2>
+<p>Main menu &rarr; Analysers &rarr; Analyzers List. The top of the page shows whether OpenELIS is paired with the Bridge and, when the Bridge is holding results it could not deliver, a banner with <strong>Review undelivered results</strong>. Tiles count <strong>Total analysers</strong>, <strong>Active</strong>, <strong>In setup</strong> and <strong>Needs attention</strong>. The table shows <strong>Name</strong>, <strong>Connection</strong>, <strong>Lab Units</strong>, <strong>Analyser type</strong>, <strong>Status</strong> and <strong>Actions</strong>.</p>
+<p>{{IMG:01-analysers-list.png}}</p>
+<p><em>Figure 1. The Analysers list with one active GeneXpert and four inactive analysers.</em></p>
+<h2>Analyser types</h2>
+<p>An analyser type is the reusable setup behind an analyser: the protocol, the codes it sends, and the rules that recognise control material. Identical analysers share one type. Main menu &rarr; Analysers &rarr; Analyser Types lists each type with its manufacturer, model and revision, a <strong>Shipped</strong> or <strong>Site-created</strong> badge, the <strong>Protocol</strong> (ASTM, HL7 or FILE), <strong>Tests mapped</strong>, <strong>Results mapped</strong>, <strong>Used by</strong> and <strong>Status</strong>. Filter by <strong>Created</strong>, <strong>Protocol</strong> and <strong>Mapping status</strong>, or show deactivated types.</p>
+<p>{{IMG:02-analyser-types.png}}</p>
+<p><em>Figure 2. Analyser Types. The six types come from the Bridge's profiles; Cepheid GeneXpert (ASTM Mode) is used by one analyser.</em></p>
+<p>In 3.3.0 a type's mappings are <strong>defaults for new analysers</strong>, not a shared mapping. The row's <strong>View default mappings</strong> shows what a new analyser of that type would start with, matched by standard codes against your catalog; nothing there is saved. Each analyser keeps its own mapping, set in the wizard's Verify step. The row menu also offers <strong>Duplicate Profile</strong>, <strong>View history</strong> and <strong>Deactivate</strong>. Deactivate a type rather than deleting it, so its history is kept.</p>
+<h2>Step 1: Instrument</h2>
+<ol start="1">
+<li><p>Select <strong>Add Analyser</strong>. The setup panel opens with four steps: <strong>Instrument</strong>, <strong>Assays</strong>, <strong>Verify</strong> and <strong>Connect</strong>.</p></li>
+<li><p>Under <strong>Analyser type</strong>, search for and choose the type for your instrument. Each option reads name, manufacturer, protocol and revision. Choose the listed type even if the instrument will only send results: whether it also receives orders is set later, in Connect.</p></li>
+<li><p>Enter an <strong>Analyser name</strong> that tells this instrument apart from others of the same type, for example its serial number and location, and choose its <strong>Lab units</strong>.</p></li>
+<li><p>Select <strong>Continue to Assays</strong>. The analyser is created at this point, so it stays in the list even if you close the panel.</p>
+<p>{{IMG:03-step1-instrument.png}}</p>
+<p><em>Figure 3. Step 1 for a GeneXpert in the TB laboratory.</em></p></li>
+</ol>
+<p><strong>Instrument not listed?</strong> under the type field is for an instrument with no matching type; it is not covered on this page.</p>
+<h2>Step 2: Assays</h2>
+<ol start="5">
+<li><p>Turn on the assays this instrument runs, as set in its own host test codes. Each assay shows whether your catalog has a matching test (<em>Matches Xpert MTB/RIF</em>, <em>Several tests in this lab's catalog match</em>, or <em>No test in this lab's catalog</em>). Assays with a match start switched on. Verify maps only the assays that are on; a result for an assay that is off is held, never lost.</p>
+<p>{{IMG:04-step2-assays.png}}</p>
+<p><em>Figure 4. A TB laboratory's GeneXpert with only MTB complex switched on.</em></p></li>
+<li><p>Select <strong>Continue to Verify</strong>.</p></li>
+</ol>
+<h2>Step 3: Verify</h2>
+<p>Verify is where you set this analyser's own mapping. The summary shows <strong>Tests mapped</strong>, <strong>Results mapped</strong> and <strong>Confirmation</strong> (<em>Not confirmed</em>, <em>Current</em> or <em>Stale</em>). Below it, every record and result value of the assays that are on is listed under <strong>Test and result mappings</strong>.</p>
+<ol start="7">
+<li><p>For each analyser code that says <strong>Needs mapping</strong>, expand it and either choose the <strong>OpenELIS test</strong> it should file against (search by name, code or LOINC) or tick <strong>Do not receive</strong>. A code that matches several catalog tests says <em>Not mapped: several tests in this lab's catalog carry its code. Choose one.</em></p></li>
+<li><p>When a test has more than one result component, choose the component this record lands on (<strong>Call result for</strong> or <strong>OpenELIS component for</strong> the code).</p></li>
+<li><p>Map the coded result values listed under <strong>Results</strong> for that test. If the OpenELIS test has no coded result options, the page says <em>This Test has no active result options</em> and links to <strong>Add result options in Test Catalog</strong>.</p>
+<p>{{IMG:05-step3-verify-records.png}}</p>
+<p><em>Figure 5. Verify with the HIV viral load sub-records set to Do not receive and MTB complex mapped. With records still unresolved, Continue to Connect stays disabled.</em></p></li>
+<li><p>Select <strong>Save mapping</strong>. <strong>Review changes before saving</strong> lists each change; select <strong>Save changes</strong>. The page confirms <em>Mappings saved</em>.</p>
+<p>{{IMG:06-review-changes.png}}</p>
+<p><em>Figure 6. Review changes before saving.</em></p></li>
+<li><p>Check <strong>Control result recognition</strong>: the rules that identify quality-control material so it is not filed as a patient result (for the GeneXpert type, <em>Order field 12 equals Q</em>). Then select <strong>Confirm mappings and control recognition</strong>. Confirmation turns <strong>Current</strong>, with who confirmed it and when. Changing the mapping or the assays afterwards makes it <strong>Stale</strong> until you confirm again.</p></li>
+<li><p>Select <strong>Continue to Connect</strong>. It is enabled only when every record and value of the assays that are on is mapped or set to Do not receive, and the mapping is confirmed. If a record cannot be mapped yet, turn its assay off in Assays.</p>
+<p>{{IMG:07-step3-confirmed.png}}</p>
+<p><em>Figure 7. The confirmed mapping, with Continue to Connect enabled.</em></p></li>
+</ol>
+<h2>Step 4: Connect</h2>
+<ol start="13">
+<li><p>Set <strong>Data flow</strong> (<strong>Results only</strong> or <strong>Two-way</strong>), <strong>Transport</strong> (<strong>Network (TCP/IP)</strong> or <strong>Serial (RS-232)</strong>) and <strong>Connection role</strong> (<strong>Server</strong> or <strong>Client</strong>).</p></li>
+<li><p><strong>Host</strong> is the analyser's IP address. It is optional when the analyser connects to the Bridge; leave it blank if the analyser reaches the Bridge through NAT or a proxy. <strong>Instrument system name</strong> is the name the instrument sends in its messages (ASTM H.5 or HL7 MSH-3), such as the GeneXpert System Name; it is needed when several analysers share a port and address. Set the <strong>Decimal separator in results</strong>.</p>
+<p>{{IMG:08-step4-connect.png}}</p>
+<p><em>Figure 8. Connect for a network analyser that connects to the Bridge.</em></p></li>
+<li><p>Select <strong>Test connection</strong>. <strong>Connection evidence</strong> reports the Bridge listener (for an ASTM analyser, the shared listener on port 12001) and, if a host is saved, whether the analyser answered. <strong>Activation readiness</strong> says whether the analyser can be activated.</p>
+<p>{{IMG:09-test-connection.png}}</p>
+<p><em>Figure 9. Connection ready, with the Bridge listener on port 12001 and the analyser ready to activate.</em></p></li>
+<li><p>Select <strong>Finish and activate</strong>, or <strong>Save and finish later</strong> to leave it in setup. The analyser is listed as <strong>Active</strong> with <em>Bridge connection configured</em>.</p></li>
+</ol>
+<h2>Statuses</h2>
+<table data-layout="default"><tbody>
+<tr><th><p>Status</p></th><th><p>Meaning</p></th></tr>
+<tr><td><p>Setup</p></td><td><p>Created but not yet activated.</p></td></tr>
+<tr><td><p>Active</p></td><td><p>Running and receiving through its Bridge connection.</p></td></tr>
+<tr><td><p>Needs attention</p></td><td><p>Running, but something needs review, commonly held results.</p></td></tr>
+<tr><td><p>Inactive</p></td><td><p>Deactivated. Configuration and history are kept, and it can be reactivated.</p></td></tr>
+</tbody></table>
+<h2>Managing an existing analyser</h2>
+<p>The row's Actions menu on an active analyser offers <strong>View results</strong>, <strong>Edit setup</strong>, <strong>Configure connection</strong>, <strong>Quality Control</strong> and <strong>Deactivate</strong>; an inactive analyser offers <strong>Reactivate</strong> instead of Deactivate and Configure connection. <strong>Edit setup</strong> and <strong>Configure connection</strong> reopen the wizard at the matching step.</p>
+<p>Results the Bridge received but could not deliver (for example from a sender that matches no saved connection) are listed under <strong>Review undelivered results</strong>; see <ac:link><ri:page ri:content-title="Map analyzer codes, resolve held results, and run QC" /><ac:link-body>Map analyzer codes, resolve held results, and run QC</ac:link-body></ac:link>.</p>
+<h2>Tips</h2>
+<ul>
+<li><p>If the analyser type list is empty or setup cannot load types, check the pairing banner at the top of the Analysers page first.</p></li>
+<li><p>Turn off the assays an instrument does not run. That keeps Verify short and lets you continue to Connect.</p></li>
+<li><p>Mappings now belong to each analyser. Changing one GeneXpert's mapping does not change another's, and a type's default mappings only affect analysers set up later.</p></li>
+<li><p>The analyser is saved at step 1. Use the row's Deactivate action if you started one by mistake.</p></li>
+</ul>
+<h2>Known issues</h2>
+<ul>
+<li><p>While records are unresolved, Verify says <em>You can confirm and connect; affected results will be saved for correction before use</em>, but <strong>Continue to Connect</strong> stays disabled until every record of the assays that are on is mapped or excluded.</p></li>
+<li><p>In the OpenELIS test search, several tests appear twice with the same name and code (for example HIV Viral Load 20447-9), with nothing to tell them apart.</p></li>
+<li><p>Coded result values show every language the profile carries (for example DETECTED, D&Eacute;TECT&Eacute;, ERMITTELT and their Russian and Ukrainian forms) as separate values to map.</p></li>
+</ul>
+<h2>Not yet documented</h2>
+<p>Adopting a newer revision of a type for an existing analyser (<code>/analyzers/{id}/adoption</code>, shown only when a newer revision exists); <strong>Instrument not listed?</strong> and <strong>Create Profile</strong>; <strong>Two-way</strong> data flow and orders; serial (RS-232) connections; <strong>View results</strong>; FILE and HL7 analysers.</p>
+<h2>Provenance</h2>
+<table data-layout="default"><tbody>
+<tr><th><p>Status</p></th><td><p>Draft for review. Rewritten 13 October 2026 for 3.3.0; the 3.2.2.0 version is <ac:link><ri:page ri:content-title="Set up an analyzer (before 3.3.0)" /><ac:link-body>Set up an analyzer (before 3.3.0)</ac:link-body></ac:link>.</p></td></tr>
+<tr><th><p>Instance</p></th><td><p><code>testing.openelis-global.org</code>, OpenELIS 3.3.0-SNAPSHOT, paired with its Analyzer Bridge, signed in as a Global Admin.</p></td></tr>
+<tr><th><p>Driven</p></th><td><p>Add Analyser for a Cepheid GeneXpert (ASTM Mode) named <em>GeneXpert IV 803456 (TB lab)</em> in Molecular Biology: Assays with HIV-1 viral load and MTB complex on, then MTB complex only; Verify with HIV viral load mapped to HIV Viral Load (20447-9), its sub-records set to Do not receive, Save mapping with Review changes before saving, and Confirm mappings and control recognition; Continue to Connect disabled while records were unresolved; Connect with Network (TCP/IP), Server and instrument system name GX-803456; Test connection; Finish and activate. Analyser Types list, View default mappings, and the row Actions menus.</p></td></tr>
+<tr><th><p>Not exercised</p></th><td><p>A result arriving from the instrument (the Bridge's analyser ports are not reachable from outside the test server); adoption of a newer revision; Two-way data flow.</p></td></tr>
+<tr><th><p>Seed data left on testing</p></th><td><p>Analyser <em>GeneXpert IV 803456 (TB lab)</em> (active, MTB complex only).</p></td></tr>
+</tbody></table>

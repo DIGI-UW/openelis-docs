@@ -1,0 +1,75 @@
+<ac:structured-macro ac:name="note" ac:schema-version="1"><ac:rich-text-body><p><strong>Work in progress.</strong> This page is published before its review is finished so you can use it now. It is being reviewed under <a href="https://uwdigi.atlassian.net/browse/OGC-1358">OGC-1358</a>, so details may still change. If something on your screen does not match, add a comment to this page.</p></ac:rich-text-body></ac:structured-macro>
+<p><em>How-to &middot; Quality officers and bench supervisors</em></p>
+<h2>At a glance</h2>
+<table data-layout="default"><tbody>
+<tr><th><p>Purpose</p></th><td><p>Register a new lot of control material so its results can be judged against the lot's target mean and standard deviation.</p></td></tr>
+<tr><th><p>You'll end up with</p></th><td><p>An Active control lot in the Control Lots list, tied to one test and either an analyser or the bench, with its statistics method set.</p></td></tr>
+<tr><th><p>Who does this</p></th><td><p>The person who puts new control material into service, typically a quality officer or bench supervisor. Access is set by user permissions and can be configured by your administrator.</p></td></tr>
+<tr><th><p>Before you start</p></th><td><p>The control material in hand, with its lot number, level, expiry date and, for a fixed target, the manufacturer's mean and standard deviation from the package insert.</p></td></tr>
+<tr><th><p>Where</p></th><td><p>Main menu &rarr; Quality Assurance &rarr; Statistical QC &rarr; QC Lot Management</p></td></tr>
+</tbody></table>
+<h2>Step 1: Start a new lot</h2>
+<ol start="1">
+<li><p>Open <strong>QC Lot Management</strong> and select <strong>New Control Lot</strong>. The <strong>New Control Lot</strong> form opens.</p></li>
+</ol>
+<h2>Step 2: Describe the lot</h2>
+<ol start="2">
+<li><p>Enter the <strong>Lot Number</strong> and the <strong>Control Material</strong> name as printed on the vial.</p></li>
+<li><p>Choose the <strong>Control Level</strong>: Low, Normal or High.</p></li>
+<li><p>Enter the <strong>Expiration Date</strong> (day/month/year).</p></li>
+<li><p>Choose the <strong>Analyser</strong> the lot is run on, or <strong>Bench / no analyzer (manual method)</strong> for a control run at the bench without an instrument. The help text under the field says the analyser is optional.</p></li>
+<li><p>Choose the <strong>Test</strong> the control is for. The list shows each test with its sample type, for example Glucose(Plasma).</p></li>
+<li><p>Leave <strong>Status</strong> switched to <strong>Active</strong> to put the lot into service now.</p></li>
+</ol>
+<h2>Step 3: Set the statistics method</h2>
+<ol start="8">
+<li><p>In <strong>Statistics Configuration</strong>, select <strong>Configure</strong>.</p></li>
+<li><p>Choose the <strong>Calculation Method</strong>: <strong>Manufacturer Fixed</strong> (use the manufacturer-provided mean and SD values), <strong>Rolling Window</strong> (recalculate from the most recent N results) or <strong>Initial Runs</strong> (calculate once from the first N establishment runs).</p></li>
+<li><p>For Manufacturer Fixed, enter the <strong>Mean</strong> and <strong>Standard Deviation</strong> under <strong>Manufacturer Values</strong>, then select <strong>Save</strong> in the dialog.</p>
+<p>{{IMG:01-configure-filled.png}}</p>
+<p><em>Figure 1. The Statistics Configuration dialog with Manufacturer Fixed chosen, mean 5.40 and SD 0.20.</em></p></li>
+<li><p>The values appear in the Statistics Configuration block on the form.</p>
+<p>{{IMG:02-new-lot-filled.png}}</p>
+<p><em>Figure 2. A new Normal-level chemistry control lot for Glucose(Plasma), run at the bench, ready to save.</em></p></li>
+</ol>
+<p><em>Rolling Window and Initial Runs were not driven; the fields they show have not been verified on a live instance.</em></p>
+<h2>Step 4: Save</h2>
+<ol start="12">
+<li><p>Select <strong>Save</strong>. The <strong>Control Lots</strong> list opens with the new lot shown as <strong>Active</strong>.</p>
+<p>{{IMG:03-lot-list.png}}</p>
+<p><em>Figure 3. The new lot in the Control Lots list.</em></p></li>
+</ol>
+<h2>Field reference</h2>
+<table data-layout="default"><tbody>
+<tr><th><p>Field</p></th><th><p>Notes</p></th></tr>
+<tr><td><p>Lot Number</p></td><td><p>The lot number printed on the control material.</p></td></tr>
+<tr><td><p>Control Material</p></td><td><p>The product name.</p></td></tr>
+<tr><td><p>Control Level</p></td><td><p>Low, Normal or High. The list shows it in capitals (for example NORMAL).</p></td></tr>
+<tr><td><p>Expiration Date</p></td><td><p>The lot's expiry date.</p></td></tr>
+<tr><td><p>Analyser</p></td><td><p>Optional. An analyser, or Bench / no analyzer (manual method).</p></td></tr>
+<tr><td><p>Test</p></td><td><p>The test the control is for.</p></td></tr>
+<tr><td><p>Status</p></td><td><p>Active or inactive. The list can be filtered by status.</p></td></tr>
+<tr><td><p>Calculation Method</p></td><td><p>Manufacturer Fixed, Rolling Window or Initial Runs, set with Configure.</p></td></tr>
+<tr><td><p>Mean / Standard Deviation</p></td><td><p>The target values used with Manufacturer Fixed.</p></td></tr>
+</tbody></table>
+<h2>Tips</h2>
+<ul>
+<li><p>The Control Lots list has a <strong>Manufacturer</strong> column, but the form has no Manufacturer field, so the column shows a dash for lots created here.</p></li>
+<li><p>Saving a bench lot does not add anything to <strong>Rule Configuration</strong>: after saving the lot above, Rule Configuration still showed <em>No rule configurations found.</em> Whether an analyser lot creates a rule set was not tested.</p></li>
+<li><p>The breadcrumb reads <strong>Analysers &rsaquo; Quality Control Dashboard &rsaquo; Control Lots</strong> even when you arrive from Quality Assurance. This is a known inconsistency and does not mean you are on a different page.</p></li>
+</ul>
+<h2>Not yet documented</h2>
+<ul>
+<li><p>Editing, deactivating or retiring a lot (the row options menu was not opened).</p></li>
+<li><p>Lots tied to an analyser.</p></li>
+</ul>
+<h2>Provenance</h2>
+<table data-layout="default"><tbody>
+<tr><th><p>Instance</p></th><td><p><code>testing.openelis-global.org</code>, OpenELIS 3.3.0-SNAPSHOT</p></td></tr>
+<tr><th><p>Date</p></th><td><p>13 October 2026 (first drafted on pngtest 3.2.2.0, 27 September 2026)</p></td></tr>
+<tr><th><p>Driven</p></th><td><p>Created lot 26541, Lyphochek Assayed Chemistry Control, Normal, expiring 31 March 2027, bench, Glucose(Plasma), Manufacturer Fixed 5.40 / 0.20; saved; checked the Control Lots list and Rule Configuration.</p></td></tr>
+<tr><th><p>Observed only</p></th><td><p>Status filter, the other two calculation methods' descriptions.</p></td></tr>
+<tr><th><p>Not verified</p></th><td><p>Rolling Window and Initial Runs inputs, analyser lots, lot editing.</p></td></tr>
+<tr><th><p>Feature</p></th><td><p>QA Menu umbrella OGC-682, Feature Doc OGC-1213</p></td></tr>
+<tr><th><p>Status</p></th><td><p>Work in progress, review OGC-1358.</p></td></tr>
+</tbody></table>

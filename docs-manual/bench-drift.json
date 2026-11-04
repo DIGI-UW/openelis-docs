@@ -1,0 +1,202 @@
+{
+  "generatedAt": "2026-10-31T23:29:40Z",
+  "reportAt": "2026-10-31T23:28:46.898Z",
+  "sections": 91,
+  "contracts": 91,
+  "ok": 0,
+  "review": 83,
+  "errors": 6,
+  "stale": [
+    "add-patient",
+    "admin-compliance-standards",
+    "admin-sample-type-management",
+    "admin-vector-reference-data",
+    "alerts-dashboard",
+    "aliquot",
+    "analyzer-bridge-install",
+    "analyzer-file-import",
+    "analyzer-framework",
+    "analyzer-mapping-qc",
+    "analyzer-setup",
+    "application-properties",
+    "barcode-labels",
+    "calculated-value-tests",
+    "calendar-management",
+    "capa-register",
+    "catalog-import-csv",
+    "clinical-collect",
+    "clinical-order-enter",
+    "clinical-sample-check",
+    "custom-data-export",
+    "dictionary-menu",
+    "electronic-lab-notebook",
+    "electronic-signatures",
+    "environmental-order-results",
+    "environmental-surveillance",
+    "eqa-in-house-blinding",
+    "eqa-participant",
+    "eqa-provider",
+    "general-configurations",
+    "geographic-areas",
+    "inventory-items",
+    "inventory-receive-reports",
+    "lab-number-management",
+    "lab-unit-add",
+    "lab-units-editor",
+    "label-presets",
+    "label-store-shared",
+    "laporan-hasil-report",
+    "locations-import-export",
+    "logging-configuration",
+    "menu-configuration",
+    "microbiology-v2",
+    "modify-order-requester",
+    "nce-capa",
+    "nce-report",
+    "notifications-admin",
+    "order-entry",
+    "order-search",
+    "organization-management-330",
+    "organizations-management",
+    "panel-editor",
+    "pathology-cassettes-slides",
+    "patient-management",
+    "patient-merge",
+    "patient-order-enhancements",
+    "printed-report-header",
+    "programs-v2",
+    "provider-management",
+    "qa-overview-qi",
+    "qa-review-shared",
+    "qc-control-lot",
+    "qc-overview",
+    "reference-lab-results",
+    "reflex-testing",
+    "register-new-patient",
+    "report-print-queue",
+    "result-reporting-configuration",
+    "result-validation",
+    "results-entry",
+    "results-entry-legacy",
+    "running-reports",
+    "sample-acceptance-checklist",
+    "sample-shipment-referral",
+    "sample-storage",
+    "sample-storage-management",
+    "sample-type-editor",
+    "sampling-sites",
+    "search-index-management",
+    "sent-messages",
+    "site-information",
+    "test-accreditation",
+    "test-catalog-editor",
+    "test-catalogue-add-test",
+    "test-notification-configuration",
+    "user-management",
+    "validation",
+    "validation-v4",
+    "vector-surveillance",
+    "vector-surveillance-report",
+    "workplans"
+  ],
+  "capturedOld": 72,
+  "unchecked": [],
+  "instances": {
+    "pngtest.openelis-global.org": {
+      "contracts": 1,
+      "checked": 1,
+      "ok": 0,
+      "review": 1,
+      "drift": 0,
+      "error": 0,
+      "version": "3.3.0",
+      "checkedAt": "2026-10-24T08:32:44.510Z"
+    },
+    "testing.openelis-global.org": {
+      "contracts": 90,
+      "checked": 90,
+      "ok": 0,
+      "review": 82,
+      "drift": 2,
+      "error": 6,
+      "version": "3.4.0",
+      "checkedAt": "2026-10-31T23:28:46.890Z"
+    }
+  },
+  "drift": [
+    {
+      "id": "analyzer-mapping-qc",
+      "base": "testing.openelis-global.org",
+      "missing": [
+        "/analyzers/6/mapping :: Control result recognition"
+      ],
+      "page": "1648590851"
+    },
+    {
+      "id": "vector-surveillance",
+      "base": "testing.openelis-global.org",
+      "missing": [
+        "/order/vector/enter :: Tests & Panels",
+        "/vector/identification :: Species Distribution",
+        "/vector/identification :: Identify",
+        "/vector/identification :: Split"
+      ],
+      "page": "1420230657"
+    }
+  ],
+  "errorRoutes": [
+    {
+      "id": "admin-vector-reference-data",
+      "base": "testing.openelis-global.org",
+      "routes": [
+        "/MasterListsPage/vectorSurveillanceSetup/sampling-sites :: redirected to /MasterListsPage/locations/sites"
+      ],
+      "page": "1420460034"
+    },
+    {
+      "id": "environmental-surveillance",
+      "base": "testing.openelis-global.org",
+      "routes": [
+        "/LogbookResults?type= :: redirected to /Results",
+        "/ResultValidation?type=&test= :: redirected to /validation"
+      ],
+      "page": "1420099592"
+    },
+    {
+      "id": "result-validation",
+      "base": "testing.openelis-global.org",
+      "routes": [
+        "/ResultValidation?type=&test= :: redirected to /validation",
+        "/AccessionValidation :: redirected to /validation",
+        "/ResultValidationByTestDate :: redirected to /validation"
+      ],
+      "page": null
+    },
+    {
+      "id": "results-entry-legacy",
+      "base": "testing.openelis-global.org",
+      "routes": [
+        "/LogbookResults?type= :: redirected to /Results"
+      ],
+      "page": null
+    },
+    {
+      "id": "sample-shipment-referral",
+      "base": "testing.openelis-global.org",
+      "routes": [
+        "/SampleShipment :: redirected to /SampleShipment/boxes",
+        "/ReferredOutTests :: redirected to /api/OpenELIS-Global/ReferredOutTests"
+      ],
+      "page": null
+    },
+    {
+      "id": "validation",
+      "base": "testing.openelis-global.org",
+      "routes": [
+        "/ResultValidation?type=&test= :: redirected to /validation"
+      ],
+      "page": null
+    }
+  ],
+  "summary": "91 of 91 contracts checked: 0 ok, 83 review, 2 drift, 6 route errors."
+}

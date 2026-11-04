@@ -1,0 +1,85 @@
+<ac:structured-macro ac:name="info"><ac:rich-text-body><p><strong>OpenELIS 3.3.0.</strong> Custom Data Export and My Report Queue are new in 3.3.0 (not yet released at the time of writing; stories OGC-479, OGC-481 and OGC-483 in Acceptance). This page is a draft for review.</p></ac:rich-text-body></ac:structured-macro>
+<p><em>How-to · Lab managers and QA officers</em></p>
+<h2>At a glance</h2>
+<table><tbody>
+<tr><th>Purpose</th><td>Build a CSV extract of samples, tests, results and turnaround times yourself, without SQL, and rerun the same report for a new period.</td></tr>
+<tr><th>You'll end up with</th><td>A CSV file with the columns you chose, in your order, and optionally a saved report you can rerun.</td></tr>
+<tr><th>Who does this</th><td>Lab managers and QA officers. Access is set by user permissions and can be configured by your administrator; patient name and identifier fields need extra permissions.</td></tr>
+<tr><th>Before you start</th><td>Know the question the CSV must answer, the period (up to 90 days), and the lab sections it covers.</td></tr>
+<tr><th>Where</th><td>Main menu → Reports → Custom Data Export</td></tr>
+</tbody></table>
+
+<h2>Step 1: Start an export</h2>
+<ol>
+<li><p>Open <strong>Main menu → Reports → Custom Data Export</strong>. The landing page offers <strong>Create a new export</strong> (<strong>Start a new export</strong>) and <strong>Use a saved report</strong>, with <strong>My Report Queue</strong> at the top right. When you have a report in progress, <strong>Continue current export</strong> returns to it.</p>
+<p>{{IMG:01-landing.png}}</p>
+<p><em>Figure 1. Custom Data Export before any report has been saved.</em></p></li>
+<li><p>Select <strong>Start a new export</strong>. The builder has three steps: <strong>Choose columns</strong>, <strong>Set Filters</strong> and <strong>Review &amp; Submit</strong>. First choose one report type, so every CSV row has a clear meaning: <strong>Sample &amp; Testing</strong> (orders, results, patients and turnaround times), <strong>Referrals</strong> (tests referred to other labs) or <strong>Non-Conformance</strong> (rejected samples and non-conforming events). You can change the type until you select fields.</p>
+<p>{{IMG:02-report-type.png}}</p>
+<p><em>Figure 2. Choosing the report type.</em></p></li>
+</ol>
+
+<h2>Step 2: Choose the columns</h2>
+<ol start="3">
+<li><p>For Sample &amp; Testing, choose the <strong>CSV layout</strong>; <em>Spreadsheet: tests in columns</em> gives one row per specimen with tests as columns.</p></li>
+<li><p><strong>Available fields</strong> are grouped: Sample and order, Patient, Turnaround time, Configured tests, Turnaround by test, Configured result components, Turnaround by result component and Additional questions. Expand a group or type in <strong>Find a field</strong>, then select <strong>+ Add</strong> on each field you want; <strong>Add all shown</strong> adds every field in view.</p></li>
+<li><p>The fields appear, numbered, under <strong>Your CSV columns</strong>. Drag a handle or use the arrows to change the order (arrow keys move the focused handle; Home and End move it to the first or last position), and the cross to remove one. The <strong>CSV preview</strong> shows the header in the order the file will have.</p>
+<p>{{IMG:03-columns.png}}</p>
+<p><em>Figure 3. Eight columns chosen, including a test result and its received-to-validated time.</em></p></li>
+<li><p>Select <strong>Next: Set Filters</strong>. It stays unavailable until at least one column is chosen.</p></li>
+</ol>
+
+<h2>Step 3: Set the filters</h2>
+<ol start="7">
+<li><p>Under <strong>Date Range</strong>, set <strong>Date from</strong> and <strong>Date to</strong>. The range uses specimen collection dates in UTC, includes both dates, and can be at most 90 days.</p></li>
+<li><p>Under <strong>Scope Filters (Optional)</strong>, narrow the report to <strong>Lab sections</strong> (only the sections you have access to are offered), <strong>Tests</strong> and <strong>Result statuses</strong> (Finalised by default). <strong>Show more filters</strong> lists Sample Status, Priority and Referring Site, marked <em>Not yet connected</em>.</p>
+<p>{{IMG:04-filters.png}}</p>
+<p><em>Figure 4. Thirteen days of finalised results.</em></p></li>
+<li><p>Select <strong>Next: Review &amp; Submit</strong>.</p></li>
+</ol>
+
+<h2>Step 4: Review, save and generate</h2>
+<ol start="10">
+<li><p>The review shows the report type and layout, the date range and filters (with <strong>Change</strong>), and the selected fields (with <strong>Edit report</strong>). A message says whether the CSV will download straight away or be generated in the background; a longer period goes to the background.</p>
+<p>{{IMG:05-review.png}}</p>
+<p><em>Figure 5. Review &amp; Submit: this CSV will be generated in the background.</em></p></li>
+<li><p>To reuse these settings, tick <strong>Save these report settings for later</strong>, enter a <strong>Report name</strong> and select <strong>Save report settings</strong>. The page confirms <em>Saved as</em> and the name. The saved report keeps the fields and filters but never the reporting period. Once saved, <strong>Update shared report</strong> and <strong>Save a copy</strong> are offered.</p>
+<p>{{IMG:06-saved-settings.png}}</p>
+<p><em>Figure 6. The report settings saved as a shared report.</em></p></li>
+<li><p>Select <strong>Generate CSV</strong>. When it is ready, <strong>Your current report</strong> shows <em>Ready to download</em> with the row count, and <strong>Download CSV</strong>. The file name is generated automatically; a custom name is not yet connected.</p></li>
+</ol>
+
+<h2>My Report Queue</h2>
+<p><strong>My Report Queue</strong> lists your exports with <strong>Job Name</strong>, <strong>Report</strong>, <strong>Date Range</strong>, <strong>Status</strong>, <strong>Rows / File Size</strong> and <strong>Submitted At</strong>. A finished job offers <strong>Download CSV</strong> and <strong>Details</strong>. Active jobs refresh on their own. The page says failed exports can be retried, queued work cancelled and expired reports rerun with fresh dates; deleting a job is not yet connected.</p>
+<p>{{IMG:07-queue.png}}</p>
+<p><em>Figure 7. My Report Queue with three finished exports.</em></p>
+
+<h2>Rerun a saved report</h2>
+<ol start="13">
+<li><p>On the landing page, <strong>Use a saved report</strong> lists the saved reports with their field count, noting that the reporting period is never saved. <strong>Shared reports</strong> opens the full list.</p>
+<p>{{IMG:08-landing-saved.png}}</p>
+<p><em>Figure 8. A saved report on the landing page.</em></p></li>
+<li><p>Select <strong>Use report</strong>. The builder opens on Set Filters with the saved fields and filters and asks you to <em>Choose fresh dates before running this report</em>. Set the dates and continue as in Step 4.</p>
+<p>{{IMG:09-use-saved.png}}</p>
+<p><em>Figure 9. A saved report reopened, waiting for fresh dates.</em></p></li>
+</ol>
+
+<h2>Tips and notes</h2>
+<ul>
+<li>The date filter uses specimen collection dates. Orders with no collection date recorded may not appear.</li>
+<li>Saved reports are shared: the landing page calls them Shared reports, and saving offers Update shared report.</li>
+<li>On 3.3.0-SNAPSHOT the date fields show month first (10/01/2026 for 1 October), and many test names in Configured tests appear in French (for example Hémoglobine(Whole Blood)); searching "Hemoglobin" finds nothing.</li>
+</ul>
+
+<h2>Not covered on this page</h2>
+<ul>
+<li>The Referrals and Non-Conformance report types, other CSV layouts, and the locked patient fields for users without the identifying-data permissions.</li>
+<li>Cancel, Retry and Re-run in the queue, job expiry, and the in-app notification when a job finishes.</li>
+</ul>
+
+<h2>Provenance</h2>
+<table><tbody>
+<tr><th>Drafted</th><td><p>12 October 2026 against <strong>3.3.0-SNAPSHOT</strong> on <code>testing.openelis-global.org</code> (OGC-479, OGC-481, OGC-483).</p>
+<p>DRIVEN: Sample &amp; Testing report with eight columns, a 13-day range and the Hematology section, Save report settings, Generate CSV (background, Ready to download), Download CSV, My Report Queue, Use report with fresh dates. Every export on testing that day, including this one, returned 0 rows, so the CSV content was not checked; the header row matched the chosen columns and order.</p>
+<p>Seed data left on testing: saved report <em>Haematology turnaround, monthly</em>.</p></td></tr>
+</tbody></table>

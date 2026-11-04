@@ -1,0 +1,106 @@
+<ac:structured-macro ac:name="info" ac:schema-version="1" ac:macro-id="6e70f44c-b357-40da-b289-32ce3c806f5b"><ac:rich-text-body><p><strong>OpenELIS 3.3.0.</strong> This page describes the Locations &amp; Organizations admin introduced in 3.3.0 (not yet released at the time of writing). Sites on 3.2.x and earlier use the older Organization Management screen: see <a href="https://uwdigi.atlassian.net/wiki/spaces/OG/pages/1437892659">Admin: Manage organizations (3.2.x)</a>.</p></ac:rich-text-body></ac:structured-macro>
+<h2>At a glance</h2>
+<table><tbody>
+<tr><th>Purpose</th><td>Add and maintain the organizations your laboratory works with (the hospitals, clinics and health centres that send samples, and the laboratories you refer samples to) so they can be chosen in order entry and referrals.</td></tr>
+<tr><th>You'll end up with</th><td>An active organization record with its type, codes, location and contact details, and any wards or departments inside it.</td></tr>
+<tr><th>Who does this</th><td>Administrators. Access is set by user permissions and can be configured by your administrator.</td></tr>
+<tr><th>Before you start</th><td>The organization's name and what it does (requests tests, receives referrals, and so on). Have its codes ready if it has them, for example a DHIS2 ID. For a referral laboratory, know its approval status.</td></tr>
+<tr><th>Where</th><td>Main menu &rarr; Admin &rarr; Locations &amp; Organizations &rarr; Organizations</td></tr>
+</tbody></table>
+<p>The Organizations page lists every organization OpenELIS knows about. Each row shows the organization's code, type, location, how many wards or departments it has, whether it is in use, and whether it is active. From here you add organizations, edit them, record their wards and departments, and switch them off when they are no longer used. Organizations appear in order entry as the requesting site and in referrals as the destination lab.</p>
+<p>Places where environmental or vector samples are collected are <strong>sampling sites</strong>, not organizations, and are managed under <strong>Sampling Sites</strong> in the same menu.</p>
+
+<h2>Step 1: Open Organizations and find an organization</h2>
+<ol>
+<li><p>Open <strong>Main menu &rarr; Admin &rarr; Locations &amp; Organizations &rarr; Organizations</strong>. The list shows active organizations. Its columns are <strong>Name</strong>, <strong>Code</strong>, <strong>Type</strong>, <strong>Location</strong>, <strong>Wards / Depts</strong>, <strong>In use</strong>, <strong>Active</strong> and <strong>Actions</strong>. <strong>In use</strong> shows a total with the number still open in brackets. Under <strong>Type</strong>, the organization's category and ownership appear next to its type.</p>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="01-organizations-list.png" ri:version-at-save="1" /></ac:image></p>
+<p><em>Figure 1. The Organizations list, with the search box, filters and the Import, Export and Add buttons.</em></p></li>
+<li><p>Not sure whether you need an organization or a sampling site? Open <strong>Organization or sampling site: which do I need?</strong> under the page description. It explains the difference with examples.</p>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="02-which-do-i-need.png" ri:version-at-save="1" /></ac:image></p>
+<p><em>Figure 2. The &quot;which do I need?&quot; guidance, opened.</em></p></li>
+<li><p>To find an organization, type in <strong>Search by name, code or any identifier</strong>. Search matches the name, the code and every other identifier on the record. When the match is on an identifier other than the code, the identifier is shown under the name. Narrow the list further with <strong>Type</strong>, <strong>Location (includes areas beneath)</strong>, <strong>Category</strong>, <strong>Ownership</strong> and <strong>Status</strong> (Active, Inactive or All).</p>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="03-search-by-identifier.png" ri:version-at-save="1" /></ac:image></p>
+<p><em>Figure 3. Searching by a DHIS2 ID finds Gerehu General Hospital and shows the matching identifier under its name.</em></p></li>
+</ol>
+
+<h2>Step 2: Add an organization</h2>
+<ol>
+<li><p>Click <strong>Add</strong>. A form opens in the list, with links at the top to jump to its sections: <strong>Identity</strong>, <strong>Identifiers</strong>, <strong>Location</strong> and <strong>Contact</strong>.</p></li>
+<li><p>Under <strong>Identity</strong>, enter the <strong>Name</strong> (required) and, if you want, a <strong>Short name</strong>. Choose one or more <strong>Organization type(s)</strong> (required). The chosen types appear as tags under the box. Set <strong>Category</strong> and <strong>Ownership</strong> if you know them, and add a <strong>Description</strong>.</p>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="04-add-identity.png" ri:version-at-save="1" /></ac:image></p>
+<p><em>Figure 4. The Identity section for a new urban clinic, typed as a referring clinic.</em></p></li>
+<li><p>Under <strong>Identifiers</strong>, the first row is labelled <strong>Code</strong> and is marked as the <strong>Reporting code</strong>. Enter the organization's code in <strong>Value</strong>. To record another identifier, click <strong>Add identifier</strong>, type a label (or pick one already used, such as DHIS2 ID) and enter the value. The reporting code is what shows as Code in lists, exports and reports; every identifier is searchable.</p>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="05-add-identifiers.png" ri:version-at-save="1" /></ac:image></p>
+<p><em>Figure 5. A reporting code and a DHIS2 ID recorded for the clinic.</em></p></li>
+<li><p>Under <strong>Location</strong>, pick the most specific <strong>Location</strong> (area) you know, then fill in <strong>Street address</strong>, <strong>City</strong>, <strong>State / Province</strong>, <strong>Postal code</strong>, and <strong>GPS latitude</strong> and <strong>GPS longitude</strong> in decimal degrees. Under <strong>Contact</strong>, add a <strong>Contact name</strong>, <strong>Phone</strong>, <strong>Email</strong> and <strong>Website</strong> as available. All of these are optional.</p>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="06-add-location-contact.png" ri:version-at-save="1" /></ac:image></p>
+<p><em>Figure 6. Address, GPS position and contact details for the clinic.</em></p></li>
+<li><p>If you chose the <strong>referralLab</strong> type, a <strong>Referral laboratory &middot; ISO 15189 6.8</strong> section appears below Contact. <strong>Approval status</strong> is required (Approved, Under evaluation, Suspended or Not approved). You can also record the <strong>Accreditation body</strong>, <strong>Accreditation number</strong>, <strong>Accreditation expiry</strong>, <strong>Last review date</strong>, <strong>Next review due</strong> and <strong>Review notes</strong>. Without an approval status the record is not saved and the page shows <em>Not saved yet. Check: Approval status.</em></p>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="07-referral-lab.png" ri:version-at-save="1" /></ac:image></p>
+<p><em>Figure 7. The Referral laboratory section for a referral lab, with its approval status and review dates.</em></p></li>
+<li><p>Click <strong>Save</strong>. A message confirms the organization was added, and the new record stays open for editing.</p>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="08-saved.png" ri:version-at-save="1" /></ac:image></p>
+<p><em>Figure 8. Confirmation that Tokarara Urban Clinic was added.</em></p></li>
+</ol>
+
+<h2>Step 3: Edit an organization and add wards or departments</h2>
+<ol>
+<li><p>Find the organization and click <strong>Edit</strong> in its row. The same form opens, with an extra <strong>Wards / Depts</strong> section. Change any field and click <strong>Save</strong>. <strong>Close</strong> in the row closes the form.</p></li>
+<li><p>To add a ward, department or clinic inside the organization, click <strong>Add ward / dept</strong> in the Wards / Depts section. Enter its name, an optional code, and a <strong>Service type</strong> (Inpatient, Outpatient, Intensive care, Emergency, Maternity, Laboratory or Other). Contact name, phone and email are optional. A ward uses the organization's address, and its GPS position too unless you give it one.</p>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="09-add-ward.png" ri:version-at-save="1" /></ac:image></p>
+<p><em>Figure 9. A new Outpatient Department being added to Gerehu General Hospital.</em></p></li>
+<li><p>Click <strong>Save 1 new ward / dept</strong> (the button counts the new rows). Wards are saved with this button, not with the main Save. If you press the main Save while a new ward is still unsaved, the page says <em>1 ward / dept is typed but not saved yet</em> and saves nothing until you save or remove it.</p>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="10-ward-saved.png" ri:version-at-save="1" /></ac:image></p>
+<p><em>Figure 10. The saved ward, with its GPS position inherited from the hospital.</em></p></li>
+<li><p>To see what has changed on a record, click <strong>History</strong> at the bottom of the form. The history lists each change with its date, the user who made it and the old and new values. Use <strong>All changes</strong> to filter by kind of change. The history is read-only.</p>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="11-history.png" ri:version-at-save="1" /></ac:image></p>
+<p><em>Figure 11. The history of Gerehu General Hospital.</em></p></li>
+</ol>
+
+<h2>Step 4: Deactivate or reactivate an organization</h2>
+<ol>
+<li><p>Click the <strong>Active</strong> switch in the organization's row. The change takes effect immediately, with no confirmation step. A message confirms it and offers <strong>Undo</strong>. With the Status filter on Active, the organization leaves the list.</p>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="12-deactivated-undo.png" ri:version-at-save="1" /></ac:image></p>
+<p><em>Figure 12. Tokarara Urban Clinic deactivated, with Undo in the message.</em></p></li>
+<li><p>To find inactive organizations, set <strong>Status</strong> to <strong>Inactive</strong> or <strong>All</strong>. Click the switch again to reactivate one.</p>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="13-inactive-filter.png" ri:version-at-save="1" /></ac:image></p>
+<p><em>Figure 13. The Status filter set to Inactive, showing the deactivated clinic.</em></p></li>
+</ol>
+
+<h2>Organization types</h2>
+<p>Types decide where an organization can be chosen. An organization can have more than one.</p>
+<table><tbody>
+<tr><th>Type</th><th>Use it for</th></tr>
+<tr><td>referring clinic</td><td>A site that requests tests from your laboratory. It appears as the requesting site in order entry.</td></tr>
+<tr><td>referralLab</td><td>A laboratory you send samples to for tests you do not perform. Adds the Referral laboratory section.</td></tr>
+<tr><td>patient referral</td><td>The clinic that referred the patient to your laboratory.</td></tr>
+<tr><td>Health District, Health Region</td><td>Administrative health areas.</td></tr>
+<tr><td>TestKitVender</td><td>A supplier of test kits.</td></tr>
+</tbody></table>
+
+<h2>Field reference</h2>
+<table><tbody>
+<tr><th>Field</th><th>Notes</th></tr>
+<tr><td>Name</td><td>Required. Shown wherever the organization is chosen.</td></tr>
+<tr><td>Short name</td><td>Optional.</td></tr>
+<tr><td>Organization type(s)</td><td>Required. One or more types; see Organization types.</td></tr>
+<tr><td>Category</td><td>Optional. For example Aid post, Health centre, Urban clinic, District hospital, Provincial hospital, National referral hospital or Laboratory.</td></tr>
+<tr><td>Ownership</td><td>Optional. Church, Government, NGO, Private or Other.</td></tr>
+<tr><td>Identifiers</td><td>Any number of label and value pairs. The one marked Reporting code shows as Code in lists, exports and reports. All are searchable.</td></tr>
+<tr><td>Location</td><td>Optional. The area the organization is in; pick the most specific area you know.</td></tr>
+<tr><td>Street address, City, State / Province, Postal code</td><td>Optional address.</td></tr>
+<tr><td>GPS latitude, GPS longitude</td><td>Optional. Decimal degrees, WGS84.</td></tr>
+<tr><td>Contact name, Phone, Email, Website</td><td>Optional.</td></tr>
+<tr><td>Approval status</td><td>Referral labs only. Required.</td></tr>
+<tr><td>Wards / Depts</td><td>Shown when editing. Each ward needs a name and a service type.</td></tr>
+</tbody></table>
+
+<h2>Tips and notes</h2>
+<ul>
+<li>Organizations are deactivated, not deleted. Inactive records are hidden from order entry and other pickers, but still appear on existing orders and reports.</li>
+<li>If you deactivate the wrong organization, click <strong>Undo</strong> in the message straight away.</li>
+<li>The Organization type(s) box shows a count of the types chosen; the type names appear as tags under it. This is a known issue (OGC-1420).</li>
+<li>While a new ward row is open, the page may scroll sideways on smaller screens. This is a known layout issue.</li>
+</ul>
+
+<h2>Related pages</h2><ul><li><a href="https://uwdigi.atlassian.net/wiki/spaces/OG/pages/1706295354">Admin: Import and export locations (3.3.0)</a>: loading organizations, wards, sampling sites and geographic areas from CSV files.</li><li><a href="https://uwdigi.atlassian.net/wiki/spaces/OG/pages/1705083175">Admin: Manage sampling sites (3.3.0)</a></li><li><a href="https://uwdigi.atlassian.net/wiki/spaces/OG/pages/1706524697">Admin: Manage geographic areas (3.3.0)</a>: the areas offered in the Location picker.</li></ul><h2>Not covered on this page</h2><ul><li>The <strong>Import</strong> and <strong>Export</strong> buttons on the Organizations list.</li><li>The <strong>Referral labs overdue for review or with expired accreditation only</strong> filter.</li></ul>

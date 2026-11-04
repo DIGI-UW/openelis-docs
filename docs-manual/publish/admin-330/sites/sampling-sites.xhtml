@@ -1,0 +1,63 @@
+<ac:structured-macro ac:name="info"><ac:rich-text-body><p><strong>OpenELIS 3.3.0.</strong> This page describes the Locations &amp; Organizations admin introduced in 3.3.0 (not yet released at the time of writing). It is a draft for review; see also <a href="https://uwdigi.atlassian.net/wiki/spaces/OG/pages/1702756385">Admin: Manage organizations (3.3.0)</a>.</p></ac:rich-text-body></ac:structured-macro>
+<h2>At a glance</h2>
+<table><tbody>
+<tr><th>Purpose</th><td>Record the fixed places where environmental samples are collected (a water source, a mosquito trap, an air monitor, a soil plot) so results can be compared over time at the same spot.</td></tr>
+<tr><th>You'll end up with</th><td>An active sampling site with a code, a location, a GPS point and a contact person.</td></tr>
+<tr><th>Who does this</th><td>Administrators. Access is set by user permissions and can be configured by your administrator.</td></tr>
+<tr><th>Before you start</th><td>The site's name and code, and its geographic area. Geographic areas must be loaded first (see <a href="https://uwdigi.atlassian.net/wiki/spaces/OG/pages/1706524697">Admin: Manage geographic areas (3.3.0)</a>).</td></tr>
+<tr><th>Where</th><td>Main menu → Admin → Locations &amp; Organizations → Sampling Sites</td></tr>
+</tbody></table>
+<p>A sampling site does not order tests. It records where a sample was taken. Hospitals, clinics and laboratories are <strong>organizations</strong>, not sampling sites; open <strong>Organization or sampling site: which do I need?</strong> under the page description if you are unsure.</p>
+
+<h2>Step 1: Open Sampling Sites and find a site</h2>
+<ol>
+<li><p>Open <strong>Main menu → Admin → Locations &amp; Organizations → Sampling Sites</strong>. The list columns are <strong>Name</strong>, <strong>Code</strong>, <strong>Type</strong>, <strong>Location</strong>, <strong>Site type</strong>, <strong>In use</strong> (with the number still open in brackets), <strong>Active</strong> and <strong>Actions</strong>. With no sites yet, the list says <em>No records yet. Add one, or import a file.</em></p></li>
+<li><p>Type in <strong>Search by name, code or any identifier</strong>, or pick an area in <strong>Location (includes areas beneath)</strong>: choosing a province also lists the sites in its districts and LLGs. The chosen area shows as a tag with <strong>Clear filters</strong>. <strong>Status</strong> switches between Active, Inactive and All.</p>
+<p>{{IMG:01-list.png}}</p>
+<p><em>Figure 1. Sampling sites filtered to Central Province, which includes the Laloki River intake in Hiri Rural LLG.</em></p></li>
+</ol>
+
+<h2>Step 2: Add a sampling site</h2>
+<ol>
+<li><p>Click <strong>Add</strong>. A form opens in the list, with links at the top to its sections: <strong>Identity</strong>, <strong>Identifiers</strong>, <strong>Location</strong>, <strong>Contact</strong> and <strong>Site details</strong>.</p></li>
+<li><p>Under <strong>Identity</strong>, enter the <strong>Name</strong> (required) and, if you want, a <strong>Short name</strong>. In <strong>Description</strong>, include directions so someone else can find the exact spot.</p></li>
+<li><p>Under <strong>Identifiers</strong>, the first row is labelled <strong>Code</strong> and is marked as the <strong>Reporting code</strong>. Enter the site's code in <strong>Value</strong>; a sampling site needs one. You can type another label or pick one already used. <strong>Add identifier</strong> adds more rows. The reporting code shows as Code in lists, exports and reports, and every identifier is searchable.</p>
+<p>{{IMG:02-identity.png}}</p>
+<p><em>Figure 2. Identity and identifiers for a river water intake, with its reporting code.</em></p></li>
+<li><p>Under <strong>Location</strong>, type part of an area name in <strong>Location</strong> and pick from the list. Each suggestion shows the area's level and the areas above it. Pick the most specific area you know; a district is fine if you do not know the LLG. The chosen area's full path is shown under the field.</p>
+<p>{{IMG:03-location-pick.png}}</p>
+<p><em>Figure 3. Typing "Hiri" offers the district and the LLG, each with its path.</em></p></li>
+<li><p>Add <strong>Street address</strong>, <strong>City</strong>, <strong>State / Province</strong> and <strong>Postal code</strong> if they apply, and <strong>GPS latitude</strong> and <strong>GPS longitude</strong> in decimal degrees (WGS84). Under <strong>Contact</strong>, add a <strong>Contact name</strong>, <strong>Phone</strong>, <strong>Email</strong> and <strong>Website</strong> as available. Under <strong>Site details</strong>, choose a <strong>Site type</strong> and <strong>Environmental zone</strong> and type a <strong>Subtype</strong>. All of these are optional.</p>
+<p>{{IMG:04-contact-details.png}}</p>
+<p><em>Figure 4. Location, GPS point, contact and subtype filled in.</em></p></li>
+<li><p>Click <strong>Save</strong>. If the code is missing, nothing is saved: the page shows <em>The record was not saved: A sampling site needs a code</em> and marks the identifier row.</p>
+<p>{{IMG:05-code-required.png}}</p>
+<p><em>Figure 5. Saving without a code.</em></p>
+<p>Once saved, a message confirms the site was added. The new row shows its code, the <em>sampling site</em> type tag and its location path, and the form stays open for editing, with <strong>History</strong> at the bottom.</p>
+<p>{{IMG:06-saved.png}}</p>
+<p><em>Figure 6. The Laloki River raw water intake added.</em></p></li>
+</ol>
+
+<h2>Step 3: Edit, check history, deactivate</h2>
+<ol>
+<li><p>Click <strong>Edit</strong> in a site's row to open its form, change any field and click <strong>Save</strong>. <strong>Close</strong> in the row closes the form.</p></li>
+<li><p>Click <strong>History</strong> at the bottom of the form to see each change with its date and user. <strong>Filter by action</strong> narrows the list. The history is read-only and is kept for as long as the record exists.</p></li>
+<li><p>Use the <strong>Active</strong> switch to deactivate a site that is no longer sampled. Set <strong>Status</strong> to Inactive or All to find it again.</p></li>
+</ol>
+
+<h2>Tips and notes</h2>
+<ul>
+<li>Sites can also be loaded in bulk from the <em>Facilities, wards &amp; sites</em> file on <a href="https://uwdigi.atlassian.net/wiki/spaces/OG/pages/1706295354">Import / Export</a>, using the type <code>sampling site</code>.</li>
+<li>The <strong>Site type</strong> and <strong>Environmental zone</strong> lists were empty on the test server; their values come from your site's configuration.</li>
+<li>On 3.3.0-SNAPSHOT, the saved <strong>Short name</strong> shows the reporting code instead of what you typed. Check it after saving.</li>
+<li>Inactive records are hidden from order entry and other pickers. They still appear on existing orders and reports.</li>
+</ul>
+
+<h2>Provenance</h2>
+<table><tbody>
+<tr><th>Drafted</th><td><p>12 October 2026 against <strong>3.3.0-SNAPSHOT</strong> on <code>testing.openelis-global.org</code> (Epic OGC-1363, Feature Doc OGC-1414).</p>
+<p>DRIVEN: empty list, Add (identity, identifier with reporting code, location picker, GPS, contact, subtype), save without a code (error), save, Edit (fields read back), History, Location filter including areas beneath.</p>
+<p>OBSERVED only: Active switch, Status filter, Import and Export buttons, the "which do I need?" panel. Site type and Environmental zone had no values to choose.</p>
+<p>Finding: the Short name typed as "Laloki intake" was stored as "WS-HIR-01", the reporting code.</p>
+<p>Seed data left on testing: sampling site <em>Laloki River raw water intake</em> (WS-HIR-01, Hiri Rural LLG).</p></td></tr>
+</tbody></table>

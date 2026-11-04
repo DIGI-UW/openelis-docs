@@ -1,0 +1,83 @@
+<ac:structured-macro ac:name="warning" ac:schema-version="1" ac:macro-id="5c750a71-87ed-44f6-a692-388582688368"><ac:rich-text-body><p><strong>Pre-release.</strong> This page describes the WHONET export of Microbiology V2 (OGC-1383) as built on the pre-release test server pngtest.openelis-global.org. It is not part of the OpenELIS 3.3.0 release, and screens may change before it is merged. It stays in the review area until the work is merged and checked on a release build.</p></ac:rich-text-body></ac:structured-macro>
+
+<h2>At a glance</h2>
+<table><tbody>
+<tr><th>Purpose</th><td>Produce a surveillance file of finalised culture and AST results for analysis in WHONET.</td></tr>
+<tr><th>You'll end up with</th><td>A preview of exactly which isolates and AST rows will be exported, and a CSV file to load into WHONET.</td></tr>
+<tr><th>Who does this</th><td>The AMR surveillance focal point or laboratory manager. Access is set by user permissions and can be configured by your administrator.</td></tr>
+<tr><th>Before you start</th><td>Cases must be finally released with validated AST results, and organisms, antibiotics and specimen types must have WHONET codes (see <a href="https://uwdigi.atlassian.net/wiki/spaces/OG/pages/1729167362">Set up microbiology tests and reference data</a>).</td></tr>
+<tr><th>Where</th><td>Main menu &rarr; Reports &rarr; WHONET export</td></tr>
+</tbody></table>
+
+<h2>Overview</h2>
+<p>The WHONET export, headed <em>Routine bacteriology surveillance</em>, reviews finalised culture and AST data before generating the OpenELIS surveillance CSV for WHONET validation. It has three steps: <strong>Configure</strong>, <strong>Preview</strong> and <strong>Generate</strong>.</p>
+
+<h2>Step 1: Configure the export</h2>
+<p>Go to Main menu &rarr; Reports &rarr; WHONET export. Under <strong>Configure export</strong>, choose the reporting period and the isolates to include:</p>
+<ul>
+<li><strong>Reporting period</strong> (for example This Month), which fills <strong>From</strong> and <strong>To</strong>.</li>
+<li><strong>Specimen types</strong>, <strong>Organisms</strong> and <strong>Patient origins</strong> to narrow the export, and <strong>Inclusion</strong> values.</li>
+<li><strong>Apply first-isolate selection</strong>: collapses repeat isolates for the same patient and organism within the window. <strong>Adjust first-isolate policy</strong> changes how this is done.</li>
+<li><strong>Culture purpose</strong>: clinical cultures are included by default. Tick <strong>Include active screening or carriage cultures</strong> or <strong>Include environmental isolates</strong> only when the surveillance question needs them.</li>
+<li><strong>Include survey or study Programs</strong>: add programs whose cultures should be included.</li>
+</ul>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="13-whonet-configure.png" ri:version-at-save="2" /></ac:image></p>
+<p><em>Figure 1. Configure export for October 2026, with first-isolate selection applied and only clinical cultures included.</em></p>
+
+<h2>Step 2: Check the preview</h2>
+<p>Move on to <strong>Preview</strong>. The counts show how the population narrows at each stage: finalised cases, isolates found, after the specimen, organism and origin filters, clinical, screening and unspecified cultures, after culture-purpose selection, isolates included, after de-duplication, mappable isolates, eligible rows and rows excluded. <strong>Eligible AST rows</strong> lists the reviewed, reportable AST readings that have the mappings the export needs, with the lab number, specimen, organism and antibiotic codes, S / I / R and method.</p>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="14-whonet-preview.png" ri:version-at-save="2" /></ac:image></p>
+<p><em>Figure 2. The preview: two finalised cases and two isolates, giving 8 eligible AST rows for Escherichia coli from urine and none excluded.</em></p>
+
+<h2>Step 3: Generate the file</h2>
+<p>When the preview is right, press <strong>Generate CSV</strong>. The browser downloads the file, named for the reporting period (for example <code>WHONET_2026-10-01_to_2026-10-31.csv</code>), and a green notice reads &quot;CSV generated: The validated export was downloaded and its audit summary was recorded.&quot; The preview stays on screen, so you can compare the file with it.</p>
+<p>{{IMG:15-whonet-csv-generated.png}}</p>
+<p><em>Figure 3. After Generate CSV: the CSV generated notice above the preview of 8 eligible AST rows.</em></p>
+
+<h2>What the file contains</h2>
+<p>The file is comma-separated with every value in double quotes. The first line is a header of 20 columns, and each following line is one AST result: one antibiotic tested against one isolate. An isolate tested against five antibiotics gives five lines, each repeating the patient, lab number, specimen and organism. The number of lines matches <strong>Eligible rows</strong> in the preview (8 in Figure 3). Organisms, antibiotics, specimen types and origins are written as their WHONET codes.</p>
+<table><tbody>
+<tr><th>#</th><th>Column header</th><th>What it holds</th></tr>
+<tr><td>1</td><td><code>NATIONAL_ID</code></td><td>The patient's national identifier.</td></tr>
+<tr><td>2</td><td><code>FIRST_NAME</code></td><td>Patient first name.</td></tr>
+<tr><td>3</td><td><code>LAST_NAME</code></td><td>Patient last name.</td></tr>
+<tr><td>4</td><td><code>SEX</code></td><td>Patient sex (for example F).</td></tr>
+<tr><td>5</td><td><code>BIRTH_DATE</code></td><td>Date of birth, YYYY-MM-DD.</td></tr>
+<tr><td>6</td><td><code>DATE_ENTERED</code></td><td>Date the case was entered, YYYY-MM-DD.</td></tr>
+<tr><td>7</td><td><code>LAB_NUMBER</code></td><td>The lab number of the case.</td></tr>
+<tr><td>8</td><td><code>COLLECTION_DATE</code></td><td>Specimen collection date, YYYY-MM-DD.</td></tr>
+<tr><td>9</td><td><code>SPECIMEN_TYPE</code></td><td>The sample type's WHONET specimen code (for example ur).</td></tr>
+<tr><td>10</td><td><code>ANTIBIOTIC</code></td><td>The antibiotic's WHONET code (for example AMP).</td></tr>
+<tr><td>11</td><td><code>ORGANISM</code></td><td>The organism's WHONET code (for example eco).</td></tr>
+<tr><td>12</td><td><code>RESULT</code></td><td>The interpretation: S, I or R.</td></tr>
+<tr><td>13</td><td><code>TEST_METHOD</code></td><td>The AST method (for example MIC).</td></tr>
+<tr><td>14</td><td><code>GPS_LATITUDE</code></td><td>Latitude, when recorded (empty on the test server).</td></tr>
+<tr><td>15</td><td><code>GPS_LONGITUDE</code></td><td>Longitude, when recorded (empty on the test server).</td></tr>
+<tr><td>16</td><td><code>ORIGIN</code></td><td>The patient origin's WHONET code (for example OUT).</td></tr>
+<tr><td>17</td><td><code>CULTURE_PURPOSE</code></td><td>The culture purpose (for example DIAGNOSTIC).</td></tr>
+<tr><td>18</td><td><code>RESULT_SOURCE</code></td><td>Where the result came from (LOCAL on the test server).</td></tr>
+<tr><td>19</td><td><code>SITE_CODE</code></td><td>Code of the reporting site (empty on the test server).</td></tr>
+<tr><td>20</td><td><code>SITE_NAME</code></td><td>Name of the reporting site (empty on the test server).</td></tr>
+</tbody></table>
+<p>For example, the ampicillin result for the urine case DEV01260000000000005 is written as: patient identifier, name, F, date of birth, <code>2026-10-21</code>, <code>DEV01260000000000005</code>, <code>2026-10-21</code>, <code>ur</code>, <code>AMP</code>, <code>eco</code>, <code>R</code>, <code>MIC</code>, two empty GPS values, <code>OUT</code>, <code>DIAGNOSTIC</code>, <code>LOCAL</code>, and two empty site values.</p>
+
+<h2>Tips</h2>
+<ul>
+<li>If rows are excluded, check that the organism, antibiotic and specimen type carry a WHONET code.</li>
+<li>The preview uses the codes, not names (for example eco for Escherichia coli and ur for urine), so it shows what WHONET will receive.</li>
+<li>The file holds names, dates of birth and national identifiers. Store and share it as patient-identifiable data.</li>
+<li>Each Generate CSV records an audit summary, so generate the file once the preview is final.</li>
+<li>On the test server, BIRTH_DATE in the file was one day later than the date of birth shown on the case (1988-04-12 against 4/11/1988).</li>
+<li>The worklist's Surveillance scope filters change the AST rows on the worklist only; as its note says, they do not change the export population.</li>
+</ul>
+
+<h2>Provenance</h2>
+<table><tbody>
+<tr><th>Status</th><td>Draft for review (pre-release)</td></tr>
+<tr><th>Instance</th><td>pngtest.openelis-global.org, header version <em>3.3.0-SNAPSHOT</em>, Microbiology V2 pre-release build (OGC-1383)</td></tr>
+<tr><th>Route</th><td>/Microbiology/whonet</td></tr>
+<tr><th>Date</th><td>21 October 2026; Generate CSV on 22 October 2026</td></tr>
+<tr><th>Data</th><td>Finally released urine culture cases DEV01260000000000002 and DEV01260000000000005, each with one Escherichia coli isolate.</td></tr>
+<tr><th>Driven</th><td>Configure with the default October period and clinical cultures; Preview; Generate CSV (twice), with the downloaded file opened and read.</td></tr>
+<tr><th>Observed only</th><td>Specimen types, Organisms, Patient origins and Inclusion filters; Adjust first-isolate policy; Include survey or study Programs.</td></tr>
+</tbody></table>

@@ -1,0 +1,116 @@
+<p><em>How-to · Analyst</em></p>
+<ac:structured-macro ac:name="info"><ac:rich-text-body><p><strong>This page describes OpenELIS 3.3.0.</strong> Updated on 12 October 2026: results are flagged Normal or Abnormal as you type, each Save asks for your electronic signature where signatures are switched on, and the unified worklist is now the only Results Entry screen. For OpenELIS 3.2.2 and 3.2.3, see <a href="https://uwdigi.atlassian.net/wiki/spaces/OG/pages/1705083137">Enter and save results (before 3.3.0)</a>.</p></ac:rich-text-body></ac:structured-macro>
+
+<h2>At a glance</h2>
+<table><tbody>
+<tr><th>Purpose</th><td>Enter test results for samples that are awaiting results, and save each one so it moves on to validation.</td></tr>
+<tr><th>You'll end up with</th><td>Each saved result shown read-only with the status <em>Accepted by technician</em> and a Normal or Abnormal flag, ready for the validator.</td></tr>
+<tr><th>Who does this</th><td>Analysts. Access is set by user permissions and can be configured by your administrator.</td></tr>
+<tr><th>Before you start</th><td>Orders whose samples have been received and whose tests are still awaiting results; the measured values to enter; and the lab number, the lab unit or the patient. Where electronic signatures are on, your OpenELIS password.</td></tr>
+<tr><th>Where</th><td>Main menu → Results → Results Entry</td></tr>
+</tbody></table>
+
+<h2>One screen for all result entry</h2>
+<p>Results Entry is a single worklist. Every pending test is a row carrying the sample and patient, the test, the sample type, the reference range, a result control that matches the test's result type, a status and a flag. You load the rows you want by lab number, by lab unit or by patient, enter values, and save one row at a time.</p>
+<p>In OpenELIS 3.3.0 this is the only Results Entry screen. The older <em>By Unit</em>, <em>By Patient</em> and <em>By Order</em> screens, and the <code>resultsEntryUnifiedRoute</code> setting that switched between them, are gone: their old addresses open this worklist, and Result Entry Configuration no longer lists the setting. Sites on earlier releases can still see the older screens; see <a href="https://uwdigi.atlassian.net/wiki/spaces/OG/pages/1653604361">Results Entry (legacy screen)</a>.</p>
+<p>{{IMG:01-results-open.png}}</p>
+<p><em>Figure 1. The Results worklist as it opens: Search by lab number, Lab Unit, Test date, Search by patient and Load results across the top, a single All (0) chip, and an empty table.</em></p>
+
+<h2>Steps</h2>
+<ol>
+<li><p><strong>Find the tests to result.</strong> There are three ways, and each fills the table with one row per test:</p>
+<ul>
+<li><strong>By lab number.</strong> Type or scan the lab number into <strong>Search</strong> (its placeholder reads <em>Search by lab number</em>) and press Enter. Every test on that order loads, whatever lab unit it belongs to.</li>
+<li><strong>By lab unit.</strong> Pick a unit from <strong>Lab Unit</strong> (for example Hematology) and click <strong>Load results</strong>. The tests for that unit load, with a chip for each status present. The <strong>Test date</strong> field sits beside it; it was not exercised for this page.</li>
+<li><strong>By patient.</strong> <strong>Search by patient</strong> opens a patient search with Patient Id, Previous Lab Number, Last Name, First Name, Date of Birth and Sex, and <strong>Search</strong>, <strong>External Search</strong> and <strong>Clear</strong>. Pick the patient in the results: their tests load straight away, a <em>Selected patient</em> tag names them, and <strong>Select another patient</strong> and <strong>Clear</strong> appear beside it. Search and Lab Unit are greyed out while a patient is selected.</li>
+</ul>
+<p>{{IMG:02-by-labno.png}}</p>
+<p><em>Figure 2. Searching by lab number: the five Hematology tests on one order load, each with its reference range, an empty Result box and the status Not started.</em></p>
+<p>{{IMG:11-search-by-patient.png}}</p>
+<p><em>Figure 3. Searching by patient: Agnes Bunari selected, with Select another patient and Clear, and her five tests loaded.</em></p></li>
+<li><p><strong>Read the row.</strong> <strong>Sample / Patient</strong> shows the lab number with the patient's name, identifier, sex and date of birth beneath it. <strong>Test</strong> names the test and its sample type. <strong>Method</strong> and <strong>Analyser</strong> show a dash until something is recorded there. <strong>Reference Range</strong> shows the normal range and unit. <strong>Status</strong> starts at <em>Not started</em>. The <strong>Flag</strong> and <strong>Actions</strong> columns sit to the right; on a narrow window, scroll the table sideways to see them.</p></li>
+<li><p><strong>Enter the result.</strong> The control in the <strong>Result</strong> column matches the test: a numeric test gets a number box, and a test with a fixed list of answers gets a drop-down. As soon as you enter a value:</p>
+<ul>
+<li>the <strong>Flag</strong> column shows <em>Normal</em> (green) for a value inside the reference range or <em>Abnormal</em> (amber, with a warning sign) for one outside it, and a coloured bar appears beside the Result box;</li>
+<li>a <strong>Save</strong> button appears in that row's <strong>Actions</strong> column.</li>
+</ul>
+<p>{{IMG:03-values-flags.png}}</p>
+<p><em>Figure 4. Values typed into all five rows. Platelets at 512 against 150.0 to 400.0 is flagged Abnormal; the other four are Normal. Each row now has its own Save.</em></p></li>
+<li><p><strong>Add detail if you need to.</strong> Click the arrow at the left of a row to expand it. The panel repeats the patient, the test and the <em>Sample Kind</em> (for example <em>Client sample</em>), then shows:</p>
+<ul>
+<li>the <strong>Result</strong> with its unit, flag and reference range;</li>
+<li><strong>Method</strong> and <strong>Analyser</strong> lists (Analyser defaults to <em>Not from an instrument</em>; the help text says <em>Method is the analyser type; Analyser is the specific instrument</em>);</li>
+<li><strong>Notes</strong>, with a <em>Context: Entry</em> tag (<em>Set automatically from what you are doing</em>), a <strong>Visibility</strong> choice of <em>In lab only</em> or <em>Send with result</em>, and an <em>Add a note</em> box;</li>
+<li>a second <strong>Save</strong>, <strong>Report Non-Conformity</strong> and <strong>Refer this test</strong>;</li>
+<li><strong>Reagents, QC &amp; Controls</strong>, tagged <em>capture mode: manual (optional)</em>, with <em>Reagent lots used</em> and <strong>Dilution</strong> (Measured value, Dilution factor). If no reagents are linked to the test, the section says links are configured in the Test Catalog;</li>
+<li><strong>Reference &amp; Context</strong>, a set of collapsed sections with a one-line summary each: Order info (requester, priority and site), Aliquots, Interpretation, Program info, Storage &amp; sample disposal, Attachments and History (this analysis). <strong>Reset layout</strong> sits beside the heading.</li>
+</ul>
+<p>Only the result value was driven for this page; the other controls are described as they appear.</p>
+<p>{{IMG:04-expanded.png}}</p>
+<p><em>Figure 5. The Platelets row expanded: the result with its Abnormal flag and range, Method and Analyser, Notes with the Entry context and Visibility, Save, Report Non-Conformity and Refer this test, and Reagents, QC &amp; Controls.</em></p>
+<p>{{IMG:04b-expanded-lower.png}}</p>
+<p><em>Figure 6. Lower in the expanded row: Dilution and the Reference &amp; Context sections, each with its summary.</em></p></li>
+<li><p><strong>Save the row, and sign if asked.</strong> Click <strong>Save</strong> in the row's Actions column (or in the expanded panel). Where electronic signatures are switched on, an <strong>Electronic Signature</strong> dialog opens first. It shows <em>Signing as</em> with your user name, the <strong>Action</strong> (for example <em>Save DEV01260000000000506 - White Blood Cells Count (WBC)(Whole Blood)</em>) and the <strong>Signature Meaning</strong> (<em>Authored</em>), and states that you are creating a legally binding electronic signature per 21 CFR Part 11.</p>
+<ul>
+<li>Your first signature in a session asks for <strong>Username</strong> and <strong>Password</strong>: <em>This is your first signature in this session.</em></li>
+<li>Later signatures in the same session ask only for the password: <em>You have an active signing session. Enter your password to continue.</em></li>
+</ul>
+<p>Click <strong>Sign</strong>. <strong>Cancel</strong> closes the dialog without saving.</p>
+<p>{{IMG:05-esignature-first.png}}</p>
+<p><em>Figure 7. The first signature of a session: Action and Signature Meaning, with Username and Password.</em></p>
+<p>{{IMG:07-esignature-session.png}}</p>
+<p><em>Figure 8. A later signature in the same session asks only for the password.</em></p>
+<p>Once saved, the row's status changes to <em>Accepted by technician</em>, the value becomes read-only, and <strong>Edit</strong> replaces Save. The chip row updates, for example <em>Not started (4)</em> and <em>Accepted by technician (1)</em>. Each row saves on its own; there is no single Save for the whole list.</p>
+<p>{{IMG:06-after-first-save.png}}</p>
+<p><em>Figure 9. After the first Save: White Blood Cells Count shows Accepted by technician with Edit, and the chips read Not started (4) and Accepted by technician (1).</em></p></li>
+<li><p><strong>Work through what is left.</strong> Click a status chip to filter the table to that status: <em>Not started</em> shows only the rows still needing a result, and <em>All</em> shows everything again. Repeat steps 3 to 5 for each remaining row.</p>
+<p>{{IMG:08-all-saved.png}}</p>
+<p><em>Figure 10. All five results saved and signed: Accepted by technician (5), with the flags kept beside each value.</em></p></li>
+<li><p><strong>Correct a saved value, if needed.</strong> <strong>Edit</strong> on a saved row puts the value back into an editable box. <em>Saving the corrected value has not yet been verified on a live instance. Confirm before publishing.</em></p>
+<p>{{IMG:13-edit.png}}</p>
+<p><em>Figure 11. Edit on the White Blood Cells Count row: the saved value 6.8 is editable again.</em></p></li>
+</ol>
+
+<h2>Field reference</h2>
+<table><tbody>
+<tr><th>Column or control</th><th>Notes</th></tr>
+<tr><td>Search</td><td>Search by lab number. Press Enter to load every test on that order.</td></tr>
+<tr><td>Lab Unit</td><td>The lab section whose tests you want. Use with Load results.</td></tr>
+<tr><td>Test date</td><td>A date field (dd/mm/yyyy) beside Lab Unit. Not exercised for this page.</td></tr>
+<tr><td>Search by patient</td><td>Patient search. Selecting a patient loads their tests; Select another patient and Clear follow.</td></tr>
+<tr><td>Status chips</td><td>All, plus one chip per status present in the loaded rows, each with a count. Click to filter.</td></tr>
+<tr><td>Sample / Patient</td><td>Lab number, with the patient's name, identifier, sex and date of birth beneath it.</td></tr>
+<tr><td>Test</td><td>Test name with its sample type in brackets.</td></tr>
+<tr><td>Method / Analyser</td><td>Shown as a dash until set in the expanded row.</td></tr>
+<tr><td>Sample</td><td>The sample type, for example Whole Blood.</td></tr>
+<tr><td>Reference Range</td><td>The normal range and unit for the test.</td></tr>
+<tr><td>Result</td><td>A number box or a drop-down, depending on the test's result type. Read-only after Save until Edit.</td></tr>
+<tr><td>Status</td><td>Not started before Save; Accepted by technician after. Rows sent back by validation can read Not accepted by biologist.</td></tr>
+<tr><td>Flag</td><td>Normal or Abnormal against the reference range, shown as soon as a value is entered and kept after Save.</td></tr>
+<tr><td>Actions</td><td>Empty until a value is entered; then Save; then Edit once saved.</td></tr>
+<tr><td>Electronic Signature</td><td>Shown on Save where signatures are on. Username and Password on the first signature of a session, then Password only.</td></tr>
+</tbody></table>
+
+<h2>Tips</h2>
+<ul>
+<li>Searching by lab number loads every test on the order regardless of lab unit, which is the quickest way to result a single sample.</li>
+<li>The Save button only appears after a value is entered. If you do not see it, the Result box is still empty.</li>
+<li>Read the Flag before you save: an Abnormal flag is your cue to check the value against the sample before it goes to the validator.</li>
+<li>The Flag and Actions columns can fall off the right edge of the table on smaller windows. The table scrolls sideways.</li>
+<li>Electronic signatures are switched on per site. If Save completes without a signature dialog, they are off at your site. See <a href="https://uwdigi.atlassian.net/wiki/spaces/OG/pages/1242759175">Electronic Signatures</a>.</li>
+<li>A pop-up alert for a result outside the valid range is controlled by <code>alertWhenInvalidResult</code> under Main menu → Admin → General Configurations → Result Entry Configuration. It was off on the reference site, so no such alert appears in these figures.</li>
+</ul>
+
+<h2>Not yet documented</h2>
+<p>The <strong>Test date</strong> filter; saving a value after <strong>Edit</strong>; <strong>Report Non-Conformity</strong> and <strong>Refer this test</strong>; the <strong>Method</strong> and <strong>Analyser</strong> choices; notes; the <strong>Reference &amp; Context</strong> sections; tests with more than one result component; drop-down and titer result controls; critical results and their acknowledgment. None of these was driven for this page.</p>
+
+<h2>Provenance</h2>
+<table><tbody>
+<tr><th>Status</th><td>Updated for 3.3.0; review requested</td></tr>
+<tr><th>Instance</th><td><code>testing.openelis-global.org</code>, OpenELIS <strong>3.3.0</strong></td></tr>
+<tr><th>Route</th><td><code>/Results</code>. <code>/LogbookResults</code> redirects here.</td></tr>
+<tr><th>Configuration</th><td>Electronic signatures on; <code>alertWhenInvalidResult</code> false; <code>allowResultRejection</code> false. Result Entry Configuration no longer lists <code>resultsEntryUnifiedRoute</code>.</td></tr>
+<tr><th>Captured</th><td>12 October 2026, order DEV01260000000000506 (patient Agnes Bunari, five Hematology tests). Figure 7 is from DEV01260000000000503 the same day, because the first-signature dialog only shows once per session.</td></tr>
+<tr><th>Evidence</th><td>Driven: search by lab number; load by lab unit; search by patient and select (tests loaded); enter numeric values (Normal and Abnormal flags appeared before Save); expand a row; Save with electronic signature, first in session (username and password) and later (password only); all five saved; status chip filter; Edit (value editable again). Observed only: the expanded row's Method, Analyser, Notes, Reagents, QC &amp; Controls and Reference &amp; Context controls. Not exercised: everything under Not yet documented.</td></tr>
+<tr><th>Figures</th><td>11 attached, captured at 1800×1000 so the whole worklist row fits, except Figure 7 (1440×900).</td></tr>
+</tbody></table>

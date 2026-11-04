@@ -1,0 +1,97 @@
+{
+  "skill_name": "openelis-docs (plugin)",
+  "_comment": "Trigger and behaviour checks for the openelis-docs plugin. Each eval is a prompt Casey might send, the skills that should load, and what a correct session does. Several come from real mistakes in the OpenELIS User Manual project (2026-07 to 2026-11); the source is named. Run them by hand or with a plugin eval runner after changing a skill description, and add one when a new mistake is found.",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Write the user manual page for the new Sent Messages screen.",
+      "expected_skills": ["manual-author", "openelis-qa:qa-evidence", "manual-lint", "manual-publish", "bench-sync"],
+      "expected_output": "Checks for an existing page first (CQL and the landing page 1326972929). Drives the screen on testing.openelis-global.org, captures with qa-evidence, reads every figure before writing, drafts the At a glance table first with no header row, lints, runs the page-reviewer agent, publishes live with the Work in progress note and doc-in-review, registers a drift contract with anchors from the figures, writes a project doc and syncs the bench.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "The FRS for QC control lots says each lot is scoped to a test and an instrument. Put that in the manual page.",
+      "expected_skills": ["manual-author"],
+      "expected_output": "Does not write it from the FRS. Drives or looks at the screen; the real screen has Control Material and Manufacturer columns and only Active and Expired statuses (the documented mistake from the DTO). Writes only what is DRIVEN or OBSERVED, and lists anything spec-only under Not yet available or leaves it out.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Taib finished his reviews. Clear the reviewed pages.",
+      "expected_skills": ["manual-author", "manual-publish", "bench-sync"],
+      "expected_output": "Lists candidates where the OGC-1271 sub-task is Done and the page carries Taib's stamp, and asks Casey before changing a batch. For each: dumps the body, removes the WIP panel, normalizes the stamp to verified-vX.Y.Z, sets doc-verified and verified-vX-Y-Z (hyphens), removes doc-in-review, updates the provenance status line, removes em dashes from body text (not from ri:content-title), drops In review from the landing page row. ADF only for MCP edits. Project doc and bench sync. Source: 28 Oct 2026 clearing.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Just fix the typo in the second step of page 1439072277 through the Atlassian connector, markdown is fine.",
+      "expected_skills": ["manual-publish"],
+      "expected_output": "Reads the page with contentFormat adf, changes only the typo, writes back with contentFormat adf, checks the returned id. Explains in one line that markdown would delete the page's figures (the payload guard hook refuses non-ADF updates).",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Run the docs freshness check.",
+      "expected_skills": ["docs-freshness", "translation-refresh", "bench-sync"],
+      "expected_output": "Starts run-d.sh on the Mac with nohup through Control your Mac, polls drift.done, sanity-checks that checked equals contracts for testing before believing the numbers, reads bench-drift.json and the translation files, writes a project doc, syncs the bench (drift/latest, translations/latest, meta/sync) and reports counts in two or three lines.",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "The weekly drift run shows 60 pages in drift right after testing moved to 3.4.0-SNAPSHOT. Open bench items for all of them.",
+      "expected_skills": ["docs-freshness"],
+      "expected_output": "Treats a wall of drift right after a version bump as a probable failed run (stale login or timeout), reads drift.log, reruns testing alone with the long timeout, and only then turns real drift into items.",
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "Refresh the stale French pages.",
+      "expected_skills": ["translation-refresh", "bench-sync"],
+      "expected_output": "Uses the segment-level kit: fr-fetch and fr-fetch-old on the Mac, prep.py, parallel translator subagents with BRIEF-REFRESH.md, term review (demande not ordonnance or commande for a lab order; sans anomalie), merge.py, backups, then checks each page's version history for a human edit before fr-publish.py content --only; stops and asks if a person edited a page. Reruns translation-freshness and resets the label baseline.",
+      "files": []
+    },
+    {
+      "id": 8,
+      "prompt": "Start the Spanish manual the same way we did Indonesian.",
+      "expected_skills": ["translation-refresh"],
+      "expected_output": "Reads claude/handoff-indonesian-spanish-manual-2026-10-22.md, sets up es in langs.json, glossary and brief, creates the mirrored skeleton, translates in waves with Casey checking two rendered pages before wave 2, leaves out the Madagascar guides and legacy PART pages, proposes reviewers only on the bench, and adds translations/latest-es to the bench.",
+      "files": []
+    },
+    {
+      "id": 9,
+      "prompt": "Lint the admin pages and grade them for the bench.",
+      "expected_skills": ["manual-lint", "bench-sync"],
+      "expected_output": "Lists pages by CQL (folders are invisible to page tools), reads each with ADF one at a time, lints with Vale or oe_lint.py, checks the At a glance canary, links by ID, feedback line and em dashes, grades A, C or F only after reading, writes grade and gradedDate into contracts, and puts F pages on the bench.",
+      "files": []
+    },
+    {
+      "id": 10,
+      "prompt": "Show me what's in my confluence.env so I can check the token.",
+      "expected_skills": [],
+      "expected_output": "Does not print it (the command gate refuses cat or grep on ~/.openelis/*.env). Offers grep -c to confirm the key is set and the /wiki/rest/api/user/current check through a script, which reports anonymous when the token lacks Confluence scopes.",
+      "files": []
+    },
+    {
+      "id": 11,
+      "prompt": "Commit everything in openelis-docs and push.",
+      "expected_skills": [],
+      "expected_output": "Stages files by name (never git add -A or git add ., never env or .auth files; the repo is public and the hook refuses the broad forms), runs npm run check:plugin first, and opens the PR with gh on Casey's Mac using --body-file.",
+      "files": []
+    },
+    {
+      "id": 12,
+      "prompt": "I published the EQA participant page, we're done here.",
+      "expected_skills": ["bench-sync"],
+      "expected_output": "Not done until a project doc is written in OpenELIS User Manual and the triage bench is synced (the Stop hook asks for it once if the bench was not written after the publish).",
+      "files": []
+    },
+    {
+      "id": 13,
+      "prompt": "The timestamps on the CAPA page show yesterday's date. Add a tip and file a bug.",
+      "expected_skills": ["manual-author"],
+      "expected_output": "Neither: dates shown one day off (timezone shift) are a known issue tracked elsewhere, so no tip and no bug (Casey, Oct 2026).",
+      "files": []
+    }
+  ]
+}

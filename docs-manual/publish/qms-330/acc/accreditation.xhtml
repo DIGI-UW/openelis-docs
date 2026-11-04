@@ -1,0 +1,58 @@
+<ac:structured-macro ac:name="info"><ac:rich-text-body><p><strong>OpenELIS 3.3.0.</strong> Test Accreditation is new in 3.3.0 (not yet released at the time of writing). This page is a draft for review.</p></ac:rich-text-body></ac:structured-macro>
+<p><em>How-to · Quality managers</em></p>
+<h2>At a glance</h2>
+<table><tbody>
+<tr><th>Purpose</th><td>Record the bodies that accredit your laboratory and the tests each one accredits, so that patient reports carry the right accreditation logo and you can show which accredited tests take part in EQA.</td></tr>
+<tr><th>You'll end up with</th><td>An active accrediting body with its logo, the tests in its scope, and the logo printed on patient reports that include those tests.</td></tr>
+<tr><th>Who does this</th><td>Quality managers. Access is set by user permissions and can be configured by your administrator.</td></tr>
+<tr><th>Before you start</th><td>The accrediting body's code and name, the date your accreditation expires, the list of accredited tests, and the body's logo as a PNG or JPEG (at least 64 x 64 pixels, up to 500 KB).</td></tr>
+<tr><th>Where</th><td>Main menu → Quality Assurance → QMS &amp; Improvement → Accreditation</td></tr>
+</tbody></table>
+<p>The <strong>Test Accreditation</strong> page tracks accrediting bodies and per-test enrolment. It drives the accreditation logos on patient reports and answers an inspector's question: which of the tests you claim as accredited take part in external quality assessment (ISO 15189 §7.7).</p>
+
+<h2>Step 1: Add the accrediting body</h2>
+<ol>
+<li><p>Open <strong>Main menu → Quality Assurance → QMS &amp; Improvement → Accreditation</strong>. Tiles count the <strong>Bodies</strong>, how many are <strong>Active</strong>, <strong>Expiring Soon</strong> and <strong>Expired</strong>; the bodies currently in force are named under them. Below are three sections: <strong>Accrediting Bodies</strong>, <strong>Enrolled Tests</strong> and <strong>EQA Coverage of Accredited Scope</strong>.</p>
+<p>{{IMG:01-accreditation.png}}</p>
+<p><em>Figure 1. Test Accreditation with one body in force.</em></p></li>
+<li><p>Select <strong>Add body</strong>. Enter the <strong>Code</strong> (2 to 16 characters: capitals, digits and hyphens; it cannot be changed later) and the <strong>Name</strong>, and pick the date <strong>Accreditation expires</strong>.</p></li>
+<li><p>Under <strong>Show the logo on a report when</strong>, choose <strong>Any accredited test is on the report</strong>, or <strong>A percentage of the report's tests are accredited</strong>, which adds a <strong>Threshold (%)</strong> (80 by default). Set the <strong>Display order</strong> if more than one logo may print, and leave <strong>Active</strong> on.</p></li>
+<li><p>Under <strong>Logo</strong>, select <strong>Upload file</strong> and choose the logo. The file name appears under the button. Select <strong>Save</strong>.</p>
+<p>{{IMG:02-add-body.png}}</p>
+<p><em>Figure 2. Adding an accrediting body: the percentage rule, display order, Active and the uploaded logo.</em></p></li>
+<li><p>The body is listed with its logo, code, name, expiry date, number of enrolled tests and status. The row's icons edit or delete it.</p></li>
+</ol>
+
+<h2>Step 2: Enrol the accredited tests</h2>
+<ol start="6">
+<li><p>Under Enrolled Tests, select <strong>Enroll tests</strong>. Choose the <strong>Accrediting body</strong>, then type in <strong>Tests</strong> and tick each accredited test. Optionally set <strong>Effective from</strong>. Select <strong>Save</strong>.</p>
+<p>{{IMG:03-enroll-tests.png}}</p>
+<p><em>Figure 3. Enrolling haematology tests under the accrediting body.</em></p></li>
+<li><p>Each enrolled test is listed with its accrediting body, effective date, the body's expiry and its status, and can be filtered by body, status or test name. The trash icon removes an enrolment.</p></li>
+</ol>
+
+<h2>Step 3: Check EQA coverage</h2>
+<ol start="8">
+<li><p><strong>EQA Coverage of Accredited Scope</strong> compares each body's accredited tests with your active EQA enrolments: <strong>Tests in Scope</strong>, <strong>Covered by EQA</strong> and the <strong>Gaps</strong>, naming each accredited test that has no EQA. Close a gap by enrolling in a scheme for that test (see <a href="https://uwdigi.atlassian.net/wiki/spaces/OG/pages/1671987213">EQA participant</a>) or by documenting an alternative assessment.</p>
+<p>{{IMG:04-enrolled-and-coverage.png}}</p>
+<p><em>Figure 4. Five enrolled haematology tests; none yet covered by EQA.</em></p></li>
+</ol>
+
+<h2>What the patient report shows</h2>
+<p>When a patient report includes an accredited test and the body's rule is met, the report carries the body's logo at the top and the line <em>Tests on this report are accredited by:</em> followed by the body's name.</p>
+<p>{{IMG:05-report-logo.png}}</p>
+<p><em>Figure 5. The top of a Patient Status Report for a full blood count, with the accreditation logo and statement.</em></p>
+
+<h2>Tips and notes</h2>
+<ul>
+<li>Choose the code with care; it cannot be changed after saving.</li>
+<li>Keep the expiry date current. The Expiring Soon and Expired tiles show when an accreditation needs renewing.</li>
+<li>On the test server the logo overlapped the end of the report title (Results of Analysis).</li>
+</ul>
+
+<h2>Provenance</h2>
+<table><tbody>
+<tr><th>Drafted</th><td><p>12 October 2026 against <strong>3.3.0-SNAPSHOT</strong> on <code>testing.openelis-global.org</code> (OGC-720).</p>
+<p>DRIVEN: Add body with an uploaded logo and the Any accredited test rule, Enroll tests (five haematology tests), EQA coverage, Patient Status Report by lab number showing the logo and statement. OBSERVED only: the percentage rule and its threshold (not saved), editing and deleting a body, removing an enrolment, the Expiring Soon and Expired tiles.</p>
+<p>Seed data left on testing: accrediting body <em>NLAS, National Laboratory Accreditation Scheme</em> (a fictitious body for the test server, with a generic logo), expires 30 June 2028; enrolled tests Hematocrit, Hemoglobin, Platelets, RBC and WBC (Whole Blood). Order DEV01260000000000506 validated to print the report.</p></td></tr>
+</tbody></table>

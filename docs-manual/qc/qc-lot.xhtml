@@ -1,0 +1,78 @@
+<p><em>How-to · Quality officers and bench supervisors</em></p>
+<ac:structured-macro ac:name="info"><ac:rich-text-body><p><strong>Status:</strong> draft for review. Driven on pngtest.openelis-global.org, version 3.2.2.0, 27 September 2026. Replaces the unpublished 3 September draft, which described an earlier form. See Provenance.</p></ac:rich-text-body></ac:structured-macro>
+<h2>At a glance</h2>
+<table><tbody>
+<tr><th>Purpose</th><td>Register a new lot of control material so its results can be judged against the lot's target mean and standard deviation.</td></tr>
+<tr><th>You'll end up with</th><td>An Active control lot in the Control Lots list, tied to one test and either an analyzer or the bench, with its statistics method set.</td></tr>
+<tr><th>Who does this</th><td>The person who puts new control material into service, typically a quality officer or bench supervisor. Access is set by user permissions and can be configured by your administrator.</td></tr>
+<tr><th>Before you start</th><td>The control material in hand, with its lot number, level, expiry date and, for a fixed target, the manufacturer's mean and standard deviation from the package insert.</td></tr>
+<tr><th>Where</th><td>Main menu → Quality Assurance → Statistical QC → QC Lot Management.</td></tr>
+</tbody></table>
+<h2>Step 1 — Start a new lot</h2>
+<p>Open <strong>QC Lot Management</strong> and click <strong>New Control Lot</strong>. The <strong>New Control Lot</strong> form opens.</p>
+<h2>Step 2 — Describe the lot</h2>
+<ol>
+<li>Enter the <strong>Lot Number</strong> and the <strong>Control Material</strong> name as printed on the vial.</li>
+<li>Choose the <strong>Control Level</strong>: Low, Normal or High.</li>
+<li>Enter the <strong>Expiration Date</strong>.</li>
+<li>Choose the <strong>Analyzer</strong> the lot is run on, or <strong>Bench / no analyzer (manual method)</strong> for a control run at the bench without an instrument. The help text under the field says the analyzer is optional.</li>
+<li>Choose the <strong>Test</strong> the control is for. The list shows each test with its sample type.</li>
+<li>Leave <strong>Status</strong> switched to <strong>Active</strong> to put the lot into service now.</li>
+</ol>
+<p>{{IMG:01-new-lot-filled.png}}</p>
+<p><em>Figure 1. A new lot for a Normal haemoglobin control run at the bench.</em></p>
+<h2>Step 3 — Set the statistics method</h2>
+<ol>
+<li>In <strong>Statistics Configuration</strong>, click <strong>Configure</strong>.</li>
+<li>Choose the <strong>Calculation Method</strong>:
+<ul>
+<li><strong>Manufacturer Fixed</strong> — use the manufacturer's mean and SD.</li>
+<li><strong>Rolling Window</strong> — recalculate from the most recent N results.</li>
+<li><strong>Initial Runs</strong> — calculate once from the first N establishment runs.</li>
+</ul></li>
+<li>For Manufacturer Fixed, enter the <strong>Mean</strong> and <strong>Standard Deviation</strong> under <strong>Manufacturer Values</strong>, then click <strong>Save</strong> in the dialog.</li>
+</ol>
+<p>{{IMG:03-configure-filled.png}}</p>
+<p><em>Figure 2. The Statistics Configuration dialog with Manufacturer Fixed chosen, mean 13.2 and SD 0.4.</em></p>
+<p>The values appear in the Statistics Configuration block on the form.</p>
+<p>{{IMG:04-lot-with-stats.png}}</p>
+<p><em>Figure 3. The form with the statistics filled in, ready to save.</em></p>
+<p><em>Rolling Window and Initial Runs were not driven; the fields they show have not been verified on a live instance. Confirm before publishing.</em></p>
+<h2>Step 4 — Save</h2>
+<p>Click <strong>Save</strong>. The Control Lots list opens with the new lot shown as <strong>Active</strong>.</p>
+<p>{{IMG:06-lots-list.png}}</p>
+<p><em>Figure 4. The new lot in the Control Lots list.</em></p>
+<h2>Field reference</h2>
+<table><tbody>
+<tr><th>Field</th><th>Notes</th></tr>
+<tr><td>Lot Number</td><td>The lot number printed on the control material.</td></tr>
+<tr><td>Control Material</td><td>The product name.</td></tr>
+<tr><td>Control Level</td><td>Low, Normal or High. The list shows it in capitals (for example NORMAL).</td></tr>
+<tr><td>Expiration Date</td><td>The lot's expiry date.</td></tr>
+<tr><td>Analyzer</td><td>Optional. An analyzer, or Bench / no analyzer (manual method).</td></tr>
+<tr><td>Test</td><td>The test the control is for.</td></tr>
+<tr><td>Status</td><td>Active or inactive. The list can be filtered by status.</td></tr>
+<tr><td>Calculation Method</td><td>Manufacturer Fixed, Rolling Window or Initial Runs, set with Configure.</td></tr>
+<tr><td>Mean / Standard Deviation</td><td>The target values used with Manufacturer Fixed.</td></tr>
+</tbody></table>
+<h2>Tips</h2>
+<ul>
+<li>The Control Lots list has a <strong>Manufacturer</strong> column, but the form has no Manufacturer field, so the column shows a dash for lots created here.</li>
+<li>Saving a bench lot does not add anything to <strong>Rule Configuration</strong>: after saving the lot above, Rule Configuration still showed "No rule configurations found." Whether an analyzer lot creates a rule set was not tested, because pngtest has no analyzers.</li>
+<li>The breadcrumb reads <strong>Analyzers › Quality Control Dashboard › Control Lots</strong> even when you arrive from Quality Assurance. This is a known inconsistency and does not mean you are on a different page.</li>
+</ul>
+<h2>Not yet documented</h2>
+<ul>
+<li>Editing, deactivating or retiring a lot (the row options menu was not opened).</li>
+<li>Lots tied to an analyzer.</li>
+</ul>
+<h2>Provenance</h2>
+<table><tbody>
+<tr><th>Instance</th><td>pngtest.openelis-global.org, version 3.2.2.0</td></tr>
+<tr><th>Date</th><td>27 September 2026</td></tr>
+<tr><th>Driven</th><td>Created lot 4521A-L1, Liquichek Hematology Control, Normal, expiring 31 March 2027, bench, Hemoglobin, Manufacturer Fixed 13.2 / 0.4; saved; checked the Control Lots list and Rule Configuration.</td></tr>
+<tr><th>Observed only</th><td>Status filter, the other two calculation methods' descriptions.</td></tr>
+<tr><th>Not verified</th><td>Rolling Window and Initial Runs inputs, analyzer lots, lot editing.</td></tr>
+<tr><th>Feature</th><td>QA Menu umbrella OGC-682, Feature Doc OGC-1213</td></tr>
+<tr><th>Reviewer</th><td>Not yet reviewed</td></tr>
+</tbody></table>

@@ -1,0 +1,96 @@
+<p><em>How-to · Administrators</em></p>
+<ac:structured-macro ac:name="info"><ac:rich-text-body><p><strong>Status:</strong> draft for review. Replaces the content of <a href="https://uwdigi.atlassian.net/wiki/spaces/OG/pages/1439006727">Admin — Define programs</a> (1439006727) on promotion, which still describes the Program Entry screen removed in 3.2.3.0. Driven on testing.openelis-global.org, version 3.2.3.0, 27 September 2026. See Provenance.</p></ac:rich-text-body></ac:structured-macro>
+<h2>At a glance</h2>
+<table><tbody>
+<tr><th>Purpose</th><td>Set up the programs that orders are filed under, and the extra questions reception answers when an order uses one.</td></tr>
+<tr><th>You'll end up with</th><td>An active program with a domain, one or more lab units and, if needed, an order-entry questionnaire.</td></tr>
+<tr><th>Who does this</th><td>Administrators. Access is set by user permissions and can be configured by your administrator.</td></tr>
+<tr><th>Before you start</th><td>The program's name, which domain it belongs to (Clinical, Environmental or Vector), the lab units that work on it, and the questions reception should answer for it.</td></tr>
+<tr><th>Where</th><td>Main menu → Admin → Programs. The page sits under Test Management in the breadcrumb.</td></tr>
+</tbody></table>
+<p>A program is an initiative that orders are filed under, such as a surveillance programme or a care cohort. Each program has a domain, which decides where it is offered: the page's own help text says reception only sees programs that match the order's domain. A program can also carry a questionnaire, which adds program-specific questions to the order.</p>
+<h2>Step 1 — Open the Programs list</h2>
+<p>Open <strong>Admin</strong> from the Main menu and choose <strong>Programs</strong>. The list shows each program's <strong>Name</strong>, <strong>Domain</strong>, <strong>Status</strong> and <strong>Lab unit(s)</strong>. Use <strong>Search by name</strong> and the <strong>All domains</strong> filter to narrow it. Inactive programs are hidden until you turn on <strong>Show deactivated</strong>.</p>
+<p>{{IMG:01-programs-list.png}}</p>
+<p><em>Figure 1. The Programs list, with the search box, domain filter, Show deactivated switch and Add Program button above it.</em></p>
+<h2>Step 2 — Add the program's details</h2>
+<ol>
+<li>Click <strong>Add Program</strong>. A <strong>New Program</strong> panel opens above the list, and the button changes to <strong>Close</strong>.</li>
+<li>Enter the <strong>Program Name</strong> and, if your site uses them, a <strong>Programme Code</strong>.</li>
+<li>In <strong>Lab unit(s)</strong>, type to filter and select every lab unit that works on this program. You can select more than one. Each unit in the list is shown with its domain, and inactive units are marked Inactive.</li>
+<li>Choose the <strong>Domain</strong>: <strong>Clinical</strong>, <strong>Environmental</strong> or <strong>Vector</strong>. <strong>What does each Domain mean?</strong> opens a short explanation.</li>
+</ol>
+<p>{{IMG:03-program-details-filled.png}}</p>
+<p><em>Figure 2. The New Program panel with a name, code, one lab unit and the Clinical domain selected.</em></p>
+<p>Until a domain is chosen the panel shows <strong>Domain is required</strong> and <strong>Submit</strong> stays disabled.</p>
+<h2>Step 3 — Build the order-entry questionnaire</h2>
+<p>Skip this step if the program needs no extra questions.</p>
+<ol>
+<li>With <strong>Visual Builder</strong> selected, click <strong>Add First Question</strong>.</li>
+<li>Type the <strong>Question Text</strong> and choose a <strong>Question Type</strong>: Yes / No, Choice, Checkbox, Whole number, Decimal number, Date, Time, Short text, Long text or Quantity. The line under the type gives an example of what it is for.</li>
+<li>For <strong>Choice</strong> and <strong>Checkbox</strong>, add the <strong>Answer options</strong> with <strong>Add option</strong>. Remove one with the bin icon beside it.</li>
+<li>Click <strong>Add New Question</strong> for each further question.</li>
+</ol>
+<p>The <strong>Example</strong> pane on the right shows the questions as reception will see them, and updates as you add them.</p>
+<p>{{IMG:04-builder-with-preview.png}}</p>
+<p><em>Figure 3. Three questions in the Visual Builder (yes-or-no, a choice with three answer options, and a date) with the Example pane beside them.</em></p>
+<h3>Working in JSON</h3>
+<p>Click <strong>JSON</strong> to see the same questionnaire as FHIR R4 Questionnaire JSON. You can paste a questionnaire here instead of building it question by question. <strong>Validate JSON</strong> checks it and reports how many questions it found (for the example above: "Validated — 3 question(s)"). <strong>Reformat</strong> tidies the layout.</p>
+<p>The help text under the editor says that advanced features, such as enableWhen conditions, Quantity units and nested items, can only be edited in JSON, and that the Visual Builder keeps them without showing them.</p>
+<p>{{IMG:05-json-view.png}}</p>
+<p><em>Figure 4. The JSON view of the same questionnaire, with Validate JSON and Reformat below it.</em></p>
+<h2>Step 4 — Save</h2>
+<p>Click <strong>Submit</strong>. The panel closes and the new program appears in the list as <strong>Active</strong>, with its domain and lab unit.</p>
+<p>{{IMG:07-saved-in-list.png}}</p>
+<p><em>Figure 5. The new program, Hepatitis B Surveillance, in the list: Clinical, Active, Serology.</em></p>
+<h2>Edit a program</h2>
+<p>Click the arrow at the start of a row to open that program for editing in place. The editor has the same fields as the New Program panel, plus the program's <strong>Status</strong> and a <strong>Deactivate</strong> button. Make your changes and click <strong>Submit</strong>, or <strong>Cancel</strong> to leave it unchanged.</p>
+<h3>Changing the domain</h3>
+<p>Choosing a different domain on a saved program opens <strong>Change Program Domain?</strong>. It explains that the change is forward-looking: existing orders keep their program coding and are not re-coded, and the program will only be offered on orders of the new domain from then on. Click <strong>Confirm</strong> to accept or <strong>Cancel</strong> to keep the current domain.</p>
+<p>{{IMG:08-domain-change-confirm.png}}</p>
+<p><em>Figure 6. The confirmation shown when a Clinical program is switched to Environmental.</em></p>
+<h2>Deactivate or reactivate a program</h2>
+<p>Programs are never deleted. The editor notes "No hard delete — deactivate preserves history."</p>
+<ol>
+<li>Open the row's options menu (⋮) and choose <strong>Deactivate</strong>, or use <strong>Deactivate</strong> in the editor.</li>
+<li><strong>Deactivate this Program?</strong> tells you how the program is used. For a program with no orders it says the program "will simply stop appearing for new orders" and can be reactivated at any time. Click <strong>Deactivate</strong> to confirm.</li>
+</ol>
+<p>{{IMG:10-deactivate-confirm.png}}</p>
+<p><em>Figure 7. Confirming deactivation of a program that has no orders.</em></p>
+<p>A notification confirms the change and the program disappears from the list. To bring it back, turn on <strong>Show deactivated</strong>, where it is listed as <strong>Inactive</strong>, open its options menu and choose <strong>Reactivate</strong>. Reactivation happens straight away, with a notification and no confirmation step.</p>
+<p>{{IMG:12-reactivate-menu.png}}</p>
+<p><em>Figure 8. With Show deactivated on, the inactive program and its Reactivate option.</em></p>
+<h2>Field reference</h2>
+<table><tbody>
+<tr><th>Field</th><th>Notes</th></tr>
+<tr><td>Program Name</td><td>The name reception sees when choosing a program on an order.</td></tr>
+<tr><td>Programme Code</td><td>An optional short code for the program.</td></tr>
+<tr><td>Lab unit(s)</td><td>One or more lab units. Filter by typing; the list shows each unit's domain and whether it is inactive.</td></tr>
+<tr><td>Domain</td><td>Clinical, Environmental or Vector. Required. Controls which orders the program is offered on.</td></tr>
+<tr><td>Status</td><td>Active or Inactive. Changed with Deactivate and Reactivate, never by deleting.</td></tr>
+<tr><td>Visual Builder / JSON</td><td>Two views of the same order-entry questionnaire. The JSON is a FHIR R4 Questionnaire.</td></tr>
+<tr><td>Question Type</td><td>Yes / No, Choice, Checkbox, Whole number, Decimal number, Date, Time, Short text, Long text, Quantity.</td></tr>
+<tr><td>Example</td><td>A live preview of the questionnaire as reception will see it.</td></tr>
+</tbody></table>
+<h2>Tips</h2>
+<ul>
+<li>After upgrading from a version before 3.2.3.0, check the Domain of every existing program. The upgrade sets existing programs to Clinical (OGC-781 release note), so an Environmental or Vector program will not be offered on those orders until you change it. <em>This step has not yet been verified on a live instance. Confirm before publishing.</em></li>
+<li>Deactivating rather than deleting keeps the answers already recorded on past orders.</li>
+<li>Quantity units, conditional questions (enableWhen) and nested groups have to be written in JSON.</li>
+</ul>
+<h2>Not yet documented</h2>
+<ul>
+<li>How the program and its questions appear at order entry, and the domain filtering of the program picker there. Not driven for this page.</li>
+<li>The per-question options menu (⋮) in the Visual Builder: what it offers was not opened.</li>
+<li>Deactivating a program that already has orders (the dialog wording for that case was not seen).</li>
+</ul>
+<h2>Provenance</h2>
+<table><tbody>
+<tr><th>Instance</th><td>testing.openelis-global.org, version 3.2.3.0</td></tr>
+<tr><th>Date</th><td>27 September 2026</td></tr>
+<tr><th>Driven</th><td>Created "Hepatitis B Surveillance" (Clinical, Serology) with three questions; viewed and validated the JSON; submitted; opened the domain-change confirmation and cancelled it; deactivated from the options menu; showed deactivated programs; reactivated.</td></tr>
+<tr><th>Observed only</th><td>Search, domain filter, the Domain help link, the editor's Status and Deactivate controls.</td></tr>
+<tr><th>Not verified</th><td>Order-entry side, per-question options menu, deactivation of a program with orders, upgrade backfill.</td></tr>
+<tr><th>Feature</th><td>Epic OGC-781, Feature Doc OGC-1236</td></tr>
+<tr><th>Reviewer</th><td>Not yet reviewed</td></tr>
+</tbody></table>

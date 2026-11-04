@@ -1,0 +1,80 @@
+<h1>Vector Surveillance</h1>
+<h2>At a glance</h2>
+<table><tbody>
+<tr><th>Purpose</th><td>Run entomological and vector-borne-disease surveillance: register field collections of mosquitoes, larvae, fleas and rodents, identify the species present, and localize which specimens carry a pathogen.</td></tr>
+<tr><th>What makes it different</th><td>A vector order is <em>organism-based</em> &mdash; instead of a patient you record the animal/organism type, the trap it came from, and how many specimens are in the pool. The pool is tracked as individual specimen barcodes through the lab.</td></tr>
+<tr><th>You&rsquo;ll end up with</th><td>Identified specimens on the Vector Identification worklist, pools deconvoluted into sub-pools to find the carrier, and (optionally) standardized field-survey indices computed automatically.</td></tr>
+<tr><th>Who does this</th><td>Laboratory analysts and entomology technicians. Access is set by user permissions.</td></tr>
+<tr><th>Before you start</th><td>The species list, trap types, sampling sites, and organism sample types must already be configured by an administrator &mdash; see <em>Admin &mdash; Vector Surveillance Reference Data</em>.</td></tr>
+<tr><th>Where</th><td>Main menu &rarr; <em>Orders</em> &rarr; <em>Add Vector Order</em>; the identification worklist is at <em>Results</em> &rarr; <em>Vector Identification</em>.</td></tr>
+</tbody></table>
+
+<h2>Create a vector (pooled) order</h2>
+<p><strong>Step 1.</strong> Open <em>Orders &rarr; Add Vector Order &rarr; Enter Order</em> and select the <em>Sampling Site</em>. Under <em>Animal / Organism 1</em>, choose the organism <em>Sample Type</em> from the taxonomy (for example Adult Mosquito, Mosquito Larva, Flea, or Rodent). The Lifecycle Stage, Trap Type and Quantity in Pool fields apply once a sample type is chosen.</p>
+<p>{{IMG:01-order-entry.png}}</p>
+<p><em>Figure 1. The top of the vector order entry form — lab number, collection date, and sampling site.</em></p>
+<p>{{IMG:01b-order-organism.png}}</p>
+<p><em>Figure 1b. The Animal/Organism section completed (example data) — Sample Type Adult Mosquito, Lifecycle Stage Adult, Trap Type BG-Sentinel Trap, Quantity in Pool 25, with a test selected under Order Tests.</em></p>
+<p><strong>Step 2.</strong> Choose the <em>Trap Type</em> the specimens came from and set <em>Quantity in Pool</em> (for example 25). Open <em>Tests &amp; Panels &mdash; required</em> and select at least one test from the list (for example a Wolbachia sequencing or species-identification test).</p>
+<p><strong>Note &mdash; required test.</strong> The order will not save until at least one test is selected, and the Lab Number must be a valid generated accession (use <em>Generate Lab Number</em>). Choose <em>Save &amp; Next</em>; the pool then expands into one barcode per specimen (for a pool of 25, the lab numbers run from <em>.2</em> through <em>.26</em>).</p>
+
+<h2>Move the order through its stages</h2>
+<p>A vector order moves through the wizard stages shown at the top of the form: <em>Enter Order &rarr; Label &amp; Store &rarr; QA Review &rarr; Complete</em>.</p>
+<p><strong>Step 3.</strong> On <em>Label &amp; Store</em>, print the order and per-specimen labels, then either assign a storage location for each sample or tick <em>skip storage</em>, and choose <em>Save &amp; Next</em>. For the storage hierarchy and how to assign or locate samples, see <a href="https://uwdigi.atlassian.net/wiki/spaces/oeg/pages/1189281794">Sample Storage Management</a>.</p>
+<p>{{IMG:08-label-store.png}}</p>
+<p><em>Figure 2. The Label &amp; Store stage, listing the order label and the per-specimen pool labels with their barcodes.</em></p>
+<p><strong>Step 4.</strong> On <em>QA Review</em>, complete the checklist (sampling site correct, sample types and tests correct, labels printed, storage assigned), then choose <em>Submit</em> to release the order.</p>
+<p>{{IMG:09-qa-review.png}}</p>
+<p><em>Figure 3. The QA Review stage with the completed pre-submission checklist and order summary.</em></p>
+<p><strong>Step 5.</strong> After Submit, the order reaches <em>Complete</em> &mdash; a confirmation showing the lab number, organism, quantity in pool, and a <em>Processing</em> status. From here you can start a new order.</p>
+<p>{{IMG:10-complete.png}}</p>
+<p><em>Figure 4. The Complete confirmation for the submitted order.</em></p>
+
+<h2>Identify species</h2>
+<p><strong>Step 3.</strong> Open <em>Results &rarr; Vector Identification</em>. Submitted pools appear automatically. Use the Status filter and search to find a lot.</p>
+<p>{{IMG:02-worklist.png}}</p>
+<p><em>Figure 5. The Vector Identification worklist, listing pending lots with their sampling site, group, progress, ID status, and deconvolution status.</em></p>
+<p><strong>Step 4.</strong> Select a lot to expand it. A Species Distribution summary appears above a per-specimen table, with each pool and sub-pool and its specimens.</p>
+<p>{{IMG:03-expanded-lot.png}}</p>
+<p><em>Figure 6. An expanded lot showing the Species Distribution bar and the per-specimen table, including sub-pools.</em></p>
+<p><strong>Step 5.</strong> On a specimen row choose <em>Identify</em>. Set the <em>Species</em> (type-ahead from the configured species list), <em>Method</em> (Morphological, Molecular, or Morphological + Molecular), <em>Confidence</em> (Confirmed or Presumptive), and optionally the Lifecycle Stage and Notes, then choose <em>Save Identification</em>. The specimen updates to its species and confidence and the progress counter advances.</p>
+<p>{{IMG:04-identify.png}}</p>
+<p><em>Figure 7. The inline Identify form with Species, Method, Confidence, and Lifecycle Stage.</em></p>
+
+<h2>Deconvolute a pool (Split into sub-pools)</h2>
+<p>Deconvolution breaks a pool into smaller sub-pools, or down to individuals, so you can narrow down which specimen carries the pathogen.</p>
+<p><strong>Step 6.</strong> On the pool row choose <em>Split</em>. Set <em>How many pools?</em> (or <em>Split to individuals</em>), pick an <em>Assignment method</em> (Assign randomly, Auto sub-pool by species, or Assign manually), and select the tests for the sub-pools.</p>
+<p>{{IMG:05-split-modal.png}}</p>
+<p><em>Figure 8. The Split into Sub-pools dialog with pool count, assignment method, and tests for the sub-pools.</em></p>
+<p><strong>Step 7.</strong> Choose <em>Preview Grouping</em> to review the proposed sub-pools, then <em>Save Pools</em>. The sub-pools are created with their own lab numbers (for example P01-S1 through P01-S5), the parent's Decon column shows <em>Decon in progress</em>, and identified specimens carry their species into the sub-pool. Sub-pools can themselves be split for iterative deconvolution.</p>
+<p>{{IMG:06-split-preview.png}}</p>
+<p><em>Figure 9. The proposed sub-pool grouping preview before saving.</em></p>
+
+<h2>Optional: programs and field-survey indices</h2>
+<p>Programs are <strong>optional</strong> additional information on an order. They exist separately for the clinical, environmental, and vector domains and can be created and edited within the application &mdash; see <a href="https://uwdigi.atlassian.net/wiki/spaces/oeg/pages/1188462628">Admin &mdash; Program Entry &amp; EQA Program Management</a>. Selecting a program reveals its own Additional Order Information fields &mdash; you only add a program when the order needs it.</p>
+<p>For example, selecting the <em>Vector Field Survey</em> program reveals an <em>Additional Information &mdash; Vector Field Survey</em> section. Enter the larval survey counts (houses and containers examined and positive) and the pupal survey counts (pupae and population at risk). The preview computes the House Index, Container Index, Breteau Index, the ABJ larva-free rate, and Pupae-Per-Person, and flags when the ABJ is below the 95% Kemenkes target.</p>
+<p>{{IMG:07-field-survey.png}}</p>
+<p><em>Figure 10. The Vector Field Survey section with the larval and pupal inputs and the computed indices, including the ABJ target flag.</em></p>
+
+<h2>Results and validation</h2>
+<p>Vector results are entered and validated on the same screens as other results &mdash; see the <em>Results</em> and <em>Validation</em> sections of the manual.</p>
+
+<h2>Field reference</h2>
+<table><tbody>
+<tr><th>Field</th><th>Notes</th></tr>
+<tr><td>Sampling Site</td><td>The vector &ldquo;patient&rdquo; / collection location.</td></tr>
+<tr><td>Sample Type (organism)</td><td>Mosquito / larva / flea / rodent taxonomy; configured in admin.</td></tr>
+<tr><td>Trap Type</td><td>The trap the specimens came from; configured in admin.</td></tr>
+<tr><td>Lifecycle Stage</td><td>Adult, Larva, Pupa, or Egg.</td></tr>
+<tr><td>Quantity in Pool</td><td>Number of specimens; drives the per-specimen barcodes.</td></tr>
+<tr><td>Species / Method / Confidence</td><td>Set on the Identify form.</td></tr>
+<tr><td>Sub-pool ID</td><td>The P01-Sn lineage produced by deconvolution.</td></tr>
+<tr><td>HI / CI / BI / ABJ / PPI</td><td>Field-survey indices computed from the survey counts.</td></tr>
+</tbody></table>
+
+<h2>Tips</h2>
+<ul>
+<li>Pool specimens are barcoded individually; deconvolution preserves the pool-to-sub-pool lineage for the consolidated record.</li>
+<li>Selecting a compliance standard or program does not auto-select tests &mdash; choose the tests yourself.</li>
+<li>Species, trap types, and sampling sites are maintained under <em>Admin &mdash; Vector Surveillance Reference Data</em>.</li>
+</ul>

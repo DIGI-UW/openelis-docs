@@ -1,0 +1,5731 @@
+{
+ "991821864": {
+  "id": "991821864",
+  "title": "Laboratory Notebooks",
+  "ver": 7,
+  "when": "2026-08-25",
+  "by": "Taib",
+  "roots": [
+   "eum",
+   "home"
+  ],
+  "anc": "📖 User Manual > End User Manual > Laboratory notebooks",
+  "labels": []
+ },
+ "951156737": {
+  "id": "951156737",
+  "title": "HOW TO CREATE A LAB NOTEBOOK",
+  "ver": 3,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "eum",
+   "home"
+  ],
+  "anc": "End User Manual > Laboratory notebooks > Laboratory Notebooks",
+  "labels": []
+ },
+ "284688410": {
+  "id": "284688410",
+  "title": "PART 13: LOGGING OUT OF OPENELIS",
+  "ver": 3,
+  "when": "2026-09-21",
+  "by": "Taib",
+  "roots": [
+   "eum",
+   "home"
+  ],
+  "anc": "📖 User Manual > End User Manual > Getting around OpenELIS",
+  "labels": [],
+  "lango": {
+   "lang": "en",
+   "status": "primary",
+   "orig": "284688410",
+   "pv": 2,
+   "pwhen": "2026-09-12T06:21:37"
+  }
+ },
+ "283967514": {
+  "id": "283967514",
+  "title": "PART 12: HELP",
+  "ver": 3,
+  "when": "2026-09-21",
+  "by": "Taib",
+  "roots": [
+   "eum",
+   "home"
+  ],
+  "anc": "📖 User Manual > End User Manual > Getting around OpenELIS",
+  "labels": [],
+  "lango": {
+   "lang": "en",
+   "status": "primary",
+   "orig": "283967514",
+   "pv": 2,
+   "pwhen": "2026-09-12T06:21:25"
+  }
+ },
+ "279248897": {
+  "id": "279248897",
+  "title": "PART 9: IMMUNOCHEMISTRY",
+  "ver": 2,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "eum",
+   "home"
+  ],
+  "anc": "📖 User Manual > End User Manual > Pathology, immunohistochemis",
+  "labels": [],
+  "lango": {
+   "lang": "en",
+   "status": "primary",
+   "orig": null,
+   "pv": 1,
+   "pwhen": "2026-09-12T00:38:13"
+  }
+ },
+ "278560771": {
+  "id": "278560771",
+  "title": "PART 10: CYTOLOGY",
+  "ver": 3,
+  "when": "2024-10-23",
+  "by": "Taib",
+  "roots": [
+   "eum",
+   "home"
+  ],
+  "anc": "📖 User Manual > End User Manual > Pathology, immunohistochemis",
+  "labels": [],
+  "lango": {
+   "lang": "en",
+   "status": "primary",
+   "orig": "278560771",
+   "pv": 2,
+   "pwhen": "2026-09-12T00:40:11"
+  }
+ },
+ "273285123": {
+  "id": "273285123",
+  "title": "PART 8: PATHOLOGY",
+  "ver": 4,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "eum",
+   "home"
+  ],
+  "anc": "📖 User Manual > End User Manual > Pathology, immunohistochemis",
+  "labels": [],
+  "lango": {
+   "lang": "en",
+   "status": "primary",
+   "orig": "273285123",
+   "pv": 2,
+   "pwhen": "2026-09-12T00:39:24"
+  }
+ },
+ "272760837": {
+  "id": "272760837",
+  "title": "PART 7: WORK PLANS",
+  "ver": 4,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "eum",
+   "home"
+  ],
+  "anc": "📖 User Manual > End User Manual > Results, validation and repo",
+  "labels": [],
+  "lango": {
+   "lang": "en",
+   "status": "primary",
+   "orig": "272760837",
+   "pv": 2,
+   "pwhen": "2026-09-12T00:38:16"
+  }
+ },
+ "272662541": {
+  "id": "272662541",
+  "title": "PART 6: BATCH ORDER ENTRY",
+  "ver": 4,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "eum",
+   "home"
+  ],
+  "anc": "📖 User Manual > End User Manual > Orders and samples",
+  "labels": []
+ },
+ "272465927": {
+  "id": "272465927",
+  "title": "PART 5: ELECTRONIC ORDERS",
+  "ver": 2,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "eum",
+   "home"
+  ],
+  "anc": "📖 User Manual > End User Manual > Orders and samples",
+  "labels": [],
+  "lango": {
+   "lang": "fr",
+   "status": "primary",
+   "orig": "272465927",
+   "pv": 2,
+   "pwhen": "2026-09-16T06:28:08"
+  }
+ },
+ "261521410": {
+  "id": "261521410",
+  "title": "PART 2: QUICK TROUBLESHOOTING",
+  "ver": 2,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "eum",
+   "home"
+  ],
+  "anc": "📖 User Manual > End User Manual > Getting around OpenELIS",
+  "labels": [],
+  "lango": {
+   "lang": "en",
+   "status": "primary",
+   "orig": "261521410",
+   "pv": 2,
+   "pwhen": "2026-09-11T23:23:48"
+  }
+ },
+ "261423127": {
+  "id": "261423127",
+  "title": "PART 4: ENTERING LABORATORY ORDERS",
+  "ver": 8,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "eum",
+   "home"
+  ],
+  "anc": "📖 User Manual > End User Manual > Orders and samples",
+  "labels": [],
+  "lango": {
+   "lang": "en",
+   "status": "primary",
+   "orig": "261423127",
+   "pv": 2,
+   "pwhen": "2026-09-11T23:27:29"
+  }
+ },
+ "261259270": {
+  "id": "261259270",
+  "title": "PART 3: QUICK LINKS",
+  "ver": 3,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "eum",
+   "home"
+  ],
+  "anc": "📖 User Manual > End User Manual > Getting around OpenELIS",
+  "labels": [],
+  "lango": {
+   "lang": "en",
+   "status": "primary",
+   "orig": "261259270",
+   "pv": 2,
+   "pwhen": "2026-09-12T00:37:33"
+  }
+ },
+ "260931593": {
+  "id": "260931593",
+  "title": "PART 1: NAVIGATING OpenELIS GLOBAL",
+  "ver": 7,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "eum",
+   "home"
+  ],
+  "anc": "📖 User Manual > End User Manual > Getting around OpenELIS",
+  "labels": [],
+  "lango": {
+   "lang": "en",
+   "status": "primary",
+   "orig": "260931593",
+   "pv": 2,
+   "pwhen": "2026-09-11T22:28:48"
+  }
+ },
+ "1681260549": {
+  "id": "1681260549",
+  "title": "Report a non-conforming event",
+  "ver": 3,
+  "when": "2026-10-09",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "eum",
+   "home"
+  ],
+  "anc": "📖 User Manual > End User Manual > Non-conforming events",
+  "labels": [
+   "doc-verified",
+   "verified-v3-2-3-0"
+  ]
+ },
+ "1653604361": {
+  "id": "1653604361",
+  "title": "Results Entry (legacy screen)",
+  "ver": 3,
+  "when": "2026-09-22",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "eum",
+   "home"
+  ],
+  "anc": "📖 User Manual > End User Manual > Results, validation and repo",
+  "labels": [
+   "superseded"
+  ]
+ },
+ "1441202177": {
+  "id": "1441202177",
+  "title": "Validate and release results",
+  "ver": 8,
+  "when": "2026-09-17",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "eum",
+   "home"
+  ],
+  "anc": "📖 User Manual > End User Manual > Results, validation and repo",
+  "labels": [
+   "doc-verified",
+   "verified-v3-2-1"
+  ]
+ },
+ "1440940035": {
+  "id": "1440940035",
+  "title": "Create aliquots from a sample",
+  "ver": 6,
+  "when": "2026-09-17",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "eum",
+   "home"
+  ],
+  "anc": "📖 User Manual > End User Manual > Orders and samples",
+  "labels": [
+   "doc-verified",
+   "verified-v3-2-1"
+  ]
+ },
+ "1440841744": {
+  "id": "1440841744",
+  "title": "Run reports",
+  "ver": 6,
+  "when": "2026-09-17",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "eum",
+   "home"
+  ],
+  "anc": "📖 User Manual > End User Manual > Results, validation and repo",
+  "labels": [
+   "doc-verified",
+   "verified-v3-2-1"
+  ]
+ },
+ "1440677908": {
+  "id": "1440677908",
+  "title": "Track sample storage and disposal",
+  "ver": 6,
+  "when": "2026-09-17",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "eum",
+   "home"
+  ],
+  "anc": "📖 User Manual > End User Manual > Orders and samples",
+  "labels": [
+   "doc-verified",
+   "verified-v3-2-1"
+  ]
+ },
+ "1440350210": {
+  "id": "1440350210",
+  "title": "Find an existing order",
+  "ver": 6,
+  "when": "2026-09-17",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "eum",
+   "home"
+  ],
+  "anc": "📖 User Manual > End User Manual > Orders and samples",
+  "labels": [
+   "doc-verified",
+   "verified-v3-2-1"
+  ]
+ },
+ "1439072277": {
+  "id": "1439072277",
+  "title": "Enter and save results",
+  "ver": 11,
+  "when": "2026-09-22",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "eum",
+   "home"
+  ],
+  "anc": "📖 User Manual > End User Manual > Results, validation and repo",
+  "labels": [
+   "doc-verified",
+   "verified-v3-2-1"
+  ]
+ },
+ "1437532161": {
+  "id": "1437532161",
+  "title": "Vector Surveillance — workflow overview",
+  "ver": 3,
+  "when": "2026-07-31",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "eum",
+   "home"
+  ],
+  "anc": "📖 User Manual > End User Manual > Vector surveillance",
+  "labels": [
+   "doc-verified",
+   "verified-v3-2-1"
+  ],
+  "lango": {
+   "lang": "en",
+   "status": "primary",
+   "orig": "1437532161",
+   "pv": 2,
+   "pwhen": "2026-09-11T23:32:02"
+  }
+ },
+ "1437466625": {
+  "id": "1437466625",
+  "title": "Environmental Surveillance — workflow overview",
+  "ver": 3,
+  "when": "2026-07-31",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "eum",
+   "home"
+  ],
+  "anc": "📖 User Manual > End User Manual > Environmental surveillance",
+  "labels": [
+   "doc-verified",
+   "verified-v3-2-1"
+  ],
+  "lango": {
+   "lang": "en",
+   "status": "primary",
+   "orig": "1437466625",
+   "pv": 2,
+   "pwhen": "2026-09-11T23:28:56"
+  }
+ },
+ "1429176321": {
+  "id": "1429176321",
+  "title": "Complete QA review (shared stage)",
+  "ver": 8,
+  "when": "2026-09-16",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "eum",
+   "home"
+  ],
+  "anc": "📖 User Manual > End User Manual > Orders and samples",
+  "labels": [],
+  "lango": {
+   "lang": "en",
+   "status": "primary",
+   "orig": "1429176321",
+   "pv": 2,
+   "pwhen": "2026-09-11T23:28:31"
+  }
+ },
+ "1429012481": {
+  "id": "1429012481",
+  "title": "Pooling & deconvolution",
+  "ver": 6,
+  "when": "2026-08-03",
+  "by": "Taib",
+  "roots": [
+   "eum",
+   "home"
+  ],
+  "anc": "End User Manual > Vector surveillance > Vector Surveillance — workfl",
+  "labels": [
+   "doc-verified",
+   "verified-v3-2-1"
+  ]
+ },
+ "1428946945": {
+  "id": "1428946945",
+  "title": "Compliance evaluation",
+  "ver": 6,
+  "when": "2026-08-03",
+  "by": "Taib",
+  "roots": [
+   "eum",
+   "home"
+  ],
+  "anc": "End User Manual > Environmental surveillance > Environmental Surveillance —",
+  "labels": [
+   "doc-verified",
+   "verified-v3-2-1"
+  ]
+ },
+ "1428881409": {
+  "id": "1428881409",
+  "title": "The three domains & the shared order wizard",
+  "ver": 4,
+  "when": "2026-08-03",
+  "by": "Taib",
+  "roots": [
+   "eum",
+   "home"
+  ],
+  "anc": "📖 User Manual > End User Manual > Orders and samples",
+  "labels": [
+   "doc-verified",
+   "verified-v3-2-1"
+  ]
+ },
+ "1428258821": {
+  "id": "1428258821",
+  "title": "Record Vector Field Survey indices",
+  "ver": 7,
+  "when": "2026-07-31",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "eum",
+   "home"
+  ],
+  "anc": "End User Manual > Vector surveillance > Vector Surveillance — workfl",
+  "labels": [
+   "doc-verified",
+   "verified-v3-2-1"
+  ],
+  "lango": {
+   "lang": "en",
+   "status": "primary",
+   "orig": "1428258821",
+   "pv": 2,
+   "pwhen": "2026-09-12T00:09:52"
+  }
+ },
+ "1428094999": {
+  "id": "1428094999",
+  "title": "Identify vector species & deconvolute a pool",
+  "ver": 8,
+  "when": "2026-07-31",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "eum",
+   "home"
+  ],
+  "anc": "End User Manual > Vector surveillance > Vector Surveillance — workfl",
+  "labels": [
+   "doc-verified",
+   "verified-v3-2-1"
+  ],
+  "lango": {
+   "lang": "en",
+   "status": "primary",
+   "orig": "1428094999",
+   "pv": 2,
+   "pwhen": "2026-09-11T23:33:10"
+  }
+ },
+ "1427898389": {
+  "id": "1427898389",
+  "title": "Enter a vector order",
+  "ver": 10,
+  "when": "2026-07-31",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "eum",
+   "home"
+  ],
+  "anc": "End User Manual > Vector surveillance > Vector Surveillance — workfl",
+  "labels": [
+   "doc-verified",
+   "verified-v3-2-1"
+  ],
+  "lango": {
+   "lang": "en",
+   "status": "primary",
+   "orig": "1427898389",
+   "pv": 3,
+   "pwhen": "2026-09-11T23:32:50"
+  }
+ },
+ "1427898372": {
+  "id": "1427898372",
+  "title": "Enter an environmental order",
+  "ver": 10,
+  "when": "2026-07-31",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "eum",
+   "home"
+  ],
+  "anc": "End User Manual > Environmental surveillance > Environmental Surveillance —",
+  "labels": [
+   "doc-verified",
+   "verified-v3-2-1"
+  ],
+  "lango": {
+   "lang": "en",
+   "status": "primary",
+   "orig": "1427898372",
+   "pv": 3,
+   "pwhen": "2026-10-07T18:39:55"
+  }
+ },
+ "1427505177": {
+  "id": "1427505177",
+  "title": "Generate a compliance certificate",
+  "ver": 8,
+  "when": "2026-07-31",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "eum",
+   "home"
+  ],
+  "anc": "End User Manual > Environmental surveillance > Environmental Surveillance —",
+  "labels": [
+   "doc-verified",
+   "verified-v3-2-1"
+  ],
+  "lango": {
+   "lang": "en",
+   "status": "primary",
+   "orig": "1427505177",
+   "pv": 2,
+   "pwhen": "2026-09-11T23:30:31"
+  }
+ },
+ "1242759175": {
+  "id": "1242759175",
+  "title": "Electronic Signatures",
+  "ver": 11,
+  "when": "2026-09-11",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "eum",
+   "home"
+  ],
+  "anc": "📖 User Manual > End User Manual > Results, validation and repo",
+  "labels": [],
+  "lango": {
+   "lang": "en",
+   "status": "primary",
+   "orig": "1242759175",
+   "pv": 2,
+   "pwhen": "2026-09-11T22:17:31"
+  }
+ },
+ "1047986189": {
+  "id": "1047986189",
+  "title": "HOW TO ROUTE SAMPLES INTERNALLY",
+  "ver": 1,
+  "when": "2026-02-02",
+  "by": "Taib",
+  "roots": [
+   "eum",
+   "home"
+  ],
+  "anc": "Laboratory notebooks > Laboratory Notebooks > HOW TO CREATE A LAB NOTEBOOK",
+  "labels": []
+ },
+ "1047658526": {
+  "id": "1047658526",
+  "title": "HOW TO ROUTE SAMPLES TO STORAGE",
+  "ver": 1,
+  "when": "2026-02-02",
+  "by": "Taib",
+  "roots": [
+   "eum",
+   "home"
+  ],
+  "anc": "Laboratory notebooks > Laboratory Notebooks > HOW TO CREATE A LAB NOTEBOOK",
+  "labels": []
+ },
+ "1047560199": {
+  "id": "1047560199",
+  "title": "HOW TO PROCESS SAMPLE",
+  "ver": 1,
+  "when": "2026-02-02",
+  "by": "Taib",
+  "roots": [
+   "eum",
+   "home"
+  ],
+  "anc": "Laboratory notebooks > Laboratory Notebooks > HOW TO CREATE A LAB NOTEBOOK",
+  "labels": []
+ },
+ "1047527493": {
+  "id": "1047527493",
+  "title": "HOW TO POST COMPILATION",
+  "ver": 2,
+  "when": "2026-02-02",
+  "by": "Taib",
+  "roots": [
+   "eum",
+   "home"
+  ],
+  "anc": "Laboratory notebooks > Laboratory Notebooks > HOW TO CREATE A LAB NOTEBOOK",
+  "labels": []
+ },
+ "1047527443": {
+  "id": "1047527443",
+  "title": "HOW TO RECORD ASSAYS",
+  "ver": 1,
+  "when": "2026-02-02",
+  "by": "Taib",
+  "roots": [
+   "eum",
+   "home"
+  ],
+  "anc": "Laboratory notebooks > Laboratory Notebooks > HOW TO CREATE A LAB NOTEBOOK",
+  "labels": []
+ },
+ "1047429176": {
+  "id": "1047429176",
+  "title": "HOW TO PREPARE ROUTED SAMPLES FOR ANALYSIS",
+  "ver": 1,
+  "when": "2026-02-02",
+  "by": "Taib",
+  "roots": [
+   "eum",
+   "home"
+  ],
+  "anc": "Laboratory notebooks > Laboratory Notebooks > HOW TO CREATE A LAB NOTEBOOK",
+  "labels": []
+ },
+ "1047363648": {
+  "id": "1047363648",
+  "title": "HOW TO CONDUCT POST ANALYSIS",
+  "ver": 1,
+  "when": "2026-02-02",
+  "by": "Taib",
+  "roots": [
+   "eum",
+   "home"
+  ],
+  "anc": "Laboratory notebooks > Laboratory Notebooks > HOW TO CREATE A LAB NOTEBOOK",
+  "labels": []
+ },
+ "1047330908": {
+  "id": "1047330908",
+  "title": "HOW TO ARCHIVE SAMPLES",
+  "ver": 1,
+  "when": "2026-02-02",
+  "by": "Taib",
+  "roots": [
+   "eum",
+   "home"
+  ],
+  "anc": "Laboratory notebooks > Laboratory Notebooks > HOW TO CREATE A LAB NOTEBOOK",
+  "labels": []
+ },
+ "1047330857": {
+  "id": "1047330857",
+  "title": "HOW TO CREATE CHILD SAMPLES",
+  "ver": 1,
+  "when": "2026-02-02",
+  "by": "Taib",
+  "roots": [
+   "eum",
+   "home"
+  ],
+  "anc": "Laboratory notebooks > Laboratory Notebooks > HOW TO CREATE A LAB NOTEBOOK",
+  "labels": []
+ },
+ "1047199822": {
+  "id": "1047199822",
+  "title": "HOW TO ENTER RESULTS MANUALLY",
+  "ver": 1,
+  "when": "2026-02-02",
+  "by": "Taib",
+  "roots": [
+   "eum",
+   "home"
+  ],
+  "anc": "Laboratory notebooks > Laboratory Notebooks > HOW TO CREATE A LAB NOTEBOOK",
+  "labels": []
+ },
+ "1046118450": {
+  "id": "1046118450",
+  "title": "HOW TO ROUTE ROUTE SAMPLES EXTERNALLY",
+  "ver": 1,
+  "when": "2026-02-02",
+  "by": "Taib",
+  "roots": [
+   "eum",
+   "home"
+  ],
+  "anc": "Laboratory notebooks > Laboratory Notebooks > HOW TO CREATE A LAB NOTEBOOK",
+  "labels": []
+ },
+ "1329758211": {
+  "id": "1329758211",
+  "title": "End User Manual",
+  "ver": 1,
+  "when": "2026-05-21",
+  "by": null,
+  "roots": [
+   "eum-root"
+  ],
+  "anc": "OpenELIS Global > 📖 User Manual",
+  "labels": []
+ },
+ "257392644": {
+  "id": "257392644",
+  "title": "INTRODUCTION",
+  "ver": 4,
+  "when": "2026-09-21",
+  "by": "Taib",
+  "roots": [
+   "admin",
+   "home"
+  ],
+  "anc": "📖 User Manual > Administrator Guide > Getting started with adminis",
+  "labels": [],
+  "lango": {
+   "lang": "en",
+   "status": "primary",
+   "orig": "257392644",
+   "pv": 2,
+   "pwhen": "2026-09-12T06:22:24"
+  }
+ },
+ "257097754": {
+  "id": "257097754",
+  "title": "ACCESSING THE OpenELIS GLOBAL ADMINISTRATION MODULE",
+  "ver": 4,
+  "when": "2026-09-21",
+  "by": "Taib",
+  "roots": [
+   "admin",
+   "home"
+  ],
+  "anc": "📖 User Manual > Administrator Guide > Getting started with adminis",
+  "labels": [],
+  "lango": {
+   "lang": "en",
+   "status": "primary",
+   "orig": "257097754",
+   "pv": 2,
+   "pwhen": "2026-09-12T06:27:12"
+  }
+ },
+ "256966691": {
+  "id": "256966691",
+  "title": "NAVIGATING OpenELIS LIMS",
+  "ver": 4,
+  "when": "2026-09-21",
+  "by": "Taib",
+  "roots": [
+   "admin",
+   "home"
+  ],
+  "anc": "📖 User Manual > Administrator Guide > Getting started with adminis",
+  "labels": [],
+  "lango": {
+   "lang": "en",
+   "status": "primary",
+   "orig": "256966691",
+   "pv": 3,
+   "pwhen": "2026-09-12T06:29:41"
+  }
+ },
+ "1644691457": {
+  "id": "1644691457",
+  "title": "Add a lab unit",
+  "ver": 4,
+  "when": "2026-09-14",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "admin",
+   "home"
+  ],
+  "anc": "Administrator Guide > Test catalog > Test Catalog Management — wo",
+  "labels": []
+ },
+ "1644658691": {
+  "id": "1644658691",
+  "title": "Add a sample type",
+  "ver": 6,
+  "when": "2026-09-15",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "admin",
+   "home"
+  ],
+  "anc": "Administrator Guide > Test catalog > Test Catalog Management — wo",
+  "labels": []
+ },
+ "1644298250": {
+  "id": "1644298250",
+  "title": "Create a test panel",
+  "ver": 4,
+  "when": "2026-09-13",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "admin",
+   "home"
+  ],
+  "anc": "Administrator Guide > Test catalog > Test Catalog Management — wo",
+  "labels": []
+ },
+ "1643872278": {
+  "id": "1643872278",
+  "title": "Add a test to the test catalogue",
+  "ver": 5,
+  "when": "2026-10-04",
+  "by": "Taib",
+  "roots": [
+   "admin",
+   "home"
+  ],
+  "anc": "Administrator Guide > Test catalog > Test Catalog Management — wo",
+  "labels": []
+ },
+ "1439596548": {
+  "id": "1439596548",
+  "title": "Admin — Configure result reporting to external systems",
+  "ver": 7,
+  "when": "2026-09-17",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "admin",
+   "home"
+  ],
+  "anc": "📖 User Manual > Administrator Guide > Result reporting and analyze",
+  "labels": [
+   "doc-verified",
+   "verified-v3-2-1"
+  ]
+ },
+ "1439432709": {
+  "id": "1439432709",
+  "title": "Admin — Configure site information",
+  "ver": 9,
+  "when": "2026-09-28",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "admin",
+   "home"
+  ],
+  "anc": "📖 User Manual > Administrator Guide > Site and system settings",
+  "labels": [
+   "doc-verified",
+   "verified-v3-2-1"
+  ]
+ },
+ "1439367188": {
+  "id": "1439367188",
+  "title": "Admin — Edit application properties",
+  "ver": 7,
+  "when": "2026-09-17",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "admin",
+   "home"
+  ],
+  "anc": "📖 User Manual > Administrator Guide > Site and system settings",
+  "labels": [
+   "doc-verified",
+   "verified-v3-2-1"
+  ]
+ },
+ "1439334404": {
+  "id": "1439334404",
+  "title": "Admin — Manage non-working days",
+  "ver": 7,
+  "when": "2026-09-17",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "admin",
+   "home"
+  ],
+  "anc": "📖 User Manual > Administrator Guide > Site and system settings",
+  "labels": [
+   "doc-verified",
+   "verified-v3-2-1"
+  ]
+ },
+ "1439203334": {
+  "id": "1439203334",
+  "title": "Admin — Manage providers",
+  "ver": 7,
+  "when": "2026-09-17",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "admin",
+   "home"
+  ],
+  "anc": "📖 User Manual > Administrator Guide > Users, organizations and pro",
+  "labels": [
+   "doc-verified",
+   "verified-v3-2-1"
+  ]
+ },
+ "1439170565": {
+  "id": "1439170565",
+  "title": "Admin — Choose the lab number format",
+  "ver": 8,
+  "when": "2026-09-17",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "admin",
+   "home"
+  ],
+  "anc": "📖 User Manual > Administrator Guide > Site and system settings",
+  "labels": [
+   "doc-verified",
+   "verified-v3-2-1"
+  ]
+ },
+ "1439137808": {
+  "id": "1439137808",
+  "title": "Admin — Define reflex testing rules",
+  "ver": 7,
+  "when": "2026-09-17",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "admin",
+   "home"
+  ],
+  "anc": "📖 User Manual > Administrator Guide > Programs, rules and notifica",
+  "labels": [
+   "doc-verified",
+   "verified-v3-2-1"
+  ]
+ },
+ "1439072261": {
+  "id": "1439072261",
+  "title": "Admin — Configure test notifications",
+  "ver": 7,
+  "when": "2026-09-17",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "admin",
+   "home"
+  ],
+  "anc": "📖 User Manual > Administrator Guide > Programs, rules and notifica",
+  "labels": [
+   "doc-verified",
+   "verified-v3-2-1"
+  ]
+ },
+ "1439006727": {
+  "id": "1439006727",
+  "title": "Admin — Define programs and their questionnaires",
+  "ver": 8,
+  "when": "2026-09-27",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "admin",
+   "home"
+  ],
+  "anc": "📖 User Manual > Administrator Guide > Programs, rules and notifica",
+  "labels": [
+   "doc-verified",
+   "verified-v3-2-3-0"
+  ]
+ },
+ "1438973976": {
+  "id": "1438973976",
+  "title": "Admin — Manage dictionary entries",
+  "ver": 9,
+  "when": "2026-09-17",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "admin",
+   "home"
+  ],
+  "anc": "📖 User Manual > Administrator Guide > Programs, rules and notifica",
+  "labels": [
+   "doc-verified",
+   "verified-v3-2-1"
+  ]
+ },
+ "1438973960": {
+  "id": "1438973960",
+  "title": "Admin — Rebuild the search index",
+  "ver": 7,
+  "when": "2026-09-17",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "admin",
+   "home"
+  ],
+  "anc": "📖 User Manual > Administrator Guide > Site and system settings",
+  "labels": [
+   "doc-verified",
+   "verified-v3-2-1"
+  ]
+ },
+ "1438908431": {
+  "id": "1438908431",
+  "title": "Admin — Configure logging",
+  "ver": 8,
+  "when": "2026-09-17",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "admin",
+   "home"
+  ],
+  "anc": "📖 User Manual > Administrator Guide > Site and system settings",
+  "labels": [
+   "doc-verified",
+   "verified-v3-2-1"
+  ]
+ },
+ "1438842886": {
+  "id": "1438842886",
+  "title": "Admin — Define calculated value tests",
+  "ver": 6,
+  "when": "2026-09-17",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "admin",
+   "home"
+  ],
+  "anc": "📖 User Manual > Administrator Guide > Programs, rules and notifica",
+  "labels": [
+   "doc-verified",
+   "verified-v3-2-1"
+  ]
+ },
+ "1437892659": {
+  "id": "1437892659",
+  "title": "Admin — Manage organizations",
+  "ver": 10,
+  "when": "2026-09-17",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "admin",
+   "home"
+  ],
+  "anc": "📖 User Manual > Administrator Guide > Users, organizations and pro",
+  "labels": [
+   "doc-verified",
+   "verified-v3-2-1"
+  ]
+ },
+ "1437270018": {
+  "id": "1437270018",
+  "title": "Test Catalog Management — workflow overview",
+  "ver": 7,
+  "when": "2026-09-21",
+  "by": "mozzy mutesa",
+  "roots": [
+   "admin",
+   "home"
+  ],
+  "anc": "📖 User Manual > Administrator Guide > Test catalog",
+  "labels": [],
+  "lango": {
+   "lang": "en",
+   "status": "primary",
+   "orig": "1437270018",
+   "pv": 2,
+   "pwhen": "2026-09-12T00:10:26"
+  }
+ },
+ "1435566088": {
+  "id": "1435566088",
+  "title": "Sample Acceptance Checklist",
+  "ver": 7,
+  "when": "2026-07-31",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "admin",
+   "home"
+  ],
+  "anc": "Administrator Guide > Test catalog > Test Catalog Management — wo",
+  "labels": [
+   "doc-verified",
+   "verified-v3-2-1"
+  ],
+  "lango": {
+   "lang": "en",
+   "status": "primary",
+   "orig": "1435566088",
+   "pv": 2,
+   "pwhen": "2026-09-12T00:31:22"
+  }
+ },
+ "1433468931": {
+  "id": "1433468931",
+  "title": "Manage label presets",
+  "ver": 10,
+  "when": "2026-10-06",
+  "by": "mozzy mutesa",
+  "roots": [
+   "admin",
+   "home"
+  ],
+  "anc": "Administrator Guide > Test catalog > Test Catalog Management — wo",
+  "labels": [
+   "doc-verified",
+   "verified-v3-2-1"
+  ],
+  "lango": {
+   "lang": "en",
+   "status": "primary",
+   "orig": "1433468931",
+   "pv": 2,
+   "pwhen": "2026-09-12T00:30:28"
+  }
+ },
+ "1433010177": {
+  "id": "1433010177",
+  "title": "Add a test to panels",
+  "ver": 7,
+  "when": "2026-07-31",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "admin",
+   "home"
+  ],
+  "anc": "Administrator Guide > Test catalog > Test Catalog Management — wo",
+  "labels": [
+   "doc-verified",
+   "verified-v3-2-1"
+  ],
+  "lango": {
+   "lang": "en",
+   "status": "primary",
+   "orig": "1433010177",
+   "pv": 2,
+   "pwhen": "2026-09-12T00:10:40"
+  }
+ },
+ "1432584197": {
+  "id": "1432584197",
+  "title": "Configure a test's sample types & result components",
+  "ver": 8,
+  "when": "2026-09-12",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "admin",
+   "home"
+  ],
+  "anc": "Administrator Guide > Test catalog > Test Catalog Management — wo",
+  "labels": [],
+  "lango": {
+   "lang": "en",
+   "status": "primary",
+   "orig": "1432584197",
+   "pv": 2,
+   "pwhen": "2026-09-12T00:11:02"
+  }
+ },
+ "1432354821": {
+  "id": "1432354821",
+  "title": "Set reference & critical ranges",
+  "ver": 7,
+  "when": "2026-07-31",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "admin",
+   "home"
+  ],
+  "anc": "Administrator Guide > Test catalog > Test Catalog Management — wo",
+  "labels": [
+   "doc-verified",
+   "verified-v3-2-1"
+  ],
+  "lango": {
+   "lang": "en",
+   "status": "primary",
+   "orig": "1432354821",
+   "pv": 2,
+   "pwhen": "2026-09-12T00:31:56"
+  }
+ },
+ "1432256516": {
+  "id": "1432256516",
+  "title": "Configure sample storage & disposal",
+  "ver": 8,
+  "when": "2026-07-31",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "admin",
+   "home"
+  ],
+  "anc": "Administrator Guide > Test catalog > Test Catalog Management — wo",
+  "labels": [
+   "doc-verified",
+   "verified-v3-2-1"
+  ],
+  "lango": {
+   "lang": "en",
+   "status": "primary",
+   "orig": "1432256516",
+   "pv": 2,
+   "pwhen": "2026-09-12T00:11:17"
+  }
+ },
+ "1432059909": {
+  "id": "1432059909",
+  "title": "Map a test to terminology codes",
+  "ver": 6,
+  "when": "2026-07-31",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "admin",
+   "home"
+  ],
+  "anc": "Administrator Guide > Test catalog > Test Catalog Management — wo",
+  "labels": [
+   "doc-verified",
+   "verified-v3-2-1"
+  ],
+  "lango": {
+   "lang": "en",
+   "status": "primary",
+   "orig": "1432059909",
+   "pv": 2,
+   "pwhen": "2026-09-12T00:30:51"
+  }
+ },
+ "1431928838": {
+  "id": "1431928838",
+  "title": "Link methods to a test",
+  "ver": 8,
+  "when": "2026-07-31",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "admin",
+   "home"
+  ],
+  "anc": "Administrator Guide > Test catalog > Test Catalog Management — wo",
+  "labels": [
+   "doc-verified",
+   "verified-v3-2-1"
+  ],
+  "lango": {
+   "lang": "en",
+   "status": "primary",
+   "orig": "1431928838",
+   "pv": 2,
+   "pwhen": "2026-09-12T00:30:03"
+  }
+ },
+ "1431666693": {
+  "id": "1431666693",
+  "title": "Set test display order within a sample type",
+  "ver": 6,
+  "when": "2026-07-31",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "admin",
+   "home"
+  ],
+  "anc": "Administrator Guide > Test catalog > Test Catalog Management — wo",
+  "labels": [
+   "doc-verified",
+   "verified-v3-2-1"
+  ],
+  "lango": {
+   "lang": "en",
+   "status": "primary",
+   "orig": "1431666693",
+   "pv": 2,
+   "pwhen": "2026-09-12T00:32:10"
+  }
+ },
+ "1431470085": {
+  "id": "1431470085",
+  "title": "Find & filter tests in the catalog",
+  "ver": 7,
+  "when": "2026-07-31",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "admin",
+   "home"
+  ],
+  "anc": "Administrator Guide > Test catalog > Test Catalog Management — wo",
+  "labels": [
+   "doc-verified",
+   "verified-v3-2-1"
+  ],
+  "lango": {
+   "lang": "en",
+   "status": "primary",
+   "orig": "1431470085",
+   "pv": 2,
+   "pwhen": "2026-09-12T00:21:37"
+  }
+ },
+ "1431371782": {
+  "id": "1431371782",
+  "title": "Edit a test's Basic Info (domain, AMR, status)",
+  "ver": 10,
+  "when": "2026-09-12",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "admin",
+   "home"
+  ],
+  "anc": "Administrator Guide > Test catalog > Test Catalog Management — wo",
+  "labels": [],
+  "lango": {
+   "lang": "en",
+   "status": "primary",
+   "orig": "1431371782",
+   "pv": 2,
+   "pwhen": "2026-09-12T00:21:19"
+  }
+ },
+ "1427931149": {
+  "id": "1427931149",
+  "title": "Admin — Configure compliance standards & holding times",
+  "ver": 8,
+  "when": "2026-07-31",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "admin",
+   "home"
+  ],
+  "anc": "📖 User Manual > Administrator Guide > Environmental and vector ref",
+  "labels": [
+   "doc-verified",
+   "verified-v3-2-1"
+  ]
+ },
+ "1427144728": {
+  "id": "1427144728",
+  "title": "Admin — Vector Surveillance Reference Data",
+  "ver": 7,
+  "when": "2026-07-31",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "admin",
+   "home"
+  ],
+  "anc": "📖 User Manual > Administrator Guide > Environmental and vector ref",
+  "labels": [
+   "doc-verified",
+   "verified-v3-2-1"
+  ]
+ },
+ "1187840003": {
+  "id": "1187840003",
+  "title": "Admin — Manage user accounts",
+  "ver": 6,
+  "when": "2026-09-17",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "admin",
+   "home"
+  ],
+  "anc": "📖 User Manual > Administrator Guide > Users, organizations and pro",
+  "labels": [
+   "doc-verified",
+   "verified-v3-2-1"
+  ]
+ },
+ "1186365449": {
+  "id": "1186365449",
+  "title": "PART 7 B: ANALYZER MANAGEMENT",
+  "ver": 5,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "admin",
+   "home"
+  ],
+  "anc": "📖 User Manual > Administrator Guide > Result reporting and analyze",
+  "labels": [],
+  "lango": {
+   "lang": "en",
+   "status": "primary",
+   "orig": null,
+   "pv": 2,
+   "pwhen": "2026-09-14T15:07:37"
+  }
+ },
+ "1160282114": {
+  "id": "1160282114",
+  "title": "Admin — Configure the navigation menu",
+  "ver": 5,
+  "when": "2026-09-28",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "admin",
+   "home"
+  ],
+  "anc": "📖 User Manual > Administrator Guide > Site and system settings",
+  "labels": []
+ },
+ "257458193": {
+  "id": "257458193",
+  "title": "Administrator Guide",
+  "ver": 1,
+  "when": "2024-10-08",
+  "by": null,
+  "roots": [
+   "admin-root"
+  ],
+  "anc": "OpenELIS Global > 📖 User Manual",
+  "labels": []
+ },
+ "940769284": {
+  "id": "940769284",
+  "title": "R&D & Future Features",
+  "ver": 1,
+  "when": "2025-12-12",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "about",
+   "home"
+  ],
+  "anc": "About OpenELIS Global > 📦 Releases > Interoperability Roadmap",
+  "labels": []
+ },
+ "940343307": {
+  "id": "940343307",
+  "title": "Current Production Release (v3.1)",
+  "ver": 2,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "about",
+   "home"
+  ],
+  "anc": "OpenELIS Global > About OpenELIS Global > 📦 Releases",
+  "labels": []
+ },
+ "939655182": {
+  "id": "939655182",
+  "title": "v3.2 Development Target (Q1 2026)",
+  "ver": 3,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "about",
+   "home"
+  ],
+  "anc": "OpenELIS Global > About OpenELIS Global > 📦 Releases",
+  "labels": []
+ },
+ "713162758": {
+  "id": "713162758",
+  "title": "How to Translate OpenELIS",
+  "ver": 2,
+  "when": "2025-09-26",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "about",
+   "home"
+  ],
+  "anc": "OpenELIS Global > About OpenELIS Global",
+  "labels": []
+ },
+ "645136511": {
+  "id": "645136511",
+  "title": "Release 1.9.1 (May 2019)",
+  "ver": 1,
+  "when": "2025-05-28",
+  "by": "Taib",
+  "roots": [
+   "about",
+   "home"
+  ],
+  "anc": "About OpenELIS Global > 📦 Releases > Past Releases",
+  "labels": []
+ },
+ "645136477": {
+  "id": "645136477",
+  "title": "OpenELIS Global 2.5  (November, 2021)",
+  "ver": 1,
+  "when": "2025-05-28",
+  "by": "Taib",
+  "roots": [
+   "about",
+   "home"
+  ],
+  "anc": "About OpenELIS Global > 📦 Releases > Past Releases",
+  "labels": []
+ },
+ "645136453": {
+  "id": "645136453",
+  "title": "OpenELIS Global 2.6  (July, 2022)",
+  "ver": 1,
+  "when": "2025-05-28",
+  "by": "Taib",
+  "roots": [
+   "about",
+   "home"
+  ],
+  "anc": "About OpenELIS Global > 📦 Releases > Past Releases",
+  "labels": []
+ },
+ "645136444": {
+  "id": "645136444",
+  "title": "OpenELIS Global 2.7  (March, 2023)",
+  "ver": 1,
+  "when": "2025-05-28",
+  "by": "Taib",
+  "roots": [
+   "about",
+   "home"
+  ],
+  "anc": "About OpenELIS Global > 📦 Releases > Past Releases",
+  "labels": []
+ },
+ "645136385": {
+  "id": "645136385",
+  "title": "Interoperability Roadmap",
+  "ver": 3,
+  "when": "2026-09-29",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "about",
+   "home"
+  ],
+  "anc": "OpenELIS Global > About OpenELIS Global > 📦 Releases",
+  "labels": []
+ },
+ "645103669": {
+  "id": "645103669",
+  "title": "Release 4.1.1  (September, 2014) ",
+  "ver": 1,
+  "when": "2025-05-28",
+  "by": "Taib",
+  "roots": [
+   "about",
+   "home"
+  ],
+  "anc": "About OpenELIS Global > 📦 Releases > Older Releases",
+  "labels": []
+ },
+ "645103660": {
+  "id": "645103660",
+  "title": "Release 6.1 (April, 2016)",
+  "ver": 1,
+  "when": "2025-05-28",
+  "by": "Taib",
+  "roots": [
+   "about",
+   "home"
+  ],
+  "anc": "About OpenELIS Global > 📦 Releases > Older Releases",
+  "labels": []
+ },
+ "645103651": {
+  "id": "645103651",
+  "title": "Release 7.1 (Aug, 2017)",
+  "ver": 1,
+  "when": "2025-05-28",
+  "by": "Taib",
+  "roots": [
+   "about",
+   "home"
+  ],
+  "anc": "About OpenELIS Global > 📦 Releases > Older Releases",
+  "labels": []
+ },
+ "645070880": {
+  "id": "645070880",
+  "title": "Older Releases",
+  "ver": 4,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "about",
+   "home"
+  ],
+  "anc": "OpenELIS Global > About OpenELIS Global > 📦 Releases",
+  "labels": []
+ },
+ "645070871": {
+  "id": "645070871",
+  "title": "OpenELIS Global 2.0  (Release 2.0: Jan 2020)",
+  "ver": 1,
+  "when": "2025-05-28",
+  "by": "Taib",
+  "roots": [
+   "about",
+   "home"
+  ],
+  "anc": "About OpenELIS Global > 📦 Releases > Past Releases",
+  "labels": []
+ },
+ "645070858": {
+  "id": "645070858",
+  "title": "OpenELIS Global 2.1  (September 2020)",
+  "ver": 2,
+  "when": "2025-05-28",
+  "by": "Taib",
+  "roots": [
+   "about",
+   "home"
+  ],
+  "anc": "About OpenELIS Global > 📦 Releases > Past Releases",
+  "labels": []
+ },
+ "645005369": {
+  "id": "645005369",
+  "title": "Release 8.1 (March, 2018)",
+  "ver": 1,
+  "when": "2025-05-28",
+  "by": "Taib",
+  "roots": [
+   "about",
+   "home"
+  ],
+  "anc": "About OpenELIS Global > 📦 Releases > Older Releases",
+  "labels": []
+ },
+ "645005343": {
+  "id": "645005343",
+  "title": "OpenELIS Global 2.3  (March 2021)",
+  "ver": 1,
+  "when": "2025-05-28",
+  "by": "Taib",
+  "roots": [
+   "about",
+   "home"
+  ],
+  "anc": "About OpenELIS Global > 📦 Releases > Past Releases",
+  "labels": []
+ },
+ "645005332": {
+  "id": "645005332",
+  "title": "Past Releases",
+  "ver": 6,
+  "when": "2026-08-18",
+  "by": "mozzy mutesa",
+  "roots": [
+   "about",
+   "home"
+  ],
+  "anc": "OpenELIS Global > About OpenELIS Global > 📦 Releases",
+  "labels": []
+ },
+ "644939869": {
+  "id": "644939869",
+  "title": "Release 5.2.2 (June, 2015)",
+  "ver": 1,
+  "when": "2025-05-28",
+  "by": "Taib",
+  "roots": [
+   "about",
+   "home"
+  ],
+  "anc": "About OpenELIS Global > 📦 Releases > Older Releases",
+  "labels": []
+ },
+ "644939825": {
+  "id": "644939825",
+  "title": "OpenELIS Global 2.4  (September 2021)",
+  "ver": 1,
+  "when": "2025-05-28",
+  "by": "Taib",
+  "roots": [
+   "about",
+   "home"
+  ],
+  "anc": "About OpenELIS Global > 📦 Releases > Past Releases",
+  "labels": []
+ },
+ "644907056": {
+  "id": "644907056",
+  "title": "Release 5.1 (March, 2015)",
+  "ver": 1,
+  "when": "2025-05-28",
+  "by": "Taib",
+  "roots": [
+   "about",
+   "home"
+  ],
+  "anc": "About OpenELIS Global > 📦 Releases > Older Releases",
+  "labels": []
+ },
+ "644907046": {
+  "id": "644907046",
+  "title": "Release 6.2 (December, 2016)",
+  "ver": 1,
+  "when": "2025-05-28",
+  "by": "Taib",
+  "roots": [
+   "about",
+   "home"
+  ],
+  "anc": "About OpenELIS Global > 📦 Releases > Older Releases",
+  "labels": []
+ },
+ "644874425": {
+  "id": "644874425",
+  "title": "Release 14.1 (June, 2014)",
+  "ver": 1,
+  "when": "2025-05-28",
+  "by": "Taib",
+  "roots": [
+   "about",
+   "home"
+  ],
+  "anc": "About OpenELIS Global > 📦 Releases > Older Releases",
+  "labels": []
+ },
+ "644874413": {
+  "id": "644874413",
+  "title": "Release 8.2 (June 2018)",
+  "ver": 1,
+  "when": "2025-05-28",
+  "by": "Taib",
+  "roots": [
+   "about",
+   "home"
+  ],
+  "anc": "About OpenELIS Global > 📦 Releases > Older Releases",
+  "labels": []
+ },
+ "644841547": {
+  "id": "644841547",
+  "title": "Release 4.2.2 (October, 2014) ",
+  "ver": 1,
+  "when": "2025-05-28",
+  "by": "Taib",
+  "roots": [
+   "about",
+   "home"
+  ],
+  "anc": "About OpenELIS Global > 📦 Releases > Older Releases",
+  "labels": []
+ },
+ "644841486": {
+  "id": "644841486",
+  "title": "OpenELIS Global 3.0  (August 2024)",
+  "ver": 1,
+  "when": "2025-05-28",
+  "by": "Taib",
+  "roots": [
+   "about",
+   "home"
+  ],
+  "anc": "About OpenELIS Global > 📦 Releases > Past Releases",
+  "labels": []
+ },
+ "640319495": {
+  "id": "640319495",
+  "title": "Product Roadmap",
+  "ver": 34,
+  "when": "2026-09-11",
+  "by": "Jan Flowers",
+  "roots": [
+   "about",
+   "home"
+  ],
+  "anc": "OpenELIS Global > About OpenELIS Global",
+  "labels": []
+ },
+ "239632402": {
+  "id": "239632402",
+  "title": "Install OpenELIS Global",
+  "ver": 14,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "about",
+   "home"
+  ],
+  "anc": "OpenELIS Global > About OpenELIS Global",
+  "labels": [],
+  "lango": {
+   "lang": "en",
+   "status": "primary",
+   "orig": "239632402",
+   "pv": 2,
+   "pwhen": "2026-10-07T18:43:29"
+  }
+ },
+ "1703182338": {
+  "id": "1703182338",
+  "title": "How to translate OpenELIS Global Wiki",
+  "ver": 4,
+  "when": "2026-10-08",
+  "by": "Taib",
+  "roots": [
+   "about",
+   "home"
+  ],
+  "anc": "OpenELIS Global > About OpenELIS Global > How to Translate OpenELIS",
+  "labels": [],
+  "lango": {
+   "lang": "fr",
+   "status": "primary",
+   "orig": null,
+   "pv": 1,
+   "pwhen": "2026-10-08T23:56:05"
+  }
+ },
+ "1702821939": {
+  "id": "1702821939",
+  "title": "Complete the sample check for a clinical order",
+  "ver": 3,
+  "when": "2026-10-09",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "about",
+   "modules",
+   "home"
+  ],
+  "anc": "About OpenELIS Global > 🧩 Modules & Features > New User Manual sections to ",
+  "labels": []
+ },
+ "1702756385": {
+  "id": "1702756385",
+  "title": "Admin: Manage organizations (3.3.0)",
+  "ver": 2,
+  "when": "2026-10-09",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "about",
+   "modules",
+   "home"
+  ],
+  "anc": "About OpenELIS Global > 🧩 Modules & Features > New User Manual sections to ",
+  "labels": []
+ },
+ "1701281856": {
+  "id": "1701281856",
+  "title": "Installer OpenELIS Global",
+  "ver": 2,
+  "when": "2026-10-07",
+  "by": "Lango AI Translator: Language & translations for Confluence",
+  "roots": [
+   "about",
+   "install",
+   "home"
+  ],
+  "anc": "OpenELIS Global > About OpenELIS Global > Install OpenELIS Global",
+  "labels": [],
+  "lango": {
+   "lang": "fr",
+   "status": "current",
+   "orig": "239632402",
+   "pv": 1,
+   "pwhen": "2026-10-07T18:43:29"
+  }
+ },
+ "1699577950": {
+  "id": "1699577950",
+  "title": "À propos d'OpenELIS Global",
+  "ver": 2,
+  "when": "2026-10-07",
+  "by": "Lango AI Translator: Language & translations for Confluence",
+  "roots": [
+   "about",
+   "home"
+  ],
+  "anc": "OpenELIS Global > About OpenELIS Global",
+  "labels": [],
+  "lango": {
+   "lang": "fr",
+   "status": "current",
+   "orig": "239337475",
+   "pv": 1,
+   "pwhen": "2026-10-07T18:43:14"
+  }
+ },
+ "1680048163": {
+  "id": "1680048163",
+  "title": "Statistical QC — overview and daily review",
+  "ver": 3,
+  "when": "2026-09-27",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "about",
+   "modules",
+   "home"
+  ],
+  "anc": "About OpenELIS Global > 🧩 Modules & Features > New User Manual sections to ",
+  "labels": []
+ },
+ "1680048146": {
+  "id": "1680048146",
+  "title": "Receive and activate a control lot",
+  "ver": 3,
+  "when": "2026-09-27",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "about",
+   "modules",
+   "home"
+  ],
+  "anc": "About OpenELIS Global > 🧩 Modules & Features > New User Manual sections to ",
+  "labels": []
+ },
+ "1677164751": {
+  "id": "1677164751",
+  "title": "OpenELIS Global 3.2.3.0 (September 2026)",
+  "ver": 1,
+  "when": "2026-09-25",
+  "by": "mozzy mutesa",
+  "roots": [
+   "about",
+   "home"
+  ],
+  "anc": "About OpenELIS Global > 📦 Releases > Past Releases",
+  "labels": []
+ },
+ "1671987213": {
+  "id": "1671987213",
+  "title": "EQA participant: take part in a proficiency testing scheme",
+  "ver": 11,
+  "when": "2026-09-25",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "about",
+   "modules",
+   "home"
+  ],
+  "anc": "About OpenELIS Global > 🧩 Modules & Features > New User Manual sections to ",
+  "labels": []
+ },
+ "1669758983": {
+  "id": "1669758983",
+  "title": "Install the Analyzer Bridge",
+  "ver": 3,
+  "when": "2026-09-29",
+  "by": "Taib",
+  "roots": [
+   "about",
+   "modules",
+   "home"
+  ],
+  "anc": "About OpenELIS Global > 🧩 Modules & Features > Set up an analyzer",
+  "labels": []
+ },
+ "1669562408": {
+  "id": "1669562408",
+  "title": "EQA provider: run a proficiency testing scheme",
+  "ver": 11,
+  "when": "2026-09-25",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "about",
+   "modules",
+   "home"
+  ],
+  "anc": "About OpenELIS Global > 🧩 Modules & Features > New User Manual sections to ",
+  "labels": []
+ },
+ "1668972546": {
+  "id": "1668972546",
+  "title": "Manage lab units",
+  "ver": 9,
+  "when": "2026-09-22",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "about",
+   "modules",
+   "home"
+  ],
+  "anc": "About OpenELIS Global > 🧩 Modules & Features > New User Manual sections to ",
+  "labels": []
+ },
+ "1666547755": {
+  "id": "1666547755",
+  "title": "Import a test catalog from CSV",
+  "ver": 7,
+  "when": "2026-09-24",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "about",
+   "modules",
+   "home"
+  ],
+  "anc": "About OpenELIS Global > 🧩 Modules & Features > New User Manual sections to ",
+  "labels": []
+ },
+ "1661763585": {
+  "id": "1661763585",
+  "title": "Triage and release results",
+  "ver": 21,
+  "when": "2026-10-09",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "about",
+   "modules",
+   "home"
+  ],
+  "anc": "About OpenELIS Global > 🧩 Modules & Features > New User Manual sections to ",
+  "labels": []
+ },
+ "1655930882": {
+  "id": "1655930882",
+  "title": "Prepare samples for a clinical order",
+  "ver": 18,
+  "when": "2026-10-09",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "about",
+   "modules",
+   "home"
+  ],
+  "anc": "About OpenELIS Global > 🧩 Modules & Features > New User Manual sections to ",
+  "labels": []
+ },
+ "1649213442": {
+  "id": "1649213442",
+  "title": "French translation — structure and cleanup plan",
+  "ver": 1,
+  "when": "2026-09-15",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "about",
+   "modules",
+   "home"
+  ],
+  "anc": "About OpenELIS Global > 🧩 Modules & Features > New User Manual sections to ",
+  "labels": []
+ },
+ "1649082375": {
+  "id": "1649082375",
+  "title": "General Configurations reference",
+  "ver": 4,
+  "when": "2026-09-28",
+  "by": "Taib",
+  "roots": [
+   "about",
+   "modules",
+   "home"
+  ],
+  "anc": "OpenELIS Global > About OpenELIS Global > 🧩 Modules & Features",
+  "labels": []
+ },
+ "1649016834": {
+  "id": "1649016834",
+  "title": "Documentation catch-up — execution plan",
+  "ver": 1,
+  "when": "2026-09-15",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "about",
+   "modules",
+   "home"
+  ],
+  "anc": "About OpenELIS Global > 🧩 Modules & Features > New User Manual sections to ",
+  "labels": []
+ },
+ "1648885761": {
+  "id": "1648885761",
+  "title": "Analyzer documentation — audit and consolidation plan",
+  "ver": 1,
+  "when": "2026-09-14",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "about",
+   "modules",
+   "home"
+  ],
+  "anc": "About OpenELIS Global > 🧩 Modules & Features > New User Manual sections to ",
+  "labels": []
+ },
+ "1648787462": {
+  "id": "1648787462",
+  "title": "Enter a clinical order",
+  "ver": 21,
+  "when": "2026-10-09",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "about",
+   "modules",
+   "home"
+  ],
+  "anc": "OpenELIS Global > About OpenELIS Global > 🧩 Modules & Features",
+  "labels": []
+ },
+ "1648590851": {
+  "id": "1648590851",
+  "title": "Map analyzer codes, resolve held results, and run QC",
+  "ver": 5,
+  "when": "2026-09-28",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "about",
+   "modules",
+   "home"
+  ],
+  "anc": "About OpenELIS Global > 🧩 Modules & Features > Set up an analyzer",
+  "labels": []
+ },
+ "1648361491": {
+  "id": "1648361491",
+  "title": "Set up an analyzer",
+  "ver": 4,
+  "when": "2026-09-22",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "about",
+   "modules",
+   "home"
+  ],
+  "anc": "OpenELIS Global > About OpenELIS Global > 🧩 Modules & Features",
+  "labels": []
+ },
+ "1643413547": {
+  "id": "1643413547",
+  "title": "Test catalogue editors — 3.2.2.0",
+  "ver": 2,
+  "when": "2026-09-12",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "about",
+   "modules",
+   "home"
+  ],
+  "anc": "About OpenELIS Global > 🧩 Modules & Features > New User Manual sections to ",
+  "labels": []
+ },
+ "1569882118": {
+  "id": "1569882118",
+  "title": "OpenELIS Global 3.2.2.0 (August 2026)",
+  "ver": 1,
+  "when": "2026-08-18",
+  "by": "mozzy mutesa",
+  "roots": [
+   "about",
+   "home"
+  ],
+  "anc": "About OpenELIS Global > 📦 Releases > Past Releases",
+  "labels": []
+ },
+ "1529872422": {
+  "id": "1529872422",
+  "title": "User manual style guide — titles, labels, and page structure",
+  "ver": 3,
+  "when": "2026-09-28",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "about",
+   "modules",
+   "home"
+  ],
+  "anc": "About OpenELIS Global > 🧩 Modules & Features > New User Manual sections to ",
+  "labels": []
+ },
+ "1473347586": {
+  "id": "1473347586",
+  "title": "OpenELIS Global 3.2.1.11 (July 2026)",
+  "ver": 1,
+  "when": "2026-07-14",
+  "by": "mozzy mutesa",
+  "roots": [
+   "about",
+   "home"
+  ],
+  "anc": "About OpenELIS Global > 📦 Releases > Past Releases",
+  "labels": []
+ },
+ "1442414603": {
+  "id": "1442414603",
+  "title": "Authoring the OpenELIS Test Catalog in CSV (draft — verify)",
+  "ver": 2,
+  "when": "2026-07-31",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "about",
+   "modules",
+   "home"
+  ],
+  "anc": "About OpenELIS Global > 🧩 Modules & Features > New User Manual sections to ",
+  "labels": []
+ },
+ "1441136648": {
+  "id": "1441136648",
+  "title": "Patient Management",
+  "ver": 3,
+  "when": "2026-09-13",
+  "by": "Taib",
+  "roots": [
+   "about",
+   "modules",
+   "home"
+  ],
+  "anc": "About OpenELIS Global > 🧩 Modules & Features > New User Manual sections to ",
+  "labels": []
+ },
+ "1440907275": {
+  "id": "1440907275",
+  "title": "Merge Patient Records (draft — verify)",
+  "ver": 2,
+  "when": "2026-07-01",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "about",
+   "modules",
+   "home"
+  ],
+  "anc": "About OpenELIS Global > 🧩 Modules & Features > New User Manual sections to ",
+  "labels": []
+ },
+ "1440841760": {
+  "id": "1440841760",
+  "title": "Register a New Patient (draft — verify)",
+  "ver": 2,
+  "when": "2026-07-01",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "about",
+   "modules",
+   "home"
+  ],
+  "anc": "About OpenELIS Global > 🧩 Modules & Features > New User Manual sections to ",
+  "labels": []
+ },
+ "1432649742": {
+  "id": "1432649742",
+  "title": "Read-only & cross-link sections (draft — verify)",
+  "ver": 5,
+  "when": "2026-07-31",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "about",
+   "modules",
+   "home"
+  ],
+  "anc": "About OpenELIS Global > 🧩 Modules & Features > New User Manual sections to ",
+  "labels": []
+ },
+ "1432453132": {
+  "id": "1432453132",
+  "title": "Test Catalog Management: the unified editor",
+  "ver": 14,
+  "when": "2026-09-22",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "about",
+   "modules",
+   "home"
+  ],
+  "anc": "About OpenELIS Global > 🧩 Modules & Features > New User Manual sections to ",
+  "labels": []
+ },
+ "1431633936": {
+  "id": "1431633936",
+  "title": "Duplicate a test (draft — verify)",
+  "ver": 6,
+  "when": "2026-07-31",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "about",
+   "modules",
+   "home"
+  ],
+  "anc": "About OpenELIS Global > 🧩 Modules & Features > New User Manual sections to ",
+  "labels": []
+ },
+ "1428684802": {
+  "id": "1428684802",
+  "title": "Label & store samples (shared stage)",
+  "ver": 8,
+  "when": "2026-10-08",
+  "by": "Taib",
+  "roots": [
+   "about",
+   "modules",
+   "home"
+  ],
+  "anc": "About OpenELIS Global > 🧩 Modules & Features > New User Manual sections to ",
+  "labels": [],
+  "lango": {
+   "lang": "fr",
+   "status": "primary",
+   "orig": null,
+   "pv": 1,
+   "pwhen": "2026-10-08T13:18:22"
+  }
+ },
+ "1427439642": {
+  "id": "1427439642",
+  "title": "Validate & release results",
+  "ver": 11,
+  "when": "2026-09-13",
+  "by": "Taib",
+  "roots": [
+   "about",
+   "modules",
+   "home"
+  ],
+  "anc": "About OpenELIS Global > 🧩 Modules & Features > New User Manual sections to ",
+  "labels": []
+ },
+ "1427275807": {
+  "id": "1427275807",
+  "title": "Enter results & read the compliance evaluation",
+  "ver": 8,
+  "when": "2026-09-13",
+  "by": "Taib",
+  "roots": [
+   "about",
+   "modules",
+   "home"
+  ],
+  "anc": "About OpenELIS Global > 🧩 Modules & Features > New User Manual sections to ",
+  "labels": []
+ },
+ "1420853278": {
+  "id": "1420853278",
+  "title": "Manage Sample Types (legacy screen)",
+  "ver": 7,
+  "when": "2026-09-15",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "about",
+   "modules",
+   "home"
+  ],
+  "anc": "About OpenELIS Global > 🧩 Modules & Features > New User Manual sections to ",
+  "labels": []
+ },
+ "1418166310": {
+  "id": "1418166310",
+  "title": "Adding a Patient (draft — verify)",
+  "ver": 6,
+  "when": "2026-06-24",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "about",
+   "modules",
+   "home"
+  ],
+  "anc": "About OpenELIS Global > 🧩 Modules & Features > New User Manual sections to ",
+  "labels": []
+ },
+ "1412136974": {
+  "id": "1412136974",
+  "title": "Release Notes — v3.2",
+  "ver": 3,
+  "when": "2026-07-17",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "about",
+   "home"
+  ],
+  "anc": "OpenELIS Global > About OpenELIS Global > Product Roadmap",
+  "labels": []
+ },
+ "1349091330": {
+  "id": "1349091330",
+  "title": "Reference Lab Results — Dev Primer (OGC-796)",
+  "ver": 1,
+  "when": "2026-05-29",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "about",
+   "modules",
+   "home"
+  ],
+  "anc": "About OpenELIS Global > 🧩 Modules & Features > New User Manual sections to ",
+  "labels": []
+ },
+ "1326219273": {
+  "id": "1326219273",
+  "title": "📦 Releases",
+  "ver": 5,
+  "when": "2026-07-31",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "about",
+   "home"
+  ],
+  "anc": "OpenELIS Global > About OpenELIS Global",
+  "labels": []
+ },
+ "1325727762": {
+  "id": "1325727762",
+  "title": "🧩 Modules & Features",
+  "ver": 4,
+  "when": "2026-07-31",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "about",
+   "home"
+  ],
+  "anc": "OpenELIS Global > About OpenELIS Global",
+  "labels": []
+ },
+ "1318060033": {
+  "id": "1318060033",
+  "title": "Barcode Labels v1 — Cohesive FRS + Implementation Gap Analysis (OGC-284)",
+  "ver": 1,
+  "when": "2026-05-18",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "about",
+   "modules",
+   "home"
+  ],
+  "anc": "About OpenELIS Global > 🧩 Modules & Features > Test Catalog Management v2.5",
+  "labels": []
+ },
+ "1318027266": {
+  "id": "1318027266",
+  "title": "Barcode Labels v2 — Configurable Label Preset Management (OGC-285 FRS)",
+  "ver": 1,
+  "when": "2026-05-18",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "about",
+   "modules",
+   "home"
+  ],
+  "anc": "About OpenELIS Global > 🧩 Modules & Features > Test Catalog Management v2.5",
+  "labels": []
+ },
+ "1313865740": {
+  "id": "1313865740",
+  "title": "Test Catalog Management v2.5 — Delivery Plan (20 epics)",
+  "ver": 5,
+  "when": "2026-06-08",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "about",
+   "modules",
+   "home"
+  ],
+  "anc": "OpenELIS Global > About OpenELIS Global > 🧩 Modules & Features",
+  "labels": []
+ },
+ "1307181068": {
+  "id": "1307181068",
+  "title": "QA Menu Release",
+  "ver": 4,
+  "when": "2026-05-22",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "about",
+   "modules",
+   "home"
+  ],
+  "anc": "OpenELIS Global > About OpenELIS Global > 🧩 Modules & Features",
+  "labels": []
+ },
+ "1189609473": {
+  "id": "1189609473",
+  "title": "New User Manual sections to be verified",
+  "ver": 8,
+  "when": "2026-09-26",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "about",
+   "modules",
+   "home"
+  ],
+  "anc": "OpenELIS Global > About OpenELIS Global > 🧩 Modules & Features",
+  "labels": []
+ },
+ "1153728514": {
+  "id": "1153728514",
+  "title": "Troubleshooting Guide: Permission Inspector & Common Misconfigurations",
+  "ver": 2,
+  "when": "2026-05-22",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "about",
+   "modules",
+   "home"
+  ],
+  "anc": "About OpenELIS Global > 🧩 Modules & Features > Role-Based Access Control (R",
+  "labels": []
+ },
+ "1143603206": {
+  "id": "1143603206",
+  "title": "User Management Guide: Assigning Roles, Scope Selection & Session Expiry",
+  "ver": 2,
+  "when": "2026-05-22",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "about",
+   "modules",
+   "home"
+  ],
+  "anc": "About OpenELIS Global > 🧩 Modules & Features > Role-Based Access Control (R",
+  "labels": []
+ },
+ "1139703826": {
+  "id": "1139703826",
+  "title": "Role Management Guide: Creating, Editing, Cloning & Deleting Roles",
+  "ver": 2,
+  "when": "2026-05-22",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "about",
+   "modules",
+   "home"
+  ],
+  "anc": "About OpenELIS Global > 🧩 Modules & Features > Role-Based Access Control (R",
+  "labels": []
+ },
+ "1139179523": {
+  "id": "1139179523",
+  "title": "Role-Based Access Control (RBAC)",
+  "ver": 3,
+  "when": "2026-05-22",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "about",
+   "modules",
+   "home"
+  ],
+  "anc": "OpenELIS Global > About OpenELIS Global > 🧩 Modules & Features",
+  "labels": []
+ },
+ "1139146755": {
+  "id": "1139146755",
+  "title": "RBAC Concepts — Permissions, Roles, Scopes & Role Types",
+  "ver": 2,
+  "when": "2026-05-22",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "about",
+   "modules",
+   "home"
+  ],
+  "anc": "About OpenELIS Global > 🧩 Modules & Features > Role-Based Access Control (R",
+  "labels": []
+ },
+ "1047265314": {
+  "id": "1047265314",
+  "title": "Import analyzer results from a file",
+  "ver": 2,
+  "when": "2026-09-15",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "about",
+   "modules",
+   "home"
+  ],
+  "anc": "About OpenELIS Global > 🧩 Modules & Features > Set up an analyzer",
+  "labels": []
+ },
+ "239337475": {
+  "id": "239337475",
+  "title": "About OpenELIS Global",
+  "ver": 6,
+  "when": "2026-05-22",
+  "by": null,
+  "roots": [
+   "about-root",
+   "home"
+  ],
+  "anc": "OpenELIS Global",
+  "labels": [],
+  "lango": {
+   "lang": "en",
+   "status": "primary",
+   "orig": "239337475",
+   "pv": 5,
+   "pwhen": "2026-10-07T18:43:15"
+  }
+ },
+ "1700462593": {
+  "id": "1700462593",
+  "title": "Papua New Guinea",
+  "ver": 1,
+  "when": "2026-10-06",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "impl",
+   "home"
+  ],
+  "anc": "OpenELIS Global > OpenELIS Global Implementati",
+  "labels": []
+ },
+ "1698889763": {
+  "id": "1698889763",
+  "title": "CPHL High Availability Fail Over",
+  "ver": 1,
+  "when": "2026-10-06",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "impl",
+   "home"
+  ],
+  "anc": "OpenELIS Global > OpenELIS Global Implementati > Papua New Guinea",
+  "labels": []
+ },
+ "1655701509": {
+  "id": "1655701509",
+  "title": "OpenELIS Global Standard Upgrade Procedure: Steps for Backup, Upgrade, and Verification",
+  "ver": 2,
+  "when": "2026-09-16",
+  "by": "Taib",
+  "roots": [
+   "impl",
+   "home"
+  ],
+  "anc": "OpenELIS Global > OpenELIS Global Implementati > Madagascar OpenELIS Madagasc",
+  "labels": []
+ },
+ "1531281412": {
+  "id": "1531281412",
+  "title": "OCL Configuration for OpenELIS: Importing Concepts from ZIP Collections",
+  "ver": 1,
+  "when": "2026-08-04",
+  "by": "Taib",
+  "roots": [
+   "impl",
+   "home"
+  ],
+  "anc": "OpenELIS Global > OpenELIS Global Implementati > Madagascar OpenELIS Madagasc",
+  "labels": []
+ },
+ "1531084826": {
+  "id": "1531084826",
+  "title": "Configuration Quick Start & Troubleshooting",
+  "ver": 3,
+  "when": "2026-08-06",
+  "by": "Taib",
+  "roots": [
+   "impl",
+   "home"
+  ],
+  "anc": "OpenELIS Global > OpenELIS Global Implementati > Madagascar OpenELIS Madagasc",
+  "labels": []
+ },
+ "1531052035": {
+  "id": "1531052035",
+  "title": "Questionnaires Configuration for FHIR R4 Resources in OpenELIS Global",
+  "ver": 1,
+  "when": "2026-08-04",
+  "by": "Taib",
+  "roots": [
+   "impl",
+   "home"
+  ],
+  "anc": "OpenELIS Global > OpenELIS Global Implementati > Madagascar OpenELIS Madagasc",
+  "labels": []
+ },
+ "1530986508": {
+  "id": "1530986508",
+  "title": "Dictionaries Configuration for Madagascar Deployment in OpenELIS Global System",
+  "ver": 1,
+  "when": "2026-08-04",
+  "by": "Taib",
+  "roots": [
+   "impl",
+   "home"
+  ],
+  "anc": "OpenELIS Global > OpenELIS Global Implementati > Madagascar OpenELIS Madagasc",
+  "labels": []
+ },
+ "1530953742": {
+  "id": "1530953742",
+  "title": "Test Sections Configuration for OpenELIS: Managing Laboratory Departments and Test Dependencies",
+  "ver": 1,
+  "when": "2026-08-04",
+  "by": "Taib",
+  "roots": [
+   "impl",
+   "home"
+  ],
+  "anc": "OpenELIS Global > OpenELIS Global Implementati > Madagascar OpenELIS Madagasc",
+  "labels": []
+ },
+ "1530953734": {
+  "id": "1530953734",
+  "title": "Configuration System Overview",
+  "ver": 2,
+  "when": "2026-08-04",
+  "by": "Taib",
+  "roots": [
+   "impl",
+   "home"
+  ],
+  "anc": "OpenELIS Global > OpenELIS Global Implementati > Madagascar OpenELIS Madagasc",
+  "labels": []
+ },
+ "1530855471": {
+  "id": "1530855471",
+  "title": "Roles Configuration for OpenELIS Global 2: Structure, CSV Format, and Deployment Steps",
+  "ver": 1,
+  "when": "2026-08-04",
+  "by": "Taib",
+  "roots": [
+   "impl",
+   "home"
+  ],
+  "anc": "OpenELIS Global > OpenELIS Global Implementati > Madagascar OpenELIS Madagasc",
+  "labels": []
+ },
+ "1530855463": {
+  "id": "1530855463",
+  "title": "Tests Configuration for Madagascar Deployment in OpenELIS Global",
+  "ver": 1,
+  "when": "2026-08-04",
+  "by": "Taib",
+  "roots": [
+   "impl",
+   "home"
+  ],
+  "anc": "OpenELIS Global > OpenELIS Global Implementati > Madagascar OpenELIS Madagasc",
+  "labels": []
+ },
+ "1530822677": {
+  "id": "1530822677",
+  "title": "Test-Sample Type Mappings Configuration for Madagascar Deployment",
+  "ver": 1,
+  "when": "2026-08-04",
+  "by": "Taib",
+  "roots": [
+   "impl",
+   "home"
+  ],
+  "anc": "OpenELIS Global > OpenELIS Global Implementati > Madagascar OpenELIS Madagasc",
+  "labels": []
+ },
+ "1529839642": {
+  "id": "1529839642",
+  "title": "Sample Types and Test Mappings Configuration for OpenELIS in Madagascar",
+  "ver": 1,
+  "when": "2026-08-04",
+  "by": "Taib",
+  "roots": [
+   "impl",
+   "home"
+  ],
+  "anc": "OpenELIS Global > OpenELIS Global Implementati > Madagascar OpenELIS Madagasc",
+  "labels": []
+ },
+ "1410203659": {
+  "id": "1410203659",
+  "title": "DRAFT: EndUser",
+  "ver": 1,
+  "when": "2026-06-22",
+  "by": "Taib",
+  "roots": [
+   "impl",
+   "home"
+  ],
+  "anc": "OpenELIS Global > OpenELIS Global Implementati > SILNAS: Indonesia",
+  "labels": []
+ },
+ "1222180868": {
+  "id": "1222180868",
+  "title": "Multi-Site Lab Configuration & .env Reference",
+  "ver": 1,
+  "when": "2026-04-08",
+  "by": "Taib",
+  "roots": [
+   "impl",
+   "home"
+  ],
+  "anc": "OpenELIS Global > OpenELIS Global Implementati > SILNAS: Indonesia",
+  "labels": []
+ },
+ "1222017026": {
+  "id": "1222017026",
+  "title": "OpenELIS Indonesia Distro — Localisation",
+  "ver": 1,
+  "when": "2026-04-08",
+  "by": "Taib",
+  "roots": [
+   "impl",
+   "home"
+  ],
+  "anc": "OpenELIS Global > OpenELIS Global Implementati > SILNAS: Indonesia",
+  "labels": []
+ },
+ "1221656580": {
+  "id": "1221656580",
+  "title": "OpenELIS Indonesia Distro: Technical Documentation Overview",
+  "ver": 1,
+  "when": "2026-04-08",
+  "by": "Taib",
+  "roots": [
+   "impl",
+   "home"
+  ],
+  "anc": "OpenELIS Global > OpenELIS Global Implementati > SILNAS: Indonesia",
+  "labels": []
+ },
+ "1221459973": {
+  "id": "1221459973",
+  "title": "OpenELIS Indonesia Distro — Backup & Restore",
+  "ver": 1,
+  "when": "2026-04-08",
+  "by": "Taib",
+  "roots": [
+   "impl",
+   "home"
+  ],
+  "anc": "OpenELIS Global > OpenELIS Global Implementati > SILNAS: Indonesia",
+  "labels": []
+ },
+ "1160183814": {
+  "id": "1160183814",
+  "title": "AHRI: Ethiopia",
+  "ver": 5,
+  "when": "2026-04-08",
+  "by": "Taib",
+  "roots": [
+   "impl",
+   "home"
+  ],
+  "anc": "OpenELIS Global > OpenELIS Global Implementati",
+  "labels": []
+ },
+ "1160151047": {
+  "id": "1160151047",
+  "title": "Implementors' Guide",
+  "ver": 3,
+  "when": "2026-03-23",
+  "by": "Taib",
+  "roots": [
+   "impl",
+   "home"
+  ],
+  "anc": "OpenELIS Global > OpenELIS Global Implementati > AHRI: Ethiopia",
+  "labels": []
+ },
+ "1160118279": {
+  "id": "1160118279",
+  "title": "AHRI: End User Guide",
+  "ver": 1,
+  "when": "2026-03-17",
+  "by": "Taib",
+  "roots": [
+   "impl",
+   "home"
+  ],
+  "anc": "OpenELIS Global > OpenELIS Global Implementati > AHRI: Ethiopia",
+  "labels": []
+ },
+ "1159725106": {
+  "id": "1159725106",
+  "title": "Address Hierarchy Configuration",
+  "ver": 3,
+  "when": "2026-05-04",
+  "by": "Taib",
+  "roots": [
+   "impl",
+   "home"
+  ],
+  "anc": "OpenELIS Global > OpenELIS Global Implementati > SILNAS: Indonesia",
+  "labels": []
+ },
+ "1159593995": {
+  "id": "1159593995",
+  "title": "SILNAS: Indonesia",
+  "ver": 3,
+  "when": "2026-04-08",
+  "by": "Taib",
+  "roots": [
+   "impl",
+   "home"
+  ],
+  "anc": "OpenELIS Global > OpenELIS Global Implementati",
+  "labels": []
+ },
+ "1159069707": {
+  "id": "1159069707",
+  "title": "Madagascar OpenELIS Madagascar Distro",
+  "ver": 6,
+  "when": "2026-09-24",
+  "by": "Taib",
+  "roots": [
+   "impl",
+   "home"
+  ],
+  "anc": "OpenELIS Global > OpenELIS Global Implementati",
+  "labels": []
+ },
+ "1160511506": {
+  "id": "1160511506",
+  "title": "OpenELIS Global Implementations",
+  "ver": 6,
+  "when": "2026-10-06",
+  "by": null,
+  "roots": [
+   "impl-root",
+   "home"
+  ],
+  "anc": "OpenELIS Global",
+  "labels": []
+ },
+ "931594241": {
+  "id": "931594241",
+  "title": "GSoC 2026",
+  "ver": 24,
+  "when": "2026-10-05",
+  "by": "Agaba junior derrick",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 🤝 Community > Google Summer of Code",
+  "labels": []
+ },
+ "720371734": {
+  "id": "720371734",
+  "title": "2025-07-24 Meeting notes",
+  "ver": 2,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 🤝 Community > Meeting notes in space",
+  "labels": [
+   "meeting-notes"
+  ]
+ },
+ "697761796": {
+  "id": "697761796",
+  "title": "2025-07-04Meeting notes",
+  "ver": 2,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 🤝 Community > Meeting notes in space",
+  "labels": []
+ },
+ "682852353": {
+  "id": "682852353",
+  "title": "OpenMRS Integration: EMR Lab Request and OpenELIS Result Exchange",
+  "ver": 4,
+  "when": "2026-09-11",
+  "by": "Jan Flowers",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 🚀 For Implementers",
+  "labels": []
+ },
+ "653164550": {
+  "id": "653164550",
+  "title": "2025-06-12 Meeting notes",
+  "ver": 2,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "🤝 Community > Meeting notes in space > 2025-05-22 Meeting notes",
+  "labels": [
+   "meeting-notes"
+  ]
+ },
+ "653131797": {
+  "id": "653131797",
+  "title": "2025-06-26 Meeting notes",
+  "ver": 2,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "🤝 Community > Meeting notes in space > 2025-06-19 Meeting notes",
+  "labels": [
+   "meeting-notes"
+  ]
+ },
+ "653131780": {
+  "id": "653131780",
+  "title": "2025-06-05 Meeting notes",
+  "ver": 2,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 🤝 Community > Meeting notes in space",
+  "labels": [
+   "meeting-notes"
+  ]
+ },
+ "652836892": {
+  "id": "652836892",
+  "title": "2025-06-19 Meeting notes",
+  "ver": 2,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 🤝 Community > Meeting notes in space",
+  "labels": [
+   "meeting-notes"
+  ]
+ },
+ "632324099": {
+  "id": "632324099",
+  "title": "2025-05-22 Meeting notes",
+  "ver": 3,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 🤝 Community > Meeting notes in space",
+  "labels": [
+   "meeting-notes"
+  ]
+ },
+ "632193026": {
+  "id": "632193026",
+  "title": "2025-05-29 Meeting notes",
+  "ver": 2,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "🤝 Community > Meeting notes in space > 2025-05-01 Meeting notes",
+  "labels": [
+   "meeting-notes"
+  ]
+ },
+ "621346838": {
+  "id": "621346838",
+  "title": "OpenELIS Global Style Guide — v1 Foundations",
+  "ver": 4,
+  "when": "2026-04-23",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 👩‍💻 For Developers",
+  "labels": []
+ },
+ "620822532": {
+  "id": "620822532",
+  "title": "2025-05-08 Meeting notes",
+  "ver": 3,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "🤝 Community > Meeting notes in space > 2025-05-01 Meeting notes",
+  "labels": [
+   "meeting-notes"
+  ]
+ },
+ "609976323": {
+  "id": "609976323",
+  "title": "2025-05-01 Meeting notes",
+  "ver": 6,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 🤝 Community > Meeting notes in space",
+  "labels": [
+   "meeting-notes"
+  ]
+ },
+ "603258951": {
+  "id": "603258951",
+  "title": "2025-04-24 Meeting notes",
+  "ver": 2,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "🤝 Community > Meeting notes in space > 2025-03-06 Meeting notes",
+  "labels": [
+   "meeting-notes"
+  ]
+ },
+ "602963973": {
+  "id": "602963973",
+  "title": "2025-04-17 Meeting Notes",
+  "ver": 2,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 🤝 Community > Meeting notes in space",
+  "labels": []
+ },
+ "581238897": {
+  "id": "581238897",
+  "title": "2025-04-10 Meeting notes",
+  "ver": 5,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 🤝 Community > Meeting notes in space",
+  "labels": []
+ },
+ "573308930": {
+  "id": "573308930",
+  "title": "2025-04-03 Meeting notes",
+  "ver": 4,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 🤝 Community > Meeting notes in space",
+  "labels": [
+   "meeting-notes"
+  ]
+ },
+ "560594954": {
+  "id": "560594954",
+  "title": "2025-03-27 Meeting notes",
+  "ver": 7,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 🤝 Community > Meeting notes in space",
+  "labels": [
+   "meeting-notes"
+  ]
+ },
+ "550305793": {
+  "id": "550305793",
+  "title": "2025-03-20 Meeting notes",
+  "ver": 6,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 🤝 Community > Meeting notes in space",
+  "labels": [
+   "meeting-notes"
+  ]
+ },
+ "539131913": {
+  "id": "539131913",
+  "title": "2025-03-13 Meeting notes",
+  "ver": 2,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 🤝 Community > Meeting notes in space",
+  "labels": [
+   "meeting-notes"
+  ]
+ },
+ "524746760": {
+  "id": "524746760",
+  "title": "2025-03-06 Meeting notes",
+  "ver": 4,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 🤝 Community > Meeting notes in space",
+  "labels": [
+   "meeting-notes"
+  ]
+ },
+ "471728130": {
+  "id": "471728130",
+  "title": "TEST ORGANIZATION",
+  "ver": 2,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 📖 User Manual > Administrator Quick Guide",
+  "labels": []
+ },
+ "471662596": {
+  "id": "471662596",
+  "title": "SPELLING CORRECTIONS",
+  "ver": 2,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 📖 User Manual > Administrator Quick Guide",
+  "labels": []
+ },
+ "470810700": {
+  "id": "470810700",
+  "title": "Setup Analyzers (retired — plugin-jar era)",
+  "ver": 3,
+  "when": "2026-09-15",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home",
+   "legacy"
+  ],
+  "anc": "OpenELIS Global > 📖 User Manual > LEGACY Versions",
+  "labels": []
+ },
+ "453410824": {
+  "id": "453410824",
+  "title": "TEST MANAGEMENT",
+  "ver": 2,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 📖 User Manual > Administrator Quick Guide",
+  "labels": []
+ },
+ "452231175": {
+  "id": "452231175",
+  "title": "DICTIONARY",
+  "ver": 5,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 📖 User Manual > Administrator Quick Guide",
+  "labels": []
+ },
+ "452165645": {
+  "id": "452165645",
+  "title": "ACCESSING & NAVIGATING THE ADMIN MODULE",
+  "ver": 4,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 📖 User Manual > Administrator Quick Guide",
+  "labels": []
+ },
+ "452132880": {
+  "id": "452132880",
+  "title": "Barcode Configuration (retired duplicate)",
+  "ver": 7,
+  "when": "2026-09-15",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home",
+   "legacy"
+  ],
+  "anc": "OpenELIS Global > 📖 User Manual > LEGACY Versions",
+  "labels": []
+ },
+ "452067331": {
+  "id": "452067331",
+  "title": "REPORT",
+  "ver": 2,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 📖 User Manual > End User Quick Reference",
+  "labels": []
+ },
+ "451641345": {
+  "id": "451641345",
+  "title": "RESULTS VALIDATION (BIOLOGICAL VALIDATION)",
+  "ver": 2,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 📖 User Manual > End User Quick Reference",
+  "labels": []
+ },
+ "451608597": {
+  "id": "451608597",
+  "title": "NON CONFORMING EVENTS",
+  "ver": 2,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 📖 User Manual > End User Quick Reference",
+  "labels": []
+ },
+ "451608577": {
+  "id": "451608577",
+  "title": "IMMUNOCHEMISTRY",
+  "ver": 2,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 📖 User Manual > End User Quick Reference",
+  "labels": []
+ },
+ "451444775": {
+  "id": "451444775",
+  "title": "CYTOLOGY",
+  "ver": 2,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 📖 User Manual > End User Quick Reference",
+  "labels": []
+ },
+ "451444761": {
+  "id": "451444761",
+  "title": "PATHOLOGY",
+  "ver": 2,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 📖 User Manual > End User Quick Reference",
+  "labels": []
+ },
+ "451346457": {
+  "id": "451346457",
+  "title": "ENTERING LAB TEST RESULTS",
+  "ver": 2,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 📖 User Manual > End User Quick Reference",
+  "labels": []
+ },
+ "444989449": {
+  "id": "444989449",
+  "title": "WORK PLAN",
+  "ver": 2,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 📖 User Manual > End User Quick Reference",
+  "labels": []
+ },
+ "444956674": {
+  "id": "444956674",
+  "title": "BATCH ORDER ENTRY",
+  "ver": 3,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 📖 User Manual > End User Quick Reference",
+  "labels": []
+ },
+ "444596229": {
+  "id": "444596229",
+  "title": "NAVIGATING OpenELIS GLOBAL",
+  "ver": 5,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 📖 User Manual > End User Quick Reference",
+  "labels": []
+ },
+ "444301327": {
+  "id": "444301327",
+  "title": "Meeting notes in space",
+  "ver": 2,
+  "when": "2026-05-20",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 🤝 Community",
+  "labels": []
+ },
+ "444301316": {
+  "id": "444301316",
+  "title": "SETTING UP TEST ENVIRONMENT",
+  "ver": 1,
+  "when": "2025-01-30",
+  "by": "Taib",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > Archived > Quality Insurance",
+  "labels": []
+ },
+ "444268556": {
+  "id": "444268556",
+  "title": "ENTERING LABORATORY ORDER",
+  "ver": 5,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 📖 User Manual > End User Quick Reference",
+  "labels": []
+ },
+ "444006416": {
+  "id": "444006416",
+  "title": "ELECTRONIC ORDER",
+  "ver": 4,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 📖 User Manual > End User Quick Reference",
+  "labels": []
+ },
+ "441516042": {
+  "id": "441516042",
+  "title": "Selector Update Guide",
+  "ver": 2,
+  "when": "2025-01-29",
+  "by": "Taib",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > Archived > Quality Insurance",
+  "labels": []
+ },
+ "321224705": {
+  "id": "321224705",
+  "title": "GSoC 2025",
+  "ver": 42,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 🤝 Community > Google Summer of Code",
+  "labels": []
+ },
+ "319946754": {
+  "id": "319946754",
+  "title": "Developer Stages",
+  "ver": 6,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 🤝 Community",
+  "labels": []
+ },
+ "319389699": {
+  "id": "319389699",
+  "title": "Volunteer of The Month.",
+  "ver": 11,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 🤝 Community",
+  "labels": []
+ },
+ "284393490": {
+  "id": "284393490",
+  "title": "PART 14: REPORT",
+  "ver": 3,
+  "when": "2026-09-17",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home",
+   "legacy"
+  ],
+  "anc": "OpenELIS Global > 📖 User Manual > LEGACY Versions",
+  "labels": [],
+  "lango": {
+   "lang": "en",
+   "status": "primary",
+   "orig": "284393490",
+   "pv": 2,
+   "pwhen": "2026-09-12T06:21:23"
+  }
+ },
+ "284196875": {
+  "id": "284196875",
+  "title": "PART 13: RESULTS VALIDATION (BIOLOGICAL VALIDATION)",
+  "ver": 3,
+  "when": "2026-09-17",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home",
+   "legacy"
+  ],
+  "anc": "OpenELIS Global > 📖 User Manual > LEGACY Versions",
+  "labels": [],
+  "lango": {
+   "lang": "en",
+   "status": "primary",
+   "orig": null,
+   "pv": 1,
+   "pwhen": "2026-09-12T06:20:00"
+  }
+ },
+ "278888457": {
+  "id": "278888457",
+  "title": "PART 11: NON CONFORMING EVENTS",
+  "ver": 2,
+  "when": "2026-10-09",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home",
+   "legacy"
+  ],
+  "anc": "OpenELIS Global > 📖 User Manual > LEGACY Versions",
+  "labels": [],
+  "lango": {
+   "lang": "en",
+   "status": "primary",
+   "orig": "278888457",
+   "pv": 2,
+   "pwhen": "2026-09-12T06:18:48"
+  }
+ },
+ "278626329": {
+  "id": "278626329",
+  "title": "PART 12: ENTERING LAB TEST RESULTS",
+  "ver": 3,
+  "when": "2026-09-17",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home",
+   "legacy"
+  ],
+  "anc": "OpenELIS Global > 📖 User Manual > LEGACY Versions",
+  "labels": [],
+  "lango": {
+   "lang": "en",
+   "status": "primary",
+   "orig": "278626329",
+   "pv": 2,
+   "pwhen": "2026-09-12T06:20:30"
+  }
+ },
+ "257228825": {
+  "id": "257228825",
+  "title": "LEGACY TEST MANAGEMENT",
+  "ver": 6,
+  "when": "2026-09-21",
+  "by": "Taib",
+  "roots": [
+   "home",
+   "legacy"
+  ],
+  "anc": "OpenELIS Global > 📖 User Manual > LEGACY Versions",
+  "labels": []
+ },
+ "257196062": {
+  "id": "257196062",
+  "title": "PART 7: SETUP ANALYZERS",
+  "ver": 2,
+  "when": "2024-10-09",
+  "by": "Taib",
+  "roots": [
+   "home",
+   "legacy"
+  ],
+  "anc": "📖 User Manual > LEGACY Versions > LEGACY TEST MANAGEMENT",
+  "labels": []
+ },
+ "257196043": {
+  "id": "257196043",
+  "title": "PART 6 B: LEGACY TEST ORGANIZATION",
+  "ver": 5,
+  "when": "2026-09-12",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home",
+   "legacy"
+  ],
+  "anc": "📖 User Manual > LEGACY Versions > LEGACY TEST MANAGEMENT",
+  "labels": []
+ },
+ "257064983": {
+  "id": "257064983",
+  "title": "PART 6 A: LEGACY SPELLING CORRECTIONS",
+  "ver": 3,
+  "when": "2026-09-12",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home",
+   "legacy"
+  ],
+  "anc": "📖 User Manual > LEGACY Versions > LEGACY TEST MANAGEMENT",
+  "labels": []
+ },
+ "256737340": {
+  "id": "256737340",
+  "title": "PART 5: DICTIONARY",
+  "ver": 6,
+  "when": "2026-09-17",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home",
+   "legacy"
+  ],
+  "anc": "OpenELIS Global > 📖 User Manual > LEGACY Versions",
+  "labels": [],
+  "lango": {
+   "lang": "en",
+   "status": "primary",
+   "orig": "256737340",
+   "pv": 2,
+   "pwhen": "2026-09-12T06:29:10"
+  }
+ },
+ "256737330": {
+  "id": "256737330",
+  "title": "Barcode Configuration (retired screen, with screenshots)",
+  "ver": 8,
+  "when": "2026-10-06",
+  "by": "mozzy mutesa",
+  "roots": [
+   "home",
+   "legacy"
+  ],
+  "anc": "OpenELIS Global > 📖 User Manual > LEGACY Versions",
+  "labels": [],
+  "lango": {
+   "lang": "fr",
+   "status": "primary",
+   "orig": "256737330",
+   "pv": 2,
+   "pwhen": "2026-09-12T06:28:44"
+  }
+ },
+ "246743042": {
+  "id": "246743042",
+  "title": "GSoC 2024",
+  "ver": 4,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 🤝 Community > Google Summer of Code",
+  "labels": []
+ },
+ "246546433": {
+  "id": "246546433",
+  "title": "Adding Facilities to the Consolidated Server",
+  "ver": 3,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 👩‍💻 For Developers",
+  "labels": []
+ },
+ "246382619": {
+  "id": "246382619",
+  "title": "Interacting with Co-resident FHIR Store",
+  "ver": 3,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 👩‍💻 For Developers",
+  "labels": []
+ },
+ "246087682": {
+  "id": "246087682",
+  "title": "Adding a Requester to the Consolidated Server",
+  "ver": 3,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 👩‍💻 For Developers",
+  "labels": []
+ },
+ "245694473": {
+  "id": "245694473",
+  "title": "GSoC ‐ Guidelines for Students",
+  "ver": 10,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 🤝 Community > Google Summer of Code",
+  "labels": []
+ },
+ "245497887": {
+  "id": "245497887",
+  "title": "Database Profile Mass Facility and Test Catalog Updates",
+  "ver": 3,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 👩‍💻 For Developers",
+  "labels": []
+ },
+ "245497875": {
+  "id": "245497875",
+  "title": "Developer Notes",
+  "ver": 3,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 👩‍💻 For Developers",
+  "labels": []
+ },
+ "245399558": {
+  "id": "245399558",
+  "title": "Entity Relationship Diagram",
+  "ver": 3,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 👩‍💻 For Developers",
+  "labels": []
+ },
+ "245366800": {
+  "id": "245366800",
+  "title": "Troubleshooting",
+  "ver": 5,
+  "when": "2026-05-22",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > ⚙️ For SysAdmins-Operators",
+  "labels": []
+ },
+ "240877572": {
+  "id": "240877572",
+  "title": "Setup High Availability Fail Over",
+  "ver": 5,
+  "when": "2026-10-06",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 🚀 For Implementers",
+  "labels": []
+ },
+ "240844805": {
+  "id": "240844805",
+  "title": "Dev Environment Setup Instructions",
+  "ver": 7,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 👩‍💻 For Developers",
+  "labels": []
+ },
+ "240386061": {
+  "id": "240386061",
+  "title": "Examples of FHIR messages used",
+  "ver": 5,
+  "when": "2024-10-08",
+  "by": "Taib",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 🚀 For Implementers",
+  "labels": []
+ },
+ "240386051": {
+  "id": "240386051",
+  "title": "Update From OpenELIS Global 1.x to 2.x",
+  "ver": 4,
+  "when": "2026-05-22",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 🚀 For Implementers",
+  "labels": []
+ },
+ "240320515": {
+  "id": "240320515",
+  "title": "Backup Configuration",
+  "ver": 5,
+  "when": "2026-05-22",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 🚀 For Implementers",
+  "labels": []
+ },
+ "240222222": {
+  "id": "240222222",
+  "title": "Password Migration",
+  "ver": 4,
+  "when": "2026-05-22",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 🚀 For Implementers",
+  "labels": []
+ },
+ "240058394": {
+  "id": "240058394",
+  "title": "Configure the property files to connect to the Consolidated Server",
+  "ver": 3,
+  "when": "2025-09-26",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 🚀 For Implementers",
+  "labels": []
+ },
+ "240058379": {
+  "id": "240058379",
+  "title": "ASTM Bi-Directional Analyzer Setup (retired — plugin-jar era)",
+  "ver": 3,
+  "when": "2026-09-15",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 🚀 For Implementers > ASTM Management — Administra",
+  "labels": []
+ },
+ "239992838": {
+  "id": "239992838",
+  "title": "Medical Records System (OpenMRS) Interoperability",
+  "ver": 5,
+  "when": "2025-09-26",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 🚀 For Implementers",
+  "labels": []
+ },
+ "239927340": {
+  "id": "239927340",
+  "title": "Implementation Best Practices",
+  "ver": 3,
+  "when": "2026-05-22",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 🚀 For Implementers",
+  "labels": []
+ },
+ "239829042": {
+  "id": "239829042",
+  "title": "Deploy Consolidated Server",
+  "ver": 4,
+  "when": "2026-05-04",
+  "by": "Taib",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 🚀 For Implementers",
+  "labels": []
+ },
+ "239829012": {
+  "id": "239829012",
+  "title": "ASTM Management — Administrator Guide (legacy screen)",
+  "ver": 5,
+  "when": "2026-09-15",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 🚀 For Implementers",
+  "labels": []
+ },
+ "239730698": {
+  "id": "239730698",
+  "title": "Upgrading OpenELIS 3.x and 2.x",
+  "ver": 4,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 🚀 For Implementers",
+  "labels": []
+ },
+ "239697942": {
+  "id": "239697942",
+  "title": "Upgrade from 2.x to 2.7",
+  "ver": 4,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 🚀 For Implementers",
+  "labels": []
+ },
+ "239632412": {
+  "id": "239632412",
+  "title": "Server and Workstation Technical Requirements For Deployment",
+  "ver": 7,
+  "when": "2026-05-22",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 🚀 For Implementers",
+  "labels": []
+ },
+ "237699075": {
+  "id": "237699075",
+  "title": "Administrator Documentation: Single Sign On",
+  "ver": 1,
+  "when": "2024-10-03",
+  "by": "Caleb Steele-Lane (Unlicensed)",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 🚀 For Implementers > Single Sign On setup",
+  "labels": []
+ },
+ "237043740": {
+  "id": "237043740",
+  "title": "User Documentation: Single Sign On",
+  "ver": 3,
+  "when": "2024-11-27",
+  "by": "Taib",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 🚀 For Implementers > Single Sign On setup",
+  "labels": []
+ },
+ "235110410": {
+  "id": "235110410",
+  "title": "Developer Documentation: Single Sign On",
+  "ver": 1,
+  "when": "2024-10-03",
+  "by": "Caleb Steele-Lane (Unlicensed)",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 🚀 For Implementers > Single Sign On setup",
+  "labels": []
+ },
+ "234422280": {
+  "id": "234422280",
+  "title": "Single Sign-on Overview",
+  "ver": 2,
+  "when": "2025-09-26",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 🚀 For Implementers > Single Sign On setup",
+  "labels": []
+ },
+ "232947715": {
+  "id": "232947715",
+  "title": "Administrator Documentation: Configuration Initializer",
+  "ver": 2,
+  "when": "2024-10-08",
+  "by": "Taib",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 🚀 For Implementers > Initializer",
+  "labels": []
+ },
+ "232357895": {
+  "id": "232357895",
+  "title": "Configuration Initializer Overview",
+  "ver": 2,
+  "when": "2024-10-08",
+  "by": "Taib",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 🚀 For Implementers > Initializer",
+  "labels": []
+ },
+ "231768079": {
+  "id": "231768079",
+  "title": "Developer Documentation: Configuration Initializer",
+  "ver": 2,
+  "when": "2024-10-08",
+  "by": "Taib",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 🚀 For Implementers > Initializer",
+  "labels": []
+ },
+ "1697185802": {
+  "id": "1697185802",
+  "title": "OpenELIS Implementers Call",
+  "ver": 3,
+  "when": "2026-10-04",
+  "by": "Agaba junior derrick",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 🚀 For Implementers",
+  "labels": []
+ },
+ "1683488769": {
+  "id": "1683488769",
+  "title": "FHIR Implementation Guide",
+  "ver": 1,
+  "when": "2026-09-29",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 🚀 For Implementers",
+  "labels": []
+ },
+ "1674117234": {
+  "id": "1674117234",
+  "title": "Guide des implémenteurs de Madagascar",
+  "ver": 2,
+  "when": "2026-09-24",
+  "by": "Lango AI Translator: Language & translations for Confluence",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > Archived > Madagascar Implementors Guid",
+  "labels": [],
+  "lango": {
+   "lang": "fr",
+   "status": "current",
+   "orig": "1158774832",
+   "pv": 1,
+   "pwhen": "2026-09-24T12:56:08"
+  }
+ },
+ "1672249349": {
+  "id": "1672249349",
+  "title": "OpenELIS Monitoring",
+  "ver": 1,
+  "when": "2026-09-23",
+  "by": "Taib",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > ⚙️ For SysAdmins-Operators",
+  "labels": []
+ },
+ "1660518401": {
+  "id": "1660518401",
+  "title": "Test catalog import v2 — full attributes, admin upload, and the decision queue",
+  "ver": 1,
+  "when": "2026-09-17",
+  "by": "mozzy mutesa",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 👩‍💻 For Developers > Authoring the OpenELIS Test ",
+  "labels": []
+ },
+ "1643937869": {
+  "id": "1643937869",
+  "title": "PART 2: NAVIGATING OpenELIS GLOBAL (2)",
+  "ver": 2,
+  "when": "2026-09-12",
+  "by": "Lango AI Translator: Language & translations for Confluence",
+  "roots": [
+   "home",
+   "fr"
+  ],
+  "anc": "📖 User Manual > 📖 Manuel de l'utilisateur > Versions précédentes",
+  "labels": [],
+  "lango": {
+   "lang": "fr",
+   "status": "current",
+   "orig": "256966691",
+   "pv": 1,
+   "pwhen": "2026-09-12T06:26:51"
+  }
+ },
+ "1643937818": {
+  "id": "1643937818",
+  "title": "PATHOLOGIE",
+  "ver": 3,
+  "when": "2026-09-24",
+  "by": "Taib",
+  "roots": [
+   "home",
+   "fr"
+  ],
+  "anc": "📖 User Manual > 📖 Manuel de l'utilisateur > Versions précédentes",
+  "labels": [],
+  "lango": {
+   "lang": "fr",
+   "status": "current",
+   "orig": "273285123",
+   "pv": 1,
+   "pwhen": "2026-09-12T00:39:23"
+  }
+ },
+ "1643937795": {
+  "id": "1643937795",
+  "title": "Définir les plages de référence et critiques",
+  "ver": 2,
+  "when": "2026-09-12",
+  "by": "Lango AI Translator: Language & translations for Confluence",
+  "roots": [
+   "home",
+   "fr"
+  ],
+  "anc": "📖 User Manual > 📖 Manuel de l'utilisateur > Gestion du catalogue de test",
+  "labels": [],
+  "lango": {
+   "lang": "fr",
+   "status": "current",
+   "orig": "1432354821",
+   "pv": 1,
+   "pwhen": "2026-09-12T00:31:55"
+  }
+ },
+ "1643905025": {
+  "id": "1643905025",
+  "title": "Gérer les modèles d’étiquettes",
+  "ver": 2,
+  "when": "2026-09-12",
+  "by": "Lango AI Translator: Language & translations for Confluence",
+  "roots": [
+   "home",
+   "fr"
+  ],
+  "anc": "📖 User Manual > 📖 Manuel de l'utilisateur > Gestion du catalogue de test",
+  "labels": [],
+  "lango": {
+   "lang": "fr",
+   "status": "current",
+   "orig": "1433468931",
+   "pv": 1,
+   "pwhen": "2026-09-12T00:30:28"
+  }
+ },
+ "1643806796": {
+  "id": "1643806796",
+  "title": "PARTIE 3 : ACCÈS AU MODULE D'ADMINISTRATION OpenELIS GLOBAL",
+  "ver": 2,
+  "when": "2026-09-12",
+  "by": "Lango AI Translator: Language & translations for Confluence",
+  "roots": [
+   "home",
+   "fr"
+  ],
+  "anc": "📖 User Manual > 📖 Manuel de l'utilisateur > Versions précédentes",
+  "labels": [],
+  "lango": {
+   "lang": "fr",
+   "status": "current",
+   "orig": "257097754",
+   "pv": 1,
+   "pwhen": "2026-09-12T06:27:11"
+  }
+ },
+ "1643806771": {
+  "id": "1643806771",
+  "title": "VALIDATION DES RÉSULTATS (VALIDATION BIOLOGIQUE)",
+  "ver": 2,
+  "when": "2026-09-24",
+  "by": "Taib",
+  "roots": [
+   "home",
+   "fr"
+  ],
+  "anc": "📖 User Manual > 📖 Manuel de l'utilisateur > Versions précédentes",
+  "labels": []
+ },
+ "1643806721": {
+  "id": "1643806721",
+  "title": "Associer des méthodes à une analyse",
+  "ver": 2,
+  "when": "2026-09-12",
+  "by": "Lango AI Translator: Language & translations for Confluence",
+  "roots": [
+   "home",
+   "fr"
+  ],
+  "anc": "📖 User Manual > 📖 Manuel de l'utilisateur > Gestion du catalogue de test",
+  "labels": [],
+  "lango": {
+   "lang": "fr",
+   "status": "current",
+   "orig": "1431928838",
+   "pv": 1,
+   "pwhen": "2026-09-12T00:30:02"
+  }
+ },
+ "1643774066": {
+  "id": "1643774066",
+  "title": "PARTIE 5 : DICTIONNAIRE",
+  "ver": 2,
+  "when": "2026-09-12",
+  "by": "Lango AI Translator: Language & translations for Confluence",
+  "roots": [
+   "home",
+   "fr"
+  ],
+  "anc": "📖 User Manual > 📖 Manuel de l'utilisateur > Versions précédentes",
+  "labels": [],
+  "lango": {
+   "lang": "fr",
+   "status": "current",
+   "orig": "256737340",
+   "pv": 1,
+   "pwhen": "2026-09-12T06:29:09"
+  }
+ },
+ "1643774012": {
+  "id": "1643774012",
+  "title": "PART 4: BARCODE CONFIGURATION (2) — retired translation artifact",
+  "ver": 3,
+  "when": "2026-09-15",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home",
+   "legacy"
+  ],
+  "anc": "📖 User Manual > LEGACY Versions > Barcode Configuration (retir",
+  "labels": [],
+  "lango": {
+   "lang": "fr",
+   "status": "current",
+   "orig": "256737330",
+   "pv": 1,
+   "pwhen": "2026-09-12T06:28:43"
+  }
+ },
+ "1643773993": {
+  "id": "1643773993",
+  "title": "SAISIE DES RÉSULTATS DES TESTS DE LABORATOIRE",
+  "ver": 3,
+  "when": "2026-09-24",
+  "by": "Taib",
+  "roots": [
+   "home",
+   "fr"
+  ],
+  "anc": "📖 User Manual > 📖 Manuel de l'utilisateur > Versions précédentes",
+  "labels": [],
+  "lango": {
+   "lang": "fr",
+   "status": "current",
+   "orig": "278626329",
+   "pv": 1,
+   "pwhen": "2026-09-12T06:20:29"
+  }
+ },
+ "1643773978": {
+  "id": "1643773978",
+  "title": "ÉVÉNEMENTS NON CONFORMES",
+  "ver": 3,
+  "when": "2026-09-24",
+  "by": "Taib",
+  "roots": [
+   "home",
+   "fr"
+  ],
+  "anc": "📖 User Manual > 📖 Manuel de l'utilisateur > Versions précédentes",
+  "labels": [],
+  "lango": {
+   "lang": "fr",
+   "status": "current",
+   "orig": "278888457",
+   "pv": 1,
+   "pwhen": "2026-09-12T06:18:48"
+  }
+ },
+ "1643675738": {
+  "id": "1643675738",
+  "title": "PARTIE 1 : INTRODUCTION",
+  "ver": 2,
+  "when": "2026-09-12",
+  "by": "Lango AI Translator: Language & translations for Confluence",
+  "roots": [
+   "home",
+   "fr"
+  ],
+  "anc": "📖 User Manual > 📖 Manuel de l'utilisateur > Versions précédentes",
+  "labels": [],
+  "lango": {
+   "lang": "fr",
+   "status": "current",
+   "orig": "257392644",
+   "pv": 1,
+   "pwhen": "2026-09-12T06:22:23"
+  }
+ },
+ "1643675716": {
+  "id": "1643675716",
+  "title": "PLANS DE TRAVAIL",
+  "ver": 3,
+  "when": "2026-09-24",
+  "by": "Taib",
+  "roots": [
+   "home",
+   "fr"
+  ],
+  "anc": "📖 User Manual > 📖 Manuel de l'utilisateur > Versions précédentes",
+  "labels": [],
+  "lango": {
+   "lang": "fr",
+   "status": "current",
+   "orig": "272760837",
+   "pv": 1,
+   "pwhen": "2026-09-12T00:38:16"
+  }
+ },
+ "1643675652": {
+  "id": "1643675652",
+  "title": "Liste de contrôle d'acceptation de l'échantillon",
+  "ver": 2,
+  "when": "2026-09-12",
+  "by": "Lango AI Translator: Language & translations for Confluence",
+  "roots": [
+   "home",
+   "fr"
+  ],
+  "anc": "📖 User Manual > 📖 Manuel de l'utilisateur > Gestion du catalogue de test",
+  "labels": [],
+  "lango": {
+   "lang": "fr",
+   "status": "current",
+   "orig": "1435566088",
+   "pv": 1,
+   "pwhen": "2026-09-12T00:31:53"
+  }
+ },
+ "1643642895": {
+  "id": "1643642895",
+  "title": "AIDE",
+  "ver": 3,
+  "when": "2026-09-24",
+  "by": "Taib",
+  "roots": [
+   "home",
+   "fr"
+  ],
+  "anc": "📖 User Manual > 📖 Manuel de l'utilisateur > Versions précédentes",
+  "labels": [],
+  "lango": {
+   "lang": "fr",
+   "status": "current",
+   "orig": "283967514",
+   "pv": 1,
+   "pwhen": "2026-09-12T06:21:25"
+  }
+ },
+ "1643577360": {
+  "id": "1643577360",
+  "title": "RAPPORT",
+  "ver": 3,
+  "when": "2026-09-24",
+  "by": "Taib",
+  "roots": [
+   "home",
+   "fr"
+  ],
+  "anc": "📖 User Manual > 📖 Manuel de l'utilisateur > Versions précédentes",
+  "labels": [],
+  "lango": {
+   "lang": "fr",
+   "status": "current",
+   "orig": "284393490",
+   "pv": 1,
+   "pwhen": "2026-09-12T06:21:22"
+  }
+ },
+ "1643511890": {
+  "id": "1643511890",
+  "title": "LIENS RAPIDES",
+  "ver": 3,
+  "when": "2026-09-24",
+  "by": "Taib",
+  "roots": [
+   "home",
+   "fr"
+  ],
+  "anc": "📖 User Manual > 📖 Manuel de l'utilisateur > Versions précédentes",
+  "labels": [],
+  "lango": {
+   "lang": "fr",
+   "status": "current",
+   "orig": "261259270",
+   "pv": 1,
+   "pwhen": "2026-09-12T00:37:32"
+  }
+ },
+ "1643511855": {
+  "id": "1643511855",
+  "title": "Définir l'ordre d'affichage des tests au sein d'un type d'échantillon",
+  "ver": 2,
+  "when": "2026-09-12",
+  "by": "Lango AI Translator: Language & translations for Confluence",
+  "roots": [
+   "home",
+   "fr"
+  ],
+  "anc": "📖 User Manual > 📖 Manuel de l'utilisateur > Gestion du catalogue de test",
+  "labels": [],
+  "lango": {
+   "lang": "fr",
+   "status": "current",
+   "orig": "1431666693",
+   "pv": 1,
+   "pwhen": "2026-09-12T00:32:09"
+  }
+ },
+ "1643511817": {
+  "id": "1643511817",
+  "title": "Modifier les informations de base d'un test (domaine, AMR, statut)",
+  "ver": 2,
+  "when": "2026-09-12",
+  "by": "Lango AI Translator: Language & translations for Confluence",
+  "roots": [
+   "home",
+   "fr"
+  ],
+  "anc": "📖 User Manual > 📖 Manuel de l'utilisateur > Gestion du catalogue de test",
+  "labels": [],
+  "lango": {
+   "lang": "fr",
+   "status": "current",
+   "orig": "1431371782",
+   "pv": 1,
+   "pwhen": "2026-09-12T00:21:18"
+  }
+ },
+ "1643380838": {
+  "id": "1643380838",
+  "title": "CYTOLOGIE",
+  "ver": 3,
+  "when": "2026-09-24",
+  "by": "Taib",
+  "roots": [
+   "home",
+   "fr"
+  ],
+  "anc": "📖 User Manual > 📖 Manuel de l'utilisateur > Versions précédentes",
+  "labels": [],
+  "lango": {
+   "lang": "fr",
+   "status": "current",
+   "orig": "278560771",
+   "pv": 1,
+   "pwhen": "2026-09-12T00:40:10"
+  }
+ },
+ "1643380801": {
+  "id": "1643380801",
+  "title": "Mettre en correspondance une analyse avec des codes terminologiques",
+  "ver": 2,
+  "when": "2026-09-12",
+  "by": "Lango AI Translator: Language & translations for Confluence",
+  "roots": [
+   "home",
+   "fr"
+  ],
+  "anc": "📖 User Manual > 📖 Manuel de l'utilisateur > Gestion du catalogue de test",
+  "labels": [],
+  "lango": {
+   "lang": "fr",
+   "status": "current",
+   "orig": "1432059909",
+   "pv": 1,
+   "pwhen": "2026-09-12T00:30:51"
+  }
+ },
+ "1643380778": {
+  "id": "1643380778",
+  "title": "Rechercher et filtrer les tests dans le catalogue",
+  "ver": 2,
+  "when": "2026-09-12",
+  "by": "Lango AI Translator: Language & translations for Confluence",
+  "roots": [
+   "home",
+   "fr"
+  ],
+  "anc": "📖 User Manual > 📖 Manuel de l'utilisateur > Gestion du catalogue de test",
+  "labels": [],
+  "lango": {
+   "lang": "fr",
+   "status": "current",
+   "orig": "1431470085",
+   "pv": 1,
+   "pwhen": "2026-09-12T00:21:37"
+  }
+ },
+ "1643380737": {
+  "id": "1643380737",
+  "title": "Ajouter un test aux panneaux",
+  "ver": 2,
+  "when": "2026-09-12",
+  "by": "Lango AI Translator: Language & translations for Confluence",
+  "roots": [
+   "home",
+   "fr"
+  ],
+  "anc": "📖 User Manual > 📖 Manuel de l'utilisateur > Gestion du catalogue de test",
+  "labels": [],
+  "lango": {
+   "lang": "fr",
+   "status": "current",
+   "orig": "1433010177",
+   "pv": 1,
+   "pwhen": "2026-09-12T00:10:40"
+  }
+ },
+ "1643348000": {
+  "id": "1643348000",
+  "title": "DÉCONNEXION D'OPENELIS",
+  "ver": 3,
+  "when": "2026-09-24",
+  "by": "Taib",
+  "roots": [
+   "home",
+   "fr"
+  ],
+  "anc": "📖 User Manual > 📖 Manuel de l'utilisateur > Versions précédentes",
+  "labels": [],
+  "lango": {
+   "lang": "fr",
+   "status": "current",
+   "orig": "284688410",
+   "pv": 1,
+   "pwhen": "2026-09-12T06:21:37"
+  }
+ },
+ "1643347979": {
+  "id": "1643347979",
+  "title": "IMMUNOCHIMIE",
+  "ver": 2,
+  "when": "2026-09-24",
+  "by": "Taib",
+  "roots": [
+   "home",
+   "fr"
+  ],
+  "anc": "📖 User Manual > 📖 Manuel de l'utilisateur > Versions précédentes",
+  "labels": []
+ },
+ "1643282439": {
+  "id": "1643282439",
+  "title": "Exemple de liste de contrôle pour l'acceptation des échantillons",
+  "ver": 2,
+  "when": "2026-09-12",
+  "by": "Lango AI Translator: Language & translations for Confluence",
+  "roots": [
+   "home",
+   "fr"
+  ],
+  "anc": "📖 User Manual > 📖 Manuel de l'utilisateur > Gestion du catalogue de test",
+  "labels": [],
+  "lango": {
+   "lang": "fr",
+   "status": "current",
+   "orig": "1435566088",
+   "pv": 1,
+   "pwhen": "2026-09-12T00:31:21"
+  }
+ },
+ "1643085870": {
+  "id": "1643085870",
+  "title": "Prendre une décision en matière d'environnement",
+  "ver": 2,
+  "when": "2026-09-11",
+  "by": "Lango AI Translator: Language & translations for Confluence",
+  "roots": [
+   "home",
+   "fr"
+  ],
+  "anc": "📖 User Manual > 📖 Manuel de l'utilisateur > Surveillance environnemental",
+  "labels": [],
+  "lango": {
+   "lang": "fr",
+   "status": "current",
+   "orig": "1427898372",
+   "pv": 1,
+   "pwhen": "2026-09-11T23:29:57"
+  }
+ },
+ "1643085838": {
+  "id": "1643085838",
+  "title": "Surveillance environnementale — aperçu du processus",
+  "ver": 2,
+  "when": "2026-09-11",
+  "by": "Lango AI Translator: Language & translations for Confluence",
+  "roots": [
+   "home",
+   "fr"
+  ],
+  "anc": "OpenELIS Global > 📖 User Manual > 📖 Manuel de l'utilisateur",
+  "labels": [],
+  "lango": {
+   "lang": "fr",
+   "status": "current",
+   "orig": "1437466625",
+   "pv": 1,
+   "pwhen": "2026-09-11T23:28:56"
+  }
+ },
+ "1643053071": {
+  "id": "1643053071",
+  "title": "NAVIGUER DANS OpenELIS GLOBAL",
+  "ver": 3,
+  "when": "2026-09-24",
+  "by": "Taib",
+  "roots": [
+   "home",
+   "fr"
+  ],
+  "anc": "📖 User Manual > 📖 Manuel de l'utilisateur > Versions précédentes",
+  "labels": [],
+  "lango": {
+   "lang": "fr",
+   "status": "current",
+   "orig": "260931593",
+   "pv": 1,
+   "pwhen": "2026-09-11T22:28:47"
+  }
+ },
+ "1642987528": {
+  "id": "1642987528",
+  "title": "Configurer le stockage et l'élimination des échantillons",
+  "ver": 2,
+  "when": "2026-09-12",
+  "by": "Lango AI Translator: Language & translations for Confluence",
+  "roots": [
+   "home",
+   "fr"
+  ],
+  "anc": "📖 User Manual > 📖 Manuel de l'utilisateur > Gestion du catalogue de test",
+  "labels": [],
+  "lango": {
+   "lang": "fr",
+   "status": "current",
+   "orig": "1432256516",
+   "pv": 1,
+   "pwhen": "2026-09-12T00:11:16"
+  }
+ },
+ "1642922075": {
+  "id": "1642922075",
+  "title": "Gestion du catalogue de tests — aperçu du flux de travail",
+  "ver": 2,
+  "when": "2026-09-12",
+  "by": "Lango AI Translator: Language & translations for Confluence",
+  "roots": [
+   "home",
+   "fr"
+  ],
+  "anc": "OpenELIS Global > 📖 User Manual > 📖 Manuel de l'utilisateur",
+  "labels": [],
+  "lango": {
+   "lang": "fr",
+   "status": "current",
+   "orig": "1437270018",
+   "pv": 1,
+   "pwhen": "2026-09-12T00:10:25"
+  }
+ },
+ "1642922003": {
+  "id": "1642922003",
+  "title": "Signatures électroniques",
+  "ver": 2,
+  "when": "2026-09-11",
+  "by": "Lango AI Translator: Language & translations for Confluence",
+  "roots": [
+   "home",
+   "fr"
+  ],
+  "anc": "OpenELIS Global > 📖 User Manual > 📖 Manuel de l'utilisateur",
+  "labels": [],
+  "lango": {
+   "lang": "fr",
+   "status": "current",
+   "orig": "1242759175",
+   "pv": 1,
+   "pwhen": "2026-09-11T23:28:07"
+  }
+ },
+ "1642659893": {
+  "id": "1642659893",
+  "title": "Configurer les types d'échantillons et les composants des résultats d'un test",
+  "ver": 2,
+  "when": "2026-09-12",
+  "by": "Lango AI Translator: Language & translations for Confluence",
+  "roots": [
+   "home",
+   "fr"
+  ],
+  "anc": "📖 User Manual > 📖 Manuel de l'utilisateur > Gestion du catalogue de test",
+  "labels": [],
+  "lango": {
+   "lang": "fr",
+   "status": "current",
+   "orig": "1432584197",
+   "pv": 1,
+   "pwhen": "2026-09-12T00:11:01"
+  }
+ },
+ "1642299535": {
+  "id": "1642299535",
+  "title": "Enregistrer les indices de l'enquête « Vector Field »",
+  "ver": 2,
+  "when": "2026-09-12",
+  "by": "Lango AI Translator: Language & translations for Confluence",
+  "roots": [
+   "home",
+   "fr"
+  ],
+  "anc": "📖 User Manual > 📖 Manuel de l'utilisateur > Surveillance des vecteurs — ",
+  "labels": [],
+  "lango": {
+   "lang": "fr",
+   "status": "current",
+   "orig": "1428258821",
+   "pv": 1,
+   "pwhen": "2026-09-12T00:09:51"
+  }
+ },
+ "1642299440": {
+  "id": "1642299440",
+  "title": "Saisissez une ordonnance environnementale",
+  "ver": 2,
+  "when": "2026-09-11",
+  "by": "Lango AI Translator: Language & translations for Confluence",
+  "roots": [
+   "home",
+   "fr"
+  ],
+  "anc": "📖 User Manual > 📖 Manuel de l'utilisateur > Surveillance environnemental",
+  "labels": [],
+  "lango": {
+   "lang": "fr",
+   "status": "current",
+   "orig": "1427898372",
+   "pv": 1,
+   "pwhen": "2026-09-11T23:30:04"
+  }
+ },
+ "1642233901": {
+  "id": "1642233901",
+  "title": "Saisir une commande de vecteur",
+  "ver": 2,
+  "when": "2026-09-11",
+  "by": "Lango AI Translator: Language & translations for Confluence",
+  "roots": [
+   "home",
+   "fr"
+  ],
+  "anc": "📖 User Manual > 📖 Manuel de l'utilisateur > Surveillance des vecteurs — ",
+  "labels": [],
+  "lango": {
+   "lang": "fr",
+   "status": "current",
+   "orig": "1427898389",
+   "pv": 1,
+   "pwhen": "2026-09-11T23:32:50"
+  }
+ },
+ "1642135634": {
+  "id": "1642135634",
+  "title": "DÉPANNAGE RAPIDE",
+  "ver": 3,
+  "when": "2026-09-24",
+  "by": "Taib",
+  "roots": [
+   "home",
+   "fr"
+  ],
+  "anc": "📖 User Manual > 📖 Manuel de l'utilisateur > Versions précédentes",
+  "labels": [],
+  "lango": {
+   "lang": "fr",
+   "status": "current",
+   "orig": "261521410",
+   "pv": 1,
+   "pwhen": "2026-09-11T23:23:47"
+  }
+ },
+ "1641873444": {
+  "id": "1641873444",
+  "title": "Identifier les espèces vectrices et déconvoluer un échantillon composite",
+  "ver": 2,
+  "when": "2026-09-11",
+  "by": "Lango AI Translator: Language & translations for Confluence",
+  "roots": [
+   "home",
+   "fr"
+  ],
+  "anc": "📖 User Manual > 📖 Manuel de l'utilisateur > Surveillance des vecteurs — ",
+  "labels": [],
+  "lango": {
+   "lang": "fr",
+   "status": "current",
+   "orig": "1428094999",
+   "pv": 1,
+   "pwhen": "2026-09-11T23:33:10"
+  }
+ },
+ "1641873425": {
+  "id": "1641873425",
+  "title": "SAISIE DES DEMANDES D'ANALYSES DE LABORATOIRE",
+  "ver": 3,
+  "when": "2026-09-24",
+  "by": "Taib",
+  "roots": [
+   "home",
+   "fr"
+  ],
+  "anc": "📖 User Manual > 📖 Manuel de l'utilisateur > Versions précédentes",
+  "labels": [],
+  "lango": {
+   "lang": "fr",
+   "status": "current",
+   "orig": "261423127",
+   "pv": 1,
+   "pwhen": "2026-09-11T23:27:28"
+  }
+ },
+ "1641840681": {
+  "id": "1641840681",
+  "title": "Générer un certificat de conformité",
+  "ver": 2,
+  "when": "2026-09-11",
+  "by": "Lango AI Translator: Language & translations for Confluence",
+  "roots": [
+   "home",
+   "fr"
+  ],
+  "anc": "📖 User Manual > 📖 Manuel de l'utilisateur > Surveillance environnemental",
+  "labels": [],
+  "lango": {
+   "lang": "fr",
+   "status": "current",
+   "orig": "1427505177",
+   "pv": 1,
+   "pwhen": "2026-09-11T23:30:30"
+  }
+ },
+ "1641775250": {
+  "id": "1641775250",
+  "title": "Entrez un ordre de vecteur",
+  "ver": 2,
+  "when": "2026-09-11",
+  "by": "Lango AI Translator: Language & translations for Confluence",
+  "roots": [
+   "home",
+   "fr"
+  ],
+  "anc": "📖 User Manual > 📖 Manuel de l'utilisateur > Surveillance des vecteurs — ",
+  "labels": [],
+  "lango": {
+   "lang": "fr",
+   "status": "current",
+   "orig": "1427898389",
+   "pv": 1,
+   "pwhen": "2026-09-11T23:32:52"
+  }
+ },
+ "1641775218": {
+  "id": "1641775218",
+  "title": "Surveillance des vecteurs — aperçu du processus",
+  "ver": 2,
+  "when": "2026-09-11",
+  "by": "Lango AI Translator: Language & translations for Confluence",
+  "roots": [
+   "home",
+   "fr"
+  ],
+  "anc": "OpenELIS Global > 📖 User Manual > 📖 Manuel de l'utilisateur",
+  "labels": [],
+  "lango": {
+   "lang": "fr",
+   "status": "current",
+   "orig": "1437532161",
+   "pv": 1,
+   "pwhen": "2026-09-11T23:32:02"
+  }
+ },
+ "1641611265": {
+  "id": "1641611265",
+  "title": "Translation Sync Report — 2026-09-11",
+  "ver": 2,
+  "when": "2026-09-11",
+  "by": "Jan Flowers",
+  "roots": [
+   "home"
+  ],
+  "anc": "Archived > Documentation Translations > Translation Sync Reports",
+  "labels": []
+ },
+ "1641447513": {
+  "id": "1641447513",
+  "title": "Révision complète par l'assurance qualité (phase partagée)",
+  "ver": 2,
+  "when": "2026-09-11",
+  "by": "Lango AI Translator: Language & translations for Confluence",
+  "roots": [
+   "home",
+   "fr"
+  ],
+  "anc": "OpenELIS Global > 📖 User Manual > 📖 Manuel de l'utilisateur",
+  "labels": [],
+  "lango": {
+   "lang": "fr",
+   "status": "current",
+   "orig": "1429176321",
+   "pv": 1,
+   "pwhen": "2026-09-11T23:28:30"
+  }
+ },
+ "1641447437": {
+  "id": "1641447437",
+  "title": "📖 Manuel de l'utilisateur",
+  "ver": 3,
+  "when": "2026-09-27",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 📖 User Manual",
+  "labels": [],
+  "lango": {
+   "lang": "fr",
+   "status": "current",
+   "orig": "1326972929",
+   "pv": 1,
+   "pwhen": "2026-09-11T23:23:42"
+  }
+ },
+ "1625161735": {
+  "id": "1625161735",
+  "title": "The Specimen Journey — Anatomic Pathology for OpenELIS Developers",
+  "ver": 2,
+  "when": "2026-09-05",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 👩‍💻 For Developers > Lab Workflow Narratives",
+  "labels": []
+ },
+ "1534394382": {
+  "id": "1534394382",
+  "title": "Microbiology personas and step × role coverage",
+  "ver": 2,
+  "when": "2026-08-05",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 👩‍💻 For Developers > Lab Workflow Narratives",
+  "labels": []
+ },
+ "1515945985": {
+  "id": "1515945985",
+  "title": "Style guide: Icons",
+  "ver": 1,
+  "when": "2026-07-28",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "👩‍💻 For Developers > OpenELIS Global Style Guide  > OpenELIS Global Style Guide ",
+  "labels": []
+ },
+ "1515913218": {
+  "id": "1515913218",
+  "title": "Style guide: Loading states",
+  "ver": 1,
+  "when": "2026-07-28",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "👩‍💻 For Developers > OpenELIS Global Style Guide  > OpenELIS Global Style Guide ",
+  "labels": []
+ },
+ "1515520002": {
+  "id": "1515520002",
+  "title": "Style guide: Empty states",
+  "ver": 1,
+  "when": "2026-07-28",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "👩‍💻 For Developers > OpenELIS Global Style Guide  > OpenELIS Global Style Guide ",
+  "labels": []
+ },
+ "1515454467": {
+  "id": "1515454467",
+  "title": "Style guide: Dashboard tiles",
+  "ver": 1,
+  "when": "2026-07-28",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "👩‍💻 For Developers > OpenELIS Global Style Guide  > OpenELIS Global Style Guide ",
+  "labels": []
+ },
+ "1515421698": {
+  "id": "1515421698",
+  "title": "Style guide: Navigation — sidenav, tabs, content switcher",
+  "ver": 1,
+  "when": "2026-07-28",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "👩‍💻 For Developers > OpenELIS Global Style Guide  > OpenELIS Global Style Guide ",
+  "labels": []
+ },
+ "1515388930": {
+  "id": "1515388930",
+  "title": "Style guide: Forms",
+  "ver": 1,
+  "when": "2026-07-28",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "👩‍💻 For Developers > OpenELIS Global Style Guide  > OpenELIS Global Style Guide ",
+  "labels": []
+ },
+ "1515356165": {
+  "id": "1515356165",
+  "title": "Style guide: Search and filters",
+  "ver": 1,
+  "when": "2026-07-28",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "👩‍💻 For Developers > OpenELIS Global Style Guide  > OpenELIS Global Style Guide ",
+  "labels": []
+ },
+ "1515257887": {
+  "id": "1515257887",
+  "title": "Style guide: Modals",
+  "ver": 1,
+  "when": "2026-07-28",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "👩‍💻 For Developers > OpenELIS Global Style Guide  > OpenELIS Global Style Guide ",
+  "labels": []
+ },
+ "1515257859": {
+  "id": "1515257859",
+  "title": "Style guide: Data tables",
+  "ver": 1,
+  "when": "2026-07-28",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "👩‍💻 For Developers > OpenELIS Global Style Guide  > OpenELIS Global Style Guide ",
+  "labels": []
+ },
+ "1515159555": {
+  "id": "1515159555",
+  "title": "Style guide: Reports",
+  "ver": 1,
+  "when": "2026-07-28",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "👩‍💻 For Developers > OpenELIS Global Style Guide  > OpenELIS Global Style Guide ",
+  "labels": []
+ },
+ "1515094027": {
+  "id": "1515094027",
+  "title": "Style guide: Date and time pickers",
+  "ver": 1,
+  "when": "2026-07-28",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "👩‍💻 For Developers > OpenELIS Global Style Guide  > OpenELIS Global Style Guide ",
+  "labels": []
+ },
+ "1515061257": {
+  "id": "1515061257",
+  "title": "Style guide: Pagination",
+  "ver": 1,
+  "when": "2026-07-28",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "👩‍💻 For Developers > OpenELIS Global Style Guide  > OpenELIS Global Style Guide ",
+  "labels": []
+ },
+ "1514962969": {
+  "id": "1514962969",
+  "title": "Style guide: Notifications",
+  "ver": 1,
+  "when": "2026-07-28",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "👩‍💻 For Developers > OpenELIS Global Style Guide  > OpenELIS Global Style Guide ",
+  "labels": []
+ },
+ "1514930205": {
+  "id": "1514930205",
+  "title": "Style guide: Page shell",
+  "ver": 1,
+  "when": "2026-07-28",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "👩‍💻 For Developers > OpenELIS Global Style Guide  > OpenELIS Global Style Guide ",
+  "labels": []
+ },
+ "1514930180": {
+  "id": "1514930180",
+  "title": "Style guide: Wizards and steppers",
+  "ver": 1,
+  "when": "2026-07-28",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "👩‍💻 For Developers > OpenELIS Global Style Guide  > OpenELIS Global Style Guide ",
+  "labels": []
+ },
+ "1514864643": {
+  "id": "1514864643",
+  "title": "OpenELIS Global Style Guide — v2 Component Usage",
+  "ver": 5,
+  "when": "2026-07-28",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 👩‍💻 For Developers > OpenELIS Global Style Guide ",
+  "labels": []
+ },
+ "1514700826": {
+  "id": "1514700826",
+  "title": "Style guide: Legacy JSP boundary",
+  "ver": 1,
+  "when": "2026-07-28",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "👩‍💻 For Developers > OpenELIS Global Style Guide  > OpenELIS Global Style Guide ",
+  "labels": []
+ },
+ "1514700804": {
+  "id": "1514700804",
+  "title": "Style guide: Workplan grids",
+  "ver": 1,
+  "when": "2026-07-28",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "👩‍💻 For Developers > OpenELIS Global Style Guide  > OpenELIS Global Style Guide ",
+  "labels": []
+ },
+ "1514635269": {
+  "id": "1514635269",
+  "title": "Style guide: Slide-over panels",
+  "ver": 1,
+  "when": "2026-07-28",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "👩‍💻 For Developers > OpenELIS Global Style Guide  > OpenELIS Global Style Guide ",
+  "labels": []
+ },
+ "1514471437": {
+  "id": "1514471437",
+  "title": "Style guide: Barcode inputs",
+  "ver": 1,
+  "when": "2026-07-28",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "👩‍💻 For Developers > OpenELIS Global Style Guide  > OpenELIS Global Style Guide ",
+  "labels": []
+ },
+ "1514438685": {
+  "id": "1514438685",
+  "title": "Style guide: Referral queues",
+  "ver": 1,
+  "when": "2026-07-28",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "👩‍💻 For Developers > OpenELIS Global Style Guide  > OpenELIS Global Style Guide ",
+  "labels": []
+ },
+ "1514438661": {
+  "id": "1514438661",
+  "title": "Style guide: Status tags",
+  "ver": 1,
+  "when": "2026-07-28",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "👩‍💻 For Developers > OpenELIS Global Style Guide  > OpenELIS Global Style Guide ",
+  "labels": []
+ },
+ "1430650885": {
+  "id": "1430650885",
+  "title": "Analyzer Integration — Frequently Asked Questions",
+  "ver": 6,
+  "when": "2026-09-16",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 🚀 For Implementers > ASTM Management — Administra",
+  "labels": []
+ },
+ "1396310042": {
+  "id": "1396310042",
+  "title": "Tecan Infinite F50 Integration Guide",
+  "ver": 2,
+  "when": "2026-06-17",
+  "by": "Taib",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 🚀 For Implementers > ASTM Management — Administra",
+  "labels": []
+ },
+ "1391362053": {
+  "id": "1391362053",
+  "title": "Multiskan FC FILE/CSV Setup",
+  "ver": 1,
+  "when": "2026-06-16",
+  "by": "Taib",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 🚀 For Implementers > ASTM Management — Administra",
+  "labels": []
+ },
+ "1391198213": {
+  "id": "1391198213",
+  "title": "FluoroCycler XT Setup Guide",
+  "ver": 2,
+  "when": "2026-06-16",
+  "by": "Taib",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 🚀 For Implementers > ASTM Management — Administra",
+  "labels": []
+ },
+ "1389002753": {
+  "id": "1389002753",
+  "title": "Microbiology — Breakpoint Source &amp; Update Strategy",
+  "ver": 1,
+  "when": "2026-06-12",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 👩‍💻 For Developers > Lab Workflow Narratives",
+  "labels": []
+ },
+ "1382055940": {
+  "id": "1382055940",
+  "title": "QuantStudio 7 FILE/Excel Setup",
+  "ver": 2,
+  "when": "2026-06-12",
+  "by": "Taib",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 🚀 For Implementers > ASTM Management — Administra",
+  "labels": []
+ },
+ "1375207436": {
+  "id": "1375207436",
+  "title": "QuantStudio 5: Applied Biosystems Setup Guide",
+  "ver": 2,
+  "when": "2026-06-09",
+  "by": "Taib",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 🚀 For Implementers > ASTM Management — Administra",
+  "labels": []
+ },
+ "1348632584": {
+  "id": "1348632584",
+  "title": "Wondfo Finecare FS-205 FILE/CSV POCT Setup",
+  "ver": 6,
+  "when": "2026-06-12",
+  "by": "Taib",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 🚀 For Implementers > ASTM Management — Administra",
+  "labels": []
+ },
+ "1347846152": {
+  "id": "1347846152",
+  "title": "Mindray BS-300HL7 Chemistry Setup",
+  "ver": 2,
+  "when": "2026-06-24",
+  "by": "Taib",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 🚀 For Implementers > ASTM Management — Administra",
+  "labels": []
+ },
+ "1346797579": {
+  "id": "1346797579",
+  "title": "Mindray BC-5380HL7 Hematology Setup",
+  "ver": 3,
+  "when": "2026-06-24",
+  "by": "Taib",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 🚀 For Implementers > ASTM Management — Administra",
+  "labels": []
+ },
+ "1345847325": {
+  "id": "1345847325",
+  "title": "Mindray BS-200 HL7 Chemistry Setup",
+  "ver": 2,
+  "when": "2026-06-24",
+  "by": "Taib",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 🚀 For Implementers > ASTM Management — Administra",
+  "labels": []
+ },
+ "1344995330": {
+  "id": "1344995330",
+  "title": "ASTM Management: GeneXpert Setup",
+  "ver": 3,
+  "when": "2026-05-28",
+  "by": "Taib",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 🚀 For Implementers > ASTM Management — Administra",
+  "labels": []
+ },
+ "1329004545": {
+  "id": "1329004545",
+  "title": "📌 Version Stamp Convention",
+  "ver": 1,
+  "when": "2026-05-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 🤝 Community",
+  "labels": []
+ },
+ "1328316419": {
+  "id": "1328316419",
+  "title": "🔔 Watch & Stay Current",
+  "ver": 3,
+  "when": "2026-07-31",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 🤝 Community",
+  "labels": [],
+  "lango": {
+   "lang": "en",
+   "status": "primary",
+   "orig": null,
+   "pv": 2,
+   "pwhen": "2026-09-24T12:54:06"
+  }
+ },
+ "1328185376": {
+  "id": "1328185376",
+  "title": "🆘 Get Help",
+  "ver": 2,
+  "when": "2026-07-31",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 🤝 Community",
+  "labels": []
+ },
+ "1326972929": {
+  "id": "1326972929",
+  "title": "📖 User Manual",
+  "ver": 16,
+  "when": "2026-10-09",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global",
+  "labels": [],
+  "lango": {
+   "lang": "en",
+   "status": "primary",
+   "orig": "1326972929",
+   "pv": 3,
+   "pwhen": "2026-10-07T18:38:57"
+  }
+ },
+ "1326481413": {
+  "id": "1326481413",
+  "title": "👩‍💻 For Developers",
+  "ver": 3,
+  "when": "2026-07-31",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global",
+  "labels": []
+ },
+ "1326252042": {
+  "id": "1326252042",
+  "title": "🚀 For Implementers",
+  "ver": 4,
+  "when": "2026-09-11",
+  "by": "Jan Flowers",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global",
+  "labels": []
+ },
+ "1326055432": {
+  "id": "1326055432",
+  "title": "🤝 Community",
+  "ver": 3,
+  "when": "2026-07-31",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global",
+  "labels": []
+ },
+ "1325793288": {
+  "id": "1325793288",
+  "title": "⚙️ For SysAdmins-Operators",
+  "ver": 5,
+  "when": "2026-09-11",
+  "by": "Jan Flowers",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global",
+  "labels": []
+ },
+ "1303248903": {
+  "id": "1303248903",
+  "title": "QA Narrative — Quality in the Lab (Four Pillars, for developers)",
+  "ver": 10,
+  "when": "2026-05-11",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 👩‍💻 For Developers > Lab Workflow Narratives",
+  "labels": []
+ },
+ "1266122780": {
+  "id": "1266122780",
+  "title": "Authoring the OpenELIS Test Catalog in CSV",
+  "ver": 7,
+  "when": "2026-09-21",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 👩‍💻 For Developers",
+  "labels": []
+ },
+ "1240465409": {
+  "id": "1240465409",
+  "title": "QA Framework",
+  "ver": 4,
+  "when": "2026-05-22",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 👩‍💻 For Developers",
+  "labels": []
+ },
+ "1240301569": {
+  "id": "1240301569",
+  "title": "Playwright E2E Testing Framework for OpenELIS Global 2: Best Practices and Configuration Guide",
+  "ver": 2,
+  "when": "2026-05-22",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 👩‍💻 For Developers > QA Framework",
+  "labels": []
+ },
+ "1200848951": {
+  "id": "1200848951",
+  "title": "OpenELIS Global - Complete Permissions Reference",
+  "ver": 3,
+  "when": "2026-05-22",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 🚀 For Implementers",
+  "labels": []
+ },
+ "1177190408": {
+  "id": "1177190408",
+  "title": "Analyzer interfaces in development",
+  "ver": 3,
+  "when": "2026-06-22",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 🚀 For Implementers > ASTM Management — Administra",
+  "labels": []
+ },
+ "1163558914": {
+  "id": "1163558914",
+  "title": "Analyzers Implementation Guide (never written — see the analyzer pages)",
+  "ver": 2,
+  "when": "2026-09-15",
+  "by": "Casey B. Iiams-Hauser",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > Archived",
+  "labels": []
+ },
+ "1162641413": {
+  "id": "1162641413",
+  "title": "GeneXpert_ASTM",
+  "ver": 1,
+  "when": "2026-03-18",
+  "by": "Taib",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > Archived > Analyzers Implementation Gui",
+  "labels": []
+ },
+ "1158774832": {
+  "id": "1158774832",
+  "title": "Madagascar Implementors Guide",
+  "ver": 1,
+  "when": "2026-03-17",
+  "by": "Taib",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > Archived",
+  "labels": [],
+  "lango": {
+   "lang": "en",
+   "status": "primary",
+   "orig": "1158774832",
+   "pv": 2,
+   "pwhen": "2026-09-24T12:56:08"
+  }
+ },
+ "1082490941": {
+  "id": "1082490941",
+  "title": "OpenELIS - Odoo Integration",
+  "ver": 2,
+  "when": "2026-05-04",
+  "by": "Taib",
+  "roots": [
+   "home"
+  ],
+  "anc": "OpenELIS Global > 🚀 For Implementers",
+  "labels": []
+ },
+ "52560162": {
+  "id": "52560162",
+  "title": "OpenELIS Global",
+  "ver": 30,
+  "when": "2026-09-11",
+  "by": null,
+  "roots": [
+   "home-root"
+  ],
+  "anc": "",
+  "labels": []
+ },
+ "1657864193": {
+  "id": "1657864193",
+  "title": "LEGACY Versions",
+  "ver": 1,
+  "when": "2026-09-16",
+  "by": null,
+  "roots": [
+   "legacy-root"
+  ],
+  "anc": "OpenELIS Global > 📖 User Manual",
+  "labels": []
+ }
+}

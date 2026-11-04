@@ -1,0 +1,59 @@
+<h1>Review QC and act on violations</h1>
+<h2>At a glance</h2>
+<table><tbody>
+<tr><th>Purpose</th><td>Check each day that control results have arrived from your analyzers and that no Westgard rule has been breached, and deal with any violation before patient results are released.</td></tr>
+<tr><th>You'll end up with</th><td>Every instrument showing <em>In Control</em> on the QC Dashboard, and any violation from the run acknowledged, with the corrective action recorded in your laboratory's non-conformance process.</td></tr>
+<tr><th>Who does this</th><td>The bench analyst running the controls, and the supervisor who signs off the run. Access is set by user permissions and can be configured by your administrator.</td></tr>
+<tr><th>Before you start</th><td>Controls have been run on the analyzer per your SOP and the analyzer has sent its results to OpenELIS. QC for the analyzer and test has been set up (see <em>Set up QC for an instrument</em>).</td></tr>
+<tr><th>Where</th><td>Main menu &rarr; <em>Analyzers</em> &rarr; <em>Quality Control</em> &rarr; <em>QC Dashboard</em></td></tr>
+</tbody></table>
+
+<p>Control results are not entered on these screens. They arrive from the analyzer, are matched to the active control lot for that analyzer and test, and are evaluated against the pair's Westgard rules. The QC Dashboard is where you read the outcome. It has two tabs: <em>Instruments</em>, which summarises each analyzer's current status, and <em>Alerts</em>, which lists violations to be acknowledged.</p>
+
+<h2>Step-by-step</h2>
+<p><strong>Step 1.</strong> Open the <em>QC Dashboard</em>. Four tiles across the top summarise the position: <em>Instruments In Control</em>, <em>Warning Status</em>, <em>Out of Control</em> (each with a percentage of total instruments) and <em>Overall QC Pass Rate</em>. <em>Last Updated</em> and a <em>Refresh</em> action sit at the top right.</p>
+<p>{{IMG:01-qc-dashboard-instruments.png}}</p>
+<p><em>Figure 1. The QC Dashboard with the Instruments tab selected, before any control results have arrived.</em></p>
+
+<p><strong>Step 2.</strong> On the <em>Instruments</em> tab, read the <em>Instrument Quality Control Status</em> table. Its columns are Instrument Name, Type, Location, Status, Analytes, Recent Violations, Last Update and Actions, with <em>Search instruments...</em> above. An analyzer that has a lot and rules but no control results yet is not listed &mdash; the table reads <em>No instruments found</em>, as in Figure 1 &mdash; so an unexpectedly missing analyzer means results are not reaching OpenELIS (see <em>Why is my QC chart empty?</em>).</p>
+
+<p><strong>Step 3.</strong> Open the <em>Alerts</em> tab. <em>QC Violations &amp; Alerts</em> is split into <em>Active QC Violations</em> (unacknowledged, requiring attention) and <em>Acknowledged Violations</em>. A <em>Time Period</em> filter limits the view to Last 24 Hours, Last 72 Hours (the default), Last 7 Days, Last 30 Days or All Time.</p>
+<p>{{IMG:02-qc-dashboard-alerts.png}}</p>
+<p><em>Figure 2. The Alerts tab with no active or acknowledged violations in the last 72 hours.</em></p>
+<p>{{IMG:03-alerts-time-period.png}}</p>
+<p><em>Figure 3. The Time Period filter on the Alerts tab.</em></p>
+
+<p><strong>Step 4.</strong> For each active violation, investigate the run on the analyzer (reagent, calibration, control material, maintenance), take the corrective action your SOP requires, and then acknowledge the violation so it moves to <em>Acknowledged Violations</em>.</p>
+<p><em>This step has not yet been verified on a live instance: the test instance had no control results, so no violation could be raised or acknowledged. Confirm the acknowledge action and what it records before publishing.</em></p>
+
+<p><strong>Step 5.</strong> Where a violation was a rejection, record the event and its corrective action as a non-conforming event under <em>Non-Conform</em>, following your laboratory's procedure, before releasing the affected patient results.</p>
+<p><em>This step has not yet been verified on a live instance. Whether a rejection creates a non-conforming event automatically, or must be reported by hand, has not been confirmed. Confirm before publishing.</em></p>
+
+<h2>Field reference</h2>
+<table><tbody>
+<tr><th>Instruments In Control / Warning Status / Out of Control</th><td>Counts of analyzers in each state, with the share of total instruments.</td></tr>
+<tr><th>Overall QC Pass Rate</th><td>Percentage tile at the top right of the dashboard.</td></tr>
+<tr><th>Instruments table columns</th><td>Instrument Name, Type, Location, Status, Analytes, Recent Violations, Last Update, Actions. <em>What each column shows for a populated row has not yet been verified on a live instance. Confirm before publishing.</em></td></tr>
+<tr><th>Time Period (Alerts tab)</th><td>Last 24 Hours, Last 72 Hours, Last 7 Days, Last 30 Days, All Time.</td></tr>
+</tbody></table>
+
+<h2>Tips</h2>
+<ul>
+<li>An empty <em>Instruments</em> table is a diagnosis, not proof that QC is working or broken: it means no control result has been matched to an active lot. Work through <em>Why is my QC chart empty?</em> before assuming the instrument is fine.</li>
+<li>With no instruments, the <em>Overall QC Pass Rate</em> tile shows 0% with a green tick. Read it together with the instrument counts.</li>
+<li>The <em>Time Period</em> filter sits on the Alerts tab; there is no equivalent filter on the Instruments tab.</li>
+<li>Use <em>Refresh</em> (top right) after the analyzer has finished sending a run to reload the dashboard; <em>Last Updated</em> shows the time of the last reload.</li>
+</ul>
+
+<h2>Not yet available</h2>
+<ul>
+<li>Levey-Jennings chart views and per-instrument detail could not be exercised on the test instance and are not described here.</li>
+<li>Manual entry of control results.</li>
+</ul>
+
+<h2>Related pages</h2>
+<ul>
+<li>Set up QC for an instrument</li>
+<li>Receive and activate a control lot</li>
+<li>Why is my QC chart empty?</li>
+</ul>

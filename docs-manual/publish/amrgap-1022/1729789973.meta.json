@@ -1,0 +1,28 @@
+{
+ "title": "Microbiology (pre-release): work a case from culture to release",
+ "version": 5,
+ "attachments": [
+  "05-blood-culture-bottles.png",
+  "06-inoculate-culture-dialog.png",
+  "10-report-and-release.png",
+  "02-worklist.png",
+  "03-case-header.png",
+  "04-order-detail.png",
+  "09-ast-validated.png",
+  "01-order-preview-opens-case.png",
+  "08-isolate.png",
+  "12-worklist-ast-runs.png",
+  "07-culture-card.png",
+  "11-case-timeline.png",
+  "21-critical-form.png",
+  "13-case-info-program.png",
+  "16-culture-positive.png",
+  "18-subculture-card.png",
+  "19-extend-incubation.png",
+  "15-record-outcome.png",
+  "20-incubation-extended.png",
+  "22-critical-logged.png",
+  "17-subculture-dialog.png",
+  "14-add-reading.png"
+ ]
+}

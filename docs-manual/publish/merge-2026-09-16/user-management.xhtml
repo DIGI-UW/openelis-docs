@@ -1,0 +1,61 @@
+<p><em>How-to · Administrators (user-account administration)</em></p>
+<h2>At a glance</h2>
+<table><tbody>
+<tr><th>Purpose</th><td>Create and maintain the user accounts that can log into OpenELIS, and set each user's roles and permissions.</td></tr>
+<tr><th>You'll end up with</th><td>An active user account with the right global and lab-unit roles.</td></tr>
+<tr><th>Who does this</th><td>Administrators (a User Account Administrator or Global Administrator). Access is set by user permissions and can be configured by your administrator.</td></tr>
+<tr><th>Before you start</th><td>The person's name, a login name, and which roles / lab units they need.</td></tr>
+<tr><th>Where</th><td>Main menu → Admin → User Management.</td></tr>
+</tbody></table>
+<p>User Management lists the system users and their account status. From here you add a user, modify or deactivate one, and assign the roles that control what each user can do.</p>
+<h2>Step 1 — Find a user</h2>
+<ol><li>Open <strong>Main menu → Admin</strong>.</li></ol>
+<p><ac:image ac:width="760"><ri:attachment ri:filename="Admin August.png" /></ac:image></p>
+<p><em>Admin</em></p>
+<ol start="2"><li>Click <strong>User Management</strong>.</li></ol>
+<p><ac:image ac:width="760"><ri:attachment ri:filename="user management 1.png" /></ac:image></p>
+<p><em>User Management</em></p>
+<ol start="3"><li>The list shows each user's first and last name, login name, password expiration date, and account flags (Account Locked, Account Disabled, Is Active, User Time Out). Filter with <strong>Search By User Names</strong>, <strong>By Lab Unit Roles</strong>, <strong>Only Active</strong>, or <strong>Only Administrator</strong>.</li></ol>
+<p><ac:image ac:width="760"><ri:attachment ri:filename="user mgt new.png" /></ac:image></p>
+<p><em>Search By User Names, By Lab Unit Roles, Only Active, or Only Administrator.</em></p>
+<ol start="4"><li>Tick a row's <strong>Select</strong> checkbox to enable <strong>Modify</strong> or <strong>Deactivate</strong>.</li></ol>
+<p><ac:image ac:width="760"><ri:attachment ri:filename="user mangt mod.png" /></ac:image></p>
+<p><em>The User Management list, with filters and the Modify, Deactivate, and Add actions.</em></p>
+<h2>Step 2 — Add a user</h2>
+<ol><li>Click <strong>Add</strong>.</li></ol>
+<p><ac:image ac:width="760"><ri:attachment ri:filename="add users.png" /></ac:image></p>
+<p><em>Add user</em></p>
+<ol start="2">
+<li>Enter the <strong>Login Name</strong>, a <strong>Password</strong> that meets the stated rules (at least 7 characters, including one of <strong>* $ # !</strong>), and <strong>Repeat Password</strong>.</li>
+<li>Enter <strong>First Name</strong> and <strong>Last Name</strong>, set the <strong>Password Expiration Date</strong> and <strong>User Time Out (minutes)</strong>, and set <strong>Account Locked</strong>, <strong>Account Disabled</strong>, and <strong>Is Active</strong>.</li>
+</ol>
+<p><ac:image ac:width="760"><ri:attachment ri:filename="user-add.png" /></ac:image></p>
+<p><em>The Add User form: account details at the top, the Roles section, and Copy Permissions below.</em></p>
+<h2>Step 3 — Assign roles and save</h2>
+<ol><li>Under <strong>Global Roles</strong>, tick any that apply (for example Global Administrator, Audit Trail, User Account Administrator, Analyser Import, Pathologist, Cytopathologist).</li></ol>
+<p><ac:image ac:width="760"><ri:attachment ri:filename="global roles user.png" /></ac:image></p>
+<p><em>Global Roles</em></p>
+<ol start="2"><li>Under <strong>Lab Unit Roles</strong>, click <strong>Add New Permission</strong> and choose all lab units or a specific unit, then the roles (Reception, Results, Validation, Reports).</li></ol>
+<p><ac:image ac:width="760"><ri:attachment ri:filename="add new perm.png" /></ac:image></p>
+<p><em>Add New Permission</em></p>
+<ol start="3">
+<li>Optionally use <strong>Copy Permissions From User</strong> to copy an existing user's roles: enter their user name and click <strong>Apply</strong>.</li>
+<li>Click <strong>Save</strong>.</li>
+</ol>
+<p><ac:image ac:width="742"><ri:attachment ri:filename="save user added.png" /></ac:image></p>
+<p><em>Add permission and save</em></p>
+<h2>Field reference</h2>
+<table><thead><tr><th>Field / Role</th><th>Notes</th></tr></thead><tbody>
+<tr><td>Login Name / Password</td><td>Sign-in credentials; the password must meet the on-screen complexity rules.</td></tr>
+<tr><td>Password Expiration Date</td><td>When the password must be changed.</td></tr>
+<tr><td>User Time Out (minutes)</td><td>Idle timeout before the session ends.</td></tr>
+<tr><td>Account Locked / Account Disabled / Is Active</td><td>Account-state flags.</td></tr>
+<tr><td>Global Roles</td><td>Application-wide roles, for example Global Administrator (all admin functions), Audit Trail (all audit trail), User Account Administrator (user administration only).</td></tr>
+<tr><td>Lab Unit Roles</td><td>Per-unit (or all-unit) roles: Reception, Results, Validation, Reports.</td></tr>
+<tr><td>Copy Permissions From User</td><td>Copies another user's role assignments to this account.</td></tr>
+</tbody></table>
+<h2>Notes</h2>
+<ul>
+<li>Users are <strong>deactivated, not deleted</strong>: select a row and use <strong>Deactivate</strong> to retire an account while preserving its history.</li>
+<li>The exact roles available and what they unlock are configurable per deployment; use the on-screen role descriptions as the source of truth.</li>
+</ul>

@@ -1,0 +1,13 @@
+{
+  "name": "openelis-docs",
+  "private": true,
+  "version": "0.1.0",
+  "description": "OpenELIS Global documentation tooling and the openelis-docs Claude plugin.",
+  "scripts": {
+    "build:plugin": "node scripts/build-plugin.mjs",
+    "check:plugin": "node scripts/build-plugin.mjs --check",
+    "lint:page": "python3 plugin/openelis-docs/skills/manual-lint/lint/oe_lint.py",
+    "test:hooks": "python3 plugin/openelis-docs/hooks/scripts/test_docs_hooks.py"
+  },
+  "license": "MPL-2.0"
+}

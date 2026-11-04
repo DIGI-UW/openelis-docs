@@ -1,0 +1,49 @@
+name: check
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  plugin:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pyyaml
+
+      # BLOCKING: plugin/openelis-docs is the only source of the docs skills. Fails on a malformed
+      # skill or agent, a missing hook script, a failing hook or linter self-test, an em dash
+      # (organization writing rule), or a publisher copy that differs from docs-manual/publish/.
+      - name: openelis-docs plugin is valid
+        run: npm run check:plugin
+
+      # BLOCKING: the tooling's state files must stay valid JSON.
+      - name: docs-manual JSON parses
+        run: |
+          python3 - <<'EOF'
+          import json, pathlib, sys
+          bad = []
+          for p in pathlib.Path('docs-manual').rglob('*.json'):
+              try:
+                  json.loads(p.read_text(encoding='utf-8'))
+              except Exception as e:
+                  bad.append(f'{p}: {e}')
+          print('\n'.join(bad) or 'all docs-manual JSON parses')
+          sys.exit(1 if bad else 0)
+          EOF
+
+      # BLOCKING: this repo is public. Nothing that looks like a credential may land.
+      - name: no credentials committed
+        run: |
+          if git ls-files | grep -E '(^|/)\.env|\.env$|(^|/)\.auth/'; then
+            echo "credential-like files are tracked"; exit 1; fi
+          if git grep -nIE 'ATATT[0-9A-Za-z_-]{20,}|ghp_[A-Za-z0-9]{30,}|github_pat_[A-Za-z0-9_]{30,}|CONFLUENCE_API_TOKEN=[^<\s]' -- ':!*.md' ':!.github'; then
+            echo "token-like strings found"; exit 1; fi
+          echo "no credentials found"

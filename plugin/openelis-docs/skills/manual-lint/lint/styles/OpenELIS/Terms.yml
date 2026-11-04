@@ -1,0 +1,11 @@
+extends: substitution
+message: "Use '%s' instead of '%s' (OpenELIS manual terminology)."
+level: error
+ignorecase: true
+swap:
+  '(?:left|side) (?:menu|nav(?:igation)?)': Main menu
+  sidebar: Main menu
+  accession (?:number|no\.?): Lab Number
+  test sections?: Lab Unit
+  test units?: Lab Unit
+  gender: sex

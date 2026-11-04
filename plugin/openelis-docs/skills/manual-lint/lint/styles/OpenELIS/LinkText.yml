@@ -1,0 +1,11 @@
+extends: existence
+message: "Link text should name its destination: '%s'."
+level: error
+ignorecase: true
+scope: raw
+nonword: true
+tokens:
+  # HTML anchors (also Markdown rendered by Vale) and Confluence storage-format link bodies
+  - '<a\b[^>]*>\s*(?:click here|here|this page|this link|more|link)\s*</a>'
+  - '<ac:(?:plain-text-)?link-body>\s*(?:<!\[CDATA\[)?\s*(?:click here|here|this page|this link|more|link)\s*(?:\]\]>)?\s*</ac:(?:plain-text-)?link-body>'
+  - '\[(?:click here|here|this page|this link|more|link)\]\('

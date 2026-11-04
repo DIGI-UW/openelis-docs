@@ -1,0 +1,16 @@
+extends: existence
+message: "'%s' translates poorly; use plain wording (see style.md section 4)."
+level: warning
+ignorecase: true
+nonword: true
+tokens:
+  - '\be\.g\.'
+  - '\bi\.e\.'
+  - '\betc\.'
+  - '\bkick off\b'
+  - '\bout of the box\b'
+  - '\bunder the hood\b'
+  - '\bon the fly\b'
+  - '\ba breeze\b'
+  - '\bdrill down\b'
+  - '\bgo ahead and\b'

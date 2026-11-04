@@ -1,0 +1,18 @@
+<h1>Statistical quality control (Westgard QC)</h1>
+<p>OpenELIS evaluates the control results your analyzers send against Westgard rules and shows the outcome on the QC Dashboard. Control results are never typed in: they arrive through the analyzer's electronic connection, are matched to an <em>Active</em> control lot for that analyzer and test, and are judged against the rule set configured for the pair.</p>
+<p>Everything lives under Main menu &rarr; <em>Analyzers</em> &rarr; <em>Quality Control</em>: <em>QC Dashboard</em>, <em>Rule Configuration</em> and <em>Control Lots</em>.</p>
+<h2>How the pages fit together</h2>
+<table><tbody>
+<tr><th>When</th><th>Page</th><th>What you do</th></tr>
+<tr><td>Once per analyzer and test</td><td>Set up QC for an instrument</td><td>Confirm the analyzer, register the first lot, review the Westgard rule set.</td></tr>
+<tr><td>Every new lot of control material</td><td>Receive and activate a control lot</td><td>Register the lot with its level, expiry and statistics method.</td></tr>
+<tr><td>Every day, after controls are run</td><td>Review QC and act on violations</td><td>Read the QC Dashboard, acknowledge and resolve violations.</td></tr>
+<tr><td>When an analyzer is missing from the dashboard</td><td>Why is my QC chart empty?</td><td>Work through the five checks to find the broken link.</td></tr>
+</tbody></table>
+<h2>Before QC can work</h2>
+<p>All five must be true: the analyzer is connected and Active; its control samples reach OpenELIS as control results; an Active control lot exists for the exact analyzer and test; the lot's identifier matches what the analyzer sends; and Westgard rules are enabled for the pair. If any one is missing, the analyzer simply does not appear on the QC Dashboard.</p>
+<h2>Known defects on version 3.2.2.0</h2>
+<ul>
+<li>Saving the <em>Edit Control Lot</em> page fails (<em>Failed to save control lot</em>), so lots cannot be edited or set Inactive after creation.</li>
+<li>Rule Configuration may show a different test name from the one chosen on the control lot.</li>
+</ul>

@@ -1,0 +1,112 @@
+<ac:structured-macro ac:name="warning" ac:schema-version="1" ac:macro-id="3d58cfbd-2da8-493c-859f-4a36d99e2f0a"><ac:rich-text-body><p><strong>Pre-release.</strong> This page describes Microbiology V2 (OGC-1383) as built on the pre-release test server pngtest.openelis-global.org. It is not part of the OpenELIS 3.3.0 release, and screens may change before it is merged. It stays in the review area until the work is merged and checked on a release build.</p></ac:rich-text-body></ac:structured-macro>
+
+<h2>At a glance</h2>
+<table><tbody>
+<tr><th>Purpose</th><td>Follow a microbiology specimen from the order through culture, identification and susceptibility testing to a released report.</td></tr>
+<tr><th>You'll end up with</th><td>A case with its cultures, readings, isolates and validated AST results, and a final report.</td></tr>
+<tr><th>Who does this</th><td>Microbiology bench staff and the reviewing microbiologist. Access is set by user permissions and can be configured by your administrator.</td></tr>
+<tr><th>Before you start</th><td>The culture tests and reference data are set up (see <a href="https://uwdigi.atlassian.net/wiki/spaces/OG/pages/1729167362">Set up microbiology tests and reference data</a>).</td></tr>
+<tr><th>Where</th><td>Main menu &rarr; Order &rarr; Add Clinical Order &rarr; Enter Order (to order), and Main menu &rarr; Microbiology &rarr; Microbiology worklist (to work the case)</td></tr>
+</tbody></table>
+
+<h2>Overview</h2>
+<p>Ordering a culture test opens a microbiology case automatically. The case is worked from the Microbiology worklist and has sections for the order detail, the samples, the cultures, the isolates, the AST (or DST) results, the report and release, and a case timeline. A case that has been finally released is read-only; changes after release go through an amendment.</p>
+
+<h2>Step 1: Order the culture</h2>
+<p>On Enter Order, choose the sample type and pick the culture test and any related tests. Below the samples, <strong>What this order will open</strong> previews the case: an <strong>Opens a case</strong> tag followed by the tests, the lab unit and the sample.</p>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="01-order-preview-opens-case.png" ri:version-at-save="2" /></ac:image></p>
+<p><em>Figure 1. Urine culture and Gram stain ordered on a urine sample; the preview reads &quot;Opens a case: Urine culture, Gram stain case in Bacteria: Urines sample 1&quot;.</em></p>
+
+<h2>Step 2: Find the case on the worklist</h2>
+<p>Go to Main menu &rarr; Microbiology &rarr; Microbiology worklist. Search by lab number or patient name, or filter by <strong>Lab unit</strong>, <strong>Status</strong>, <strong>Opened from</strong> and <strong>Opened through</strong>, and choose how to sort. Each row shows the <strong>Lab Number</strong>, <strong>Patient or site</strong>, <strong>Lab unit</strong>, <strong>Specimen</strong>, <strong>Status</strong> and <strong>Opened</strong> date. Select the lab number to open the case.</p>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="02-worklist.png" ri:version-at-save="2" /></ac:image></p>
+<p><em>Figure 2. The Microbiology worklist with the blood culture and urine culture cases opened on 21 October at the top.</em></p>
+<p>The worklist also has an <strong>AST runs</strong> view. It opens on <strong>Work needing action</strong>, with counts for <strong>In queue</strong>, <strong>Pending setup</strong>, <strong>In progress</strong> and <strong>Results in - review</strong>; select a count to list that queue. A note explains that connected analysers send results directly to the case, and that failed or unmatched events are kept in Analyser Import Issues. <strong>Surveillance scope</strong> narrows the AST rows by lab unit, reporting period and specimen types.</p>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="12-worklist-ast-runs.png" ri:version-at-save="2" /></ac:image></p>
+<p><em>Figure 3. The AST runs view: the Work needing action counts, the note on analyser results, and Surveillance scope set to this month.</em></p>
+
+<h2>Step 3: Check the case header and order detail</h2>
+<p>The case opens with its lab number, status, work stage, release state and order priority, the <strong>Patient</strong> (name, date of birth, sex) and the <strong>Lab unit</strong> with the specimen. Under <strong>Case info</strong>, <strong>Order detail</strong> collects what the laboratory needs for culture setup and critical-result follow-up: <strong>Patient origin</strong>, <strong>Date of admission</strong>, <strong>Number of sets</strong>, <strong>Clinical history</strong> and recent antibiotic exposure. A line lists anything still required before final release. <strong>Samples</strong> lists each sample with its specimen, body site, container, collector, status and collection date.</p>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="03-case-header.png" ri:version-at-save="2" /></ac:image></p>
+<p><em>Figure 4. A finally released urine culture case: work stage and release state Final Released, the patient and lab unit, &quot;Final case is read-only&quot; and Open amendment.</em></p>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="04-order-detail.png" ri:version-at-save="2" /></ac:image></p>
+<p><em>Figure 5. Order detail (Patient origin Outpatient), the line listing what is required before final release, and the sample.</em></p>
+
+<h2>Step 4: Inoculate a culture</h2>
+<p>In the <strong>Culture</strong> section, each bottle or plate is a card. Press <strong>Inoculate culture</strong> to add one, and enter the <strong>Source sample or aliquot</strong>, the <strong>Bottle or plate identifier</strong>, the <strong>Medium</strong> (or tick <strong>Lot not tracked</strong>), the <strong>Atmosphere</strong>, the <strong>Temperature (&deg;C)</strong> and the <strong>Incubation duration</strong> with its unit. Press <strong>Save</strong>.</p>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="05-blood-culture-bottles.png" ri:version-at-save="2" /></ac:image></p>
+<p><em>Figure 6. A blood culture case with bottle BC-1A, an aerobic blood culture bottle incubating at 35 &deg;C for 5 days.</em></p>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="06-inoculate-culture-dialog.png" ri:version-at-save="2" /></ac:image></p>
+<p><em>Figure 7. Inoculate culture filled in for a second set, bottle BC-2A from sample DEV01260000000000006-2: aerobic blood culture bottle, lot not tracked, aerobic, 35 &deg;C for 5 days.</em></p>
+
+<h2>Step 5: Record readings and the culture outcome</h2>
+<p>Each culture card shows the medium lot, atmosphere, temperature, incubation duration, when it was inoculated and when incubation ends, and when the next check is due. Its buttons are <strong>Add reading</strong>, <strong>Extend incubation</strong>, <strong>Record outcome</strong>, <strong>Edit inoculated time</strong>, <strong>Subculture</strong> and <strong>Add test on this culture</strong>, with <strong>View tests on this culture</strong> and <strong>Notes</strong>. Readings are listed with the reading, quantity, note, incubation day, who recorded it and when. Once an outcome is recorded, the card shows it (for example <strong>Growth</strong>), when it turned positive, the time to positivity, and who recorded the outcome.</p>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="07-culture-card.png" ri:version-at-save="2" /></ac:image></p>
+<p><em>Figure 8. Plate CLED-1 with outcome Growth and one reading: heavy, pure growth of lactose-fermenting colonies, more than 100,000 CFU/mL.</em></p>
+
+<h2>Step 6: Identify the isolate</h2>
+<p>The <strong>Isolates</strong> section lists each isolate with its organism and status, its clinical significance, the source culture, the Gram stain and colony morphology, the identification method, when the identification was made and the confidence. <strong>Log critical notification</strong> records a call about the isolate, and <strong>Identification history</strong> lists earlier identifications. Referrals of isolates or specimens to another laboratory are listed under <strong>Isolate and specimen referrals</strong>.</p>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="08-isolate.png" ri:version-at-save="2" /></ac:image></p>
+<p><em>Figure 9. Isolate ISO-1, Escherichia coli, Final and clinically significant: Gram-negative rods, yellow opaque colonies on CLED, biochemical identification at 99% confidence.</em></p>
+
+<h2>Step 7: Review the AST results</h2>
+<p>The <strong>AST / DST</strong> section shows each isolate with its assigned panels and each run with its status, method and time. For every antimicrobial agent the run lists the <strong>MIC / zone</strong>, the <strong>Interpretation</strong> with the breakpoint standard and rule used, and whether it is <strong>Selected for report</strong>. <strong>Reading and interpretation history</strong> keeps the earlier readings.</p>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="09-ast-validated.png" ri:version-at-save="2" /></ac:image></p>
+<p><em>Figure 10. A validated broth microdilution run for ISO-1: resistant to ampicillin and ciprofloxacin, susceptible to ceftriaxone, gentamicin and meropenem, all selected for report.</em></p>
+
+<h2>Step 8: Preview the report and release</h2>
+<p><strong>Report and release</strong> shows the report as it will read, under <strong>Report version</strong> (the current preview, or an earlier released version). The report groups the case by lab unit into <strong>Initial testing</strong>, <strong>Culture findings</strong>, <strong>AST / DST</strong> (agent, MIC or zone, interpretation and breakpoint standard) and <strong>Additional testing</strong>.</p>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="10-report-and-release.png" ri:version-at-save="2" /></ac:image></p>
+<p><em>Figure 11. The report preview: culture finding CLED-1 Growth, isolate ISO-1 Escherichia coli, and the five AST results interpreted with CLSI 2026.</em></p>
+
+<h2>Step 9: Check the case timeline</h2>
+<p><strong>Case timeline</strong> lists every recorded event with its date and time, author and note, from the order being linked to the case through inoculation, readings, outcome and release.</p>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="11-case-timeline.png" ri:version-at-save="2" /></ac:image></p>
+<p><em>Figure 12. The case timeline from the order on 21 October to the culture outcome, recorded in UTC.</em></p>
+
+<h2>Field reference</h2>
+<table><tbody>
+<tr><th>Field or control</th><th>What it shows or does</th></tr>
+<tr><td>What this order will open</td><td>On Enter Order: the case the order will open, with its tests, lab unit and sample.</td></tr>
+<tr><td>Work stage, Release state</td><td>Where the case is in the workflow, and whether it is released (preliminary or final).</td></tr>
+<tr><td>Open amendment</td><td>Reopens a finally released case for a correction.</td></tr>
+<tr><td>Required before final release</td><td>Lists order details that must be filled before the case can be finally released.</td></tr>
+<tr><td>Inoculate culture</td><td>Adds a bottle or plate with its medium, atmosphere, temperature and incubation time.</td></tr>
+<tr><td>Add reading, Extend incubation, Record outcome</td><td>Records a reading, lengthens incubation with a reason, or records the culture's outcome.</td></tr>
+<tr><td>Subculture, Add test on this culture</td><td>Starts a subculture, or orders a further test on the culture.</td></tr>
+<tr><td>Time to positivity</td><td>Time from inoculation to the culture turning positive.</td></tr>
+<tr><td>Log critical notification</td><td>Records a critical-result call about an isolate.</td></tr>
+<tr><td>Selected for report</td><td>Whether an AST result appears on the report.</td></tr>
+<tr><td>Report version</td><td>Shows the current preview or an earlier released version of the report.</td></tr>
+</tbody></table>
+
+<h2>Tips</h2>
+<ul>
+<li>Fill the order detail early. Final release is blocked until everything listed as required is filled.</li>
+<li>On the test server the timeline showed internal event codes (for example CULTURE_INOCULATED and REQUEST_OWNED with an identifier) rather than plain descriptions (OGC-1553).</li>
+<li>Time to positivity is shown in days, hours and minutes (for example 0d 0h 2m), while the report gives incubation in decimal hours (0.04 hours).</li>
+<li>When no initial test such as a Gram stain is recorded, the report's Initial testing reads None.</li>
+<li>On the test server a finally released case still showed the status chip Active and was still listed on the worklist (OGC-1525, OGC-1553).</li>
+<li>The case header listed Patient origin as required before final release although it was filled in (Outpatient) (OGC-1553).</li>
+<li>Known issues on the test server: the AST runs status All does not return every run (OGC-1526); a blocked final release returns a server error rather than naming what is missing (OGC-1522).</li>
+<li>The worklist on the test server also lists cases created for automated testing (names starting with QA).</li>
+</ul>
+
+<h2>Not yet available</h2>
+<ul>
+<li>The redesigned worklist with case transfer between lab units, and culture rows with media management: built separately and not yet merged.</li>
+<li>Environmental microbiology cases.</li>
+<li>Breakpoints for disk diffusion (zone diameters).</li>
+<li>AST reporting rules, one-click suggestions, infection control alerts and AST QC (planned for Microbiology V3, OGC-1528).</li>
+</ul>
+
+<h2>Provenance</h2>
+<table><tbody>
+<tr><th>Status</th><td>Draft for review (pre-release)</td></tr>
+<tr><th>Instance</th><td>pngtest.openelis-global.org, header version <em>3.3.0-SNAPSHOT</em>, Microbiology V2 pre-release build (OGC-1383)</td></tr>
+<tr><th>Routes</th><td>/order/clinical/enter; /Microbiology/worklist; /Microbiology/cases/{id}</td></tr>
+<tr><th>Date</th><td>21 October 2026 (times on the case are UTC, 22 October)</td></tr>
+<tr><th>Data</th><td>Urine culture case DEV01260000000000005 for Grace Kila (CLED-1, ISO-1 Escherichia coli, AST validated, finally released); blood culture case DEV01260000000000006 for Peter Wari (bottles BC-1A and BC-1B).</td></tr>
+<tr><th>Driven</th><td>Enter Order with Urine culture and Gram stain (preview read, not saved); worklist and AST runs view; Inoculate culture dialog filled and cancelled. Inoculation, readings, outcome, identification, AST entry, validation and release were entered through the REST calls the case screen makes, and the resulting screens were read.</td></tr>
+<tr><th>Observed only</th><td>Add reading, Extend incubation, Record outcome, Edit inoculated time, Subculture, Add test on this culture, Log critical notification, Open amendment and the release buttons, as screen controls.</td></tr>
+</tbody></table>

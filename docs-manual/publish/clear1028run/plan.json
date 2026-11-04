@@ -1,0 +1,96 @@
+{
+ "1441136648": {
+  "title": "Patient Management",
+  "version": 7,
+  "label": "verified-v3-4-0",
+  "wip_removed": 1,
+  "status_rows": 0
+ },
+ "1440841760": {
+  "title": "Register a New Patient",
+  "version": 9,
+  "label": "verified-v3-4-0",
+  "wip_removed": 1,
+  "status_rows": 0
+ },
+ "1428684802": {
+  "title": "Label and store environmental and vector samples",
+  "version": 14,
+  "label": "verified-v3-4-0",
+  "wip_removed": 1,
+  "status_rows": 1
+ },
+ "1666547755": {
+  "title": "Import a test catalog from CSV",
+  "version": 10,
+  "label": "verified-v3-3-0",
+  "wip_removed": 1,
+  "status_rows": 0
+ },
+ "1429176321": {
+  "title": "Complete the sample check for an environmental or vector order",
+  "version": 13,
+  "label": "verified-v3-3-0",
+  "wip_removed": 1,
+  "status_rows": 1
+ },
+ "1706295354": {
+  "title": "Admin: Import and export locations",
+  "version": 6,
+  "label": "verified-v3-4-0",
+  "wip_removed": 1,
+  "status_rows": 0
+ },
+ "1440907275": {
+  "title": "Merge Patient Records",
+  "version": 4,
+  "label": "verified-v3-3-0",
+  "wip_removed": 0,
+  "status_rows": 0
+ },
+ "1432649742": {
+  "title": "Read-only & cross-link sections",
+  "version": 8,
+  "label": "verified-v3-4-0",
+  "wip_removed": 0,
+  "status_rows": 0
+ },
+ "1427275807": {
+  "title": "Enter results & read the compliance evaluation",
+  "version": 10,
+  "label": "verified-v3-4-0",
+  "wip_removed": 1,
+  "status_rows": 0
+ },
+ "1427439642": {
+  "title": "Validate & release results",
+  "version": 13,
+  "label": "verified-v3-4-0",
+  "wip_removed": 1,
+  "status_rows": 0
+ },
+ "1442414603": {
+  "title": "Author the test catalog in CSV files",
+  "version": 5,
+  "label": "verified-v3-4-0",
+  "wip_removed": 1,
+  "status_rows": 0
+ },
+ "1707704440": {
+  "title": "Custom Data Export and My Report Queue",
+  "version": 6,
+  "label": "verified-v3-4-0",
+  "wip_removed": 1,
+  "status_rows": 0
+ },
+ "1418166310": {
+  "title": "Adding a Patient",
+  "version": 7,
+  "retire": true
+ },
+ "1326972929": {
+  "title": "📖 User Manual",
+  "version": 23,
+  "landing": true
+ }
+}

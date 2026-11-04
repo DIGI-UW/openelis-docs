@@ -1,0 +1,1252 @@
+{
+ "generatedAt": "2026-10-22T23:13:17Z",
+ "lang": "id",
+ "pairs": 18,
+ "current": 17,
+ "stale": 1,
+ "orphan": 0,
+ "unknown": 0,
+ "missing": 82,
+ "duplicates": 0,
+ "staleRows": [
+  {
+   "en": "1326972929",
+   "enTitle": "📖 User Manual",
+   "enVersion": 23,
+   "tr": "1733492739",
+   "trTitle": "📖 Panduan Pengguna",
+   "sourceVersion": 22,
+   "method": "claude",
+   "translatedAt": "2026-10-22",
+   "frenchFigures": [],
+   "figuresCapturedAt": null,
+   "status": "stale",
+   "changes": [
+    {
+     "v": 23,
+     "when": "2026-10-22",
+     "msg": "QA, notifications and report header pages added (in review)"
+    }
+   ],
+   "scope": "landing",
+   "englishDrift": null,
+   "change": {
+    "kind": "text",
+    "sections": [
+     "Programs, rules and notifications",
+     "Quality assurance",
+     "Site and system settings"
+    ],
+    "addedOrChanged": 10,
+    "removed": 0,
+    "figuresChanged": false
+   },
+   "action": "retranslate changed sections"
+  }
+ ],
+ "orphanRows": [],
+ "missingRows": [
+  {
+   "en": "1046118450",
+   "enTitle": "HOW TO ROUTE ROUTE SAMPLES EXTERNALLY",
+   "enVersion": 1,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "1047199822",
+   "enTitle": "HOW TO ENTER RESULTS MANUALLY",
+   "enVersion": 1,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "1047330857",
+   "enTitle": "HOW TO CREATE CHILD SAMPLES",
+   "enVersion": 1,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "1047330908",
+   "enTitle": "HOW TO ARCHIVE SAMPLES",
+   "enVersion": 1,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "1047363648",
+   "enTitle": "HOW TO CONDUCT POST ANALYSIS",
+   "enVersion": 1,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "1047429176",
+   "enTitle": "HOW TO PREPARE ROUTED SAMPLES FOR ANALYSIS",
+   "enVersion": 1,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "1047527443",
+   "enTitle": "HOW TO RECORD ASSAYS",
+   "enVersion": 1,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "1047527493",
+   "enTitle": "HOW TO POST COMPILATION",
+   "enVersion": 2,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "1047560199",
+   "enTitle": "HOW TO PROCESS SAMPLE",
+   "enVersion": 1,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "1047658526",
+   "enTitle": "HOW TO ROUTE SAMPLES TO STORAGE",
+   "enVersion": 1,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "1047986189",
+   "enTitle": "HOW TO ROUTE SAMPLES INTERNALLY",
+   "enVersion": 1,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "1160282114",
+   "enTitle": "Admin — Configure the navigation menu",
+   "enVersion": 5,
+   "scope": "manual",
+   "contract": "menu-configuration"
+  },
+  {
+   "en": "1186365449",
+   "enTitle": "PART 7 B: ANALYZER MANAGEMENT",
+   "enVersion": 5,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "1242759175",
+   "enTitle": "Electronic Signatures",
+   "enVersion": 16,
+   "scope": "manual",
+   "contract": "electronic-signatures"
+  },
+  {
+   "en": "1427144728",
+   "enTitle": "Admin — Vector Surveillance Reference Data",
+   "enVersion": 7,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "1427505177",
+   "enTitle": "Generate a compliance certificate",
+   "enVersion": 8,
+   "scope": "manual",
+   "contract": "laporan-hasil-report"
+  },
+  {
+   "en": "1427898372",
+   "enTitle": "Enter an environmental order",
+   "enVersion": 10,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "1427898389",
+   "enTitle": "Enter a vector order",
+   "enVersion": 10,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "1427931149",
+   "enTitle": "Admin — Configure compliance standards & holding times",
+   "enVersion": 8,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "1428094999",
+   "enTitle": "Identify vector species & deconvolute a pool",
+   "enVersion": 8,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "1428258821",
+   "enTitle": "Record Vector Field Survey indices",
+   "enVersion": 7,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "1428881409",
+   "enTitle": "The three domains & the shared order wizard",
+   "enVersion": 4,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "1428946945",
+   "enTitle": "Compliance evaluation",
+   "enVersion": 6,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "1429012481",
+   "enTitle": "Pooling & deconvolution",
+   "enVersion": 6,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "1429176321",
+   "enTitle": "Complete the sample check for an environmental or vector order",
+   "enVersion": 13,
+   "scope": "manual",
+   "contract": "qa-review-shared"
+  },
+  {
+   "en": "1431371782",
+   "enTitle": "Edit a test's Basic Info (domain, AMR, status)",
+   "enVersion": 11,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "1431470085",
+   "enTitle": "Find & filter tests in the catalog",
+   "enVersion": 7,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "1431666693",
+   "enTitle": "Set test display order within a sample type",
+   "enVersion": 6,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "1431928838",
+   "enTitle": "Link methods to a test",
+   "enVersion": 8,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "1432059909",
+   "enTitle": "Map a test to terminology codes",
+   "enVersion": 6,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "1432256516",
+   "enTitle": "Configure sample storage & disposal",
+   "enVersion": 8,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "1432354821",
+   "enTitle": "Set reference & critical ranges",
+   "enVersion": 7,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "1432584197",
+   "enTitle": "Configure a test's sample types & result components",
+   "enVersion": 8,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "1433010177",
+   "enTitle": "Add a test to panels",
+   "enVersion": 7,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "1433468931",
+   "enTitle": "Manage label presets",
+   "enVersion": 14,
+   "scope": "manual",
+   "contract": "label-presets"
+  },
+  {
+   "en": "1435566088",
+   "enTitle": "Sample Acceptance Checklist",
+   "enVersion": 7,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "1437466625",
+   "enTitle": "Environmental Surveillance — workflow overview",
+   "enVersion": 3,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "1437532161",
+   "enTitle": "Vector Surveillance — workflow overview",
+   "enVersion": 3,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "1437892659",
+   "enTitle": "Admin: Manage organizations",
+   "enVersion": 13,
+   "scope": "manual",
+   "contract": "organization-management-330"
+  },
+  {
+   "en": "1438842886",
+   "enTitle": "Admin — Define calculated value tests",
+   "enVersion": 6,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "1438908431",
+   "enTitle": "Admin — Configure logging",
+   "enVersion": 8,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "1438973960",
+   "enTitle": "Admin — Rebuild the search index",
+   "enVersion": 7,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "1438973976",
+   "enTitle": "Admin — Manage dictionary entries",
+   "enVersion": 9,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "1439006727",
+   "enTitle": "Admin — Define programs and their questionnaires",
+   "enVersion": 8,
+   "scope": "manual",
+   "contract": "programs-v2"
+  },
+  {
+   "en": "1439072261",
+   "enTitle": "Admin — Configure test notifications",
+   "enVersion": 7,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "1439137808",
+   "enTitle": "Admin — Define reflex testing rules",
+   "enVersion": 7,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "1439170565",
+   "enTitle": "Admin — Choose the lab number format",
+   "enVersion": 8,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "1439203334",
+   "enTitle": "Admin — Manage providers",
+   "enVersion": 7,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "1439334404",
+   "enTitle": "Admin — Manage non-working days",
+   "enVersion": 7,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "1439367188",
+   "enTitle": "Admin — Edit application properties",
+   "enVersion": 7,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "1439432709",
+   "enTitle": "Admin: Configure site information",
+   "enVersion": 10,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "1439596548",
+   "enTitle": "Admin — Configure result reporting to external systems",
+   "enVersion": 7,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "1440350210",
+   "enTitle": "Find an existing order",
+   "enVersion": 6,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "1440677908",
+   "enTitle": "Track sample storage and disposal",
+   "enVersion": 6,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "1440940035",
+   "enTitle": "Create aliquots from a sample",
+   "enVersion": 6,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "1649082375",
+   "enTitle": "General Configurations reference",
+   "enVersion": 8,
+   "scope": "manual",
+   "contract": "general-configurations"
+  },
+  {
+   "en": "1653604361",
+   "enTitle": "Results Entry (legacy screen)",
+   "enVersion": 3,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "1672249349",
+   "enTitle": "OpenELIS Monitoring",
+   "enVersion": 1,
+   "scope": "ops",
+   "contract": null
+  },
+  {
+   "en": "1681260549",
+   "enTitle": "Report a non-conforming event",
+   "enVersion": 4,
+   "scope": "manual",
+   "contract": "nce-report"
+  },
+  {
+   "en": "239632402",
+   "enTitle": "Install OpenELIS Global",
+   "enVersion": 17,
+   "scope": "ops",
+   "contract": null
+  },
+  {
+   "en": "239632412",
+   "enTitle": "Server and Workstation Technical Requirements For Deployment",
+   "enVersion": 7,
+   "scope": "ops",
+   "contract": null
+  },
+  {
+   "en": "239730698",
+   "enTitle": "Upgrading OpenELIS 3.x and 2.x",
+   "enVersion": 5,
+   "scope": "ops",
+   "contract": null
+  },
+  {
+   "en": "239927340",
+   "enTitle": "Implementation Best Practices",
+   "enVersion": 3,
+   "scope": "ops",
+   "contract": null
+  },
+  {
+   "en": "240320515",
+   "enTitle": "Backup Configuration",
+   "enVersion": 6,
+   "scope": "ops",
+   "contract": null
+  },
+  {
+   "en": "240877572",
+   "enTitle": "Setup High Availability Fail Over",
+   "enVersion": 5,
+   "scope": "ops",
+   "contract": null
+  },
+  {
+   "en": "245366800",
+   "enTitle": "Troubleshooting",
+   "enVersion": 5,
+   "scope": "ops",
+   "contract": null
+  },
+  {
+   "en": "256966691",
+   "enTitle": "NAVIGATING OpenELIS LIMS",
+   "enVersion": 4,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "257097754",
+   "enTitle": "ACCESSING THE OpenELIS GLOBAL ADMINISTRATION MODULE",
+   "enVersion": 4,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "257392644",
+   "enTitle": "INTRODUCTION",
+   "enVersion": 4,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "260931593",
+   "enTitle": "PART 1: NAVIGATING OpenELIS GLOBAL",
+   "enVersion": 7,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "261259270",
+   "enTitle": "PART 3: QUICK LINKS",
+   "enVersion": 3,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "261423127",
+   "enTitle": "PART 4: ENTERING LABORATORY ORDERS",
+   "enVersion": 8,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "261521410",
+   "enTitle": "PART 2: QUICK TROUBLESHOOTING",
+   "enVersion": 2,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "272662541",
+   "enTitle": "PART 6: BATCH ORDER ENTRY",
+   "enVersion": 4,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "272760837",
+   "enTitle": "Print a work plan",
+   "enVersion": 7,
+   "scope": "manual",
+   "contract": "workplans"
+  },
+  {
+   "en": "273285123",
+   "enTitle": "PART 8: PATHOLOGY",
+   "enVersion": 4,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "278560771",
+   "enTitle": "PART 10: CYTOLOGY",
+   "enVersion": 3,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "279248897",
+   "enTitle": "PART 9: IMMUNOCHEMISTRY",
+   "enVersion": 2,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "283967514",
+   "enTitle": "PART 12: HELP",
+   "enVersion": 3,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "284688410",
+   "enTitle": "PART 13: LOGGING OUT OF OPENELIS",
+   "enVersion": 3,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "951156737",
+   "enTitle": "HOW TO CREATE A LAB NOTEBOOK",
+   "enVersion": 3,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "991821864",
+   "enTitle": "Laboratory Notebooks",
+   "enVersion": 7,
+   "scope": "manual",
+   "contract": null
+  }
+ ],
+ "rows": [
+  {
+   "en": "1702821939",
+   "enTitle": "Complete the sample check for a clinical order",
+   "enVersion": 4,
+   "tr": "1733984260",
+   "trTitle": "Menyelesaikan pengecekan sampel untuk pemesanan klinis",
+   "sourceVersion": 4,
+   "method": "claude",
+   "translatedAt": "2026-10-22",
+   "frenchFigures": [],
+   "figuresCapturedAt": null,
+   "status": "current",
+   "contract": "clinical-sample-check",
+   "jiraEpic": "OGC-1266",
+   "featureDoc": "OGC-1413",
+   "scope": "manual",
+   "englishDrift": "review"
+  },
+  {
+   "en": "1440841744",
+   "enTitle": "Run reports",
+   "enVersion": 6,
+   "tr": "1733885955",
+   "trTitle": "Menjalankan laporan",
+   "sourceVersion": 6,
+   "method": "claude",
+   "translatedAt": "2026-10-22",
+   "frenchFigures": [],
+   "figuresCapturedAt": null,
+   "status": "current",
+   "scope": "manual",
+   "englishDrift": null
+  },
+  {
+   "en": "1661763585",
+   "enTitle": "Triage and release results",
+   "enVersion": 23,
+   "tr": "1733820420",
+   "trTitle": "Melakukan triase dan merilis hasil",
+   "sourceVersion": 23,
+   "method": "claude",
+   "translatedAt": "2026-10-22",
+   "frenchFigures": [],
+   "figuresCapturedAt": null,
+   "status": "current",
+   "contract": "validation-v4",
+   "jiraEpic": "OGC-817",
+   "featureDoc": "OGC-1229",
+   "scope": "manual",
+   "englishDrift": "review"
+  },
+  {
+   "en": "1325727762",
+   "enTitle": "🧩 Modules & Features",
+   "enVersion": 4,
+   "tr": "1733754893",
+   "trTitle": "🧩 Modul & fitur",
+   "sourceVersion": 4,
+   "method": "claude",
+   "translatedAt": "2026-10-22",
+   "frenchFigures": [],
+   "figuresCapturedAt": null,
+   "status": "current",
+   "scope": "landing",
+   "englishDrift": null
+  },
+  {
+   "en": "52560162",
+   "enTitle": "OpenELIS Global",
+   "enVersion": 30,
+   "tr": "1733722115",
+   "trTitle": "Beranda OpenELIS Global (Bahasa Indonesia)",
+   "sourceVersion": 30,
+   "method": "claude",
+   "translatedAt": "2026-10-22",
+   "frenchFigures": [],
+   "figuresCapturedAt": null,
+   "status": "current",
+   "scope": "landing",
+   "englishDrift": null
+  },
+  {
+   "en": "1648787462",
+   "enTitle": "Enter a clinical order",
+   "enVersion": 24,
+   "tr": "1733525508",
+   "trTitle": "Memasukkan pemesanan klinis",
+   "sourceVersion": 24,
+   "method": "claude",
+   "translatedAt": "2026-10-22",
+   "frenchFigures": [],
+   "figuresCapturedAt": null,
+   "status": "current",
+   "contract": "clinical-order-enter",
+   "jiraEpic": "OGC-1266",
+   "featureDoc": "OGC-1413",
+   "scope": "manual",
+   "englishDrift": "review"
+  },
+  {
+   "en": "1326972929",
+   "enTitle": "📖 User Manual",
+   "enVersion": 23,
+   "tr": "1733492739",
+   "trTitle": "📖 Panduan Pengguna",
+   "sourceVersion": 22,
+   "method": "claude",
+   "translatedAt": "2026-10-22",
+   "frenchFigures": [],
+   "figuresCapturedAt": null,
+   "status": "stale",
+   "changes": [
+    {
+     "v": 23,
+     "when": "2026-10-22",
+     "msg": "QA, notifications and report header pages added (in review)"
+    }
+   ],
+   "scope": "landing",
+   "englishDrift": null,
+   "change": {
+    "kind": "text",
+    "sections": [
+     "Programs, rules and notifications",
+     "Quality assurance",
+     "Site and system settings"
+    ],
+    "addedOrChanged": 10,
+    "removed": 0,
+    "figuresChanged": false
+   },
+   "action": "retranslate changed sections"
+  },
+  {
+   "en": "1326252042",
+   "enTitle": "🚀 For Implementers",
+   "enVersion": 4,
+   "tr": "1733460010",
+   "trTitle": "🚀 Untuk tim implementasi",
+   "sourceVersion": 4,
+   "method": "claude",
+   "translatedAt": "2026-10-22",
+   "frenchFigures": [],
+   "figuresCapturedAt": null,
+   "status": "current",
+   "scope": "landing",
+   "englishDrift": null
+  },
+  {
+   "en": "1187840003",
+   "enTitle": "Admin — Manage user accounts",
+   "enVersion": 6,
+   "tr": "1733459990",
+   "trTitle": "Admin: Mengelola akun pengguna",
+   "sourceVersion": 6,
+   "method": "claude",
+   "translatedAt": "2026-10-22",
+   "frenchFigures": [],
+   "figuresCapturedAt": null,
+   "status": "current",
+   "scope": "manual",
+   "englishDrift": null
+  },
+  {
+   "en": "1160511506",
+   "enTitle": "OpenELIS Global Implementations",
+   "enVersion": 6,
+   "tr": "1733427209",
+   "trTitle": "Implementasi OpenELIS Global",
+   "sourceVersion": 6,
+   "method": "claude",
+   "translatedAt": "2026-10-22",
+   "frenchFigures": [],
+   "figuresCapturedAt": null,
+   "status": "current",
+   "scope": "landing",
+   "englishDrift": null
+  },
+  {
+   "en": "1440841760",
+   "enTitle": "Register a New Patient",
+   "enVersion": 8,
+   "tr": "1733361674",
+   "trTitle": "Mendaftarkan pasien baru",
+   "sourceVersion": 8,
+   "method": "claude",
+   "translatedAt": "2026-10-22",
+   "frenchFigures": [],
+   "figuresCapturedAt": null,
+   "status": "current",
+   "contract": "register-new-patient",
+   "jiraEpic": null,
+   "featureDoc": null,
+   "scope": "manual",
+   "englishDrift": "review"
+  },
+  {
+   "en": "1441136648",
+   "enTitle": "Patient Management",
+   "enVersion": 6,
+   "tr": "1733328902",
+   "trTitle": "Manajemen pasien",
+   "sourceVersion": 6,
+   "method": "claude",
+   "translatedAt": "2026-10-22",
+   "frenchFigures": [],
+   "figuresCapturedAt": null,
+   "status": "current",
+   "contract": "patient-management",
+   "jiraEpic": null,
+   "featureDoc": null,
+   "scope": "manual",
+   "englishDrift": "review"
+  },
+  {
+   "en": "1439072277",
+   "enTitle": "Enter and save results",
+   "enVersion": 14,
+   "tr": "1733263383",
+   "trTitle": "Memasukkan dan menyimpan hasil",
+   "sourceVersion": 14,
+   "method": "claude",
+   "translatedAt": "2026-10-22",
+   "frenchFigures": [],
+   "figuresCapturedAt": null,
+   "status": "current",
+   "contract": "results-entry",
+   "jiraEpic": null,
+   "featureDoc": null,
+   "scope": "manual",
+   "englishDrift": "review"
+  },
+  {
+   "en": "1328185376",
+   "enTitle": "🆘 Get Help",
+   "enVersion": 2,
+   "tr": "1733165063",
+   "trTitle": "🆘 Mendapatkan bantuan",
+   "sourceVersion": 2,
+   "method": "claude",
+   "translatedAt": "2026-10-22",
+   "frenchFigures": [],
+   "figuresCapturedAt": null,
+   "status": "current",
+   "scope": "landing",
+   "englishDrift": null
+  },
+  {
+   "en": "239337475",
+   "enTitle": "About OpenELIS Global",
+   "enVersion": 6,
+   "tr": "1733132303",
+   "trTitle": "Tentang OpenELIS Global",
+   "sourceVersion": 6,
+   "method": "claude",
+   "translatedAt": "2026-10-22",
+   "frenchFigures": [],
+   "figuresCapturedAt": null,
+   "status": "current",
+   "scope": "landing",
+   "englishDrift": null
+  },
+  {
+   "en": "1441202177",
+   "enTitle": "Validate and release results",
+   "enVersion": 8,
+   "tr": "1733033987",
+   "trTitle": "Memvalidasi dan merilis hasil",
+   "sourceVersion": 8,
+   "method": "claude",
+   "translatedAt": "2026-10-22",
+   "frenchFigures": [],
+   "figuresCapturedAt": null,
+   "status": "current",
+   "scope": "manual",
+   "englishDrift": null
+  },
+  {
+   "en": "1325793288",
+   "enTitle": "⚙️ For SysAdmins-Operators",
+   "enVersion": 5,
+   "tr": "1732968452",
+   "trTitle": "⚙️ Untuk administrator sistem dan operator",
+   "sourceVersion": 5,
+   "method": "claude",
+   "translatedAt": "2026-10-22",
+   "frenchFigures": [],
+   "figuresCapturedAt": null,
+   "status": "current",
+   "scope": "landing",
+   "englishDrift": null
+  },
+  {
+   "en": "1437270018",
+   "enTitle": "Test Catalog Management: workflow overview",
+   "enVersion": 8,
+   "tr": "1732804613",
+   "trTitle": "Manajemen katalog pemeriksaan: gambaran umum alur kerja",
+   "sourceVersion": 8,
+   "method": "claude",
+   "translatedAt": "2026-10-22",
+   "frenchFigures": [],
+   "figuresCapturedAt": null,
+   "status": "current",
+   "scope": "manual",
+   "englishDrift": null
+  }
+ ],
+ "summary": "Indonesian: 18 pairs, 17 current, 1 stale, 0 orphan/unknown, 82 tracked pages with no Indonesian. 0 pages with Indonesian screenshots, 0 with Indonesian screenshots older than the English. Tree: 34 in place, 0 misplaced, 0 English parents with no Indonesian twin. Labels: 15 pages quote bold text that is not a Indonesian UI string (1 new since baseline).",
+ "frenchFigurePages": 0,
+ "figuresStaleRows": [],
+ "driftReportAt": "2026-10-20T20:20:25.547Z",
+ "tree": {
+  "checkedAt": "2026-10-22T23:12:15Z",
+  "inPlace": 34,
+  "misplaced": [],
+  "unmappedParents": {}
+ },
+ "labels": {
+  "pagesWithUnknownLabels": 15,
+  "pagesWithNewUnknownLabels": 1,
+  "baselineCreated": false,
+  "rows": [
+   {
+    "fr": "1733984260",
+    "frTitle": "Menyelesaikan pengecekan sampel untuk pemesanan klinis",
+    "tr": "1733984260",
+    "trTitle": "Menyelesaikan pengecekan sampel untuk pemesanan klinis",
+    "notInUi": [
+     "Buka pemesanan.",
+     "Periksa ringkasannya.",
+     "Rilis pemesanan.",
+     "Sedang dalam pengerjaan.",
+     "Status: draf untuk ditinjau.",
+     "Tinjau penerimaan pendaftaran untuk setiap sampel."
+    ],
+    "newSinceBaseline": []
+   },
+   {
+    "fr": "1733885955",
+    "frTitle": "Menjalankan laporan",
+    "tr": "1733885955",
+    "trTitle": "Menjalankan laporan",
+    "notInUi": [
+     "By Site",
+     "by Order Number / Lab Number"
+    ],
+    "newSinceBaseline": []
+   },
+   {
+    "fr": "1733820420",
+    "frTitle": "Melakukan triase dan merilis hasil",
+    "tr": "1733820420",
+    "trTitle": "Melakukan triase dan merilis hasil",
+    "notInUi": [
+     "Berdasarkan nomor registrasi.",
+     "Diamati tetapi tidak diuji:",
+     "Diuji langsung di testing (3.3.0-SNAPSHOT, 2026-10-09):",
+     "Diverifikasi oleh",
+     "Hasil yang divalidasi otomatis.",
+     "Hasil yang divalidasi secara otomatis",
+     "OpenELIS 3.3.0.",
+     "PERISTIWA",
+     "Perlu ditinjau: 1",
+     "Rilis semua tanpa temuan",
+     "Rilis semua tanpa temuan (0)",
+     "Rilis semua tanpa temuan (3)",
+     "Signature Meaning",
+     "Tanpa Temuan: 3",
+     "Tinjau",
+     "Versi OpenELIS"
+    ],
+    "newSinceBaseline": [
+     "PERISTIWA",
+     "Rilis semua tanpa temuan",
+     "Rilis semua tanpa temuan (0)",
+     "Rilis semua tanpa temuan (3)",
+     "Tanpa Temuan: 3"
+    ]
+   },
+   {
+    "fr": "1733754893",
+    "frTitle": "🧩 Modul & fitur",
+    "tr": "1733754893",
+    "trTitle": "🧩 Modul & fitur",
+    "notInUi": [
+     "Admin: Alat sistem (indeks pencarian, logging & jejak audit)",
+     "Admin: Konfigurasi bahasa, terjemahan & menu",
+     "Admin: Notifikasi, pelaporan hasil & komunikasi pengguna",
+     "Admin: Pemeriksaan refleks & pemeriksaan nilai terkalkulasi",
+     "Admin: Pengelolaan organisasi",
+     "Admin: Pengelolaan penyelenggara & plugin",
+     "Buku catatan laboratorium elektronik",
+     "Dasbor & kartu KPI",
+     "Dasbor aturan Westgard",
+     "Dasbor pemantauan freezer",
+     "Ekspor data: CSV, PDF & WHONET",
+     "Kejadian tidak sesuai: tindakan perbaikan",
+     "Kontrol akses berbasis peran (RBAC)",
+     "Manajemen pasien: mencari, membuat, mengedit & menggabungkan",
+     "Menjalankan laporan (panduan langkah)",
+     "Modul pemantapan mutu eksternal (PME)",
+     "Pemeriksaan nilai terkalkulasi: panduan pengguna",
+     "Pemeriksaan refleks: panduan pengguna",
+     "Pencarian & penelusuran pemesanan",
+     "Pengelolaan alikuot",
+     "Pengelolaan pengiriman & rujukan sampel",
+     "Pengelolaan reagen & bahan habis pakai",
+     "Pergantian bahasa & pengelolaan sesi",
+     "Rilis menu QA",
+     "Rujukan: mengirim sampel ke laboratorium eksternal",
+     "Status verifikasi:"
+    ],
+    "newSinceBaseline": []
+   },
+   {
+    "fr": "1733722115",
+    "frTitle": "Beranda OpenELIS Global (Bahasa Indonesia)",
+    "tr": "1733722115",
+    "trTitle": "Beranda OpenELIS Global (Bahasa Indonesia)",
+    "notInUi": [
+     "DIGI-UW/OpenELIS-Global-2",
+     "Dapatkan bantuan",
+     "Dapatkan bantuan & tetap mutakhir",
+     "Navigasi pilih jalur Anda",
+     "Navigasi produk OpenELIS",
+     "Pantau & tetap mutakhir",
+     "Pantau halaman ini",
+     "docs.openelis-global.org",
+     "talk.openelis-global.org"
+    ],
+    "newSinceBaseline": []
+   },
+   {
+    "fr": "1733525508",
+    "frTitle": "Memasukkan pemesanan klinis",
+    "tr": "1733525508",
+    "trTitle": "Memasukkan pemesanan klinis",
+    "notInUi": [
+     "+ Add new organization \"…\"",
+     "+ Add new provider \"…\"",
+     "Atau daftarkan pasien baru.",
+     "Atur penanganan sampel jika berlaku.",
+     "Halaman ini menjelaskan OpenELIS 3.3.0.",
+     "Periksa kemungkinan kecocokan.",
+     "Periksa nomor registrasi.",
+     "Pilih program, jika situs Anda menggunakannya.",
+     "Scan barcode or enter lab number",
+     "Sedang dikerjakan.",
+     "Tambahkan informasi klinis (opsional).",
+     "Tentukan dokter pengirim.",
+     "Tentukan tempat pengirim.",
+     "To continue to Prepare Samples"
+    ],
+    "newSinceBaseline": []
+   },
+   {
+    "fr": "1733492739",
+    "frTitle": "📖 Panduan Pengguna",
+    "tr": "1733492739",
+    "trTitle": "📖 Panduan Pengguna",
+    "notInUi": [
+     "Di laboratorium Anda",
+     "Masukan dokumentasi",
+     "Mulai dari sini",
+     "OpenELIS Talk"
+    ],
+    "newSinceBaseline": []
+   },
+   {
+    "fr": "1733460010",
+    "frTitle": "🚀 Untuk tim implementasi",
+    "tr": "1733460010",
+    "trTitle": "🚀 Untuk tim implementasi",
+    "notInUi": [
+     "AHRI: Ethiopia",
+     "Alat analisis (analyzer)",
+     "Cara menerjemahkan OpenELIS",
+     "Configuration Initializer",
+     "DIGI-UW/OpenELIS-Global-2 GitHub",
+     "Integrasi OpenELIS: Odoo",
+     "Integrasi OpenMRS",
+     "Madagaskar",
+     "Masalah operasional setelah peluncuran",
+     "Memasang OpenELIS Global",
+     "Memperbarui OpenELIS 3.x dan 2.x",
+     "Memperbarui dari 2.x ke 2.7",
+     "Mengonfigurasi file properti untuk Consolidated Server",
+     "Penyiapan Single Sign On",
+     "Persyaratan teknis server dan komputer kerja",
+     "Praktik terbaik implementasi",
+     "SILNAS: Indonesia",
+     "Untuk petugas laboratorium",
+     "talk.openelis-global.org"
+    ],
+    "newSinceBaseline": []
+   },
+   {
+    "fr": "1733459990",
+    "frTitle": "Admin: Mengelola akun pengguna",
+    "tr": "1733459990",
+    "trTitle": "Admin: Mengelola akun pengguna",
+    "notInUi": [
+     "Copy Permissions From User",
+     "dinonaktifkan, bukan dihapus"
+    ],
+    "newSinceBaseline": []
+   },
+   {
+    "fr": "1733361674",
+    "frTitle": "Mendaftarkan pasien baru",
+    "tr": "1733361674",
+    "trTitle": "Mendaftarkan pasien baru",
+    "notInUi": [
+     "3.3.0-SNAPSHOT",
+     "Patient ID / Clinic ID / UR number",
+     "Patient age required",
+     "Patient sex required",
+     "Primary phone",
+     "Sedang dalam pengerjaan."
+    ],
+    "newSinceBaseline": []
+   },
+   {
+    "fr": "1733328902",
+    "frTitle": "Manajemen pasien",
+    "tr": "1733328902",
+    "trTitle": "Manajemen pasien",
+    "notInUi": [
+     "3.3.0-SNAPSHOT",
+     "Sedang dikerjakan."
+    ],
+    "newSinceBaseline": []
+   },
+   {
+    "fr": "1733263383",
+    "frTitle": "Memasukkan dan menyimpan hasil",
+    "tr": "1733263383",
+    "trTitle": "Memasukkan dan menyimpan hasil",
+    "notInUi": [
+     "Analyser",
+     "Baca barisnya.",
+     "Berdasarkan instalasi lab.",
+     "Berdasarkan nomor registrasi.",
+     "Halaman ini menjelaskan OpenELIS 3.3.0.",
+     "Koreksi nilai yang telah disimpan, jika diperlukan.",
+     "Reagents, QC & Controls",
+     "Reference & Context",
+     "Selesaikan baris yang tersisa.",
+     "Signature Meaning",
+     "Simpan baris, dan berikan tanda tangan jika diminta.",
+     "Tambahkan rincian jika diperlukan.",
+     "Temukan pemeriksaan yang akan diisi hasilnya."
+    ],
+    "newSinceBaseline": []
+   },
+   {
+    "fr": "1733165063",
+    "frTitle": "🆘 Mendapatkan bantuan",
+    "tr": "1733165063",
+    "trTitle": "🆘 Mendapatkan bantuan",
+    "notInUi": [
+     "Cara tercepat:",
+     "Cari dulu sebelum bertanya.",
+     "Jelaskan secara spesifik.",
+     "Jika Anda dapat mengedit:",
+     "Komunitas",
+     "Komunitas ini bersifat sukarela.",
+     "Pantau & Tetap Terkini",
+     "Perbarui utas saat Anda menemukan jawabannya.",
+     "Sertakan versi Anda.",
+     "Slack Komunitas OpenELIS",
+     "Tunjukkan apa yang sudah Anda coba.",
+     "jangan membuat issue GitHub publik."
+    ],
+    "newSinceBaseline": []
+   },
+   {
+    "fr": "1733132303",
+    "frTitle": "Tentang OpenELIS Global",
+    "tr": "1733132303",
+    "trTitle": "Tentang OpenELIS Global",
+    "notInUi": [
+     "\"Model Jam Pasir\" (Hourglass Model)",
+     "1.000 laboratorium",
+     "18,7 juta pasien",
+     "Alur kerja adaptif",
+     "Barang Publik Digital (Digital Public Good)",
+     "Digital Initiatives Group (DIGI) di University of Washington",
+     "Dikelola oleh:",
+     "HL7 FHIR R4",
+     "Integrasi alat analisis yang luas",
+     "Interoperabilitas semantik",
+     "Keamanan tingkat enterprise",
+     "OpenELIS Global",
+     "Pengelolaan dan dampak yang telah terbukti",
+     "Standar informatika laboratorium yang dapat diskalakan",
+     "Terakhir ditinjau:",
+     "dampak yang telah terbukti selama lebih dari 15 tahun"
+    ],
+    "newSinceBaseline": []
+   },
+   {
+    "fr": "1732968452",
+    "frTitle": "⚙️ Untuk administrator sistem dan operator",
+    "tr": "1732968452",
+    "trTitle": "⚙️ Untuk administrator sistem dan operator",
+    "notInUi": [
+     "GitHub Issues",
+     "Konfigurasi pencadangan",
+     "Memperbarui OpenELIS 3.x dan 2.x",
+     "Memperbarui dari 2.x ke 2.7",
+     "Memperbarui dari OpenELIS Global 1.x ke 2.x",
+     "Menerapkan Consolidated Server",
+     "Menyiapkan failover ketersediaan tinggi",
+     "Migrasi kata sandi",
+     "OpenELIS Talk",
+     "Pemecahan masalah",
+     "Vault 1Password"
+    ],
+    "newSinceBaseline": []
+   }
+  ]
+ },
+ "actions": {
+  "retranslate changed sections": 1
+ }
+}

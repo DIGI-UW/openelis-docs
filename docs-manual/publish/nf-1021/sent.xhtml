@@ -1,0 +1,93 @@
+<ac:structured-macro ac:name="note" ac:schema-version="1"><ac:rich-text-body><p><strong>Work in progress.</strong> This page is published before its review is finished so you can use it now. It is waiting for review, so details may still change. If something on your screen does not match, add a comment to this page.</p></ac:rich-text-body></ac:structured-macro>
+
+<h2>At a glance</h2>
+<table><tbody>
+<tr><th>Purpose</th><td>See every message the laboratory sent or tried to send, find out why one failed, and send it again.</td></tr>
+<tr><th>You'll end up with</th><td>A filtered list of messages with their recipient, channel, status and attempts, and a resent message where one was needed.</td></tr>
+<tr><th>Who does this</th><td>Laboratory managers, reporting staff and system administrators. Access is set by user permissions and can be configured by your administrator.</td></tr>
+<tr><th>Before you start</th><td>At least one channel (Email, SMS or WhatsApp) should be set up by an administrator, or every message will show as Failed.</td></tr>
+<tr><th>Where</th><td>Main menu → Reports → Routine → Sent Messages</td></tr>
+</tbody></table>
+
+<h2>Overview</h2>
+<p>Sent Messages is the delivery log for the laboratory. The page describes itself as <em>Every message the laboratory sent or tried to send: reports, alerts, notices, notification triggers and channel tests</em>. Each message is one row, with the time, the kind of message (Product), the lab number it relates to, a masked recipient, the channel, the delivery status and the number of attempts. Expanding a row shows the message itself and each delivery attempt. Channels are set up by an administrator under Notifications → Channels (see Step 5).</p>
+<ac:structured-macro ac:name="info"><ac:rich-text-body><p>On the instance used for this page no channel was set up, so every message shown is <strong>Failed</strong>, and the only messages present were channel tests and one notification. A successful send and the Report, Alert and Ready notice products have not yet been verified on a live instance.</p></ac:rich-text-body></ac:structured-macro>
+
+<h2>Step 1: Open Sent Messages and filter the list</h2>
+<p>Go to Main menu → Reports → Routine → Sent Messages. The list loads on open, newest first.</p>
+<p>Above the list are the filters:</p>
+<ul>
+<li><strong>Product</strong>: All, Report, Alert, Ready notice, Notification or Test.</li>
+<li><strong>Status</strong>: All, Queued, Sent, Failed or Skipped.</li>
+<li><strong>Channel</strong>: All, Email, SMS or WhatsApp.</li>
+<li><strong>From</strong> and <strong>To</strong> dates, <strong>Lab Number</strong> and <strong>Recipient</strong>.</li>
+</ul>
+<p>Set the filters and press <strong>Search</strong>. <strong>Clear filters</strong> appears once a filter is set.</p>
+<p>The list has the columns <strong>Time</strong>, <strong>Product</strong>, <strong>Lab number</strong>, <strong>Recipient</strong>, <strong>Channel</strong>, <strong>Status</strong>, <strong>Attempts</strong>, <strong>Sent by</strong> and <strong>Action</strong>. Recipients are masked (for example <em>re•••@example.org</em> or <em>+675•••••000</em>). A failed message shows the reason under its status, for example <em>Email is not set up</em>. Messages that are not tied to an order show a dash in Lab number.</p>
+<p>{{IMG:01-list.png}}</p>
+<p><em>Figure 1. Sent Messages filtered to Product Test: four channel tests by email and SMS, each Failed because the channel is not set up, with one attempt each.</em></p>
+
+<h2>Step 2: Read a message and its attempts</h2>
+<p>Press the arrow at the start of a row. The expanded row shows the <strong>Subject</strong> and <strong>Message</strong> that were sent, and under <strong>Attempts</strong> each delivery attempt with its time, channel, status and reason.</p>
+<p>{{IMG:02-details.png}}</p>
+<p><em>Figure 2. An expanded channel test: the subject "OpenELIS test message", the message text, and one attempt by Email that Failed with "Email is not set up".</em></p>
+
+<h2>Step 3: Send a message again</h2>
+<p>Press <strong>Resend</strong> on the row. A notification reads <em>Message queued again.</em> and a new row for the same recipient and channel appears at the top of the list with its own time. The original row is kept unchanged.</p>
+<p>{{IMG:03-after-resend.png}}</p>
+<p><em>Figure 3. After Resend: a new row at 5:46:38 PM for the same recipient above the original at 5:46:25 PM. With email not set up, the new row is Failed with 0 attempts.</em></p>
+
+<h2>Step 4: Find failed messages on one channel</h2>
+<p>To check one channel, set <strong>Status</strong> to Failed and <strong>Channel</strong> to the channel, leave <strong>Product</strong> at All, and press <strong>Search</strong>.</p>
+<p>{{IMG:04-filter.png}}</p>
+<p><em>Figure 4. Status Failed and Channel SMS: one SMS channel test, Failed because SMS is not set up.</em></p>
+
+<h2>Step 5: Check the channels (administrators)</h2>
+<p>Channels are set up once and used by every message the laboratory sends. On the Notifications page (breadcrumb Home / Admin Management / Notifications), the <strong>Channels</strong> tab lists <strong>Email</strong>, <strong>SMS</strong> and <strong>WhatsApp</strong>, each with its status, <em>Last successful send</em>, <strong>Send test</strong> and <strong>Edit</strong>. The page also has the tabs <strong>Triggers</strong>, <strong>Templates</strong> and <strong>Delivery Settings</strong>.</p>
+<p>{{IMG:05-channels.png}}</p>
+<p><em>Figure 5. Notifications, Channels tab: Email, SMS and WhatsApp all Not set up, with Last successful send: Never.</em></p>
+<p><strong>Send test</strong> opens <em>Send a test message</em> with an <strong>Address</strong> field and <strong>Close</strong> and <strong>Send</strong> buttons. When the channel is not set up, Send shows the reason in the dialog (for example <em>Email is not set up</em>), and the test is recorded on Sent Messages with Product <strong>Test</strong>.</p>
+<p>{{IMG:06-send-test.png}}</p>
+<p><em>Figure 6. Send a test message for Email: the address entered and the message "Email is not set up" after Send.</em></p>
+
+<h2>Field reference</h2>
+<table><tbody>
+<tr><th>Field or control</th><th>What it shows or does</th></tr>
+<tr><td>Product</td><td>Filter and column: Report, Alert, Ready notice, Notification or Test. A notification also shows its event code (for example EQA_FOLLOWUP).</td></tr>
+<tr><td>Status</td><td>Filter: Queued, Sent, Failed or Skipped. Column: the delivery status, with the reason under a failure.</td></tr>
+<tr><td>Channel</td><td>Email, SMS or WhatsApp.</td></tr>
+<tr><td>From, To</td><td>Date range for the message time.</td></tr>
+<tr><td>Lab Number</td><td>Finds messages for one order. A dash in the column means the message is not tied to an order.</td></tr>
+<tr><td>Recipient</td><td>Filter by recipient. The column shows the address or number masked.</td></tr>
+<tr><td>Attempts</td><td>Number of delivery attempts recorded for the row.</td></tr>
+<tr><td>Sent by</td><td>The user who sent the message.</td></tr>
+<tr><td>Resend</td><td>Queues the message again as a new row.</td></tr>
+<tr><td>Subject, Message, Attempts (expanded row)</td><td>The content sent and each attempt with time, channel, status and reason.</td></tr>
+</tbody></table>
+
+<h2>Tips</h2>
+<ul>
+<li>If every message is Failed with <em>Email is not set up</em> or <em>SMS is not set up</em>, ask your administrator to set up the channel, then use Resend.</li>
+<li>Resend creates a new row rather than updating the old one, so a message can appear more than once. Use the time and the Attempts column to tell them apart.</li>
+<li>A resent message that could not be attempted shows <strong>Failed</strong> with <strong>0</strong> attempts. The notification row on the test server showed the same combination. Treat the reason text, not the attempt count, as the explanation.</li>
+<li>The breadcrumb on this page reads Home / Sent Messages, without Reports, although the page is opened from the Reports menu.</li>
+</ul>
+
+<h2>Not yet available</h2>
+<ul>
+<li>Email delivery of patient reports from the Report Print Queue, and delivery of Alerts and Ready notices: the products are listed in the filter, but no such messages were present to verify.</li>
+<li>Viewing the full recipient address on this page; recipients are masked.</li>
+<li>Exporting the message list.</li>
+</ul>
+
+<h2>Provenance</h2>
+<table><tbody>
+<tr><th>Status</th><td>Draft for review</td></tr>
+<tr><th>Instance</th><td>testing.openelis-global.org, header version <em>3.4.0-SNAPSHOT</em> (3.3.0 feature OGC-439, result delivery foundation: channels, outbox and Sent Messages)</td></tr>
+<tr><th>Routes</th><td>/SentMessages; /MasterListsPage/notificationTriggerConfig/channels</td></tr>
+<tr><th>Date</th><td>21 October 2026</td></tr>
+<tr><th>Data</th><td>Channel tests sent from the Channels tab to reserved example.org addresses and a placeholder number; no channel was set up, so nothing left the server.</td></tr>
+<tr><th>Driven</th><td>Open the list; Product, Status and Channel filters with Search; expand a row; Resend; Send test on the Channels tab (Email and SMS).</td></tr>
+<tr><th>Observed only</th><td>From, To, Lab Number and Recipient filters; the Notification row (EQA_FOLLOWUP); the Triggers, Templates and Delivery Settings tabs; Edit on a channel.</td></tr>
+<tr><th>Unverified</th><td>A successful send (status Sent); Queued and Skipped statuses; Report, Alert and Ready notice messages; channel setup through Edit; the Main menu entry for the Notifications page (opened by route).</td></tr>
+</tbody></table>

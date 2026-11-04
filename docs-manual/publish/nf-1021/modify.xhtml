@@ -1,0 +1,78 @@
+<ac:structured-macro ac:name="note" ac:schema-version="1"><ac:rich-text-body><p><strong>Work in progress.</strong> This page is published before its review is finished so you can use it now. It is waiting for review, so details may still change. If something on your screen does not match, add a comment to this page.</p></ac:rich-text-body></ac:structured-macro>
+
+<h2>At a glance</h2>
+<table><tbody>
+<tr><th>Purpose</th><td>Add tests to an order that is already saved, using search, tags or a whole panel; and know when the requesting provider must be entered on a new clinical order.</td></tr>
+<tr><th>You'll end up with</th><td>Tests added to an existing sample, and clinical orders saved with or without a requesting provider as your laboratory has configured.</td></tr>
+<tr><th>Who does this</th><td>Reception and laboratory staff (orders), administrators (Order Entry Configuration). Access is set by user permissions and can be configured by your administrator.</td></tr>
+<tr><th>Before you start</th><td>The lab number of the order to change; for the setting, administrator access.</td></tr>
+<tr><th>Where</th><td>Main menu → Order → Edit Order; Main menu → Admin → General Configurations → Order Entry Configuration; Main menu → Order → Add Clinical Order → Enter Order</td></tr>
+</tbody></table>
+
+<h2>Part A: Add tests to an existing order</h2>
+<p>When you add tests to a sample that is already on an order, you can now search for a test, see your choices as tags, and add a whole panel at once.</p>
+
+<h3>Step 1: Open the order and go to Available Tests</h3>
+<p>Go to Main menu → Order → Edit Order. The page is titled <strong>Modify Order</strong>. Under <strong>Search By Accession Number</strong>, enter the lab number and press <strong>Submit</strong>. The order opens at <strong>Test Request</strong> with the steps Program Selection, Add Sample and Add Order. Press <strong>Next</strong> to reach the sample step, which shows <strong>Current Tests</strong> and, below it, <strong>Available Tests</strong> for each sample (for example <em>DEV01260000000001250-1 (Serum)</em>).</p>
+
+<h3>Step 2: Search for a test</h3>
+<p>Under <strong>Search through the available tests</strong>, type part of the test name in <strong>Choose Available Test</strong>. Matching tests are listed under the box; pick one to add it. Tests already on the sample are not offered (here Total cholesterol is not in the list).</p>
+<p>{{IMG:01-mo-search.png}}</p>
+<p><em>Figure 1. Available Tests for a Serum sample: "chol" typed in the test search, with HDL cholesterol offered below the box, above the full list of test checkboxes.</em></p>
+
+<h3>Step 3: Add a panel</h3>
+<p>Under <strong>Order Panels</strong>, tick a panel, or search for one in <strong>Choose Available panel</strong>. The panel appears as a green tag under Order Panels, and its tests are ticked in the test list and shown as tags above it. Each tag has an <strong>×</strong> to remove it.</p>
+<p>{{IMG:02-mo-panel.png}}</p>
+<p><em>Figure 2. The Bilan Biochimique panel ticked: the panel tag, and tags for Amylase, Creatinine, GOT/ASAT, GPT/ALAT, HDL cholesterol and Triglicerides, which are also ticked in the list.</em></p>
+
+<h3>Step 4: Save</h3>
+<p>Press <strong>Next</strong> to go to <strong>Add Order</strong>, then <strong>Submit</strong>. The page shows <em>Successfully saved</em> with a <strong>PRINT LABELS</strong> panel for the order (quantity, <strong>Print</strong>, a link to print later) and <strong>Done</strong>.</p>
+<p>{{IMG:03-mo-saved.png}}</p>
+<p><em>Figure 3. Successfully saved, with the Print Labels panel for DEV01260000000001250 and the Done button.</em></p>
+<p>Opening the order again lists the added tests under <strong>Current Tests</strong>.</p>
+<p>{{IMG:04-mo-current-tests.png}}</p>
+<p><em>Figure 4. Current Tests after saving: 7 items, with GPT/ALAT, GOT/ASAT, Creatinine, Amylase and Total cholesterol on the first page.</em></p>
+<p><strong>Tips:</strong> The Current Tests table is wider than its panel at a 1440-pixel-wide window, so its last column (<strong>Cancel Test</strong>) is cut off; scroll the table sideways to reach it. When a test chosen by search was also in a panel that was ticked and then unticked, the test's tag was removed along with the panel's tests; check the tags before saving. This was seen once and has not been confirmed.</p>
+
+<h2>Part B: The requesting provider can be optional</h2>
+<p>A new setting controls whether the requesting provider must be entered on a clinical order.</p>
+
+<h3>Step 5: Check the setting</h3>
+<p>In Admin, open General Configurations → <strong>Order Entry Configuration</strong>. The row <strong>requesterRequired</strong> reads <em>If true, Search Requester and Requester First/Last Name are required on Order Entry. Default false makes them optional.</em> On the instance documented here its value is <strong>false</strong>. To change it, select the row and press <strong>Modify</strong>.</p>
+<p>{{IMG:05-oec-config.png}}</p>
+<p><em>Figure 5. Order Entry Configuration with the requesterRequired row set to false.</em></p>
+
+<h3>Step 6: Enter an order without a provider</h3>
+<p>On Main menu → Order → Add Clinical Order → Enter Order, the <strong>Requester</strong> section has <strong>Site Search</strong> and <strong>Provider Search</strong>. <strong>Site Name</strong> is marked with a red asterisk and its help text reads <em>Type at least 2 characters to auto-search. Required for routing results back to the requesting site.</em> None of the provider fields (<strong>Provider Name</strong>, <strong>Provider Phone</strong>, <strong>First Name</strong>, <strong>Last Name</strong>, <strong>Phone</strong>, <strong>Provider Email</strong>) is marked as required.</p>
+<p>{{IMG:06-oec-requester.png}}</p>
+<p><em>Figure 6. The Requester section of Enter Order: Site Name marked required, and the Provider Search fields with no required markers.</em></p>
+<p>With requesterRequired set to false, an order with a patient, a sample type and a test but no provider can be saved: <strong>Save and exit</strong> and <strong>Save and next</strong> are both enabled, and Save and next opens Prepare Samples.</p>
+<p>{{IMG:07-oec-footer.png}}</p>
+<p><em>Figure 7. The foot of Enter Order with Total cholesterol ticked on a Serum sample and no provider entered: Save and exit and Save and next are both enabled.</em></p>
+<p><strong>Known issue:</strong> although Site Name is marked required, on the instance documented here an order with no site was also accepted. Save and next saved such an order and opened Prepare Samples, and Save and exit saved one that the Order Dashboard lists with <em>---</em> in the Facility column. Always enter the site, because results are routed back to it.</p>
+
+<h2>Field reference</h2>
+<table><tbody>
+<tr><th>Field or control</th><th>Where</th><th>What it does</th></tr>
+<tr><td>Choose Available Test</td><td>Modify Order, Available Tests</td><td>Type part of a name to list matching tests not already on the sample; pick one to add it as a tag.</td></tr>
+<tr><td>Choose Available panel and panel checkboxes</td><td>Modify Order, Order Panels</td><td>Adds a panel and ticks its tests; the panel shows as a green tag and its tests as tags.</td></tr>
+<tr><td>requesterRequired</td><td>Order Entry Configuration</td><td>true makes Search Requester and the requester's first and last name required on Order Entry; false (the default) makes them optional.</td></tr>
+<tr><td>Site Name</td><td>Enter Order, Requester</td><td>Marked required; used to route results back to the requesting site.</td></tr>
+</tbody></table>
+
+<h2>Not yet available</h2>
+<ul>
+<li>Enforcement of a required site on Enter Order on the instance documented here (see the known issue above).</li>
+</ul>
+
+<h2>Provenance</h2>
+<table><tbody>
+<tr><th>Status</th><td>Draft for review</td></tr>
+<tr><th>Instance</th><td>testing.openelis-global.org, header version <em>3.4.0-SNAPSHOT</em> (3.3.0 changes OGC-1514 / PR 4769 and OGC-1143)</td></tr>
+<tr><th>Routes</th><td>/SampleEdit and /ModifyOrder; /MasterListsPage/SampleEntryConfigurationMenu; /order/clinical/enter</td></tr>
+<tr><th>Date</th><td>21 October 2026</td></tr>
+<tr><th>Data</th><td>Anna Gabi, DEV01260000000001250 (Port Moresby General Hospital, requester Toua, Mary); Enter Order test orders DEV01260000000001251 and 1255 (no site, no provider).</td></tr>
+<tr><th>Driven</th><td>A: lab number search, Next, test search and pick, panel tick, Submit, reopen. B: read requesterRequired; Enter Order with patient, Serum and a test but no site or provider; Save and next; Save and exit.</td></tr>
+<tr><th>Observed only</th><td>Search By Patient on Modify Order; Choose Available panel search; Modify on Order Entry Configuration.</td></tr>
+<tr><th>Unverified</th><td>Changing requesterRequired to true and the resulting required fields; the panel-untick behaviour noted in step 4.</td></tr>
+</tbody></table>

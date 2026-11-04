@@ -1,0 +1,3452 @@
+{
+ "at": "2026-10-12T09:07:13Z",
+ "apply": true,
+ "toPush": 429,
+ "alreadyLive": 0,
+ "conflicts": [],
+ "notInTransifex": [],
+ "pluralNotParsed": [],
+ "pushed": 429,
+ "errors": [],
+ "changes": [
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:a9ab18e9d4a248a00c1522f431006d09:l:fr",
+   "key": "admin.labelPresets.fields.add.label",
+   "from": null,
+   "to": {
+    "other": "Ajouter un champ"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:b41ec7eeea946be10a367febc68eaef1:l:fr",
+   "key": "master.lists.page.printed",
+   "from": "Page des impressions",
+   "to": {
+    "other": "Configuration des rapports imprimés"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:ac98599861ec21bcad390db50b47cda1:l:fr",
+   "key": "order.nav.discard.changes",
+   "from": null,
+   "to": {
+    "other": "Abandonner les modifications"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:70eccc6ae5be0bf91a0270fda7794d96:l:fr",
+   "key": "result.acceptasis.trigger",
+   "from": "Valider",
+   "to": {
+    "other": "Accepter"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:af1013fdd3b40ca967344535a5831643:l:fr",
+   "key": "storage.status.disposed",
+   "from": "Rejeté",
+   "to": {
+    "other": "Éliminé"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:7489d5d58c65369f0ccdf54da5c5bdb0:l:fr",
+   "key": "button.locations.identifier.add",
+   "from": null,
+   "to": {
+    "other": "Ajouter un identifiant"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:1e9bc7f9900eecd099617b0c9a6e7646:l:fr",
+   "key": "workplan.batch.create",
+   "from": null,
+   "to": {
+    "other": "Créer un lot ({count})"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:46b00558dd1db1eada80588dec8b2aa4:l:fr",
+   "key": "analyzer.errorDashboard.acknowledgeAll",
+   "from": "Tout reconnaître",
+   "to": {
+    "other": "Tout acquitter"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:d5f80208ad0fd0f12ef05752cb54799b:l:fr",
+   "key": "barcode.print.row.button",
+   "from": null,
+   "to": {
+    "other": "Imprimer {label}"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:756ac213fe0c83997f2f56ebe94683b4:l:fr",
+   "key": "sideNav.label.qa.qc",
+   "from": null,
+   "to": {
+    "other": "CQ statistique"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:388f44667ff84cf2ea65717de5a4768f:l:fr",
+   "key": "admin.labelPresets.fieldKey.LAB_NUMBER",
+   "from": "Numéro laboratoire",
+   "to": {
+    "other": "Numéro de laboratoire"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:faed80dc9fba815e9b906c3ca4f06ca7:l:fr",
+   "key": "microbiology.release.preliminary",
+   "from": "Publication du rapport préliminaire",
+   "to": {
+    "other": "Publier le rapport préliminaire"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:05826c4782ee5fca2b76c199c6a97186:l:fr",
+   "key": "alerts.resolve.button",
+   "from": "Résolu",
+   "to": {
+    "other": "Résoudre"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:99dcace0cdf6b3a2d87c3a47313e59f7:l:fr",
+   "key": "label.referOut.action.referOut",
+   "from": "Référé à un laboratoire externe",
+   "to": {
+    "other": "Envoyer à un laboratoire de référence"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:405e538d9907ff9aa05a7315dfeeab0f:l:fr",
+   "key": "menu.genericSample.order",
+   "from": "Recevoir un échantillon",
+   "to": {
+    "other": "Demande d'examen"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:788eb3719056cc0770d6fb1506f33a33:l:fr",
+   "key": "eqa.btn.reviewSubmit",
+   "from": null,
+   "to": {
+    "other": "Vérifier et soumettre"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:054a2e922d44d08b02cc56a36d9bde1f:l:fr",
+   "key": "admin.labUnit.edit.select",
+   "from": "Sélectionner les unités de laboratoire...",
+   "to": {
+    "other": "Sélectionner l'unité de laboratoire"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:9812c5b9e04210c3a98059c5245dec66:l:fr",
+   "key": "workplan.batch.action.complete",
+   "from": "Terminé",
+   "to": {
+    "other": "Terminer"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:d0895caae29bbe722386c0b2e6b7adf1:l:fr",
+   "key": "referral.metric.outstanding",
+   "from": "Exceptionnel",
+   "to": {
+    "other": "En attente"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:5932cc59f92b86568739ee1888cfdafe:l:fr",
+   "key": "button.locations.area.expandAll",
+   "from": null,
+   "to": {
+    "other": "Tout développer"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:f3b9beaa677b3b30908b68d80e970feb:l:fr",
+   "key": "result.acceptasis.confirm",
+   "from": "Confirmer la validation",
+   "to": {
+    "other": "Confirmer l'acceptation"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:f6e082bbba71789c73301d87d945e6f9:l:fr",
+   "key": "microbiology.admin.breakpoints.activate",
+   "from": "Activer le mode standard",
+   "to": {
+    "other": "Activer le référentiel"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:cc0dbf9c89776c58e52a95fcec95aad2:l:fr",
+   "key": "order.generate.barcode",
+   "from": "Générer un code-barres",
+   "to": {
+    "other": "Générer un code-barres et enregistrer"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:b500d571c8b57f199bd70917642ebf23:l:fr",
+   "key": "label.locations.column.level",
+   "from": null,
+   "to": {
+    "other": "Niveau"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:5f8682c5d451b80a2127bb578ecccbdd:l:fr",
+   "key": "label.lastPrinted",
+   "from": "Dernière impression : {date} {heure} par {utilisateur}",
+   "to": {
+    "other": "Dernière impression : {date} {time} par {user}"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:225ea887cc9075d4d60dce64b6e10674:l:fr",
+   "key": "banner.menu.eqa.labPerformance",
+   "from": null,
+   "to": {
+    "other": "Performance du laboratoire"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:65a5b93194b4b7ad93a179ae723e0ba7:l:fr",
+   "key": "banner.menu.generic.sample.edit",
+   "from": "Modifier l'échantillon",
+   "to": {
+    "other": "Modifier une demande"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:109dfb7e0c5934e9aa617a1beb47ee0b:l:fr",
+   "key": "analyzerType.mapping.notStarted",
+   "from": "Non répertorié",
+   "to": {
+    "other": "Non mappé"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:9480d861397ce1a61b8afb224c550214:l:fr",
+   "key": "notebook.tab.metadata",
+   "from": "Données volumineuses ",
+   "to": {
+    "other": "Métadonnées"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:6edb2b4d9e8395111b989bb000d88716:l:fr",
+   "key": "sideNav.label.qa.qi.dashboard",
+   "from": null,
+   "to": {
+    "other": "Tableau de bord des indicateurs qualité"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:b7d5dc77a115ce8c8d741584074339a0:l:fr",
+   "key": "label.validation.review.action.refer",
+   "from": "Consultez cette analyse",
+   "to": {
+    "other": "Envoyer cette analyse"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:ba24500210c17f88e1eecf35c61990e4:l:fr",
+   "key": "activityReportByTestSection",
+   "from": "Rapport d'activités par section de test",
+   "to": {
+    "other": "Rapport d'activités par unité de laboratoire"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:29a48bc58137128121c44576da51c5b0:l:fr",
+   "key": "disposal.button",
+   "from": "Disposer des lots ",
+   "to": {
+    "other": "Éliminer le lot"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:452060c1b442f985a01b470f1dc54477:l:fr",
+   "key": "analyzerType.mappingEditor.state.unresolved",
+   "from": "Cartographie des besoins",
+   "to": {
+    "other": "Mappage requis"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:49b687bd664976ce0e06a457827b90a9:l:fr",
+   "key": "button.complianceStandard.copy",
+   "from": "Copier le modèle d'étalon",
+   "to": {
+    "other": "Copier la norme"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:6cb7ea2b6d48bcd44f5ce4c08f2f2ce2:l:fr",
+   "key": "common.editOrder",
+   "from": "Modifier l'échantillon",
+   "to": {
+    "other": "Modifier une demande"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:9fb454d6db9d838496736c438d8f5a77:l:fr",
+   "key": "import.header.labNo",
+   "from": "laboratoire non",
+   "to": {
+    "other": "N° de laboratoire"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:3fed0ec238219120970a0ea9fd53ad7d:l:fr",
+   "key": "stock.status.expiring",
+   "from": "Expiration",
+   "to": {
+    "other": "Expire bientôt"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:c706a8eadcc6d9cbc523a16a276ba513:l:fr",
+   "key": "nextLabel.action.button",
+   "from": "Suivant",
+   "to": {
+    "other": "Étiquette suivante"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:8f2eb9d050340a467e560ba980b1d396:l:fr",
+   "key": "storage.tab.rooms",
+   "from": "Chambres",
+   "to": {
+    "other": "Salles"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:a5ccb3a6e7bb9b808df911dcd16221b1:l:fr",
+   "key": "label.testCatalog.sampleResults.copyFromButton",
+   "from": "Copier de « test »",
+   "to": {
+    "other": "Copier depuis une analyse"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:768e6ba30a689e0219f44dd21e1500e2:l:fr",
+   "key": "button.locations.deactivate.only",
+   "from": null,
+   "to": {
+    "other": "Désactiver uniquement {name}"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:6f16d49dea7648678684c837e77bee7f:l:fr",
+   "key": "reporting.design.change",
+   "from": "Modifications",
+   "to": {
+    "other": "Modifier"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:e5daf2d615fea12a12bb8075de5ce8a7:l:fr",
+   "key": "admin.labelPresets.fieldKey.COLLECTION_DATETIME",
+   "from": "Date et Heure de Prélèvement",
+   "to": {
+    "other": "Date et heure de prélèvement"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:f598d1244c4aaa80f44eb49fb23fa934:l:fr",
+   "key": "notebook.tab.workflow",
+   "from": "Plan de travail",
+   "to": {
+    "other": "Flux de travail"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:2b7d8ffce0feac2fa8ad272eda8680ce:l:fr",
+   "key": "analyzerType.button.duplicate",
+   "from": "Profil dupliqué",
+   "to": {
+    "other": "Dupliquer le profil"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:2dc4b23add529092a0f1370e891a81fa:l:fr",
+   "key": "workplan.batch.title",
+   "from": null,
+   "to": {
+    "other": "Plan de travail par lot"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:ca2321a7365779698bf91eced1d8270b:l:fr",
+   "key": "analyzer.fieldMapping.activationModal.viewPendingMessages",
+   "from": "View Pending Messages",
+   "to": {
+    "other": "Voir les messages en attente"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:9c322a8b4324aba0271c77e8392c1277:l:fr",
+   "key": "label.locations.import.decision.new",
+   "from": null,
+   "to": {
+    "other": "Créer un nouvel enregistrement"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:8db8e7c0d2d43008b53b5848ba6bb108:l:fr",
+   "key": "patient.merge.phonesDiffer",
+   "from": "Les numéros de téléphone diffèrent : {primaire} vs {secondaire}",
+   "to": {
+    "other": "Les numéros de téléphone diffèrent : {primary} vs {secondary}"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:aa4c03ab56fdbfd2f383a9701d2ee9e6:l:fr",
+   "key": "microbiology.worklist.ast.resultsInBadge",
+   "from": "Résultats dans",
+   "to": {
+    "other": "Résultats reçus"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:af0f5d392fa8cdfe2aac6ebc1188649d:l:fr",
+   "key": "microbiology.ast.useForReporting",
+   "from": "À utiliser pour l'établissement de rapports",
+   "to": {
+    "other": "Utiliser pour le rapport"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:3605ee04043b959970eb5ea8613f19bc:l:fr",
+   "key": "sidenav.workflow.resultsValidation",
+   "from": null,
+   "to": {
+    "other": "Validation des résultats"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:8e6748934efa18592b3a8fece261caf2:l:fr",
+   "key": "microbiology.case.action.markNoGrowth",
+   "from": "Mark n'est pas prêt à se développer",
+   "to": {
+    "other": "Marquer prêt sans croissance"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:61110ad21c408ed3e621da48fd2bd92e:l:fr",
+   "key": "banner.menu.eqa.inHouse",
+   "from": null,
+   "to": {
+    "other": "Évaluation interne à l'aveugle"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:31108c215b5314573e3067cf02dcf371:l:fr",
+   "key": "label.results.reagents.recordUse",
+   "from": "Utilisation record",
+   "to": {
+    "other": "Enregistrer l'utilisation"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:53aabb29d6fb1d3f063b455afa2bc6a2:l:fr",
+   "key": "microbiology.enum.CASE_FINALIZATION_REQUIRED",
+   "from": "Dossier finalisé",
+   "to": {
+    "other": "Finalisation du dossier requise"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:6af252ef3fffec0eecfc841e86aed745:l:fr",
+   "key": "admin.labUnit.domain.confirm.heading",
+   "from": "Modifier le domaine de l’unité de laboratoire?",
+   "to": {
+    "other": "Modifier le domaine de l’unité de laboratoire ?"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:2f59945bc0eb23aa17d1d4d68085a92e:l:fr",
+   "key": "accept.action.button",
+   "from": "Valider",
+   "to": {
+    "other": "Accepter"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:0c861566bb3453a68c31396405a86228:l:fr",
+   "key": "sample.management.status.inUse",
+   "from": "Utilisé",
+   "to": {
+    "other": "En cours d'utilisation"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:0ded68247da39222f0707ba45536a822:l:fr",
+   "key": "master.lists.page.barcode",
+   "from": "Page des codes-barres",
+   "to": {
+    "other": "Configuration des codes-barres"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:ac728c0a1743df7c1d01e50d9097483a:l:fr",
+   "key": "admin.labelPresets.fieldKey.PATIENT_ID",
+   "from": "Identifiant du Patient",
+   "to": {
+    "other": "Identifiant du patient"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:9d4dadb0b40f3f9bedd4adf19800772a:l:fr",
+   "key": "address.search.no.results",
+   "from": "Aucune adresse n'a été trouvée pour « {term} ».",
+   "to": {
+    "other": "Aucune adresse n'a été trouvée pour « {term} »"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:b0784f361514f6409e185732480da362:l:fr",
+   "key": "label.testCatalog.sampleResults.removeOption",
+   "from": "Option « Retirer »",
+   "to": {
+    "other": "Retirer l'option"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:187506d4fde90cd50d0d66b35d68f6bf:l:fr",
+   "key": "order.accept",
+   "from": "Valider",
+   "to": {
+    "other": "Accepter"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:2327b8e01634e7b6bf485578a2f56385:l:fr",
+   "key": "sampleManagement.test.status.CANCELLED",
+   "from": "Annuler",
+   "to": {
+    "other": "Annulé"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:c58ea584f21c7710af655b06b005c8b6:l:fr",
+   "key": "label.locations.import.decision.use",
+   "from": null,
+   "to": {
+    "other": "Utiliser cet enregistrement"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:eba1f2162937ed02b62d2f667569142f:l:fr",
+   "key": "microbiology.release.final",
+   "from": "Publication du rapport final",
+   "to": {
+    "other": "Publier le rapport final"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:60cea4e8c5282e0ae09efa8968877921:l:fr",
+   "key": "label.printConfirmation.message",
+   "from": "Imprimer l'étiquette pour {nom}{code} ?",
+   "to": {
+    "other": "Imprimer l'étiquette pour {name}{code} ?"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:ab5e004ff9e2805ad3500dfdcf9f6e83:l:fr",
+   "key": "analyzer.setup.connect.activation.verifyMappings",
+   "from": null,
+   "to": {
+    "other": "Vérifier les correspondances"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:90440a2f1c17ff8b09c422f25ccb2d11:l:fr",
+   "key": "label.validation.lane.clear",
+   "from": "Effacer",
+   "to": {
+    "other": "Sans anomalie"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:c5d5f7667ab3c7672b6fde99d97c92c0:l:fr",
+   "key": "lot.status.IN_USE",
+   "from": "Utilisé",
+   "to": {
+    "other": "En cours d'utilisation"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:ef42bb1ee379b1e49f7549b05a4c208f:l:fr",
+   "key": "order.nav.saveExit",
+   "from": null,
+   "to": {
+    "other": "Enregistrer et quitter"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:ddcaa0e33696194825d0bb93f8ecf2ef:l:fr",
+   "key": "analyzerType.mapping.incomplete",
+   "from": "Cartographie des besoins",
+   "to": {
+    "other": "Mappage requis"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:6aaa22138a0dcfcae339fdf5d26924b3:l:fr",
+   "key": "eqa.btn.newCycle",
+   "from": null,
+   "to": {
+    "other": "Nouveau cycle"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:3d225fbe179de329766372c95fa23f5f:l:fr",
+   "key": "caseView.action.saveDraft",
+   "from": null,
+   "to": {
+    "other": "Enregistrer le brouillon"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:be457ac486e5aeee332b4e575d16bf1a:l:fr",
+   "key": "qc.instrumentDetail.analyte.violations",
+   "from": {
+    "one": "Nombre de violations",
+    "many": "Nombre de violations",
+    "other": "Nombre de violations"
+   },
+   "to": {
+    "one": "# violation",
+    "other": "# violations",
+    "many": "# violations"
+   },
+   "plural": true
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:d2254531fe6144d8ec451dc5b6bb542c:l:fr",
+   "key": "label.results.aliquots.labNo",
+   "from": "laboratoire non",
+   "to": {
+    "other": "N° de labo"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:9ecb65a5a556531a35bac536a1fe548e:l:fr",
+   "key": "microbiology.nce.markLost",
+   "from": "Mark a perdu",
+   "to": {
+    "other": "Marquer perdu"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:c07b863a6f5974cdd1e2784275d91250:l:fr",
+   "key": "sidenav.label.admin.locations.import",
+   "from": null,
+   "to": {
+    "other": "Importation / Exportation"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:e854369e98041d3aaa52a04d643c6879:l:fr",
+   "key": "label.locations.column.serviceType",
+   "from": null,
+   "to": {
+    "other": "Type de service"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:a7dc1330ee50e9a35e62b16b8d3d9e6e:l:fr",
+   "key": "microbiology.amendment.status.closed",
+   "from": "Non d'amendement en cours d'examen",
+   "to": {
+    "other": "Aucune modification en cours"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:c1aa21984eb72ad2f0809d36473441a5:l:fr",
+   "key": "label.locations.column.children",
+   "from": null,
+   "to": {
+    "other": "Sous-zones"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:9e2ada6dd8c4a5f75ca02761f394d0d2:l:fr",
+   "key": "sideNav.label.qa.qms.esigLog",
+   "from": null,
+   "to": {
+    "other": "Journal des signatures électroniques"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:bfcaf493971bdd7145fc7640d33007be:l:fr",
+   "key": "analyzer.results.held.reviewMapping",
+   "from": "Vérification de la correspondance des types d’analyseurs",
+   "to": {
+    "other": "Revoir la correspondance du type d'analyseur"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:ae8c69fc90a7475a06a41f7b6fd3dd04:l:fr",
+   "key": "microbiology.admin.breakpoints.view",
+   "from": "Voir le règlement",
+   "to": {
+    "other": "Voir les règles"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:a1659d9c70280de1a3d6c9793c3782f1:l:fr",
+   "key": "notebook.status.archived",
+   "from": "Saisie des archives",
+   "to": {
+    "other": "Archiver l'entrée"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:12ec138d2a7d1f9cde02cdb0637811d7:l:fr",
+   "key": "master.lists.page.org",
+   "from": "Page de l'organisation",
+   "to": {
+    "other": "Menu des organisations"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:6d70c4e96fa53af8ce706f4f7c27ffab:l:fr",
+   "key": "label.locations.referral.evaluation",
+   "from": null,
+   "to": {
+    "other": "En cours d'évaluation"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:c51c4530ea1d7acaa989ad80cabf7701:l:fr",
+   "key": "sidenav.workflow.orderTest",
+   "from": null,
+   "to": {
+    "other": "Demander une analyse"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:be1f74bb04bc897ede4899669144bdf0:l:fr",
+   "key": "master.lists.page.test.management",
+   "from": "Page de gestion des tests",
+   "to": {
+    "other": "Gestion des analyses"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:cae2a895193783f199cb4edfd15042dd:l:fr",
+   "key": "microbiology.enum.SUSCEPTIBLE",
+   "from": "Susceptible",
+   "to": {
+    "other": "Sensible"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:bcfcafb828dc98d2dd7f9a82d0dfb2b9:l:fr",
+   "key": "analyzer.deliveryIssues.state.retrying",
+   "from": null,
+   "to": {
+    "other": "Nouvelle tentative en cours"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:f32f34b0a71b6071cb147cd140402d3c:l:fr",
+   "key": "banner.menu.report.validation.backlog",
+   "from": "Compte de tests en attente de validation",
+   "to": {
+    "other": "Validation retardée"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:214e50044645a6921fc23a6f57a3c4f0:l:fr",
+   "key": "advanced.search",
+   "from": "Lancer la recherche",
+   "to": {
+    "other": "Recherche avancée"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:1eeb51a38025447709c1cbce9497c320:l:fr",
+   "key": "label.sampleType.tests.search",
+   "from": "Analyses de recherche",
+   "to": {
+    "other": "Rechercher des analyses"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:4c96628532882e3e4a276fec70a4bf22:l:fr",
+   "key": "analyzer.results.held.tag",
+   "from": "Tenu",
+   "to": {
+    "other": "Retenu"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:4348fcaf6114882611969ddb25ddabb0:l:fr",
+   "key": "analyzerType.mappingEditor.state.bound",
+   "from": "Cartographié",
+   "to": {
+    "other": "Mappé"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:65c3b59ae1287ff93b705675d102d0b8:l:fr",
+   "key": "referral.action.acceptToAnalysis",
+   "from": "Valider l'analyse",
+   "to": {
+    "other": "Accepter dans l'analyse"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:0b4fb9b866683eeda31ac474c8d20503:l:fr",
+   "key": "label.printHistory.byUser",
+   "from": "Par {utilisateur}",
+   "to": {
+    "other": "Par {user}"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:dc66efb0f39b211f40b7bbb4a72109b0:l:fr",
+   "key": "banner.menu.eqa.providerFollowups",
+   "from": null,
+   "to": {
+    "other": "Suivi des participants"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:82f4e6ec341cbd56e1696eb5a7b414d7:l:fr",
+   "key": "admin.labelPresets.created",
+   "from": null,
+   "to": {
+    "other": "Modèle créé"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:1137d08bacdf2c98b66695fc3f38efba:l:fr",
+   "key": "label.results.sampleStatus.disposed",
+   "from": "Rejeté",
+   "to": {
+    "other": "éliminé"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:f6555132a6ac64d7f8080ee2019de9f4:l:fr",
+   "key": "inventory.reorderStatus.buildingData",
+   "from": null,
+   "to": {
+    "other": "Collecte de données en cours"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:4758f2c822e3d4c7a5d44f435dbced54:l:fr",
+   "key": "sample.management.aliquot.error.quantityPerAliquotTooSmall",
+   "from": "La quantité par aliquote ({quantité par aliquot}) serait inférieure au minimum (0,001).",
+   "to": {
+    "other": "La quantité par aliquote ({quantityPerAliquot}) serait inférieure au minimum (0,001)"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:efa33e84f7d809dc83e49efcfcd5b54d:l:fr",
+   "key": "analyzerType.mapping.complete",
+   "from": "Entièrement cartographié",
+   "to": {
+    "other": "Entièrement mappé"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:34cea4e64279a720524c1fe444d26620:l:fr",
+   "key": "menu.genericSample.edit",
+   "from": "Modifier l'échantillon",
+   "to": {
+    "other": "Modifier une demande"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:c1b35c433b758f5db091cf64bc7d266e:l:fr",
+   "key": "button.locations.moveWard",
+   "from": null,
+   "to": {
+    "other": "Déplacer"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:190076c514de765cb9e274fbf06e7953:l:fr",
+   "key": "sidenav.moreTools",
+   "from": null,
+   "to": {
+    "other": "Plus d'outils"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:2d9fbab929964ddae208d4c386786486:l:fr",
+   "key": "sideNav.label.qa",
+   "from": null,
+   "to": {
+    "other": "Assurance qualité"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:cc3926d446e68a177598f7a47b0caf49:l:fr",
+   "key": "admin.labelPresets.field.defaultPerOrder",
+   "from": "Défaut par demande",
+   "to": {
+    "other": "Par défaut par demande"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:01ccb09c88cb3d63de2f1307169f0434:l:fr",
+   "key": "microbiology.worklist.markLost",
+   "from": "Mark a perdu",
+   "to": {
+    "other": "Marquer comme perdu"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:66623f2ce877063955b459bb31605400:l:fr",
+   "key": "patient.merge.emailsDiffer",
+   "from": "L'adresse électronique diffère : {primaire} vs {secondaire}",
+   "to": {
+    "other": "L'adresse électronique diffère : {primary} vs {secondary}"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:0b876a3590ea3086d39905585934f5de:l:fr",
+   "key": "microbiology.enum.MANUAL_NOTE",
+   "from": "Remarque relative au Manuel",
+   "to": {
+    "other": "Note manuelle"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:4771db43d11f1a53db01eaa6c82805e1:l:fr",
+   "key": "compliance.button.openAdmin",
+   "from": "Administration des normes de conformité ouvertes",
+   "to": {
+    "other": "Ouvrir l'administration des normes de conformité"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:00179f36f33563f2ca3249cef9671149:l:fr",
+   "key": "master.lists.page.order.entry",
+   "from": "Page de saisie de commande",
+   "to": {
+    "other": "Configuration de la saisie des demandes"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:3ff2c824e91fc9e4e78a5686b6bddee1:l:fr",
+   "key": "analyzer.setup.connect.title",
+   "from": "Se connecter à la connexion",
+   "to": {
+    "other": "Connexion"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:8a1bacd632a0547fac328c56ad0e234c:l:fr",
+   "key": "analyzer.fieldMapping.retirementModal.retire",
+   "from": "Retire Mapping",
+   "to": {
+    "other": "Retirer la correspondance"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:f84df98e54daaf81185b36a9c739577e:l:fr",
+   "key": "nce.button.linkSelected",
+   "from": "Lien vers les échantillons sélectionnés",
+   "to": {
+    "other": "Lier les échantillons sélectionnés"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:f695bdc1c1f38a277086224831a40399:l:fr",
+   "key": "analyzer.setup.verify.continue",
+   "from": "Continuez à vous connecter",
+   "to": {
+    "other": "Continuer vers la connexion"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:e7b4087d0dd5acf95e1c28ba490704e0:l:fr",
+   "key": "sampleManagement.addTests.success",
+   "from": "{compter} test(s) ajouté(s) avec succès",
+   "to": {
+    "other": "{count} analyse(s) ajoutée(s) avec succès"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:62fdaaaca8d09e132e349aa2dbda89fa:l:fr",
+   "key": "eqa.competency.band.competent",
+   "from": null,
+   "to": {
+    "other": "Compétent"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:6c5c0087438ade0b5c21a8d90220347c:l:fr",
+   "key": "banner.menu.patient",
+   "from": "Patiente",
+   "to": {
+    "other": "Patient"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:3fe215589840695e35d9a1dc59f78c52:l:fr",
+   "key": "master.lists.page.notification",
+   "from": "Page des notifications",
+   "to": {
+    "other": "Configuration des notifications d'analyse"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:fba898d762d332c71453ecec0bf8a4a7:l:fr",
+   "key": "sampleManagement.test.status.ORDERED",
+   "from": "Ordonné",
+   "to": {
+    "other": "Demandé"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:6cac68d781b9a2a5b5e41e5ea19c34ea:l:fr",
+   "key": "microbiology.worklist.grain.ast",
+   "from": "Les courses AST",
+   "to": {
+    "other": "Exécutions AST"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:a61b6c95a79a1a4941b401ba2f2c8064:l:fr",
+   "key": "analyzer.errorDashboard.status.unacknowledged",
+   "from": "Non reconnue",
+   "to": {
+    "other": "Non acquittée"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:a4a55f4e4ae3fddc24bf3feaacc7b1bd:l:fr",
+   "key": "label.referOut.action.save",
+   "from": "Enregistrer la recommandation",
+   "to": {
+    "other": "Enregistrer l'envoi"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:6e14b5a685ba2fa94061aa76b1b77a65:l:fr",
+   "key": "lot.label.print",
+   "from": null,
+   "to": {
+    "other": "Imprimer l'étiquette"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:f9e6cd269f4cfbb72c13e765cf7746c6:l:fr",
+   "key": "inventory.board.title",
+   "from": null,
+   "to": {
+    "other": "Articles"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:5a1505c19ca01c3c72649f5c8656f051:l:fr",
+   "key": "storage.create.room.success",
+   "from": "Room \\",
+   "to": {
+    "other": "Salle \"{name}\" créée avec succès"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:2ac362aa18cd7449631ca959a4f52235:l:fr",
+   "key": "admin.programs.deactivate.success",
+   "from": null,
+   "to": {
+    "other": "{programName} désactivé"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:128192a67fb0936cb22ebc341ba23016:l:fr",
+   "key": "admin.labelPresets.editor.section.fields",
+   "from": null,
+   "to": {
+    "other": "Champs de contenu"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:a7ff4b9915af1b06c61f74609827b894:l:fr",
+   "key": "barcode.print.all.button",
+   "from": null,
+   "to": {
+    "other": "Tout imprimer"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:1c7c32ec915e6b1dc8bcc791181ec32d:l:fr",
+   "key": "notebook.status.submitted",
+   "from": "Soumis pour revue",
+   "to": {
+    "other": "Soumettre pour revue"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:e417914956c97ccef289dfe2d498dd63:l:fr",
+   "key": "activityReportByTest",
+   "from": "Rapport d'activité par test",
+   "to": {
+    "other": "Rapport d'activité par analyse"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:fe5fe205636ffc8e21e815caad8f2be0:l:fr",
+   "key": "label.results.control.capture.record",
+   "from": null,
+   "to": {
+    "other": "Enregistrer le résultat du contrôle"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:25c23910d66efd405881ea549f45714e:l:fr",
+   "key": "banner.menu.eqa.analystCompetency",
+   "from": null,
+   "to": {
+    "other": "Compétence des analystes"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:f1bc2757ac81fc86ff57c90507dc3bae:l:fr",
+   "key": "notebook.tab.entryDetails",
+   "from": "Saisie les détails ",
+   "to": {
+    "other": "Détails de l'entrée"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:8c67e8b31bb116242c989c2596b01a24:l:fr",
+   "key": "label.locations.referral.notApproved",
+   "from": null,
+   "to": {
+    "other": "Non approuvé"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:7aeeeceafc17d6613a7b10f7a8d4b2d7:l:fr",
+   "key": "sideNav.label.qa.qi.config",
+   "from": null,
+   "to": {
+    "other": "Configuration des indicateurs qualité"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:a48900cf50f8b0c54caceb74c1874148:l:fr",
+   "key": "analyzer.errorDashboard.stats.unacknowledged",
+   "from": "Non reconnue",
+   "to": {
+    "other": "Non acquittées"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:956896ef47fb47818d01086e89fe3eb0:l:fr",
+   "key": "label.locations.referral.overdue",
+   "from": null,
+   "to": {
+    "other": "Revue en retard"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:c1393541db49a9f65c3bff53e2d7b455:l:fr",
+   "key": "sidenav.label.order.sampleCheck",
+   "from": null,
+   "to": {
+    "other": "Vérification de l'échantillon"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:9717fabba44133a485f8a84986b52dbc:l:fr",
+   "key": "stock.status.quarantined",
+   "from": null,
+   "to": {
+    "other": "En quarantaine"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:d9f4b54d203fbdc87fa71b2f5f3dcf46:l:fr",
+   "key": "label.testCatalog.sampleResults.copyDiscard",
+   "from": null,
+   "to": {
+    "other": "Abandonner la configuration copiée"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:c638db5d07ccfcdbfb4a92c3e3011aba:l:fr",
+   "key": "vectorDec.button.splitIndividuals",
+   "from": "Répartition entre les particuliers →",
+   "to": {
+    "other": "Séparer en individus →"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:2429156663a9792bbdedb8f508e5df5b:l:fr",
+   "key": "gps.manual.entry.on",
+   "from": "Le",
+   "to": {
+    "other": "Activé"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:4f7dfbe8ed8c3103c022eb4e83b8ee45:l:fr",
+   "key": "add.aliquot",
+   "from": "Ajouter un Aliquote",
+   "to": {
+    "other": "Ajouter une aliquote"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:aa73c27af59df59beb3660d33ccc9274:l:fr",
+   "key": "admin.programs.questionnaire.question.addNew",
+   "from": null,
+   "to": {
+    "other": "Ajouter une nouvelle question"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:9a4735026f3b4c397178a46b031cdaed:l:fr",
+   "key": "order.sampleCheck.release",
+   "from": null,
+   "to": {
+    "other": "Libérer pour analyse"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:56d838de3a04067086b89f5cca8928a1:l:fr",
+   "key": "coldStorage.device.statusChanged",
+   "from": "Device \\",
+   "to": {
+    "other": "L'appareil « {name} » a été {status} avec succès"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:e8b09db2aa63263725ba55f1d9a972c9:l:fr",
+   "key": "sampleManagement.aliquot.submit",
+   "from": "Ajouter des notes concernant cette aliquote...",
+   "to": {
+    "other": "Créer une aliquote"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:3c350537ec68606d028d08752dd09e2e:l:fr",
+   "key": "analyzer.testMapping.submit",
+   "from": "Soumettre un message d'exemple",
+   "to": {
+    "other": "Prévisualiser le mappage"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:b4dd731ce47a78463f8de72ad4f5fd93:l:fr",
+   "key": "coldStorage.device.createdSuccess",
+   "from": "Device \\",
+   "to": {
+    "other": "L'appareil « {name} » a été créé avec succès"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:73febb660362eab4a0a7d744702c82b3:l:fr",
+   "key": "admin.label",
+   "from": "Administrateur",
+   "to": {
+    "other": "Administration"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:2c9d1546254fe2fa735f46f44d196b6d:l:fr",
+   "key": "admin.programs.list.toggle.showDeactivated",
+   "from": "Affichage désactivé",
+   "to": {
+    "other": "Afficher les désactivés"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:79ca7ea3e42a25ad52a84242a2abe502:l:fr",
+   "key": "admin.labelPresets.fieldKey.COLLECTED_BY",
+   "from": "Collecté Par",
+   "to": {
+    "other": "Prélevé par"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:60df37b3dd135d4ccc9f8bc0b6e06dcf:l:fr",
+   "key": "analyzer.fieldMapping.panel.retire",
+   "from": "Retire Mapping",
+   "to": {
+    "other": "Retirer la correspondance"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:eb0e19f7f4d32f33adad25fd1567719f:l:fr",
+   "key": "label.testCatalog.panels.moveUp",
+   "from": "Agissez plus tôt",
+   "to": {
+    "other": "Déplacer avant"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:0ed5e4bbd7e0e38b1264452876ff8759:l:fr",
+   "key": "label.locations.import.column.code",
+   "from": "Code Emplacement",
+   "to": {
+    "other": "Code"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:a4040aed62122c2b49d3f56e32cc185d:l:fr",
+   "key": "sideNav.label.referredtestreport",
+   "from": "Rapport de tests référencés",
+   "to": {
+    "other": "Rapport des analyses envoyées"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:9bc2f7d82073accd61187614801aa2ee:l:fr",
+   "key": "analyzer.setup.instrument.continue",
+   "from": "Continuer la vérification",
+   "to": {
+    "other": "Continuer vers la vérification"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:7b803b5b644735f117cfa0f05017ce1b:l:fr",
+   "key": "label.locations.import.outcome.unchanged",
+   "from": null,
+   "to": {
+    "other": "Inchangé"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:756013b28e35373c1067e86d5cf2399e:l:fr",
+   "key": "validation.reject.all",
+   "from": "Rejeter tous les résultats",
+   "to": {
+    "other": "Reprendre toutes les analyses"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:d8ceae1f5e81cb4f1138b0c20eab7009:l:fr",
+   "key": "label.testCatalog.accreditation.remove",
+   "from": null,
+   "to": {
+    "other": "Retirer l'accréditation"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:226daca0ccc8abd3e4f1de462794dd0d:l:fr",
+   "key": "microbiology.enum.STAGE_CHANGED",
+   "from": "Changement de scène",
+   "to": {
+    "other": "Changement d'étape"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:4ae95c737a1094944e969d079d37c2a3:l:fr",
+   "key": "lot.status.DISPOSED",
+   "from": "Rejeté",
+   "to": {
+    "other": "Éliminé"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:1cd084f9c76175b031230c1d3751d308:l:fr",
+   "key": "laporanHasil.status.ineligible",
+   "from": "Non de normes associées",
+   "to": {
+    "other": "Aucune norme associée"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:2a0cd3e5fb82b43bbe322b87e99d8f72:l:fr",
+   "key": "sampleManagement.test.status.COMPLETED",
+   "from": "Terminer ",
+   "to": {
+    "other": "Terminé"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:f953b6b3814bc927178db04ca17539ce:l:fr",
+   "key": "label.validation.bulk.releaseAllClear",
+   "from": "Fin d'alerte ({count})",
+   "to": {
+    "other": "Publier les résultats sans anomalie ({count})"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:9d83e325106a8b5d51ab5c90deaefc4d:l:fr",
+   "key": "microbiology.enum.AST_ENTRY",
+   "from": "Inscription à l'AST",
+   "to": {
+    "other": "Saisie AST"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:420eeea8ff8e4e1af80da6e9a7bc04aa:l:fr",
+   "key": "compliance.linkedTest.editLimits",
+   "from": "Limites de modification",
+   "to": {
+    "other": "Modifier les limites"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:6730828077818adba91126173ab35c45:l:fr",
+   "key": "nonconform.report",
+   "from": "Rapport d'événement non conforme (ENC)",
+   "to": {
+    "other": "Signaler un événement non conforme (ENC)"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:f3b72bc94c24ecc66a7764b5439abc4c:l:fr",
+   "key": "banner.menu.study.eorders",
+   "from": "Statistiques journalières. ",
+   "to": {
+    "other": "Demandes électroniques"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:20feea200d0f37582a5b69d917ddb783:l:fr",
+   "key": "microbiology.critical.close",
+   "from": "Une communication étroite",
+   "to": {
+    "other": "Clôturer la communication"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:cd02d1a163bbad2ac10f10b852961856:l:fr",
+   "key": "sampleAcceptance.qa.answer.pass",
+   "from": "Passer",
+   "to": {
+    "other": "Réussi"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:1336fda7228623cfa7c888eb39301a6e:l:fr",
+   "key": "search.possibleMatches.use",
+   "from": null,
+   "to": {
+    "other": "Utiliser celui-ci"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:76b957316ca00b93a6e47c979c0260f3:l:fr",
+   "key": "label.results.control.capture.pass",
+   "from": "Passer",
+   "to": {
+    "other": "Réussi"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:74c31b7c2e786d106ef1fc3a14d374ae:l:fr",
+   "key": "sideNav.title.referredtestreport",
+   "from": "Rapport de tests référencés",
+   "to": {
+    "other": "Rapport des analyses envoyées"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:655fc0e41fa502c07f680599887cfc22:l:fr",
+   "key": "label.qc.pass",
+   "from": "Passer",
+   "to": {
+    "other": "Réussi"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:1690bac6ef4f8c1a7a50a192a862c9e3:l:fr",
+   "key": "microbiology.enum.ISOLATE_UPDATED",
+   "from": "Mise à jour de l’isolat Mis à Jour",
+   "to": {
+    "other": "Isolat mis à jour"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:7bd5ee5fac86a5f4920683f8e6538f2c:l:fr",
+   "key": "analyzerType.mappingEditor.applyToAnalyzer",
+   "from": null,
+   "to": {
+    "other": "Appliquer les correspondances et retraiter les résultats retenus"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:8a96c0debab01696be8bcb71e8c17332:l:fr",
+   "key": "analyzer.fieldMapping.status.retired",
+   "from": "Retired",
+   "to": {
+    "other": "Retiré"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:55e657ab51e7d4070ad9fa9330163715:l:fr",
+   "key": "inventory.reorderStatus.soon",
+   "from": null,
+   "to": {
+    "other": "Réapprovisionner bientôt"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:84137fa9b3a4e2cbbba4fa0e1750330e:l:fr",
+   "key": "banner.menu.workplan.test",
+   "from": "Par test",
+   "to": {
+    "other": "Par type d'analyse"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:309a67ab6234ee5e5e857a0f62b0bc29:l:fr",
+   "key": "address.level.kabupaten",
+   "from": null,
+   "to": {
+    "other": "Régence/Ville"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:d23e95f1fc7e768c76a1851cf6480d4e:l:fr",
+   "key": "admin.dashboard.title",
+   "from": "Tableau de bord d’administration ",
+   "to": {
+    "other": "Tableau de bord d’administration"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:ceda5c1db75fc34936d739d8eb05f93c:l:fr",
+   "key": "button.locations.area.collapseAll",
+   "from": null,
+   "to": {
+    "other": "Tout réduire"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:0bf06bb973cc99ead455b9f41f95da55:l:fr",
+   "key": "sampleAcceptance.qa.continueWithTesting.record",
+   "from": null,
+   "to": {
+    "other": "Enregistrer et continuer"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:f56bd49e441b274a3bdb00b7e19f67c5:l:fr",
+   "key": "banner.menu.eqa.provider",
+   "from": null,
+   "to": {
+    "other": "Fournisseur d'EEQ"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:ea3706515ee74f244241403a4fce9be4:l:fr",
+   "key": "caseView.action.discard",
+   "from": null,
+   "to": {
+    "other": "Abandonner les modifications"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:b0b565bde3dad2892c0d3cb8581ce83f:l:fr",
+   "key": "label.locations.import.outcome.decision",
+   "from": null,
+   "to": {
+    "other": "Décision requise"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:766ec16c7b3d8b78537617d5a09b5f9b:l:fr",
+   "key": "label.validation.review.action.review",
+   "from": "Avis →",
+   "to": {
+    "other": "Vérifier →"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:d070ecffad8b932fc169dc0f67dd3553:l:fr",
+   "key": "immunohistochemistry.status.readyPathologist",
+   "from": null,
+   "to": {
+    "other": "Prêt pour le pathologiste"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:9c868dac625004561d25e8baac39c1e6:l:fr",
+   "key": "inventory.reorderStatus.adequate",
+   "from": null,
+   "to": {
+    "other": "Suffisant"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:cc0df1d3074b3bae654345e8bb3b3d11:l:fr",
+   "key": "microbiology.inoculation.save",
+   "from": "Enregistrer les fichiers multimédias",
+   "to": {
+    "other": "Enregistrer les milieux"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:574c8eca07a08faadacb4486d2333e06:l:fr",
+   "key": "label.testCatalog.panels.moveDown",
+   "from": "Reporter à plus tard",
+   "to": {
+    "other": "Déplacer après"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:54eaa924a86068aa4ce7afb1fcaea17d:l:fr",
+   "key": "label.locations.import.column.line",
+   "from": null,
+   "to": {
+    "other": "Ligne"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:2c3933649a987c5bbe4933ba78ec4025:l:fr",
+   "key": "env.site.searchTab",
+   "from": "Rechercher sur le site",
+   "to": {
+    "other": "Rechercher un site"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:dc0ad399d7656b60a580fd1341e1042a:l:fr",
+   "key": "button.labUnit.tests.reassign.confirm",
+   "from": null,
+   "to": {
+    "other": "Réaffecter {count, plural, one {# analyse} other {# analyses}}"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:8c3bae57ce5528fc6116d4c10456f7ae:l:fr",
+   "key": "label.testCatalog.reagents.modal.linkSelected",
+   "from": "Lien sélectionné",
+   "to": {
+    "other": "Associer la sélection"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:7d2ffec9fb47364c3a030828b582942d:l:fr",
+   "key": "cytology.status.screening",
+   "from": null,
+   "to": {
+    "other": "Dépistage"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:4b38d9e8cebecc468e896f1594b0d449:l:fr",
+   "key": "label.results.storage.assignLocation",
+   "from": "Attribuer un chemin ",
+   "to": {
+    "other": "Attribuer un emplacement"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:27984e617418f75e93c79aa448c94167:l:fr",
+   "key": "inventory.reorderStatus.now",
+   "from": null,
+   "to": {
+    "other": "Réapprovisionner maintenant"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:8c705a81ac5956e758cf071be68ae981:l:fr",
+   "key": "catalog.import.resolve",
+   "from": null,
+   "to": {
+    "other": "Utiliser"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:be5e822e80e7798888bc0096b01fedf6:l:fr",
+   "key": "adjustment.notes.placeholder",
+   "from": "Veuillez fournir des détails concernant cet ajustement.",
+   "to": {
+    "other": "Veuillez fournir des détails concernant cet ajustement"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:5003cf4c67951635426d1313de7ffd68:l:fr",
+   "key": "microbiology.enum.AST_REVIEWED",
+   "from": "Vérifié par l'AST",
+   "to": {
+    "other": "AST vérifié"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:cff43d5d308f7d1f9185247ea0762ce7:l:fr",
+   "key": "microbiology.amendment.open",
+   "from": "Amendement ouvert",
+   "to": {
+    "other": "Ouvrir une modification"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:d646dc6439e7dbb3c8f948448b296b08:l:fr",
+   "key": "freezer.alert.detail.resolve",
+   "from": "Résolu",
+   "to": {
+    "other": "Résoudre"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:c1a07598c47af8c44af2544b70f5477d:l:fr",
+   "key": "button.locations.import.report",
+   "from": null,
+   "to": {
+    "other": "Télécharger le rapport de résultats"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:bddb9fa838e0efbce267aef159e29e7c:l:fr",
+   "key": "admin.programs.questionnaire.json.validate",
+   "from": null,
+   "to": {
+    "other": "Valider le JSON"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:29e7da7dafac900c4c6a4b760ba5aa0b:l:fr",
+   "key": "analyzer.fieldMapping.pendingCodes.markMapped",
+   "from": "Mark Mapped",
+   "to": {
+    "other": "Marquer comme mappé"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:43afdc2cdc645d517486f92376cc7c2e:l:fr",
+   "key": "systemuserrole.allLabUnits.confirm.primary",
+   "from": null,
+   "to": {
+    "other": "Remplacer les autorisations"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:babf3ac916d5748baecfd87744a1f2c2:l:fr",
+   "key": "admin.labelPresets.fieldKey.PATIENT_DOB",
+   "from": "Date de Naissance du Patient",
+   "to": {
+    "other": "Date de naissance du patient"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:e6300366a2334a5f356701b74c7a39ce:l:fr",
+   "key": "sidenav.label.admin.locations",
+   "from": null,
+   "to": {
+    "other": "Lieux et organisations"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:11cd01caea88f2f3c64b5b9e1cd8f4fb:l:fr",
+   "key": "button.labUnit.deactivate.confirm",
+   "from": null,
+   "to": {
+    "other": "Désactiver l'unité de laboratoire"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:73aa9ff3298ee97519eddf460984f4ff:l:fr",
+   "key": "label.button.exit",
+   "from": "Sortie",
+   "to": {
+    "other": "Quitter"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:e849c11af0e42bd3023a622f3823fcf3:l:fr",
+   "key": "sidenav.label.admin.Listplugin",
+   "from": "Page de la liste",
+   "to": {
+    "other": "Liste des plugins"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:06376104c4ffd359e875a26fb9ee7870:l:fr",
+   "key": "coldStorage.status.noData",
+   "from": "Non de données",
+   "to": {
+    "other": "Aucune donnée"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:4de12bed721488d153ad8d3531e61b76:l:fr",
+   "key": "barcode.print.preprint.button",
+   "from": "Bouton de pré-impression",
+   "to": {
+    "other": "Pré-imprimer les étiquettes"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:18c4e920718be486aeeca2e31e787b5f:l:fr",
+   "key": "analyzer.fieldMapping.save",
+   "from": "Save Mappings",
+   "to": {
+    "other": "Enregistrer les correspondances"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:dfba0c19ce139cadbfcb58e7614ac68c:l:fr",
+   "key": "label.panel.col.code",
+   "from": "Code Emplacement",
+   "to": {
+    "other": "Code"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:eddd5dfec9a74d18e996f547190fe136:l:fr",
+   "key": "sampleAcceptance.qa.button.continueWithTesting",
+   "from": null,
+   "to": {
+    "other": "Poursuivre les analyses"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:ecce5c2cc64e00d0e33bd0eee67f47b7:l:fr",
+   "key": "microbiology.enum.NO_BREAKPOINT",
+   "from": "Non, il n'y a pas de point d'arrêt",
+   "to": {
+    "other": "Aucune concentration critique"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:fda9b4d7fe50162958743cbf66895ba8:l:fr",
+   "key": "caseView.badge.readOnly",
+   "from": null,
+   "to": {
+    "other": "Lecture seule"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:0fcdf8b768772ad1b5ad65a56787c69b:l:fr",
+   "key": "label.results.sampleStatus.markUsedUp",
+   "from": "Mark a épuisé",
+   "to": {
+    "other": "Marquer comme épuisé"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:63a6a8e2ed9df60a31c6c08deedf3aa2:l:fr",
+   "key": "label.locations.column.wards",
+   "from": null,
+   "to": {
+    "other": "Services / Départements"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:6c455eab73b144d93a980180635eab07:l:fr",
+   "key": "admin.labelPresets.field.maxPerOrder",
+   "from": "Maximum par commande",
+   "to": {
+    "other": "Maximum par demande"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:2d436a8da10649492475ad1c8542ac54:l:fr",
+   "key": "banner.menu.workplan.batch",
+   "from": null,
+   "to": {
+    "other": "Plan de travail par lot"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:395fa39f8b0478f6d354d07749def033:l:fr",
+   "key": "sidenav.label.admin.locations.organizations",
+   "from": null,
+   "to": {
+    "other": "Organisations"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:4a1f45ae930c0c901cbc74e9b42b8a5d:l:fr",
+   "key": "inventory.receiveStock.button",
+   "from": null,
+   "to": {
+    "other": "Réceptionner du stock"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:537975f24f66eb183e56df8c617852d4:l:fr",
+   "key": "vectorId.tag.deconInProgress",
+   "from": "Désinfection en cours",
+   "to": {
+    "other": "Déconvolution en cours"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:a2ae0b5657afb2d3481cfededada9d76:l:fr",
+   "key": "button.locations.deactivate.withChildren",
+   "from": null,
+   "to": {
+    "other": "Désactiver {name} et ses {count} {childKind}"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:f5078bc714b6b6997c1e82a2c3b23a0f:l:fr",
+   "key": "master.lists.page.patient",
+   "from": "Page du patient",
+   "to": {
+    "other": "Configuration de la saisie des patients"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:2cb0103e0a9bbe30bf51ab8020e97777:l:fr",
+   "key": "analyzer.importIssues.openMappings",
+   "from": "Correspondances ouvertes",
+   "to": {
+    "other": "Ouvrir les correspondances"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:149996a0913109b0f9c667ff390d9a28:l:fr",
+   "key": "label.locations.import.willDeactivate",
+   "from": null,
+   "to": {
+    "other": "Sera désactivé"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:97f1013c36d7ddee787acbb3ac9220e7:l:fr",
+   "key": "vectorId.tag.deconNeeded",
+   "from": "⚠ Résultat de l'évaluation",
+   "to": {
+    "other": "⚠ Vérifier le résultat"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:f0de2aa290310ca2f90e9a510cd6ee74:l:fr",
+   "key": "sidenav.section.main",
+   "from": null,
+   "to": {
+    "other": "Menu principal"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:86d687ed6fccdfa1faadc3fb46adf9b5:l:fr",
+   "key": "order.nav.saveNext",
+   "from": null,
+   "to": {
+    "other": "Enregistrer et continuer"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:9cdd0e9e684c62a29c257eba5ab1aa5d:l:fr",
+   "key": "sampleManagement.hierarchy.level",
+   "from": "Niveau {niveau}",
+   "to": {
+    "other": "Niveau {level}"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:ea329286910aa0f189b2ad2d325c4793:l:fr",
+   "key": "sideNav.label.qa.qc.controlLots",
+   "from": null,
+   "to": {
+    "other": "Gestion des lots de CQ"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:38c18443950540e7434ea7b0b0e159e7:l:fr",
+   "key": "coldStorage.device.deleted",
+   "from": "Device \\",
+   "to": {
+    "other": "L'appareil « {name} » a été supprimé avec succès"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:b02715b50295d3092117305ef93c271f:l:fr",
+   "key": "label.referOut.status.resultsReturned",
+   "from": "Résultats affichés",
+   "to": {
+    "other": "Résultats retournés"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:05a103110a1d86ed63c19568c610db15:l:fr",
+   "key": "analyzerType.button.create",
+   "from": "Créer un nouveau type d’analyseur",
+   "to": {
+    "other": "Créer le profil"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:55d3d2b40145791bac9a7e99c208f00b:l:fr",
+   "key": "admin.labelPresets.fieldKey.PATIENT_SEX",
+   "from": "Sexe du Patient",
+   "to": {
+    "other": "Sexe du patient"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:da1d69289f1508f413762f991039420b:l:fr",
+   "key": "label.results.referral.refer",
+   "from": "Consultez cette analyse",
+   "to": {
+    "other": "Envoyer cette analyse"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:ec37c13145b692889f07e80ba66698ce:l:fr",
+   "key": "admin.labelPresets.siteWide.save",
+   "from": null,
+   "to": {
+    "other": "Enregistrer les paramètres"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:ff09038a7ed2cceef309b7204d9fe27e:l:fr",
+   "key": "admin.testCatalog.methods.btn.copyFromTest",
+   "from": "Copier de « Test »",
+   "to": {
+    "other": "Copier depuis une analyse"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:4dc1c075dc21b919c62af4565a58c5da:l:fr",
+   "key": "analyzer.deliveryIssues.state.deadLettered",
+   "from": null,
+   "to": {
+    "other": "Non transmis"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:ad5f7d707587090ef2995d44ac1a2da1:l:fr",
+   "key": "button.locations.addWard",
+   "from": null,
+   "to": {
+    "other": "Ajouter un service"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:3f36167ca7bc13afb7c52e28f5bcfff8:l:fr",
+   "key": "admin.labelPresets.editor.section.barcodeSettings",
+   "from": "Gestion des codes à barres",
+   "to": {
+    "other": "Paramètres des codes-barres"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:6fc0c334773ef014c8fe60ed7c242908:l:fr",
+   "key": "sidenav.section.administration",
+   "from": "Administration administrative",
+   "to": {
+    "other": "Administration"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:6d555a9758f095559a9a442ef5907650:l:fr",
+   "key": "microbiology.reagentLots.status.IN_USE",
+   "from": "Utilisé",
+   "to": {
+    "other": "En cours d'utilisation"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:5c8c5c987c44891e35c849cb5a535b00:l:fr",
+   "key": "analyzerType.mappingEditor.confirm",
+   "from": "Confirmer les correspondances et contrôler la reconnaissance",
+   "to": {
+    "other": "Confirmer les correspondances et la reconnaissance des contrôles"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:d402e5acb1da8cc8b589584afc505b6c:l:fr",
+   "key": "order.nav.saveFinish",
+   "from": null,
+   "to": {
+    "other": "Enregistrer et terminer"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:5168a55655c9c1c76f94487775d5bddb:l:fr",
+   "key": "compliance.button.saveLimits",
+   "from": "Limites d'enregistrement",
+   "to": {
+    "other": "Enregistrer les limites"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:b408dd5254aec26017da3bbf2c34e8e5:l:fr",
+   "key": "referral.action.accept",
+   "from": "Valider",
+   "to": {
+    "other": "Accepter"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:65f044d62595175cf86b73c6eef10b3e:l:fr",
+   "key": "microbiology.currentStep.open",
+   "from": "{step} ouverte",
+   "to": {
+    "other": "Ouvrir {step}"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:04c82886c5a02661d101ee59434c0417:l:fr",
+   "key": "microbiology.enum.NEEDS_WORKFLOW",
+   "from": "Plan de travail à mettre en place",
+   "to": {
+    "other": "Workflow requis"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:fbe81580a14cd55e719641e571572db2:l:fr",
+   "key": "analyzerType.recognition.save",
+   "from": "Enregistrer la reconnaissance des commandes",
+   "to": {
+    "other": "Enregistrer la reconnaissance des contrôles"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:8fb13f20c35354e5d800c0fba014026d:l:fr",
+   "key": "admin.testCatalog.methods.btn.linkMethod",
+   "from": "+ Méthode « Associer »",
+   "to": {
+    "other": "+ Associer une méthode"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:1f467fb5e243a1646049cfb698210eb7:l:fr",
+   "key": "admin.labelPresets.saveFailed.noResponse",
+   "from": null,
+   "to": {
+    "other": "Aucune réponse du serveur. Vérifiez la connexion et réessayez."
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:aafd4115e644acb3368d65c75a5d5405:l:fr",
+   "key": "qc.controlLots.status.establishment",
+   "from": "Établissement",
+   "to": {
+    "other": "Phase d'établissement"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:442342b60d9e8ec622331f3cf79af7c3:l:fr",
+   "key": "label.testCatalog.reagents.linkButton",
+   "from": "Réactif de liaison",
+   "to": {
+    "other": "Associer un réactif"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:69a50f613338cf6c0bfdad9c259c08b2:l:fr",
+   "key": "storage.dispose.sample",
+   "from": "Disposer de l'échantillon",
+   "to": {
+    "other": "Éliminer l'échantillon"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:14077d13ef3e3856c0d44f9e52a9d159:l:fr",
+   "key": "microbiology.worklist.openCase",
+   "from": "Dossier ouvert",
+   "to": {
+    "other": "Ouvrir le dossier"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:ffe67856f83639169545ebc07b0d2323:l:fr",
+   "key": "storage.move.button",
+   "from": "Supprimer un échantillon",
+   "to": {
+    "other": "Déplacer l'échantillon"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:8191e563fb4c35a2d509cabe8fe8290e:l:fr",
+   "key": "admin.labelPresets.scope.order",
+   "from": "Demande d'examen",
+   "to": {
+    "other": "Demande"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:cadc141ebc9dc83d003fad327ef479cd:l:fr",
+   "key": "label.testCatalog.accreditation.add",
+   "from": null,
+   "to": {
+    "other": "Ajouter une accréditation"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:3c0149509c4fe45ff8650492922c2650:l:fr",
+   "key": "analyzer.form.identifierPattern.placeholder",
+   "from": "e.g., ^ABX\\\\^PENTRA.*",
+   "to": {
+    "other": "p. ex. ^ABX\\^PENTRA.*"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:01e7d8611284a49eec97a19e59d8ea82:l:fr",
+   "key": "label.locations.column.contact",
+   "from": null,
+   "to": {
+    "other": "Nom du contact"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:76fcb775a1c201b5ab9767b084aae33e:l:fr",
+   "key": "inventory.board.column.onHand",
+   "from": null,
+   "to": {
+    "other": "En stock"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:0a21e9d14a6c00bdc8c7cd011753a39a:l:fr",
+   "key": "alerts.type.critical_result",
+   "from": null,
+   "to": {
+    "other": "Résultat critique"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:3eb671e839548464e789cb2276020ce5:l:fr",
+   "key": "workplan.batch.action.archive",
+   "from": "Archives",
+   "to": {
+    "other": "Archiver"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:a458d61bb21527cc0aeaa28af74b0afb:l:fr",
+   "key": "label.validation.signal.rangeNotApplied",
+   "from": null,
+   "to": {
+    "other": "Intervalle non appliqué"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:c9737fa9d9d2c289907964e15701abb1:l:fr",
+   "key": "order.sampleCheck.return",
+   "from": null,
+   "to": {
+    "other": "Retour à « Préparer les échantillons »"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:8cd726445bcdf7f9540c7b606e6ddacd:l:fr",
+   "key": "storage.nav.room",
+   "from": "Pièce",
+   "to": {
+    "other": "Salle"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:119c35867791dfc6642abc761b5e5818:l:fr",
+   "key": "banner.menu.resultvalidation.bench",
+   "from": "Par palier",
+   "to": {
+    "other": "Par paillasse"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:bce8f7aa2083fbdab5c3a0b79df4b433:l:fr",
+   "key": "storage.metrics.disposed",
+   "from": "Rejeté",
+   "to": {
+    "other": "Éliminé"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:0865178e3e4f4fc3436facc894e792d7:l:fr",
+   "key": "inventory.reorder.markOrdered",
+   "from": null,
+   "to": {
+    "other": "Marquer comme commandé"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:eabae29a434e063736bad7de0407c441:l:fr",
+   "key": "master.lists.page.list",
+   "from": "Page de la liste",
+   "to": {
+    "other": "Liste des plugins"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:7e94fd844ee33b37603418a5926ebe7e:l:fr",
+   "key": "microbiology.enum.AST_READY",
+   "from": "Compatible AST",
+   "to": {
+    "other": "Prêt pour AST"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:ec22462cfae99186408ebe3893364604:l:fr",
+   "key": "logging.management.tail.on",
+   "from": "Le",
+   "to": {
+    "other": "Activé"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:f8b8e6afb6b63d76212415db362caec3:l:fr",
+   "key": "order.nav.discard.order",
+   "from": null,
+   "to": {
+    "other": "Abandonner la demande"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:c734d078c08aefa33553757573c8e1d4:l:fr",
+   "key": "label.locations.column.siteType",
+   "from": null,
+   "to": {
+    "other": "Type de site"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:0eea179a19bf2c38ac0dfc5133d7c596:l:fr",
+   "key": "sideNav.label.qa.qms",
+   "from": null,
+   "to": {
+    "other": "SMQ et amélioration"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:e33feb2863d05b882ffcb2bc3ad99f5e:l:fr",
+   "key": "sideNav.label.qa.qms.accreditation",
+   "from": null,
+   "to": {
+    "other": "Accréditation"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:7bcc8779c9b1e3468029d9ce92990336:l:fr",
+   "key": "master.lists.page.field",
+   "from": "Page des champs",
+   "to": {
+    "other": "Configuration de la validation des champs "
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:a9bfd06e0cb7e20ff4abfc00f00b658d:l:fr",
+   "key": "button.labUnit.tests.assign.confirm",
+   "from": null,
+   "to": {
+    "other": "Assigner {count, plural, one {# analyse} other {# analyses}}"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:626b62596e7579db85bf039738b0148c:l:fr",
+   "key": "vectorReport.manualEntry.markSubmitted",
+   "from": "Semaine de notation soumise",
+   "to": {
+    "other": "Marquer la semaine comme soumise"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:c0178f8cf3467064f233055d2b12025e:l:fr",
+   "key": "menu.validation.date",
+   "from": "Rechercher par date de test",
+   "to": {
+    "other": "Par date"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:67cd8076041c3adb6b8ceba1b15b652e:l:fr",
+   "key": "search.possibleMatches.createAnyway",
+   "from": null,
+   "to": {
+    "other": "Créer quand même"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:7648f51d4839158463a6231bde21dd74:l:fr",
+   "key": "notebook.results.modal.title",
+   "from": "Résultats par numéro de laboratoire",
+   "to": {
+    "other": "Résultats pour {accession}"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:e90acdddd897faab1185b0236bc6dca8:l:fr",
+   "key": "admin.programs.questionnaire.json.reformat",
+   "from": null,
+   "to": {
+    "other": "Reformater"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:3fb58b389d71cdca3b15aa893d5230d5:l:fr",
+   "key": "admin.labelPresets.fieldKey.EXPIRY_DATE",
+   "from": "Date d'Expiration",
+   "to": {
+    "other": "Date d'expiration"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:4d9d9467eefb238127e5b560decbcece:l:fr",
+   "key": "sidenav.label.incomingorder",
+   "from": "Statistiques journalières. ",
+   "to": {
+    "other": "Demandes électroniques"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:7a221678a57c0613d7b0c14a303695e2:l:fr",
+   "key": "label.audittrail",
+   "from": "laboratoire non",
+   "to": {
+    "other": "N° de laboratoire"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:00b30abfd3ded06031e051b02c851e36:l:fr",
+   "key": "button.locations.template",
+   "from": null,
+   "to": {
+    "other": "Télécharger le modèle"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:c9f1e7d5fc5db179eb3eaf908bd62735:l:fr",
+   "key": "sample.management.aliquot.modal.previewText",
+   "from": "Création de {coumpter} aliquotes avec {Chaque quantité} {unités} chacune",
+   "to": {
+    "other": "Création de {count} aliquotes de {quantityEach} {unit} chacune"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:bfc9318fec11c565670f57d7e6a19542:l:fr",
+   "key": "analyzer.fieldMapping.activationModal.reloadPage",
+   "from": "Reload Page",
+   "to": {
+    "other": "Recharger la page"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:f3bb4adc03de0a0acf3af71f3c8e497e:l:fr",
+   "key": "label.referOut.action.dispatch",
+   "from": "Communiqué",
+   "to": {
+    "other": "Expédier"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:d1568401fa45505f99f0f28bd702bd55:l:fr",
+   "key": "label.results.alert.acknowledgeAndSave",
+   "from": null,
+   "to": {
+    "other": "Accuser réception et enregistrer"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:ded2f6f33b468edeb388ef164eebcf0a:l:fr",
+   "key": "sideNav.label.qa.overview",
+   "from": null,
+   "to": {
+    "other": "Vue d'ensemble AQ"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:56f666c0a51a71dcb2f39d387b9ab4cf:l:fr",
+   "key": "master.lists.page.user",
+   "from": "Page de l'utilisateur",
+   "to": {
+    "other": "Gestion des utilisateurs"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:8e3032d0c7a267a378dce52b1590ffb3:l:fr",
+   "key": "print.barcode",
+   "from": "Imprimer les codes",
+   "to": {
+    "other": "Imprimer le code-barres"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:0badebc6efd1f6c45b7afe43f99a6c57:l:fr",
+   "key": "serial.config.connect.button",
+   "from": "Se connecter à la connexion",
+   "to": {
+    "other": "Connecter"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:e6a63eaf1639a38c2e654298bdb57217:l:fr",
+   "key": "stock.status.qcFailed",
+   "from": null,
+   "to": {
+    "other": "Échec du CQ"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:a6d8c1f9069e48524c479dca72bbbd29:l:fr",
+   "key": "button.dispose",
+   "from": "Disposer",
+   "to": {
+    "other": "Éliminer"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:825c74232b03e206e8b296dbba8da530:l:fr",
+   "key": "label.results.storage.moveLocation",
+   "from": "Se rendre à l'emplacement",
+   "to": {
+    "other": "Déplacer vers un emplacement"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:64841ac464a16d7d624cb60d74ef9890:l:fr",
+   "key": "button.locations.area.addTop",
+   "from": null,
+   "to": {
+    "other": "Ajouter {level}"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:92a39f98ff0bc52968e3e87875a1e7ce:l:fr",
+   "key": "inventory.board.column.runsOut",
+   "from": null,
+   "to": {
+    "other": "Épuisement prévu"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:bd38ded0742ef6ece6da1bcaaa9cbdf3:l:fr",
+   "key": "sideNav.label.qa.qc.manualQc",
+   "from": null,
+   "to": {
+    "other": "CQ manuel des analyseurs"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:68d6f27ccde63a0679cef58179b700e0:l:fr",
+   "key": "sideNav.label.qa.qi",
+   "from": null,
+   "to": {
+    "other": "Indicateurs qualité"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:48d6104296264f6749053c2bade2a3ad:l:fr",
+   "key": "analyzer.fieldMapping.status.unmapped",
+   "from": "Unmapped",
+   "to": {
+    "other": "Non mappé"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:41ec06e4998d3108d37c200253cb2ca9:l:fr",
+   "key": "button.locations.saveWards",
+   "from": null,
+   "to": {
+    "other": "Enregistrer {count} nouveau(x) service(s)"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:9704d67c25e38e7ec581b54f3e9be003:l:fr",
+   "key": "eqa.bucket.awaiting",
+   "from": null,
+   "to": {
+    "other": "En attente des scores"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:f44ca9b0cf5512a406533c11e54c91a6:l:fr",
+   "key": "label.results.alert.correct",
+   "from": null,
+   "to": {
+    "other": "Corriger la valeur"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:a920eaed51bee73ff0760d0a1a3945d6:l:fr",
+   "key": "usage.record.button",
+   "from": "Enregistrement en cours",
+   "to": {
+    "other": "Enregistrer l'utilisation"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:cd8fa5b50cc10060e210c8d4673c5f42:l:fr",
+   "key": "coldStorage.dashboard.refreshing",
+   "from": "Rafraîchissant",
+   "to": {
+    "other": "Actualisation"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:aa7d963dca645d68229dbbb58da8e4ce:l:fr",
+   "key": "sample.entry.project.patient.and.testName",
+   "from": "Noms et/ou Numéro d'identité National \\n Nom du Test",
+   "to": {
+    "other": "Nom/Code du patient {br} Nom de l'analyse"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:64f3e4ca3a240935af3c710bc0efc1f7:l:fr",
+   "key": "label.testCatalog.panels.loadError",
+   "from": "Impossible de charger les affiliations aux commissions.",
+   "to": {
+    "other": "Impossible de charger les appartenances aux panels."
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:d54a8c76f2ab4aca3091986fa3517fbf:l:fr",
+   "key": "master.lists.page.site",
+   "from": "Page du site",
+   "to": {
+    "other": "Informations sur le site"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:4f1f91db153417f145a8af487e2780ae:l:fr",
+   "key": "label.results.alert.confirmAndSave",
+   "from": null,
+   "to": {
+    "other": "Confirmer et enregistrer"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:e5fbc1dcddf670881f67f744cb89cb16:l:fr",
+   "key": "sideNav.label.qa.qms.capaRegister",
+   "from": null,
+   "to": {
+    "other": "Registre CAPA"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:2cb0f03a37a6bcec5f873e3b26e61e4a:l:fr",
+   "key": "inventory.reorder.onOrder",
+   "from": null,
+   "to": {
+    "other": "En commande"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:9a700b19e34c65b685104068355acf00:l:fr",
+   "key": "admin.testCatalog.qcTargets.showDeactivated",
+   "from": "Affichage désactivé",
+   "to": {
+    "other": "Afficher les désactivés"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:12ecb47a7798abf4201ecdc6a037d058:l:fr",
+   "key": "master.lists.page.external.connections",
+   "from": "Page des connexions externes",
+   "to": {
+    "other": "Menu des connexions externes"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:fb5ca4e7faced54e868176bc3c969eca:l:fr",
+   "key": "vectorId.completion.tag",
+   "from": "Désinfection terminée",
+   "to": {
+    "other": "Déconvolution terminée"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:8dac01a51f13532b79469e35446edbe9:l:fr",
+   "key": "admin.programs.basicInfo.showOnMicroCase.on",
+   "from": "Le",
+   "to": {
+    "other": "Activé"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:84f66c41987d59162a636fc5097dbe09:l:fr",
+   "key": "microbiology.enum.NONCONFORMANCE_REPORTED",
+   "from": "Rapport sur la non-conformité",
+   "to": {
+    "other": "Non-conformité signalée"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:bb7c720473b4cb93698e72e61378497f:l:fr",
+   "key": "label.validation.review.action.reject",
+   "from": "Rejeter (fichier NCE)",
+   "to": {
+    "other": "Rejeter (déclarer un ENC)"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:7db5205e262fd740798220caf3d042ee:l:fr",
+   "key": "admin.labelPresets.field.defaultPerSample",
+   "from": "Défaut par l'échantillon",
+   "to": {
+    "other": "Par défaut par échantillon"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:bbd3de33794536b474cd54eb5505dcb8:l:fr",
+   "key": "microbiology.worklist.markNoGrowth",
+   "from": "Non de croissance",
+   "to": {
+    "other": "Marquer sans croissance"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:fa246874f46271b101d4970d85061b7a:l:fr",
+   "key": "microbiology.case.recordActivity",
+   "from": "Activité record",
+   "to": {
+    "other": "Enregistrer l'activité"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:7fd0968aaa966955895e0ab5816cbaea:l:fr",
+   "key": "banner.menu.eqa.myCycles",
+   "from": null,
+   "to": {
+    "other": "Mes cycles"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:fe94c7bec3ca6c9f58b316e44fcba5f1:l:fr",
+   "key": "admin.labelPresets.fieldKey.SITE_ID",
+   "from": "ID du Site",
+   "to": {
+    "other": "ID du site"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:7301d6033c4b51e0028109e294fc99d5:l:fr",
+   "key": "label.locations.referral.approved",
+   "from": null,
+   "to": {
+    "other": "Approuvé"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:e50d5e46087227493d71abc7c0e0ea2b:l:fr",
+   "key": "referral.chip.outstanding",
+   "from": "Exceptionnel",
+   "to": {
+    "other": "En attente"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:afd462ee79f2b4924d7de7e639b396a4:l:fr",
+   "key": "sidenav.section.patientOrders",
+   "from": null,
+   "to": {
+    "other": "Patients et demandes"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:578b03369bcfa9887026d60de0eeea9c:l:fr",
+   "key": "sidenav.label.results.byrange",
+   "from": "Par plage de numéros de commande",
+   "to": {
+    "other": "Par plage de numéros de laboratoire"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:221be56ddfb2771e54490e9dd9c8e42b:l:fr",
+   "key": "search.possibleMatches.confirm.button",
+   "from": null,
+   "to": {
+    "other": "Créer un nouvel enregistrement"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:88caa59e3b47ab4fec346fcf69e9b5b3:l:fr",
+   "key": "compliance.standard.archive",
+   "from": "Archives",
+   "to": {
+    "other": "Archiver"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:6e45bf020c78ffc2d38fe43a6c4e3fe1:l:fr",
+   "key": "sidenav.label.admin.catalogImport",
+   "from": null,
+   "to": {
+    "other": "Importer le catalogue (CSV)"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:4067fa5feeb032590536fca06bd66b33:l:fr",
+   "key": "referral.status.requested",
+   "from": "Envoyé — en attente de validation",
+   "to": {
+    "other": "Envoyé : en attente d'acceptation"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:1c3e68968e0d48b71694ee6fe5c7f0ae:l:fr",
+   "key": "label.results.alert.keepValue",
+   "from": null,
+   "to": {
+    "other": "Conserver cette valeur"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:136c084d4f8276a7536f27ac419a99df:l:fr",
+   "key": "inventory.logUsage.button",
+   "from": null,
+   "to": {
+    "other": "Enregistrer la consommation"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:8062bbfb33b899b43e205eec259fede3:l:fr",
+   "key": "analyzer.fieldMapping.testMapping",
+   "from": "Test Mapping",
+   "to": {
+    "other": "Tester la correspondance"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:c5bc0229072b80c5d8d8476328f865aa:l:fr",
+   "key": "notebook.status.finalized",
+   "from": "Sauvegarder la saisie ",
+   "to": {
+    "other": "Finaliser l'entrée"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:9cd6e84a5d23a7970b52528d653beb82:l:fr",
+   "key": "eqa.competency.band.notCompetent",
+   "from": null,
+   "to": {
+    "other": "Non compétent"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:6ffeac1d2ae2c7631edc70523d3877be:l:fr",
+   "key": "master.lists.page.result",
+   "from": "Page des résultats",
+   "to": {
+    "other": "Configuration de la saisie des résultats"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:62790ed0bd8a66dbb2fb803ef35b0352:l:fr",
+   "key": "label.results.sampleStatus.recordUse",
+   "from": "Montant record utilisé",
+   "to": {
+    "other": "Enregistrer la quantité utilisée"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:358c8f515eb32adc07c9876a649c8d86:l:fr",
+   "key": "microbiology.enum.ISOLATE",
+   "from": "Isoler",
+   "to": {
+    "other": "Isolat"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:ececb7f610ab77d9509e8f18b26b8b6b:l:fr",
+   "key": "label.locations.referral.expired",
+   "from": null,
+   "to": {
+    "other": "Accréditation expirée"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:536bca744a4c2e8072788adcf0c966ec:l:fr",
+   "key": "sidenav.label.admin.pluginFile",
+   "from": "Plugin Files",
+   "to": {
+    "other": "Fichiers de plugins"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:2f97d4b09ddd0c34537d7c334f6c9fa9:l:fr",
+   "key": "storage.assign.button",
+   "from": "Attribuer un chemin ",
+   "to": {
+    "other": "Attribuer un emplacement"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:16304858d02db1f488b0d96b5420291a:l:fr",
+   "key": "admin.testCatalog.labels.masterOverride.on",
+   "from": "Le",
+   "to": {
+    "other": "Activé"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:e810e84c0977925cc192780465175fc5:l:fr",
+   "key": "inventory.projection.outOfStock",
+   "from": null,
+   "to": {
+    "other": "Rupture de stock"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:366e220e15f645cf4c71203c282ef599:l:fr",
+   "key": "lot.status.QUARANTINED",
+   "from": null,
+   "to": {
+    "other": "En quarantaine"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:4f6ad09cc0eac67fd8470d0e6928e332:l:fr",
+   "key": "microbiology.enum.CRITICAL_COMMUNICATION_LOGGED",
+   "from": "Critique de communication enregistrée",
+   "to": {
+    "other": "Communication critique enregistrée"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:a89b0f33ff86ed98cc1867b114a811ab:l:fr",
+   "key": "eqa.priority.standard",
+   "from": "Étalon",
+   "to": {
+    "other": "Standard"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:3ed6038f9f840cef40147de3fea39d78:l:fr",
+   "key": "microbiology.enum.ISOLATE_REQUIRED",
+   "from": "Isolation obligatoire",
+   "to": {
+    "other": "Isolat requis"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:ffd8a13fe6ce948634c5f80f2a32efb9:l:fr",
+   "key": "lot.qcStatus.QUARANTINED",
+   "from": null,
+   "to": {
+    "other": "En quarantaine"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:5d9149baeacc9f3c359f4212ed2ba2d4:l:fr",
+   "key": "admin.labelPresets.fields.add.placeholder",
+   "from": null,
+   "to": {
+    "other": "Choisir un champ"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:6cf19fd280a143f91ff089c9b638ab1f:l:fr",
+   "key": "analyzer.stat.setup",
+   "from": "Dans la configuration",
+   "to": {
+    "other": "En configuration"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:6cd80ce55edb8b943079ace62bcaa478:l:fr",
+   "key": "banner.menu.generic.sample.order",
+   "from": "Recevoir un échantillon",
+   "to": {
+    "other": "Créer une demande"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:665af78c842591697223588477da9783:l:fr",
+   "key": "storage.sample.actions",
+   "from": "Échantillons d'actions",
+   "to": {
+    "other": "Actions sur l'échantillon"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:b16cc81120986e8bec5cb06cee915ae6:l:fr",
+   "key": "patient.merge.addressesDiffer",
+   "from": "L'adresse diffère : {primaire} vs {secondaire}",
+   "to": {
+    "other": "L'adresse diffère : {primary} vs {secondary}"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:435429c8ef9d8ee4eb824df4cd1e5bf5:l:fr",
+   "key": "label.locations.import.decision.skip",
+   "from": null,
+   "to": {
+    "other": "Ignorer la ligne"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:8b8ecd33a951653aa2e972956fe5ad85:l:fr",
+   "key": "analyzer.form.loadDefaultConfig",
+   "from": "Charger la configuration par défaut",
+   "to": {
+    "other": "Charger un profil d'analyseur"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:ee7cd398e9694d18d1ae1bdcd9bf2851:l:fr",
+   "key": "label.referOut.status.pendingSave",
+   "from": null,
+   "to": {
+    "other": "En attente d'enregistrement"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:b3a0287c1b9f77ca4029fcd135865253:l:fr",
+   "key": "inventory.lots.useFirst",
+   "from": null,
+   "to": {
+    "other": "À utiliser en premier"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:6ac5af67a7b85ca80c9544b324fbb7c7:l:fr",
+   "key": "sidenav.label.order.prepare",
+   "from": null,
+   "to": {
+    "other": "Préparer les échantillons"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:8290ceb0f3ae5d293f9485f9ee727a03:l:fr",
+   "key": "microbiology.enum.RESULTS_IN",
+   "from": "Résultats dans",
+   "to": {
+    "other": "Résultats reçus"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:beb78cfff16b05cb06a0645d17515a96:l:fr",
+   "key": "button.locations.exportSelected",
+   "from": null,
+   "to": {
+    "other": "Exporter la sélection"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:3c6d9d276a3093a7d829cb3153bf0788:l:fr",
+   "key": "sidenav.label.admin.locations.areas",
+   "from": null,
+   "to": {
+    "other": "Zones géographiques"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:a8923b0784a4a2c292b840038a612834:l:fr",
+   "key": "label.user.notestsection",
+   "from": "L'utilisateur actuel n'a pas d'unité de laboratoire assassinée. Veuillez contacter l'administrateur",
+   "to": {
+    "other": "L'utilisateur actuel n'a pas d'unité de laboratoire attribuée. Veuillez contacter l'administrateur"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:f0ca8d28227d678ccf50f0a293edafae:l:fr",
+   "key": "notebook.button.editResults",
+   "from": "Afficher les résultats",
+   "to": {
+    "other": "Modifier les résultats"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:25f3012f3bded560e9d012383ff2a07d:l:fr",
+   "key": "sample.management.noResults.subtitle",
+   "from": "Aucun échantillon trouvé pour le numéro de laboratoire : {numéro de laboratoire}",
+   "to": {
+    "other": "Aucun échantillon trouvé pour le numéro de laboratoire : {accessionNumber}"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:9a3f5996a9b80e58b37b5af988768c9a:l:fr",
+   "key": "label.button.submit",
+   "from": "Terminer",
+   "to": {
+    "other": "Soumettre"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:50dcb24f187eb342628014f9516d126e:l:fr",
+   "key": "analyzer.attention.review",
+   "from": "Examiner les résultats obtenus",
+   "to": {
+    "other": "Revoir les résultats retenus"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:a226799c66224bce9925cdde238a02d3:l:fr",
+   "key": "admin.labelPresets.fields.locked",
+   "from": null,
+   "to": {
+    "other": "Toujours en premier"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:cc407a661d962d05467e1dc9e47e6e72:l:fr",
+   "key": "storage.nav.rooms",
+   "from": "Chambres",
+   "to": {
+    "other": "Salles"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:c01515fe78078ee5c9a0dfa85cadad59:l:fr",
+   "key": "coldStorage.dashboard.refreshingEllipsis",
+   "from": "C'est rafraîchissant...",
+   "to": {
+    "other": "Actualisation..."
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:b78911213e7b2e6d37789d8d0386f909:l:fr",
+   "key": "sideNav.label.qa.qc.reagentQc",
+   "from": null,
+   "to": {
+    "other": "CQ des réactifs"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:98f719cb9bf937257990f8b44e81ddae:l:fr",
+   "key": "label.testCatalog.ranges.coverage.status.EMPTY",
+   "from": "Non de plages",
+   "to": {
+    "other": "Aucune plage"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:92d1aac62653b2377121ae9c44236fab:l:fr",
+   "key": "admin.labelPresets.fields.allAdded",
+   "from": null,
+   "to": {
+    "other": "Tous les champs disponibles figurent sur cette étiquette."
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:5b0b3669afc2c47bc6cc48f8adbbe568:l:fr",
+   "key": "sidenav.label.admin.barcodeconfiguration",
+   "from": "Page des codes-barres",
+   "to": {
+    "other": "Configuration des codes-barres"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:33fce4431721092bb89db0d69f80945e:l:fr",
+   "key": "label.validation.bulk.column.accession",
+   "from": "laboratoire non.",
+   "to": {
+    "other": "N° de labo."
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:5cfa796d0794a484571ea99daa4766fd:l:fr",
+   "key": "microbiology.ast.useAttemptForReporting",
+   "from": "Veuillez utiliser l'adresse {number} pour signaler tout problème.",
+   "to": {
+    "other": "Utiliser la tentative {number} pour le rapport"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:2f0e247460bc6cddaa29110e251f1949:l:fr",
+   "key": "microbiology.critical.log",
+   "from": "Journal des communications",
+   "to": {
+    "other": "Consigner la communication"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:bf6273a4ee98da1b4ceec29794a88dc4:l:fr",
+   "key": "accessDenied.okButton",
+   "from": "D'ACCORD",
+   "to": {
+    "other": "OK"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:fbeeb754db7590a4011fdaaddfe2b7f7:l:fr",
+   "key": "eqa.btn.receivePanel",
+   "from": null,
+   "to": {
+    "other": "Recevoir le panel - ouvrir Ajouter une demande"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:d607e092ccf8d672acfd1ad2934c791c:l:fr",
+   "key": "qc.status.update.button",
+   "from": "Statut QC mis à jour ",
+   "to": {
+    "other": "Mettre à jour le statut QC"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:b07f9acc4f4540c54104d236b3d062b7:l:fr",
+   "key": "patient.label.primaryphone",
+   "from": "Téléphone principal du patient",
+   "to": {
+    "other": "Téléphone principal : {PHONE_FORMAT}"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:b82905d7320bfe7a6aa96d15c252c05a:l:fr",
+   "key": "analyzer.fieldMapping.panel.target.saveActivate",
+   "from": "Save and Activate",
+   "to": {
+    "other": "Enregistrer et activer"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:c20bba7a8ed1eb4f00fd0ce0c1136324:l:fr",
+   "key": "label.testCatalog.sampleResults.copyConfirm.confirm",
+   "from": null,
+   "to": {
+    "other": "Remplacer la configuration"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:d34a312ae813947848f883643ad24604:l:fr",
+   "key": "vectorDec.status.complete",
+   "from": "Désinfection terminée",
+   "to": {
+    "other": "Déconvolution terminée"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:7bfea770d9d920e60333e3ae80083cb2:l:fr",
+   "key": "reporting.saved.open",
+   "from": "Ouvert",
+   "to": {
+    "other": "Ouvrir"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:328fa6fcc71b8bce08e9caa991ddaa91:l:fr",
+   "key": "microbiology.ast.invalidateAndRepeat",
+   "from": "Annuler et commencer une nouvelle exécution",
+   "to": {
+    "other": "Invalider et lancer une nouvelle série"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:a40bffc7c68bb54d9c86a4f4f3810252:l:fr",
+   "key": "vectorId.button.save",
+   "from": "Enregistrer les informations d'identification",
+   "to": {
+    "other": "Enregistrer l'identification"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:91141be11339acd59f062cd2432d8593:l:fr",
+   "key": "microbiology.ast.adjustPanel",
+   "from": "Panneau de réglage",
+   "to": {
+    "other": "Ajuster le panel"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:d16f37fcf581ed7d2eab7079a3154e95:l:fr",
+   "key": "vectorId.button.identify",
+   "from": "▼ Identifiant",
+   "to": {
+    "other": "▼ Identifier"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:828106967cc103f23f1d8e9f20ba1ea8:l:fr",
+   "key": "shipment.reception.openBox",
+   "from": "Ouvert",
+   "to": {
+    "other": "Ouvrir"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:f39d540b141eab9071072ae582c48bcb:l:fr",
+   "key": "analyzer.deliveryIssues.attention.review",
+   "from": null,
+   "to": {
+    "other": "Revoir les résultats non transmis"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:2effbc0418e851f4121f9c84389252b9:l:fr",
+   "key": "analyzer.setup.connect.activation.saving",
+   "from": "Analyseur d'économies",
+   "to": {
+    "other": "Enregistrement de l'analyseur"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:e602673133cf48fc85adb3deb544a4e8:l:fr",
+   "key": "vectorDec.button.savePools",
+   "from": "Pools de sauvegarde",
+   "to": {
+    "other": "Enregistrer les pools"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:654ead88dc21913f07980b3a1d11318e:l:fr",
+   "key": "sampleManagement.results.count",
+   "from": "{compter} échantillon(s) trouvé(s)",
+   "to": {
+    "other": "{count} échantillon(s) trouvé(s)"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:8006e3947daa6280cb3740d0893ef9f2:l:fr",
+   "key": "cytology.status.readyForCytopathologist",
+   "from": null,
+   "to": {
+    "other": "Prêt pour le cytopathologiste"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:7e5d903de4b36d504bffad7dd5600d52:l:fr",
+   "key": "analyzer.fieldMapping.panel.status.mapped",
+   "from": "Cartographié",
+   "to": {
+    "other": "Mappé"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:762d228131e06f799c2a242618c2da2b:l:fr",
+   "key": "serverReconnect.tryNow",
+   "from": null,
+   "to": {
+    "other": "Réessayer maintenant"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:5e195ee989548594421045a5bb623787:l:fr",
+   "key": "label.locations.column.code",
+   "from": "Code Emplacement",
+   "to": {
+    "other": "Code"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:6d008cc71d19d09e2497b0bd296f6553:l:fr",
+   "key": "analyzer.fieldMapping.pendingCodes.ignore",
+   "from": "Ignore",
+   "to": {
+    "other": "Ignorer"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:71ad90360e3bd37a5f415ec1c8bb3919:l:fr",
+   "key": "master.lists.page.work.plan",
+   "from": "Page du plan de travail",
+   "to": {
+    "other": "Configuration du plan de travail "
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:6bf839acc584f507449316c7fd1b1650:l:fr",
+   "key": "sidenav.workflow.patientManagement",
+   "from": null,
+   "to": {
+    "other": "Gestion des patients"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:ff94424c0f972889de6a042129e5b6f8:l:fr",
+   "key": "banner.menu.eqa.followUpQueue",
+   "from": null,
+   "to": {
+    "other": "Suivi de ce laboratoire"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:10de0cfc1bfa7516564de571265fea04:l:fr",
+   "key": "cytology.status.preparingSlides",
+   "from": null,
+   "to": {
+    "other": "Préparation des lames"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:b8a3b9c1d77cbe06f22477b3daea988c:l:fr",
+   "key": "compliance.button.addStandard",
+   "from": "Ajouter un étalon",
+   "to": {
+    "other": "Ajouter une norme"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:6ffc308aef4d835ba78f8625b198b62a:l:fr",
+   "key": "microbiology.case.action.recordGrowth",
+   "from": "Une croissance record a été constatée",
+   "to": {
+    "other": "Enregistrer une croissance détectée"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:c6cadc184682ce05cdd7d6a3cd0dbc79:l:fr",
+   "key": "sampleManagement.selectedCount",
+   "from": "{compter} sélectionné",
+   "to": {
+    "other": "{count} sélectionné(s)"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:dd0b571232e2ba7b67dbbaa272c301d2:l:fr",
+   "key": "order.dashboard.cancelOrder",
+   "from": null,
+   "to": {
+    "other": "Annuler la demande"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:b887868bf45004b1fc4534acf6ce04e2:l:fr",
+   "key": "label.locations.import.run.applied",
+   "from": null,
+   "to": {
+    "other": "Appliqué"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:56182daf3afec153504785e85ba0996a:l:fr",
+   "key": "inventory.reorder.reviewAndOrder",
+   "from": null,
+   "to": {
+    "other": "Vérifier et marquer comme commandé"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:7d0b192a61041d4bb09fbeeec9eb018c:l:fr",
+   "key": "analyzer.fieldMapping.panel.status.unmapped",
+   "from": "Unmapped",
+   "to": {
+    "other": "Non mappé"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:8ef1eb612a0d3a29d2654f94539c6582:l:fr",
+   "key": "pathology.label.view",
+   "from": "Voir la fiche",
+   "to": {
+    "other": "Voir le fichier"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:ba2e9f08f0895f6b9663d0257132f1a6:l:fr",
+   "key": "eqa.competency.band.underReview",
+   "from": null,
+   "to": {
+    "other": "En cours de vérification"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:5909ad533406f316811406fee8563f31:l:fr",
+   "key": "analyzer.fieldMapping.panel.mapping.retired",
+   "from": "Retired",
+   "to": {
+    "other": "Retiré"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:e4f982036638144defcdc04f52cd23b2:l:fr",
+   "key": "compliance.testThresholds.openEditor",
+   "from": "Ouvert",
+   "to": {
+    "other": "Ouvrir"
+   }
+  },
+  {
+   "id": "o:openmrs:p:openelis-1:r:enjson:s:bf327187baf03d3a5376b42c2f4f3b82:l:fr",
+   "key": "microbiology.admin.breakpoints.back",
+   "from": "Retour aux étalons",
+   "to": {
+    "other": "Retour aux référentiels"
+   }
+  }
+ ]
+}

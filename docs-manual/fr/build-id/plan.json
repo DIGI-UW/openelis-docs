@@ -1,0 +1,1264 @@
+{
+ "root": "1733492739",
+ "folders": {
+  "EUM": [
+   "Panduan Pengguna Akhir",
+   "ROOT"
+  ],
+  "ADM": [
+   "Panduan Administrator",
+   "ROOT"
+  ],
+  "1680015437": [
+   "Mengenal OpenELIS",
+   "EUM"
+  ],
+  "1679458388": [
+   "Pemesanan dan sampel",
+   "EUM"
+  ],
+  "1679589479": [
+   "Hasil, validasi, dan laporan",
+   "EUM"
+  ],
+  "1680015434": [
+   "Surveilans lingkungan",
+   "EUM"
+  ],
+  "1679589482": [
+   "Surveilans vektor",
+   "EUM"
+  ],
+  "1679458391": [
+   "Patologi, imunohistokimia, dan sitologi",
+   "EUM"
+  ],
+  "1680605193": [
+   "Kejadian tidak sesuai",
+   "EUM"
+  ],
+  "1679458394": [
+   "Buku catatan laboratorium",
+   "EUM"
+  ],
+  "1680375824": [
+   "Memulai administrasi",
+   "ADM"
+  ],
+  "1680605196": [
+   "Pengguna, organisasi, dan penyelenggara",
+   "ADM"
+  ],
+  "1680441354": [
+   "Pengaturan situs dan sistem",
+   "ADM"
+  ],
+  "1679786110": [
+   "Katalog pemeriksaan",
+   "ADM"
+  ],
+  "1680441357": [
+   "Program, aturan, dan notifikasi",
+   "ADM"
+  ],
+  "1680637960": [
+   "Pelaporan hasil dan alat",
+   "ADM"
+  ],
+  "1679491237": [
+   "Data rujukan lingkungan dan vektor",
+   "ADM"
+  ]
+ },
+ "trash": [],
+ "pages": [
+  {
+   "en": "1428881409",
+   "scope": "manual",
+   "tr": null,
+   "title": "The three domains & the shared order wizard",
+   "enTitle": "The three domains & the shared order wizard",
+   "enVersion": 4,
+   "parent": {
+    "kind": "folder",
+    "key": "1679458388"
+   }
+  },
+  {
+   "en": "1428946945",
+   "scope": "manual",
+   "tr": null,
+   "title": "Compliance evaluation",
+   "enTitle": "Compliance evaluation",
+   "enVersion": 6,
+   "parent": {
+    "kind": "twin",
+    "en": "1437466625"
+   }
+  },
+  {
+   "en": "1429012481",
+   "scope": "manual",
+   "tr": null,
+   "title": "Pooling & deconvolution",
+   "enTitle": "Pooling & deconvolution",
+   "enVersion": 6,
+   "parent": {
+    "kind": "twin",
+    "en": "1437532161"
+   }
+  },
+  {
+   "en": "1439072277",
+   "scope": "manual",
+   "tr": null,
+   "title": "Memasukkan dan menyimpan hasil",
+   "enTitle": "Enter and save results",
+   "enVersion": 14,
+   "parent": {
+    "kind": "folder",
+    "key": "1679589479"
+   }
+  },
+  {
+   "en": "1441202177",
+   "scope": "manual",
+   "tr": null,
+   "title": "Memvalidasi dan merilis hasil",
+   "enTitle": "Validate and release results",
+   "enVersion": 8,
+   "parent": {
+    "kind": "folder",
+    "key": "1679589479"
+   }
+  },
+  {
+   "en": "1440350210",
+   "scope": "manual",
+   "tr": null,
+   "title": "Find an existing order",
+   "enTitle": "Find an existing order",
+   "enVersion": 6,
+   "parent": {
+    "kind": "folder",
+    "key": "1679458388"
+   }
+  },
+  {
+   "en": "1440677908",
+   "scope": "manual",
+   "tr": null,
+   "title": "Track sample storage and disposal",
+   "enTitle": "Track sample storage and disposal",
+   "enVersion": 6,
+   "parent": {
+    "kind": "folder",
+    "key": "1679458388"
+   }
+  },
+  {
+   "en": "1440940035",
+   "scope": "manual",
+   "tr": null,
+   "title": "Create aliquots from a sample",
+   "enTitle": "Create aliquots from a sample",
+   "enVersion": 6,
+   "parent": {
+    "kind": "folder",
+    "key": "1679458388"
+   }
+  },
+  {
+   "en": "1440841744",
+   "scope": "manual",
+   "tr": null,
+   "title": "Menjalankan laporan",
+   "enTitle": "Run reports",
+   "enVersion": 6,
+   "parent": {
+    "kind": "folder",
+    "key": "1679589479"
+   }
+  },
+  {
+   "en": "1681260549",
+   "scope": "manual",
+   "tr": null,
+   "title": "Report a non-conforming event",
+   "enTitle": "Report a non-conforming event",
+   "enVersion": 4,
+   "parent": {
+    "kind": "folder",
+    "key": "1680605193"
+   }
+  },
+  {
+   "en": "1653604361",
+   "scope": "manual",
+   "tr": null,
+   "title": "Results Entry (legacy screen)",
+   "enTitle": "Results Entry (legacy screen)",
+   "enVersion": 3,
+   "parent": {
+    "kind": "folder",
+    "key": "1679589479"
+   }
+  },
+  {
+   "en": "272662541",
+   "scope": "manual",
+   "tr": null,
+   "title": "PART 6: BATCH ORDER ENTRY",
+   "enTitle": "PART 6: BATCH ORDER ENTRY",
+   "enVersion": 4,
+   "parent": {
+    "kind": "folder",
+    "key": "1679458388"
+   }
+  },
+  {
+   "en": "991821864",
+   "scope": "manual",
+   "tr": null,
+   "title": "Laboratory Notebooks",
+   "enTitle": "Laboratory Notebooks",
+   "enVersion": 7,
+   "parent": {
+    "kind": "folder",
+    "key": "1679458394"
+   }
+  },
+  {
+   "en": "951156737",
+   "scope": "manual",
+   "tr": null,
+   "title": "HOW TO CREATE A LAB NOTEBOOK",
+   "enTitle": "HOW TO CREATE A LAB NOTEBOOK",
+   "enVersion": 3,
+   "parent": {
+    "kind": "twin",
+    "en": "991821864"
+   }
+  },
+  {
+   "en": "1047330908",
+   "scope": "manual",
+   "tr": null,
+   "title": "HOW TO ARCHIVE SAMPLES",
+   "enTitle": "HOW TO ARCHIVE SAMPLES",
+   "enVersion": 1,
+   "parent": {
+    "kind": "twin",
+    "en": "951156737"
+   }
+  },
+  {
+   "en": "1047363648",
+   "scope": "manual",
+   "tr": null,
+   "title": "HOW TO CONDUCT POST ANALYSIS",
+   "enTitle": "HOW TO CONDUCT POST ANALYSIS",
+   "enVersion": 1,
+   "parent": {
+    "kind": "twin",
+    "en": "951156737"
+   }
+  },
+  {
+   "en": "1047330857",
+   "scope": "manual",
+   "tr": null,
+   "title": "HOW TO CREATE CHILD SAMPLES",
+   "enTitle": "HOW TO CREATE CHILD SAMPLES",
+   "enVersion": 1,
+   "parent": {
+    "kind": "twin",
+    "en": "951156737"
+   }
+  },
+  {
+   "en": "1047199822",
+   "scope": "manual",
+   "tr": null,
+   "title": "HOW TO ENTER RESULTS MANUALLY",
+   "enTitle": "HOW TO ENTER RESULTS MANUALLY",
+   "enVersion": 1,
+   "parent": {
+    "kind": "twin",
+    "en": "951156737"
+   }
+  },
+  {
+   "en": "1047527493",
+   "scope": "manual",
+   "tr": null,
+   "title": "HOW TO POST COMPILATION",
+   "enTitle": "HOW TO POST COMPILATION",
+   "enVersion": 2,
+   "parent": {
+    "kind": "twin",
+    "en": "951156737"
+   }
+  },
+  {
+   "en": "1047429176",
+   "scope": "manual",
+   "tr": null,
+   "title": "HOW TO PREPARE ROUTED SAMPLES FOR ANALYSIS",
+   "enTitle": "HOW TO PREPARE ROUTED SAMPLES FOR ANALYSIS",
+   "enVersion": 1,
+   "parent": {
+    "kind": "twin",
+    "en": "951156737"
+   }
+  },
+  {
+   "en": "1047560199",
+   "scope": "manual",
+   "tr": null,
+   "title": "HOW TO PROCESS SAMPLE",
+   "enTitle": "HOW TO PROCESS SAMPLE",
+   "enVersion": 1,
+   "parent": {
+    "kind": "twin",
+    "en": "951156737"
+   }
+  },
+  {
+   "en": "1047527443",
+   "scope": "manual",
+   "tr": null,
+   "title": "HOW TO RECORD ASSAYS",
+   "enTitle": "HOW TO RECORD ASSAYS",
+   "enVersion": 1,
+   "parent": {
+    "kind": "twin",
+    "en": "951156737"
+   }
+  },
+  {
+   "en": "1046118450",
+   "scope": "manual",
+   "tr": null,
+   "title": "HOW TO ROUTE ROUTE SAMPLES EXTERNALLY",
+   "enTitle": "HOW TO ROUTE ROUTE SAMPLES EXTERNALLY",
+   "enVersion": 1,
+   "parent": {
+    "kind": "twin",
+    "en": "951156737"
+   }
+  },
+  {
+   "en": "1047986189",
+   "scope": "manual",
+   "tr": null,
+   "title": "HOW TO ROUTE SAMPLES INTERNALLY",
+   "enTitle": "HOW TO ROUTE SAMPLES INTERNALLY",
+   "enVersion": 1,
+   "parent": {
+    "kind": "twin",
+    "en": "951156737"
+   }
+  },
+  {
+   "en": "1047658526",
+   "scope": "manual",
+   "tr": null,
+   "title": "HOW TO ROUTE SAMPLES TO STORAGE",
+   "enTitle": "HOW TO ROUTE SAMPLES TO STORAGE",
+   "enVersion": 1,
+   "parent": {
+    "kind": "twin",
+    "en": "951156737"
+   }
+  },
+  {
+   "en": "1439072261",
+   "scope": "manual",
+   "tr": null,
+   "title": "Admin — Configure test notifications",
+   "enTitle": "Admin — Configure test notifications",
+   "enVersion": 7,
+   "parent": {
+    "kind": "folder",
+    "key": "1680441357"
+   }
+  },
+  {
+   "en": "1438842886",
+   "scope": "manual",
+   "tr": null,
+   "title": "Admin — Define calculated value tests",
+   "enTitle": "Admin — Define calculated value tests",
+   "enVersion": 6,
+   "parent": {
+    "kind": "folder",
+    "key": "1680441357"
+   }
+  },
+  {
+   "en": "1439006727",
+   "scope": "manual",
+   "tr": null,
+   "title": "Admin — Define programs and their questionnaires",
+   "enTitle": "Admin — Define programs and their questionnaires",
+   "enVersion": 8,
+   "parent": {
+    "kind": "folder",
+    "key": "1680441357"
+   }
+  },
+  {
+   "en": "1439137808",
+   "scope": "manual",
+   "tr": null,
+   "title": "Admin — Define reflex testing rules",
+   "enTitle": "Admin — Define reflex testing rules",
+   "enVersion": 7,
+   "parent": {
+    "kind": "folder",
+    "key": "1680441357"
+   }
+  },
+  {
+   "en": "1438973976",
+   "scope": "manual",
+   "tr": null,
+   "title": "Admin — Manage dictionary entries",
+   "enTitle": "Admin — Manage dictionary entries",
+   "enVersion": 9,
+   "parent": {
+    "kind": "folder",
+    "key": "1680441357"
+   }
+  },
+  {
+   "en": "1439596548",
+   "scope": "manual",
+   "tr": null,
+   "title": "Admin — Configure result reporting to external systems",
+   "enTitle": "Admin — Configure result reporting to external systems",
+   "enVersion": 7,
+   "parent": {
+    "kind": "folder",
+    "key": "1680637960"
+   }
+  },
+  {
+   "en": "1186365449",
+   "scope": "manual",
+   "tr": null,
+   "title": "PART 7 B: ANALYZER MANAGEMENT",
+   "enTitle": "PART 7 B: ANALYZER MANAGEMENT",
+   "enVersion": 5,
+   "parent": {
+    "kind": "folder",
+    "key": "1680637960"
+   }
+  },
+  {
+   "en": "1439170565",
+   "scope": "manual",
+   "tr": null,
+   "title": "Admin — Choose the lab number format",
+   "enTitle": "Admin — Choose the lab number format",
+   "enVersion": 8,
+   "parent": {
+    "kind": "folder",
+    "key": "1680441354"
+   }
+  },
+  {
+   "en": "1438908431",
+   "scope": "manual",
+   "tr": null,
+   "title": "Admin — Configure logging",
+   "enTitle": "Admin — Configure logging",
+   "enVersion": 8,
+   "parent": {
+    "kind": "folder",
+    "key": "1680441354"
+   }
+  },
+  {
+   "en": "1439432709",
+   "scope": "manual",
+   "tr": null,
+   "title": "Admin: Configure site information",
+   "enTitle": "Admin: Configure site information",
+   "enVersion": 10,
+   "parent": {
+    "kind": "folder",
+    "key": "1680441354"
+   }
+  },
+  {
+   "en": "1160282114",
+   "scope": "manual",
+   "tr": null,
+   "title": "Admin — Configure the navigation menu",
+   "enTitle": "Admin — Configure the navigation menu",
+   "enVersion": 5,
+   "parent": {
+    "kind": "folder",
+    "key": "1680441354"
+   }
+  },
+  {
+   "en": "1439367188",
+   "scope": "manual",
+   "tr": null,
+   "title": "Admin — Edit application properties",
+   "enTitle": "Admin — Edit application properties",
+   "enVersion": 7,
+   "parent": {
+    "kind": "folder",
+    "key": "1680441354"
+   }
+  },
+  {
+   "en": "1439334404",
+   "scope": "manual",
+   "tr": null,
+   "title": "Admin — Manage non-working days",
+   "enTitle": "Admin — Manage non-working days",
+   "enVersion": 7,
+   "parent": {
+    "kind": "folder",
+    "key": "1680441354"
+   }
+  },
+  {
+   "en": "1438973960",
+   "scope": "manual",
+   "tr": null,
+   "title": "Admin — Rebuild the search index",
+   "enTitle": "Admin — Rebuild the search index",
+   "enVersion": 7,
+   "parent": {
+    "kind": "folder",
+    "key": "1680441354"
+   }
+  },
+  {
+   "en": "1437892659",
+   "scope": "manual",
+   "tr": null,
+   "title": "Admin: Manage organizations",
+   "enTitle": "Admin: Manage organizations",
+   "enVersion": 13,
+   "parent": {
+    "kind": "folder",
+    "key": "1680605196"
+   }
+  },
+  {
+   "en": "1439203334",
+   "scope": "manual",
+   "tr": null,
+   "title": "Admin — Manage providers",
+   "enTitle": "Admin — Manage providers",
+   "enVersion": 7,
+   "parent": {
+    "kind": "folder",
+    "key": "1680605196"
+   }
+  },
+  {
+   "en": "1187840003",
+   "scope": "manual",
+   "tr": null,
+   "title": "Admin: Mengelola akun pengguna",
+   "enTitle": "Admin — Manage user accounts",
+   "enVersion": 6,
+   "parent": {
+    "kind": "folder",
+    "key": "1680605196"
+   }
+  },
+  {
+   "en": "1427931149",
+   "scope": "manual",
+   "tr": null,
+   "title": "Admin — Configure compliance standards & holding times",
+   "enTitle": "Admin — Configure compliance standards & holding times",
+   "enVersion": 8,
+   "parent": {
+    "kind": "folder",
+    "key": "1679491237"
+   }
+  },
+  {
+   "en": "1427144728",
+   "scope": "manual",
+   "tr": null,
+   "title": "Admin — Vector Surveillance Reference Data",
+   "enTitle": "Admin — Vector Surveillance Reference Data",
+   "enVersion": 7,
+   "parent": {
+    "kind": "folder",
+    "key": "1679491237"
+   }
+  },
+  {
+   "en": "1433010177",
+   "scope": "manual",
+   "tr": null,
+   "title": "Add a test to panels",
+   "enTitle": "Add a test to panels",
+   "enVersion": 7,
+   "parent": {
+    "kind": "twin",
+    "en": "1437270018"
+   }
+  },
+  {
+   "en": "1432584197",
+   "scope": "manual",
+   "tr": null,
+   "title": "Configure a test's sample types & result components",
+   "enTitle": "Configure a test's sample types & result components",
+   "enVersion": 8,
+   "parent": {
+    "kind": "twin",
+    "en": "1437270018"
+   }
+  },
+  {
+   "en": "1432256516",
+   "scope": "manual",
+   "tr": null,
+   "title": "Configure sample storage & disposal",
+   "enTitle": "Configure sample storage & disposal",
+   "enVersion": 8,
+   "parent": {
+    "kind": "twin",
+    "en": "1437270018"
+   }
+  },
+  {
+   "en": "1431371782",
+   "scope": "manual",
+   "tr": null,
+   "title": "Edit a test's Basic Info (domain, AMR, status)",
+   "enTitle": "Edit a test's Basic Info (domain, AMR, status)",
+   "enVersion": 11,
+   "parent": {
+    "kind": "twin",
+    "en": "1437270018"
+   }
+  },
+  {
+   "en": "1431470085",
+   "scope": "manual",
+   "tr": null,
+   "title": "Find & filter tests in the catalog",
+   "enTitle": "Find & filter tests in the catalog",
+   "enVersion": 7,
+   "parent": {
+    "kind": "twin",
+    "en": "1437270018"
+   }
+  },
+  {
+   "en": "1431928838",
+   "scope": "manual",
+   "tr": null,
+   "title": "Link methods to a test",
+   "enTitle": "Link methods to a test",
+   "enVersion": 8,
+   "parent": {
+    "kind": "twin",
+    "en": "1437270018"
+   }
+  },
+  {
+   "en": "1433468931",
+   "scope": "manual",
+   "tr": null,
+   "title": "Manage label presets",
+   "enTitle": "Manage label presets",
+   "enVersion": 13,
+   "parent": {
+    "kind": "twin",
+    "en": "1437270018"
+   }
+  },
+  {
+   "en": "1432059909",
+   "scope": "manual",
+   "tr": null,
+   "title": "Map a test to terminology codes",
+   "enTitle": "Map a test to terminology codes",
+   "enVersion": 6,
+   "parent": {
+    "kind": "twin",
+    "en": "1437270018"
+   }
+  },
+  {
+   "en": "1435566088",
+   "scope": "manual",
+   "tr": null,
+   "title": "Sample Acceptance Checklist",
+   "enTitle": "Sample Acceptance Checklist",
+   "enVersion": 7,
+   "parent": {
+    "kind": "twin",
+    "en": "1437270018"
+   }
+  },
+  {
+   "en": "1432354821",
+   "scope": "manual",
+   "tr": null,
+   "title": "Set reference & critical ranges",
+   "enTitle": "Set reference & critical ranges",
+   "enVersion": 7,
+   "parent": {
+    "kind": "twin",
+    "en": "1437270018"
+   }
+  },
+  {
+   "en": "1431666693",
+   "scope": "manual",
+   "tr": null,
+   "title": "Set test display order within a sample type",
+   "enTitle": "Set test display order within a sample type",
+   "enVersion": 6,
+   "parent": {
+    "kind": "twin",
+    "en": "1437270018"
+   }
+  },
+  {
+   "en": "1437270018",
+   "scope": "manual",
+   "tr": null,
+   "title": "Manajemen katalog pemeriksaan: gambaran umum alur kerja",
+   "enTitle": "Test Catalog Management: workflow overview",
+   "enVersion": 8,
+   "parent": {
+    "kind": "folder",
+    "key": "1679786110"
+   }
+  },
+  {
+   "en": "1427898372",
+   "scope": "manual",
+   "tr": null,
+   "title": "Enter an environmental order",
+   "enTitle": "Enter an environmental order",
+   "enVersion": 10,
+   "parent": {
+    "kind": "twin",
+    "en": "1437466625"
+   }
+  },
+  {
+   "en": "1427505177",
+   "scope": "manual",
+   "tr": null,
+   "title": "Generate a compliance certificate",
+   "enTitle": "Generate a compliance certificate",
+   "enVersion": 8,
+   "parent": {
+    "kind": "twin",
+    "en": "1437466625"
+   }
+  },
+  {
+   "en": "1427898389",
+   "scope": "manual",
+   "tr": null,
+   "title": "Enter a vector order",
+   "enTitle": "Enter a vector order",
+   "enVersion": 10,
+   "parent": {
+    "kind": "twin",
+    "en": "1437532161"
+   }
+  },
+  {
+   "en": "1428094999",
+   "scope": "manual",
+   "tr": null,
+   "title": "Identify vector species & deconvolute a pool",
+   "enTitle": "Identify vector species & deconvolute a pool",
+   "enVersion": 8,
+   "parent": {
+    "kind": "twin",
+    "en": "1437532161"
+   }
+  },
+  {
+   "en": "1428258821",
+   "scope": "manual",
+   "tr": null,
+   "title": "Record Vector Field Survey indices",
+   "enTitle": "Record Vector Field Survey indices",
+   "enVersion": 7,
+   "parent": {
+    "kind": "twin",
+    "en": "1437532161"
+   }
+  },
+  {
+   "en": "1437466625",
+   "scope": "manual",
+   "tr": null,
+   "title": "Environmental Surveillance — workflow overview",
+   "enTitle": "Environmental Surveillance — workflow overview",
+   "enVersion": 3,
+   "parent": {
+    "kind": "folder",
+    "key": "1680015434"
+   }
+  },
+  {
+   "en": "1437532161",
+   "scope": "manual",
+   "tr": null,
+   "title": "Vector Surveillance — workflow overview",
+   "enTitle": "Vector Surveillance — workflow overview",
+   "enVersion": 3,
+   "parent": {
+    "kind": "folder",
+    "key": "1679589482"
+   }
+  },
+  {
+   "en": "1429176321",
+   "scope": "manual",
+   "tr": null,
+   "title": "Complete the sample check for an environmental or vector order",
+   "enTitle": "Complete the sample check for an environmental or vector order",
+   "enVersion": 13,
+   "parent": {
+    "kind": "folder",
+    "key": "1679458388"
+   }
+  },
+  {
+   "en": "1242759175",
+   "scope": "manual",
+   "tr": null,
+   "title": "Electronic Signatures",
+   "enTitle": "Electronic Signatures",
+   "enVersion": 16,
+   "parent": {
+    "kind": "folder",
+    "key": "1679589479"
+   }
+  },
+  {
+   "en": "260931593",
+   "scope": "manual",
+   "tr": null,
+   "title": "PART 1: NAVIGATING OpenELIS GLOBAL",
+   "enTitle": "PART 1: NAVIGATING OpenELIS GLOBAL",
+   "enVersion": 7,
+   "parent": {
+    "kind": "folder",
+    "key": "1680015437"
+   }
+  },
+  {
+   "en": "261521410",
+   "scope": "manual",
+   "tr": null,
+   "title": "PART 2: QUICK TROUBLESHOOTING",
+   "enTitle": "PART 2: QUICK TROUBLESHOOTING",
+   "enVersion": 2,
+   "parent": {
+    "kind": "folder",
+    "key": "1680015437"
+   }
+  },
+  {
+   "en": "261259270",
+   "scope": "manual",
+   "tr": null,
+   "title": "PART 3: QUICK LINKS",
+   "enTitle": "PART 3: QUICK LINKS",
+   "enVersion": 3,
+   "parent": {
+    "kind": "folder",
+    "key": "1680015437"
+   }
+  },
+  {
+   "en": "283967514",
+   "scope": "manual",
+   "tr": null,
+   "title": "PART 12: HELP",
+   "enTitle": "PART 12: HELP",
+   "enVersion": 3,
+   "parent": {
+    "kind": "folder",
+    "key": "1680015437"
+   }
+  },
+  {
+   "en": "284688410",
+   "scope": "manual",
+   "tr": null,
+   "title": "PART 13: LOGGING OUT OF OPENELIS",
+   "enTitle": "PART 13: LOGGING OUT OF OPENELIS",
+   "enVersion": 3,
+   "parent": {
+    "kind": "folder",
+    "key": "1680015437"
+   }
+  },
+  {
+   "en": "261423127",
+   "scope": "manual",
+   "tr": null,
+   "title": "PART 4: ENTERING LABORATORY ORDERS",
+   "enTitle": "PART 4: ENTERING LABORATORY ORDERS",
+   "enVersion": 8,
+   "parent": {
+    "kind": "folder",
+    "key": "1679458388"
+   }
+  },
+  {
+   "en": "272760837",
+   "scope": "manual",
+   "tr": null,
+   "title": "Print a work plan",
+   "enTitle": "Print a work plan",
+   "enVersion": 7,
+   "parent": {
+    "kind": "folder",
+    "key": "1679589479"
+   }
+  },
+  {
+   "en": "273285123",
+   "scope": "manual",
+   "tr": null,
+   "title": "PART 8: PATHOLOGY",
+   "enTitle": "PART 8: PATHOLOGY",
+   "enVersion": 4,
+   "parent": {
+    "kind": "folder",
+    "key": "1679458391"
+   }
+  },
+  {
+   "en": "279248897",
+   "scope": "manual",
+   "tr": null,
+   "title": "PART 9: IMMUNOCHEMISTRY",
+   "enTitle": "PART 9: IMMUNOCHEMISTRY",
+   "enVersion": 2,
+   "parent": {
+    "kind": "folder",
+    "key": "1679458391"
+   }
+  },
+  {
+   "en": "278560771",
+   "scope": "manual",
+   "tr": null,
+   "title": "PART 10: CYTOLOGY",
+   "enTitle": "PART 10: CYTOLOGY",
+   "enVersion": 3,
+   "parent": {
+    "kind": "folder",
+    "key": "1679458391"
+   }
+  },
+  {
+   "en": "257097754",
+   "scope": "manual",
+   "tr": null,
+   "title": "ACCESSING THE OpenELIS GLOBAL ADMINISTRATION MODULE",
+   "enTitle": "ACCESSING THE OpenELIS GLOBAL ADMINISTRATION MODULE",
+   "enVersion": 4,
+   "parent": {
+    "kind": "folder",
+    "key": "1680375824"
+   }
+  },
+  {
+   "en": "257392644",
+   "scope": "manual",
+   "tr": null,
+   "title": "INTRODUCTION",
+   "enTitle": "INTRODUCTION",
+   "enVersion": 4,
+   "parent": {
+    "kind": "folder",
+    "key": "1680375824"
+   }
+  },
+  {
+   "en": "256966691",
+   "scope": "manual",
+   "tr": null,
+   "title": "NAVIGATING OpenELIS LIMS",
+   "enTitle": "NAVIGATING OpenELIS LIMS",
+   "enVersion": 4,
+   "parent": {
+    "kind": "folder",
+    "key": "1680375824"
+   }
+  },
+  {
+   "en": "239632402",
+   "scope": "ops",
+   "tr": null,
+   "title": "Install OpenELIS Global",
+   "enTitle": "Install OpenELIS Global",
+   "enVersion": 17,
+   "parent": {
+    "kind": "id",
+    "id": "1733722115"
+   }
+  },
+  {
+   "en": "239632412",
+   "scope": "ops",
+   "tr": null,
+   "title": "Server and Workstation Technical Requirements For Deployment",
+   "enTitle": "Server and Workstation Technical Requirements For Deployment",
+   "enVersion": 7,
+   "parent": {
+    "kind": "id",
+    "id": "1733722115"
+   }
+  },
+  {
+   "en": "239730698",
+   "scope": "ops",
+   "tr": null,
+   "title": "Upgrading OpenELIS 3.x and 2.x",
+   "enTitle": "Upgrading OpenELIS 3.x and 2.x",
+   "enVersion": 5,
+   "parent": {
+    "kind": "id",
+    "id": "1733722115"
+   }
+  },
+  {
+   "en": "240320515",
+   "scope": "ops",
+   "tr": null,
+   "title": "Backup Configuration",
+   "enTitle": "Backup Configuration",
+   "enVersion": 6,
+   "parent": {
+    "kind": "id",
+    "id": "1733722115"
+   }
+  },
+  {
+   "en": "240877572",
+   "scope": "ops",
+   "tr": null,
+   "title": "Setup High Availability Fail Over",
+   "enTitle": "Setup High Availability Fail Over",
+   "enVersion": 5,
+   "parent": {
+    "kind": "id",
+    "id": "1733722115"
+   }
+  },
+  {
+   "en": "239927340",
+   "scope": "ops",
+   "tr": null,
+   "title": "Implementation Best Practices",
+   "enTitle": "Implementation Best Practices",
+   "enVersion": 3,
+   "parent": {
+    "kind": "id",
+    "id": "1733722115"
+   }
+  },
+  {
+   "en": "245366800",
+   "scope": "ops",
+   "tr": null,
+   "title": "Troubleshooting",
+   "enTitle": "Troubleshooting",
+   "enVersion": 5,
+   "parent": {
+    "kind": "id",
+    "id": "1733722115"
+   }
+  },
+  {
+   "en": "1672249349",
+   "scope": "ops",
+   "tr": null,
+   "title": "OpenELIS Monitoring",
+   "enTitle": "OpenELIS Monitoring",
+   "enVersion": 1,
+   "parent": {
+    "kind": "id",
+    "id": "1733722115"
+   }
+  },
+  {
+   "en": "52560162",
+   "scope": "landing",
+   "tr": null,
+   "title": "Beranda OpenELIS Global (Bahasa Indonesia)",
+   "enTitle": "OpenELIS Global",
+   "enVersion": 30,
+   "parent": {
+    "kind": "id",
+    "id": "52560162"
+   }
+  },
+  {
+   "en": "239337475",
+   "scope": "landing",
+   "tr": null,
+   "title": "Tentang OpenELIS Global",
+   "enTitle": "About OpenELIS Global",
+   "enVersion": 6,
+   "parent": {
+    "kind": "id",
+    "id": "1733722115"
+   }
+  },
+  {
+   "en": "1325727762",
+   "scope": "landing",
+   "tr": null,
+   "title": "🧩 Modul & fitur",
+   "enTitle": "🧩 Modules & Features",
+   "enVersion": 4,
+   "parent": {
+    "kind": "id",
+    "id": "1733722115"
+   }
+  },
+  {
+   "en": "1326252042",
+   "scope": "landing",
+   "tr": null,
+   "title": "🚀 Untuk tim implementasi",
+   "enTitle": "🚀 For Implementers",
+   "enVersion": 4,
+   "parent": {
+    "kind": "id",
+    "id": "1733722115"
+   }
+  },
+  {
+   "en": "1325793288",
+   "scope": "landing",
+   "tr": null,
+   "title": "⚙️ Untuk administrator sistem dan operator",
+   "enTitle": "⚙️ For SysAdmins-Operators",
+   "enVersion": 5,
+   "parent": {
+    "kind": "id",
+    "id": "1733722115"
+   }
+  },
+  {
+   "en": "1328185376",
+   "scope": "landing",
+   "tr": null,
+   "title": "🆘 Mendapatkan bantuan",
+   "enTitle": "🆘 Get Help",
+   "enVersion": 2,
+   "parent": {
+    "kind": "id",
+    "id": "1733722115"
+   }
+  },
+  {
+   "en": "1160511506",
+   "scope": "landing",
+   "tr": null,
+   "title": "Implementasi OpenELIS Global",
+   "enTitle": "OpenELIS Global Implementations",
+   "enVersion": 6,
+   "parent": {
+    "kind": "id",
+    "id": "1733722115"
+   }
+  },
+  {
+   "en": "1326972929",
+   "scope": "landing",
+   "tr": null,
+   "title": "📖 Panduan Pengguna",
+   "enTitle": "📖 User Manual",
+   "enVersion": 22,
+   "parent": {
+    "kind": "id",
+    "id": "1733722115"
+   }
+  },
+  {
+   "en": "1661763585",
+   "scope": "manual",
+   "tr": null,
+   "title": "Melakukan triase dan merilis hasil",
+   "enTitle": "Triage and release results",
+   "enVersion": 23,
+   "parent": {
+    "kind": "folder",
+    "key": "1679589479"
+   }
+  },
+  {
+   "en": "1648787462",
+   "scope": "manual",
+   "tr": null,
+   "title": "Memasukkan pemesanan klinis",
+   "enTitle": "Enter a clinical order",
+   "enVersion": 24,
+   "parent": {
+    "kind": "folder",
+    "key": "1679458388"
+   }
+  },
+  {
+   "en": "1702821939",
+   "scope": "manual",
+   "tr": null,
+   "title": "Menyelesaikan pengecekan sampel untuk pemesanan klinis",
+   "enTitle": "Complete the sample check for a clinical order",
+   "enVersion": 4,
+   "parent": {
+    "kind": "folder",
+    "key": "1679458388"
+   }
+  },
+  {
+   "en": "1440841760",
+   "scope": "manual",
+   "tr": null,
+   "title": "Mendaftarkan pasien baru",
+   "enTitle": "Register a New Patient",
+   "enVersion": 8,
+   "parent": {
+    "kind": "folder",
+    "key": "1679458388"
+   }
+  },
+  {
+   "en": "1441136648",
+   "scope": "manual",
+   "tr": null,
+   "title": "Manajemen pasien",
+   "enTitle": "Patient Management",
+   "enVersion": 6,
+   "parent": {
+    "kind": "folder",
+    "key": "1679458388"
+   }
+  }
+ ]
+}

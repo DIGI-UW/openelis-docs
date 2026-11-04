@@ -1,0 +1,627 @@
+{
+ "tot": 117,
+ "mis": 87,
+ "ex": [
+  [
+   "Patient Management",
+   "1679458388",
+   "1702396040",
+   null
+  ],
+  [
+   "Enter a clinical order",
+   "1679458388",
+   "1702396040",
+   null
+  ],
+  [
+   "Complete the sample check for a clinical order",
+   "1679458388",
+   "1702396040",
+   null
+  ],
+  [
+   "Register a New Patient",
+   "1679458388",
+   "1702396040",
+   null
+  ],
+  [
+   "Admin — Configure logging",
+   "1680441354",
+   "1703411767",
+   null
+  ],
+  [
+   "Sample Types and Test Mappings Configuration for OpenELIS in Madagascar",
+   "1159069707",
+   "1529839642",
+   "1704329285"
+  ],
+  [
+   "Dictionaries Configuration for Madagascar Deployment in OpenELIS Global System",
+   "1159069707",
+   "1530986508",
+   "1704329285"
+  ],
+  [
+   "OCL Configuration for OpenELIS: Importing Concepts from ZIP Collections",
+   "1159069707",
+   "1531281412",
+   "1704329285"
+  ],
+  [
+   "OpenELIS Monitoring",
+   "1325793288",
+   "1672249349",
+   "1704198262"
+  ],
+  [
+   "Admin — Configure result reporting to external systems",
+   "1680637960",
+   "1704853543",
+   null
+  ],
+  [
+   "Create aliquots from a sample",
+   "1679458388",
+   "1702396040",
+   null
+  ],
+  [
+   "Track sample storage and disposal",
+   "1679458388",
+   "1702396040",
+   null
+  ],
+  [
+   "Admin — Manage dictionary entries",
+   "1680441357",
+   "1702821986",
+   null
+  ],
+  [
+   "Admin — Define reflex testing rules",
+   "1680441357",
+   "1702821986",
+   null
+  ],
+  [
+   "🧩 Modules & Features",
+   "239337475",
+   "1325727762",
+   "1699577950"
+  ],
+  [
+   "Upgrading OpenELIS 3.x and 2.x",
+   "1326252042",
+   "239730698",
+   "1704198242"
+  ],
+  [
+   "Laboratory Notebooks",
+   "1679458394",
+   "1704198219",
+   null
+  ],
+  [
+   "Admin — Configure the navigation menu",
+   "1680441354",
+   "1703411767",
+   null
+  ],
+  [
+   "Validate and release results",
+   "1679589479",
+   "1701642334",
+   null
+  ],
+  [
+   "Admin — Edit application properties",
+   "1680441354",
+   "1703411767",
+   null
+  ],
+  [
+   "Questionnaires Configuration for FHIR R4 Resources in OpenELIS Global",
+   "1159069707",
+   "1531052035",
+   "1704329285"
+  ],
+  [
+   "Admin — Manage non-working days",
+   "1680441354",
+   "1703411767",
+   null
+  ],
+  [
+   "Results Entry (legacy screen)",
+   "1679589479",
+   "1701642334",
+   null
+  ],
+  [
+   "Troubleshooting",
+   "1325793288",
+   "245366800",
+   "1704198262"
+  ],
+  [
+   "Admin — Rebuild the search index",
+   "1680441354",
+   "1703411767",
+   null
+  ],
+  [
+   "Madagascar OpenELIS Madagascar Distro",
+   "1160511506",
+   "1159069707",
+   "1701642340"
+  ],
+  [
+   "Implementation Best Practices",
+   "1326252042",
+   "239927340",
+   "1704198242"
+  ],
+  [
+   "Test Sections Configuration for OpenELIS: Managing Laboratory Departments and Test Dependencies",
+   "1159069707",
+   "1530953742",
+   "1704329285"
+  ],
+  [
+   "⚙️ For SysAdmins-Operators",
+   "52560162",
+   "1325793288",
+   "1701970059"
+  ],
+  [
+   "🚀 For Implementers",
+   "52560162",
+   "1326252042",
+   "1701970059"
+  ],
+  [
+   "Admin — Choose the lab number format",
+   "1680441354",
+   "1703411767",
+   null
+  ],
+  [
+   "PART 6: BATCH ORDER ENTRY",
+   "1679458388",
+   "1702396040",
+   null
+  ],
+  [
+   "Enter and save results",
+   "1679589479",
+   "1701642334",
+   null
+  ],
+  [
+   "Report a non-conforming event",
+   "1680605193",
+   "1703084134",
+   null
+  ],
+  [
+   "Triage and release results",
+   "1679589479",
+   "1701642334",
+   null
+  ],
+  [
+   "Roles Configuration for OpenELIS Global 2: Structure, CSV Format, and Deployment Steps",
+   "1159069707",
+   "1530855471",
+   "1704329285"
+  ],
+  [
+   "OpenELIS Global Standard Upgrade Procedure: Steps for Backup, Upgrade, and Verification",
+   "1159069707",
+   "1655701509",
+   "1704329285"
+  ],
+  [
+   "Setup High Availability Fail Over",
+   "1326252042",
+   "240877572",
+   "1704198242"
+  ],
+  [
+   "Run reports",
+   "1679589479",
+   "1701642334",
+   null
+  ],
+  [
+   "Admin: Manage organizations",
+   "1680605196",
+   "1701642337",
+   null
+  ],
+  [
+   "Configuration System Overview",
+   "1159069707",
+   "1530953734",
+   "1704329285"
+  ],
+  [
+   "Admin: Configure site information",
+   "1680441354",
+   "1703411767",
+   null
+  ],
+  [
+   "Admin — Vector Surveillance Reference Data",
+   "1679491237",
+   "1704820826",
+   null
+  ],
+  [
+   "Admin — Configure test notifications",
+   "1680441357",
+   "1702821986",
+   null
+  ],
+  [
+   "Backup Configuration",
+   "1326252042",
+   "240320515",
+   "1704198242"
+  ],
+  [
+   "Admin — Manage user accounts",
+   "1680605196",
+   "1701642337",
+   null
+  ],
+  [
+   "The three domains & the shared order wizard",
+   "1679458388",
+   "1702396040",
+   null
+  ],
+  [
+   "Admin — Define programs and their questionnaires",
+   "1680441357",
+   "1702821986",
+   null
+  ],
+  [
+   "Find an existing order",
+   "1679458388",
+   "1702396040",
+   null
+  ],
+  [
+   "OpenELIS Global",
+   null,
+   "52560162",
+   null
+  ],
+  [
+   "Admin — Configure compliance standards & holding times",
+   "1679491237",
+   "1704820826",
+   null
+  ],
+  [
+   "Tests Configuration for Madagascar Deployment in OpenELIS Global",
+   "1159069707",
+   "1530855463",
+   "1704329285"
+  ],
+  [
+   "Admin — Manage providers",
+   "1680605196",
+   "1701642337",
+   null
+  ],
+  [
+   "PART 7 B: ANALYZER MANAGEMENT",
+   "1680637960",
+   "1704853543",
+   null
+  ],
+  [
+   "🆘 Get Help",
+   "1326055432",
+   "1328185376",
+   null
+  ],
+  [
+   "Server and Workstation Technical Requirements For Deployment",
+   "1326252042",
+   "239632412",
+   "1704198242"
+  ],
+  [
+   "Test-Sample Type Mappings Configuration for Madagascar Deployment",
+   "1159069707",
+   "1530822677",
+   "1704329285"
+  ],
+  [
+   "Configuration Quick Start & Troubleshooting",
+   "1159069707",
+   "1531084826",
+   "1704329285"
+  ],
+  [
+   "OpenELIS Global Implementations",
+   "52560162",
+   "1160511506",
+   "1701970059"
+  ],
+  [
+   "Install OpenELIS Global",
+   "239337475",
+   "239632402",
+   "1699577950"
+  ],
+  [
+   "Admin — Define calculated value tests",
+   "1680441357",
+   "1702821986",
+   null
+  ],
+  [
+   "About OpenELIS Global",
+   "52560162",
+   "239337475",
+   "1701970059"
+  ],
+  [
+   "Madagascar Implementors Guide",
+   "1343979525",
+   "1158774832",
+   null
+  ],
+  [
+   "NAVIGATING OpenELIS LIMS",
+   "1680375824",
+   "1701707894",
+   null
+  ],
+  [
+   "PART 8: PATHOLOGY",
+   "1679458391",
+   "1701969996",
+   null
+  ],
+  [
+   "ACCESSING THE OpenELIS GLOBAL ADMINISTRATION MODULE",
+   "1680375824",
+   "1701707894",
+   null
+  ],
+  [
+   "PART 13: RESULTS VALIDATION (BIOLOGICAL VALIDATION)",
+   "1657864193",
+   "1679458382",
+   null
+  ],
+  [
+   "PART 5: DICTIONARY",
+   "1657864193",
+   "1679458382",
+   null
+  ],
+  [
+   "PART 12: ENTERING LAB TEST RESULTS",
+   "1657864193",
+   "1679458382",
+   null
+  ],
+  [
+   "PART 11: NON CONFORMING EVENTS",
+   "1657864193",
+   "1679458382",
+   null
+  ],
+  [
+   "INTRODUCTION",
+   "1680375824",
+   "1701707894",
+   null
+  ],
+  [
+   "Print a work plan",
+   "1679589479",
+   "1701642334",
+   null
+  ],
+  [
+   "PART 12: HELP",
+   "1680015437",
+   "1704460338",
+   null
+  ],
+  [
+   "PART 14: REPORT",
+   "1657864193",
+   "1679458382",
+   null
+  ],
+  [
+   "PART 3: QUICK LINKS",
+   "1680015437",
+   "1704460338",
+   null
+  ],
+  [
+   "PART 10: CYTOLOGY",
+   "1679458391",
+   "1701969996",
+   null
+  ],
+  [
+   "PART 13: LOGGING OUT OF OPENELIS",
+   "1680015437",
+   "1704460338",
+   null
+  ],
+  [
+   "PART 9: IMMUNOCHEMISTRY",
+   "1679458391",
+   "1701969996",
+   null
+  ],
+  [
+   "Environmental Surveillance — workflow overview",
+   "1680015434",
+   "1704362044",
+   null
+  ],
+  [
+   "PART 1: NAVIGATING OpenELIS GLOBAL",
+   "1680015437",
+   "1704460338",
+   null
+  ],
+  [
+   "Test Catalog Management: workflow overview",
+   "1679786110",
+   "1701937257",
+   null
+  ],
+  [
+   "Electronic Signatures",
+   "1679589479",
+   "1701642334",
+   null
+  ],
+  [
+   "PART 2: QUICK TROUBLESHOOTING",
+   "1680015437",
+   "1704460338",
+   null
+  ],
+  [
+   "PART 4: ENTERING LABORATORY ORDERS",
+   "1679458388",
+   "1702396040",
+   null
+  ],
+  [
+   "Vector Surveillance — workflow overview",
+   "1679589482",
+   "1703051359",
+   null
+  ],
+  [
+   "Complete the sample check for an environmental or vector order",
+   "1679458388",
+   "1702396040",
+   null
+  ],
+  [
+   "📖 User Manual",
+   "52560162",
+   "1326972929",
+   "1701970059"
+  ]
+ ],
+ "stale": [
+  [
+   "Upgrading OpenELIS 3.x and 2.x",
+   "239730698",
+   "1704624217",
+   null
+  ],
+  [
+   "Report a non-conforming event",
+   "1681260549",
+   "1703673929",
+   "nce-report"
+  ],
+  [
+   "Admin: Manage organizations",
+   "1437892659",
+   "1703313492",
+   "organization-management-330"
+  ],
+  [
+   "Admin: Configure site information",
+   "1439432709",
+   "1703182430",
+   null
+  ],
+  [
+   "Backup Configuration",
+   "240320515",
+   "1702756459",
+   null
+  ],
+  [
+   "Install OpenELIS Global",
+   "239632402",
+   "1701281856",
+   null
+  ],
+  [
+   "Manage label presets",
+   "1433468931",
+   "1643905025",
+   "label-presets"
+  ],
+  [
+   "Print a work plan",
+   "272760837",
+   "1643675716",
+   "workplans"
+  ],
+  [
+   "Edit a test's Basic Info (domain, AMR, status)",
+   "1431371782",
+   "1643511817",
+   null
+  ],
+  [
+   "Test Catalog Management: workflow overview",
+   "1437270018",
+   "1642922075",
+   null
+  ],
+  [
+   "Electronic Signatures",
+   "1242759175",
+   "1642922003",
+   "electronic-signatures"
+  ],
+  [
+   "Complete the sample check for an environmental or vector order",
+   "1429176321",
+   "1641447513",
+   "qa-review-shared"
+  ],
+  [
+   "📖 User Manual",
+   "1326972929",
+   "1641447437",
+   null
+  ]
+ ],
+ "labels": [
+  "traduction-fr"
+ ],
+ "prop": {
+  "sourceId": "1441136648",
+  "sourceVersion": 6,
+  "sourceTitle": "Patient Management",
+  "lang": "fr",
+  "translatedAt": "2026-10-15",
+  "method": "claude",
+  "glossary": "fr-v1",
+  "scope": "manual",
+  "frenchFigures": [
+   "02-record-view.png",
+   "03-record-editing.png"
+  ],
+  "figuresCapturedAt": "2026-10-15"
+ },
+ "body": "<ac:adf-extension><ac:adf-node type=\"panel\"><ac:adf-attribute key=\"panel-type\">note</ac:adf-attribute><ac:adf-attribute key=\"containerLevel\">panel_c1</ac:adf-attribute><ac:adf-content><p>Cette page est une traduction de la page anglaise <ac:link><ri:page ri:content-title=\"Patient Management\" ri:version-at-save=\"6\" /><ac:link-body>Patient Management</ac:link-body></ac:link> (version 6, traduite le 2026-10-15). Si les deux versions diff&egrave;rent, la page anglaise fait foi.</p></ac:adf-content></ac:adf-node><ac:adf-fallback><div class=\"panel conf-macro output-block\" style=\"background-color: rgb(234,230,255);border-color: rgb(153,141,217);border-width: 1.0px;\"><div class=\"panelContent\" style=\"background-color: rgb(234,230,255);\">\n<p>Cette page est une traduction de la page anglaise <a href=\"/wiki/spaces/oeg/pages/1441136648/Patient+Management\">Patient Management</a> (version 6, traduite l"
+}

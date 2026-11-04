@@ -1,0 +1,5 @@
+extends: existence
+message: "Keep version numbers ('%s') out of body prose; they belong in labels and the provenance stamp."
+level: warning
+tokens:
+  - '[vV]?\d+\.\d+\.\d+(?:\.\d+)?'

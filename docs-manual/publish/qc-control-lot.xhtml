@@ -1,0 +1,81 @@
+<h1>Receive and activate a control lot</h1>
+<h2>At a glance</h2>
+<table><tbody>
+<tr><th>Purpose</th><td>Register a new lot of control material so that OpenELIS can evaluate the control results an analyzer sends for it against Westgard rules.</td></tr>
+<tr><th>You'll end up with</th><td>A control lot with status <em>Active</em> in the Control Lots list, tied to one analyzer and one test, with its statistics method set. Saving the lot also creates the Westgard rule set for that analyzer and test pair.</td></tr>
+<tr><th>Who does this</th><td>The person who receives and puts new control material into service &mdash; typically a bench supervisor or quality officer. Access is set by user permissions and can be configured by your administrator.</td></tr>
+<tr><th>Before you start</th><td>The control material insert (lot number, level, expiry date and, for the Manufacturer Fixed method, the assigned mean and standard deviation for the test). The analyzer must already exist in the Analyzers List.</td></tr>
+<tr><th>Where</th><td>Main menu &rarr; <em>Analyzers</em> &rarr; <em>Quality Control</em> &rarr; <em>Control Lots</em></td></tr>
+</tbody></table>
+
+<p>Every time a new lot of control material arrives you register it here, one lot per analyzer-and-test pair. The lot carries the mean and standard deviation that the Westgard rule evaluation uses, so it must exist and be <em>Active</em> before control results for that lot can be judged.</p>
+
+<h2>Step-by-step</h2>
+<p><strong>Step 1.</strong> Open <em>Control Lots</em>. The list shows each lot's Lot Number, Control Material, Manufacturer, Control Level, Status, Calculation Method and Expiration Date, with a <em>Status</em> filter above it. Choose <em>New Control Lot</em>.</p>
+<p>{{IMG:01-control-lots-empty.png}}</p>
+<p><em>Figure 1. The Control Lots list before any lot has been registered, with the New Control Lot action.</em></p>
+
+<p><strong>Step 2.</strong> On the <em>New Control Lot</em> form, enter the <em>Lot Number</em> and <em>Control Material</em> exactly as printed on the vial or insert, choose the <em>Control Level</em> (Low, Normal or High), and set the <em>Expiration Date</em> using the calendar picker. Choose the <em>Analyzer</em>; the <em>Test</em> list is disabled until an analyzer is selected. Leave <em>Status</em> on <em>Active</em>.</p>
+<p>{{IMG:02-new-control-lot-filled.png}}</p>
+<p><em>Figure 2. The New Control Lot form completed for a Low-level hematology control on the analyzer's Hb test, with Status set to Active.</em></p>
+
+<p><strong>Step 3.</strong> In the <em>Statistics Configuration</em> panel choose <em>Configure</em>. The default Calculation Method is <em>Manufacturer Fixed</em>, and Save is disabled until a Mean and Standard Deviation are entered. Pick one of the three methods:</p>
+<ul>
+<li><strong>Manufacturer Fixed</strong> &mdash; use the mean and SD printed on the manufacturer's insert. Enter <em>Mean</em> and <em>Standard Deviation</em>. This is the usual choice when the insert gives assayed values for your test and method.</li>
+<li><strong>Rolling Window</strong> &mdash; recalculate the mean and SD from the most recent N results. Set the <em>Window Size</em> (default 20). Use this when you prefer limits that follow the instrument's own performance over time.</li>
+<li><strong>Initial Runs</strong> &mdash; calculate the mean and SD once from the first N establishment runs, then hold them fixed. Set <em>Runs Required</em> (default 20). Use this to establish laboratory-specific limits for a lot before it goes into routine evaluation.</li>
+</ul>
+<p>Choose <em>Save</em> in the dialog to keep the method.</p>
+<p>{{IMG:03-statistics-manufacturer-fixed.png}}</p>
+<p><em>Figure 3. Statistics Configuration with Manufacturer Fixed selected and the insert's Mean and Standard Deviation entered.</em></p>
+<p>{{IMG:04-statistics-rolling-window.png}}</p>
+<p><em>Figure 4. The same dialog with Rolling Window selected, showing the Window Size control.</em></p>
+
+<p><strong>Step 4.</strong> Confirm the Statistics Configuration panel now shows the Calculation Method, Mean and Standard Deviation you set, then choose <em>Save</em> on the form.</p>
+<p>{{IMG:05-statistics-configured.png}}</p>
+<p><em>Figure 5. The Statistics Configuration panel after the dialog is saved, and the form's Save action.</em></p>
+
+<p><strong>Step 5.</strong> The list reopens with the new lot shown as <em>Active</em>, with its Calculation Method and Expiration Date. Saving the lot also creates a Westgard rule set for the analyzer and test &mdash; see <em>Set up QC for an instrument</em> to review it.</p>
+<p>{{IMG:06-control-lots-list.png}}</p>
+<p><em>Figure 6. The Control Lots list with the new lot registered and Active.</em></p>
+
+<p><strong>Step 6.</strong> Use the <em>Status</em> filter to show <em>All Statuses</em>, <em>Establishment</em>, <em>Active</em> or <em>Expired</em> lots.</p>
+<p>{{IMG:07-status-filter.png}}</p>
+<p><em>Figure 7. The Status filter on the Control Lots list.</em></p>
+
+<h2>Field reference</h2>
+<table><tbody>
+<tr><th>Lot Number</th><td>The manufacturer's lot identifier.</td></tr>
+<tr><th>Control Material</th><td>The product name of the control. Shown in the list as Control Material. The list's separate <em>Manufacturer</em> column is not set from this form and shows &ldquo;-&rdquo;.</td></tr>
+<tr><th>Control Level</th><td>Low, Normal or High. Register one lot per level you run.</td></tr>
+<tr><th>Expiration Date</th><td>From the insert; set it with the calendar picker.</td></tr>
+<tr><th>Analyzer</th><td>The analyzer this lot is run on. Only analyzers already in the Analyzers List are offered.</td></tr>
+<tr><th>Test</th><td>The test whose control results this lot covers; enabled once an analyzer is chosen. The list offers every test in the catalog, not only tests mapped to the analyzer, so choose carefully.</td></tr>
+<tr><th>Status</th><td>Active / Inactive toggle. New lots default to Active. The list's Status filter has no <em>Inactive</em> value; its values are Establishment, Active and Expired.</td></tr>
+<tr><th>Statistics Configuration</th><td>Calculation Method (Manufacturer Fixed, Rolling Window, Initial Runs) with the method's Mean and Standard Deviation, Window Size, or Runs Required.</td></tr>
+</tbody></table>
+
+<h2>Tips</h2>
+<ul>
+<li>With <em>Manufacturer Fixed</em>, saving the form without configuring a Mean and Standard Deviation fails with the message <em>Error &mdash; Failed to save control lot</em>. Open <em>Configure</em> and enter both values first.</li>
+<li>If the Save button in the Statistics Configuration dialog is greyed out, a required value for the chosen method is missing.</li>
+<li><strong>Known defect (3.2.2.0):</strong> saving the <em>Edit Control Lot</em> page fails with <em>Error &mdash; Failed to save control lot</em>, even when nothing has been changed. Existing lots therefore cannot currently be edited or set to Inactive from this screen. If a lot was registered with a wrong value, register a corrected lot rather than editing the existing one.</li>
+<li><strong>Known defect (3.2.2.0):</strong> the Rule Configuration page may show a different test name for the pair than the one you selected here (for example <em>VGM</em> after choosing <em>Hb</em>). The rule set still belongs to the lot you saved.</li>
+<li>The page title and breadcrumb read <em>Analyzers &gt; Quality Control Dashboard &gt; Control Lots</em>: the middle segment says <em>Quality Control Dashboard</em> although the Main menu entry is <em>Quality Control</em>. You are on the Control Lots screen.</li>
+</ul>
+<p>{{IMG:08-edit-control-lot-error.png}}</p>
+<p><em>Figure 8. The Edit Control Lot page after switching Status to Inactive and choosing Save, showing the error notification described above. The same error appears when Save is chosen with no changes.</em></p>
+
+<h2>Not yet available</h2>
+<ul>
+<li>Control results cannot be entered by hand on these screens; they arrive only through an analyzer's electronic connection.</li>
+<li>There is no separate Deactivate or Recalculate action in the row menu &mdash; the row menu offers <em>Edit</em> only.</li>
+<li>Because Edit cannot be saved on this version, what a lot switched to Inactive looks like in the list (it is expected to appear under <em>Expired</em>) could not be verified.</li>
+</ul>
+
+<h2>Related pages</h2>
+<ul>
+<li>Set up QC for an instrument</li>
+<li>Review QC and act on violations</li>
+<li>Why is my QC chart empty?</li>
+</ul>

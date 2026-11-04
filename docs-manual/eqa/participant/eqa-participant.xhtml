@@ -1,0 +1,161 @@
+<p>How-to · Laboratory staff and QA officers at a laboratory that receives proficiency testing panels</p>
+<ac:structured-macro ac:name="info"><ac:rich-text-body><p><strong>Status: draft for review.</strong> Every step below was performed on <code>pngtest.openelis-global.org</code> (OpenELIS 3.2.2.0, English) on 23 and 24 September 2026, with an international CD4 scheme whose provider does not run OpenELIS. The companion page for laboratories that run a scheme is <em>EQA provider: run a proficiency testing scheme</em>.</p></ac:rich-text-body></ac:structured-macro>
+<h2>At a glance</h2>
+<table><tbody>
+<tr><th>Purpose</th><td>Take part in an external quality assessment (EQA) scheme: enrol, receive the panel, test it through the normal result pipeline, submit to the provider, and act on the scores that come back.</td></tr>
+<tr><th>You'll end up with</th><td>A submitted and scored cycle, the laboratory's performance on record, and any questionable result triaged with a reason.</td></tr>
+<tr><th>Who does this</th><td>Laboratory staff for receipt and testing; a QA officer for enrolment, submission, scores and follow-up. Access is set by user permissions and can be configured by your administrator.</td></tr>
+<tr><th>Before you start</th><td>The scheme set up on this instance under EQA Management, the panel in hand with its provider sample IDs, and the provider's scores (as a CSV) once they arrive.</td></tr>
+<tr><th>Where</th><td>Main menu → Quality Assurance → EQA → My Programs, My Cycles, Lab Performance, This Lab's Follow-Up, Analyst Competency</td></tr>
+</tbody></table>
+<h2>How a participant cycle runs</h2>
+<p>EQA samples are tested exactly like patient samples: they are registered through Add Order, entered on the Results page and released on the Validation page. The EQA screens track the cycle around that pipeline. A cycle moves through <strong>Planned → Panel received → Ready to submit → Submitted → Scored</strong>.</p>
+<p>When the provider runs OpenELIS, its consignment opens the cycle here on import and scores come back through the FHIR store. When it does not, as in the example on this page, you record the cycle yourself with <strong>New cycle</strong> and import the provider's scores as a CSV.</p>
+<p><strong>The scheme must already exist on this instance.</strong> An administrator adds it under EQA Management → Programs, with the International PT (or Regional PT) type, the external provider's name and the tests it covers. See step 1 of the provider page.</p>
+
+<h2>1. Enrol your laboratory</h2>
+<ol>
+<li><p>Go to <strong>Main menu → Quality Assurance → EQA → My Programs</strong> (the page is titled <strong>My EQA Schemes</strong>) and select <strong>Enroll in Scheme</strong>. Pick the scheme from <strong>Scheme</strong>; its name and provider fill in. Choose <strong>Not listed</strong> only to type a name by hand. Wait a few seconds for <strong>Lab Units</strong>, <strong>Tests</strong> and <strong>Test panels</strong> to appear, then choose the lab unit that tests the panel and the tests you report. The tests are not copied from the scheme; pick them here.</p></li>
+<li><p>Under <strong>Reporting analyte per test</strong>, set the analyte each test reports for this scheme. Results are submitted to the provider under this analyte, and a test left unset is not submitted automatically. Select <strong>Save Enrollment</strong>.</p>
+<p>{{IMG:q03-enroll-form-filled.png}}</p>
+<p><em>Figure 1. New EQA Scheme Enrollment for an international CD4 scheme.</em></p></li>
+<li><p>The enrolment is listed under <strong>Active enrolments</strong>. The row menu offers <strong>Edit</strong>, <strong>Suspend</strong> and <strong>Withdraw</strong> for pausing or leaving a scheme (observed, not exercised).</p>
+<p>{{IMG:q05-enrolment-actions.png}}</p>
+<p><em>Figure 2. The active enrolment and its actions.</em></p></li>
+</ol>
+
+<h2>2. Record the cycle (provider without OpenELIS)</h2>
+<ol start="4">
+<li><p>Go to <strong>EQA → My Cycles</strong> and select <strong>New cycle</strong>. Choose the <strong>Programme</strong> (only schemes you are enrolled in are offered), enter the <strong>Cycle name</strong> as the provider gives it, and set the <strong>Distribution date</strong> and <strong>Submission deadline</strong>. Select <strong>Create cycle</strong>.</p>
+<p>{{IMG:q07-new-cycle-modal.png}}</p>
+<p><em>Figure 3. New EQA cycle.</em></p></li>
+<li><p>The cycle is listed as <strong>Planned</strong>. Expand it: until the panel is received it shows <strong>Receive panel</strong>, which opens Add Order with the EQA box already ticked.</p>
+<p>{{IMG:q09-cycle-expanded-planned.png}}</p>
+<p><em>Figure 4. A planned cycle, waiting for its panel.</em></p></li>
+</ol>
+
+<h2>3. Receive the panel</h2>
+<p>Register one order per panel sample.</p>
+<ol start="6">
+<li><p>Select <strong>Receive panel</strong>. Add Order opens with <strong>EQA Sample</strong> ticked and the patient fields locked (<em>EQA Sample, Patient Info Locked</em>): an EQA sample has no real patient. Select <strong>Next</strong> at the foot of the form.</p>
+<p>{{IMG:q10-add-order-eqa-locked.png}}</p>
+<p><em>Figure 5. Add Order in EQA mode, with patient information locked.</em></p></li>
+<li><p>Under <strong>EQA Sample Information</strong>, the Programme and EQA Cycle are already chosen. Enter the <strong>Provider Sample ID</strong> printed on the tube and the <strong>Result Deadline</strong>. Under <strong>Panel Receipt</strong>, record the <strong>Temperature on arrival</strong>, whether the <strong>Panel arrived intact</strong>, and any <strong>Integrity notes</strong>. If the panel arrived through the shipment module, choose it under <strong>Inbound consignment</strong>; that takes delivery and tells the provider it arrived.</p>
+<p>{{IMG:q12-eqa-sample-info-receipt.png}}</p>
+<p><em>Figure 6. EQA Sample Information and Panel Receipt for the first sample.</em></p>
+<p>Receipt is recorded once per cycle. For the second and later samples the page shows <em>Panel receipt already recorded</em> instead of the receipt fields.</p></li>
+<li><p>On <strong>Add Sample</strong>, choose the sample type and tick the test, as for any order.</p>
+<p>{{IMG:q13-add-sample-cd4.png}}</p>
+<p><em>Figure 7. The CD4 test ticked for the panel sample.</em></p></li>
+<li><p>On <strong>Add Order</strong>, generate or scan the <strong>Lab Number</strong> and choose the site under <strong>Search Site Name</strong>. Select <strong>Submit</strong> at the foot of the form. Repeat from step 6 for each remaining panel sample.</p>
+<p>{{IMG:q14-order-site-provider.png}}</p>
+<p><em>Figure 8. The order step, with the provider as the site.</em></p></li>
+<li><p>Back on My Cycles, the cycle is <strong>Panel received</strong> and <strong>Sample progress</strong> lists each lab number with its provider sample ID and entry status.</p>
+<p>{{IMG:q17-cycle-panel-received.png}}</p>
+<p><em>Figure 9. Both panel samples registered and waiting for results.</em></p></li>
+</ol>
+
+<h2>4. Test, enter and validate</h2>
+<ol start="11">
+<li><p>Select a <strong>Lab No</strong> on My Cycles to open that sample on the <strong>Results</strong> page. The lab number carries an <strong>EQA</strong> tag. Enter the result as usual.</p>
+<p>{{IMG:q18-result-entry-eqa-tag.png}}</p>
+<p><em>Figure 10. An EQA sample on the Results page.</em></p></li>
+<li><p>If the scheme records the analyst, an <strong>Analyst (EQA)</strong> column appears at the right of the row. Choose the analyst who ran the sample; this feeds Analyst Competency and is separate from who enters or validates the result. Select <strong>Save</strong>.</p>
+<p>{{IMG:q20-result-entry-analyst.png}}</p>
+<p><em>Figure 11. The Analyst (EQA) column.</em></p></li>
+<li><p>Validate on the <strong>Validation</strong> page like any other result: select <strong>Review</strong> on the row, check the result, and select <strong>Validate &amp; release</strong>.</p>
+<p>{{IMG:q21-validation-review.png}}</p>
+<p><em>Figure 12. Releasing an EQA result from Validation.</em></p></li>
+</ol>
+<p>The cycle does not change state the moment you validate. A background check picks up validated results within about five minutes, and moves the cycle to <strong>Ready to submit</strong>.</p>
+
+<h2>5. Submit to the provider</h2>
+<ol start="14">
+<li><p>Expand the cycle on My Cycles. The <strong>Pre-submission summary</strong> lists every validated result by sample: this is what goes to the provider. Select <strong>Review &amp; submit</strong>. It is a single click; validation was the authoritative check.</p>
+<p>{{IMG:q23-ready-to-submit.png}}</p>
+<p><em>Figure 13. A cycle ready to submit, with its pre-submission summary.</em></p></li>
+<li><p>If you sent the results another way (the provider's portal, email), use <strong>Submit by hand</strong> instead. The dialog, <strong>Record a submission made by hand</strong>, says the reference is what makes this a record rather than a claim, so <strong>Provider's reference</strong> is required. Enter the reference and select <strong>Submit by hand</strong>. The page confirms <em>Recorded as submitted by hand, with the provider's reference</em>, and the cycle moves to Submitted.</p>
+<p>{{IMG:q23b-submit-by-hand.png}}</p>
+<p><em>Figure 14. Recording a submission made through the provider's portal.</em></p>
+<ac:structured-macro ac:name="warning"><ac:rich-text-body><p><strong>Known issue in 3.2.2.0: the Provider's reference field does not keep keyboard focus.</strong> Clicking the field leaves focus on the Review &amp; submit button behind the dialog, so typed characters do not reach the field, and a space or Enter submits the cycle through Review &amp; submit instead, without the manual-submission record. On the test instance the reference could only be entered by filling the field programmatically. Until this is fixed, check the cycle's status after using the dialog.</p></ac:rich-text-body></ac:structured-macro></li>
+<li><p>The cycle moves to <strong>Submitted</strong> and counts under <strong>Awaiting scores</strong>.</p>
+<p>{{IMG:q24-submitted-awaiting.png}}</p>
+<p><em>Figure 15. The submitted cycle, under the Awaiting scores filter.</em></p></li>
+</ol>
+
+<h2>6. Import the provider's scores</h2>
+<ol start="17">
+<li><p>When the provider's report arrives, expand the cycle and select <strong>Import scores (CSV)</strong>. Paste the scores CSV; it needs <code>analyte_name</code> and <code>performance_status</code> columns (the provider's export also carries result, target and z-score). Select <strong>Import scores</strong>. Scores from a provider that runs OpenELIS arrive on their own and need no import.</p>
+<p>{{IMG:q25-import-scores-csv.png}}</p>
+<p><em>Figure 16. Import the provider's scores.</em></p></li>
+<li><p>A confirmation shows how many scores were recorded. The cycle moves to <strong>Scored</strong> and appears under the <strong>Completed</strong> filter. <strong>Download performance report</strong> is on the expanded row.</p>
+<p>{{IMG:q27-cycle-scored.png}}</p>
+<p><em>Figure 17. The scored cycle under the Completed filter.</em></p></li>
+</ol>
+
+<h2>7. Review performance and follow up</h2>
+<ol start="19">
+<li><p><strong>EQA → Lab Performance</strong> has two tabs. <strong>Coverage</strong> shows the acceptance rate over twelve months, the on-time submission rate, EQA-triggered non-conformities, and accredited tests with no EQA (your ISO 15189 §7.7.2 candidates), then each section's scheme with its most recent mark (A acceptable, ? questionable, ! unacceptable, dash for not enrolled or missed). <strong>Recent Cycles</strong> lists each cycle with its score and verdict. Both export to CSV.</p>
+<p>{{IMG:q28-lab-performance-coverage.png}}</p>
+<p><em>Figure 18. Lab Performance, Coverage.</em></p>
+<p>{{IMG:q29-lab-performance-recent.png}}</p>
+<p><em>Figure 19. Lab Performance, Recent Cycles.</em></p></li>
+<li><p><strong>EQA → This Lab's Follow-Up</strong> holds your own results that need a human decision: the questionable band (2 &lt; |Z| ≤ 3) and in-house failures. The page's Auto-NCE notice says unacceptable scores on an external scheme open a non-conformity automatically, so they do not appear here. Expand an item to triage it.</p>
+<p>{{IMG:q31-followup-triage.png}}</p>
+<p><em>Figure 20. A questionable CD4 result waiting for triage.</em></p></li>
+<li><p>Choose <strong>Dismiss with reason</strong> if the result is noise, or <strong>Escalate to NCE</strong> if you suspect a real non-conformity. Dismissing asks for a <strong>Category</strong> (Transcription error, Known equipment issue, Pending re-test, Acceptable on review, Other) and <strong>Notes</strong>. Select <strong>Dismiss</strong>. The category decides which competency event is written against the result, and dismissed entries stay linked to the cycle.</p>
+<p>{{IMG:q32-dismiss-with-reason.png}}</p>
+<p><em>Figure 21. Dismissing a questionable result as a known equipment issue.</em></p>
+<p>In-house failures land in the same queue, with the reason <strong>In-house fail</strong> and the source <strong>In-house</strong>. The example below is a platelet count of 198 against a sealed target of 245 from an in-house blinded panel (see <em>Run an in-house blinded panel</em> on the provider page).</p>
+<p>{{IMG:q30b-followup-inhouse-fail.png}}</p>
+<p><em>Figure 22. An in-house failure waiting for triage.</em></p>
+<p><strong>Escalate to NCE</strong> acts at once, with no dialog: the item leaves the queue, and a non-conformity opens under <strong>Quality Assurance → QMS &amp; Improvement → Non-Conform → All NCEs</strong>, titled <em>Escalated EQA follow-up</em> with the analyte, scheme and cycle, in the Analysis category and at Critical severity. The analyst's competency band changes too (next step).</p>
+<p>{{IMG:q33b-nce-created.png}}</p>
+<p><em>Figure 23. The non-conformity opened by Escalate to NCE.</em></p></li>
+<li><p><strong>EQA → Analyst Competency</strong> lists every analyst assigned to proficiency testing in the last twelve months, with tiles for Analysts assessed, Competent, Under review and Not competent. Each row shows PT samples (12 mo), Most recent performance and a Competency band per analyte. Fewer than four assessable samples reads as <strong>Under review</strong> (insufficient evidence), not as a pass. An open escalated non-conformity makes the analyst <strong>Not competent</strong> for that analyte until it is closed. This page only has data for schemes that record the analyst.</p>
+<p>{{IMG:q34-analyst-competency.png}}</p>
+<p><em>Figure 24. Analyst Competency for three bench analysts: one Not competent on platelets after an escalated failure.</em></p>
+<p>Expand an analyst under <strong>History</strong> to see <strong>Competency by analyte</strong> (Evaluable, Failures, Latest, Competency) and <strong>Evidence · every event in the window</strong>, event by event, with what counts against them.</p>
+<p>{{IMG:q35-competency-evidence.png}}</p>
+<p><em>Figure 25. The evidence behind a Not competent band.</em></p></li>
+</ol>
+
+<h2>Field reference</h2>
+<table><tbody>
+<tr><th>Field</th><th>Where</th><th>Notes</th></tr>
+<tr><td>Reporting analyte per test</td><td>My Programs, enrolment</td><td>The analyte a test's result is submitted under. Unset tests are not submitted automatically.</td></tr>
+<tr><td>Provider Sample ID</td><td>Add Order, EQA Sample Information</td><td>The code on the provider's tube. It is shown against the lab number on My Cycles and in the pre-submission summary.</td></tr>
+<tr><td>Temperature on arrival, Panel arrived intact, Integrity notes</td><td>Add Order, Panel Receipt</td><td>Recorded once per cycle, on the first sample registered.</td></tr>
+<tr><td>Analyst (EQA)</td><td>Results page</td><td>Shown only for schemes that record the analyst.</td></tr>
+<tr><td>Provider's reference</td><td>Submit by hand</td><td>Required; it is what makes a manual submission a record.</td></tr>
+<tr><td>Category</td><td>Dismiss with reason</td><td>Decides the competency event written against the result.</td></tr>
+</tbody></table>
+
+<h2>Known issues in 3.2.2.0</h2>
+<ul>
+<li><strong>Two panel samples of the same test are held as one result.</strong> In this run, samples APC-26-3-A (412) and APC-26-3-B (978) were both CD4. The provider scored 978, but This Lab's Follow-Up shows 412 as the reported value and no target. Check the reported value against the provider's report before triaging. (<a href="https://uwdigi.atlassian.net/browse/OGC-1244">OGC-1244</a>)</li>
+<li>After validation, the cycle waits up to about five minutes before it moves to Ready to submit. (<a href="https://uwdigi.atlassian.net/browse/OGC-1257">OGC-1257</a>)</li>
+<li>Activating Review &amp; submit a second time returns an Internal Server Error rather than saying the cycle is already submitted. (<a href="https://uwdigi.atlassian.net/browse/OGC-1255">OGC-1255</a>)</li>
+<li>In the Submit by hand dialog, keyboard focus stays on Review &amp; submit behind it, so the Provider's reference cannot be typed and a space or Enter submits the cycle the ordinary way (see step 15). (<a href="https://uwdigi.atlassian.net/browse/OGC-1246">OGC-1246</a>)</li>
+<li>The EQA Cycle picker on Add Order also lists in-house blinding cycles under an external scheme. (<a href="https://uwdigi.atlassian.net/browse/OGC-1250">OGC-1250</a>)</li>
+<li>Results recorded against one analyst on an in-house blinded panel were credited to another analyst on Analyst Competency in testing. Check the evidence rows before acting on a band. (<a href="https://uwdigi.atlassian.net/browse/OGC-1245">OGC-1245</a>)</li>
+<li>In EQA mode, Add Order shows the locked patient fields as <em>NULL</em> with a date of birth of 01/01/1900. The Results page lists the sample kind as Client sample. The Result Deadline is not filled in from the cycle. (<a href="https://uwdigi.atlassian.net/browse/OGC-1250">OGC-1250</a>)</li>
+<li>The New cycle dialog uses month/day/year date fields; the rest of EQA uses day/month/year.</li>
+<li>The Cycle column on My Cycles shows the cycle number, not its name. (<a href="https://uwdigi.atlassian.net/browse/OGC-1262">OGC-1262</a>)</li>
+<li>Analyst Competency can show Failures 0 while the evidence row for the same event reads Counts against: Failure. (<a href="https://uwdigi.atlassian.net/browse/OGC-1252">OGC-1252</a>)</li>
+<li>On My Programs, the subtitle still says <em>Programs</em>, and no confirmation appears after Save Enrollment. (<a href="https://uwdigi.atlassian.net/browse/OGC-1260">OGC-1260</a>, <a href="https://uwdigi.atlassian.net/browse/OGC-1261">OGC-1261</a>)</li>
+</ul>
+
+<h2>Not covered here</h2>
+<p>Running a scheme for other laboratories (see <em>EQA provider: run a proficiency testing scheme</em>), and cycles opened by a FHIR consignment from a provider that runs OpenELIS. In-house blinded panels are set up by a QA officer; see <em>Run an in-house blinded panel</em> on the provider page.</p>
+
+<h2>Provenance</h2>
+<table><tbody>
+<tr><th>Status</th><td>Draft, driven end to end, pending review</td></tr>
+<tr><th>Instance</th><td><code>pngtest.openelis-global.org</code>, OpenELIS 3.2.2.0 (branch demo-png), locale English</td></tr>
+<tr><th>Routes</th><td><code>/qa/eqa/my-programs</code>, <code>/qa/eqa/my-cycles</code>, <code>/SamplePatientEntry?isEQA=true</code>, <code>/result</code>, <code>/validation</code>, <code>/qa/eqa/lab-performance/coverage</code>, <code>/qa/eqa/lab-performance/recent</code>, <code>/qa/eqa/follow-up-queue</code>, <code>/qa/eqa/analyst-competency</code>, <code>/NceDashboard</code></td></tr>
+<tr><th>Captured</th><td>23 and 24 September 2026</td></tr>
+<tr><th>Evidence</th><td>All steps driven. Submit by hand (24 September, cycle 2026 Round 5 (APC-26-5)) was completed with the reference filled programmatically, because the field does not take typed input (see Known issues). Escalate to NCE was driven on an in-house failure. Analyst Competency re-captured on 24 September with three bench analysts (Grace Kila, Joseph Tau, Mary Waim).</td></tr>
+<tr><th>Spine</th><td>Epic OGC-608 (EQA V2: Complete Lifecycle MVP)</td></tr>
+<tr><th>Reviewer</th><td>Pending</td></tr>
+</tbody></table>

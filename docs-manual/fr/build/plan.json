@@ -1,0 +1,1483 @@
+{
+ "frRoot": "1641447437",
+ "legacyFolder": "1679458382",
+ "folders": {
+  "EUM": [
+   "Guide de l'utilisateur",
+   "ROOT"
+  ],
+  "ADM": [
+   "Guide de l'administrateur",
+   "ROOT"
+  ],
+  "1680015437": [
+   "Se repérer dans OpenELIS",
+   "EUM"
+  ],
+  "1679458388": [
+   "Demandes et échantillons",
+   "EUM"
+  ],
+  "1679589479": [
+   "Résultats, validation et rapports",
+   "EUM"
+  ],
+  "1680015434": [
+   "Surveillance environnementale",
+   "EUM"
+  ],
+  "1679589482": [
+   "Surveillance vectorielle",
+   "EUM"
+  ],
+  "1679458391": [
+   "Pathologie, immunohistochimie et cytologie",
+   "EUM"
+  ],
+  "1680605193": [
+   "Événements non conformes",
+   "EUM"
+  ],
+  "1679458394": [
+   "Cahiers de laboratoire",
+   "EUM"
+  ],
+  "1680375824": [
+   "Premiers pas en administration",
+   "ADM"
+  ],
+  "1680605196": [
+   "Utilisateurs, structures et prescripteurs",
+   "ADM"
+  ],
+  "1680441354": [
+   "Paramètres du site et du système",
+   "ADM"
+  ],
+  "1679786110": [
+   "Catalogue de tests",
+   "ADM"
+  ],
+  "1680441357": [
+   "Programmes, règles et notifications",
+   "ADM"
+  ],
+  "1680637960": [
+   "Transmission des résultats et analyseurs",
+   "ADM"
+  ],
+  "1679491237": [
+   "Données de référence environnementales et vectorielles",
+   "ADM"
+  ]
+ },
+ "trash": [
+  "1643774012"
+ ],
+ "pages": [
+  {
+   "en": "1428881409",
+   "scope": "manual",
+   "fr": null,
+   "title": "Les trois domaines et l'assistant de saisie des demandes commun",
+   "enTitle": "The three domains & the shared order wizard",
+   "enVersion": 4,
+   "parent": {
+    "kind": "folder",
+    "key": "1679458388"
+   }
+  },
+  {
+   "en": "1428946945",
+   "scope": "manual",
+   "fr": null,
+   "title": "Évaluation de la conformité",
+   "enTitle": "Compliance evaluation",
+   "enVersion": 6,
+   "parent": {
+    "kind": "twin",
+    "en": "1437466625"
+   }
+  },
+  {
+   "en": "1429012481",
+   "scope": "manual",
+   "fr": null,
+   "title": "Regroupement et déconvolution",
+   "enTitle": "Pooling & deconvolution",
+   "enVersion": 6,
+   "parent": {
+    "kind": "twin",
+    "en": "1437532161"
+   }
+  },
+  {
+   "en": "1439072277",
+   "scope": "manual",
+   "fr": null,
+   "title": "Saisir et enregistrer les résultats",
+   "enTitle": "Enter and save results",
+   "enVersion": 14,
+   "parent": {
+    "kind": "folder",
+    "key": "1679589479"
+   }
+  },
+  {
+   "en": "1441202177",
+   "scope": "manual",
+   "fr": null,
+   "title": "Valider et libérer les résultats",
+   "enTitle": "Validate and release results",
+   "enVersion": 8,
+   "parent": {
+    "kind": "folder",
+    "key": "1679589479"
+   }
+  },
+  {
+   "en": "1440350210",
+   "scope": "manual",
+   "fr": null,
+   "title": "Trouver une demande d'analyse existante",
+   "enTitle": "Find an existing order",
+   "enVersion": 6,
+   "parent": {
+    "kind": "folder",
+    "key": "1679458388"
+   }
+  },
+  {
+   "en": "1440677908",
+   "scope": "manual",
+   "fr": null,
+   "title": "Suivre le stockage et l'élimination des échantillons",
+   "enTitle": "Track sample storage and disposal",
+   "enVersion": 6,
+   "parent": {
+    "kind": "folder",
+    "key": "1679458388"
+   }
+  },
+  {
+   "en": "1440940035",
+   "scope": "manual",
+   "fr": null,
+   "title": "Créer des aliquotes à partir d'un échantillon",
+   "enTitle": "Create aliquots from a sample",
+   "enVersion": 6,
+   "parent": {
+    "kind": "folder",
+    "key": "1679458388"
+   }
+  },
+  {
+   "en": "1440841744",
+   "scope": "manual",
+   "fr": null,
+   "title": "Générer des rapports",
+   "enTitle": "Run reports",
+   "enVersion": 6,
+   "parent": {
+    "kind": "folder",
+    "key": "1679589479"
+   }
+  },
+  {
+   "en": "1681260549",
+   "scope": "manual",
+   "fr": null,
+   "title": "Signaler un événement non conforme",
+   "enTitle": "Report a non-conforming event",
+   "enVersion": 4,
+   "parent": {
+    "kind": "folder",
+    "key": "1680605193"
+   }
+  },
+  {
+   "en": "1653604361",
+   "scope": "manual",
+   "fr": null,
+   "title": "Saisie des résultats (ancien écran)",
+   "enTitle": "Results Entry (legacy screen)",
+   "enVersion": 3,
+   "parent": {
+    "kind": "folder",
+    "key": "1679589479"
+   }
+  },
+  {
+   "en": "272662541",
+   "scope": "manual",
+   "fr": null,
+   "title": "PARTIE 6 : SAISIE DES DEMANDES PAR LOT",
+   "enTitle": "PART 6: BATCH ORDER ENTRY",
+   "enVersion": 4,
+   "parent": {
+    "kind": "folder",
+    "key": "1679458388"
+   }
+  },
+  {
+   "en": "991821864",
+   "scope": "manual",
+   "fr": null,
+   "title": "Cahiers de laboratoire",
+   "enTitle": "Laboratory Notebooks",
+   "enVersion": 7,
+   "parent": {
+    "kind": "folder",
+    "key": "1679458394"
+   }
+  },
+  {
+   "en": "951156737",
+   "scope": "manual",
+   "fr": null,
+   "title": "COMMENT CRÉER UN CAHIER DE LABORATOIRE",
+   "enTitle": "HOW TO CREATE A LAB NOTEBOOK",
+   "enVersion": 3,
+   "parent": {
+    "kind": "twin",
+    "en": "991821864"
+   }
+  },
+  {
+   "en": "1047330908",
+   "scope": "manual",
+   "fr": null,
+   "title": "COMMENT ARCHIVER DES ÉCHANTILLONS",
+   "enTitle": "HOW TO ARCHIVE SAMPLES",
+   "enVersion": 1,
+   "parent": {
+    "kind": "twin",
+    "en": "951156737"
+   }
+  },
+  {
+   "en": "1047363648",
+   "scope": "manual",
+   "fr": null,
+   "title": "COMMENT EFFECTUER LA POST-ANALYSE",
+   "enTitle": "HOW TO CONDUCT POST ANALYSIS",
+   "enVersion": 1,
+   "parent": {
+    "kind": "twin",
+    "en": "951156737"
+   }
+  },
+  {
+   "en": "1047330857",
+   "scope": "manual",
+   "fr": null,
+   "title": "COMMENT CRÉER DES ÉCHANTILLONS ENFANTS",
+   "enTitle": "HOW TO CREATE CHILD SAMPLES",
+   "enVersion": 1,
+   "parent": {
+    "kind": "twin",
+    "en": "951156737"
+   }
+  },
+  {
+   "en": "1047199822",
+   "scope": "manual",
+   "fr": null,
+   "title": "COMMENT SAISIR LES RÉSULTATS MANUELLEMENT",
+   "enTitle": "HOW TO ENTER RESULTS MANUALLY",
+   "enVersion": 1,
+   "parent": {
+    "kind": "twin",
+    "en": "951156737"
+   }
+  },
+  {
+   "en": "1047527493",
+   "scope": "manual",
+   "fr": null,
+   "title": "COMMENT PUBLIER LA COMPILATION",
+   "enTitle": "HOW TO POST COMPILATION",
+   "enVersion": 2,
+   "parent": {
+    "kind": "twin",
+    "en": "951156737"
+   }
+  },
+  {
+   "en": "1047429176",
+   "scope": "manual",
+   "fr": null,
+   "title": "COMMENT PRÉPARER LES ÉCHANTILLONS ACHEMINÉS POUR ANALYSE",
+   "enTitle": "HOW TO PREPARE ROUTED SAMPLES FOR ANALYSIS",
+   "enVersion": 1,
+   "parent": {
+    "kind": "twin",
+    "en": "951156737"
+   }
+  },
+  {
+   "en": "1047560199",
+   "scope": "manual",
+   "fr": null,
+   "title": "COMMENT TRAITER L'ÉCHANTILLON",
+   "enTitle": "HOW TO PROCESS SAMPLE",
+   "enVersion": 1,
+   "parent": {
+    "kind": "twin",
+    "en": "951156737"
+   }
+  },
+  {
+   "en": "1047527443",
+   "scope": "manual",
+   "fr": null,
+   "title": "COMMENT ENREGISTRER LES DOSAGES",
+   "enTitle": "HOW TO RECORD ASSAYS",
+   "enVersion": 1,
+   "parent": {
+    "kind": "twin",
+    "en": "951156737"
+   }
+  },
+  {
+   "en": "1046118450",
+   "scope": "manual",
+   "fr": null,
+   "title": "COMMENT ACHEMINER DES ÉCHANTILLONS VERS UN LABORATOIRE EXTERNE",
+   "enTitle": "HOW TO ROUTE ROUTE SAMPLES EXTERNALLY",
+   "enVersion": 1,
+   "parent": {
+    "kind": "twin",
+    "en": "951156737"
+   }
+  },
+  {
+   "en": "1047986189",
+   "scope": "manual",
+   "fr": null,
+   "title": "COMMENT ACHEMINER LES ÉCHANTILLONS EN INTERNE",
+   "enTitle": "HOW TO ROUTE SAMPLES INTERNALLY",
+   "enVersion": 1,
+   "parent": {
+    "kind": "twin",
+    "en": "951156737"
+   }
+  },
+  {
+   "en": "1047658526",
+   "scope": "manual",
+   "fr": null,
+   "title": "COMMENT ACHEMINER LES ÉCHANTILLONS VERS LE STOCKAGE",
+   "enTitle": "HOW TO ROUTE SAMPLES TO STORAGE",
+   "enVersion": 1,
+   "parent": {
+    "kind": "twin",
+    "en": "951156737"
+   }
+  },
+  {
+   "en": "1439072261",
+   "scope": "manual",
+   "fr": null,
+   "title": "Admin : Configurer les notifications d'analyses",
+   "enTitle": "Admin — Configure test notifications",
+   "enVersion": 7,
+   "parent": {
+    "kind": "folder",
+    "key": "1680441357"
+   }
+  },
+  {
+   "en": "1438842886",
+   "scope": "manual",
+   "fr": null,
+   "title": "Admin : Définir des analyses calculées",
+   "enTitle": "Admin — Define calculated value tests",
+   "enVersion": 6,
+   "parent": {
+    "kind": "folder",
+    "key": "1680441357"
+   }
+  },
+  {
+   "en": "1439006727",
+   "scope": "manual",
+   "fr": null,
+   "title": "Admin : Définir les programmes et leurs questionnaires",
+   "enTitle": "Admin — Define programs and their questionnaires",
+   "enVersion": 8,
+   "parent": {
+    "kind": "folder",
+    "key": "1680441357"
+   }
+  },
+  {
+   "en": "1439137808",
+   "scope": "manual",
+   "fr": null,
+   "title": "Admin : Définir les règles d'analyses réflexes",
+   "enTitle": "Admin — Define reflex testing rules",
+   "enVersion": 7,
+   "parent": {
+    "kind": "folder",
+    "key": "1680441357"
+   }
+  },
+  {
+   "en": "1438973976",
+   "scope": "manual",
+   "fr": null,
+   "title": "Admin : Gérer les entrées du dictionnaire",
+   "enTitle": "Admin — Manage dictionary entries",
+   "enVersion": 9,
+   "parent": {
+    "kind": "folder",
+    "key": "1680441357"
+   }
+  },
+  {
+   "en": "1439596548",
+   "scope": "manual",
+   "fr": null,
+   "title": "Admin : Configurer la transmission des résultats aux systèmes externes",
+   "enTitle": "Admin — Configure result reporting to external systems",
+   "enVersion": 7,
+   "parent": {
+    "kind": "folder",
+    "key": "1680637960"
+   }
+  },
+  {
+   "en": "1186365449",
+   "scope": "manual",
+   "fr": null,
+   "title": "PARTIE 7 B : GESTION DES ANALYSEURS",
+   "enTitle": "PART 7 B: ANALYZER MANAGEMENT",
+   "enVersion": 5,
+   "parent": {
+    "kind": "folder",
+    "key": "1680637960"
+   }
+  },
+  {
+   "en": "1439170565",
+   "scope": "manual",
+   "fr": null,
+   "title": "Admin : Choisir le format du numéro de laboratoire",
+   "enTitle": "Admin — Choose the lab number format",
+   "enVersion": 8,
+   "parent": {
+    "kind": "folder",
+    "key": "1680441354"
+   }
+  },
+  {
+   "en": "1438908431",
+   "scope": "manual",
+   "fr": null,
+   "title": "Admin : Configurer la journalisation",
+   "enTitle": "Admin — Configure logging",
+   "enVersion": 8,
+   "parent": {
+    "kind": "folder",
+    "key": "1680441354"
+   }
+  },
+  {
+   "en": "1439432709",
+   "scope": "manual",
+   "fr": null,
+   "title": "Admin : Configurer les informations du site",
+   "enTitle": "Admin: Configure site information",
+   "enVersion": 10,
+   "parent": {
+    "kind": "folder",
+    "key": "1680441354"
+   }
+  },
+  {
+   "en": "1160282114",
+   "scope": "manual",
+   "fr": null,
+   "title": "Admin : Configurer le menu de navigation",
+   "enTitle": "Admin — Configure the navigation menu",
+   "enVersion": 5,
+   "parent": {
+    "kind": "folder",
+    "key": "1680441354"
+   }
+  },
+  {
+   "en": "1439367188",
+   "scope": "manual",
+   "fr": null,
+   "title": "Admin : Modifier les propriétés de l'application",
+   "enTitle": "Admin — Edit application properties",
+   "enVersion": 7,
+   "parent": {
+    "kind": "folder",
+    "key": "1680441354"
+   }
+  },
+  {
+   "en": "1439334404",
+   "scope": "manual",
+   "fr": null,
+   "title": "Admin : Gérer les jours non ouvrés",
+   "enTitle": "Admin — Manage non-working days",
+   "enVersion": 7,
+   "parent": {
+    "kind": "folder",
+    "key": "1680441354"
+   }
+  },
+  {
+   "en": "1438973960",
+   "scope": "manual",
+   "fr": null,
+   "title": "Admin : Reconstruire l'index de recherche",
+   "enTitle": "Admin — Rebuild the search index",
+   "enVersion": 7,
+   "parent": {
+    "kind": "folder",
+    "key": "1680441354"
+   }
+  },
+  {
+   "en": "1437892659",
+   "scope": "manual",
+   "fr": null,
+   "title": "Admin : Gérer les structures (organisations)",
+   "enTitle": "Admin: Manage organizations",
+   "enVersion": 13,
+   "parent": {
+    "kind": "folder",
+    "key": "1680605196"
+   }
+  },
+  {
+   "en": "1439203334",
+   "scope": "manual",
+   "fr": null,
+   "title": "Admin : Gérer les prescripteurs",
+   "enTitle": "Admin — Manage providers",
+   "enVersion": 7,
+   "parent": {
+    "kind": "folder",
+    "key": "1680605196"
+   }
+  },
+  {
+   "en": "1187840003",
+   "scope": "manual",
+   "fr": null,
+   "title": "Admin : Gérer les comptes utilisateurs",
+   "enTitle": "Admin — Manage user accounts",
+   "enVersion": 6,
+   "parent": {
+    "kind": "folder",
+    "key": "1680605196"
+   }
+  },
+  {
+   "en": "1427931149",
+   "scope": "manual",
+   "fr": null,
+   "title": "Admin : Configurer les normes de conformité et les délais de conservation",
+   "enTitle": "Admin — Configure compliance standards & holding times",
+   "enVersion": 8,
+   "parent": {
+    "kind": "folder",
+    "key": "1679491237"
+   }
+  },
+  {
+   "en": "1427144728",
+   "scope": "manual",
+   "fr": null,
+   "title": "Admin : Données de référence de la surveillance vectorielle",
+   "enTitle": "Admin — Vector Surveillance Reference Data",
+   "enVersion": 7,
+   "parent": {
+    "kind": "folder",
+    "key": "1679491237"
+   }
+  },
+  {
+   "en": "1433010177",
+   "scope": "manual",
+   "fr": "1643380737",
+   "title": "Ajouter une analyse à des panels",
+   "enTitle": "Add a test to panels",
+   "enVersion": 7,
+   "parent": {
+    "kind": "twin",
+    "en": "1437270018"
+   }
+  },
+  {
+   "en": "1432584197",
+   "scope": "manual",
+   "fr": "1642659893",
+   "title": "Configurer les types d'échantillons et les composants de résultat d'une analyse",
+   "enTitle": "Configure a test's sample types & result components",
+   "enVersion": 8,
+   "parent": {
+    "kind": "twin",
+    "en": "1437270018"
+   }
+  },
+  {
+   "en": "1432256516",
+   "scope": "manual",
+   "fr": "1642987528",
+   "title": "Configurer le stockage et l'élimination des échantillons",
+   "enTitle": "Configure sample storage & disposal",
+   "enVersion": 8,
+   "parent": {
+    "kind": "twin",
+    "en": "1437270018"
+   }
+  },
+  {
+   "en": "1431371782",
+   "scope": "manual",
+   "fr": "1643511817",
+   "title": "Modifier les informations de base d'une analyse (domaine, AMR, statut)",
+   "enTitle": "Edit a test's Basic Info (domain, AMR, status)",
+   "enVersion": 11,
+   "parent": {
+    "kind": "twin",
+    "en": "1437270018"
+   }
+  },
+  {
+   "en": "1431470085",
+   "scope": "manual",
+   "fr": "1643380778",
+   "title": "Rechercher et filtrer les analyses du catalogue",
+   "enTitle": "Find & filter tests in the catalog",
+   "enVersion": 7,
+   "parent": {
+    "kind": "twin",
+    "en": "1437270018"
+   }
+  },
+  {
+   "en": "1431928838",
+   "scope": "manual",
+   "fr": "1643806721",
+   "title": "Associer des méthodes à une analyse",
+   "enTitle": "Link methods to a test",
+   "enVersion": 8,
+   "parent": {
+    "kind": "twin",
+    "en": "1437270018"
+   }
+  },
+  {
+   "en": "1433468931",
+   "scope": "manual",
+   "fr": "1643905025",
+   "title": "Gérer les modèles d'étiquettes",
+   "enTitle": "Manage label presets",
+   "enVersion": 13,
+   "parent": {
+    "kind": "twin",
+    "en": "1437270018"
+   }
+  },
+  {
+   "en": "1432059909",
+   "scope": "manual",
+   "fr": "1643380801",
+   "title": "Associer une analyse à des codes terminologiques",
+   "enTitle": "Map a test to terminology codes",
+   "enVersion": 6,
+   "parent": {
+    "kind": "twin",
+    "en": "1437270018"
+   }
+  },
+  {
+   "en": "1435566088",
+   "scope": "manual",
+   "fr": "1643675652",
+   "title": "Liste de contrôle d'acceptation des échantillons",
+   "enTitle": "Sample Acceptance Checklist",
+   "enVersion": 7,
+   "parent": {
+    "kind": "twin",
+    "en": "1437270018"
+   }
+  },
+  {
+   "en": "1432354821",
+   "scope": "manual",
+   "fr": "1643937795",
+   "title": "Définir les intervalles de référence et les valeurs critiques",
+   "enTitle": "Set reference & critical ranges",
+   "enVersion": 7,
+   "parent": {
+    "kind": "twin",
+    "en": "1437270018"
+   }
+  },
+  {
+   "en": "1431666693",
+   "scope": "manual",
+   "fr": "1643511855",
+   "title": "Définir l'ordre d'affichage des analyses pour un type d'échantillon",
+   "enTitle": "Set test display order within a sample type",
+   "enVersion": 6,
+   "parent": {
+    "kind": "twin",
+    "en": "1437270018"
+   }
+  },
+  {
+   "en": "1437270018",
+   "scope": "manual",
+   "fr": "1642922075",
+   "title": "Gestion du catalogue de tests : vue d'ensemble du processus",
+   "enTitle": "Test Catalog Management: workflow overview",
+   "enVersion": 8,
+   "parent": {
+    "kind": "folder",
+    "key": "1679786110"
+   }
+  },
+  {
+   "en": "1427898372",
+   "scope": "manual",
+   "fr": "1642299440",
+   "title": "Saisir une demande environnementale",
+   "enTitle": "Enter an environmental order",
+   "enVersion": 10,
+   "parent": {
+    "kind": "twin",
+    "en": "1437466625"
+   }
+  },
+  {
+   "en": "1427505177",
+   "scope": "manual",
+   "fr": "1641840681",
+   "title": "Générer un certificat de conformité",
+   "enTitle": "Generate a compliance certificate",
+   "enVersion": 8,
+   "parent": {
+    "kind": "twin",
+    "en": "1437466625"
+   }
+  },
+  {
+   "en": "1427898389",
+   "scope": "manual",
+   "fr": "1642233901",
+   "title": "Saisir une demande vectorielle",
+   "enTitle": "Enter a vector order",
+   "enVersion": 10,
+   "parent": {
+    "kind": "twin",
+    "en": "1437532161"
+   }
+  },
+  {
+   "en": "1428094999",
+   "scope": "manual",
+   "fr": "1641873444",
+   "title": "Identifier les espèces vectorielles et déconvoluer un pool",
+   "enTitle": "Identify vector species & deconvolute a pool",
+   "enVersion": 8,
+   "parent": {
+    "kind": "twin",
+    "en": "1437532161"
+   }
+  },
+  {
+   "en": "1428258821",
+   "scope": "manual",
+   "fr": "1642299535",
+   "title": "Enregistrer les indices de l'enquête de terrain vectorielle",
+   "enTitle": "Record Vector Field Survey indices",
+   "enVersion": 7,
+   "parent": {
+    "kind": "twin",
+    "en": "1437532161"
+   }
+  },
+  {
+   "en": "1437466625",
+   "scope": "manual",
+   "fr": "1643085838",
+   "title": "Surveillance environnementale : vue d'ensemble du processus",
+   "enTitle": "Environmental Surveillance — workflow overview",
+   "enVersion": 3,
+   "parent": {
+    "kind": "folder",
+    "key": "1680015434"
+   }
+  },
+  {
+   "en": "1437532161",
+   "scope": "manual",
+   "fr": "1641775218",
+   "title": "Surveillance vectorielle : vue d'ensemble du processus",
+   "enTitle": "Vector Surveillance — workflow overview",
+   "enVersion": 3,
+   "parent": {
+    "kind": "folder",
+    "key": "1679589482"
+   }
+  },
+  {
+   "en": "1429176321",
+   "scope": "manual",
+   "fr": "1641447513",
+   "title": "Effectuer la vérification de l'échantillon d'une demande environnementale ou vectorielle",
+   "enTitle": "Complete the sample check for an environmental or vector order",
+   "enVersion": 13,
+   "parent": {
+    "kind": "folder",
+    "key": "1679458388"
+   }
+  },
+  {
+   "en": "1242759175",
+   "scope": "manual",
+   "fr": "1642922003",
+   "title": "Signatures électroniques",
+   "enTitle": "Electronic Signatures",
+   "enVersion": 16,
+   "parent": {
+    "kind": "folder",
+    "key": "1679589479"
+   }
+  },
+  {
+   "en": "260931593",
+   "scope": "manual",
+   "fr": "1643053071",
+   "title": "PARTIE 1 : NAVIGUER DANS OpenELIS GLOBAL",
+   "enTitle": "PART 1: NAVIGATING OpenELIS GLOBAL",
+   "enVersion": 7,
+   "parent": {
+    "kind": "folder",
+    "key": "1680015437"
+   }
+  },
+  {
+   "en": "261521410",
+   "scope": "manual",
+   "fr": "1642135634",
+   "title": "PARTIE 2 : DÉPANNAGE RAPIDE",
+   "enTitle": "PART 2: QUICK TROUBLESHOOTING",
+   "enVersion": 2,
+   "parent": {
+    "kind": "folder",
+    "key": "1680015437"
+   }
+  },
+  {
+   "en": "261259270",
+   "scope": "manual",
+   "fr": "1643511890",
+   "title": "PARTIE 3 : LIENS RAPIDES",
+   "enTitle": "PART 3: QUICK LINKS",
+   "enVersion": 3,
+   "parent": {
+    "kind": "folder",
+    "key": "1680015437"
+   }
+  },
+  {
+   "en": "283967514",
+   "scope": "manual",
+   "fr": "1643642895",
+   "title": "PARTIE 12 : AIDE",
+   "enTitle": "PART 12: HELP",
+   "enVersion": 3,
+   "parent": {
+    "kind": "folder",
+    "key": "1680015437"
+   }
+  },
+  {
+   "en": "284688410",
+   "scope": "manual",
+   "fr": "1643348000",
+   "title": "PARTIE 13 : SE DÉCONNECTER D'OPENELIS",
+   "enTitle": "PART 13: LOGGING OUT OF OPENELIS",
+   "enVersion": 3,
+   "parent": {
+    "kind": "folder",
+    "key": "1680015437"
+   }
+  },
+  {
+   "en": "261423127",
+   "scope": "manual",
+   "fr": "1641873425",
+   "title": "PARTIE 4 : SAISIE DES DEMANDES D'ANALYSE",
+   "enTitle": "PART 4: ENTERING LABORATORY ORDERS",
+   "enVersion": 8,
+   "parent": {
+    "kind": "folder",
+    "key": "1679458388"
+   }
+  },
+  {
+   "en": "272760837",
+   "scope": "manual",
+   "fr": "1643675716",
+   "title": "Imprimer un plan de travail",
+   "enTitle": "Print a work plan",
+   "enVersion": 7,
+   "parent": {
+    "kind": "folder",
+    "key": "1679589479"
+   }
+  },
+  {
+   "en": "273285123",
+   "scope": "manual",
+   "fr": "1643937818",
+   "title": "PARTIE 8 : PATHOLOGIE",
+   "enTitle": "PART 8: PATHOLOGY",
+   "enVersion": 4,
+   "parent": {
+    "kind": "folder",
+    "key": "1679458391"
+   }
+  },
+  {
+   "en": "279248897",
+   "scope": "manual",
+   "fr": "1643347979",
+   "title": "PARTIE 9 : IMMUNOCHIMIE",
+   "enTitle": "PART 9: IMMUNOCHEMISTRY",
+   "enVersion": 2,
+   "parent": {
+    "kind": "folder",
+    "key": "1679458391"
+   }
+  },
+  {
+   "en": "278560771",
+   "scope": "manual",
+   "fr": "1643380838",
+   "title": "PARTIE 10 : CYTOLOGIE",
+   "enTitle": "PART 10: CYTOLOGY",
+   "enVersion": 3,
+   "parent": {
+    "kind": "folder",
+    "key": "1679458391"
+   }
+  },
+  {
+   "en": "257097754",
+   "scope": "manual",
+   "fr": "1643806796",
+   "title": "ACCÉDER AU MODULE D'ADMINISTRATION D'OpenELIS GLOBAL",
+   "enTitle": "ACCESSING THE OpenELIS GLOBAL ADMINISTRATION MODULE",
+   "enVersion": 4,
+   "parent": {
+    "kind": "folder",
+    "key": "1680375824"
+   }
+  },
+  {
+   "en": "257392644",
+   "scope": "manual",
+   "fr": "1643675738",
+   "title": "INTRODUCTION",
+   "enTitle": "INTRODUCTION",
+   "enVersion": 4,
+   "parent": {
+    "kind": "folder",
+    "key": "1680375824"
+   }
+  },
+  {
+   "en": "256966691",
+   "scope": "manual",
+   "fr": "1643937869",
+   "title": "NAVIGUER DANS OpenELIS LIMS",
+   "enTitle": "NAVIGATING OpenELIS LIMS",
+   "enVersion": 4,
+   "parent": {
+    "kind": "folder",
+    "key": "1680375824"
+   }
+  },
+  {
+   "en": "278888457",
+   "scope": "legacy",
+   "fr": "1643773978",
+   "title": "PARTIE 11 : ÉVÉNEMENTS NON CONFORMES",
+   "enTitle": "PART 11: NON CONFORMING EVENTS",
+   "enVersion": 2,
+   "parent": {
+    "kind": "id",
+    "id": "1679458382"
+   }
+  },
+  {
+   "en": "278626329",
+   "scope": "legacy",
+   "fr": "1643773993",
+   "title": "PARTIE 12 : SAISIE DES RÉSULTATS D'ANALYSES DE LABORATOIRE",
+   "enTitle": "PART 12: ENTERING LAB TEST RESULTS",
+   "enVersion": 3,
+   "parent": {
+    "kind": "id",
+    "id": "1679458382"
+   }
+  },
+  {
+   "en": "284196875",
+   "scope": "legacy",
+   "fr": "1643806771",
+   "title": "PARTIE 13 : VALIDATION DES RÉSULTATS (VALIDATION BIOLOGIQUE)",
+   "enTitle": "PART 13: RESULTS VALIDATION (BIOLOGICAL VALIDATION)",
+   "enVersion": 3,
+   "parent": {
+    "kind": "id",
+    "id": "1679458382"
+   }
+  },
+  {
+   "en": "284393490",
+   "scope": "legacy",
+   "fr": "1643577360",
+   "title": "PARTIE 14 : RAPPORTS",
+   "enTitle": "PART 14: REPORT",
+   "enVersion": 3,
+   "parent": {
+    "kind": "id",
+    "id": "1679458382"
+   }
+  },
+  {
+   "en": "256737340",
+   "scope": "legacy",
+   "fr": "1643774066",
+   "title": "PARTIE 5 : DICTIONNAIRE",
+   "enTitle": "PART 5: DICTIONARY",
+   "enVersion": 6,
+   "parent": {
+    "kind": "id",
+    "id": "1679458382"
+   }
+  },
+  {
+   "en": "239632402",
+   "scope": "ops",
+   "fr": "1701281856",
+   "title": "Installer OpenELIS Global",
+   "enTitle": "Install OpenELIS Global",
+   "enVersion": 17,
+   "parent": {
+    "kind": "id",
+    "id": "239632402"
+   }
+  },
+  {
+   "en": "239632412",
+   "scope": "ops",
+   "fr": null,
+   "title": "Exigences techniques des serveurs et postes de travail pour le déploiement",
+   "enTitle": "Server and Workstation Technical Requirements For Deployment",
+   "enVersion": 7,
+   "parent": {
+    "kind": "id",
+    "id": "239632412"
+   }
+  },
+  {
+   "en": "239730698",
+   "scope": "ops",
+   "fr": null,
+   "title": "Mettre à niveau OpenELIS 3.x et 2.x",
+   "enTitle": "Upgrading OpenELIS 3.x and 2.x",
+   "enVersion": 5,
+   "parent": {
+    "kind": "id",
+    "id": "239730698"
+   }
+  },
+  {
+   "en": "240320515",
+   "scope": "ops",
+   "fr": null,
+   "title": "Configuration de la sauvegarde",
+   "enTitle": "Backup Configuration",
+   "enVersion": 6,
+   "parent": {
+    "kind": "id",
+    "id": "240320515"
+   }
+  },
+  {
+   "en": "240877572",
+   "scope": "ops",
+   "fr": null,
+   "title": "Configurer la haute disponibilité avec basculement",
+   "enTitle": "Setup High Availability Fail Over",
+   "enVersion": 5,
+   "parent": {
+    "kind": "id",
+    "id": "240877572"
+   }
+  },
+  {
+   "en": "239927340",
+   "scope": "ops",
+   "fr": null,
+   "title": "Bonnes pratiques de mise en œuvre",
+   "enTitle": "Implementation Best Practices",
+   "enVersion": 3,
+   "parent": {
+    "kind": "id",
+    "id": "239927340"
+   }
+  },
+  {
+   "en": "245366800",
+   "scope": "ops",
+   "fr": null,
+   "title": "Dépannage",
+   "enTitle": "Troubleshooting",
+   "enVersion": 5,
+   "parent": {
+    "kind": "id",
+    "id": "245366800"
+   }
+  },
+  {
+   "en": "1672249349",
+   "scope": "ops",
+   "fr": null,
+   "title": "Supervision d'OpenELIS",
+   "enTitle": "OpenELIS Monitoring",
+   "enVersion": 1,
+   "parent": {
+    "kind": "id",
+    "id": "1672249349"
+   }
+  },
+  {
+   "en": "52560162",
+   "scope": "landing",
+   "fr": null,
+   "title": "OpenELIS Global",
+   "enTitle": "OpenELIS Global",
+   "enVersion": 30,
+   "parent": {
+    "kind": "id",
+    "id": "52560162"
+   }
+  },
+  {
+   "en": "239337475",
+   "scope": "landing",
+   "fr": "1699577950",
+   "title": "À propos d'OpenELIS Global",
+   "enTitle": "About OpenELIS Global",
+   "enVersion": 6,
+   "parent": {
+    "kind": "id",
+    "id": "239337475"
+   }
+  },
+  {
+   "en": "1325727762",
+   "scope": "landing",
+   "fr": null,
+   "title": "🧩 Modules et fonctionnalités",
+   "enTitle": "🧩 Modules & Features",
+   "enVersion": 4,
+   "parent": {
+    "kind": "id",
+    "id": "1325727762"
+   }
+  },
+  {
+   "en": "1326252042",
+   "scope": "landing",
+   "fr": null,
+   "title": "🚀 Pour l'équipe de mise en œuvre",
+   "enTitle": "🚀 For Implementers",
+   "enVersion": 4,
+   "parent": {
+    "kind": "id",
+    "id": "1326252042"
+   }
+  },
+  {
+   "en": "1325793288",
+   "scope": "landing",
+   "fr": null,
+   "title": "⚙️ Pour les administrateurs système et exploitants",
+   "enTitle": "⚙️ For SysAdmins-Operators",
+   "enVersion": 5,
+   "parent": {
+    "kind": "id",
+    "id": "1325793288"
+   }
+  },
+  {
+   "en": "1328185376",
+   "scope": "landing",
+   "fr": null,
+   "title": "🆘 Obtenir de l'aide",
+   "enTitle": "🆘 Get Help",
+   "enVersion": 2,
+   "parent": {
+    "kind": "id",
+    "id": "1328185376"
+   }
+  },
+  {
+   "en": "1160511506",
+   "scope": "landing",
+   "fr": null,
+   "title": "Implémentations d'OpenELIS Global",
+   "enTitle": "OpenELIS Global Implementations",
+   "enVersion": 6,
+   "parent": {
+    "kind": "id",
+    "id": "1160511506"
+   }
+  },
+  {
+   "en": "1158774832",
+   "scope": "impl",
+   "fr": "1674117234",
+   "title": "Madagascar : guide pour les équipes de mise en œuvre",
+   "enTitle": "Madagascar Implementors Guide",
+   "enVersion": 1,
+   "parent": {
+    "kind": "id",
+    "id": "1158774832"
+   }
+  },
+  {
+   "en": "1159069707",
+   "scope": "impl",
+   "fr": null,
+   "title": "Madagascar : distribution OpenELIS Madagascar",
+   "enTitle": "Madagascar OpenELIS Madagascar Distro",
+   "enVersion": 6,
+   "parent": {
+    "kind": "id",
+    "id": "1159069707"
+   }
+  },
+  {
+   "en": "1531084826",
+   "scope": "impl",
+   "fr": null,
+   "title": "Configuration : démarrage rapide et dépannage",
+   "enTitle": "Configuration Quick Start & Troubleshooting",
+   "enVersion": 3,
+   "parent": {
+    "kind": "id",
+    "id": "1531084826"
+   }
+  },
+  {
+   "en": "1530953734",
+   "scope": "impl",
+   "fr": null,
+   "title": "Vue d'ensemble du système de configuration",
+   "enTitle": "Configuration System Overview",
+   "enVersion": 2,
+   "parent": {
+    "kind": "id",
+    "id": "1530953734"
+   }
+  },
+  {
+   "en": "1530986508",
+   "scope": "impl",
+   "fr": null,
+   "title": "Configuration des dictionnaires pour le déploiement à Madagascar dans OpenELIS Global",
+   "enTitle": "Dictionaries Configuration for Madagascar Deployment in OpenELIS Global System",
+   "enVersion": 1,
+   "parent": {
+    "kind": "id",
+    "id": "1530986508"
+   }
+  },
+  {
+   "en": "1531281412",
+   "scope": "impl",
+   "fr": null,
+   "title": "Configuration OCL pour OpenELIS : importer des concepts à partir de collections ZIP",
+   "enTitle": "OCL Configuration for OpenELIS: Importing Concepts from ZIP Collections",
+   "enVersion": 1,
+   "parent": {
+    "kind": "id",
+    "id": "1531281412"
+   }
+  },
+  {
+   "en": "1655701509",
+   "scope": "impl",
+   "fr": null,
+   "title": "Procédure standard de mise à niveau d'OpenELIS Global : étapes de sauvegarde, de mise à niveau et de vérification",
+   "enTitle": "OpenELIS Global Standard Upgrade Procedure: Steps for Backup, Upgrade, and Verification",
+   "enVersion": 2,
+   "parent": {
+    "kind": "id",
+    "id": "1655701509"
+   }
+  },
+  {
+   "en": "1531052035",
+   "scope": "impl",
+   "fr": null,
+   "title": "Configuration des questionnaires pour les ressources FHIR R4 dans OpenELIS Global",
+   "enTitle": "Questionnaires Configuration for FHIR R4 Resources in OpenELIS Global",
+   "enVersion": 1,
+   "parent": {
+    "kind": "id",
+    "id": "1531052035"
+   }
+  },
+  {
+   "en": "1530855471",
+   "scope": "impl",
+   "fr": null,
+   "title": "Configuration des rôles pour OpenELIS Global 2 : structure, format CSV et étapes de déploiement",
+   "enTitle": "Roles Configuration for OpenELIS Global 2: Structure, CSV Format, and Deployment Steps",
+   "enVersion": 1,
+   "parent": {
+    "kind": "id",
+    "id": "1530855471"
+   }
+  },
+  {
+   "en": "1529839642",
+   "scope": "impl",
+   "fr": null,
+   "title": "Configuration des types d'échantillons et de leur mappage aux analyses pour OpenELIS à Madagascar",
+   "enTitle": "Sample Types and Test Mappings Configuration for OpenELIS in Madagascar",
+   "enVersion": 1,
+   "parent": {
+    "kind": "id",
+    "id": "1529839642"
+   }
+  },
+  {
+   "en": "1530953742",
+   "scope": "impl",
+   "fr": null,
+   "title": "Configuration des unités de laboratoire dans OpenELIS : gestion des services du laboratoire et des dépendances des analyses",
+   "enTitle": "Test Sections Configuration for OpenELIS: Managing Laboratory Departments and Test Dependencies",
+   "enVersion": 1,
+   "parent": {
+    "kind": "id",
+    "id": "1530953742"
+   }
+  },
+  {
+   "en": "1530822677",
+   "scope": "impl",
+   "fr": null,
+   "title": "Configuration du mappage analyses/types d'échantillons pour le déploiement à Madagascar",
+   "enTitle": "Test-Sample Type Mappings Configuration for Madagascar Deployment",
+   "enVersion": 1,
+   "parent": {
+    "kind": "id",
+    "id": "1530822677"
+   }
+  },
+  {
+   "en": "1530855463",
+   "scope": "impl",
+   "fr": null,
+   "title": "Configuration des analyses pour le déploiement d'OpenELIS Global à Madagascar",
+   "enTitle": "Tests Configuration for Madagascar Deployment in OpenELIS Global",
+   "enVersion": 1,
+   "parent": {
+    "kind": "id",
+    "id": "1530855463"
+   }
+  },
+  {
+   "en": "1326972929",
+   "scope": "landing",
+   "fr": "1641447437",
+   "title": "📖 Manuel de l'utilisateur",
+   "enTitle": "📖 User Manual",
+   "enVersion": 21,
+   "parent": {
+    "kind": "id",
+    "id": "1326972929"
+   }
+  },
+  {
+   "en": "1661763585",
+   "scope": "manual",
+   "fr": null,
+   "title": "Trier et libérer les résultats",
+   "enTitle": "Triage and release results",
+   "enVersion": 23,
+   "parent": {
+    "kind": "folder",
+    "key": "1679589479"
+   }
+  },
+  {
+   "en": "1648787462",
+   "scope": "manual",
+   "fr": null,
+   "title": "Saisir une demande clinique",
+   "enTitle": "Enter a clinical order",
+   "enVersion": 24,
+   "parent": {
+    "kind": "folder",
+    "key": "1679458388"
+   }
+  },
+  {
+   "en": "1702821939",
+   "scope": "manual",
+   "fr": null,
+   "title": "Effectuer la vérification de l'échantillon pour une demande clinique",
+   "enTitle": "Complete the sample check for a clinical order",
+   "enVersion": 4,
+   "parent": {
+    "kind": "folder",
+    "key": "1679458388"
+   }
+  },
+  {
+   "en": "1440841760",
+   "scope": "manual",
+   "fr": null,
+   "title": "Enregistrer un nouveau patient",
+   "enTitle": "Register a New Patient",
+   "enVersion": 8,
+   "parent": {
+    "kind": "folder",
+    "key": "1679458388"
+   }
+  },
+  {
+   "en": "1441136648",
+   "scope": "manual",
+   "fr": null,
+   "title": "Gestion des patients",
+   "enTitle": "Patient Management",
+   "enVersion": 6,
+   "parent": {
+    "kind": "folder",
+    "key": "1679458388"
+   }
+  }
+ ]
+}

@@ -1,0 +1,34 @@
+<h1>Admin — Vector Surveillance Reference Data</h1>
+<h2>At a glance</h2>
+<table><tbody>
+<tr><th>Purpose</th><td>Maintain the reference data the Vector Surveillance workflow depends on: the species list (used for identification), trap types (offered at order entry), sampling sites (the collection locations), and the organism sample types.</td></tr>
+<tr><th>Who does this</th><td>Administrators. Access is set by user permissions.</td></tr>
+<tr><th>Where</th><td>Main menu &rarr; <em>Admin</em> &rarr; <em>Vector Surveillance</em> (Species, Trap Types, Sampling Sites).</td></tr>
+<tr><th>Used by</th><td>The <a href="https://uwdigi.atlassian.net/wiki/spaces/oeg/pages/1420230657">Vector Surveillance</a> order-entry and identification screens.</td></tr>
+</tbody></table>
+
+<h2>Add a species</h2>
+<p><strong>Step 1.</strong> Open <em>Admin &rarr; Vector Surveillance &rarr; Species</em>. The list shows Genus, Species, Subspecies, Sample type, Pathogens of Interest, and Status, with sample-type filter chips.</p>
+<p>{{IMG:01-species.png}}</p>
+<p><em>Figure 1. The Species reference list with its sample-type filters.</em></p>
+<p><strong>Step 2.</strong> Choose <em>Add species</em> and complete Genus, Species, the Sample type, and the optional Subspecies, Pathogen category, and Lifecycle category, then <em>Save species</em>. The species becomes selectable in the Vector Identification Identify form for matching sample types.</p>
+
+<h2>Add a trap type</h2>
+<p><strong>Step 3.</strong> Open <em>Admin &rarr; Vector Surveillance &rarr; Trap Types</em>. The list has a name/description search, a per-row Edit, and an active/inactive toggle.</p>
+<p>{{IMG:02-trap-types.png}}</p>
+<p><em>Figure 2. The Trap Types reference list.</em></p>
+<p><strong>Step 4.</strong> Choose <em>Add trap type</em>, enter a Name and optional Description, tick the associated sample types, and <em>Save trap</em>. The trap type then appears as a Trap Type choice on vector order entry for those sample types.</p>
+
+<h2>Manage sampling sites</h2>
+<p><strong>Step 5.</strong> Open <em>Admin &rarr; Vector Surveillance &rarr; Sampling Sites</em>. Sampling sites are the collection locations selected on an order.</p>
+<p>{{IMG:03-sampling-sites.png}}</p>
+<p><em>Figure 3. The Sampling Sites reference list.</em></p>
+
+<h2>Sample types</h2>
+<p>Sample types are not maintained on this page. They live in their own shared registry &mdash; see <a href="https://uwdigi.atlassian.net/wiki/spaces/oeg/pages/1420853278">Admin &mdash; Sample Type Management</a>. A sample type becomes available to the Vector workflow only once the domain assignment sets it to the Vector domain; create or edit sample types there.</p>
+
+<h2>Tips</h2>
+<ul>
+<li>Species, trap types, and sampling sites added here flow straight into the vector order-entry and identification screens.</li>
+<li>Use the active/inactive toggle to retire a trap type without deleting its history.</li>
+</ul>

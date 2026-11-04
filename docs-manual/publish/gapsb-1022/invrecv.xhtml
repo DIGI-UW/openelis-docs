@@ -1,0 +1,83 @@
+<ac:structured-macro ac:name="note" ac:schema-version="1" ac:macro-id="cb1fcfa0-dafb-4245-9ace-37cd01712ce2"><ac:rich-text-body><p><strong>Work in progress.</strong> This page is published before its review is finished so you can use it now. It is being reviewed under <a href="https://uwdigi.atlassian.net/browse/OGC-1539">OGC-1539</a>, so details may still change. If something on your screen does not match, add a comment to this page.</p></ac:rich-text-body></ac:structured-macro>
+
+<h2>At a glance</h2>
+<table><tbody>
+<tr><th>Purpose</th><td>Record a delivery of reagents and consumables lot by lot, and report on what was received, consumed, held or about to expire.</td></tr>
+<tr><th>You'll end up with</th><td>New lots on the Items board with their lot numbers, expiry dates and quantities, and a report you can read on screen or export.</td></tr>
+<tr><th>Who does this</th><td>Store keepers and laboratory managers. Access is set by user permissions and can be configured by your administrator.</td></tr>
+<tr><th>Before you start</th><td>Each item in the delivery must already be defined on the Items board (see <a href="https://uwdigi.atlassian.net/wiki/spaces/OG/pages/1729134594">Manage inventory items, lots, counts and reorders</a>).</td></tr>
+<tr><th>Where</th><td>Main menu &rarr; Inventory &rarr; Receive, and Main menu &rarr; Inventory &rarr; Reports</td></tr>
+</tbody></table>
+
+<h2>Part A: Receive a delivery</h2>
+<p>The Receive page takes a whole delivery at once. As its introduction says: scan a box, type how much arrived, add it, scan the next. Nothing is saved until you confirm the whole delivery.</p>
+
+<h3>Step 1: Add each line of the delivery</h3>
+<p>Go to Main menu &rarr; Inventory &rarr; Receive. For each box or batch:</p>
+<ol>
+<li>Scan the box label into <strong>Scan the box</strong>. A GS1 label fills in the product, batch and expiry; anything it does not carry can be typed below.</li>
+<li>Check or choose the <strong>Item Name</strong>, and fill in the <strong>Lot Number</strong>, <strong>Expiration Date</strong> and <strong>Current Quantity</strong> (the quantity that arrived, in the item's units).</li>
+<li>Press <strong>Add to delivery</strong>. The line is added to the table below, and the fields clear for the next box.</li>
+</ol>
+<p>Each line in the table has <strong>Remove</strong> in case it was added by mistake.</p>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="01-receive-delivery.png" ri:version-at-save="2" /></ac:image></p>
+<p><em>Figure 1. A delivery with two lines: Determine HIV-1/2 rapid test lot 64913K188, 500 tests, and EDTA blood collection tube 4 mL lot 6198844, 600 tubes, ready to receive.</em></p>
+
+<h3>Step 2: Confirm the delivery</h3>
+<p>When every line is in the table, press the receive button, which counts the lines (for example <strong>Receive 2 lines</strong>). To abandon the whole delivery, press <strong>Discard delivery</strong>. Receiving saves every line at once. A message confirms it, for example <em>Success 2 lines received.</em>, and the form clears for the next delivery. The new lots appear under their items on the Items board.</p>
+<p>{{IMG:g12-delivery-received.png}}</p>
+<p><em>Figure 2. The Receive page after Receive 2 lines: Success 2 lines received, and an empty form ready for the next delivery.</em></p>
+
+<h2>Part B: Run an inventory report</h2>
+
+<h3>Step 1: Choose the report and its options</h3>
+<p>Go to Main menu &rarr; Inventory &rarr; Reports and choose the <strong>Report Type</strong>:</p>
+<ul>
+<li><strong>Received</strong>: what arrived in the period, by item and lot.</li>
+<li><strong>Consumed</strong>: what was used in the period, totalled by item.</li>
+<li><strong>Stock on hand</strong>: what you hold, lot by lot, with expiry dates. <strong>As of</strong> sets the date; leave it blank for stock as it stands now.</li>
+<li><strong>Expiring</strong>: lots whose expiry falls in a window you choose (<strong>Expiring from</strong> and <strong>Expiring to</strong>), with an extra option, <strong>Include expired lots</strong>.</li>
+</ul>
+<p>Received and Consumed need a <strong>Date Range</strong> (Start Date and End Date). Under <strong>Tags</strong>, pick tags to limit the report to items carrying any of them. Tick <strong>Include inactive items</strong> if needed. Press <strong>Run report</strong>.</p>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="02-report-stock-on-hand.png" ri:version-at-save="2" /></ac:image></p>
+<p><em>Figure 3. Reports with Stock on hand chosen, As of left blank, and the tag Central laboratory selected.</em></p>
+
+<h3>Step 2: Read or export the report</h3>
+<p>The report appears under the options. Stock on hand lists each lot with <strong>Item Code</strong>, <strong>Item Name</strong>, <strong>Tags</strong>, <strong>Lot Number</strong>, <strong>Expiration Date</strong>, <strong>Quantity</strong>, <strong>Location</strong>, <strong>Status</strong> and <strong>QC Status</strong>, and ends with a total row. To save it, choose the <strong>Export Format</strong> and press <strong>Export</strong>.</p>
+<p><ac:image ac:width="1020"><ri:attachment ri:filename="03-report-stock-on-hand-table.png" ri:version-at-save="2" /></ac:image></p>
+<p><em>Figure 4. Stock on hand for the Central laboratory tag: five lots, all Active and QC Passed, none assigned to a storage location, 1743 units in total.</em></p>
+
+<h2>Field reference</h2>
+<table><tbody>
+<tr><th>Field or control</th><th>What it shows or does</th></tr>
+<tr><td>Scan the box</td><td>Reads a GS1 barcode and fills the item, batch and expiry it carries.</td></tr>
+<tr><td>Item Name, Lot Number, Expiration Date, Current Quantity</td><td>One line of the delivery. Current Quantity is the amount that arrived, in the item's units.</td></tr>
+<tr><td>Add to delivery, Remove</td><td>Adds the line to the delivery table, or takes it out again.</td></tr>
+<tr><td>Receive N lines, Discard delivery</td><td>Saves the whole delivery, or abandons it. Nothing is saved before Receive.</td></tr>
+<tr><td>Report Type</td><td>Received, Consumed, Stock on hand or Expiring.</td></tr>
+<tr><td>Date Range, As of</td><td>The period for Received and Consumed, or the expiry window for Expiring; the date for Stock on hand (blank means now).</td></tr>
+<tr><td>Tags</td><td>Limits the report to items carrying any of the chosen tags.</td></tr>
+<tr><td>Include inactive items, Include expired lots</td><td>Adds deactivated items to the report; Include expired lots appears for the Expiring report.</td></tr>
+<tr><td>Export Format, Export</td><td>Saves the report as a file (CSV on the test server).</td></tr>
+</tbody></table>
+
+<h2>Tips</h2>
+<ul>
+<li>Use the same tags on items as on the board; a report filtered by tag then matches what each team sees on its board.</li>
+<li>New lots need their QC status set before they can be drawn for use. Set it from the lot's menu on the Items board (Update QC Status).</li>
+<li>Low-stock items also raise <strong>Low stock</strong> alerts on the Alerts dashboard (Main menu &rarr; Alerts); see Step 16 of <a href="https://uwdigi.atlassian.net/wiki/spaces/OG/pages/1729134594">Manage inventory items, lots, counts and reorders</a>.</li>
+<li>To add one lot of a single item, you can also use <strong>Receive stock</strong> on the item's row on the Items board.</li>
+
+<li>The Report Tips panel suggests exporting to Excel; the export format offered on the test server was CSV.</li>
+</ul>
+
+<h2>Provenance</h2>
+<table><tbody>
+<tr><th>Status</th><td>Draft for review</td></tr>
+<tr><th>Instance</th><td>testing.openelis-global.org, header version <em>3.4.0-SNAPSHOT</em> (3.3.0 feature OGC-438, Inventory decision-support redesign)</td></tr>
+<tr><th>Routes</th><td>/inventory/receive; /inventory/reports</td></tr>
+<tr><th>Date</th><td>21 and 22 October 2026</td></tr>
+<tr><th>Data</th><td>Seeded items and lots tagged Central laboratory (see the Items page). The two delivery lines in Figure 1 were added and then discarded on 21 October; the same delivery (Determine HIV-1/2 rapid test lot 64913K188, 500 tests; EDTA blood collection tube 4 mL lot 6198844, 600 tubes) was entered again and received on 22 October (Figure 2).</td></tr>
+<tr><th>Driven</th><td>Receive: Item Name, Lot Number, Expiration Date, Current Quantity, Add to delivery (two lines), Discard delivery; on 22 October the same two lines and Receive 2 lines. Reports: Stock on hand with a tag, Run report. Stock was received for seeding through the REST calls the screen makes.</td></tr>
+<tr><th>Observed only</th><td>Scan the box (no GS1 label scanned); Remove; Received, Consumed and Expiring report types (options read, not run); Include inactive items; Export.</td></tr>
+</tbody></table>

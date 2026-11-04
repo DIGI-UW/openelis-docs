@@ -1,0 +1,89 @@
+<ac:structured-macro ac:name="note" ac:schema-version="1"><ac:rich-text-body><p><strong>Work in progress.</strong> This page is published before its review is finished so you can use it now. It is being reviewed under <a href="https://uwdigi.atlassian.net/browse/OGC-1564">OGC-1564</a>, so details may still change. If something on your screen does not match, add a comment to this page.</p></ac:rich-text-body></ac:structured-macro>
+
+<h2>At a glance</h2>
+<table><tbody>
+<tr><th>Purpose</th><td>Record the corrective and preventive actions (CAPAs) taken for a non-conforming event, and follow every CAPA in the laboratory from one register.</td></tr>
+<tr><th>You'll end up with</th><td>Actions recorded against the event, each with a person responsible, a due date and a type, and a register showing which actions are open, overdue or due this week.</td></tr>
+<tr><th>Who does this</th><td>QA officers, supervisors and the staff named as responsible. Access is set by user permissions and can be configured by your administrator.</td></tr>
+<tr><th>Before you start</th><td>The non-conforming event must already be reported (see <ac:link><ri:page ri:content-title="Report a non-conforming event" /><ac:link-body>Report a non-conforming event</ac:link-body></ac:link>). Know the action, who is responsible and when it is due.</td></tr>
+<tr><th>Where</th><td>Main menu → Quality Assurance → QMS &amp; Improvement → Non-Conform → All NCEs or Corrective actions; Main menu → Quality Assurance → QMS &amp; Improvement → CAPA Register</td></tr>
+</tbody></table>
+
+<h2>Overview</h2>
+<p>Each non-conforming event (NCE) can carry any number of actions. A <strong>corrective action</strong> removes the cause of the event that happened; a <strong>preventive action</strong> stops a similar event from happening; a <strong>concurrent control action</strong> contains the problem while the cause is being fixed. Actions are entered on the <strong>Nonconforming Events Corrective Action</strong> form for the event and listed on the event's CAPA tab.</p>
+<p>The <strong>CAPA Register</strong> collects every action from every event, with tiles for <strong>Open</strong>, <strong>Overdue</strong>, <strong>Due This Week</strong> and <strong>Completed (90d)</strong>, so the QA officer can follow them without opening each event. The counts also feed QA Overview (Overdue CAPAs, CAPA effectiveness reviews due).</p>
+
+<h2>Step 1: Open the event's CAPA tab</h2>
+<p>Go to Main menu → Quality Assurance → QMS &amp; Improvement → Non-Conform → All NCEs and press the event. The event opens in place with the tabs <strong>Event Details</strong>, <strong>Investigation</strong>, <strong>CAPA</strong> (with the number of actions) and <strong>History</strong>. The CAPA tab lists the actions under <strong>CORRECTIVE ACTIONS</strong>, each with the person responsible, due date and completed date. <strong>Add</strong> opens the corrective action form for this event.</p>
+<p>{{IMG:01-nce-capa-tab.png}}</p>
+<p><em>Figure 1. NCE-2026-00001, a haemolysed EDTA sample from an outpatient clinic, at status CAPA: one corrective action, refresher training for outpatient phlebotomists, with Ruth Kopi responsible, due 2026-11-05 and completed 2026-10-20.</em></p>
+
+<h2>Step 2: Find the event on the corrective action form</h2>
+<p>Press <strong>Add</strong> on the CAPA tab, or go to Main menu → Quality Assurance → QMS &amp; Improvement → Non-Conform → Corrective actions, set <strong>Search By</strong> to NCE Number (or Lab Number), enter the value and press <strong>Search</strong>. The form shows the event: <strong>NCE Number</strong>, <strong>NCE Date</strong>, <strong>Severity</strong>, <strong>Reporting Unit</strong>, <strong>Specimen(s)</strong>, <strong>Lab Number</strong>, <strong>Reporting Date</strong>, <strong>Description of Event</strong>, <strong>NCE Category</strong> and <strong>NCE Type</strong>.</p>
+<p>{{IMG:02-ca-form-top.png}}</p>
+<p><em>Figure 2. The corrective action form for NCE-2026-00001: reported 09/10/2026 by Hematology on a serum specimen, category Sample, type Hemolytic sample.</em></p>
+
+<h2>Step 3: Record the action and submit</h2>
+<p>Scroll to the actions table. The empty row at the top is for the new action; actions already recorded are shown below it and cannot be changed here. Fill in:</p>
+<ul>
+<li><strong>Corrective actions</strong>: what will be done.</li>
+<li><strong>Person responsible</strong>: a name and role, typed as free text.</li>
+<li><strong>Date Completed</strong> and <strong>Due Date</strong> (dd/mm/yyyy).</li>
+<li><strong>Action Type</strong>: Corrective actions, preventive action or concurrent control action (at least one).</li>
+</ul>
+<p><strong>Turnaround Time</strong> is filled in for you: the number of days from the NCE date to the date completed. You can also record a <strong>Date of discussion with NCE Staff</strong> above the table, and, under <strong>NCE Resolution</strong>, whether the actions were effective (Yes or No) with the date. Press <strong>Submit</strong>. The form returns to the search, and the action appears on the event's CAPA tab and in the CAPA Register.</p>
+<p>{{IMG:03-ca-form-filled.png}}</p>
+<p><em>Figure 3. A preventive action for NCE-2026-00001: add a haemolysis check to the outpatient sample reception checklist, Ruth Kopi, phlebotomy supervisor, completed 22/10/2026, due 15/11/2026, turnaround 13 days. The earlier corrective action is shown greyed below.</em></p>
+
+<h2>Step 4: Follow all actions in the CAPA Register</h2>
+<p>Go to Main menu → Quality Assurance → QMS &amp; Improvement → CAPA Register. The tiles count <strong>Open</strong>, <strong>Overdue</strong>, <strong>Due This Week</strong> and <strong>Completed (90d)</strong>. The table lists every action with <strong>NCE Number</strong>, <strong>Corrective / Preventive Action</strong>, <strong>Type</strong>, <strong>Person Responsible</strong>, <strong>Due Date</strong>, <strong>Completed</strong> and <strong>Status</strong>.</p>
+<p>{{IMG:04-capa-register.png}}</p>
+<p><em>Figure 4. CAPA Register with four actions on three events: three Open and one Overdue (the HDL cholesterol calibration review on NCE-2026-00004, due 2026-10-16).</em></p>
+
+<h2>Step 5: Filter the register</h2>
+<p>Use <strong>Status</strong> (All, Open, Overdue or Completed), <strong>Assignee</strong> and <strong>Due Date (From)</strong> and <strong>(To)</strong> to narrow the list. The table updates as you change a filter. When nothing matches, the register shows <em>No CAPAs match these filters</em>.</p>
+<p>{{IMG:05-capa-overdue.png}}</p>
+<p><em>Figure 5. Status set to Overdue: one action, NCE-2026-00004, assigned to Peter Kaupa, biochemistry supervisor.</em></p>
+
+<h2>Field reference</h2>
+<table><tbody>
+<tr><th>Field or control</th><th>What it shows or does</th></tr>
+<tr><td>Search By, Text Value, Search</td><td>Find the event on the corrective action form by NCE Number or Lab Number.</td></tr>
+<tr><td>Corrective actions</td><td>The action to take (free text).</td></tr>
+<tr><td>Person responsible</td><td>Who carries out the action (free text). Shown as Person Responsible in the register.</td></tr>
+<tr><td>Date Completed, Due Date</td><td>When the action was done and when it is due.</td></tr>
+<tr><td>Action Type</td><td>Corrective actions, preventive action or concurrent control action.</td></tr>
+<tr><td>Turnaround Time</td><td>Days from the NCE date to the date completed, calculated.</td></tr>
+<tr><td>Date of discussion with NCE Staff, Add new date</td><td>Records when the event was discussed with the staff involved.</td></tr>
+<tr><td>NCE Resolution</td><td>Whether the actions were effective in solving the event and preventing it from recurring (Yes or No), with a date.</td></tr>
+<tr><td>Open, Overdue, Due This Week, Completed (90d)</td><td>Register tiles counting actions by status.</td></tr>
+<tr><td>Status, Assignee, Due Date (From), Due Date (To)</td><td>Register filters.</td></tr>
+</tbody></table>
+
+<h2>Tips</h2>
+<ul>
+<li>The form will not submit without a Date Completed. The message asks you to fill in the action, person responsible, date completed and at least one action type, or to leave the row empty. A planned action that is not yet done therefore cannot be recorded through the form on this version.</li>
+<li>On the test server the register status does not take the Completed date into account: actions with a Completed date show Open, or Overdue when the due date has passed (NCE-2026-00004, completed 2026-10-22 and due 2026-10-16, shows Overdue), and Completed (90d) stays at 0.</li>
+<li>After Submit no confirmation message appears; check the event's CAPA tab or the register to see the new action.</li>
+<li>On the corrective action form, an action recorded earlier shows its Due Date as a long number (for example 1793836800000) instead of a date.</li>
+<li>On the CAPA tab, Person Responsible, Due Date and Completed run together on one line without spaces.</li>
+<li>Severity is empty on the corrective action form for an event that is Critical on All NCEs.</li>
+<li>The Type column shows the type as stored (for example <em>preventive action</em> in lower case and <em>Corrective actions</em> in the plural).</li>
+</ul>
+
+<h2>Not yet available</h2>
+<ul>
+<li>Reassigning several actions at once and acting on a filtered list from the register (OGC-708).</li>
+</ul>
+
+<h2>Provenance</h2>
+<table><tbody>
+<tr><th>Status</th><td>Draft for review</td></tr>
+<tr><th>Instance</th><td>testing.openelis-global.org, header version <em>3.4.0-SNAPSHOT</em> (3.3.0 QA Release, Phase C OGC-685: CAPA Register OGC-707; NCE overhaul OGC-312)</td></tr>
+<tr><th>Routes</th><td>/NceDashboard; /NCECorrectiveAction; /qa/qms/capa-register</td></tr>
+<tr><th>Date</th><td>22 October 2026</td></tr>
+<tr><th>Data</th><td>NCE-2026-00001 (haemolysed EDTA sample), NCE-2026-00003 (invalid control on an HIV rapid test) and NCE-2026-00004 (amendment rate threshold breach), with corrective and preventive actions entered for this page. The haemolysis-check action was submitted twice during capture, so it appears twice in the register on the test server.</td></tr>
+<tr><th>Driven</th><td>All NCEs with an event opened on its CAPA tab; the corrective action form searched by NCE Number, filled and submitted (corrective and preventive); the CAPA Register with the Status filter set to Overdue.</td></tr>
+<tr><th>Observed only</th><td>Search by Lab Number; Date of discussion with NCE Staff; NCE Resolution; the Assignee and Due Date filters; the concurrent control action type.</td></tr>
+<tr><th>Unverified</th><td>The Completed status in the register; how CAPA effectiveness reviews due is counted on QA Overview; closing an event after its actions.</td></tr>
+</tbody></table>

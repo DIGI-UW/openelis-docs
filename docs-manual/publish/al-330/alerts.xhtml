@@ -1,0 +1,50 @@
+<ac:structured-macro ac:name="info" ac:schema-version="1"><ac:rich-text-body><p><strong>OpenELIS 3.3.0.</strong> This page describes the Alerts Dashboard as it works in 3.3.0 (not yet released at the time of writing), where overdue STAT orders raise alerts and alerts carry their real creation date (OGC-1372). It is a draft for review.</p></ac:rich-text-body></ac:structured-macro>
+<p><em>How-to &middot; Supervisors, quality officers and bench staff</em></p>
+<h2>At a glance</h2>
+<table data-layout="default"><tbody>
+<tr><th><p>Purpose</p></th><td><p>See the alerts OpenELIS has raised (overdue STAT orders, EQA deadlines, critical results, rejected referrals and others) and record what was done about each one.</p></td></tr>
+<tr><th><p>You'll end up with</p></th><td><p>Each alert acknowledged (someone is on it) or resolved (it is dealt with), with a comment that says what was done.</p></td></tr>
+<tr><th><p>Who does this</p></th><td><p>Supervisors and staff who follow up urgent work. Access is set by user permissions and can be configured by your administrator.</p></td></tr>
+<tr><th><p>Before you start</p></th><td><p>Nothing. Alerts are raised automatically.</p></td></tr>
+<tr><th><p>Where</p></th><td><p>Main menu &rarr; Alerts</p></td></tr>
+</tbody></table>
+<h2>Step 1: Read the dashboard</h2>
+<ol start="1">
+<li><p>Open <strong>Main menu &rarr; Alerts</strong>. Four tiles count open alerts: <strong>Critical Alerts</strong>, <strong>EQA Deadlines</strong>, <strong>Overdue STAT Orders</strong> and <strong>Samples Expiring</strong>. An alert stops counting once it is acknowledged.</p></li>
+<li><p>The table lists each alert's <strong>Type</strong>, <strong>Severity</strong> (Warning or Critical), <strong>Message</strong>, <strong>Status</strong> (Open, Acknowledged or Resolved), <strong>Created</strong> date and time, and the next action. Narrow it with <strong>Alert Type</strong>, <strong>Severity</strong> and <strong>Status</strong>, or <strong>Search alerts</strong>.</p>
+<p>{{IMG:01-alerts-dashboard.png}}</p>
+<p><em>Figure 1. The Alerts Dashboard with a resolved referral alert, an acknowledged and an open overdue STAT order.</em></p></li>
+<li><p>Below the table, <strong>EQA Deadline Summary</strong> groups upcoming EQA submission deadlines by provider, with <strong>View All</strong>.</p></li>
+</ol>
+<h2>Step 2: Acknowledge an alert</h2>
+<ol start="4">
+<li><p>Select <strong>Acknowledge</strong> on the alert's row. The <strong>Acknowledge Alert</strong> dialog repeats the message.</p></li>
+<li><p>For a critical alert, enter an <strong>Acknowledgment Comment</strong>: the dialog says <em>A comment is required to acknowledge a critical alert</em>, and <strong>Acknowledge</strong> stays disabled until you type one. Say what you are doing about it.</p>
+<p>{{IMG:02-acknowledge.png}}</p>
+<p><em>Figure 2. Acknowledging an overdue STAT order with a comment.</em></p></li>
+<li><p>Select <strong>Acknowledge</strong>. The alert's status becomes <strong>Acknowledged</strong>, its action becomes <strong>Resolve</strong>, and the tiles drop by one.</p></li>
+</ol>
+<h2>Step 3: Resolve an alert</h2>
+<ol start="7">
+<li><p>When the problem is dealt with, select <strong>Resolve</strong>. The <strong>Resolve Alert</strong> dialog requires a <strong>Resolution Comment</strong>.</p></li>
+<li><p>Select <strong>Resolve</strong>. The status becomes <strong>Resolved</strong> and the row has no further action.</p></li>
+</ol>
+<h2>Overdue STAT orders</h2>
+<p>Every five minutes OpenELIS checks STAT samples received in the last seven days. When a STAT sample still has a test with no result (not started, or rejected and awaiting a new result) longer than the STAT turnaround, it raises a critical <strong>STAT Overdue</strong> alert: <em>STAT order <code>lab number</code> has no result 60 minutes after receipt</em>. The turnaround is the <strong>statTurnaroundMinutes</strong> setting in Order Entry Configuration (default 60 minutes; see <ac:link><ri:page ri:content-title="General Configurations reference" /><ac:link-body>General Configurations reference</ac:link-body></ac:link>). Each sample raises one STAT Overdue alert at most, so a resolved alert does not come back.</p>
+<h2>Alert types</h2>
+<p>The Alert Type filter lists: Freezer Temperature, Freezer Humidity, Freezer Offline, Equipment Failure, Inventory Low, Sample Tracking, Other, EQA Deadline, Sample Expiration, STAT Upcoming, STAT Overdue, Unacknowledged Critical, Required By Deadline, Referral Critical Result, Referral Rejected, Critical Result, EQA Submission Failed and Microbiology Critical. This page was written from STAT Overdue, EQA Deadline and Referral Rejected alerts; the others were not observed.</p>
+<h2>Tips</h2>
+<ul>
+<li><p>Acknowledge early, resolve when done. Acknowledging tells others someone is on it, and takes the alert out of the tile counts.</p></li>
+<li><p>Write comments for the next person: what you did, who you called, and when the result is due.</p></li>
+<li><p>Use the Status filter to show only Open alerts at the start of a shift.</p></li>
+</ul>
+<h2>Not covered on this page</h2>
+<p>The notification bell in the header, alert types other than STAT Overdue, EQA Deadline and Referral Rejected, <strong>View All</strong> in EQA Deadline Summary, and who receives alerts outside the dashboard.</p>
+<h2>Provenance</h2>
+<table data-layout="default"><tbody>
+<tr><th><p>Drafted</p></th><td><p>13 October 2026 against <strong>3.3.0-SNAPSHOT</strong> on <code>testing.openelis-global.org</code> (OGC-1372).</p></td></tr>
+<tr><th><p>Driven</p></th><td><p>Acknowledge with a comment on a STAT Overdue alert (tiles 3 to 2 critical, 2 to 1 overdue STAT); Resolve with a comment on an acknowledged Referral Rejected alert; Acknowledge disabled without a comment.</p></td></tr>
+<tr><th><p>Read from source</p></th><td><p>The STAT overdue check (every five minutes, seven-day lookback, <code>statTurnaroundMinutes</code> with a 60-minute default, one alert per sample) and that the tiles count open alerts, from OpenELIS-Global-2 <code>develop</code> b5943f5.</p></td></tr>
+<tr><th><p>Seed data on testing</p></th><td><p>STAT Overdue alert for DEV01260000000000042 acknowledged; Referral Rejected alert for referral 5 resolved.</p></td></tr>
+</tbody></table>

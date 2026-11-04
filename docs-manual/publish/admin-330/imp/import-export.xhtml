@@ -1,0 +1,79 @@
+<ac:structured-macro ac:name="info"><ac:rich-text-body><p><strong>OpenELIS 3.3.0.</strong> This page describes the Locations &amp; Organizations admin introduced in 3.3.0 (not yet released at the time of writing). It is a draft for review; see also <a href="https://uwdigi.atlassian.net/wiki/spaces/OG/pages/1702756385">Admin: Manage organizations (3.3.0)</a>.</p></ac:rich-text-body></ac:structured-macro>
+<h2>At a glance</h2>
+<table><tbody>
+<tr><th>Purpose</th><td>Load or update organizations, wards and departments, sampling sites and geographic areas in bulk from CSV files, and check every change before it is saved.</td></tr>
+<tr><th>You'll end up with</th><td>The records in your files added or updated, and a result report you can download.</td></tr>
+<tr><th>Who does this</th><td>Administrators. Access is set by user permissions and can be configured by your administrator.</td></tr>
+<tr><th>Before you start</th><td>CSV files in the same format the system uses at installation. Download a template from the page if you are starting from scratch.</td></tr>
+<tr><th>Where</th><td>Main menu → Admin → Locations &amp; Organizations → Import / Export</td></tr>
+</tbody></table>
+<p>Import / Export reads three kinds of file:</p>
+<table><tbody>
+<tr><th>Area</th><th>File name pattern</th><th>What it holds</th></tr>
+<tr><td>Geographic levels</td><td><code>*-levels.csv</code></td><td>The names of the levels of your country's divisions, top first. Columns <code>level,typeName</code>, for example 1 Region, 2 Province, 3 District, 4 LLG.</td></tr>
+<tr><td>Geographic areas</td><td><code>*-values.csv</code></td><td>The areas themselves. One column per level, named after the level. Each cell is the area name, a <code>%</code>, then its code, for example <code>Morobe Province%P-MOR</code>. A row describes one path from the top level down; leave the lower cells empty for a shorter path.</td></tr>
+<tr><td>Facilities, wards &amp; sites</td><td><code>organizations-*.csv</code></td><td>Organizations, their wards or departments, and sampling sites, one per row, with type, code, name, parent, location, address, GPS, contact and other details.</td></tr>
+</tbody></table>
+<p>Nothing is saved until you have reviewed the preview and applied it.</p>
+
+<h2>Step 1: Choose the files</h2>
+<ol>
+<li><p>Open <strong>Main menu → Admin → Locations &amp; Organizations → Import / Export</strong>.</p></li>
+<li><p>If you need a starting point, use the links under the drop area: <strong>Download template · Facilities, wards &amp; sites</strong>, <strong>Download template · Geographic levels</strong> and <strong>Download template · Geographic areas</strong>. Each downloads a CSV with the header row and one or more example rows.</p></li>
+<li><p>Under <strong>1. Files</strong>, drag your CSV files onto the drop area or click it to browse. You can add several files at once; load levels and areas together when you set up areas for the first time.</p></li>
+<li><p>Each file is listed with an <strong>Area</strong> list. OpenELIS picks the area from the file name pattern. Check it, and change it if your file is named differently (a file called <code>png-areas.csv</code> is not recognised as areas, so set it to <strong>Geographic areas</strong>). <strong>Remove</strong> takes a file off the list.</p>
+<p>{{IMG:01-files-chosen.png}}</p>
+<p><em>Figure 1. A levels file and an areas file chosen, each with its Area set.</em></p></li>
+<li><p>Under <strong>2. Import mode</strong>, choose:</p>
+<ul>
+<li><strong>Add &amp; update</strong>: add new records and update matching ones. Nothing else changes. This is the default.</li>
+<li><strong>Replace</strong>: also deactivate records of the types in the file that the file does not include. Nothing is deleted.</li>
+</ul></li>
+</ol>
+
+<h2>Step 2: Preview the import</h2>
+<ol>
+<li><p>Click <strong>Preview</strong>. A message repeats the import mode and says <em>Nothing has been saved</em>. A summary counts the rows that are <strong>New</strong>, <strong>Updated</strong>, <strong>Unchanged</strong>, <strong>Reactivated</strong>, <strong>Deactivated</strong>, <strong>Needs decision</strong> and <strong>Rejected</strong>.</p></li>
+<li><p>The table below lists each row with its <strong>Line</strong> in the file, its <strong>Outcome</strong>, <strong>Type</strong>, <strong>Code</strong>, <strong>Name</strong> and any <strong>Detail</strong>. Read it before applying, especially for Replace imports and rows that are rejected or need a decision.</p>
+<p>{{IMG:02-preview.png}}</p>
+<p><em>Figure 2. The preview of a first load of Papua New Guinea areas: 11 new rows (4 levels and 7 area paths), nothing saved yet.</em></p></li>
+<li><p>To go back without importing, click <strong>← Back to List</strong>.</p></li>
+</ol>
+<p><strong>Note:</strong> in the preview, an areas row is counted once, by its lowest area. The higher areas on the same row (the region, province and district above an LLG) are created too when you apply, as the Geographic Areas page then shows.</p>
+
+<h2>Step 3: Apply the import</h2>
+<ol>
+<li><p>Click <strong>Apply</strong>. The <strong>Apply this import?</strong> dialog repeats the counts. Click <strong>Apply</strong> to save, or <strong>Cancel</strong>.</p>
+<p>{{IMG:03-confirm.png}}</p>
+<p><em>Figure 3. The confirmation before anything is saved.</em></p></li>
+<li><p>When the import finishes, the page shows <strong>Import complete</strong> with the final counts and a <strong>Download result report</strong> button.</p>
+<p>{{IMG:04-applied.png}}</p>
+<p><em>Figure 4. The import applied. Recent imports lists the preview and the applied import, newest first.</em></p></li>
+</ol>
+
+<h2>Recent imports</h2>
+<p>The <strong>Recent imports</strong> list at the bottom of the page shows every preview and every applied import: the date and time, the user, whether it was a <strong>Preview</strong> or <strong>Applied</strong>, the mode (merge or replace), the file names and the counts. <strong>Download result report</strong> on any row downloads that run's report.</p>
+
+<h2>Exporting</h2>
+<p>The <strong>Organizations</strong> and <strong>Sampling Sites</strong> pages have their own <strong>Import</strong> and <strong>Export</strong> buttons above the list.</p>
+
+<h2>Tips and notes</h2>
+<ul>
+<li>Set up geographic levels and areas before organizations and sites, so their Location can be filled in.</li>
+<li>Use Add &amp; update for routine changes. Use Replace only with a complete file, because records of the same types that are missing from it are deactivated.</li>
+<li>Inactive records are hidden from order entry and other pickers. They still appear on existing orders and reports.</li>
+<li>On a 1440 px wide screen the user column in Recent imports wraps the user name over two lines.</li>
+</ul>
+
+<h2>Not covered on this page</h2>
+<ul>
+<li>The Export buttons on Organizations and Sampling Sites, and the Import buttons there.</li>
+<li>Rows that are rejected or need a decision, and Replace mode. These were not exercised on the test server.</li>
+</ul>
+
+<h2>Provenance</h2>
+<table><tbody>
+<tr><th>Drafted</th><td><p>12 October 2026 against <strong>3.3.0-SNAPSHOT</strong> on <code>testing.openelis-global.org</code> (Epic OGC-1363, Feature Doc OGC-1414).</p>
+<p>DRIVEN: template downloads (all three), choosing a levels file and an areas file together, Area auto-detection and override, Preview, Apply with confirmation, Import complete, Recent imports. OBSERVED only: Replace mode, Download result report, Remove. NOT covered: Export, rejected and needs-decision rows.</p>
+<p>Seed data left on testing: geographic levels Region, Province, District, LLG, and areas in Southern Region (National Capital District with Moresby South, North-East and North-West; Central Province, Kairuku-Hiri District, Hiri Rural), Momase Region (Morobe Province, Lae District, Lae Urban, Ahi Rural) and Highlands Region (Eastern Highlands Province, Goroka District, Goroka Urban).</p></td></tr>
+</tbody></table>

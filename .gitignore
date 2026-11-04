@@ -1,0 +1,43 @@
+# Never commit credentials or session state (this repo is public)
+*.env
+.env*
+.auth/
+**/.auth/
+node_modules/
+dist/
+__pycache__/
+.DS_Store
+
+# docs-manual: keep the tooling and state, not the media, logs, backups or fetched copies.
+# Default-deny everything under docs-manual, then allow the source file types back in.
+docs-manual/**
+!docs-manual/**/
+!docs-manual/**/*.py
+!docs-manual/**/*.sh
+!docs-manual/**/*.md
+!docs-manual/**/*.json
+!docs-manual/**/*.xhtml
+!docs-manual/**/*.yml
+# ...and drop the bulky or regenerable ones again
+docs-manual/**/*.bak*
+docs-manual/**/*.log
+docs-manual/**/__pycache__/
+docs-manual/_scratch*/
+docs-manual/bench-sync-pending-*/
+docs-manual/captures/
+docs-manual/fr/src/
+docs-manual/fr/srvcheck/
+docs-manual/fr/en-figs/
+docs-manual/fr/figs*/
+docs-manual/fr/old/
+docs-manual/fr/build-bak*/
+docs-manual/fr/refresh/old/
+docs-manual/fr/refresh/_superseded/
+docs-manual/fr/tx/origin-*.json
+docs-manual/fr/tx/*-live.json
+docs-manual/fr/tx/*DRYRUN*
+docs-manual/fr/tx/en*.json
+docs-manual/fr/tx/*-future.json
+docs-manual/prev-drift-report.json
+docs-manual/bench-drift-*.json
+docs-manual/bench-drift.firstpass.json

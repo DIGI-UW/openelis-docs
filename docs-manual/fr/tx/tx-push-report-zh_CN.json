@@ -1,0 +1,112 @@
+{
+ "at": "2026-10-15T16:28:18Z",
+ "apply": false,
+ "toPush": 0,
+ "alreadyLive": 2731,
+ "conflicts": [
+  {
+   "key": "eqa.prep.ofTotal",
+   "reviewed": null,
+   "live": "{total} 项中 {n} 项",
+   "approved": "{total} 中的 {n}"
+  },
+  {
+   "key": "qa.qi.callback.save.success",
+   "reviewed": null,
+   "live": "已记录回电",
+   "approved": "回电已登记"
+  },
+  {
+   "key": "eqa.inhouse.prep.aliquots",
+   "reviewed": null,
+   "live": "已制备分装样本",
+   "approved": "已制备的分装样本"
+  },
+  {
+   "key": "eqa.labperf.mostRecent",
+   "reviewed": null,
+   "live": "最近一次",
+   "approved": "最近"
+  },
+  {
+   "key": "eqa.labperf.scoreOf",
+   "reviewed": null,
+   "live": "{scored} 项中 {acceptable} 项",
+   "approved": "{scored} 个中 {acceptable} 个"
+  },
+  {
+   "key": "qa.overview.ncePulse.inCorrectiveAction",
+   "reviewed": null,
+   "live": "{count} 项处于纠正措施阶段",
+   "approved": "{count} 个处于纠正措施中"
+  },
+  {
+   "key": "workplan.batch.title",
+   "reviewed": null,
+   "live": "批量工作计划",
+   "approved": "批次工作计划"
+  },
+  {
+   "key": "eqa.queue.target",
+   "reviewed": null,
+   "live": "目标",
+   "approved": "靶值"
+  },
+  {
+   "key": "eqa.cycle.importScores.csv",
+   "reviewed": null,
+   "live": "分数 CSV",
+   "approved": "评分 CSV"
+  },
+  {
+   "key": "reporting.design.collapseAll",
+   "reviewed": null,
+   "live": "全部收起",
+   "approved": "全部折叠"
+  },
+  {
+   "key": "label.locations.import.decision.remember",
+   "reviewed": null,
+   "live": "已加载的内容",
+   "approved": "记住此名称"
+  },
+  {
+   "key": "admin.testCatalog.qcTargets.section.label",
+   "reviewed": null,
+   "live": "质控靶值",
+   "approved": "质控目标值"
+  },
+  {
+   "key": "analyzer.adoption.error.heldResults",
+   "reviewed": null,
+   "live": "{record} 仍有来自修订版本 {revision} 的暂存结果。请先处理这些结果，再进行采用。",
+   "approved": "{record} 仍有来自修订版 {revision} 的暂存结果。请在采用前处理这些结果。"
+  },
+  {
+   "key": "storage.nav.box",
+   "reviewed": null,
+   "live": "箱子",
+   "approved": "箱"
+  },
+  {
+   "key": "qa.qms.accreditation.enrollment.column.expires",
+   "reviewed": null,
+   "live": "机构认可到期",
+   "approved": "机构到期"
+  },
+  {
+   "key": "reporting.design.addField",
+   "reviewed": null,
+   "live": "添加{field}",
+   "approved": "添加 {field}"
+  }
+ ],
+ "notInTransifex": [
+  "pathology.badge.blockCount",
+  "inventory.tab.receive"
+ ],
+ "pluralNotParsed": [],
+ "pushed": 0,
+ "errors": [],
+ "changes": []
+}

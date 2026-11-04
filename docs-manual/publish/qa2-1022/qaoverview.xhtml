@@ -1,0 +1,100 @@
+<ac:structured-macro ac:name="note" ac:schema-version="1"><ac:rich-text-body><p><strong>Work in progress.</strong> This page is published before its review is finished so you can use it now. It is being reviewed under <a href="https://uwdigi.atlassian.net/browse/OGC-1563">OGC-1563</a>, so details may still change. If something on your screen does not match, add a comment to this page.</p></ac:rich-text-body></ac:structured-macro>
+
+<h2>At a glance</h2>
+<table><tbody>
+<tr><th>Purpose</th><td>Start the QA day from one screen, see the quality indicators against their targets, open the detail behind a number, and set the targets and action thresholds.</td></tr>
+<tr><th>You'll end up with</th><td>A list of what needs attention today, indicator values with their targets, and thresholds (with per-section overrides) set to your laboratory's policy.</td></tr>
+<tr><th>Who does this</th><td>QA officers and laboratory managers. Access is set by user permissions and can be configured by your administrator.</td></tr>
+<tr><th>Before you start</th><td>Nothing to set up for the overview and the dashboard: they read the orders, results and non-conforming events already in OpenELIS. Decide your targets before changing QI Configuration.</td></tr>
+<tr><th>Where</th><td>Main menu → Quality Assurance → QA Overview; Main menu → Quality Assurance → Quality Indicators → QI Dashboard or QI Configuration</td></tr>
+</tbody></table>
+
+<h2>Overview</h2>
+<p>QA Overview is the daily snapshot for the QA officer. It lists the items that need attention, today's indicator values, this week's counts, the status of each quality pillar and the most recent quality activity. Each line links to the screen where you act on it.</p>
+<p>Quality Indicators has two screens. <strong>QI Dashboard</strong> shows each indicator for the reporting window with its target and action threshold, and links to a detail page. <strong>QI Configuration</strong> is where the targets and action thresholds are set, an indicator is switched on or off, and a test section is given its own thresholds.</p>
+<p>The indicators are <strong>Average Turnaround Time</strong>, <strong>Rejection Rate</strong>, <strong>Amendment Rate</strong>, <strong>NCE Pulse</strong> and the optional <strong>Critical Callback Compliance</strong>. When an indicator's month-to-date value breaches its action threshold, OpenELIS creates a non-conforming event automatically, one per indicator per month (for example <em>QI threshold breach, AMENDMENT (2026-10)</em>).</p>
+
+<h2>Step 1: Read what needs attention today</h2>
+<p>Go to Main menu → Quality Assurance → QA Overview. The subtitle shows today's date.</p>
+<p><strong>ATTENTION REQUIRED</strong> lists, each with a count and an arrow to the matching screen: <strong>Critical NCEs pending acknowledgment</strong>, <strong>Overdue CAPAs</strong>, <strong>QC violations in last 24 hours</strong>, <strong>CAPA effectiveness reviews due</strong> and <strong>EQA submissions due in next 14 days</strong>. In the figure the critical NCE, overdue CAPA and effectiveness review rows are marked in red; the EQA row, which is not yet due, is grey.</p>
+<p><strong>TODAY</strong> shows four tiles: <strong>Average TAT</strong>, <strong>Rejection Rate</strong>, <strong>Amendment Rate</strong> and <strong>NCE Pulse</strong>, each with its basis (for example <em>39 of 584 released</em>) and <strong>View detail</strong>.</p>
+<p>{{IMG:01-overview-top.png}}</p>
+<p><em>Figure 1. QA Overview: one critical NCE pending acknowledgment, one overdue CAPA, three CAPA effectiveness reviews due and seven EQA submissions due; today's tiles show an average TAT of 6h 59m and an amendment rate of 6.68% (39 of 584 released).</em></p>
+
+<h2>Step 2: Check the week, the pillars and recent activity</h2>
+<p>Scroll down. <strong>THIS WEEK</strong> counts new NCEs (by severity), NCEs resolved, CAPAs completed, QC violations, open EQA submissions, audit log entries and signature events.</p>
+<p><strong>PILLAR STATUS</strong> gives one card each for <strong>Statistical QC</strong>, <strong>EQA</strong>, <strong>Quality Indicators</strong> and <strong>QMS &amp; Improvement</strong>, marked with a tick when the pillar is on track and a cross when something is open (for example a critical NCE pending).</p>
+<p><strong>RECENT ACTIVITY</strong> lists the latest quality actions with their time and user. <strong>View full audit trail</strong> opens the audit trail.</p>
+<p>{{IMG:02-overview-week-pillars.png}}</p>
+<p><em>Figure 2. This week, the pillar cards (Quality Indicators ticked, QMS &amp; Improvement crossed for one critical NCE pending) and recent activity: corrective actions and status changes on three NCEs at 1:43 PM.</em></p>
+
+<h2>Step 3: Answer the inspector's five questions</h2>
+<p>At the bottom of the page, open <strong>Inspector readiness</strong>. It answers five ISO 15189 quality questions, each with a tick, a cross or a dash and a link: <em>Are runs in control?</em>, <em>How did EQA perform last cycle?</em>, <em>Are QIs on target?</em>, <em>Open critical NCEs?</em> and <em>Accreditation status?</em>.</p>
+<p>{{IMG:03-overview-readiness.png}}</p>
+<p><em>Figure 3. Inspector readiness expanded: no QC data yet, QIs on target (tick), one critical NCE pending (cross), and accreditation 1 of 1 in force (tick).</em></p>
+
+<h2>Step 4: Read the QI Dashboard</h2>
+<p>Go to Main menu → Quality Assurance → Quality Indicators → QI Dashboard. The <strong>Reporting window</strong> is <strong>Rolling 30 days</strong>; <strong>Last recomputed</strong> shows when the values were calculated, with a <strong>Refresh</strong> button beside it.</p>
+<p>Each tile shows the value, the comparison with the prior 30 days, the target and action threshold (for example <em>Target ≤ 24h · action ≥ 48h</em>) and its basis. In the figure the coloured bar at the top of the tile is green for the two indicators within target and red for Amendment Rate, which is past its action threshold. Each tile also has an info icon.</p>
+<p>{{IMG:04-qi-dashboard.png}}</p>
+<p><em>Figure 4. QI Dashboard: Average TAT 6h 59m across 6 lab units (slowest Biochemistry, 8h 4m), Rejection Rate 0.00%, Amendment Rate 6.68% (red, above the 2% action threshold) and NCE Pulse 1 critical pending.</em></p>
+
+<h2>Step 5: Open the detail behind an indicator</h2>
+<p>Press <strong>View detail</strong> on a tile. Amendment Rate opens its detail page, <em>Results corrected after their patient report went out</em>, with <strong>From</strong> and <strong>To</strong> dates, the rate, a trend chart with an <strong>Aggregation</strong> choice (Daily) and the target and action lines, a <strong>By test</strong> table and an <strong>Individual amendments</strong> table (time amended, lab number, test, prior and current value, who amended it, when it was released and the time to amend).</p>
+<p>{{IMG:05-qi-amendment.png}}</p>
+<p><em>Figure 5. Amendment Rate detail for 21 September to 21 October 2026: 6.68%, with a daily trend above the dashed action line from 19 October; By test begins with HDL cholesterol, 24 of 45 amended.</em></p>
+<p>The other tiles open their own screens: Average TAT opens the <strong>Turn Around Time Report</strong> (period buttons, TAT Segment, Lab Unit, Test / Panel, Sample Type, Ordering Site, Calendar or Working Time, Priority, Include cancelled/rejected, then <strong>Generate Report</strong> with Summary, Detail List and Trends tabs). NCE Pulse opens All NCEs filtered to critical events pending.</p>
+<p>{{IMG:07-tat-report.png}}</p>
+<p><em>Figure 6. Turn Around Time Report opened from the Average TAT tile and generated for 22 September to 22 October 2026, Receipt to Validation, calendar time: 566 results, mean 6h 59m, median 9h 5m, 90th percentile 11h 55m. The TAT Distribution chart and a table by lab unit follow below.</em></p>
+
+<h2>Step 6: Set targets and action thresholds</h2>
+<p>Go to Main menu → Quality Assurance → Quality Indicators → QI Configuration. The table lists each indicator with <strong>Enabled</strong>, <strong>Target</strong>, <strong>Action threshold</strong>, the number of <strong>Overrides</strong> and an edit button under <strong>Actions</strong>. Critical Callback Compliance is off (No) until you switch it on.</p>
+<p>{{IMG:09-qi-config.png}}</p>
+<p><em>Figure 7. QI Configuration: Average Turnaround Time ≤ 24h target, ≥ 48h action threshold and one override; Critical Callback Compliance not enabled.</em></p>
+
+<h2>Step 7: Give a test section its own thresholds</h2>
+<p>Press the edit button on the indicator. The dialog has <strong>Default thresholds</strong> (<strong>Track this indicator</strong>, <strong>Target</strong>, <strong>Action threshold</strong>) and <strong>Per-section overrides</strong>. Press <strong>Add section override</strong>, choose the <strong>Test section</strong> and enter its target and action threshold. Sections without an override use the default. The trash icon removes an override. Press <strong>Save</strong>; the Overrides count in the table goes up by one.</p>
+<p>{{IMG:10-qi-config-edit.png}}</p>
+<p><em>Figure 8. Edit Average Turnaround Time: default 24 h target and 48 h action threshold, with a Molecular Biology override of 72 h and 96 h.</em></p>
+
+<h2>Field reference</h2>
+<table><tbody>
+<tr><th>Field or control</th><th>What it shows or does</th></tr>
+<tr><td>ATTENTION REQUIRED rows</td><td>Count of items needing action; the arrow opens the screen to act on them.</td></tr>
+<tr><td>TODAY tiles</td><td>Average TAT, Rejection Rate, Amendment Rate and NCE Pulse for the last 30 days, with View detail.</td></tr>
+<tr><td>THIS WEEK</td><td>Counts for the current week: NCEs, CAPAs, QC violations, EQA submissions, audit log entries and signature events.</td></tr>
+<tr><td>PILLAR STATUS</td><td>Statistical QC, EQA, Quality Indicators and QMS &amp; Improvement, with a tick or a cross.</td></tr>
+<tr><td>RECENT ACTIVITY</td><td>The latest quality actions; View full audit trail opens the audit trail.</td></tr>
+<tr><td>Inspector readiness</td><td>Five ISO 15189 questions with a status and a link each.</td></tr>
+<tr><td>Reporting window, Last recomputed, Refresh</td><td>The period the dashboard covers (Rolling 30 days) and when the values were last calculated.</td></tr>
+<tr><td>Target, Action threshold</td><td>The value to aim for and the value at which OpenELIS raises a non-conforming event for the month. Hours for turnaround time, percentages for rates.</td></tr>
+<tr><td>Track this indicator (Enabled)</td><td>Switches the indicator on or off.</td></tr>
+<tr><td>Per-section overrides</td><td>Target and action threshold for one test section, used instead of the default.</td></tr>
+</tbody></table>
+
+<h2>Tips</h2>
+<ul>
+<li>Because a breach of the action threshold creates a non-conforming event once per indicator per month, a high amendment rate early in the month shows up on All NCEs as <em>QI threshold breach, AMENDMENT</em> with the month.</li>
+<li>Known issue OGC-1491: EQA samples are counted in turnaround time, the quality indicators and dashboard statistics as if they were patient samples.</li>
+<li>On the test server the Individual amendments table lists corrections where the value did not change (for example 0.6 corrected to 0.60). These rows are counted in the amendment rate.</li>
+<li>The turnaround time Target and Action threshold boxes in QI Configuration do not accept a value above 100 hours.</li>
+<li>The EQA pillar card and the EQA question under Inspector readiness show <em>Coming soon</em> with the tag OGC-721, although the EQA screens are in use and EQA submissions are counted in ATTENTION REQUIRED and THIS WEEK.</li>
+<li>Rejection Rate showed 0.00% (0 of 1384 started) on the test server for the whole window.</li>
+</ul>
+
+<h2>Not yet available</h2>
+<ul>
+<li>NCEs nearing acknowledgment SLA: shown as <em>Coming soon</em> with the tag NCE v2, part of the NCE redesign (OGC-635).</li>
+</ul>
+
+<h2>Provenance</h2>
+<table><tbody>
+<tr><th>Status</th><td>Draft for review</td></tr>
+<tr><th>Instance</th><td>testing.openelis-global.org, header version <em>3.4.0-SNAPSHOT</em> (3.3.0 QA Release, Phase A OGC-683 and Phase C OGC-685)</td></tr>
+<tr><th>Routes</th><td>/qa/overview; /qa/qi/dashboard; /qa/qi/amendment; /qa/qi/tat; /qa/qi/config</td></tr>
+<tr><th>Date</th><td>22 October 2026</td></tr>
+<tr><th>Data</th><td>The orders, results and non-conforming events already on the test server; corrective actions on NCE-2026-00001, 00003 and 00004 added for this page; a Molecular Biology override (72 h, 96 h) on Average Turnaround Time.</td></tr>
+<tr><th>Driven</th><td>QA Overview with Inspector readiness expanded; QI Dashboard; Amendment Rate detail; Turn Around Time Report with Generate Report; QI Configuration with the turnaround time override saved and the edit dialog reopened.</td></tr>
+<tr><th>Observed only</th><td>The arrows in ATTENTION REQUIRED; View full audit trail; Refresh; the Rejection Rate and NCE Pulse detail links; the Detail List and Trends tabs of the TAT report; editing the other indicators.</td></tr>
+<tr><th>Unverified</th><td>Critical Callback Compliance switched on; the automatic NCE on breach for an indicator other than Amendment Rate; other reporting windows; Working Time.</td></tr>
+</tbody></table>
