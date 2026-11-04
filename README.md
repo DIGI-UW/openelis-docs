@@ -22,8 +22,14 @@ Credentials never enter the repo: the scripts read `~/.openelis/confluence.env` 
 
 The drift spec (`tests/docs/drift.check.spec.ts`) belongs to the QA harness in
 [DIGI-UW/OpenELIS-QA](https://github.com/DIGI-UW/OpenELIS-QA), so `run-d.sh` runs from that
-harness folder. On Casey's Mac this repo is cloned at `~/Documents/openelis-docs` and
-`~/Documents/OpenELIS QA/docs-manual` and `run-d.sh` are symlinks into it.
+harness folder. Clone this repo next to the harness and link it in:
+
+```bash
+git clone https://github.com/DIGI-UW/openelis-docs.git ~/Documents/openelis-docs
+cd ~/Documents/"OpenELIS QA"          # the DIGI-UW/OpenELIS-QA clone
+ln -s ~/Documents/openelis-docs/docs-manual docs-manual
+ln -s ~/Documents/openelis-docs/run-d.sh run-d.sh
+```
 
 ## Plugin
 

@@ -1,0 +1,35 @@
+<p><strong>Goal of this page.</strong> Go from "this page is stale" or "this feature has no page" to a published, reviewed manual page, mostly by talking to Claude.</p>
+<ac:structured-macro ac:name="warning"><ac:rich-text-body><p><strong>The one rule: document only what the software does today.</strong> Claude checks every step on the live test site before writing it, and a second reviewer checks the page against its screenshots. You are the human check: if a step on the page does not work for you on the test site, say so.</p></ac:rich-text-body></ac:structured-macro>
+<h2>Step 1: Decide what to document</h2>
+<p>Usually an item on the <a href="https://claude.ai/artifact/LdorWo3a3SHUgKpRAQUJcp">triage bench</a> (Part 4): a page in drift, a page graded F, or a feature with no page. Or Casey asks for a feature. Documentation is due once the feature's Jira Epic reaches <strong>Acceptance</strong> (someone has checked it on the test site).</p>
+<h2>Step 2: Ask Claude in plain English</h2>
+<p>Start a new chat in the OpenELIS User Manual project. Paste the item's prompt from the bench, or write your own:</p>
+<ac:structured-macro ac:name="code"><ac:parameter ac:name="language">text</ac:parameter><ac:plain-text-body><![CDATA[Write the user manual page for Sent Messages (checking and resending deliveries).]]></ac:plain-text-body></ac:structured-macro>
+<ac:structured-macro ac:name="code"><ac:parameter ac:name="language">text</ac:parameter><ac:plain-text-body><![CDATA[The "Enter and save results" page is in drift on the bench. Re-check it on testing, recapture what changed, and update the page.]]></ac:plain-text-body></ac:structured-macro>
+<p>You don't need to name a skill. Claude may ask one or two questions first (which site, who the page is for); answer in a sentence.</p>
+<h2>Step 3: What Claude does</h2>
+<ol>
+<li><strong>Looks for an existing page</strong> first. If there is one, it rewrites that page, keeping its address, because other pages link to it.</li>
+<li><strong>Drives the feature</strong> on the test site and confirms every step.</li>
+<li><strong>Captures the screenshots</strong> (and a walkthrough video for longer workflows), with personal data masked, and reads every picture before writing about it.</li>
+<li><strong>Writes the page</strong> in our shape: an <strong>At a glance</strong> table (purpose, result, who, what you need, where in the menu), numbered steps with figures, a field reference, tips, related pages and a feedback line.</li>
+<li><strong>Checks the style</strong> (terms such as Lab Number and Lab Unit, plain sentences that translate well, no em dashes).</li>
+<li><strong>Has the page reviewer read it cold</strong> and fixes what it finds.</li>
+<li><strong>Publishes it</strong> straight into its place in the manual, marked <strong>Work in progress</strong> with the review ticket named, and adds it to the <a href="https://uwdigi.atlassian.net/wiki/spaces/OG/pages/1326972929">User Manual</a> landing page with "In review".</li>
+<li><strong>Registers the page with the freshness check</strong>, so a later change to its screens shows up on the bench.</li>
+<li><strong>Writes a session note</strong> in the project and <strong>syncs the bench</strong>.</li>
+</ol>
+<h2>Step 4: Review</h2>
+<p>Each page waiting for review has a review sub-task under <strong>OGC-1271</strong> in Jira. The reviewer (usually Taib) follows the page on the test site and checks:</p>
+<ul>
+<li>Can you follow every step and get the same result?</li>
+<li>Does each screenshot show the step it sits under?</li>
+<li>Are button and menu names exactly as the software shows them?</li>
+<li>Is any personal or patient information masked?</li>
+</ul>
+<p>Comments go on the page itself (inline comments are best). When the review passes, the reviewer adds a short stamp at the top of the page, for example <code>doc-verified + verified-v3.4.0</code>, and moves the sub-task to <strong>Done</strong>.</p>
+<h2>Step 5: Clearing the page</h2>
+<p>Once a review is Done, ask Claude to "clear the reviewed pages". Claude lists them and asks before changing anything, then removes the Work in progress note, sets the verified labels, removes "In review" from the landing page, and syncs the bench.</p>
+<h2>Translated pages</h2>
+<p>Verified and live English pages have French twins (and Indonesian for the most used pages), kept in their own part of the space. When an English page changes, the freshness check marks its twin as behind, and the bench gets an item. Ask Claude to "refresh the French pages": it retranslates only the sentences that changed, using our glossary, and never overwrites a page that a person has edited by hand.</p>
+<p><strong>You've got the hang of it when:</strong> you can take a bench item to a published page waiting for review, mostly by chatting. Next: <a href="https://uwdigi.atlassian.net/wiki/spaces/DEV/pages/1491304451">Part 6: Capture screenshots and videos</a>.</p>

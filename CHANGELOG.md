@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-11-04 (later)
+
+- Plugin 0.1.1 (publisher `--images` optional and `--message`; YAML frontmatter check).
+- `docs-manual/publish/toolset-guide/`: sources of the rewritten OpenELIS Documentation Toolset
+  guide (Confluence DEV space, page 1491533825 and its eight children).
+- README: how to clone and link the tooling into the QA harness folder.
+
 ## 2026-11-04
 
 - Repo created. `docs-manual/` and `run-d.sh` moved in from Casey's Mac (where they lived outside

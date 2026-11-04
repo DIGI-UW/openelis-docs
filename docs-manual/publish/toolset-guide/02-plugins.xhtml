@@ -1,0 +1,41 @@
+<p><strong>Goal of this page.</strong> Install the two OpenELIS plugins so that, when you ask for a manual page or a screenshot, Claude already knows how we do it and checks its own work. One-time setup, about 15 minutes; repeat when a new version comes out.</p>
+<h2>What a plugin is</h2>
+<p>A <strong>plugin</strong> is a package of house instructions (called <strong>skills</strong>) plus a few automatic safety checks. You never run a skill by hand: you describe what you want, and Claude loads the skill that matches. The safety checks run on their own and stop Claude before it does something we have agreed never to do (see "The safety checks" below).</p>
+<h2>The two plugins</h2>
+<table><tbody>
+<tr><th>Plugin</th><th>What it does</th><th>Where to get it</th></tr>
+<tr><td><strong>openelis-docs</strong></td><td>Everything for the manual: writing pages, checking style, publishing to Confluence, the freshness check, translations, and the triage bench</td><td>Download <code>openelis-docs.plugin</code> from the latest release of <a href="https://github.com/DIGI-UW/openelis-docs/releases">DIGI-UW/openelis-docs</a></td></tr>
+<tr><td><strong>openelis-qa</strong></td><td>Testing the live software, and capturing screenshots and videos (the docs plugin uses it for every figure)</td><td>Ask Casey for the current <code>openelis-qa.plugin</code> file (built from <a href="https://github.com/DIGI-UW/OpenELIS-QA">DIGI-UW/OpenELIS-QA</a>)</td></tr>
+</tbody></table>
+<p>Two related skills stay separate and are worth having: <strong>openelis-ui-vocabulary</strong> (keeps button and label names exactly as the software says them) and <strong>openelis-design</strong> (design and spec background). Ask Casey if you don't have them.</p>
+<h2>Install</h2>
+<ol>
+<li>Download both plugin files (above) to your Mac.</li>
+<li>In the Claude app, upload each <code>.plugin</code> file where plugins are managed in settings. If you can't find it, ask Casey.</li>
+<li><strong>Remove the old skills</strong> if you had them from the July setup: <code>openelis-user-manual</code>, <code>openelis-screenshots</code>, <code>openelis-docs-freshness</code> and <code>triage-bench-sync</code>. If both old and new are installed, Claude gets two sets of instructions and may follow the old one.</li>
+</ol>
+<h2>What's inside openelis-docs</h2>
+<table><tbody>
+<tr><th>Skill</th><th>Claude uses it when you ask to...</th></tr>
+<tr><td><strong>manual-author</strong></td><td>write, update or re-verify a manual page; clear a reviewed page</td></tr>
+<tr><td><strong>manual-lint</strong></td><td>check a page's style, terminology and translation readiness; grade pages</td></tr>
+<tr><td><strong>manual-publish</strong></td><td>publish, move, rename or label a page in Confluence</td></tr>
+<tr><td><strong>docs-freshness</strong></td><td>run the freshness check, or ask which pages are stale</td></tr>
+<tr><td><strong>translation-refresh</strong></td><td>refresh, translate or check the French, Indonesian or Spanish pages</td></tr>
+<tr><td><strong>bench-sync</strong></td><td>update the Documentation triage bench (Claude also does this on its own at the end of manual work)</td></tr>
+</tbody></table>
+<p>It also brings a <strong>page reviewer</strong>: a second Claude that reads a finished page cold, the way a fresh reviewer would, and lists what does not match the screenshots before the page is published.</p>
+<h2>The safety checks</h2>
+<p>These run automatically. When one stops Claude, Claude tells you why; that is the check working, not an error.</p>
+<ul>
+<li><strong>Publishing asks first.</strong> Before any script writes to Confluence, you are asked to approve it.</li>
+<li><strong>No em dashes.</strong> Our writing rule. A page or title containing one is refused until it is rewritten.</li>
+<li><strong>Safe page edits.</strong> Claude may only edit an existing Confluence page in the format that keeps its tables, comments and images intact.</li>
+<li><strong>Secrets stay secret.</strong> Claude is stopped from printing the publishing key or committing it to GitHub.</li>
+<li><strong>The bench gets updated.</strong> If Claude published or ran a check but did not update the triage bench, it is reminded before it stops.</li>
+</ul>
+<h2>How to check it worked</h2>
+<p>Start a new chat in the OpenELIS User Manual project and paste this in:</p>
+<ac:structured-macro ac:name="code"><ac:parameter ac:name="language">text</ac:parameter><ac:plain-text-body><![CDATA[Which OpenELIS plugins and skills do you have right now? Are any of the old openelis-user-manual, openelis-screenshots, openelis-docs-freshness or triage-bench-sync skills still installed?]]></ac:plain-text-body></ac:structured-macro>
+<p>Claude should list the six skills above and the openelis-qa skills, and none of the old ones.</p>
+<p><strong>Done with Part 2 when:</strong> both plugins are installed and the old skills are gone. Next: <a href="https://uwdigi.atlassian.net/wiki/spaces/DEV/pages/1491664898">Part 3: Set up capture and publishing on your Mac</a>.</p>

@@ -100,6 +100,10 @@ for (const dir of skills) {
       }
     }
   }
+  // The frontmatter must parse as YAML: newer `claude plugin validate` refuses an unquoted ': '
+  // inside a description, and the skill then loads with no metadata at all.
+  const y = spawnSync('python3', ['-c', 'import sys,yaml; yaml.safe_load(sys.stdin.read())'], { input: parsed.raw, encoding: 'utf8' });
+  if (y.status !== 0 && !/No module named/.test(y.stderr || '')) problems.push(`skills/${dir}/SKILL.md: frontmatter is not valid YAML (quote the description or drop the ': ')`);
   const words = text.split(/\s+/).length;
   if (words > 4500) problems.push(`skills/${dir}/SKILL.md: ${words} words; move detail into references/`);
 }

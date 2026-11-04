@@ -1,0 +1,30 @@
+<p><strong>Goal of this page.</strong> Know where to start each time: the <strong>Documentation triage bench</strong> is the one list of what to fix next in the manual and its translations. It replaced the Doc Freshness Tracker in September 2026.</p>
+<p><strong>Open it:</strong> <a href="https://claude.ai/artifact/LdorWo3a3SHUgKpRAQUJcp">Documentation triage bench</a> (sign in to claude.ai with the account from Part 1; ask Casey for access if it does not open).</p>
+<h2>What you see</h2>
+<table><tbody>
+<tr><th>Part of the page</th><th>What it tells you</th></tr>
+<tr><td><strong>Items</strong>, in three lanes</td><td><strong>Now</strong>: nothing is blocking, start here. <strong>Decide</strong>: needs a call from Casey first. <strong>Blocked</strong>: waiting on a fix in the software or another page.</td></tr>
+<tr><td><strong>Score</strong> on each item</td><td>Higher means more worth doing: a published page that is wrong scores highest, and work whose screens are already captured scores higher than work that cannot reach its screens.</td></tr>
+<tr><td><strong>Prompt</strong> on each item</td><td>A complete request you can copy into a new chat. It names the page, the ticket and what to do, so you don't have to explain.</td></tr>
+<tr><td><strong>Drift panel</strong></td><td>The latest freshness check: how many manual pages still match their screens (<strong>ok</strong>), need a recheck after a new version (<strong>review</strong>), have lost a control the page describes (<strong>drift</strong>), or could not be opened (<strong>error</strong>).</td></tr>
+<tr><td><strong>Translations</strong></td><td>How many French (and Indonesian) pages are current, behind their English page, or missing.</td></tr>
+<tr><td><strong>Header</strong></td><td>When the bench was last synced, and from which session notes.</td></tr>
+</tbody></table>
+<h2>How to work from it</h2>
+<ol>
+<li>Pick the top item in <strong>Now</strong> (or one Casey assigned you).</li>
+<li>Copy its <strong>prompt</strong> into a new chat in the OpenELIS User Manual project.</li>
+<li>Let Claude do the work (<a href="https://uwdigi.atlassian.net/wiki/spaces/DEV/pages/1491730433">Part 5</a> describes what happens).</li>
+<li>At the end Claude writes a short session note into the project and updates the bench: it closes the item, opens new items for anything left over, and stamps the time. If Claude seems to finish without doing that, ask it to "sync the triage bench".</li>
+</ol>
+<p>Items are never deleted, only closed, so the bench also records what was done and when.</p>
+<h2>How the bench stays current</h2>
+<ul>
+<li><strong>Every session</strong> that changes the manual ends with a bench sync. The plugin reminds Claude if it forgets.</li>
+<li><strong>Every Saturday</strong> a scheduled task runs the freshness check against <code>testing.openelis-global.org</code> and syncs the drift panel, the translation counts and any new items. It makes no changes to Confluence; it only reports.</li>
+<li><strong>Any time</strong>, you can ask Claude to "run the docs freshness check" (it takes up to 30 minutes plus a few minutes per language).</li>
+</ul>
+<h2>What the freshness check does</h2>
+<p>Every manual page has a short "contract": the screens it shows and the labels and buttons it relies on. The check opens each screen on the test site and confirms those labels are still there. When a release moves or renames a control, the page shows up as <strong>drift</strong>, with the missing control named. It also lists recent code changes that touched documented screens, and pages whose translations are behind.</p>
+<ac:structured-macro ac:name="note"><ac:rich-text-body><p>A sudden wall of "drift" right after a new version is usually a failed run (an expired login or a slow site), not sixty broken pages. Claude checks for this before reporting; if you see it on the bench, ask Claude to rerun the check.</p></ac:rich-text-body></ac:structured-macro>
+<p><strong>You've got it when:</strong> you can open the bench, pick an item, and start the work from its prompt. Next: <a href="https://uwdigi.atlassian.net/wiki/spaces/DEV/pages/1491730433">Part 5: Write or update a manual page</a>.</p>

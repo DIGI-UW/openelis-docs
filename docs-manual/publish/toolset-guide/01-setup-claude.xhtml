@@ -1,0 +1,31 @@
+<p><strong>Goal of this page.</strong> Get the Claude desktop app installed on your Mac, signed in, and connected to the systems the toolset uses. One-time setup; allow about 30 minutes.</p>
+<p><strong>Two words you'll see</strong> (full glossary in <a href="https://uwdigi.atlassian.net/wiki/spaces/DEV/pages/1491664919">Part 7</a>):</p>
+<ul>
+<li><strong>Connector</strong>: a secure link that lets Claude read and write in a system you already use, such as Confluence, Jira or GitHub. You approve each one and can disconnect it at any time.</li>
+<li><strong>Plugin</strong>: a package of our house instructions and safety checks for Claude. Part 2 installs them.</li>
+</ul>
+<h2>Step 1: Install the Claude desktop app</h2>
+<ol>
+<li>In a browser, go to <a href="https://claude.ai/download">claude.ai/download</a> and download the macOS version.</li>
+<li>Open the downloaded file and drag <strong>Claude</strong> into your <strong>Applications</strong> folder, then open it from there.</li>
+<li>If macOS asks whether you are sure you want to open an app downloaded from the internet, choose <strong>Open</strong>.</li>
+</ol>
+<h2>Step 2: Sign in</h2>
+<p>Sign in with the account Casey set you up with (the one that has access to the OpenELIS work and the "OpenELIS User Manual" project). If you are not sure which email to use, ask Casey.</p>
+<h2>Step 3: Connect the tools Claude needs</h2>
+<p>Connectors are managed in the Claude app's settings. For each one below, choose <strong>Connect</strong> and approve access in the window that opens. If a label in the app differs from this page, ask Casey.</p>
+<table><tbody>
+<tr><th>Connector</th><th>What it is for</th><th>What you approve</th></tr>
+<tr><td><strong>Atlassian</strong> (Jira and Confluence)</td><td>Reading Jira tickets, and reading and publishing Confluence pages</td><td>Sign in with your UW Atlassian account and allow access to <code>uwdigi.atlassian.net</code></td></tr>
+<tr><td><strong>GitHub</strong></td><td>Reading the OpenELIS code, releases, the QA harness and the docs tooling</td><td>Sign in to GitHub and grant access to the <code>DIGI-UW</code> organization</td></tr>
+<tr><td><strong>Control your Mac</strong></td><td>Lets Claude run the capture harness, the freshness check and the publisher on your Mac, where your publishing key lives</td><td>The macOS permission described below</td></tr>
+<tr><td><strong>Claude in Chrome</strong> (recommended)</td><td>Lets Claude look at a page in your own Chrome to confirm what a screen really shows</td><td>Install the Chrome extension when the app offers it</td></tr>
+</tbody></table>
+<ac:structured-macro ac:name="note"><ac:rich-text-body><p><strong>"Control your Mac" needs a macOS permission.</strong> The first time Claude uses it, macOS asks you to allow Claude under <strong>System Settings &gt; Privacy &amp; Security &gt; Accessibility</strong> (and possibly <strong>Automation</strong>). Turn Claude on there.</p></ac:rich-text-body></ac:structured-macro>
+<h2>Step 4: Work inside the project</h2>
+<p>Manual work happens in the claude.ai project <strong>"OpenELIS User Manual"</strong>. It holds the notes from every past session, so Claude knows what was done before. Ask Casey to share it with you, and start your manual chats from inside it.</p>
+<h2>How to check it worked</h2>
+<p>Start a new chat in the OpenELIS User Manual project and paste this in:</p>
+<ac:structured-macro ac:name="code"><ac:parameter ac:name="language">text</ac:parameter><ac:plain-text-body><![CDATA[Which connectors do I have? Can you see the DIGI-UW GitHub organization and the uwdigi Confluence site, and can you reach my Mac?]]></ac:plain-text-body></ac:structured-macro>
+<p>Claude should confirm GitHub, Atlassian and your Mac. If one is missing, go back to Step 3 for that connector.</p>
+<p><strong>Done with Part 1 when:</strong> the app is installed, you are signed in, the connectors are connected, and you can open the OpenELIS User Manual project. Next: <a href="https://uwdigi.atlassian.net/wiki/spaces/DEV/pages/1491632129">Part 2: Install the OpenELIS plugins</a>.</p>

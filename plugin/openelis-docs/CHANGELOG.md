@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.1.1 (2026-11-04)
+
+Fixes from the first trial run (rewriting the Documentation Toolset guide in Confluence with the plugin):
+
+- `confluence-publish.py`: `--images` is optional for pages with no figures; new `--message` for the
+  version message (every publish used to say "images via REST").
+- Build check: skill frontmatter must parse as YAML (a newer `claude plugin validate` refused three
+  descriptions that the old check let through).
+- `manual-lint`: how to run the fallback linter where Python has no PyYAML.
+
 ## 0.1.0 (2026-11-04)
 
 First version. Replaces the `openelis-user-manual`, `openelis-docs-freshness` and

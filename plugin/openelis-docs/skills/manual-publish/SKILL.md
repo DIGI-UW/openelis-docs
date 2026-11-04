@@ -38,7 +38,9 @@ python3 confluence-publish.py --create --space OG --parent <folderOrPageId> \
   --title "<Title>" --xhtml <page>.xhtml --images <dir>
 ```
 
-Images are uploaded as attachments (matched by file name, so reruns update in place) and sized
+`--images` is only needed when the XHTML has figure tokens; `--title` renames on update; `--message`
+sets the version message (say what changed). Images are uploaded as attachments (matched by file
+name, so reruns update in place) and sized
 with `ac:width` (max 1020 px by default, never upscaled; `--max-width` overrides). Long runs: start
 with `nohup ... > pub.log 2>&1 &` and poll the log, because osascript calls time out.
 
