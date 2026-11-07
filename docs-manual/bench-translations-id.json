@@ -1,18 +1,54 @@
 {
- "generatedAt": "2026-10-22T23:13:17Z",
+ "generatedAt": "2026-11-07T09:48:35Z",
  "lang": "id",
  "pairs": 18,
- "current": 17,
- "stale": 1,
+ "current": 14,
+ "stale": 4,
  "orphan": 0,
  "unknown": 0,
- "missing": 82,
+ "missing": 91,
  "duplicates": 0,
  "staleRows": [
   {
+   "en": "1661763585",
+   "enTitle": "Triage and release results",
+   "enVersion": 24,
+   "tr": "1733820420",
+   "trTitle": "Melakukan triase dan merilis hasil",
+   "sourceVersion": 23,
+   "method": "claude",
+   "translatedAt": "2026-10-22",
+   "frenchFigures": [],
+   "figuresCapturedAt": null,
+   "status": "stale",
+   "changes": [
+    {
+     "v": 24,
+     "when": "2026-11-01",
+     "msg": "3.3.0 released: drop 'not yet released' wording"
+    }
+   ],
+   "contract": "validation-v4",
+   "jiraEpic": "OGC-817",
+   "featureDoc": "OGC-1229",
+   "scope": "manual",
+   "englishDrift": "review",
+   "change": {
+    "kind": "text",
+    "sections": [
+     "(top)",
+     "Provenance"
+    ],
+    "addedOrChanged": 2,
+    "removed": 2,
+    "figuresChanged": false
+   },
+   "action": "retranslate changed sections"
+  },
+  {
    "en": "1326972929",
    "enTitle": "📖 User Manual",
-   "enVersion": 23,
+   "enVersion": 24,
    "tr": "1733492739",
    "trTitle": "📖 Panduan Pengguna",
    "sourceVersion": 22,
@@ -22,6 +58,11 @@
    "figuresCapturedAt": null,
    "status": "stale",
    "changes": [
+    {
+     "v": 24,
+     "when": "2026-10-28",
+     "msg": "Landing: In review removed for 12 cleared pages"
+    },
     {
      "v": 23,
      "when": "2026-10-22",
@@ -33,13 +74,102 @@
    "change": {
     "kind": "text",
     "sections": [
+     "Environmental surveillance",
+     "Orders and samples",
      "Programs, rules and notifications",
      "Quality assurance",
-     "Site and system settings"
+     "Results, validation and reports",
+     "Site and system settings",
+     "Test catalog",
+     "Users, organizations and providers"
     ],
-    "addedOrChanged": 10,
-    "removed": 0,
+    "addedOrChanged": 22,
+    "removed": 12,
     "figuresChanged": false
+   },
+   "action": "retranslate changed sections"
+  },
+  {
+   "en": "1440841760",
+   "enTitle": "Register a New Patient",
+   "enVersion": 10,
+   "tr": "1733361674",
+   "trTitle": "Mendaftarkan pasien baru",
+   "sourceVersion": 8,
+   "method": "claude",
+   "translatedAt": "2026-10-22",
+   "frenchFigures": [],
+   "figuresCapturedAt": null,
+   "status": "stale",
+   "changes": [
+    {
+     "v": 10,
+     "when": "2026-10-28",
+     "msg": "Cleared from review: work-in-progress note removed, labels set"
+    },
+    {
+     "v": 9,
+     "when": "2026-10-26",
+     "msg": ""
+    }
+   ],
+   "contract": "register-new-patient",
+   "jiraEpic": null,
+   "featureDoc": null,
+   "scope": "manual",
+   "englishDrift": "review",
+   "change": {
+    "kind": "text",
+    "sections": [
+     "(top)",
+     "Step 2: Enter the patient's details",
+     "Step 3: Save"
+    ],
+    "addedOrChanged": 1,
+    "removed": 4,
+    "figuresChanged": true
+   },
+   "action": "retranslate changed sections"
+  },
+  {
+   "en": "1441136648",
+   "enTitle": "Patient Management",
+   "enVersion": 8,
+   "tr": "1733328902",
+   "trTitle": "Manajemen pasien",
+   "sourceVersion": 6,
+   "method": "claude",
+   "translatedAt": "2026-10-22",
+   "frenchFigures": [],
+   "figuresCapturedAt": null,
+   "status": "stale",
+   "changes": [
+    {
+     "v": 8,
+     "when": "2026-10-28",
+     "msg": "Cleared from review: work-in-progress note removed, labels set"
+    },
+    {
+     "v": 7,
+     "when": "2026-10-26",
+     "msg": ""
+    }
+   ],
+   "contract": "patient-management",
+   "jiraEpic": null,
+   "featureDoc": null,
+   "scope": "manual",
+   "englishDrift": "review",
+   "change": {
+    "kind": "text",
+    "sections": [
+     "(top)",
+     "Step 1: Search for a patient",
+     "Step 2: Open and edit a record"
+    ],
+    "addedOrChanged": 3,
+    "removed": 6,
+    "figuresChanged": true
    },
    "action": "retranslate changed sections"
   }
@@ -147,7 +277,21 @@
   {
    "en": "1427144728",
    "enTitle": "Admin — Vector Surveillance Reference Data",
-   "enVersion": 7,
+   "enVersion": 8,
+   "scope": "manual",
+   "contract": "admin-vector-reference-data"
+  },
+  {
+   "en": "1427275807",
+   "enTitle": "Enter results & read the compliance evaluation",
+   "enVersion": 11,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "1427439642",
+   "enTitle": "Validate & release results",
+   "enVersion": 14,
    "scope": "manual",
    "contract": null
   },
@@ -194,6 +338,13 @@
    "contract": null
   },
   {
+   "en": "1428684802",
+   "enTitle": "Label and store environmental and vector samples",
+   "enVersion": 15,
+   "scope": "manual",
+   "contract": "label-store-shared"
+  },
+  {
    "en": "1428881409",
    "enTitle": "The three domains & the shared order wizard",
    "enVersion": 4,
@@ -217,7 +368,7 @@
   {
    "en": "1429176321",
    "enTitle": "Complete the sample check for an environmental or vector order",
-   "enVersion": 13,
+   "enVersion": 14,
    "scope": "manual",
    "contract": "qa-review-shared"
   },
@@ -278,6 +429,13 @@
    "contract": null
   },
   {
+   "en": "1432649742",
+   "enTitle": "Read-only & cross-link sections",
+   "enVersion": 9,
+   "scope": "manual",
+   "contract": null
+  },
+  {
    "en": "1433010177",
    "enTitle": "Add a test to panels",
    "enVersion": 7,
@@ -315,7 +473,7 @@
   {
    "en": "1437892659",
    "enTitle": "Admin: Manage organizations",
-   "enVersion": 13,
+   "enVersion": 14,
    "scope": "manual",
    "contract": "organization-management-330"
   },
@@ -425,8 +583,22 @@
    "contract": null
   },
   {
+   "en": "1440907275",
+   "enTitle": "Merge Patient Records",
+   "enVersion": 5,
+   "scope": "manual",
+   "contract": null
+  },
+  {
    "en": "1440940035",
    "enTitle": "Create aliquots from a sample",
+   "enVersion": 6,
+   "scope": "manual",
+   "contract": null
+  },
+  {
+   "en": "1442414603",
+   "enTitle": "Author the test catalog in CSV files",
    "enVersion": 6,
    "scope": "manual",
    "contract": null
@@ -446,6 +618,13 @@
    "contract": null
   },
   {
+   "en": "1666547755",
+   "enTitle": "Import a test catalog from CSV",
+   "enVersion": 11,
+   "scope": "manual",
+   "contract": "catalog-import-csv"
+  },
+  {
    "en": "1672249349",
    "enTitle": "OpenELIS Monitoring",
    "enVersion": 1,
@@ -460,9 +639,23 @@
    "contract": "nce-report"
   },
   {
+   "en": "1706295354",
+   "enTitle": "Admin: Import and export locations",
+   "enVersion": 7,
+   "scope": "manual",
+   "contract": "locations-import-export"
+  },
+  {
+   "en": "1707704440",
+   "enTitle": "Custom Data Export and My Report Queue",
+   "enVersion": 7,
+   "scope": "manual",
+   "contract": "custom-data-export"
+  },
+  {
    "en": "239632402",
    "enTitle": "Install OpenELIS Global",
-   "enVersion": 17,
+   "enVersion": 21,
    "scope": "ops",
    "contract": null
   },
@@ -658,7 +851,7 @@
   {
    "en": "1661763585",
    "enTitle": "Triage and release results",
-   "enVersion": 23,
+   "enVersion": 24,
    "tr": "1733820420",
    "trTitle": "Melakukan triase dan merilis hasil",
    "sourceVersion": 23,
@@ -666,12 +859,30 @@
    "translatedAt": "2026-10-22",
    "frenchFigures": [],
    "figuresCapturedAt": null,
-   "status": "current",
+   "status": "stale",
+   "changes": [
+    {
+     "v": 24,
+     "when": "2026-11-01",
+     "msg": "3.3.0 released: drop 'not yet released' wording"
+    }
+   ],
    "contract": "validation-v4",
    "jiraEpic": "OGC-817",
    "featureDoc": "OGC-1229",
    "scope": "manual",
-   "englishDrift": "review"
+   "englishDrift": "review",
+   "change": {
+    "kind": "text",
+    "sections": [
+     "(top)",
+     "Provenance"
+    ],
+    "addedOrChanged": 2,
+    "removed": 2,
+    "figuresChanged": false
+   },
+   "action": "retranslate changed sections"
   },
   {
    "en": "1325727762",
@@ -724,7 +935,7 @@
   {
    "en": "1326972929",
    "enTitle": "📖 User Manual",
-   "enVersion": 23,
+   "enVersion": 24,
    "tr": "1733492739",
    "trTitle": "📖 Panduan Pengguna",
    "sourceVersion": 22,
@@ -734,6 +945,11 @@
    "figuresCapturedAt": null,
    "status": "stale",
    "changes": [
+    {
+     "v": 24,
+     "when": "2026-10-28",
+     "msg": "Landing: In review removed for 12 cleared pages"
+    },
     {
      "v": 23,
      "when": "2026-10-22",
@@ -745,12 +961,17 @@
    "change": {
     "kind": "text",
     "sections": [
+     "Environmental surveillance",
+     "Orders and samples",
      "Programs, rules and notifications",
      "Quality assurance",
-     "Site and system settings"
+     "Results, validation and reports",
+     "Site and system settings",
+     "Test catalog",
+     "Users, organizations and providers"
     ],
-    "addedOrChanged": 10,
-    "removed": 0,
+    "addedOrChanged": 22,
+    "removed": 12,
     "figuresChanged": false
    },
    "action": "retranslate changed sections"
@@ -803,7 +1024,7 @@
   {
    "en": "1440841760",
    "enTitle": "Register a New Patient",
-   "enVersion": 8,
+   "enVersion": 10,
    "tr": "1733361674",
    "trTitle": "Mendaftarkan pasien baru",
    "sourceVersion": 8,
@@ -811,17 +1032,41 @@
    "translatedAt": "2026-10-22",
    "frenchFigures": [],
    "figuresCapturedAt": null,
-   "status": "current",
+   "status": "stale",
+   "changes": [
+    {
+     "v": 10,
+     "when": "2026-10-28",
+     "msg": "Cleared from review: work-in-progress note removed, labels set"
+    },
+    {
+     "v": 9,
+     "when": "2026-10-26",
+     "msg": ""
+    }
+   ],
    "contract": "register-new-patient",
    "jiraEpic": null,
    "featureDoc": null,
    "scope": "manual",
-   "englishDrift": "review"
+   "englishDrift": "review",
+   "change": {
+    "kind": "text",
+    "sections": [
+     "(top)",
+     "Step 2: Enter the patient's details",
+     "Step 3: Save"
+    ],
+    "addedOrChanged": 1,
+    "removed": 4,
+    "figuresChanged": true
+   },
+   "action": "retranslate changed sections"
   },
   {
    "en": "1441136648",
    "enTitle": "Patient Management",
-   "enVersion": 6,
+   "enVersion": 8,
    "tr": "1733328902",
    "trTitle": "Manajemen pasien",
    "sourceVersion": 6,
@@ -829,12 +1074,36 @@
    "translatedAt": "2026-10-22",
    "frenchFigures": [],
    "figuresCapturedAt": null,
-   "status": "current",
+   "status": "stale",
+   "changes": [
+    {
+     "v": 8,
+     "when": "2026-10-28",
+     "msg": "Cleared from review: work-in-progress note removed, labels set"
+    },
+    {
+     "v": 7,
+     "when": "2026-10-26",
+     "msg": ""
+    }
+   ],
    "contract": "patient-management",
    "jiraEpic": null,
    "featureDoc": null,
    "scope": "manual",
-   "englishDrift": "review"
+   "englishDrift": "review",
+   "change": {
+    "kind": "text",
+    "sections": [
+     "(top)",
+     "Step 1: Search for a patient",
+     "Step 2: Open and edit a record"
+    ],
+    "addedOrChanged": 3,
+    "removed": 6,
+    "figuresChanged": true
+   },
+   "action": "retranslate changed sections"
   },
   {
    "en": "1439072277",
@@ -930,12 +1199,12 @@
    "englishDrift": null
   }
  ],
- "summary": "Indonesian: 18 pairs, 17 current, 1 stale, 0 orphan/unknown, 82 tracked pages with no Indonesian. 0 pages with Indonesian screenshots, 0 with Indonesian screenshots older than the English. Tree: 34 in place, 0 misplaced, 0 English parents with no Indonesian twin. Labels: 15 pages quote bold text that is not a Indonesian UI string (1 new since baseline).",
+ "summary": "Indonesian: 18 pairs, 14 current, 4 stale, 0 orphan/unknown, 91 tracked pages with no Indonesian. 0 pages with Indonesian screenshots, 0 with Indonesian screenshots older than the English. Tree: 34 in place, 0 misplaced, 0 English parents with no Indonesian twin. Labels: 15 pages quote bold text that is not a Indonesian UI string (1 new since baseline).",
  "frenchFigurePages": 0,
  "figuresStaleRows": [],
- "driftReportAt": "2026-10-20T20:20:25.547Z",
+ "driftReportAt": "2026-11-07T09:44:11.174Z",
  "tree": {
-  "checkedAt": "2026-10-22T23:12:15Z",
+  "checkedAt": "2026-11-07T09:47:41Z",
   "inPlace": 34,
   "misplaced": [],
   "unmappedParents": {}
@@ -1247,6 +1516,6 @@
   ]
  },
  "actions": {
-  "retranslate changed sections": 1
+  "retranslate changed sections": 4
  }
 }

@@ -1,9 +1,9 @@
 {
- "generatedAt": "2026-10-31T23:33:39Z",
+ "generatedAt": "2026-11-07T09:47:16Z",
  "lang": "fr",
  "pairs": 117,
- "current": 111,
- "stale": 6,
+ "current": 108,
+ "stale": 9,
  "orphan": 0,
  "unknown": 0,
  "missing": 10,
@@ -105,6 +105,122 @@
      "Step 3: Save"
     ],
     "addedOrChanged": 1,
+    "removed": 4,
+    "figuresChanged": true
+   },
+   "action": "retranslate changed sections"
+  },
+  {
+   "en": "1661763585",
+   "enTitle": "Triage and release results",
+   "enVersion": 24,
+   "tr": "1703641250",
+   "trTitle": "Trier et libérer les résultats",
+   "fr": "1703641250",
+   "frTitle": "Trier et libérer les résultats",
+   "sourceVersion": 23,
+   "method": "claude",
+   "translatedAt": "2026-10-09",
+   "frenchFigures": [],
+   "figuresCapturedAt": null,
+   "status": "stale",
+   "changes": [
+    {
+     "v": 24,
+     "when": "2026-11-01",
+     "msg": "3.3.0 released: drop 'not yet released' wording"
+    }
+   ],
+   "contract": "validation-v4",
+   "jiraEpic": "OGC-817",
+   "featureDoc": "OGC-1229",
+   "scope": "manual",
+   "englishDrift": "review",
+   "change": {
+    "kind": "text",
+    "sections": [
+     "(top)",
+     "Provenance"
+    ],
+    "addedOrChanged": 2,
+    "removed": 2,
+    "figuresChanged": false
+   },
+   "action": "retranslate changed sections"
+  },
+  {
+   "en": "1437892659",
+   "enTitle": "Admin: Manage organizations",
+   "enVersion": 14,
+   "tr": "1703313492",
+   "trTitle": "Admin : Gérer les structures (organisations)",
+   "fr": "1703313492",
+   "frTitle": "Admin : Gérer les structures (organisations)",
+   "sourceVersion": 13,
+   "method": "claude",
+   "translatedAt": "2026-10-20",
+   "frenchFigures": [],
+   "figuresCapturedAt": null,
+   "status": "stale",
+   "changes": [
+    {
+     "v": 14,
+     "when": "2026-11-01",
+     "msg": "3.3.0 released: drop 'not yet released' wording"
+    }
+   ],
+   "contract": "organization-management-330",
+   "jiraEpic": "OGC-1363",
+   "featureDoc": "OGC-1414",
+   "scope": "manual",
+   "englishDrift": "review",
+   "change": {
+    "kind": "text",
+    "sections": [
+     "(top)",
+     "Provenance"
+    ],
+    "addedOrChanged": 2,
+    "removed": 1,
+    "figuresChanged": false
+   },
+   "action": "retranslate changed sections"
+  },
+  {
+   "en": "1427144728",
+   "enTitle": "Admin — Vector Surveillance Reference Data",
+   "enVersion": 8,
+   "tr": "1703051362",
+   "trTitle": "Admin : Données de référence de la surveillance vectorielle",
+   "fr": "1703051362",
+   "frTitle": "Admin : Données de référence de la surveillance vectorielle",
+   "sourceVersion": 7,
+   "method": "claude",
+   "translatedAt": "2026-10-09",
+   "frenchFigures": [],
+   "figuresCapturedAt": null,
+   "status": "stale",
+   "changes": [
+    {
+     "v": 8,
+     "when": "2026-11-01",
+     "msg": "3.3.0: sampling sites moved to Locations & Organizations; old figure removed; em dashes removed from body"
+    }
+   ],
+   "contract": "admin-vector-reference-data",
+   "jiraEpic": null,
+   "featureDoc": null,
+   "scope": "manual",
+   "englishDrift": "review",
+   "change": {
+    "kind": "text",
+    "sections": [
+     "(top)",
+     "At a glance",
+     "Manage sampling sites",
+     "Related"
+    ],
+    "addedOrChanged": 6,
     "removed": 4,
     "figuresChanged": true
    },
@@ -1214,7 +1330,7 @@
   {
    "en": "1661763585",
    "enTitle": "Triage and release results",
-   "enVersion": 23,
+   "enVersion": 24,
    "tr": "1703641250",
    "trTitle": "Trier et libérer les résultats",
    "fr": "1703641250",
@@ -1224,12 +1340,30 @@
    "translatedAt": "2026-10-09",
    "frenchFigures": [],
    "figuresCapturedAt": null,
-   "status": "current",
+   "status": "stale",
+   "changes": [
+    {
+     "v": 24,
+     "when": "2026-11-01",
+     "msg": "3.3.0 released: drop 'not yet released' wording"
+    }
+   ],
    "contract": "validation-v4",
    "jiraEpic": "OGC-817",
    "featureDoc": "OGC-1229",
    "scope": "manual",
-   "englishDrift": "review"
+   "englishDrift": "review",
+   "change": {
+    "kind": "text",
+    "sections": [
+     "(top)",
+     "Provenance"
+    ],
+    "addedOrChanged": 2,
+    "removed": 2,
+    "figuresChanged": false
+   },
+   "action": "retranslate changed sections"
   },
   {
    "en": "1530855471",
@@ -1302,7 +1436,7 @@
   {
    "en": "1437892659",
    "enTitle": "Admin: Manage organizations",
-   "enVersion": 13,
+   "enVersion": 14,
    "tr": "1703313492",
    "trTitle": "Admin : Gérer les structures (organisations)",
    "fr": "1703313492",
@@ -1312,12 +1446,30 @@
    "translatedAt": "2026-10-20",
    "frenchFigures": [],
    "figuresCapturedAt": null,
-   "status": "current",
+   "status": "stale",
+   "changes": [
+    {
+     "v": 14,
+     "when": "2026-11-01",
+     "msg": "3.3.0 released: drop 'not yet released' wording"
+    }
+   ],
    "contract": "organization-management-330",
    "jiraEpic": "OGC-1363",
    "featureDoc": "OGC-1414",
    "scope": "manual",
-   "englishDrift": "review"
+   "englishDrift": "review",
+   "change": {
+    "kind": "text",
+    "sections": [
+     "(top)",
+     "Provenance"
+    ],
+    "addedOrChanged": 2,
+    "removed": 1,
+    "figuresChanged": false
+   },
+   "action": "retranslate changed sections"
   },
   {
    "en": "1530953734",
@@ -1356,7 +1508,7 @@
   {
    "en": "1427144728",
    "enTitle": "Admin — Vector Surveillance Reference Data",
-   "enVersion": 7,
+   "enVersion": 8,
    "tr": "1703051362",
    "trTitle": "Admin : Données de référence de la surveillance vectorielle",
    "fr": "1703051362",
@@ -1366,9 +1518,32 @@
    "translatedAt": "2026-10-09",
    "frenchFigures": [],
    "figuresCapturedAt": null,
-   "status": "current",
+   "status": "stale",
+   "changes": [
+    {
+     "v": 8,
+     "when": "2026-11-01",
+     "msg": "3.3.0: sampling sites moved to Locations & Organizations; old figure removed; em dashes removed from body"
+    }
+   ],
+   "contract": "admin-vector-reference-data",
+   "jiraEpic": null,
+   "featureDoc": null,
    "scope": "manual",
-   "englishDrift": null
+   "englishDrift": "review",
+   "change": {
+    "kind": "text",
+    "sections": [
+     "(top)",
+     "At a glance",
+     "Manage sampling sites",
+     "Related"
+    ],
+    "addedOrChanged": 6,
+    "removed": 4,
+    "figuresChanged": true
+   },
+   "action": "retranslate changed sections"
   },
   {
    "en": "1439072261",
@@ -2606,7 +2781,7 @@
    "action": "retranslate changed sections"
   }
  ],
- "summary": "French: 117 pairs, 111 current, 6 stale, 0 orphan/unknown, 10 tracked pages with no French. 5 pages with French screenshots, 2 with French screenshots older than the English. Tree: 133 in place, 0 misplaced, 0 English parents with no French twin. Labels: 106 pages quote bold text that is not a French UI string (2 new since baseline).",
+ "summary": "French: 117 pairs, 108 current, 9 stale, 0 orphan/unknown, 10 tracked pages with no French. 5 pages with French screenshots, 2 with French screenshots older than the English. Tree: 133 in place, 0 misplaced, 0 English parents with no French twin. Labels: 106 pages quote bold text that is not a French UI string (3 new since baseline).",
  "frenchFigurePages": 5,
  "figuresStaleRows": [
   {
@@ -2628,16 +2803,16 @@
    ]
   }
  ],
- "driftReportAt": "2026-10-31T23:28:46.898Z",
+ "driftReportAt": "2026-11-07T09:44:11.174Z",
  "tree": {
-  "checkedAt": "2026-10-31T23:31:34Z",
+  "checkedAt": "2026-11-07T09:45:41Z",
   "inPlace": 133,
   "misplaced": [],
   "unmappedParents": {}
  },
  "labels": {
   "pagesWithUnknownLabels": 106,
-  "pagesWithNewUnknownLabels": 2,
+  "pagesWithNewUnknownLabels": 3,
   "baselineCreated": false,
   "rows": [
    {
@@ -4334,10 +4509,13 @@
     "trTitle": "Configurer les types d'échantillons et les composants de résultat d'une analyse",
     "notInUi": [
      "Afficher dans le dossier du patient",
+     "Chiffres significatifs",
      "Copier la configuration de « test »",
      "Le contenu fusionné n'est pas vérifié et doit être revérifié"
     ],
-    "newSinceBaseline": []
+    "newSinceBaseline": [
+     "Chiffres significatifs"
+    ]
    },
    {
     "fr": "1642299535",
@@ -4470,6 +4648,6 @@
   ]
  },
  "actions": {
-  "retranslate changed sections": 6
+  "retranslate changed sections": 9
  }
 }
