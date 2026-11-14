@@ -1,9 +1,9 @@
 {
- "generatedAt": "2026-11-07T09:47:16Z",
+ "generatedAt": "2026-11-14T09:45:40Z",
  "lang": "fr",
  "pairs": 117,
- "current": 108,
- "stale": 9,
+ "current": 101,
+ "stale": 16,
  "orphan": 0,
  "unknown": 0,
  "missing": 10,
@@ -107,6 +107,138 @@
     "addedOrChanged": 1,
     "removed": 4,
     "figuresChanged": true
+   },
+   "action": "retranslate changed sections"
+  },
+  {
+   "en": "239730698",
+   "enTitle": "Upgrading OpenELIS 3.x and 2.x",
+   "enVersion": 6,
+   "tr": "1704624217",
+   "trTitle": "Mettre à niveau OpenELIS 3.x et 2.x",
+   "fr": "1704624217",
+   "frTitle": "Mettre à niveau OpenELIS 3.x et 2.x",
+   "sourceVersion": 5,
+   "method": "claude",
+   "translatedAt": "2026-10-20",
+   "frenchFigures": [],
+   "figuresCapturedAt": null,
+   "status": "stale",
+   "changes": [
+    {
+     "v": 6,
+     "when": "2026-11-12",
+     "msg": "Point install links to the merged Install OpenELIS Global page"
+    }
+   ],
+   "scope": "ops",
+   "englishDrift": null,
+   "change": {
+    "kind": "none",
+    "sections": [],
+    "addedOrChanged": 0,
+    "removed": 0,
+    "figuresChanged": false
+   },
+   "action": "bump version only"
+  },
+  {
+   "en": "1325793288",
+   "enTitle": "⚙️ For SysAdmins-Operators",
+   "enVersion": 7,
+   "tr": "1704198262",
+   "trTitle": "⚙️ Pour les administrateurs système et exploitants",
+   "fr": "1704198262",
+   "frTitle": "⚙️ Pour les administrateurs système et exploitants",
+   "sourceVersion": 5,
+   "method": "claude",
+   "translatedAt": "2026-10-09",
+   "frenchFigures": [],
+   "figuresCapturedAt": null,
+   "status": "stale",
+   "changes": [
+    {
+     "v": 7,
+     "when": "2026-11-12",
+     "msg": "Consolidated Server links follow the renamed child pages"
+    },
+    {
+     "v": 6,
+     "when": "2026-11-12",
+     "msg": "Link every page in this section"
+    }
+   ],
+   "scope": "landing",
+   "englishDrift": null,
+   "change": {
+    "kind": "text",
+    "sections": [
+     "Consolidated Server operations",
+     "Monitoring"
+    ],
+    "addedOrChanged": 5,
+    "removed": 3,
+    "figuresChanged": false
+   },
+   "action": "retranslate changed sections"
+  },
+  {
+   "en": "1326252042",
+   "enTitle": "🚀 For Implementers",
+   "enVersion": 9,
+   "tr": "1704198242",
+   "trTitle": "🚀 Pour l'équipe de mise en œuvre",
+   "fr": "1704198242",
+   "frTitle": "🚀 Pour l'équipe de mise en œuvre",
+   "sourceVersion": 4,
+   "method": "claude",
+   "translatedAt": "2026-10-09",
+   "frenchFigures": [],
+   "figuresCapturedAt": null,
+   "status": "stale",
+   "changes": [
+    {
+     "v": 9,
+     "when": "2026-11-12",
+     "msg": "Link External Referrals"
+    },
+    {
+     "v": 8,
+     "when": "2026-11-12",
+     "msg": "Link the implementations page"
+    },
+    {
+     "v": 7,
+     "when": "2026-11-12",
+     "msg": "Link every page in this section"
+    },
+    {
+     "v": 6,
+     "when": "2026-11-12",
+     "msg": "Colons instead of dashes in the integration list"
+    },
+    {
+     "v": 5,
+     "when": "2026-11-12",
+     "msg": "Integrate renamed to External Integrations, linking the current guides"
+    }
+   ],
+   "scope": "landing",
+   "englishDrift": null,
+   "change": {
+    "kind": "text",
+    "sections": [
+     "2. Install",
+     "3. Configure for your context",
+     "4. External Integrations",
+     "4. Integrate",
+     "6. Operate and maintain",
+     "Country implementation examples",
+     "Where to get help"
+    ],
+    "addedOrChanged": 21,
+    "removed": 4,
+    "figuresChanged": false
    },
    "action": "retranslate changed sections"
   },
@@ -227,9 +359,126 @@
    "action": "retranslate changed sections"
   },
   {
+   "en": "240320515",
+   "enTitle": "Backup Configuration",
+   "enVersion": 7,
+   "tr": "1702756459",
+   "trTitle": "Configuration de la sauvegarde",
+   "fr": "1702756459",
+   "frTitle": "Configuration de la sauvegarde",
+   "sourceVersion": 6,
+   "method": "claude",
+   "translatedAt": "2026-10-20",
+   "frenchFigures": [],
+   "figuresCapturedAt": null,
+   "status": "stale",
+   "changes": [
+    {
+     "v": 7,
+     "when": "2026-11-12",
+     "msg": "Point install links to the merged Install OpenELIS Global page"
+    }
+   ],
+   "scope": "ops",
+   "englishDrift": null,
+   "change": {
+    "kind": "none",
+    "sections": [],
+    "addedOrChanged": 0,
+    "removed": 0,
+    "figuresChanged": false
+   },
+   "action": "bump version only"
+  },
+  {
+   "en": "1428881409",
+   "enTitle": "The three order domains",
+   "enVersion": 5,
+   "tr": "1702756419",
+   "trTitle": "Les trois domaines et l'assistant de saisie des demandes commun",
+   "fr": "1702756419",
+   "frTitle": "Les trois domaines et l'assistant de saisie des demandes commun",
+   "sourceVersion": 4,
+   "method": "claude",
+   "translatedAt": "2026-10-09",
+   "frenchFigures": [],
+   "figuresCapturedAt": null,
+   "status": "stale",
+   "changes": [
+    {
+     "v": 5,
+     "when": "2026-11-07",
+     "msg": "Rewritten for 3.4.0 order entry (Enter Order, Prepare Samples, Sample check; Label & Store and Sample check for environm"
+    }
+   ],
+   "contract": "domains-concept",
+   "jiraEpic": null,
+   "featureDoc": null,
+   "scope": "manual",
+   "englishDrift": "ok",
+   "change": {
+    "kind": "text",
+    "sections": [
+     "(top)",
+     "In short",
+     "Lab units and domains",
+     "Not yet verified",
+     "Provenance",
+     "Related",
+     "The steps in each domain",
+     "What all three share",
+     "What differs by domain"
+    ],
+    "addedOrChanged": 53,
+    "removed": 8,
+    "figuresChanged": false
+   },
+   "action": "retranslate changed sections"
+  },
+  {
+   "en": "52560162",
+   "enTitle": "OpenELIS Global",
+   "enVersion": 32,
+   "tr": "1701970059",
+   "trTitle": "Accueil OpenELIS Global (français)",
+   "fr": "1701970059",
+   "frTitle": "Accueil OpenELIS Global (français)",
+   "sourceVersion": 30,
+   "method": "claude",
+   "translatedAt": "2026-10-09",
+   "frenchFigures": [],
+   "figuresCapturedAt": null,
+   "status": "stale",
+   "changes": [
+    {
+     "v": 32,
+     "when": "2026-11-12",
+     "msg": "docs.openelis-global.org is no longer published; the wiki is the documentation"
+    },
+    {
+     "v": 31,
+     "when": "2026-11-12",
+     "msg": "Implementers card links External Integrations and the country implementations"
+    }
+   ],
+   "scope": "landing",
+   "englishDrift": null,
+   "change": {
+    "kind": "text",
+    "sections": [
+     "Where the community lives",
+     "🚀 For Implementers"
+    ],
+    "addedOrChanged": 1,
+    "removed": 2,
+    "figuresChanged": false
+   },
+   "action": "retranslate changed sections"
+  },
+  {
    "en": "239632402",
    "enTitle": "Install OpenELIS Global",
-   "enVersion": 21,
+   "enVersion": 25,
    "tr": "1701281856",
    "trTitle": "Installer OpenELIS Global",
    "fr": "1701281856",
@@ -241,6 +490,26 @@
    "figuresCapturedAt": null,
    "status": "stale",
    "changes": [
+    {
+     "v": 25,
+     "when": "2026-11-12",
+     "msg": "Light stack: link External Integrations and say where .env is"
+    },
+    {
+     "v": 24,
+     "when": "2026-11-12",
+     "msg": "Troubleshooting rows match the prepackaged offline installer"
+    },
+    {
+     "v": 23,
+     "when": "2026-11-12",
+     "msg": "Merge the eight install child pages into one page with linkable sections"
+    },
+    {
+     "v": 22,
+     "when": "2026-11-09",
+     "msg": "Match openelis-docker main after 6 Nov 2026: online install settings, first login, first upgrade, key backup. Offline 3."
+    },
     {
      "v": 21,
      "when": "2026-10-29",
@@ -268,15 +537,103 @@
     "kind": "text",
     "sections": [
      "(top)",
+     "1. Choose the release",
+     "2. Download the package (computer with internet)",
+     "3. Load it on the lab server",
+     "Analysers",
+     "Analysers set up before 3.3.0",
+     "At a glance",
+     "Back up",
+     "Back up and restore",
+     "Backups",
+     "Before the first start",
+     "Certificate",
+     "Certificates",
+     "Check it works",
+     "Check renewal works",
      "Choose how to install",
+     "Configure and start",
+     "Connect to other systems (optional)",
+     "Create the copy script",
+     "Database passwords",
+     "Encryption key and analyser pairing code",
+     "First upgrade after 6 November 2026",
      "Full or light stack",
+     "Full stack or light stack?",
+     "Get OpenELIS",
+     "Get the certificate",
+     "HTTPS certificate",
+     "Install Docker",
+     "Install Ubuntu Server",
+     "Install and start",
+     "Install certbot",
      "Install in four steps",
+     "Keep internal ports off the network",
+     "Later upgrades",
+     "Login",
      "Network ports",
-     "What you need"
+     "Offline install",
+     "Offline install (3.3.0 package)",
+     "Older installer package",
+     "Online install",
+     "Online install: also back up the keys",
+     "Online install: settings file and passwords",
+     "Point OpenELIS at it",
+     "Prepare the server",
+     "Restore the database",
+     "Start OpenELIS",
+     "Stop or remove",
+     "Time zone",
+     "Troubleshooting",
+     "Update and set the time zone",
+     "Upgrade an offline install",
+     "Upgrade an online install",
+     "Upgrade or remove",
+     "Upgrades",
+     "Use a certificate you already have",
+     "Use a free Let's Encrypt certificate",
+     "What you need",
+     "Where things are"
     ],
-    "addedOrChanged": 18,
-    "removed": 8,
+    "addedOrChanged": 393,
+    "removed": 10,
     "figuresChanged": false
+   },
+   "action": "retranslate changed sections"
+  },
+  {
+   "en": "256966691",
+   "enTitle": "NAVIGATING OpenELIS LIMS",
+   "enVersion": 5,
+   "tr": "1643937869",
+   "trTitle": "NAVIGUER DANS OpenELIS LIMS",
+   "fr": "1643937869",
+   "frTitle": "NAVIGUER DANS OpenELIS LIMS",
+   "sourceVersion": 4,
+   "method": "claude",
+   "translatedAt": "2026-10-09",
+   "frenchFigures": [],
+   "figuresCapturedAt": null,
+   "status": "stale",
+   "changes": [
+    {
+     "v": 5,
+     "when": "2026-11-12",
+     "msg": "Cleanup: duplicate content kept in one place"
+    }
+   ],
+   "scope": "manual",
+   "englishDrift": null,
+   "change": {
+    "kind": "text",
+    "sections": [
+     "(top)",
+     "How to login to OpenELIS",
+     "Overview"
+    ],
+    "addedOrChanged": 1,
+    "removed": 7,
+    "figuresChanged": true
    },
    "action": "retranslate changed sections"
   },
@@ -362,7 +719,7 @@
   {
    "en": "1326972929",
    "enTitle": "📖 User Manual",
-   "enVersion": 24,
+   "enVersion": 25,
    "tr": "1641447437",
    "trTitle": "📖 Manuel de l'utilisateur",
    "fr": "1641447437",
@@ -374,6 +731,11 @@
    "figuresCapturedAt": null,
    "status": "stale",
    "changes": [
+    {
+     "v": 25,
+     "when": "2026-11-07",
+     "msg": "The three order domains (1428881409) rewritten for 3.4.0; row marked In review."
+    },
     {
      "v": 24,
      "when": "2026-10-28",
@@ -395,6 +757,7 @@
    "change": {
     "kind": "text",
     "sections": [
+     "(top)",
      "Environmental surveillance",
      "Inventory",
      "Orders and samples",
@@ -406,8 +769,8 @@
      "Test catalog",
      "Users, organizations and providers"
     ],
-    "addedOrChanged": 36,
-    "removed": 12,
+    "addedOrChanged": 39,
+    "removed": 15,
     "figuresChanged": false
    },
    "action": "retranslate changed sections"
@@ -901,7 +1264,7 @@
   {
    "en": "239730698",
    "enTitle": "Upgrading OpenELIS 3.x and 2.x",
-   "enVersion": 5,
+   "enVersion": 6,
    "tr": "1704624217",
    "trTitle": "Mettre à niveau OpenELIS 3.x et 2.x",
    "fr": "1704624217",
@@ -911,9 +1274,24 @@
    "translatedAt": "2026-10-20",
    "frenchFigures": [],
    "figuresCapturedAt": null,
-   "status": "current",
+   "status": "stale",
+   "changes": [
+    {
+     "v": 6,
+     "when": "2026-11-12",
+     "msg": "Point install links to the merged Install OpenELIS Global page"
+    }
+   ],
    "scope": "ops",
-   "englishDrift": null
+   "englishDrift": null,
+   "change": {
+    "kind": "none",
+    "sections": [],
+    "addedOrChanged": 0,
+    "removed": 0,
+    "figuresChanged": false
+   },
+   "action": "bump version only"
   },
   {
    "en": "991821864",
@@ -1176,7 +1554,7 @@
   {
    "en": "1325793288",
    "enTitle": "⚙️ For SysAdmins-Operators",
-   "enVersion": 5,
+   "enVersion": 7,
    "tr": "1704198262",
    "trTitle": "⚙️ Pour les administrateurs système et exploitants",
    "fr": "1704198262",
@@ -1186,14 +1564,37 @@
    "translatedAt": "2026-10-09",
    "frenchFigures": [],
    "figuresCapturedAt": null,
-   "status": "current",
+   "status": "stale",
+   "changes": [
+    {
+     "v": 7,
+     "when": "2026-11-12",
+     "msg": "Consolidated Server links follow the renamed child pages"
+    },
+    {
+     "v": 6,
+     "when": "2026-11-12",
+     "msg": "Link every page in this section"
+    }
+   ],
    "scope": "landing",
-   "englishDrift": null
+   "englishDrift": null,
+   "change": {
+    "kind": "text",
+    "sections": [
+     "Consolidated Server operations",
+     "Monitoring"
+    ],
+    "addedOrChanged": 5,
+    "removed": 3,
+    "figuresChanged": false
+   },
+   "action": "retranslate changed sections"
   },
   {
    "en": "1326252042",
    "enTitle": "🚀 For Implementers",
-   "enVersion": 4,
+   "enVersion": 9,
    "tr": "1704198242",
    "trTitle": "🚀 Pour l'équipe de mise en œuvre",
    "fr": "1704198242",
@@ -1203,9 +1604,52 @@
    "translatedAt": "2026-10-09",
    "frenchFigures": [],
    "figuresCapturedAt": null,
-   "status": "current",
+   "status": "stale",
+   "changes": [
+    {
+     "v": 9,
+     "when": "2026-11-12",
+     "msg": "Link External Referrals"
+    },
+    {
+     "v": 8,
+     "when": "2026-11-12",
+     "msg": "Link the implementations page"
+    },
+    {
+     "v": 7,
+     "when": "2026-11-12",
+     "msg": "Link every page in this section"
+    },
+    {
+     "v": 6,
+     "when": "2026-11-12",
+     "msg": "Colons instead of dashes in the integration list"
+    },
+    {
+     "v": 5,
+     "when": "2026-11-12",
+     "msg": "Integrate renamed to External Integrations, linking the current guides"
+    }
+   ],
    "scope": "landing",
-   "englishDrift": null
+   "englishDrift": null,
+   "change": {
+    "kind": "text",
+    "sections": [
+     "2. Install",
+     "3. Configure for your context",
+     "4. External Integrations",
+     "4. Integrate",
+     "6. Operate and maintain",
+     "Country implementation examples",
+     "Where to get help"
+    ],
+    "addedOrChanged": 21,
+    "removed": 4,
+    "figuresChanged": false
+   },
+   "action": "retranslate changed sections"
   },
   {
    "en": "1439170565",
@@ -1565,7 +2009,7 @@
   {
    "en": "240320515",
    "enTitle": "Backup Configuration",
-   "enVersion": 6,
+   "enVersion": 7,
    "tr": "1702756459",
    "trTitle": "Configuration de la sauvegarde",
    "fr": "1702756459",
@@ -1575,9 +2019,24 @@
    "translatedAt": "2026-10-20",
    "frenchFigures": [],
    "figuresCapturedAt": null,
-   "status": "current",
+   "status": "stale",
+   "changes": [
+    {
+     "v": 7,
+     "when": "2026-11-12",
+     "msg": "Point install links to the merged Install OpenELIS Global page"
+    }
+   ],
    "scope": "ops",
-   "englishDrift": null
+   "englishDrift": null,
+   "change": {
+    "kind": "none",
+    "sections": [],
+    "addedOrChanged": 0,
+    "removed": 0,
+    "figuresChanged": false
+   },
+   "action": "bump version only"
   },
   {
    "en": "1187840003",
@@ -1598,8 +2057,8 @@
   },
   {
    "en": "1428881409",
-   "enTitle": "The three domains & the shared order wizard",
-   "enVersion": 4,
+   "enTitle": "The three order domains",
+   "enVersion": 5,
    "tr": "1702756419",
    "trTitle": "Les trois domaines et l'assistant de saisie des demandes commun",
    "fr": "1702756419",
@@ -1609,9 +2068,37 @@
    "translatedAt": "2026-10-09",
    "frenchFigures": [],
    "figuresCapturedAt": null,
-   "status": "current",
+   "status": "stale",
+   "changes": [
+    {
+     "v": 5,
+     "when": "2026-11-07",
+     "msg": "Rewritten for 3.4.0 order entry (Enter Order, Prepare Samples, Sample check; Label & Store and Sample check for environm"
+    }
+   ],
+   "contract": "domains-concept",
+   "jiraEpic": null,
+   "featureDoc": null,
    "scope": "manual",
-   "englishDrift": null
+   "englishDrift": "ok",
+   "change": {
+    "kind": "text",
+    "sections": [
+     "(top)",
+     "In short",
+     "Lab units and domains",
+     "Not yet verified",
+     "Provenance",
+     "Related",
+     "The steps in each domain",
+     "What all three share",
+     "What differs by domain"
+    ],
+    "addedOrChanged": 53,
+    "removed": 8,
+    "figuresChanged": false
+   },
+   "action": "retranslate changed sections"
   },
   {
    "en": "1047527443",
@@ -1670,7 +2157,7 @@
   {
    "en": "52560162",
    "enTitle": "OpenELIS Global",
-   "enVersion": 30,
+   "enVersion": 32,
    "tr": "1701970059",
    "trTitle": "Accueil OpenELIS Global (français)",
    "fr": "1701970059",
@@ -1680,9 +2167,32 @@
    "translatedAt": "2026-10-09",
    "frenchFigures": [],
    "figuresCapturedAt": null,
-   "status": "current",
+   "status": "stale",
+   "changes": [
+    {
+     "v": 32,
+     "when": "2026-11-12",
+     "msg": "docs.openelis-global.org is no longer published; the wiki is the documentation"
+    },
+    {
+     "v": 31,
+     "when": "2026-11-12",
+     "msg": "Implementers card links External Integrations and the country implementations"
+    }
+   ],
    "scope": "landing",
-   "englishDrift": null
+   "englishDrift": null,
+   "change": {
+    "kind": "text",
+    "sections": [
+     "Where the community lives",
+     "🚀 For Implementers"
+    ],
+    "addedOrChanged": 1,
+    "removed": 2,
+    "figuresChanged": false
+   },
+   "action": "retranslate changed sections"
   },
   {
    "en": "1427931149",
@@ -1908,7 +2418,7 @@
   {
    "en": "239632402",
    "enTitle": "Install OpenELIS Global",
-   "enVersion": 21,
+   "enVersion": 25,
    "tr": "1701281856",
    "trTitle": "Installer OpenELIS Global",
    "fr": "1701281856",
@@ -1920,6 +2430,26 @@
    "figuresCapturedAt": null,
    "status": "stale",
    "changes": [
+    {
+     "v": 25,
+     "when": "2026-11-12",
+     "msg": "Light stack: link External Integrations and say where .env is"
+    },
+    {
+     "v": 24,
+     "when": "2026-11-12",
+     "msg": "Troubleshooting rows match the prepackaged offline installer"
+    },
+    {
+     "v": 23,
+     "when": "2026-11-12",
+     "msg": "Merge the eight install child pages into one page with linkable sections"
+    },
+    {
+     "v": 22,
+     "when": "2026-11-09",
+     "msg": "Match openelis-docker main after 6 Nov 2026: online install settings, first login, first upgrade, key backup. Offline 3."
+    },
     {
      "v": 21,
      "when": "2026-10-29",
@@ -1947,14 +2477,66 @@
     "kind": "text",
     "sections": [
      "(top)",
+     "1. Choose the release",
+     "2. Download the package (computer with internet)",
+     "3. Load it on the lab server",
+     "Analysers",
+     "Analysers set up before 3.3.0",
+     "At a glance",
+     "Back up",
+     "Back up and restore",
+     "Backups",
+     "Before the first start",
+     "Certificate",
+     "Certificates",
+     "Check it works",
+     "Check renewal works",
      "Choose how to install",
+     "Configure and start",
+     "Connect to other systems (optional)",
+     "Create the copy script",
+     "Database passwords",
+     "Encryption key and analyser pairing code",
+     "First upgrade after 6 November 2026",
      "Full or light stack",
+     "Full stack or light stack?",
+     "Get OpenELIS",
+     "Get the certificate",
+     "HTTPS certificate",
+     "Install Docker",
+     "Install Ubuntu Server",
+     "Install and start",
+     "Install certbot",
      "Install in four steps",
+     "Keep internal ports off the network",
+     "Later upgrades",
+     "Login",
      "Network ports",
-     "What you need"
+     "Offline install",
+     "Offline install (3.3.0 package)",
+     "Older installer package",
+     "Online install",
+     "Online install: also back up the keys",
+     "Online install: settings file and passwords",
+     "Point OpenELIS at it",
+     "Prepare the server",
+     "Restore the database",
+     "Start OpenELIS",
+     "Stop or remove",
+     "Time zone",
+     "Troubleshooting",
+     "Update and set the time zone",
+     "Upgrade an offline install",
+     "Upgrade an online install",
+     "Upgrade or remove",
+     "Upgrades",
+     "Use a certificate you already have",
+     "Use a free Let's Encrypt certificate",
+     "What you need",
+     "Where things are"
     ],
-    "addedOrChanged": 18,
-    "removed": 8,
+    "addedOrChanged": 393,
+    "removed": 10,
     "figuresChanged": false
    },
    "action": "retranslate changed sections"
@@ -2013,7 +2595,7 @@
   {
    "en": "256966691",
    "enTitle": "NAVIGATING OpenELIS LIMS",
-   "enVersion": 4,
+   "enVersion": 5,
    "tr": "1643937869",
    "trTitle": "NAVIGUER DANS OpenELIS LIMS",
    "fr": "1643937869",
@@ -2023,9 +2605,28 @@
    "translatedAt": "2026-10-09",
    "frenchFigures": [],
    "figuresCapturedAt": null,
-   "status": "current",
+   "status": "stale",
+   "changes": [
+    {
+     "v": 5,
+     "when": "2026-11-12",
+     "msg": "Cleanup: duplicate content kept in one place"
+    }
+   ],
    "scope": "manual",
-   "englishDrift": null
+   "englishDrift": null,
+   "change": {
+    "kind": "text",
+    "sections": [
+     "(top)",
+     "How to login to OpenELIS",
+     "Overview"
+    ],
+    "addedOrChanged": 1,
+    "removed": 7,
+    "figuresChanged": true
+   },
+   "action": "retranslate changed sections"
   },
   {
    "en": "273285123",
@@ -2670,7 +3271,7 @@
    "jiraEpic": null,
    "featureDoc": null,
    "scope": "manual",
-   "englishDrift": "review"
+   "englishDrift": "drift"
   },
   {
    "en": "1437532161",
@@ -2730,7 +3331,7 @@
   {
    "en": "1326972929",
    "enTitle": "📖 User Manual",
-   "enVersion": 24,
+   "enVersion": 25,
    "tr": "1641447437",
    "trTitle": "📖 Manuel de l'utilisateur",
    "fr": "1641447437",
@@ -2742,6 +3343,11 @@
    "figuresCapturedAt": null,
    "status": "stale",
    "changes": [
+    {
+     "v": 25,
+     "when": "2026-11-07",
+     "msg": "The three order domains (1428881409) rewritten for 3.4.0; row marked In review."
+    },
     {
      "v": 24,
      "when": "2026-10-28",
@@ -2763,6 +3369,7 @@
    "change": {
     "kind": "text",
     "sections": [
+     "(top)",
      "Environmental surveillance",
      "Inventory",
      "Orders and samples",
@@ -2774,14 +3381,14 @@
      "Test catalog",
      "Users, organizations and providers"
     ],
-    "addedOrChanged": 36,
-    "removed": 12,
+    "addedOrChanged": 39,
+    "removed": 15,
     "figuresChanged": false
    },
    "action": "retranslate changed sections"
   }
  ],
- "summary": "French: 117 pairs, 108 current, 9 stale, 0 orphan/unknown, 10 tracked pages with no French. 5 pages with French screenshots, 2 with French screenshots older than the English. Tree: 133 in place, 0 misplaced, 0 English parents with no French twin. Labels: 106 pages quote bold text that is not a French UI string (3 new since baseline).",
+ "summary": "French: 117 pairs, 101 current, 16 stale, 0 orphan/unknown, 10 tracked pages with no French. 5 pages with French screenshots, 2 with French screenshots older than the English. Tree: 133 in place, 0 misplaced, 0 English parents with no French twin. Labels: 105 pages quote bold text that is not a French UI string (3 new since baseline).",
  "frenchFigurePages": 5,
  "figuresStaleRows": [
   {
@@ -2803,15 +3410,15 @@
    ]
   }
  ],
- "driftReportAt": "2026-11-07T09:44:11.174Z",
+ "driftReportAt": "2026-11-14T09:42:19.459Z",
  "tree": {
-  "checkedAt": "2026-11-07T09:45:41Z",
+  "checkedAt": "2026-11-14T09:43:57Z",
   "inPlace": 133,
   "misplaced": [],
   "unmappedParents": {}
  },
  "labels": {
-  "pagesWithUnknownLabels": 106,
+  "pagesWithUnknownLabels": 105,
   "pagesWithNewUnknownLabels": 3,
   "baselineCreated": false,
   "rows": [
@@ -3785,7 +4392,6 @@
      "Obtenir de l'aide et rester informé",
      "Suivez cette page",
      "Suivre et rester informé",
-     "docs.openelis-global.org",
      "talk.openelis-global.org"
     ],
     "newSinceBaseline": []
@@ -4016,19 +4622,88 @@
     "trTitle": "Installer OpenELIS Global",
     "notInUi": [
      "2 cœurs de processeur, 8 Go de mémoire et 40 Go de disque",
+     "Analysers",
+     "Assets",
+     "Certificat",
+     "Change Password",
+     "Could not get lock",
      "Dernier test le 9 octobre 2026",
      "Docker contourne le pare-feu d'Ubuntu (ufw)",
+     "Fonctionnement.",
+     "Fuseau horaire",
+     "Garder les ports internes hors du réseau",
+     "Gardez les deux fichiers ensemble.",
+     "Il vous faut :",
+     "Install OpenSSH server",
      "Installation en ligne",
+     "Installation en ligne :",
+     "Installation en ligne : fichier de réglages et mots de passe",
+     "Installation en ligne : sauvegarder aussi les clés",
      "Installation hors ligne",
+     "Installation hors ligne (paquet 3.3.0)",
      "Les installations en ligne suivent le développement.",
+     "Let's Encrypt",
+     "Mettre à niveau une installation en ligne",
      "Mis à jour le 26 octobre 2026",
+     "Mis à jour le 29 octobre 2026",
+     "Mis à jour le 9 novembre 2026",
+     "Ne donnez jamais une nouvelle valeur à un serveur existant",
+     "Ne la changez jamais après le premier démarrage",
+     "Pair again",
+     "Pile complète",
+     "Pile légère",
+     "Submit",
      "Ubuntu Server, dernière version LTS",
-     "dernière version",
+     "avant",
+     "avant de démarrer OpenELIS pour la première fois",
+     "certificat auto-signé",
+     "changez immédiatement le mot de passe admin",
+     "dernière version publiée",
+     "déconnectez-vous et reconnectez-vous",
      "développement",
+     "pas",
+     "pile complète",
+     "pile légère",
+     "votre propre certificat",
      "x86 64 bits (amd64)"
     ],
     "newSinceBaseline": [
-     "Mis à jour le 26 octobre 2026"
+     "Analysers",
+     "Assets",
+     "Certificat",
+     "Change Password",
+     "Could not get lock",
+     "Fonctionnement.",
+     "Fuseau horaire",
+     "Garder les ports internes hors du réseau",
+     "Gardez les deux fichiers ensemble.",
+     "Il vous faut :",
+     "Install OpenSSH server",
+     "Installation en ligne :",
+     "Installation en ligne : fichier de réglages et mots de passe",
+     "Installation en ligne : sauvegarder aussi les clés",
+     "Installation hors ligne (paquet 3.3.0)",
+     "Let's Encrypt",
+     "Mettre à niveau une installation en ligne",
+     "Mis à jour le 26 octobre 2026",
+     "Mis à jour le 29 octobre 2026",
+     "Mis à jour le 9 novembre 2026",
+     "Ne donnez jamais une nouvelle valeur à un serveur existant",
+     "Ne la changez jamais après le premier démarrage",
+     "Pair again",
+     "Pile complète",
+     "Pile légère",
+     "Submit",
+     "avant",
+     "avant de démarrer OpenELIS pour la première fois",
+     "certificat auto-signé",
+     "changez immédiatement le mot de passe admin",
+     "dernière version publiée",
+     "déconnectez-vous et reconnectez-vous",
+     "pas",
+     "pile complète",
+     "pile légère",
+     "votre propre certificat"
     ]
    },
    {
@@ -4066,17 +4741,6 @@
      "bien public numérique",
      "impact avéré depuis plus de 15 ans",
      "« modèle du sablier »"
-    ],
-    "newSinceBaseline": []
-   },
-   {
-    "fr": "1643937869",
-    "frTitle": "NAVIGUER DANS OpenELIS LIMS",
-    "tr": "1643937869",
-    "trTitle": "NAVIGUER DANS OpenELIS LIMS",
-    "notInUi": [
-     "Avis",
-     "Comment se connecter à OpenELIS"
     ],
     "newSinceBaseline": []
    },
@@ -4648,6 +5312,7 @@
   ]
  },
  "actions": {
-  "retranslate changed sections": 9
+  "retranslate changed sections": 14,
+  "bump version only": 2
  }
 }

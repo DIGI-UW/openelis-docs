@@ -1,9 +1,9 @@
 {
- "generatedAt": "2026-11-07T09:48:35Z",
+ "generatedAt": "2026-11-14T09:47:10Z",
  "lang": "id",
  "pairs": 18,
- "current": 14,
- "stale": 4,
+ "current": 11,
+ "stale": 7,
  "orphan": 0,
  "unknown": 0,
  "missing": 91,
@@ -46,9 +46,47 @@
    "action": "retranslate changed sections"
   },
   {
+   "en": "52560162",
+   "enTitle": "OpenELIS Global",
+   "enVersion": 32,
+   "tr": "1733722115",
+   "trTitle": "Beranda OpenELIS Global (Bahasa Indonesia)",
+   "sourceVersion": 30,
+   "method": "claude",
+   "translatedAt": "2026-10-22",
+   "frenchFigures": [],
+   "figuresCapturedAt": null,
+   "status": "stale",
+   "changes": [
+    {
+     "v": 32,
+     "when": "2026-11-12",
+     "msg": "docs.openelis-global.org is no longer published; the wiki is the documentation"
+    },
+    {
+     "v": 31,
+     "when": "2026-11-12",
+     "msg": "Implementers card links External Integrations and the country implementations"
+    }
+   ],
+   "scope": "landing",
+   "englishDrift": null,
+   "change": {
+    "kind": "text",
+    "sections": [
+     "Where the community lives",
+     "🚀 For Implementers"
+    ],
+    "addedOrChanged": 1,
+    "removed": 2,
+    "figuresChanged": false
+   },
+   "action": "retranslate changed sections"
+  },
+  {
    "en": "1326972929",
    "enTitle": "📖 User Manual",
-   "enVersion": 24,
+   "enVersion": 25,
    "tr": "1733492739",
    "trTitle": "📖 Panduan Pengguna",
    "sourceVersion": 22,
@@ -58,6 +96,11 @@
    "figuresCapturedAt": null,
    "status": "stale",
    "changes": [
+    {
+     "v": 25,
+     "when": "2026-11-07",
+     "msg": "The three order domains (1428881409) rewritten for 3.4.0; row marked In review."
+    },
     {
      "v": 24,
      "when": "2026-10-28",
@@ -74,6 +117,7 @@
    "change": {
     "kind": "text",
     "sections": [
+     "(top)",
      "Environmental surveillance",
      "Orders and samples",
      "Programs, rules and notifications",
@@ -83,8 +127,66 @@
      "Test catalog",
      "Users, organizations and providers"
     ],
-    "addedOrChanged": 22,
-    "removed": 12,
+    "addedOrChanged": 25,
+    "removed": 15,
+    "figuresChanged": false
+   },
+   "action": "retranslate changed sections"
+  },
+  {
+   "en": "1326252042",
+   "enTitle": "🚀 For Implementers",
+   "enVersion": 9,
+   "tr": "1733460010",
+   "trTitle": "🚀 Untuk tim implementasi",
+   "sourceVersion": 4,
+   "method": "claude",
+   "translatedAt": "2026-10-22",
+   "frenchFigures": [],
+   "figuresCapturedAt": null,
+   "status": "stale",
+   "changes": [
+    {
+     "v": 9,
+     "when": "2026-11-12",
+     "msg": "Link External Referrals"
+    },
+    {
+     "v": 8,
+     "when": "2026-11-12",
+     "msg": "Link the implementations page"
+    },
+    {
+     "v": 7,
+     "when": "2026-11-12",
+     "msg": "Link every page in this section"
+    },
+    {
+     "v": 6,
+     "when": "2026-11-12",
+     "msg": "Colons instead of dashes in the integration list"
+    },
+    {
+     "v": 5,
+     "when": "2026-11-12",
+     "msg": "Integrate renamed to External Integrations, linking the current guides"
+    }
+   ],
+   "scope": "landing",
+   "englishDrift": null,
+   "change": {
+    "kind": "text",
+    "sections": [
+     "2. Install",
+     "3. Configure for your context",
+     "4. External Integrations",
+     "4. Integrate",
+     "6. Operate and maintain",
+     "Country implementation examples",
+     "Where to get help"
+    ],
+    "addedOrChanged": 21,
+    "removed": 4,
     "figuresChanged": false
    },
    "action": "retranslate changed sections"
@@ -170,6 +272,44 @@
     "addedOrChanged": 3,
     "removed": 6,
     "figuresChanged": true
+   },
+   "action": "retranslate changed sections"
+  },
+  {
+   "en": "1325793288",
+   "enTitle": "⚙️ For SysAdmins-Operators",
+   "enVersion": 7,
+   "tr": "1732968452",
+   "trTitle": "⚙️ Untuk administrator sistem dan operator",
+   "sourceVersion": 5,
+   "method": "claude",
+   "translatedAt": "2026-10-22",
+   "frenchFigures": [],
+   "figuresCapturedAt": null,
+   "status": "stale",
+   "changes": [
+    {
+     "v": 7,
+     "when": "2026-11-12",
+     "msg": "Consolidated Server links follow the renamed child pages"
+    },
+    {
+     "v": 6,
+     "when": "2026-11-12",
+     "msg": "Link every page in this section"
+    }
+   ],
+   "scope": "landing",
+   "englishDrift": null,
+   "change": {
+    "kind": "text",
+    "sections": [
+     "Consolidated Server operations",
+     "Monitoring"
+    ],
+    "addedOrChanged": 5,
+    "removed": 3,
+    "figuresChanged": false
    },
    "action": "retranslate changed sections"
   }
@@ -346,10 +486,10 @@
   },
   {
    "en": "1428881409",
-   "enTitle": "The three domains & the shared order wizard",
-   "enVersion": 4,
+   "enTitle": "The three order domains",
+   "enVersion": 5,
    "scope": "manual",
-   "contract": null
+   "contract": "domains-concept"
   },
   {
    "en": "1428946945",
@@ -655,7 +795,7 @@
   {
    "en": "239632402",
    "enTitle": "Install OpenELIS Global",
-   "enVersion": 21,
+   "enVersion": 25,
    "scope": "ops",
    "contract": null
   },
@@ -669,7 +809,7 @@
   {
    "en": "239730698",
    "enTitle": "Upgrading OpenELIS 3.x and 2.x",
-   "enVersion": 5,
+   "enVersion": 6,
    "scope": "ops",
    "contract": null
   },
@@ -683,7 +823,7 @@
   {
    "en": "240320515",
    "enTitle": "Backup Configuration",
-   "enVersion": 6,
+   "enVersion": 7,
    "scope": "ops",
    "contract": null
   },
@@ -704,7 +844,7 @@
   {
    "en": "256966691",
    "enTitle": "NAVIGATING OpenELIS LIMS",
-   "enVersion": 4,
+   "enVersion": 5,
    "scope": "manual",
    "contract": null
   },
@@ -902,7 +1042,7 @@
   {
    "en": "52560162",
    "enTitle": "OpenELIS Global",
-   "enVersion": 30,
+   "enVersion": 32,
    "tr": "1733722115",
    "trTitle": "Beranda OpenELIS Global (Bahasa Indonesia)",
    "sourceVersion": 30,
@@ -910,9 +1050,32 @@
    "translatedAt": "2026-10-22",
    "frenchFigures": [],
    "figuresCapturedAt": null,
-   "status": "current",
+   "status": "stale",
+   "changes": [
+    {
+     "v": 32,
+     "when": "2026-11-12",
+     "msg": "docs.openelis-global.org is no longer published; the wiki is the documentation"
+    },
+    {
+     "v": 31,
+     "when": "2026-11-12",
+     "msg": "Implementers card links External Integrations and the country implementations"
+    }
+   ],
    "scope": "landing",
-   "englishDrift": null
+   "englishDrift": null,
+   "change": {
+    "kind": "text",
+    "sections": [
+     "Where the community lives",
+     "🚀 For Implementers"
+    ],
+    "addedOrChanged": 1,
+    "removed": 2,
+    "figuresChanged": false
+   },
+   "action": "retranslate changed sections"
   },
   {
    "en": "1648787462",
@@ -935,7 +1098,7 @@
   {
    "en": "1326972929",
    "enTitle": "📖 User Manual",
-   "enVersion": 24,
+   "enVersion": 25,
    "tr": "1733492739",
    "trTitle": "📖 Panduan Pengguna",
    "sourceVersion": 22,
@@ -945,6 +1108,11 @@
    "figuresCapturedAt": null,
    "status": "stale",
    "changes": [
+    {
+     "v": 25,
+     "when": "2026-11-07",
+     "msg": "The three order domains (1428881409) rewritten for 3.4.0; row marked In review."
+    },
     {
      "v": 24,
      "when": "2026-10-28",
@@ -961,6 +1129,7 @@
    "change": {
     "kind": "text",
     "sections": [
+     "(top)",
      "Environmental surveillance",
      "Orders and samples",
      "Programs, rules and notifications",
@@ -970,8 +1139,8 @@
      "Test catalog",
      "Users, organizations and providers"
     ],
-    "addedOrChanged": 22,
-    "removed": 12,
+    "addedOrChanged": 25,
+    "removed": 15,
     "figuresChanged": false
    },
    "action": "retranslate changed sections"
@@ -979,7 +1148,7 @@
   {
    "en": "1326252042",
    "enTitle": "🚀 For Implementers",
-   "enVersion": 4,
+   "enVersion": 9,
    "tr": "1733460010",
    "trTitle": "🚀 Untuk tim implementasi",
    "sourceVersion": 4,
@@ -987,9 +1156,52 @@
    "translatedAt": "2026-10-22",
    "frenchFigures": [],
    "figuresCapturedAt": null,
-   "status": "current",
+   "status": "stale",
+   "changes": [
+    {
+     "v": 9,
+     "when": "2026-11-12",
+     "msg": "Link External Referrals"
+    },
+    {
+     "v": 8,
+     "when": "2026-11-12",
+     "msg": "Link the implementations page"
+    },
+    {
+     "v": 7,
+     "when": "2026-11-12",
+     "msg": "Link every page in this section"
+    },
+    {
+     "v": 6,
+     "when": "2026-11-12",
+     "msg": "Colons instead of dashes in the integration list"
+    },
+    {
+     "v": 5,
+     "when": "2026-11-12",
+     "msg": "Integrate renamed to External Integrations, linking the current guides"
+    }
+   ],
    "scope": "landing",
-   "englishDrift": null
+   "englishDrift": null,
+   "change": {
+    "kind": "text",
+    "sections": [
+     "2. Install",
+     "3. Configure for your context",
+     "4. External Integrations",
+     "4. Integrate",
+     "6. Operate and maintain",
+     "Country implementation examples",
+     "Where to get help"
+    ],
+    "addedOrChanged": 21,
+    "removed": 4,
+    "figuresChanged": false
+   },
+   "action": "retranslate changed sections"
   },
   {
    "en": "1187840003",
@@ -1171,7 +1383,7 @@
   {
    "en": "1325793288",
    "enTitle": "⚙️ For SysAdmins-Operators",
-   "enVersion": 5,
+   "enVersion": 7,
    "tr": "1732968452",
    "trTitle": "⚙️ Untuk administrator sistem dan operator",
    "sourceVersion": 5,
@@ -1179,9 +1391,32 @@
    "translatedAt": "2026-10-22",
    "frenchFigures": [],
    "figuresCapturedAt": null,
-   "status": "current",
+   "status": "stale",
+   "changes": [
+    {
+     "v": 7,
+     "when": "2026-11-12",
+     "msg": "Consolidated Server links follow the renamed child pages"
+    },
+    {
+     "v": 6,
+     "when": "2026-11-12",
+     "msg": "Link every page in this section"
+    }
+   ],
    "scope": "landing",
-   "englishDrift": null
+   "englishDrift": null,
+   "change": {
+    "kind": "text",
+    "sections": [
+     "Consolidated Server operations",
+     "Monitoring"
+    ],
+    "addedOrChanged": 5,
+    "removed": 3,
+    "figuresChanged": false
+   },
+   "action": "retranslate changed sections"
   },
   {
    "en": "1437270018",
@@ -1199,12 +1434,12 @@
    "englishDrift": null
   }
  ],
- "summary": "Indonesian: 18 pairs, 14 current, 4 stale, 0 orphan/unknown, 91 tracked pages with no Indonesian. 0 pages with Indonesian screenshots, 0 with Indonesian screenshots older than the English. Tree: 34 in place, 0 misplaced, 0 English parents with no Indonesian twin. Labels: 15 pages quote bold text that is not a Indonesian UI string (1 new since baseline).",
+ "summary": "Indonesian: 18 pairs, 11 current, 7 stale, 0 orphan/unknown, 91 tracked pages with no Indonesian. 0 pages with Indonesian screenshots, 0 with Indonesian screenshots older than the English. Tree: 34 in place, 0 misplaced, 0 English parents with no Indonesian twin. Labels: 15 pages quote bold text that is not a Indonesian UI string (1 new since baseline).",
  "frenchFigurePages": 0,
  "figuresStaleRows": [],
- "driftReportAt": "2026-11-07T09:44:11.174Z",
+ "driftReportAt": "2026-11-14T09:42:19.459Z",
  "tree": {
-  "checkedAt": "2026-11-07T09:47:41Z",
+  "checkedAt": "2026-11-14T09:46:08Z",
   "inPlace": 34,
   "misplaced": [],
   "unmappedParents": {}
@@ -1319,7 +1554,6 @@
      "Navigasi produk OpenELIS",
      "Pantau & tetap mutakhir",
      "Pantau halaman ini",
-     "docs.openelis-global.org",
      "talk.openelis-global.org"
     ],
     "newSinceBaseline": []
@@ -1516,6 +1750,6 @@
   ]
  },
  "actions": {
-  "retranslate changed sections": 4
+  "retranslate changed sections": 7
  }
 }
