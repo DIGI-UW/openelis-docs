@@ -1,319 +1,14 @@
 {
- "generatedAt": "2026-11-14T09:47:10Z",
+ "generatedAt": "2026-11-21T09:45:42Z",
  "lang": "id",
  "pairs": 18,
- "current": 11,
- "stale": 7,
+ "current": 18,
+ "stale": 0,
  "orphan": 0,
  "unknown": 0,
- "missing": 91,
+ "missing": 90,
  "duplicates": 0,
- "staleRows": [
-  {
-   "en": "1661763585",
-   "enTitle": "Triage and release results",
-   "enVersion": 24,
-   "tr": "1733820420",
-   "trTitle": "Melakukan triase dan merilis hasil",
-   "sourceVersion": 23,
-   "method": "claude",
-   "translatedAt": "2026-10-22",
-   "frenchFigures": [],
-   "figuresCapturedAt": null,
-   "status": "stale",
-   "changes": [
-    {
-     "v": 24,
-     "when": "2026-11-01",
-     "msg": "3.3.0 released: drop 'not yet released' wording"
-    }
-   ],
-   "contract": "validation-v4",
-   "jiraEpic": "OGC-817",
-   "featureDoc": "OGC-1229",
-   "scope": "manual",
-   "englishDrift": "review",
-   "change": {
-    "kind": "text",
-    "sections": [
-     "(top)",
-     "Provenance"
-    ],
-    "addedOrChanged": 2,
-    "removed": 2,
-    "figuresChanged": false
-   },
-   "action": "retranslate changed sections"
-  },
-  {
-   "en": "52560162",
-   "enTitle": "OpenELIS Global",
-   "enVersion": 32,
-   "tr": "1733722115",
-   "trTitle": "Beranda OpenELIS Global (Bahasa Indonesia)",
-   "sourceVersion": 30,
-   "method": "claude",
-   "translatedAt": "2026-10-22",
-   "frenchFigures": [],
-   "figuresCapturedAt": null,
-   "status": "stale",
-   "changes": [
-    {
-     "v": 32,
-     "when": "2026-11-12",
-     "msg": "docs.openelis-global.org is no longer published; the wiki is the documentation"
-    },
-    {
-     "v": 31,
-     "when": "2026-11-12",
-     "msg": "Implementers card links External Integrations and the country implementations"
-    }
-   ],
-   "scope": "landing",
-   "englishDrift": null,
-   "change": {
-    "kind": "text",
-    "sections": [
-     "Where the community lives",
-     "🚀 For Implementers"
-    ],
-    "addedOrChanged": 1,
-    "removed": 2,
-    "figuresChanged": false
-   },
-   "action": "retranslate changed sections"
-  },
-  {
-   "en": "1326972929",
-   "enTitle": "📖 User Manual",
-   "enVersion": 25,
-   "tr": "1733492739",
-   "trTitle": "📖 Panduan Pengguna",
-   "sourceVersion": 22,
-   "method": "claude",
-   "translatedAt": "2026-10-22",
-   "frenchFigures": [],
-   "figuresCapturedAt": null,
-   "status": "stale",
-   "changes": [
-    {
-     "v": 25,
-     "when": "2026-11-07",
-     "msg": "The three order domains (1428881409) rewritten for 3.4.0; row marked In review."
-    },
-    {
-     "v": 24,
-     "when": "2026-10-28",
-     "msg": "Landing: In review removed for 12 cleared pages"
-    },
-    {
-     "v": 23,
-     "when": "2026-10-22",
-     "msg": "QA, notifications and report header pages added (in review)"
-    }
-   ],
-   "scope": "landing",
-   "englishDrift": null,
-   "change": {
-    "kind": "text",
-    "sections": [
-     "(top)",
-     "Environmental surveillance",
-     "Orders and samples",
-     "Programs, rules and notifications",
-     "Quality assurance",
-     "Results, validation and reports",
-     "Site and system settings",
-     "Test catalog",
-     "Users, organizations and providers"
-    ],
-    "addedOrChanged": 25,
-    "removed": 15,
-    "figuresChanged": false
-   },
-   "action": "retranslate changed sections"
-  },
-  {
-   "en": "1326252042",
-   "enTitle": "🚀 For Implementers",
-   "enVersion": 9,
-   "tr": "1733460010",
-   "trTitle": "🚀 Untuk tim implementasi",
-   "sourceVersion": 4,
-   "method": "claude",
-   "translatedAt": "2026-10-22",
-   "frenchFigures": [],
-   "figuresCapturedAt": null,
-   "status": "stale",
-   "changes": [
-    {
-     "v": 9,
-     "when": "2026-11-12",
-     "msg": "Link External Referrals"
-    },
-    {
-     "v": 8,
-     "when": "2026-11-12",
-     "msg": "Link the implementations page"
-    },
-    {
-     "v": 7,
-     "when": "2026-11-12",
-     "msg": "Link every page in this section"
-    },
-    {
-     "v": 6,
-     "when": "2026-11-12",
-     "msg": "Colons instead of dashes in the integration list"
-    },
-    {
-     "v": 5,
-     "when": "2026-11-12",
-     "msg": "Integrate renamed to External Integrations, linking the current guides"
-    }
-   ],
-   "scope": "landing",
-   "englishDrift": null,
-   "change": {
-    "kind": "text",
-    "sections": [
-     "2. Install",
-     "3. Configure for your context",
-     "4. External Integrations",
-     "4. Integrate",
-     "6. Operate and maintain",
-     "Country implementation examples",
-     "Where to get help"
-    ],
-    "addedOrChanged": 21,
-    "removed": 4,
-    "figuresChanged": false
-   },
-   "action": "retranslate changed sections"
-  },
-  {
-   "en": "1440841760",
-   "enTitle": "Register a New Patient",
-   "enVersion": 10,
-   "tr": "1733361674",
-   "trTitle": "Mendaftarkan pasien baru",
-   "sourceVersion": 8,
-   "method": "claude",
-   "translatedAt": "2026-10-22",
-   "frenchFigures": [],
-   "figuresCapturedAt": null,
-   "status": "stale",
-   "changes": [
-    {
-     "v": 10,
-     "when": "2026-10-28",
-     "msg": "Cleared from review: work-in-progress note removed, labels set"
-    },
-    {
-     "v": 9,
-     "when": "2026-10-26",
-     "msg": ""
-    }
-   ],
-   "contract": "register-new-patient",
-   "jiraEpic": null,
-   "featureDoc": null,
-   "scope": "manual",
-   "englishDrift": "review",
-   "change": {
-    "kind": "text",
-    "sections": [
-     "(top)",
-     "Step 2: Enter the patient's details",
-     "Step 3: Save"
-    ],
-    "addedOrChanged": 1,
-    "removed": 4,
-    "figuresChanged": true
-   },
-   "action": "retranslate changed sections"
-  },
-  {
-   "en": "1441136648",
-   "enTitle": "Patient Management",
-   "enVersion": 8,
-   "tr": "1733328902",
-   "trTitle": "Manajemen pasien",
-   "sourceVersion": 6,
-   "method": "claude",
-   "translatedAt": "2026-10-22",
-   "frenchFigures": [],
-   "figuresCapturedAt": null,
-   "status": "stale",
-   "changes": [
-    {
-     "v": 8,
-     "when": "2026-10-28",
-     "msg": "Cleared from review: work-in-progress note removed, labels set"
-    },
-    {
-     "v": 7,
-     "when": "2026-10-26",
-     "msg": ""
-    }
-   ],
-   "contract": "patient-management",
-   "jiraEpic": null,
-   "featureDoc": null,
-   "scope": "manual",
-   "englishDrift": "review",
-   "change": {
-    "kind": "text",
-    "sections": [
-     "(top)",
-     "Step 1: Search for a patient",
-     "Step 2: Open and edit a record"
-    ],
-    "addedOrChanged": 3,
-    "removed": 6,
-    "figuresChanged": true
-   },
-   "action": "retranslate changed sections"
-  },
-  {
-   "en": "1325793288",
-   "enTitle": "⚙️ For SysAdmins-Operators",
-   "enVersion": 7,
-   "tr": "1732968452",
-   "trTitle": "⚙️ Untuk administrator sistem dan operator",
-   "sourceVersion": 5,
-   "method": "claude",
-   "translatedAt": "2026-10-22",
-   "frenchFigures": [],
-   "figuresCapturedAt": null,
-   "status": "stale",
-   "changes": [
-    {
-     "v": 7,
-     "when": "2026-11-12",
-     "msg": "Consolidated Server links follow the renamed child pages"
-    },
-    {
-     "v": 6,
-     "when": "2026-11-12",
-     "msg": "Link every page in this section"
-    }
-   ],
-   "scope": "landing",
-   "englishDrift": null,
-   "change": {
-    "kind": "text",
-    "sections": [
-     "Consolidated Server operations",
-     "Monitoring"
-    ],
-    "addedOrChanged": 5,
-    "removed": 3,
-    "figuresChanged": false
-   },
-   "action": "retranslate changed sections"
-  }
- ],
+ "staleRows": [],
  "orphanRows": [],
  "missingRows": [
   {
@@ -437,8 +132,8 @@
   },
   {
    "en": "1427505177",
-   "enTitle": "Generate a compliance certificate",
-   "enVersion": 8,
+   "enTitle": "Generate a compliance certificate or results report",
+   "enVersion": 10,
    "scope": "manual",
    "contract": "laporan-hasil-report"
   },
@@ -447,14 +142,14 @@
    "enTitle": "Enter an environmental order",
    "enVersion": 10,
    "scope": "manual",
-   "contract": null
+   "contract": "environmental-surveillance"
   },
   {
    "en": "1427898389",
    "enTitle": "Enter a vector order",
    "enVersion": 10,
    "scope": "manual",
-   "contract": null
+   "contract": "vector-surveillance"
   },
   {
    "en": "1427931149",
@@ -480,14 +175,14 @@
   {
    "en": "1428684802",
    "enTitle": "Label and store environmental and vector samples",
-   "enVersion": 15,
+   "enVersion": 16,
    "scope": "manual",
    "contract": "label-store-shared"
   },
   {
    "en": "1428881409",
    "enTitle": "The three order domains",
-   "enVersion": 5,
+   "enVersion": 7,
    "scope": "manual",
    "contract": "domains-concept"
   },
@@ -619,10 +314,10 @@
   },
   {
    "en": "1438842886",
-   "enTitle": "Admin — Define calculated value tests",
-   "enVersion": 6,
+   "enTitle": "Admin: Define calculated value tests",
+   "enVersion": 8,
    "scope": "manual",
-   "contract": null
+   "contract": "calculated-value-tests"
   },
   {
    "en": "1438908431",
@@ -711,7 +406,7 @@
   {
    "en": "1440350210",
    "enTitle": "Find an existing order",
-   "enVersion": 6,
+   "enVersion": 7,
    "scope": "manual",
    "contract": null
   },
@@ -725,7 +420,7 @@
   {
    "en": "1440907275",
    "enTitle": "Merge Patient Records",
-   "enVersion": 5,
+   "enVersion": 6,
    "scope": "manual",
    "contract": null
   },
@@ -744,16 +439,9 @@
    "contract": null
   },
   {
-   "en": "1649082375",
-   "enTitle": "General Configurations reference",
-   "enVersion": 8,
-   "scope": "manual",
-   "contract": "general-configurations"
-  },
-  {
    "en": "1653604361",
-   "enTitle": "Results Entry (legacy screen)",
-   "enVersion": 3,
+   "enTitle": "Results Entry (legacy screen, before 3.3.0)",
+   "enVersion": 5,
    "scope": "manual",
    "contract": null
   },
@@ -788,7 +476,7 @@
   {
    "en": "1707704440",
    "enTitle": "Custom Data Export and My Report Queue",
-   "enVersion": 7,
+   "enVersion": 8,
    "scope": "manual",
    "contract": "custom-data-export"
   },
@@ -900,7 +588,7 @@
   {
    "en": "272760837",
    "enTitle": "Print a work plan",
-   "enVersion": 7,
+   "enVersion": 8,
    "scope": "manual",
    "contract": "workplans"
   },
@@ -991,38 +679,20 @@
   {
    "en": "1661763585",
    "enTitle": "Triage and release results",
-   "enVersion": 24,
+   "enVersion": 26,
    "tr": "1733820420",
    "trTitle": "Melakukan triase dan merilis hasil",
-   "sourceVersion": 23,
+   "sourceVersion": 26,
    "method": "claude",
-   "translatedAt": "2026-10-22",
+   "translatedAt": "2026-11-17",
    "frenchFigures": [],
    "figuresCapturedAt": null,
-   "status": "stale",
-   "changes": [
-    {
-     "v": 24,
-     "when": "2026-11-01",
-     "msg": "3.3.0 released: drop 'not yet released' wording"
-    }
-   ],
+   "status": "current",
    "contract": "validation-v4",
    "jiraEpic": "OGC-817",
    "featureDoc": "OGC-1229",
    "scope": "manual",
-   "englishDrift": "review",
-   "change": {
-    "kind": "text",
-    "sections": [
-     "(top)",
-     "Provenance"
-    ],
-    "addedOrChanged": 2,
-    "removed": 2,
-    "figuresChanged": false
-   },
-   "action": "retranslate changed sections"
+   "englishDrift": "review"
   },
   {
    "en": "1325727762",
@@ -1045,47 +715,24 @@
    "enVersion": 32,
    "tr": "1733722115",
    "trTitle": "Beranda OpenELIS Global (Bahasa Indonesia)",
-   "sourceVersion": 30,
+   "sourceVersion": 32,
    "method": "claude",
-   "translatedAt": "2026-10-22",
+   "translatedAt": "2026-11-18",
    "frenchFigures": [],
    "figuresCapturedAt": null,
-   "status": "stale",
-   "changes": [
-    {
-     "v": 32,
-     "when": "2026-11-12",
-     "msg": "docs.openelis-global.org is no longer published; the wiki is the documentation"
-    },
-    {
-     "v": 31,
-     "when": "2026-11-12",
-     "msg": "Implementers card links External Integrations and the country implementations"
-    }
-   ],
+   "status": "current",
    "scope": "landing",
-   "englishDrift": null,
-   "change": {
-    "kind": "text",
-    "sections": [
-     "Where the community lives",
-     "🚀 For Implementers"
-    ],
-    "addedOrChanged": 1,
-    "removed": 2,
-    "figuresChanged": false
-   },
-   "action": "retranslate changed sections"
+   "englishDrift": null
   },
   {
    "en": "1648787462",
    "enTitle": "Enter a clinical order",
-   "enVersion": 24,
+   "enVersion": 26,
    "tr": "1733525508",
    "trTitle": "Memasukkan pemesanan klinis",
-   "sourceVersion": 24,
+   "sourceVersion": 26,
    "method": "claude",
-   "translatedAt": "2026-10-22",
+   "translatedAt": "2026-11-17",
    "frenchFigures": [],
    "figuresCapturedAt": null,
    "status": "current",
@@ -1098,52 +745,17 @@
   {
    "en": "1326972929",
    "enTitle": "📖 User Manual",
-   "enVersion": 25,
+   "enVersion": 31,
    "tr": "1733492739",
    "trTitle": "📖 Panduan Pengguna",
-   "sourceVersion": 22,
+   "sourceVersion": 31,
    "method": "claude",
-   "translatedAt": "2026-10-22",
+   "translatedAt": "2026-11-19",
    "frenchFigures": [],
    "figuresCapturedAt": null,
-   "status": "stale",
-   "changes": [
-    {
-     "v": 25,
-     "when": "2026-11-07",
-     "msg": "The three order domains (1428881409) rewritten for 3.4.0; row marked In review."
-    },
-    {
-     "v": 24,
-     "when": "2026-10-28",
-     "msg": "Landing: In review removed for 12 cleared pages"
-    },
-    {
-     "v": 23,
-     "when": "2026-10-22",
-     "msg": "QA, notifications and report header pages added (in review)"
-    }
-   ],
+   "status": "current",
    "scope": "landing",
-   "englishDrift": null,
-   "change": {
-    "kind": "text",
-    "sections": [
-     "(top)",
-     "Environmental surveillance",
-     "Orders and samples",
-     "Programs, rules and notifications",
-     "Quality assurance",
-     "Results, validation and reports",
-     "Site and system settings",
-     "Test catalog",
-     "Users, organizations and providers"
-    ],
-    "addedOrChanged": 25,
-    "removed": 15,
-    "figuresChanged": false
-   },
-   "action": "retranslate changed sections"
+   "englishDrift": null
   },
   {
    "en": "1326252042",
@@ -1151,57 +763,14 @@
    "enVersion": 9,
    "tr": "1733460010",
    "trTitle": "🚀 Untuk tim implementasi",
-   "sourceVersion": 4,
+   "sourceVersion": 9,
    "method": "claude",
-   "translatedAt": "2026-10-22",
+   "translatedAt": "2026-11-17",
    "frenchFigures": [],
    "figuresCapturedAt": null,
-   "status": "stale",
-   "changes": [
-    {
-     "v": 9,
-     "when": "2026-11-12",
-     "msg": "Link External Referrals"
-    },
-    {
-     "v": 8,
-     "when": "2026-11-12",
-     "msg": "Link the implementations page"
-    },
-    {
-     "v": 7,
-     "when": "2026-11-12",
-     "msg": "Link every page in this section"
-    },
-    {
-     "v": 6,
-     "when": "2026-11-12",
-     "msg": "Colons instead of dashes in the integration list"
-    },
-    {
-     "v": 5,
-     "when": "2026-11-12",
-     "msg": "Integrate renamed to External Integrations, linking the current guides"
-    }
-   ],
+   "status": "current",
    "scope": "landing",
-   "englishDrift": null,
-   "change": {
-    "kind": "text",
-    "sections": [
-     "2. Install",
-     "3. Configure for your context",
-     "4. External Integrations",
-     "4. Integrate",
-     "6. Operate and maintain",
-     "Country implementation examples",
-     "Where to get help"
-    ],
-    "addedOrChanged": 21,
-    "removed": 4,
-    "figuresChanged": false
-   },
-   "action": "retranslate changed sections"
+   "englishDrift": null
   },
   {
    "en": "1187840003",
@@ -1239,41 +808,17 @@
    "enVersion": 10,
    "tr": "1733361674",
    "trTitle": "Mendaftarkan pasien baru",
-   "sourceVersion": 8,
+   "sourceVersion": 10,
    "method": "claude",
-   "translatedAt": "2026-10-22",
+   "translatedAt": "2026-11-17",
    "frenchFigures": [],
    "figuresCapturedAt": null,
-   "status": "stale",
-   "changes": [
-    {
-     "v": 10,
-     "when": "2026-10-28",
-     "msg": "Cleared from review: work-in-progress note removed, labels set"
-    },
-    {
-     "v": 9,
-     "when": "2026-10-26",
-     "msg": ""
-    }
-   ],
+   "status": "current",
    "contract": "register-new-patient",
    "jiraEpic": null,
    "featureDoc": null,
    "scope": "manual",
-   "englishDrift": "review",
-   "change": {
-    "kind": "text",
-    "sections": [
-     "(top)",
-     "Step 2: Enter the patient's details",
-     "Step 3: Save"
-    ],
-    "addedOrChanged": 1,
-    "removed": 4,
-    "figuresChanged": true
-   },
-   "action": "retranslate changed sections"
+   "englishDrift": "review"
   },
   {
    "en": "1441136648",
@@ -1281,41 +826,17 @@
    "enVersion": 8,
    "tr": "1733328902",
    "trTitle": "Manajemen pasien",
-   "sourceVersion": 6,
+   "sourceVersion": 8,
    "method": "claude",
-   "translatedAt": "2026-10-22",
+   "translatedAt": "2026-11-17",
    "frenchFigures": [],
    "figuresCapturedAt": null,
-   "status": "stale",
-   "changes": [
-    {
-     "v": 8,
-     "when": "2026-10-28",
-     "msg": "Cleared from review: work-in-progress note removed, labels set"
-    },
-    {
-     "v": 7,
-     "when": "2026-10-26",
-     "msg": ""
-    }
-   ],
+   "status": "current",
    "contract": "patient-management",
    "jiraEpic": null,
    "featureDoc": null,
    "scope": "manual",
-   "englishDrift": "review",
-   "change": {
-    "kind": "text",
-    "sections": [
-     "(top)",
-     "Step 1: Search for a patient",
-     "Step 2: Open and edit a record"
-    ],
-    "addedOrChanged": 3,
-    "removed": 6,
-    "figuresChanged": true
-   },
-   "action": "retranslate changed sections"
+   "englishDrift": "review"
   },
   {
    "en": "1439072277",
@@ -1386,37 +907,14 @@
    "enVersion": 7,
    "tr": "1732968452",
    "trTitle": "⚙️ Untuk administrator sistem dan operator",
-   "sourceVersion": 5,
+   "sourceVersion": 7,
    "method": "claude",
-   "translatedAt": "2026-10-22",
+   "translatedAt": "2026-11-17",
    "frenchFigures": [],
    "figuresCapturedAt": null,
-   "status": "stale",
-   "changes": [
-    {
-     "v": 7,
-     "when": "2026-11-12",
-     "msg": "Consolidated Server links follow the renamed child pages"
-    },
-    {
-     "v": 6,
-     "when": "2026-11-12",
-     "msg": "Link every page in this section"
-    }
-   ],
+   "status": "current",
    "scope": "landing",
-   "englishDrift": null,
-   "change": {
-    "kind": "text",
-    "sections": [
-     "Consolidated Server operations",
-     "Monitoring"
-    ],
-    "addedOrChanged": 5,
-    "removed": 3,
-    "figuresChanged": false
-   },
-   "action": "retranslate changed sections"
+   "englishDrift": null
   },
   {
    "en": "1437270018",
@@ -1434,19 +932,19 @@
    "englishDrift": null
   }
  ],
- "summary": "Indonesian: 18 pairs, 11 current, 7 stale, 0 orphan/unknown, 91 tracked pages with no Indonesian. 0 pages with Indonesian screenshots, 0 with Indonesian screenshots older than the English. Tree: 34 in place, 0 misplaced, 0 English parents with no Indonesian twin. Labels: 15 pages quote bold text that is not a Indonesian UI string (1 new since baseline).",
+ "summary": "Indonesian: 18 pairs, 18 current, 0 stale, 0 orphan/unknown, 90 tracked pages with no Indonesian. 0 pages with Indonesian screenshots, 0 with Indonesian screenshots older than the English. Tree: 34 in place, 0 misplaced, 0 English parents with no Indonesian twin. Labels: 15 pages quote bold text that is not a Indonesian UI string (0 new since baseline).",
  "frenchFigurePages": 0,
  "figuresStaleRows": [],
- "driftReportAt": "2026-11-14T09:42:19.459Z",
+ "driftReportAt": "2026-11-21T09:41:27.537Z",
  "tree": {
-  "checkedAt": "2026-11-14T09:46:08Z",
+  "checkedAt": "2026-11-21T09:44:48Z",
   "inPlace": 34,
   "misplaced": [],
   "unmappedParents": {}
  },
  "labels": {
   "pagesWithUnknownLabels": 15,
-  "pagesWithNewUnknownLabels": 1,
+  "pagesWithNewUnknownLabels": 0,
   "baselineCreated": false,
   "rows": [
    {
@@ -1481,30 +979,34 @@
     "tr": "1733820420",
     "trTitle": "Melakukan triase dan merilis hasil",
     "notInUi": [
+     "Berdasarkan Permintaan",
+     "Berdasarkan Rentang Nomor Permintaan",
      "Berdasarkan nomor registrasi.",
      "Diamati tetapi tidak diuji:",
+     "Ditambahkan 2026-11-17 di testing (3.4.0-SNAPSHOT):",
      "Diuji langsung di testing (3.3.0-SNAPSHOT, 2026-10-09):",
      "Diverifikasi oleh",
      "Hasil yang divalidasi otomatis.",
      "Hasil yang divalidasi secara otomatis",
+     "Level 1 of 2",
+     "Level 2 of 2",
      "OpenELIS 3.3.0.",
      "PERISTIWA",
      "Perlu ditinjau: 1",
      "Rilis semua tanpa temuan",
      "Rilis semua tanpa temuan (0)",
      "Rilis semua tanpa temuan (3)",
+     "Sedang dikerjakan.",
+     "Show results waiting for others",
+     "Sign level 1 for all clear",
+     "Sign level 1 of 2",
+     "Sign-offs",
      "Signature Meaning",
      "Tanpa Temuan: 3",
      "Tinjau",
      "Versi OpenELIS"
     ],
-    "newSinceBaseline": [
-     "PERISTIWA",
-     "Rilis semua tanpa temuan",
-     "Rilis semua tanpa temuan (0)",
-     "Rilis semua tanpa temuan (3)",
-     "Tanpa Temuan: 3"
-    ]
+    "newSinceBaseline": []
    },
    {
     "fr": "1733754893",
@@ -1569,9 +1071,11 @@
      "Atau daftarkan pasien baru.",
      "Atur penanganan sampel jika berlaku.",
      "Halaman ini menjelaskan OpenELIS 3.3.0.",
+     "Keep the test",
      "Periksa kemungkinan kecocokan.",
      "Periksa nomor registrasi.",
      "Pilih program, jika situs Anda menggunakannya.",
+     "Remove a test that has results",
      "Scan barcode or enter lab number",
      "Sedang dikerjakan.",
      "Tambahkan informasi klinis (opsional).",
@@ -1605,18 +1109,33 @@
      "Cara menerjemahkan OpenELIS",
      "Configuration Initializer",
      "DIGI-UW/OpenELIS-Global-2 GitHub",
-     "Integrasi OpenELIS: Odoo",
-     "Integrasi OpenMRS",
+     "Impor daftar fasilitas (GOFR / FHIR)",
+     "Integrasi eksternal",
+     "Konfigurasi pencadangan",
      "Madagaskar",
      "Masalah operasional setelah peluncuran",
      "Memasang OpenELIS Global",
      "Memperbarui OpenELIS 3.x dan 2.x",
      "Memperbarui dari 2.x ke 2.7",
+     "Memperbarui dari OpenELIS Global 1.x ke 2.x",
      "Mengonfigurasi file properti untuk Consolidated Server",
-     "Penyiapan Single Sign On",
+     "Menyiapkan failover ketersediaan tinggi",
+     "Migrasi kata sandi",
+     "Notifikasi SMTP, email, dan SMS",
+     "Odoo - OpenELIS",
+     "OpenELIS Consolidated Server",
+     "OpenELIS Global: Referensi lengkap izin akses",
+     "OpenELIS Implementers Call",
+     "OpenMRS - OpenELIS",
+     "Panduan implementasi FHIR",
+     "Pendaftaran di registri fasilitas (GOFR)",
      "Persyaratan teknis server dan komputer kerja",
      "Praktik terbaik implementasi",
+     "Registri klien (OpenCR / FHIR)",
+     "Registri tenaga kesehatan (FHIR)",
+     "Rujukan eksternal (OpenELIS ke OpenELIS)",
      "SILNAS: Indonesia",
+     "Single Sign-On (Keycloak)",
      "Untuk petugas laboratorium",
      "talk.openelis-global.org"
     ],
@@ -1644,7 +1163,8 @@
      "Patient age required",
      "Patient sex required",
      "Primary phone",
-     "Sedang dalam pengerjaan."
+     "doc-verified",
+     "verified-v3.4.0"
     ],
     "newSinceBaseline": []
    },
@@ -1655,7 +1175,8 @@
     "trTitle": "Manajemen pasien",
     "notInUi": [
      "3.3.0-SNAPSHOT",
-     "Sedang dikerjakan."
+     "doc-verified",
+     "verified-v3.4.0"
     ],
     "newSinceBaseline": []
    },
@@ -1738,10 +1259,10 @@
      "Memperbarui OpenELIS 3.x dan 2.x",
      "Memperbarui dari 2.x ke 2.7",
      "Memperbarui dari OpenELIS Global 1.x ke 2.x",
-     "Menerapkan Consolidated Server",
      "Menyiapkan failover ketersediaan tinggi",
      "Migrasi kata sandi",
      "OpenELIS Talk",
+     "Pemantauan OpenELIS",
      "Pemecahan masalah",
      "Vault 1Password"
     ],
@@ -1749,7 +1270,5 @@
    }
   ]
  },
- "actions": {
-  "retranslate changed sections": 7
- }
+ "actions": {}
 }

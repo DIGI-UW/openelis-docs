@@ -1,625 +1,68 @@
 {
- "generatedAt": "2026-11-14T09:45:40Z",
+ "generatedAt": "2026-11-21T09:44:24Z",
  "lang": "fr",
- "pairs": 117,
- "current": 101,
- "stale": 16,
+ "pairs": 127,
+ "current": 125,
+ "stale": 2,
  "orphan": 0,
  "unknown": 0,
- "missing": 10,
+ "missing": 0,
  "duplicates": 0,
  "staleRows": [
   {
-   "en": "1441136648",
-   "enTitle": "Patient Management",
-   "enVersion": 8,
-   "tr": "1715929091",
-   "trTitle": "Gestion des patients",
-   "fr": "1715929091",
-   "frTitle": "Gestion des patients",
-   "sourceVersion": 6,
+   "en": "1440907275",
+   "enTitle": "Merge Patient Records",
+   "enVersion": 6,
+   "tr": "1792114741",
+   "trTitle": "Fusionner des dossiers patients",
+   "fr": "1792114741",
+   "frTitle": "Fusionner des dossiers patients",
+   "sourceVersion": 5,
    "method": "claude",
-   "translatedAt": "2026-10-15",
-   "frenchFigures": [
-    "02-record-view.png",
-    "03-record-editing.png"
-   ],
-   "figuresCapturedAt": "2026-10-15",
+   "translatedAt": "2026-11-18",
+   "frenchFigures": [],
+   "figuresCapturedAt": null,
    "status": "stale",
    "changes": [
     {
-     "v": 8,
-     "when": "2026-10-28",
-     "msg": "Cleared from review: work-in-progress note removed, labels set"
-    },
-    {
-     "v": 7,
-     "when": "2026-10-26",
-     "msg": ""
+     "v": 6,
+     "when": "2026-11-19",
+     "msg": "Gender is now Sex in the patient search (OGC-1362), checked on testing 3.4.0-SNAPSHOT 19 Nov 2026"
     }
    ],
-   "figuresStale": [
-    "03-record-editing.png"
-   ],
-   "contract": "patient-management",
-   "jiraEpic": null,
-   "featureDoc": null,
    "scope": "manual",
-   "englishDrift": "review",
+   "englishDrift": null,
    "change": {
     "kind": "text",
     "sections": [
-     "(top)",
-     "Step 1: Search for a patient",
-     "Step 2: Open and edit a record"
+     "Notes",
+     "Step 1: Select the two patients"
     ],
     "addedOrChanged": 3,
-    "removed": 6,
-    "figuresChanged": true
-   },
-   "action": "retranslate changed sections"
-  },
-  {
-   "en": "1440841760",
-   "enTitle": "Register a New Patient",
-   "enVersion": 10,
-   "tr": "1714487306",
-   "trTitle": "Enregistrer un nouveau patient",
-   "fr": "1714487306",
-   "frTitle": "Enregistrer un nouveau patient",
-   "sourceVersion": 8,
-   "method": "claude",
-   "translatedAt": "2026-10-15",
-   "frenchFigures": [
-    "01-new-patient.png",
-    "02-required.png",
-    "03-saved.png"
-   ],
-   "figuresCapturedAt": "2026-10-15",
-   "status": "stale",
-   "changes": [
-    {
-     "v": 10,
-     "when": "2026-10-28",
-     "msg": "Cleared from review: work-in-progress note removed, labels set"
-    },
-    {
-     "v": 9,
-     "when": "2026-10-26",
-     "msg": ""
-    }
-   ],
-   "figuresStale": [
-    "01-new-patient.png"
-   ],
-   "contract": "register-new-patient",
-   "jiraEpic": null,
-   "featureDoc": null,
-   "scope": "manual",
-   "englishDrift": "review",
-   "change": {
-    "kind": "text",
-    "sections": [
-     "(top)",
-     "Step 2: Enter the patient's details",
-     "Step 3: Save"
-    ],
-    "addedOrChanged": 1,
-    "removed": 4,
-    "figuresChanged": true
-   },
-   "action": "retranslate changed sections"
-  },
-  {
-   "en": "239730698",
-   "enTitle": "Upgrading OpenELIS 3.x and 2.x",
-   "enVersion": 6,
-   "tr": "1704624217",
-   "trTitle": "Mettre à niveau OpenELIS 3.x et 2.x",
-   "fr": "1704624217",
-   "frTitle": "Mettre à niveau OpenELIS 3.x et 2.x",
-   "sourceVersion": 5,
-   "method": "claude",
-   "translatedAt": "2026-10-20",
-   "frenchFigures": [],
-   "figuresCapturedAt": null,
-   "status": "stale",
-   "changes": [
-    {
-     "v": 6,
-     "when": "2026-11-12",
-     "msg": "Point install links to the merged Install OpenELIS Global page"
-    }
-   ],
-   "scope": "ops",
-   "englishDrift": null,
-   "change": {
-    "kind": "none",
-    "sections": [],
-    "addedOrChanged": 0,
-    "removed": 0,
-    "figuresChanged": false
-   },
-   "action": "bump version only"
-  },
-  {
-   "en": "1325793288",
-   "enTitle": "⚙️ For SysAdmins-Operators",
-   "enVersion": 7,
-   "tr": "1704198262",
-   "trTitle": "⚙️ Pour les administrateurs système et exploitants",
-   "fr": "1704198262",
-   "frTitle": "⚙️ Pour les administrateurs système et exploitants",
-   "sourceVersion": 5,
-   "method": "claude",
-   "translatedAt": "2026-10-09",
-   "frenchFigures": [],
-   "figuresCapturedAt": null,
-   "status": "stale",
-   "changes": [
-    {
-     "v": 7,
-     "when": "2026-11-12",
-     "msg": "Consolidated Server links follow the renamed child pages"
-    },
-    {
-     "v": 6,
-     "when": "2026-11-12",
-     "msg": "Link every page in this section"
-    }
-   ],
-   "scope": "landing",
-   "englishDrift": null,
-   "change": {
-    "kind": "text",
-    "sections": [
-     "Consolidated Server operations",
-     "Monitoring"
-    ],
-    "addedOrChanged": 5,
-    "removed": 3,
-    "figuresChanged": false
-   },
-   "action": "retranslate changed sections"
-  },
-  {
-   "en": "1326252042",
-   "enTitle": "🚀 For Implementers",
-   "enVersion": 9,
-   "tr": "1704198242",
-   "trTitle": "🚀 Pour l'équipe de mise en œuvre",
-   "fr": "1704198242",
-   "frTitle": "🚀 Pour l'équipe de mise en œuvre",
-   "sourceVersion": 4,
-   "method": "claude",
-   "translatedAt": "2026-10-09",
-   "frenchFigures": [],
-   "figuresCapturedAt": null,
-   "status": "stale",
-   "changes": [
-    {
-     "v": 9,
-     "when": "2026-11-12",
-     "msg": "Link External Referrals"
-    },
-    {
-     "v": 8,
-     "when": "2026-11-12",
-     "msg": "Link the implementations page"
-    },
-    {
-     "v": 7,
-     "when": "2026-11-12",
-     "msg": "Link every page in this section"
-    },
-    {
-     "v": 6,
-     "when": "2026-11-12",
-     "msg": "Colons instead of dashes in the integration list"
-    },
-    {
-     "v": 5,
-     "when": "2026-11-12",
-     "msg": "Integrate renamed to External Integrations, linking the current guides"
-    }
-   ],
-   "scope": "landing",
-   "englishDrift": null,
-   "change": {
-    "kind": "text",
-    "sections": [
-     "2. Install",
-     "3. Configure for your context",
-     "4. External Integrations",
-     "4. Integrate",
-     "6. Operate and maintain",
-     "Country implementation examples",
-     "Where to get help"
-    ],
-    "addedOrChanged": 21,
-    "removed": 4,
-    "figuresChanged": false
-   },
-   "action": "retranslate changed sections"
-  },
-  {
-   "en": "1661763585",
-   "enTitle": "Triage and release results",
-   "enVersion": 24,
-   "tr": "1703641250",
-   "trTitle": "Trier et libérer les résultats",
-   "fr": "1703641250",
-   "frTitle": "Trier et libérer les résultats",
-   "sourceVersion": 23,
-   "method": "claude",
-   "translatedAt": "2026-10-09",
-   "frenchFigures": [],
-   "figuresCapturedAt": null,
-   "status": "stale",
-   "changes": [
-    {
-     "v": 24,
-     "when": "2026-11-01",
-     "msg": "3.3.0 released: drop 'not yet released' wording"
-    }
-   ],
-   "contract": "validation-v4",
-   "jiraEpic": "OGC-817",
-   "featureDoc": "OGC-1229",
-   "scope": "manual",
-   "englishDrift": "review",
-   "change": {
-    "kind": "text",
-    "sections": [
-     "(top)",
-     "Provenance"
-    ],
-    "addedOrChanged": 2,
     "removed": 2,
     "figuresChanged": false
    },
    "action": "retranslate changed sections"
   },
   {
-   "en": "1437892659",
-   "enTitle": "Admin: Manage organizations",
-   "enVersion": 14,
-   "tr": "1703313492",
-   "trTitle": "Admin : Gérer les structures (organisations)",
-   "fr": "1703313492",
-   "frTitle": "Admin : Gérer les structures (organisations)",
-   "sourceVersion": 13,
-   "method": "claude",
-   "translatedAt": "2026-10-20",
-   "frenchFigures": [],
-   "figuresCapturedAt": null,
-   "status": "stale",
-   "changes": [
-    {
-     "v": 14,
-     "when": "2026-11-01",
-     "msg": "3.3.0 released: drop 'not yet released' wording"
-    }
-   ],
-   "contract": "organization-management-330",
-   "jiraEpic": "OGC-1363",
-   "featureDoc": "OGC-1414",
-   "scope": "manual",
-   "englishDrift": "review",
-   "change": {
-    "kind": "text",
-    "sections": [
-     "(top)",
-     "Provenance"
-    ],
-    "addedOrChanged": 2,
-    "removed": 1,
-    "figuresChanged": false
-   },
-   "action": "retranslate changed sections"
-  },
-  {
-   "en": "1427144728",
-   "enTitle": "Admin — Vector Surveillance Reference Data",
-   "enVersion": 8,
-   "tr": "1703051362",
-   "trTitle": "Admin : Données de référence de la surveillance vectorielle",
-   "fr": "1703051362",
-   "frTitle": "Admin : Données de référence de la surveillance vectorielle",
-   "sourceVersion": 7,
-   "method": "claude",
-   "translatedAt": "2026-10-09",
-   "frenchFigures": [],
-   "figuresCapturedAt": null,
-   "status": "stale",
-   "changes": [
-    {
-     "v": 8,
-     "when": "2026-11-01",
-     "msg": "3.3.0: sampling sites moved to Locations & Organizations; old figure removed; em dashes removed from body"
-    }
-   ],
-   "contract": "admin-vector-reference-data",
-   "jiraEpic": null,
-   "featureDoc": null,
-   "scope": "manual",
-   "englishDrift": "review",
-   "change": {
-    "kind": "text",
-    "sections": [
-     "(top)",
-     "At a glance",
-     "Manage sampling sites",
-     "Related"
-    ],
-    "addedOrChanged": 6,
-    "removed": 4,
-    "figuresChanged": true
-   },
-   "action": "retranslate changed sections"
-  },
-  {
-   "en": "240320515",
-   "enTitle": "Backup Configuration",
+   "en": "1440350210",
+   "enTitle": "Find an existing order",
    "enVersion": 7,
-   "tr": "1702756459",
-   "trTitle": "Configuration de la sauvegarde",
-   "fr": "1702756459",
-   "frTitle": "Configuration de la sauvegarde",
+   "tr": "1702232134",
+   "trTitle": "Trouver une demande d'analyse existante",
+   "fr": "1702232134",
+   "frTitle": "Trouver une demande d'analyse existante",
    "sourceVersion": 6,
    "method": "claude",
-   "translatedAt": "2026-10-20",
+   "translatedAt": "2026-10-09",
    "frenchFigures": [],
    "figuresCapturedAt": null,
    "status": "stale",
    "changes": [
     {
      "v": 7,
-     "when": "2026-11-12",
-     "msg": "Point install links to the merged Install OpenELIS Global page"
-    }
-   ],
-   "scope": "ops",
-   "englishDrift": null,
-   "change": {
-    "kind": "none",
-    "sections": [],
-    "addedOrChanged": 0,
-    "removed": 0,
-    "figuresChanged": false
-   },
-   "action": "bump version only"
-  },
-  {
-   "en": "1428881409",
-   "enTitle": "The three order domains",
-   "enVersion": 5,
-   "tr": "1702756419",
-   "trTitle": "Les trois domaines et l'assistant de saisie des demandes commun",
-   "fr": "1702756419",
-   "frTitle": "Les trois domaines et l'assistant de saisie des demandes commun",
-   "sourceVersion": 4,
-   "method": "claude",
-   "translatedAt": "2026-10-09",
-   "frenchFigures": [],
-   "figuresCapturedAt": null,
-   "status": "stale",
-   "changes": [
-    {
-     "v": 5,
-     "when": "2026-11-07",
-     "msg": "Rewritten for 3.4.0 order entry (Enter Order, Prepare Samples, Sample check; Label & Store and Sample check for environm"
-    }
-   ],
-   "contract": "domains-concept",
-   "jiraEpic": null,
-   "featureDoc": null,
-   "scope": "manual",
-   "englishDrift": "ok",
-   "change": {
-    "kind": "text",
-    "sections": [
-     "(top)",
-     "In short",
-     "Lab units and domains",
-     "Not yet verified",
-     "Provenance",
-     "Related",
-     "The steps in each domain",
-     "What all three share",
-     "What differs by domain"
-    ],
-    "addedOrChanged": 53,
-    "removed": 8,
-    "figuresChanged": false
-   },
-   "action": "retranslate changed sections"
-  },
-  {
-   "en": "52560162",
-   "enTitle": "OpenELIS Global",
-   "enVersion": 32,
-   "tr": "1701970059",
-   "trTitle": "Accueil OpenELIS Global (français)",
-   "fr": "1701970059",
-   "frTitle": "Accueil OpenELIS Global (français)",
-   "sourceVersion": 30,
-   "method": "claude",
-   "translatedAt": "2026-10-09",
-   "frenchFigures": [],
-   "figuresCapturedAt": null,
-   "status": "stale",
-   "changes": [
-    {
-     "v": 32,
-     "when": "2026-11-12",
-     "msg": "docs.openelis-global.org is no longer published; the wiki is the documentation"
-    },
-    {
-     "v": 31,
-     "when": "2026-11-12",
-     "msg": "Implementers card links External Integrations and the country implementations"
-    }
-   ],
-   "scope": "landing",
-   "englishDrift": null,
-   "change": {
-    "kind": "text",
-    "sections": [
-     "Where the community lives",
-     "🚀 For Implementers"
-    ],
-    "addedOrChanged": 1,
-    "removed": 2,
-    "figuresChanged": false
-   },
-   "action": "retranslate changed sections"
-  },
-  {
-   "en": "239632402",
-   "enTitle": "Install OpenELIS Global",
-   "enVersion": 25,
-   "tr": "1701281856",
-   "trTitle": "Installer OpenELIS Global",
-   "fr": "1701281856",
-   "frTitle": "Installer OpenELIS Global",
-   "sourceVersion": 17,
-   "method": "claude",
-   "translatedAt": "2026-10-20",
-   "frenchFigures": [],
-   "figuresCapturedAt": null,
-   "status": "stale",
-   "changes": [
-    {
-     "v": 25,
-     "when": "2026-11-12",
-     "msg": "Light stack: link External Integrations and say where .env is"
-    },
-    {
-     "v": 24,
-     "when": "2026-11-12",
-     "msg": "Troubleshooting rows match the prepackaged offline installer"
-    },
-    {
-     "v": 23,
-     "when": "2026-11-12",
-     "msg": "Merge the eight install child pages into one page with linkable sections"
-    },
-    {
-     "v": 22,
-     "when": "2026-11-09",
-     "msg": "Match openelis-docker main after 6 Nov 2026: online install settings, first login, first upgrade, key backup. Offline 3."
-    },
-    {
-     "v": 21,
-     "when": "2026-10-29",
-     "msg": "OGC-1546: Full or light stack section"
-    },
-    {
-     "v": 20,
-     "when": "2026-10-29",
-     "msg": "OGC-1546: mention the light install (no FHIR server, no analyser Bridge)"
-    },
-    {
-     "v": 19,
-     "when": "2026-10-29",
-     "msg": "OGC-1546: offline install downloads the prepackaged installer from the openelis-docker releases"
-    },
-    {
-     "v": 18,
-     "when": "2026-10-26",
-     "msg": "26 Oct: what changed for the current openelis-docker; latest release 3.3.0; analyser ports"
-    }
-   ],
-   "scope": "ops",
-   "englishDrift": null,
-   "change": {
-    "kind": "text",
-    "sections": [
-     "(top)",
-     "1. Choose the release",
-     "2. Download the package (computer with internet)",
-     "3. Load it on the lab server",
-     "Analysers",
-     "Analysers set up before 3.3.0",
-     "At a glance",
-     "Back up",
-     "Back up and restore",
-     "Backups",
-     "Before the first start",
-     "Certificate",
-     "Certificates",
-     "Check it works",
-     "Check renewal works",
-     "Choose how to install",
-     "Configure and start",
-     "Connect to other systems (optional)",
-     "Create the copy script",
-     "Database passwords",
-     "Encryption key and analyser pairing code",
-     "First upgrade after 6 November 2026",
-     "Full or light stack",
-     "Full stack or light stack?",
-     "Get OpenELIS",
-     "Get the certificate",
-     "HTTPS certificate",
-     "Install Docker",
-     "Install Ubuntu Server",
-     "Install and start",
-     "Install certbot",
-     "Install in four steps",
-     "Keep internal ports off the network",
-     "Later upgrades",
-     "Login",
-     "Network ports",
-     "Offline install",
-     "Offline install (3.3.0 package)",
-     "Older installer package",
-     "Online install",
-     "Online install: also back up the keys",
-     "Online install: settings file and passwords",
-     "Point OpenELIS at it",
-     "Prepare the server",
-     "Restore the database",
-     "Start OpenELIS",
-     "Stop or remove",
-     "Time zone",
-     "Troubleshooting",
-     "Update and set the time zone",
-     "Upgrade an offline install",
-     "Upgrade an online install",
-     "Upgrade or remove",
-     "Upgrades",
-     "Use a certificate you already have",
-     "Use a free Let's Encrypt certificate",
-     "What you need",
-     "Where things are"
-    ],
-    "addedOrChanged": 393,
-    "removed": 10,
-    "figuresChanged": false
-   },
-   "action": "retranslate changed sections"
-  },
-  {
-   "en": "256966691",
-   "enTitle": "NAVIGATING OpenELIS LIMS",
-   "enVersion": 5,
-   "tr": "1643937869",
-   "trTitle": "NAVIGUER DANS OpenELIS LIMS",
-   "fr": "1643937869",
-   "frTitle": "NAVIGUER DANS OpenELIS LIMS",
-   "sourceVersion": 4,
-   "method": "claude",
-   "translatedAt": "2026-10-09",
-   "frenchFigures": [],
-   "figuresCapturedAt": null,
-   "status": "stale",
-   "changes": [
-    {
-     "v": 5,
-     "when": "2026-11-12",
-     "msg": "Cleanup: duplicate content kept in one place"
+     "when": "2026-11-19",
+     "msg": "Gender is now Sex in the patient search (OGC-1362), checked on testing 3.4.0-SNAPSHOT 19 Nov 2026; em dashes removed fro"
     }
    ],
    "scope": "manual",
@@ -627,229 +70,225 @@
    "change": {
     "kind": "text",
     "sections": [
-     "(top)",
-     "How to login to OpenELIS",
-     "Overview"
+     "Field reference",
+     "Step 1 — Search by accession number",
+     "Step 1: Search by accession number",
+     "Step 2 — Or search by patient",
+     "Step 2: Or search by patient"
     ],
-    "addedOrChanged": 1,
-    "removed": 7,
-    "figuresChanged": true
-   },
-   "action": "retranslate changed sections"
-  },
-  {
-   "en": "1433468931",
-   "enTitle": "Manage label presets",
-   "enVersion": 14,
-   "tr": "1643905025",
-   "trTitle": "Gérer les modèles d'étiquettes",
-   "fr": "1643905025",
-   "frTitle": "Gérer les modèles d'étiquettes",
-   "sourceVersion": 13,
-   "method": "claude",
-   "translatedAt": "2026-10-20",
-   "frenchFigures": [],
-   "figuresCapturedAt": null,
-   "status": "stale",
-   "changes": [
-    {
-     "v": 14,
-     "when": "2026-10-21",
-     "msg": ""
-    }
-   ],
-   "contract": "label-presets",
-   "jiraEpic": "",
-   "featureDoc": "OGC-1217, OGC-1218",
-   "scope": "manual",
-   "englishDrift": "review",
-   "change": {
-    "kind": "text",
-    "sections": [
-     "(top)",
-     "Site-wide barcode settings",
-     "Step 1: Open Label Presets",
-     "Step 2: Add a preset",
-     "System presets and their content fields"
-    ],
-    "addedOrChanged": 1,
-    "removed": 10,
-    "figuresChanged": true
-   },
-   "action": "retranslate changed sections"
-  },
-  {
-   "en": "1429176321",
-   "enTitle": "Complete the sample check for an environmental or vector order",
-   "enVersion": 14,
-   "tr": "1641447513",
-   "trTitle": "Effectuer la vérification de l'échantillon d'une demande environnementale ou vectorielle",
-   "fr": "1641447513",
-   "frTitle": "Effectuer la vérification de l'échantillon d'une demande environnementale ou vectorielle",
-   "sourceVersion": 13,
-   "method": "claude",
-   "translatedAt": "2026-10-20",
-   "frenchFigures": [],
-   "figuresCapturedAt": null,
-   "status": "stale",
-   "changes": [
-    {
-     "v": 14,
-     "when": "2026-10-28",
-     "msg": "Cleared from review: work-in-progress note removed, labels set"
-    }
-   ],
-   "contract": "qa-review-shared",
-   "jiraEpic": null,
-   "featureDoc": null,
-   "scope": "manual",
-   "englishDrift": "review",
-   "change": {
-    "kind": "text",
-    "sections": [
-     "(top)",
-     "Provenance"
-    ],
-    "addedOrChanged": 2,
-    "removed": 3,
-    "figuresChanged": false
-   },
-   "action": "retranslate changed sections"
-  },
-  {
-   "en": "1326972929",
-   "enTitle": "📖 User Manual",
-   "enVersion": 25,
-   "tr": "1641447437",
-   "trTitle": "📖 Manuel de l'utilisateur",
-   "fr": "1641447437",
-   "frTitle": "📖 Manuel de l'utilisateur",
-   "sourceVersion": 21,
-   "method": "claude",
-   "translatedAt": "2026-10-20",
-   "frenchFigures": [],
-   "figuresCapturedAt": null,
-   "status": "stale",
-   "changes": [
-    {
-     "v": 25,
-     "when": "2026-11-07",
-     "msg": "The three order domains (1428881409) rewritten for 3.4.0; row marked In review."
-    },
-    {
-     "v": 24,
-     "when": "2026-10-28",
-     "msg": "Landing: In review removed for 12 cleared pages"
-    },
-    {
-     "v": 23,
-     "when": "2026-10-22",
-     "msg": "QA, notifications and report header pages added (in review)"
-    },
-    {
-     "v": 22,
-     "when": "2026-10-22",
-     "msg": "New 3.3.0 pages added (in review)"
-    }
-   ],
-   "scope": "landing",
-   "englishDrift": null,
-   "change": {
-    "kind": "text",
-    "sections": [
-     "(top)",
-     "Environmental surveillance",
-     "Inventory",
-     "Orders and samples",
-     "Pathology, immunohistochemistry and cytology",
-     "Programs, rules and notifications",
-     "Quality assurance",
-     "Results, validation and reports",
-     "Site and system settings",
-     "Test catalog",
-     "Users, organizations and providers"
-    ],
-    "addedOrChanged": 39,
-    "removed": 15,
+    "addedOrChanged": 5,
+    "removed": 5,
     "figuresChanged": false
    },
    "action": "retranslate changed sections"
   }
  ],
  "orphanRows": [],
- "missingRows": [
+ "missingRows": [],
+ "rows": [
   {
-   "en": "1427275807",
-   "enTitle": "Enter results & read the compliance evaluation",
-   "enVersion": 11,
+   "en": "1706295354",
+   "enTitle": "Admin: Import and export locations",
+   "enVersion": 7,
+   "tr": "1792770052",
+   "trTitle": "Admin : Importer et exporter des lieux",
+   "fr": "1792770052",
+   "frTitle": "Admin : Importer et exporter des lieux",
+   "sourceVersion": 7,
+   "method": "claude",
+   "translatedAt": "2026-11-18",
+   "frenchFigures": [],
+   "figuresCapturedAt": null,
+   "status": "current",
+   "contract": "locations-import-export",
+   "jiraEpic": "OGC-1363",
+   "featureDoc": "OGC-1414",
    "scope": "manual",
-   "contract": null
-  },
-  {
-   "en": "1427439642",
-   "enTitle": "Validate & release results",
-   "enVersion": 14,
-   "scope": "manual",
-   "contract": null
-  },
-  {
-   "en": "1428684802",
-   "enTitle": "Label and store environmental and vector samples",
-   "enVersion": 15,
-   "scope": "manual",
-   "contract": "label-store-shared"
-  },
-  {
-   "en": "1432649742",
-   "enTitle": "Read-only & cross-link sections",
-   "enVersion": 9,
-   "scope": "manual",
-   "contract": null
-  },
-  {
-   "en": "1440907275",
-   "enTitle": "Merge Patient Records",
-   "enVersion": 5,
-   "scope": "manual",
-   "contract": null
-  },
-  {
-   "en": "1442414603",
-   "enTitle": "Author the test catalog in CSV files",
-   "enVersion": 6,
-   "scope": "manual",
-   "contract": null
-  },
-  {
-   "en": "1649082375",
-   "enTitle": "General Configurations reference",
-   "enVersion": 8,
-   "scope": "manual",
-   "contract": "general-configurations"
+   "englishDrift": "review"
   },
   {
    "en": "1666547755",
    "enTitle": "Import a test catalog from CSV",
    "enVersion": 11,
+   "tr": "1792442394",
+   "trTitle": "Importer un catalogue de tests à partir de fichiers CSV",
+   "fr": "1792442394",
+   "frTitle": "Importer un catalogue de tests à partir de fichiers CSV",
+   "sourceVersion": 11,
+   "method": "claude",
+   "translatedAt": "2026-11-18",
+   "frenchFigures": [],
+   "figuresCapturedAt": null,
+   "status": "current",
+   "contract": "catalog-import-csv",
+   "jiraEpic": "OGC-1194",
+   "featureDoc": "OGC-1225",
    "scope": "manual",
-   "contract": "catalog-import-csv"
-  },
-  {
-   "en": "1706295354",
-   "enTitle": "Admin: Import and export locations",
-   "enVersion": 7,
-   "scope": "manual",
-   "contract": "locations-import-export"
+   "englishDrift": "review"
   },
   {
    "en": "1707704440",
    "enTitle": "Custom Data Export and My Report Queue",
-   "enVersion": 7,
+   "enVersion": 8,
+   "tr": "1792376865",
+   "trTitle": "Export de données personnalisé et Ma file de rapports",
+   "fr": "1792376865",
+   "frTitle": "Export de données personnalisé et Ma file de rapports",
+   "sourceVersion": 8,
+   "method": "claude",
+   "translatedAt": "2026-11-18",
+   "frenchFigures": [],
+   "figuresCapturedAt": null,
+   "status": "current",
+   "contract": "custom-data-export",
+   "jiraEpic": "",
+   "featureDoc": "OGC-479, OGC-481, OGC-483",
    "scope": "manual",
-   "contract": "custom-data-export"
-  }
- ],
- "rows": [
+   "englishDrift": "review"
+  },
+  {
+   "en": "1440907275",
+   "enTitle": "Merge Patient Records",
+   "enVersion": 6,
+   "tr": "1792114741",
+   "trTitle": "Fusionner des dossiers patients",
+   "fr": "1792114741",
+   "frTitle": "Fusionner des dossiers patients",
+   "sourceVersion": 5,
+   "method": "claude",
+   "translatedAt": "2026-11-18",
+   "frenchFigures": [],
+   "figuresCapturedAt": null,
+   "status": "stale",
+   "changes": [
+    {
+     "v": 6,
+     "when": "2026-11-19",
+     "msg": "Gender is now Sex in the patient search (OGC-1362), checked on testing 3.4.0-SNAPSHOT 19 Nov 2026"
+    }
+   ],
+   "scope": "manual",
+   "englishDrift": null,
+   "change": {
+    "kind": "text",
+    "sections": [
+     "Notes",
+     "Step 1: Select the two patients"
+    ],
+    "addedOrChanged": 3,
+    "removed": 2,
+    "figuresChanged": false
+   },
+   "action": "retranslate changed sections"
+  },
+  {
+   "en": "1432649742",
+   "enTitle": "Read-only & cross-link sections",
+   "enVersion": 9,
+   "tr": "1792016419",
+   "trTitle": "Sections en lecture seule et de renvoi",
+   "fr": "1792016419",
+   "frTitle": "Sections en lecture seule et de renvoi",
+   "sourceVersion": 9,
+   "method": "claude",
+   "translatedAt": "2026-11-18",
+   "frenchFigures": [],
+   "figuresCapturedAt": null,
+   "status": "current",
+   "scope": "manual",
+   "englishDrift": null
+  },
+  {
+   "en": "1428684802",
+   "enTitle": "Label and store environmental and vector samples",
+   "enVersion": 16,
+   "tr": "1791819800",
+   "trTitle": "Étiqueter et stocker les échantillons environnementaux et vectoriels",
+   "fr": "1791819800",
+   "frTitle": "Étiqueter et stocker les échantillons environnementaux et vectoriels",
+   "sourceVersion": 16,
+   "method": "claude",
+   "translatedAt": "2026-11-18",
+   "frenchFigures": [],
+   "figuresCapturedAt": null,
+   "status": "current",
+   "contract": "label-store-shared",
+   "jiraEpic": null,
+   "featureDoc": null,
+   "scope": "manual",
+   "englishDrift": "review"
+  },
+  {
+   "en": "1442414603",
+   "enTitle": "Author the test catalog in CSV files",
+   "enVersion": 6,
+   "tr": "1791754279",
+   "trTitle": "Rédiger le catalogue de tests dans des fichiers CSV",
+   "fr": "1791754279",
+   "frTitle": "Rédiger le catalogue de tests dans des fichiers CSV",
+   "sourceVersion": 6,
+   "method": "claude",
+   "translatedAt": "2026-11-18",
+   "frenchFigures": [],
+   "figuresCapturedAt": null,
+   "status": "current",
+   "scope": "manual",
+   "englishDrift": null
+  },
+  {
+   "en": "1427275807",
+   "enTitle": "Enter results & read the compliance evaluation",
+   "enVersion": 11,
+   "tr": "1791721531",
+   "trTitle": "Saisir les résultats et lire l'évaluation de conformité",
+   "fr": "1791721531",
+   "frTitle": "Saisir les résultats et lire l'évaluation de conformité",
+   "sourceVersion": 11,
+   "method": "claude",
+   "translatedAt": "2026-11-18",
+   "frenchFigures": [],
+   "figuresCapturedAt": null,
+   "status": "current",
+   "scope": "manual",
+   "englishDrift": null
+  },
+  {
+   "en": "1790115861",
+   "enTitle": "Run a batch workplan",
+   "enVersion": 3,
+   "tr": "1791655975",
+   "trTitle": "Exécuter un plan de travail par lot",
+   "fr": "1791655975",
+   "frTitle": "Exécuter un plan de travail par lot",
+   "sourceVersion": 3,
+   "method": "claude",
+   "translatedAt": "2026-11-18",
+   "frenchFigures": [],
+   "figuresCapturedAt": null,
+   "status": "current",
+   "contract": "batch-workplan",
+   "jiraEpic": "OGC-427",
+   "featureDoc": null,
+   "scope": "manual",
+   "englishDrift": "review"
+  },
+  {
+   "en": "1427439642",
+   "enTitle": "Validate & release results",
+   "enVersion": 14,
+   "tr": "1791492115",
+   "trTitle": "Valider et libérer les résultats (FR)",
+   "fr": "1791492115",
+   "frTitle": "Valider et libérer les résultats (FR)",
+   "sourceVersion": 14,
+   "method": "claude",
+   "translatedAt": "2026-11-18",
+   "frenchFigures": [],
+   "figuresCapturedAt": null,
+   "status": "current",
+   "scope": "manual",
+   "englishDrift": null
+  },
   {
    "en": "1441136648",
    "enTitle": "Patient Management",
@@ -858,59 +297,32 @@
    "trTitle": "Gestion des patients",
    "fr": "1715929091",
    "frTitle": "Gestion des patients",
-   "sourceVersion": 6,
+   "sourceVersion": 8,
    "method": "claude",
-   "translatedAt": "2026-10-15",
+   "translatedAt": "2026-11-17",
    "frenchFigures": [
-    "02-record-view.png",
     "03-record-editing.png"
    ],
-   "figuresCapturedAt": "2026-10-15",
-   "status": "stale",
-   "changes": [
-    {
-     "v": 8,
-     "when": "2026-10-28",
-     "msg": "Cleared from review: work-in-progress note removed, labels set"
-    },
-    {
-     "v": 7,
-     "when": "2026-10-26",
-     "msg": ""
-    }
-   ],
-   "figuresStale": [
-    "03-record-editing.png"
-   ],
+   "figuresCapturedAt": "2026-11-17",
+   "status": "current",
+   "figuresStale": [],
    "contract": "patient-management",
    "jiraEpic": null,
    "featureDoc": null,
    "scope": "manual",
-   "englishDrift": "review",
-   "change": {
-    "kind": "text",
-    "sections": [
-     "(top)",
-     "Step 1: Search for a patient",
-     "Step 2: Open and edit a record"
-    ],
-    "addedOrChanged": 3,
-    "removed": 6,
-    "figuresChanged": true
-   },
-   "action": "retranslate changed sections"
+   "englishDrift": "review"
   },
   {
    "en": "1648787462",
    "enTitle": "Enter a clinical order",
-   "enVersion": 24,
+   "enVersion": 26,
    "tr": "1715732501",
    "trTitle": "Saisir une demande clinique",
    "fr": "1715732501",
    "frTitle": "Saisir une demande clinique",
-   "sourceVersion": 24,
+   "sourceVersion": 26,
    "method": "claude",
-   "translatedAt": "2026-10-15",
+   "translatedAt": "2026-11-17",
    "frenchFigures": [
     "01-enter-order-top.png",
     "02-patient-selected.png",
@@ -921,7 +333,7 @@
     "e-possible-matches.png",
     "e-sample-tests.png"
    ],
-   "figuresCapturedAt": "2026-10-15",
+   "figuresCapturedAt": "2026-11-17",
    "status": "current",
    "figuresStale": [],
    "contract": "clinical-order-enter",
@@ -963,48 +375,22 @@
    "trTitle": "Enregistrer un nouveau patient",
    "fr": "1714487306",
    "frTitle": "Enregistrer un nouveau patient",
-   "sourceVersion": 8,
+   "sourceVersion": 10,
    "method": "claude",
-   "translatedAt": "2026-10-15",
+   "translatedAt": "2026-11-17",
    "frenchFigures": [
     "01-new-patient.png",
     "02-required.png",
     "03-saved.png"
    ],
-   "figuresCapturedAt": "2026-10-15",
-   "status": "stale",
-   "changes": [
-    {
-     "v": 10,
-     "when": "2026-10-28",
-     "msg": "Cleared from review: work-in-progress note removed, labels set"
-    },
-    {
-     "v": 9,
-     "when": "2026-10-26",
-     "msg": ""
-    }
-   ],
-   "figuresStale": [
-    "01-new-patient.png"
-   ],
+   "figuresCapturedAt": "2026-11-17",
+   "status": "current",
+   "figuresStale": [],
    "contract": "register-new-patient",
    "jiraEpic": null,
    "featureDoc": null,
    "scope": "manual",
-   "englishDrift": "review",
-   "change": {
-    "kind": "text",
-    "sections": [
-     "(top)",
-     "Step 2: Enter the patient's details",
-     "Step 3: Save"
-    ],
-    "addedOrChanged": 1,
-    "removed": 4,
-    "figuresChanged": true
-   },
-   "action": "retranslate changed sections"
+   "englishDrift": "review"
   },
   {
    "en": "1047560199",
@@ -1269,29 +655,14 @@
    "trTitle": "Mettre à niveau OpenELIS 3.x et 2.x",
    "fr": "1704624217",
    "frTitle": "Mettre à niveau OpenELIS 3.x et 2.x",
-   "sourceVersion": 5,
+   "sourceVersion": 6,
    "method": "claude",
-   "translatedAt": "2026-10-20",
+   "translatedAt": "2026-11-18",
    "frenchFigures": [],
    "figuresCapturedAt": null,
-   "status": "stale",
-   "changes": [
-    {
-     "v": 6,
-     "when": "2026-11-12",
-     "msg": "Point install links to the merged Install OpenELIS Global page"
-    }
-   ],
+   "status": "current",
    "scope": "ops",
-   "englishDrift": null,
-   "change": {
-    "kind": "none",
-    "sections": [],
-    "addedOrChanged": 0,
-    "removed": 0,
-    "figuresChanged": false
-   },
-   "action": "bump version only"
+   "englishDrift": null
   },
   {
    "en": "991821864",
@@ -1400,15 +771,15 @@
   },
   {
    "en": "1653604361",
-   "enTitle": "Results Entry (legacy screen)",
-   "enVersion": 3,
+   "enTitle": "Results Entry (legacy screen, before 3.3.0)",
+   "enVersion": 5,
    "tr": "1704493073",
-   "trTitle": "Saisie des résultats (ancien écran)",
+   "trTitle": "Saisie des résultats (ancien écran, avant la 3.3.0)",
    "fr": "1704493073",
-   "frTitle": "Saisie des résultats (ancien écran)",
-   "sourceVersion": 3,
+   "frTitle": "Saisie des résultats (ancien écran, avant la 3.3.0)",
+   "sourceVersion": 5,
    "method": "claude",
-   "translatedAt": "2026-10-09",
+   "translatedAt": "2026-11-17",
    "frenchFigures": [],
    "figuresCapturedAt": null,
    "status": "current",
@@ -1559,37 +930,14 @@
    "trTitle": "⚙️ Pour les administrateurs système et exploitants",
    "fr": "1704198262",
    "frTitle": "⚙️ Pour les administrateurs système et exploitants",
-   "sourceVersion": 5,
+   "sourceVersion": 7,
    "method": "claude",
-   "translatedAt": "2026-10-09",
+   "translatedAt": "2026-11-17",
    "frenchFigures": [],
    "figuresCapturedAt": null,
-   "status": "stale",
-   "changes": [
-    {
-     "v": 7,
-     "when": "2026-11-12",
-     "msg": "Consolidated Server links follow the renamed child pages"
-    },
-    {
-     "v": 6,
-     "when": "2026-11-12",
-     "msg": "Link every page in this section"
-    }
-   ],
+   "status": "current",
    "scope": "landing",
-   "englishDrift": null,
-   "change": {
-    "kind": "text",
-    "sections": [
-     "Consolidated Server operations",
-     "Monitoring"
-    ],
-    "addedOrChanged": 5,
-    "removed": 3,
-    "figuresChanged": false
-   },
-   "action": "retranslate changed sections"
+   "englishDrift": null
   },
   {
    "en": "1326252042",
@@ -1599,57 +947,14 @@
    "trTitle": "🚀 Pour l'équipe de mise en œuvre",
    "fr": "1704198242",
    "frTitle": "🚀 Pour l'équipe de mise en œuvre",
-   "sourceVersion": 4,
+   "sourceVersion": 9,
    "method": "claude",
-   "translatedAt": "2026-10-09",
+   "translatedAt": "2026-11-17",
    "frenchFigures": [],
    "figuresCapturedAt": null,
-   "status": "stale",
-   "changes": [
-    {
-     "v": 9,
-     "when": "2026-11-12",
-     "msg": "Link External Referrals"
-    },
-    {
-     "v": 8,
-     "when": "2026-11-12",
-     "msg": "Link the implementations page"
-    },
-    {
-     "v": 7,
-     "when": "2026-11-12",
-     "msg": "Link every page in this section"
-    },
-    {
-     "v": 6,
-     "when": "2026-11-12",
-     "msg": "Colons instead of dashes in the integration list"
-    },
-    {
-     "v": 5,
-     "when": "2026-11-12",
-     "msg": "Integrate renamed to External Integrations, linking the current guides"
-    }
-   ],
+   "status": "current",
    "scope": "landing",
-   "englishDrift": null,
-   "change": {
-    "kind": "text",
-    "sections": [
-     "2. Install",
-     "3. Configure for your context",
-     "4. External Integrations",
-     "4. Integrate",
-     "6. Operate and maintain",
-     "Country implementation examples",
-     "Where to get help"
-    ],
-    "addedOrChanged": 21,
-    "removed": 4,
-    "figuresChanged": false
-   },
-   "action": "retranslate changed sections"
+   "englishDrift": null
   },
   {
    "en": "1439170565",
@@ -1774,40 +1079,22 @@
   {
    "en": "1661763585",
    "enTitle": "Triage and release results",
-   "enVersion": 24,
+   "enVersion": 26,
    "tr": "1703641250",
    "trTitle": "Trier et libérer les résultats",
    "fr": "1703641250",
    "frTitle": "Trier et libérer les résultats",
-   "sourceVersion": 23,
+   "sourceVersion": 26,
    "method": "claude",
-   "translatedAt": "2026-10-09",
+   "translatedAt": "2026-11-17",
    "frenchFigures": [],
    "figuresCapturedAt": null,
-   "status": "stale",
-   "changes": [
-    {
-     "v": 24,
-     "when": "2026-11-01",
-     "msg": "3.3.0 released: drop 'not yet released' wording"
-    }
-   ],
+   "status": "current",
    "contract": "validation-v4",
    "jiraEpic": "OGC-817",
    "featureDoc": "OGC-1229",
    "scope": "manual",
-   "englishDrift": "review",
-   "change": {
-    "kind": "text",
-    "sections": [
-     "(top)",
-     "Provenance"
-    ],
-    "addedOrChanged": 2,
-    "removed": 2,
-    "figuresChanged": false
-   },
-   "action": "retranslate changed sections"
+   "englishDrift": "review"
   },
   {
    "en": "1530855471",
@@ -1885,35 +1172,17 @@
    "trTitle": "Admin : Gérer les structures (organisations)",
    "fr": "1703313492",
    "frTitle": "Admin : Gérer les structures (organisations)",
-   "sourceVersion": 13,
+   "sourceVersion": 14,
    "method": "claude",
-   "translatedAt": "2026-10-20",
+   "translatedAt": "2026-11-17",
    "frenchFigures": [],
    "figuresCapturedAt": null,
-   "status": "stale",
-   "changes": [
-    {
-     "v": 14,
-     "when": "2026-11-01",
-     "msg": "3.3.0 released: drop 'not yet released' wording"
-    }
-   ],
+   "status": "current",
    "contract": "organization-management-330",
    "jiraEpic": "OGC-1363",
    "featureDoc": "OGC-1414",
    "scope": "manual",
-   "englishDrift": "review",
-   "change": {
-    "kind": "text",
-    "sections": [
-     "(top)",
-     "Provenance"
-    ],
-    "addedOrChanged": 2,
-    "removed": 1,
-    "figuresChanged": false
-   },
-   "action": "retranslate changed sections"
+   "englishDrift": "review"
   },
   {
    "en": "1530953734",
@@ -1957,37 +1226,17 @@
    "trTitle": "Admin : Données de référence de la surveillance vectorielle",
    "fr": "1703051362",
    "frTitle": "Admin : Données de référence de la surveillance vectorielle",
-   "sourceVersion": 7,
+   "sourceVersion": 8,
    "method": "claude",
-   "translatedAt": "2026-10-09",
+   "translatedAt": "2026-11-17",
    "frenchFigures": [],
    "figuresCapturedAt": null,
-   "status": "stale",
-   "changes": [
-    {
-     "v": 8,
-     "when": "2026-11-01",
-     "msg": "3.3.0: sampling sites moved to Locations & Organizations; old figure removed; em dashes removed from body"
-    }
-   ],
+   "status": "current",
    "contract": "admin-vector-reference-data",
    "jiraEpic": null,
    "featureDoc": null,
    "scope": "manual",
-   "englishDrift": "review",
-   "change": {
-    "kind": "text",
-    "sections": [
-     "(top)",
-     "At a glance",
-     "Manage sampling sites",
-     "Related"
-    ],
-    "addedOrChanged": 6,
-    "removed": 4,
-    "figuresChanged": true
-   },
-   "action": "retranslate changed sections"
+   "englishDrift": "review"
   },
   {
    "en": "1439072261",
@@ -2014,29 +1263,14 @@
    "trTitle": "Configuration de la sauvegarde",
    "fr": "1702756459",
    "frTitle": "Configuration de la sauvegarde",
-   "sourceVersion": 6,
+   "sourceVersion": 7,
    "method": "claude",
-   "translatedAt": "2026-10-20",
+   "translatedAt": "2026-11-18",
    "frenchFigures": [],
    "figuresCapturedAt": null,
-   "status": "stale",
-   "changes": [
-    {
-     "v": 7,
-     "when": "2026-11-12",
-     "msg": "Point install links to the merged Install OpenELIS Global page"
-    }
-   ],
+   "status": "current",
    "scope": "ops",
-   "englishDrift": null,
-   "change": {
-    "kind": "none",
-    "sections": [],
-    "addedOrChanged": 0,
-    "removed": 0,
-    "figuresChanged": false
-   },
-   "action": "bump version only"
+   "englishDrift": null
   },
   {
    "en": "1187840003",
@@ -2058,47 +1292,22 @@
   {
    "en": "1428881409",
    "enTitle": "The three order domains",
-   "enVersion": 5,
+   "enVersion": 7,
    "tr": "1702756419",
-   "trTitle": "Les trois domaines et l'assistant de saisie des demandes commun",
+   "trTitle": "Les trois domaines de demande",
    "fr": "1702756419",
-   "frTitle": "Les trois domaines et l'assistant de saisie des demandes commun",
-   "sourceVersion": 4,
+   "frTitle": "Les trois domaines de demande",
+   "sourceVersion": 7,
    "method": "claude",
-   "translatedAt": "2026-10-09",
+   "translatedAt": "2026-11-18",
    "frenchFigures": [],
    "figuresCapturedAt": null,
-   "status": "stale",
-   "changes": [
-    {
-     "v": 5,
-     "when": "2026-11-07",
-     "msg": "Rewritten for 3.4.0 order entry (Enter Order, Prepare Samples, Sample check; Label & Store and Sample check for environm"
-    }
-   ],
+   "status": "current",
    "contract": "domains-concept",
    "jiraEpic": null,
    "featureDoc": null,
    "scope": "manual",
-   "englishDrift": "ok",
-   "change": {
-    "kind": "text",
-    "sections": [
-     "(top)",
-     "In short",
-     "Lab units and domains",
-     "Not yet verified",
-     "Provenance",
-     "Related",
-     "The steps in each domain",
-     "What all three share",
-     "What differs by domain"
-    ],
-    "addedOrChanged": 53,
-    "removed": 8,
-    "figuresChanged": false
-   },
-   "action": "retranslate changed sections"
+   "englishDrift": "ok"
   },
   {
    "en": "1047527443",
@@ -2140,7 +1349,7 @@
   {
    "en": "1440350210",
    "enTitle": "Find an existing order",
-   "enVersion": 6,
+   "enVersion": 7,
    "tr": "1702232134",
    "trTitle": "Trouver une demande d'analyse existante",
    "fr": "1702232134",
@@ -2150,9 +1359,30 @@
    "translatedAt": "2026-10-09",
    "frenchFigures": [],
    "figuresCapturedAt": null,
-   "status": "current",
+   "status": "stale",
+   "changes": [
+    {
+     "v": 7,
+     "when": "2026-11-19",
+     "msg": "Gender is now Sex in the patient search (OGC-1362), checked on testing 3.4.0-SNAPSHOT 19 Nov 2026; em dashes removed fro"
+    }
+   ],
    "scope": "manual",
-   "englishDrift": null
+   "englishDrift": null,
+   "change": {
+    "kind": "text",
+    "sections": [
+     "Field reference",
+     "Step 1 — Search by accession number",
+     "Step 1: Search by accession number",
+     "Step 2 — Or search by patient",
+     "Step 2: Or search by patient"
+    ],
+    "addedOrChanged": 5,
+    "removed": 5,
+    "figuresChanged": false
+   },
+   "action": "retranslate changed sections"
   },
   {
    "en": "52560162",
@@ -2162,37 +1392,14 @@
    "trTitle": "Accueil OpenELIS Global (français)",
    "fr": "1701970059",
    "frTitle": "Accueil OpenELIS Global (français)",
-   "sourceVersion": 30,
+   "sourceVersion": 32,
    "method": "claude",
-   "translatedAt": "2026-10-09",
+   "translatedAt": "2026-11-18",
    "frenchFigures": [],
    "figuresCapturedAt": null,
-   "status": "stale",
-   "changes": [
-    {
-     "v": 32,
-     "when": "2026-11-12",
-     "msg": "docs.openelis-global.org is no longer published; the wiki is the documentation"
-    },
-    {
-     "v": 31,
-     "when": "2026-11-12",
-     "msg": "Implementers card links External Integrations and the country implementations"
-    }
-   ],
+   "status": "current",
    "scope": "landing",
-   "englishDrift": null,
-   "change": {
-    "kind": "text",
-    "sections": [
-     "Where the community lives",
-     "🚀 For Implementers"
-    ],
-    "addedOrChanged": 1,
-    "removed": 2,
-    "figuresChanged": false
-   },
-   "action": "retranslate changed sections"
+   "englishDrift": null
   },
   {
    "en": "1427931149",
@@ -2423,140 +1630,34 @@
    "trTitle": "Installer OpenELIS Global",
    "fr": "1701281856",
    "frTitle": "Installer OpenELIS Global",
-   "sourceVersion": 17,
+   "sourceVersion": 25,
    "method": "claude",
-   "translatedAt": "2026-10-20",
+   "translatedAt": "2026-11-18",
    "frenchFigures": [],
    "figuresCapturedAt": null,
-   "status": "stale",
-   "changes": [
-    {
-     "v": 25,
-     "when": "2026-11-12",
-     "msg": "Light stack: link External Integrations and say where .env is"
-    },
-    {
-     "v": 24,
-     "when": "2026-11-12",
-     "msg": "Troubleshooting rows match the prepackaged offline installer"
-    },
-    {
-     "v": 23,
-     "when": "2026-11-12",
-     "msg": "Merge the eight install child pages into one page with linkable sections"
-    },
-    {
-     "v": 22,
-     "when": "2026-11-09",
-     "msg": "Match openelis-docker main after 6 Nov 2026: online install settings, first login, first upgrade, key backup. Offline 3."
-    },
-    {
-     "v": 21,
-     "when": "2026-10-29",
-     "msg": "OGC-1546: Full or light stack section"
-    },
-    {
-     "v": 20,
-     "when": "2026-10-29",
-     "msg": "OGC-1546: mention the light install (no FHIR server, no analyser Bridge)"
-    },
-    {
-     "v": 19,
-     "when": "2026-10-29",
-     "msg": "OGC-1546: offline install downloads the prepackaged installer from the openelis-docker releases"
-    },
-    {
-     "v": 18,
-     "when": "2026-10-26",
-     "msg": "26 Oct: what changed for the current openelis-docker; latest release 3.3.0; analyser ports"
-    }
-   ],
+   "status": "current",
    "scope": "ops",
-   "englishDrift": null,
-   "change": {
-    "kind": "text",
-    "sections": [
-     "(top)",
-     "1. Choose the release",
-     "2. Download the package (computer with internet)",
-     "3. Load it on the lab server",
-     "Analysers",
-     "Analysers set up before 3.3.0",
-     "At a glance",
-     "Back up",
-     "Back up and restore",
-     "Backups",
-     "Before the first start",
-     "Certificate",
-     "Certificates",
-     "Check it works",
-     "Check renewal works",
-     "Choose how to install",
-     "Configure and start",
-     "Connect to other systems (optional)",
-     "Create the copy script",
-     "Database passwords",
-     "Encryption key and analyser pairing code",
-     "First upgrade after 6 November 2026",
-     "Full or light stack",
-     "Full stack or light stack?",
-     "Get OpenELIS",
-     "Get the certificate",
-     "HTTPS certificate",
-     "Install Docker",
-     "Install Ubuntu Server",
-     "Install and start",
-     "Install certbot",
-     "Install in four steps",
-     "Keep internal ports off the network",
-     "Later upgrades",
-     "Login",
-     "Network ports",
-     "Offline install",
-     "Offline install (3.3.0 package)",
-     "Older installer package",
-     "Online install",
-     "Online install: also back up the keys",
-     "Online install: settings file and passwords",
-     "Point OpenELIS at it",
-     "Prepare the server",
-     "Restore the database",
-     "Start OpenELIS",
-     "Stop or remove",
-     "Time zone",
-     "Troubleshooting",
-     "Update and set the time zone",
-     "Upgrade an offline install",
-     "Upgrade an online install",
-     "Upgrade or remove",
-     "Upgrades",
-     "Use a certificate you already have",
-     "Use a free Let's Encrypt certificate",
-     "What you need",
-     "Where things are"
-    ],
-    "addedOrChanged": 393,
-    "removed": 10,
-    "figuresChanged": false
-   },
-   "action": "retranslate changed sections"
+   "englishDrift": null
   },
   {
    "en": "1438842886",
-   "enTitle": "Admin — Define calculated value tests",
-   "enVersion": 6,
+   "enTitle": "Admin: Define calculated value tests",
+   "enVersion": 8,
    "tr": "1700266072",
    "trTitle": "Admin : Définir des analyses calculées",
    "fr": "1700266072",
    "frTitle": "Admin : Définir des analyses calculées",
-   "sourceVersion": 6,
+   "sourceVersion": 8,
    "method": "claude",
-   "translatedAt": "2026-10-09",
+   "translatedAt": "2026-11-18",
    "frenchFigures": [],
    "figuresCapturedAt": null,
    "status": "current",
+   "contract": "calculated-value-tests",
+   "jiraEpic": "OGC-1587",
+   "featureDoc": null,
    "scope": "manual",
-   "englishDrift": null
+   "englishDrift": "ok"
   },
   {
    "en": "239337475",
@@ -2600,33 +1701,14 @@
    "trTitle": "NAVIGUER DANS OpenELIS LIMS",
    "fr": "1643937869",
    "frTitle": "NAVIGUER DANS OpenELIS LIMS",
-   "sourceVersion": 4,
+   "sourceVersion": 5,
    "method": "claude",
-   "translatedAt": "2026-10-09",
+   "translatedAt": "2026-11-18",
    "frenchFigures": [],
    "figuresCapturedAt": null,
-   "status": "stale",
-   "changes": [
-    {
-     "v": 5,
-     "when": "2026-11-12",
-     "msg": "Cleanup: duplicate content kept in one place"
-    }
-   ],
+   "status": "current",
    "scope": "manual",
-   "englishDrift": null,
-   "change": {
-    "kind": "text",
-    "sections": [
-     "(top)",
-     "How to login to OpenELIS",
-     "Overview"
-    ],
-    "addedOrChanged": 1,
-    "removed": 7,
-    "figuresChanged": true
-   },
-   "action": "retranslate changed sections"
+   "englishDrift": null
   },
   {
    "en": "273285123",
@@ -2670,38 +1752,17 @@
    "trTitle": "Gérer les modèles d'étiquettes",
    "fr": "1643905025",
    "frTitle": "Gérer les modèles d'étiquettes",
-   "sourceVersion": 13,
+   "sourceVersion": 14,
    "method": "claude",
-   "translatedAt": "2026-10-20",
+   "translatedAt": "2026-11-17",
    "frenchFigures": [],
    "figuresCapturedAt": null,
-   "status": "stale",
-   "changes": [
-    {
-     "v": 14,
-     "when": "2026-10-21",
-     "msg": ""
-    }
-   ],
+   "status": "current",
    "contract": "label-presets",
    "jiraEpic": "",
    "featureDoc": "OGC-1217, OGC-1218",
    "scope": "manual",
-   "englishDrift": "review",
-   "change": {
-    "kind": "text",
-    "sections": [
-     "(top)",
-     "Site-wide barcode settings",
-     "Step 1: Open Label Presets",
-     "Step 2: Add a preset",
-     "System presets and their content fields"
-    ],
-    "addedOrChanged": 1,
-    "removed": 10,
-    "figuresChanged": true
-   },
-   "action": "retranslate changed sections"
+   "englishDrift": "review"
   },
   {
    "en": "257097754",
@@ -2825,14 +1886,14 @@
   {
    "en": "272760837",
    "enTitle": "Print a work plan",
-   "enVersion": 7,
+   "enVersion": 8,
    "tr": "1643675716",
    "trTitle": "Imprimer un plan de travail",
    "fr": "1643675716",
    "frTitle": "Imprimer un plan de travail",
-   "sourceVersion": 7,
+   "sourceVersion": 8,
    "method": "claude",
-   "translatedAt": "2026-10-20",
+   "translatedAt": "2026-11-18",
    "frenchFigures": [],
    "figuresCapturedAt": null,
    "status": "current",
@@ -3182,8 +2243,11 @@
    "frenchFigures": [],
    "figuresCapturedAt": null,
    "status": "current",
+   "contract": "environmental-surveillance",
+   "jiraEpic": null,
+   "featureDoc": null,
    "scope": "manual",
-   "englishDrift": null
+   "englishDrift": "error"
   },
   {
    "en": "1427898389",
@@ -3199,8 +2263,11 @@
    "frenchFigures": [],
    "figuresCapturedAt": null,
    "status": "current",
+   "contract": "vector-surveillance",
+   "jiraEpic": null,
+   "featureDoc": null,
    "scope": "manual",
-   "englishDrift": null
+   "englishDrift": "review"
   },
   {
    "en": "261521410",
@@ -3255,15 +2322,15 @@
   },
   {
    "en": "1427505177",
-   "enTitle": "Generate a compliance certificate",
-   "enVersion": 8,
+   "enTitle": "Generate a compliance certificate or results report",
+   "enVersion": 10,
    "tr": "1641840681",
-   "trTitle": "Générer un certificat de conformité",
+   "trTitle": "Générer un certificat de conformité ou un rapport de résultats",
    "fr": "1641840681",
-   "frTitle": "Générer un certificat de conformité",
-   "sourceVersion": 8,
+   "frTitle": "Générer un certificat de conformité ou un rapport de résultats",
+   "sourceVersion": 10,
    "method": "claude",
-   "translatedAt": "2026-10-09",
+   "translatedAt": "2026-11-18",
    "frenchFigures": [],
    "figuresCapturedAt": null,
    "status": "current",
@@ -3271,7 +2338,7 @@
    "jiraEpic": null,
    "featureDoc": null,
    "scope": "manual",
-   "englishDrift": "drift"
+   "englishDrift": "ok"
   },
   {
    "en": "1437532161",
@@ -3298,130 +2365,240 @@
    "trTitle": "Effectuer la vérification de l'échantillon d'une demande environnementale ou vectorielle",
    "fr": "1641447513",
    "frTitle": "Effectuer la vérification de l'échantillon d'une demande environnementale ou vectorielle",
-   "sourceVersion": 13,
+   "sourceVersion": 14,
    "method": "claude",
-   "translatedAt": "2026-10-20",
+   "translatedAt": "2026-11-17",
    "frenchFigures": [],
    "figuresCapturedAt": null,
-   "status": "stale",
-   "changes": [
-    {
-     "v": 14,
-     "when": "2026-10-28",
-     "msg": "Cleared from review: work-in-progress note removed, labels set"
-    }
-   ],
+   "status": "current",
    "contract": "qa-review-shared",
    "jiraEpic": null,
    "featureDoc": null,
    "scope": "manual",
-   "englishDrift": "review",
-   "change": {
-    "kind": "text",
-    "sections": [
-     "(top)",
-     "Provenance"
-    ],
-    "addedOrChanged": 2,
-    "removed": 3,
-    "figuresChanged": false
-   },
-   "action": "retranslate changed sections"
+   "englishDrift": "review"
   },
   {
    "en": "1326972929",
    "enTitle": "📖 User Manual",
-   "enVersion": 25,
+   "enVersion": 31,
    "tr": "1641447437",
    "trTitle": "📖 Manuel de l'utilisateur",
    "fr": "1641447437",
    "frTitle": "📖 Manuel de l'utilisateur",
-   "sourceVersion": 21,
+   "sourceVersion": 31,
    "method": "claude",
-   "translatedAt": "2026-10-20",
+   "translatedAt": "2026-11-19",
    "frenchFigures": [],
    "figuresCapturedAt": null,
-   "status": "stale",
-   "changes": [
-    {
-     "v": 25,
-     "when": "2026-11-07",
-     "msg": "The three order domains (1428881409) rewritten for 3.4.0; row marked In review."
-    },
-    {
-     "v": 24,
-     "when": "2026-10-28",
-     "msg": "Landing: In review removed for 12 cleared pages"
-    },
-    {
-     "v": 23,
-     "when": "2026-10-22",
-     "msg": "QA, notifications and report header pages added (in review)"
-    },
-    {
-     "v": 22,
-     "when": "2026-10-22",
-     "msg": "New 3.3.0 pages added (in review)"
-    }
-   ],
+   "status": "current",
    "scope": "landing",
-   "englishDrift": null,
-   "change": {
-    "kind": "text",
-    "sections": [
-     "(top)",
-     "Environmental surveillance",
-     "Inventory",
-     "Orders and samples",
-     "Pathology, immunohistochemistry and cytology",
-     "Programs, rules and notifications",
-     "Quality assurance",
-     "Results, validation and reports",
-     "Site and system settings",
-     "Test catalog",
-     "Users, organizations and providers"
-    ],
-    "addedOrChanged": 39,
-    "removed": 15,
-    "figuresChanged": false
-   },
-   "action": "retranslate changed sections"
+   "englishDrift": null
   }
  ],
- "summary": "French: 117 pairs, 101 current, 16 stale, 0 orphan/unknown, 10 tracked pages with no French. 5 pages with French screenshots, 2 with French screenshots older than the English. Tree: 133 in place, 0 misplaced, 0 English parents with no French twin. Labels: 105 pages quote bold text that is not a French UI string (3 new since baseline).",
+ "summary": "French: 127 pairs, 125 current, 2 stale, 0 orphan/unknown, 0 tracked pages with no French. 5 pages with French screenshots, 0 with French screenshots older than the English. Tree: 143 in place, 0 misplaced, 0 English parents with no French twin. Labels: 115 pages quote bold text that is not a French UI string (0 new since baseline).",
  "frenchFigurePages": 5,
- "figuresStaleRows": [
-  {
-   "en": "1441136648",
-   "fr": "1715929091",
-   "tr": "1715929091",
-   "enTitle": "Patient Management",
-   "figures": [
-    "03-record-editing.png"
-   ]
-  },
-  {
-   "en": "1440841760",
-   "fr": "1714487306",
-   "tr": "1714487306",
-   "enTitle": "Register a New Patient",
-   "figures": [
-    "01-new-patient.png"
-   ]
-  }
- ],
- "driftReportAt": "2026-11-14T09:42:19.459Z",
+ "figuresStaleRows": [],
+ "driftReportAt": "2026-11-21T09:41:27.537Z",
  "tree": {
-  "checkedAt": "2026-11-14T09:43:57Z",
-  "inPlace": 133,
+  "checkedAt": "2026-11-21T09:42:56Z",
+  "inPlace": 143,
   "misplaced": [],
   "unmappedParents": {}
  },
  "labels": {
-  "pagesWithUnknownLabels": 105,
-  "pagesWithNewUnknownLabels": 3,
+  "pagesWithUnknownLabels": 115,
+  "pagesWithNewUnknownLabels": 0,
   "baselineCreated": false,
   "rows": [
+   {
+    "fr": "1792770052",
+    "frTitle": "Admin : Importer et exporter des lieux",
+    "tr": "1792770052",
+    "trTitle": "Admin : Importer et exporter des lieux",
+    "notInUi": [
+     "1. Fichiers",
+     "2. Mode d'importation",
+     "3.3.0-SNAPSHOT",
+     "OpenELIS 3.3.0.",
+     "Télécharger le modèle · Niveaux géographiques",
+     "Télécharger le modèle · Zones géographiques",
+     "Télécharger le modèle · Établissements, services et sites",
+     "doc-verified",
+     "verified-v3.4.0"
+    ],
+    "newSinceBaseline": []
+   },
+   {
+    "fr": "1792442394",
+    "frTitle": "Importer un catalogue de tests à partir de fichiers CSV",
+    "tr": "1792442394",
+    "trTitle": "Importer un catalogue de tests à partir de fichiers CSV",
+    "notInUi": [
+     "Appliquer de nouveau les mêmes fichiers est sans risque.",
+     "Enregistrez en UTF-8 sans indicateur d'ordre des octets.",
+     "Faites un aperçu avant d'appliquer.",
+     "Le domaine est lu au début du nom du fichier.",
+     "Les noms de panels sont limités à 20 caractères",
+     "Nommez les fichiers d'après leur domaine.",
+     "Une importation ne supprime jamais rien.",
+     "doc-verified",
+     "sans",
+     "verified-v3.3.0"
+    ],
+    "newSinceBaseline": []
+   },
+   {
+    "fr": "1792376865",
+    "frTitle": "Export de données personnalisé et Ma file de rapports",
+    "tr": "1792376865",
+    "trTitle": "Export de données personnalisé et Ma file de rapports",
+    "notInUi": [
+     "3.3.0-SNAPSHOT",
+     "OpenELIS 3.3.0.",
+     "Vos colonnes CSV",
+     "doc-verified",
+     "verified-v3.4.0"
+    ],
+    "newSinceBaseline": []
+   },
+   {
+    "fr": "1792114741",
+    "frTitle": "Fusionner des dossiers patients",
+    "tr": "1792114741",
+    "trTitle": "Fusionner des dossiers patients",
+    "notInUi": [
+     "doc-verified",
+     "verified-v3.3.0"
+    ],
+    "newSinceBaseline": []
+   },
+   {
+    "fr": "1792016419",
+    "frTitle": "Sections en lecture seule et de renvoi",
+    "tr": "1792016419",
+    "trTitle": "Sections en lecture seule et de renvoi",
+    "notInUi": [
+     "doc-verified",
+     "verified-v3.4.0"
+    ],
+    "newSinceBaseline": []
+   },
+   {
+    "fr": "1791819800",
+    "frTitle": "Étiqueter et stocker les échantillons environnementaux et vectoriels",
+    "tr": "1791819800",
+    "trTitle": "Étiqueter et stocker les échantillons environnementaux et vectoriels",
+    "notInUi": [
+     "3.3.0-SNAPSHOT",
+     "OpenELIS 3.3.0.",
+     "Passer le stockage pour les échantillons non assignés",
+     "doc-verified",
+     "verified-v3.4.0"
+    ],
+    "newSinceBaseline": []
+   },
+   {
+    "fr": "1791754279",
+    "frTitle": "Rédiger le catalogue de tests dans des fichiers CSV",
+    "tr": "1791754279",
+    "trTitle": "Rédiger le catalogue de tests dans des fichiers CSV",
+    "notInUi": [
+     "Ajouter une ligne",
+     "Exemple de ligne :",
+     "Exemples de lignes :",
+     "Exemples de lignes : trois formes courantes :",
+     "L'analyse apparaît mais n'a pas de champ de résultat.",
+     "Ligne ignorée sans message au redémarrage.",
+     "Modifications non prises en compte après le redémarrage.",
+     "Modifier une ligne",
+     "Où",
+     "Qui s'en charge",
+     "Renommer la clé naturelle d'une ligne",
+     "Référence des types de résultat :",
+     "Résultat obtenu",
+     "Supprimer une ligne",
+     "Un code LOINC « trouvé » par un LLM se révèle inventé.",
+     "deux catégories de dictionnaire",
+     "deux types d'échantillons",
+     "deux unités de laboratoire",
+     "doc-verified",
+     "pas",
+     "quatre analyses",
+     "ressemble le résultat",
+     "type(s) d'échantillon",
+     "une analyse OpenELIS par type d'échantillon",
+     "uniquement",
+     "verified-v3.4.0",
+     "Étape 1 : vérifiez que l'unité de laboratoire existe.",
+     "Étape 2 : vérifiez que le type d'échantillon existe.",
+     "Étape 3 : assurez-vous que la catégorie de résultat existe.",
+     "Étape 4 : ajoutez l'analyse dans",
+     "Étape 5 : liez la forme du résultat dans",
+     "Étape 6 : redémarrez le conteneur webapp."
+    ],
+    "newSinceBaseline": []
+   },
+   {
+    "fr": "1791721531",
+    "frTitle": "Saisir les résultats et lire l'évaluation de conformité",
+    "tr": "1791721531",
+    "trTitle": "Saisir les résultats et lire l'évaluation de conformité",
+    "notInUi": [
+     "Statut - Conformément au règlement",
+     "doc-verified",
+     "verified-v3.4.0"
+    ],
+    "newSinceBaseline": []
+   },
+   {
+    "fr": "1791655975",
+    "frTitle": "Exécuter un plan de travail par lot",
+    "tr": "1791655975",
+    "trTitle": "Exécuter un plan de travail par lot",
+    "notInUi": [
+     "Batch name (optional)",
+     "Batches",
+     "Bench (no analyzer)",
+     "Créer un lot",
+     "Generate workplan",
+     "Go back",
+     "Last QC",
+     "Last QC run",
+     "NCE:",
+     "Needs setup",
+     "Next QC due",
+     "No control lot",
+     "Order date",
+     "Order date from",
+     "Order date to",
+     "Performed by",
+     "Print workplan",
+     "Proceed and create NCE",
+     "QC history",
+     "QC not current for batch",
+     "QC overdue",
+     "QC status",
+     "Reagent and QC",
+     "Reagent lot",
+     "Reason for releasing without passing QC",
+     "Run QC",
+     "Save reagent and lot",
+     "Tests in this batch",
+     "Travail en cours."
+    ],
+    "newSinceBaseline": []
+   },
+   {
+    "fr": "1791492115",
+    "frTitle": "Valider et libérer les résultats (FR)",
+    "tr": "1791492115",
+    "trTitle": "Valider et libérer les résultats (FR)",
+    "notInUi": [
+     "doc-verified",
+     "verified-v3.4.0"
+    ],
+    "newSinceBaseline": []
+   },
    {
     "fr": "1715929091",
     "frTitle": "Gestion des patients",
@@ -3429,7 +2606,8 @@
     "trTitle": "Gestion des patients",
     "notInUi": [
      "3.3.0-SNAPSHOT",
-     "Travail en cours."
+     "doc-verified",
+     "verified-v3.4.0"
     ],
     "newSinceBaseline": []
    },
@@ -3443,17 +2621,19 @@
      "+ Add new provider \"…\"",
      "Add at least one sample type, and its tests if known.",
      "Add clinical information (optional).",
+     "Cette page décrit OpenELIS 3.3.0.",
      "Check any possible matches.",
      "Check the lab number.",
      "Choose a program, if your site uses them.",
      "Find the patient.",
      "Identify the provider.",
      "Identify the requesting site.",
+     "Keep the test",
      "Or register a new patient.",
+     "Remove a test that has results",
      "Save.",
      "Scan barcode or enter lab number",
      "Set sample handling if it applies.",
-     "This page describes OpenELIS 3.3.0.",
      "To continue to Prepare Samples",
      "Work in progress."
     ],
@@ -3485,7 +2665,8 @@
      "Patient age required",
      "Patient sex required",
      "Primary phone",
-     "Travail en cours."
+     "doc-verified",
+     "verified-v3.4.0"
     ],
     "newSinceBaseline": []
    },
@@ -3824,10 +3005,11 @@
    },
    {
     "fr": "1704493073",
-    "frTitle": "Saisie des résultats (ancien écran)",
+    "frTitle": "Saisie des résultats (ancien écran, avant la 3.3.0)",
     "tr": "1704493073",
-    "trTitle": "Saisie des résultats (ancien écran)",
+    "trTitle": "Saisie des résultats (ancien écran, avant la 3.3.0)",
     "notInUi": [
+     "Ancienne page.",
      "Cette page décrit les anciens écrans de saisie des résultats",
      "Main Menu",
      "Recherche par ordonnance",
@@ -3933,14 +3115,14 @@
      "Coffre 1Password",
      "Configuration des sauvegardes",
      "Dépannage",
-     "Déployer le serveur consolidé",
      "GitHub Issues",
      "Mettre en place la haute disponibilité et le basculement",
      "Mettre à niveau OpenELIS 3.x et 2.x",
      "Migration des mots de passe",
      "Mise à jour d'OpenELIS Global 1.x vers 2.x",
      "Mise à niveau de 2.x vers 2.7",
-     "OpenELIS Talk"
+     "OpenELIS Talk",
+     "Supervision d'OpenELIS"
     ],
     "newSinceBaseline": []
    },
@@ -3951,21 +3133,36 @@
     "trTitle": "🚀 Pour l'équipe de mise en œuvre",
     "notInUi": [
      "AHRI : Éthiopie",
+     "Authentification unique (Keycloak)",
      "Bonnes pratiques de mise en œuvre",
      "Comment traduire OpenELIS",
      "Configuration Initializer",
-     "Configuration de l'authentification unique (SSO)",
+     "Configuration de la sauvegarde",
+     "Configurer la haute disponibilité avec basculement",
      "DIGI-UW/OpenELIS-Global-2 GitHub",
+     "Enregistrement dans le registre des établissements (GOFR)",
+     "Envois externes (d'OpenELIS à OpenELIS)",
      "Exigences techniques des serveurs et postes de travail",
+     "Guide d'implémentation FHIR",
+     "Importation de la liste des établissements (GOFR / FHIR)",
      "Installer OpenELIS Global",
-     "Intégration OpenELIS : Odoo",
-     "Intégration avec OpenMRS",
+     "Intégrations externes",
      "Madagascar",
      "Mettre à niveau OpenELIS 3.x et 2.x",
+     "Migration des mots de passe",
+     "Mise à niveau d'OpenELIS Global 1.x vers 2.x",
      "Mise à niveau de 2.x vers 2.7",
+     "Notifications SMTP, e-mail et SMS",
+     "Odoo – OpenELIS",
+     "OpenELIS Global : référence complète des droits d'accès",
+     "OpenMRS – OpenELIS",
      "Pour le personnel de laboratoire",
      "Problèmes d'exploitation après la mise en service",
+     "Registre des clients (OpenCR / FHIR)",
+     "Registre des prescripteurs (FHIR)",
      "SILNAS : Indonésie",
+     "Serveur consolidé OpenELIS",
+     "appel des équipes de mise en œuvre d'OpenELIS",
      "talk.openelis-global.org"
     ],
     "newSinceBaseline": []
@@ -4091,36 +3288,27 @@
     "tr": "1703641250",
     "trTitle": "Trier et libérer les résultats",
     "notInUi": [
-     "Avis",
-     "Consultez cette analyse",
-     "Date of Birth",
-     "Effacer : 3",
-     "Envoyer pour retester",
-     "Fin d'alerte",
-     "Fin d'alerte (0)",
-     "Fin d'alerte (3)",
-     "Inclure la validation automatique",
-     "Informations sur la commande",
+     "Ajouté le 2026-11-17 sur testing (3.4.0-SNAPSHOT) :",
+     "Analyser",
      "Instance",
-     "Lorsque",
-     "NCE",
-     "Observé mais non testé :",
+     "Level 1 of 2",
+     "Level 2 of 2",
+     "Observé sans être testé :",
      "OpenELIS 3.3.0.",
-     "Plage de référence",
-     "Publier tous les résultats « tout va bien »",
-     "QC",
-     "Recherche gamme par ordonnance",
-     "Recherche par ordonnance",
-     "Remarque à l'intention du tribunal",
+     "Release all clear",
+     "Release all clear (0)",
+     "Release all clear (3)",
      "Résultats validés automatiquement",
      "Résultats validés automatiquement.",
-     "Valeurs normales",
+     "Sans anomalie : 3",
+     "Show results waiting for others",
+     "Sign level 1 for all clear",
+     "Sign level 1 of 2",
+     "Sign-offs",
+     "Travail en cours.",
      "Version d'OpenELIS",
-     "Vérifier avant la mise en service",
      "Vérifié par",
-     "laboratoire non.",
-     "À vérifier : 1",
-     "Échec du contrôle QC"
+     "À vérifier : 1"
     ],
     "newSinceBaseline": []
    },
@@ -4192,7 +3380,6 @@
      "copie instantanée",
      "en sortie",
      "identique sur chaque serveur",
-     "isolé",
      "même tag de version de la distribution",
      "n'est pas une sauvegarde",
      "pas",
@@ -4315,14 +3502,20 @@
    },
    {
     "fr": "1702756419",
-    "frTitle": "Les trois domaines et l'assistant de saisie des demandes commun",
+    "frTitle": "Les trois domaines de demande",
     "tr": "1702756419",
-    "trTitle": "Les trois domaines et l'assistant de saisie des demandes commun",
+    "trTitle": "Les trois domaines de demande",
     "notInUi": [
-     "Le domaine est défini par unité de laboratoire.",
-     "fondé sur les organismes et les pools",
-     "même assistant en quatre étapes",
-     "pas d'étape Prélever"
+     "Barre de progression et carte de la demande.",
+     "Contexte de la collecte",
+     "Contrat de dérive :",
+     "Mis à jour le 2026-11-17 :",
+     "Non revérifié :",
+     "Observé, non testé :",
+     "Repris de pages vérifiées :",
+     "Revue :",
+     "Réécrit",
+     "Travail en cours."
     ],
     "newSinceBaseline": []
    },
@@ -4473,7 +3666,6 @@
      "Main Menu",
      "Nom de Famille du Prestataire",
      "Primary phone",
-     "Prénom du Prestataire",
      "Search Provider Name",
      "Sélectionner un Prestataire",
      "désactivés, et non supprimés"
@@ -4667,44 +3859,7 @@
      "votre propre certificat",
      "x86 64 bits (amd64)"
     ],
-    "newSinceBaseline": [
-     "Analysers",
-     "Assets",
-     "Certificat",
-     "Change Password",
-     "Could not get lock",
-     "Fonctionnement.",
-     "Fuseau horaire",
-     "Garder les ports internes hors du réseau",
-     "Gardez les deux fichiers ensemble.",
-     "Il vous faut :",
-     "Install OpenSSH server",
-     "Installation en ligne :",
-     "Installation en ligne : fichier de réglages et mots de passe",
-     "Installation en ligne : sauvegarder aussi les clés",
-     "Installation hors ligne (paquet 3.3.0)",
-     "Let's Encrypt",
-     "Mettre à niveau une installation en ligne",
-     "Mis à jour le 26 octobre 2026",
-     "Mis à jour le 29 octobre 2026",
-     "Mis à jour le 9 novembre 2026",
-     "Ne donnez jamais une nouvelle valeur à un serveur existant",
-     "Ne la changez jamais après le premier démarrage",
-     "Pair again",
-     "Pile complète",
-     "Pile légère",
-     "Submit",
-     "avant",
-     "avant de démarrer OpenELIS pour la première fois",
-     "certificat auto-signé",
-     "changez immédiatement le mot de passe admin",
-     "dernière version publiée",
-     "déconnectez-vous et reconnectez-vous",
-     "pas",
-     "pile complète",
-     "pile légère",
-     "votre propre certificat"
-    ]
+    "newSinceBaseline": []
    },
    {
     "fr": "1700266072",
@@ -4712,11 +3867,13 @@
     "tr": "1700266072",
     "trTitle": "Admin : Définir des analyses calculées",
     "notInUi": [
-     "Basculer la règle",
-     "Configuration des tests réflexes",
-     "Gestion des tests de valeur calculée",
-     "Rechercher un test numérique",
-     "Résultat du test"
+     "Active: false",
+     "Close Bracket",
+     "Minus",
+     "Multiplied By",
+     "Open Bracket",
+     "Search Numeric Test",
+     "Travail en cours."
     ],
     "newSinceBaseline": []
    },
@@ -4775,10 +3932,7 @@
      "slicing for slides",
      "un Rapport"
     ],
-    "newSinceBaseline": [
-     "Examen Macroscopique",
-     "Examen Microscopique"
-    ]
+    "newSinceBaseline": []
    },
    {
     "fr": "1643937795",
@@ -4805,9 +3959,11 @@
      "QR",
      "Specimen Label",
      "Voir aussi :",
+     "doc-verified",
      "modèle d'étiquette",
      "par modèle",
-     "pré-imprimées"
+     "pré-imprimées",
+     "verified-v3.4.0"
     ],
     "newSinceBaseline": []
    },
@@ -5177,9 +4333,7 @@
      "Copier la configuration de « test »",
      "Le contenu fusionné n'est pas vérifié et doit être revérifié"
     ],
-    "newSinceBaseline": [
-     "Chiffres significatifs"
-    ]
+    "newSinceBaseline": []
    },
    {
     "fr": "1642299535",
@@ -5267,12 +4421,14 @@
    },
    {
     "fr": "1641840681",
-    "frTitle": "Générer un certificat de conformité",
+    "frTitle": "Générer un certificat de conformité ou un rapport de résultats",
     "tr": "1641840681",
-    "trTitle": "Générer un certificat de conformité",
+    "trTitle": "Générer un certificat de conformité ou un rapport de résultats",
     "notInUi": [
-     "Compliance.",
-     "Remarque (administrateurs du site) :"
+     "LAPORAN HASIL: CERTIFICATE OF TEST RESULTS",
+     "LAPORAN HASIL: TEST RESULTS REPORT",
+     "Results report (no standard)",
+     "Travail en cours."
     ],
     "newSinceBaseline": []
    },
@@ -5290,9 +4446,8 @@
      "OpenELIS 3.3.0.",
      "Required paperwork present and complete",
      "Sample volume adequate",
-     "Travail en cours.",
      "doc-verified",
-     "verified-v 3.3.0"
+     "verified-v3.3.0"
     ],
     "newSinceBaseline": []
    },
@@ -5312,7 +4467,6 @@
   ]
  },
  "actions": {
-  "retranslate changed sections": 14,
-  "bump version only": 2
+  "retranslate changed sections": 2
  }
 }
