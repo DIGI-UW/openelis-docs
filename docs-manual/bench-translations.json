@@ -1,8 +1,8 @@
 {
- "generatedAt": "2026-11-21T09:44:24Z",
+ "generatedAt": "2026-11-28T09:44:57Z",
  "lang": "fr",
- "pairs": 127,
- "current": 125,
+ "pairs": 128,
+ "current": 126,
  "stale": 2,
  "orphan": 0,
  "unknown": 0,
@@ -86,6 +86,26 @@
  "orphanRows": [],
  "missingRows": [],
  "rows": [
+  {
+   "en": "1787002882",
+   "enTitle": "View the Management Dashboard",
+   "enVersion": 3,
+   "tr": "1806106708",
+   "trTitle": "Consulter la vue d'ensemble de la gestion",
+   "fr": "1806106708",
+   "frTitle": "Consulter la vue d'ensemble de la gestion",
+   "sourceVersion": 3,
+   "method": "claude",
+   "translatedAt": "2026-11-27",
+   "frenchFigures": [],
+   "figuresCapturedAt": null,
+   "status": "current",
+   "contract": "management-overview",
+   "jiraEpic": "OGC-897",
+   "featureDoc": null,
+   "scope": "manual",
+   "englishDrift": "drift"
+  },
   {
    "en": "1706295354",
    "enTitle": "Admin: Import and export locations",
@@ -1307,7 +1327,7 @@
    "jiraEpic": null,
    "featureDoc": null,
    "scope": "manual",
-   "englishDrift": "ok"
+   "englishDrift": "drift"
   },
   {
    "en": "1047527443",
@@ -2380,14 +2400,14 @@
   {
    "en": "1326972929",
    "enTitle": "📖 User Manual",
-   "enVersion": 31,
+   "enVersion": 32,
    "tr": "1641447437",
    "trTitle": "📖 Manuel de l'utilisateur",
    "fr": "1641447437",
    "frTitle": "📖 Manuel de l'utilisateur",
-   "sourceVersion": 31,
+   "sourceVersion": 32,
    "method": "claude",
-   "translatedAt": "2026-11-19",
+   "translatedAt": "2026-11-27",
    "frenchFigures": [],
    "figuresCapturedAt": null,
    "status": "current",
@@ -2395,21 +2415,53 @@
    "englishDrift": null
   }
  ],
- "summary": "French: 127 pairs, 125 current, 2 stale, 0 orphan/unknown, 0 tracked pages with no French. 5 pages with French screenshots, 0 with French screenshots older than the English. Tree: 143 in place, 0 misplaced, 0 English parents with no French twin. Labels: 115 pages quote bold text that is not a French UI string (0 new since baseline).",
+ "summary": "French: 128 pairs, 126 current, 2 stale, 0 orphan/unknown, 0 tracked pages with no French. 5 pages with French screenshots, 0 with French screenshots older than the English. Tree: 144 in place, 0 misplaced, 0 English parents with no French twin. Labels: 116 pages quote bold text that is not a French UI string (1 new since baseline).",
  "frenchFigurePages": 5,
  "figuresStaleRows": [],
- "driftReportAt": "2026-11-21T09:41:27.537Z",
+ "driftReportAt": "2026-11-28T09:42:03.322Z",
  "tree": {
-  "checkedAt": "2026-11-21T09:42:56Z",
-  "inPlace": 143,
+  "checkedAt": "2026-11-28T09:43:30Z",
+  "inPlace": 144,
   "misplaced": [],
   "unmappedParents": {}
  },
  "labels": {
-  "pagesWithUnknownLabels": 115,
-  "pagesWithNewUnknownLabels": 0,
+  "pagesWithUnknownLabels": 116,
+  "pagesWithNewUnknownLabels": 1,
   "baselineCreated": false,
   "rows": [
+   {
+    "fr": "1806106708",
+    "frTitle": "Consulter la vue d'ensemble de la gestion",
+    "tr": "1806106708",
+    "trTitle": "Consulter la vue d'ensemble de la gestion",
+    "notInUi": [
+     "Antibiogram",
+     "Critical reagents",
+     "Edit weights",
+     "HIV",
+     "P90",
+     "Stock & inventory",
+     "TAT by section",
+     "Total",
+     "Travail en cours.",
+     "Workload & turnaround time",
+     "Workload by section"
+    ],
+    "newSinceBaseline": [
+     "Antibiogram",
+     "Critical reagents",
+     "Edit weights",
+     "HIV",
+     "P90",
+     "Stock & inventory",
+     "TAT by section",
+     "Total",
+     "Travail en cours.",
+     "Workload & turnaround time",
+     "Workload by section"
+    ]
+   },
    {
     "fr": "1792770052",
     "frTitle": "Admin : Importer et exporter des lieux",

@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-21T09:45:42Z",
+ "generatedAt": "2026-11-28T09:46:11Z",
  "lang": "id",
  "pairs": 18,
  "current": 18,
@@ -745,12 +745,12 @@
   {
    "en": "1326972929",
    "enTitle": "📖 User Manual",
-   "enVersion": 31,
+   "enVersion": 32,
    "tr": "1733492739",
    "trTitle": "📖 Panduan Pengguna",
-   "sourceVersion": 31,
+   "sourceVersion": 32,
    "method": "claude",
-   "translatedAt": "2026-11-19",
+   "translatedAt": "2026-11-27",
    "frenchFigures": [],
    "figuresCapturedAt": null,
    "status": "current",
@@ -935,9 +935,9 @@
  "summary": "Indonesian: 18 pairs, 18 current, 0 stale, 0 orphan/unknown, 90 tracked pages with no Indonesian. 0 pages with Indonesian screenshots, 0 with Indonesian screenshots older than the English. Tree: 34 in place, 0 misplaced, 0 English parents with no Indonesian twin. Labels: 15 pages quote bold text that is not a Indonesian UI string (0 new since baseline).",
  "frenchFigurePages": 0,
  "figuresStaleRows": [],
- "driftReportAt": "2026-11-21T09:41:27.537Z",
+ "driftReportAt": "2026-11-28T09:42:03.322Z",
  "tree": {
-  "checkedAt": "2026-11-21T09:44:48Z",
+  "checkedAt": "2026-11-28T09:45:21Z",
   "inPlace": 34,
   "misplaced": [],
   "unmappedParents": {}
